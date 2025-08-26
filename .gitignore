@@ -1,0 +1,36 @@
+# Xcode
+knots3d.xcodeproj/
+knots3d.xcworkspace/
+
+# XCUserData
+xcuserdata/
+
+# Build generated
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.xcresult
+*.xccheckout
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code coverage
+*.profdata
+*.coverage
+
+# Mac
+.DS_Store

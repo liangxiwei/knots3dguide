@@ -1,0 +1,54 @@
+name: knots3d
+options:
+  bundleIdPrefix: mozata.knots
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: 15
+    macOS: 15.5
+    visionOS: 2.5
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    ENABLE_PREVIEWS: YES
+    GENERATE_INFOPLIST_FILE: YES
+    SDKROOT: auto
+    SUPPORTED_PLATFORMS: "iphoneos iphonesimulator macosx xros xrsimulator"
+    TARGETED_DEVICE_FAMILY: "1,2,7"
+    LD_RUNPATH_SEARCH_PATHS:
+      - "@executable_path/Frameworks"
+      - "@executable_path/../Frameworks" # macOS
+    SWIFT_EMIT_LOC_STRINGS: YES
+    REGISTER_APP_GROUPS: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+
+targets:
+  knots3d:
+    type: application
+    platform: [iOS, macOS, visionOS]
+    sources:
+      - knots3d/
+    resources:
+      - knots3d/Resources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: mozata.knots.knots3d
+      MARKETING_VERSION: 1.0
+      CURRENT_PROJECT_VERSION: 1
+      CODE_SIGN_STYLE: Automatic
+      CODE_SIGN_ENTITLEMENTS: knots3d/knots3d.entitlements
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+      # iOS specific
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]: YES
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]: YES
+      INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]: YES
+      INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]: YES
+      INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]: UIStatusBarStyleDefault
+      INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]: UIStatusBarStyleDefault
+      INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+      INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
