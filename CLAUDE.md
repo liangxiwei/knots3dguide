@@ -5,3 +5,4 @@
 - 使用 xcodegen 管理
 - IOS App 使用下面这个命令进行编译: <br>
   `xcodebuild -scheme knots3d_iOS -destination 'platform=iOS Simulator,name=iPhone 16' build`
+- 代码要整洁，重复的代码需要抽出来

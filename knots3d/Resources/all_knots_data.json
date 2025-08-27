@@ -1,0 +1,185 @@
+{
+  "extractedAt": "2025-08-26T16:30:12.912Z",
+  "totalKnots": 94,
+  "knots": [
+    {
+      "id": "munter",
+      "name": "Munter Hitch",
+      "cover": "munter-hitch.webp",
+      "aliases": [
+        "Italian Hitch",
+        "Crossing Hitch",
+        "HMS",
+        "Tag Knot",
+        "MB",
+        "ABOK #1818"
+      ],
+      "description": "Friction hitch for controlled descent or belaying in climbing and rescue.",
+      "animation": {
+        "drawingAnimation": {
+          "spriteData": "munter.json",
+          "spriteImage": "munter.png"
+        },
+        "rotation360": {
+          "spriteData": "munter360.json",
+          "spriteImage": "munter360.png"
+        }
+      },
+      "details": {
+        "usage": "The Munter Hitch is a simple knot, commonly used by climbers and cavers as part of a life-lining or belay system.  This technique can be used with a special \"pear-shaped\" HMS locking carabiner, or any locking carabiner wide enough to take two turns of the rope.  The Munter Hitch creates friction by having the rope rub on itself and on the object it has been wrapped around. There is no static friction on any part of the rope as it is a continuously moving knot. One very useful aspect of the Munter is its reversibility; it can be pulled from either side of the rope and it still works just as effectively.",
+        "history": "In the late 1950's, three Italian climbers, Mario Bisaccia, Franco Garda and Pietro Gilardoni developed a new belay technique called the \"Mezzo Barcaiolo\" or MB for short. The \"Munter Hitch\" name comes from the the Swiss mountain guide, Werner Munter, who popularized its use in mountaineering in the 1970's.  Despite Werner being the namesake for the Munter Hitch, he was better known for his work on avalanche terrain risk assessment and avalanche education. The Munter is also known as \"HMS\", the abbreviation for the German term \"Halbmastwurfsicherung\", meaning half clove hitch belay.",
+        "alsoKnownAs": "Italian Hitch, Crossing Hitch, HMS, Tag Knot, MB",
+        "structure": "",
+        "strengthReliability": "One advantage of the Munter Hitch is it can more effectively dissipate heat than a belay device because no two surfaces of the rope are in contact with each other for more than an instant. However, it places more bends in a rope than other belay methods, and creates significantly more friction on the outer sheath. It can also introduce significant twists to the rope.  The friction of the rope against the screw on the carabiner can cause the screw to undo and the carabiner to open, potentially weakening the strength of the carabiner, or allowing the rope to escape the carabiner completely.",
+        "abok": "#1818",
+        "note": ""
+      },
+      "related": [
+        "Super Munter",
+        "Munter Mule",
+        "Clove Hitch (Two Loops)",
+        "Backhand Hitch",
+        "Ossel Hitch",
+        "Two Half Hitches"
+      ],
+      "classification": {
+        "type": ["Hitches"],
+        "foundIn": [
+          "Arborist",
+          "Caving",
+          "Climbing",
+          "Fire & Rescue",
+          "Military"
+        ]
+      }
+    },
+    {
+      "id": "muntermuleoverhand",
+      "name": "Munter Mule",
+      "cover": "munter-mule.webp",
+      "aliases": ["Munter Mule Overhand", "MMO"],
+      "description": "Lockable hitch for securing and releasing a loaded rope during rappelling.",
+      "animation": {
+        "drawingAnimation": {
+          "spriteData": "muntermuleoverhand.json",
+          "spriteImage": "muntermuleoverhand.png"
+        },
+        "rotation360": {
+          "spriteData": "muntermuleoverhand360.json",
+          "spriteImage": "muntermuleoverhand360.png"
+        }
+      },
+      "details": {
+        "usage": "The Munter Mule is a releasable contingency rigging system that combines a Munter Hitch with an additional locking component, the \"Mule,\" to secure the hitch in place. It requires no additional hardware besides a carabiner. It is commonly used for releasable rappels and can be released even under tension. This knot is particularly useful in scenarios where temporarily locking off a rope is necessary, such as during rescue operations or belaying. The Mule knot secures the Munter Hitch, preventing the rope from slipping while allowing for easy release when needed. It also enables the climber to go hands-free, earning it the nickname \"the rescuer's extra hand.\" The Munter Mule Overhand is often referred to as the \"MMO\" for short.  Note that the animation above starts with a Munter Hitch already tied.",
+        "history": "",
+        "alsoKnownAs": "Munter Mule Overhand, MMO",
+        "structure": "The Munter Mule Overhand is a compound knot made up of three distinct parts: a Munter Hitch, a slip knot called the Mule and a finishing Overhand Knot for security.",
+        "strengthReliability": "The Munter Mule Overhand is safe and secure.  There are variations of the Munter Mule that conclude using a different safety knot than shown here. Some use an Overhand Knot as in the animation while others use a Half Hitch or other mechanism for backing up the Mule slip knot so that it isn't accidentally pulled or work itself loose.",
+        "abok": "",
+        "note": "The Mule and Overhand are tied using the brake strand.  Additionally, the Mule should be pushed up as close as possible to the Munter Hitch before tying the Overhand Knot backup."
+      },
+      "related": ["Munter Hitch", "Super Munter", "Backhand Hitch"],
+      "classification": {
+        "type": ["Hitches"],
+        "foundIn": ["Climbing", "Fire & Rescue"]
+      }
+    },
+    {
+      "id": "nail",
+      "name": "Nail Knot",
+      "cover": "nail-knot.webp",
+      "aliases": ["Tube Knot", "Gryp Knot"],
+      "description": "Join fishing line of different diameters.",
+      "animation": {
+        "drawingAnimation": {
+          "spriteData": "nail.json",
+          "spriteImage": "nail.png"
+        },
+        "rotation360": {
+          "spriteData": "nail360.json",
+          "spriteImage": "nail360.png"
+        }
+      },
+      "details": {
+        "usage": "The Nail Knot, also known as the Tube Knot or Gryp Knot, is commonly used in carp and fly fishing to securely attach a line to a leader without adding bulk. It's ideal for joining two lines of different diameters, allowing the line to taper smoothly down to the fly. The knot is tied by wrapping the working end around the standing part and a small tube or nail (hence the name), which is then removed before tightening the knot.",
+        "history": "",
+        "alsoKnownAs": "Tube Knot, Gryp Knot",
+        "structure": "",
+        "strengthReliability": "",
+        "abok": "",
+        "note": ""
+      },
+      "related": ["Uni-to-Uni Knot"],
+      "classification": {
+        "type": ["Bends"],
+        "foundIn": ["Fishing"]
+      }
+    },
+    {
+      "id": "doublefigureeight",
+      "name": "Offset Figure Eight Bend",
+      "cover": "offset-figure-eight-bend.webp",
+      "aliases": [
+        "Abnormal Figure Eight Bend",
+        "Double Figure Eight",
+        "Flat Figure Eight Bend"
+      ],
+      "description": "Unsafe and inferior joining knot.",
+      "animation": {
+        "drawingAnimation": {
+          "spriteData": "doublefigureeight.json",
+          "spriteImage": "doublefigureeight.png"
+        },
+        "rotation360": {
+          "spriteData": "doublefigureeight360.json",
+          "spriteImage": "doublefigureeight360.png"
+        }
+      },
+      "details": {
+        "usage": "The Offset Figure Eight Bend is simply a Figure Eight Knot tied in two ropes that have been doubled up. This \"Abnormal\" Figure-Eight Bend and is inferior to the \"Normal\" Figure Eight Bend.  The Offset Figure Eight Bend has been implicated in the deaths of several rock climbers. The knot may capsize (invert) under load and this can happen repeatedly. Each inversion reduces the lengths of the tails and eventually the knot comes undone. When used at all, both ropes should be of the same diameter.",
+        "history": "",
+        "alsoKnownAs": "Abnormal Figure Eight Bend, Double Figure Eight, Flat Figure Eight Bend",
+        "structure": "The Offset Figure Eight Bend will have working ends exiting the same side next to each other as opposed to a proper Figure Eight Bend where the working ends exit opposite sides.",
+        "strengthReliability": "The Offset Figure Eight Bend is not a very reliable bend and should be avoided. When the ropes are pulled in opposite directions it can cause the knot to distort and become unsafe — unlike the proper Figure Eight Bend.",
+        "abok": "",
+        "note": ""
+      },
+      "related": ["Figure Eight", "Figure Eight Bend", "Flat Overhand Bend"],
+      "classification": {
+        "type": ["Bends"],
+        "foundIn": []
+      }
+    },
+    {
+      "id": "orvisknot",
+      "name": "Orvis Knot",
+      "cover": "orvis-knot.webp",
+      "aliases": ["Becker Knot"],
+      "description": "Small, strong knot for attaching fishing line or tippet to a hook.",
+      "animation": {
+        "drawingAnimation": {
+          "spriteData": "orvisknot.json",
+          "spriteImage": "orvisknot.png"
+        },
+        "rotation360": {
+          "spriteData": "orvisknot360.json",
+          "spriteImage": "orvisknot360.png"
+        }
+      },
+      "details": {
+        "usage": "The Orvis Knot is a reliable, easy-to-tie knot commonly used in fly fishing to attach a fishing line or tippet to a hook. Its small, compact design makes it perfect for both small and large flies. It serves as a great alternative to the Improved Clinch Knot!",
+        "history": "During the 1990's, the Orvis Company, a retailer of fly fishing gear, held a contest to find the best knot to attach a line to a hook. The winning submission was from Larry Becker of Rockford Illinois who devised a variation of the Figure-8 knot for use with fly fishing.",
+        "alsoKnownAs": "Becker Knot",
+        "structure": "The Orvis Knot is a variation of the widely known Figure Eight Knot.",
+        "strengthReliability": "The Orvis Knot is favored by anglers for its resistance to slipping and its ability to retain nearly 100% of the line's original breaking strength, making it both reliable and durable. It performs exceptionally well with line diameters up to 30 lbs and is considered stronger than the Davy and Improved Clinch knots.",
+        "abok": "",
+        "note": "As with most fishing knots, remember to lubricate the knot while tightening. Lubricating the knot, typically with water or saliva, reduces friction as the knot is tightened, preventing heat buildup that can weaken the line. This is particularly important for monofilament and fluorocarbon lines, which can be damaged by the heat generated during knot tightening. Proper lubrication allows the knot to cinch smoothly and evenly, preserving the line’s strength and ensuring a more reliable knot."
+      },
+      "related": ["Clinch Knot (Improved)", "Rapala Knot", "Davy Knot"],
+      "classification": {
+        "type": ["Hitches"],
+        "foundIn": ["Fishing"]
+      }
+    }
+  ]
+}

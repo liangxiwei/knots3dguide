@@ -1,0 +1,72 @@
+/* Tab Bar Titles */
+"tab_categories" = "用途分类";
+"tab_types" = "绳结类型";
+"tab_favorites" = "收藏";
+"tab_settings" = "设置";
+
+/* Common Actions */
+"action_search" = "搜索";
+"action_cancel" = "取消";
+"action_ok" = "确定";
+"action_save" = "保存";
+"action_back" = "返回";
+"action_done" = "完成";
+
+/* Search */
+"search_placeholder" = "搜索绳结名称或描述";
+"search_no_results" = "未找到相关结果";
+"search_results_count" = "找到 %d 个结果";
+
+/* Knot Detail Page */
+"detail_usage" = "用途";
+"detail_history" = "历史";
+"detail_structure" = "结构";
+"detail_strength_reliability" = "强度可靠性";
+"detail_abok_number" = "ABOK编号";
+"detail_notes" = "注意事项";
+"detail_related_knots" = "相关绳结";
+"detail_classification" = "分类信息";
+"detail_type" = "类型";
+"detail_found_in" = "应用领域";
+
+/* Animation Controls */
+"control_play" = "播放";
+"control_pause" = "暂停";
+"control_stop" = "停止";
+"control_mirror" = "镜像";
+"control_360_mode" = "360°模式";
+"control_save_frame" = "保存当前帧";
+
+/* Favorites */
+"favorites_empty" = "暂无收藏的绳结";
+"favorites_add" = "收藏";
+"favorites_remove" = "取消收藏";
+"favorites_added" = "已添加到收藏";
+"favorites_removed" = "已从收藏移除";
+
+/* Settings */
+"settings_language" = "语言设置";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "隐私协议";
+"settings_version_info" = "版本信息";
+"settings_about" = "关于我们";
+"settings_app_version" = "应用版本";
+
+/* Alerts */
+"alert_error" = "错误";
+"alert_success" = "成功";
+"alert_confirm" = "确认";
+
+/* Loading States */
+"loading_knots" = "正在加载绳结数据...";
+"loading_animation" = "正在加载动画...";
+
+/* Error Messages */
+"error_load_data" = "数据加载失败";
+"error_animation_load" = "动画加载失败";
+"error_network" = "网络连接错误";
+
+/* Navigation */
+"nav_knot_list" = "绳结列表";
+"nav_knot_detail" = "绳结详情";

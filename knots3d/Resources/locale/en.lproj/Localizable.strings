@@ -1,0 +1,72 @@
+/* Tab Bar Titles */
+"tab_categories" = "Categories";
+"tab_types" = "Types";
+"tab_favorites" = "Favorites";
+"tab_settings" = "Settings";
+
+/* Common Actions */
+"action_search" = "Search";
+"action_cancel" = "Cancel";
+"action_ok" = "OK";
+"action_save" = "Save";
+"action_back" = "Back";
+"action_done" = "Done";
+
+/* Search */
+"search_placeholder" = "Search knot name or description";
+"search_no_results" = "No results found";
+"search_results_count" = "Found %d results";
+
+/* Knot Detail Page */
+"detail_usage" = "Usage";
+"detail_history" = "History";
+"detail_structure" = "Structure";
+"detail_strength_reliability" = "Strength & Reliability";
+"detail_abok_number" = "ABOK Number";
+"detail_notes" = "Notes";
+"detail_related_knots" = "Related Knots";
+"detail_classification" = "Classification";
+"detail_type" = "Type";
+"detail_found_in" = "Found In";
+
+/* Animation Controls */
+"control_play" = "Play";
+"control_pause" = "Pause";
+"control_stop" = "Stop";
+"control_mirror" = "Mirror";
+"control_360_mode" = "360° Mode";
+"control_save_frame" = "Save Frame";
+
+/* Favorites */
+"favorites_empty" = "No favorite knots yet";
+"favorites_add" = "Add to Favorites";
+"favorites_remove" = "Remove from Favorites";
+"favorites_added" = "Added to favorites";
+"favorites_removed" = "Removed from favorites";
+
+/* Settings */
+"settings_language" = "Language";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Privacy Policy";
+"settings_version_info" = "Version Info";
+"settings_about" = "About";
+"settings_app_version" = "App Version";
+
+/* Alerts */
+"alert_error" = "Error";
+"alert_success" = "Success";
+"alert_confirm" = "Confirm";
+
+/* Loading States */
+"loading_knots" = "Loading knots data...";
+"loading_animation" = "Loading animation...";
+
+/* Error Messages */
+"error_load_data" = "Failed to load data";
+"error_animation_load" = "Failed to load animation";
+"error_network" = "Network connection error";
+
+/* Navigation */
+"nav_knot_list" = "Knot List";
+"nav_knot_detail" = "Knot Detail";
