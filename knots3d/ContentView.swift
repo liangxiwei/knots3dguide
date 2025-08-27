@@ -16,9 +16,9 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
-                SpriteAnimationView(width: 250, height: 250, showControls: true)
+                SpriteKitAnimationView(width: 250, height: 250, showControls: true)
                 
-                Text("支持镜像翻转和模式切换")
+                Text("SpriteKit 高性能精灵动画")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
