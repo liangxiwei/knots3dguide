@@ -44,7 +44,7 @@ struct CategoryListView: View {
         } else {
             List(items) { category in
                 NavigationLink(destination: KnotListView(category: category, tabType: tabType)) {
-                    CategoryRowView(category: category)
+                    CategoryRowView(category: category, tabType: tabType)
                 }
             }
             .listStyle(PlainListStyle())
@@ -55,6 +55,9 @@ struct CategoryListView: View {
 /// 分类行视图
 struct CategoryRowView: View {
     let category: KnotCategory
+    let tabType: TabType
+    
+    @StateObject private var dataManager = DataManager.shared
     
     var body: some View {
         HStack(spacing: 16) {
@@ -88,8 +91,29 @@ struct CategoryRowView: View {
             }
             
             Spacer()
+            
+            // 绳结数量
+            Text("\(knotCount)")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(12)
         }
         .padding(.vertical, 8)
+    }
+    
+    /// 计算该分类下的绳结数量
+    private var knotCount: Int {
+        switch tabType {
+        case .categories:
+            return dataManager.getKnotsByCategory(category.name).count
+        case .types:
+            return dataManager.getKnotsByType(category.name).count
+        default:
+            return 0
+        }
     }
     
     private var imageURL: URL? {
