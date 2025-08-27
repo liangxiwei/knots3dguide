@@ -47,37 +47,31 @@ class DataManager: ObservableObject {
             isLoading = true
             errorMessage = nil
             
-            do {
-                // 并行加载数据
-                async let categoriesTask = loadKnotCategoriesAsync()
-                async let knotsTask = loadAllKnotsAsync()
-                
-                let (categoriesResult, knotsResult) = await (categoriesTask, knotsTask)
-                
-                // 处理分类数据结果
-                switch categoriesResult {
-                case .success(let knotCategories):
-                    categories = knotCategories.filter { $0.type == "category" }
-                    knotTypes = knotCategories.filter { $0.type == "type" }
-                    print("✅ 成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
-                case .failure(let error):
-                    errorMessage = "分类数据加载失败: \(error.localizedDescription)"
-                    print("❌ 分类数据加载失败: \(error)")
-                }
-                
-                // 处理绳结数据结果
-                switch knotsResult {
-                case .success(let knotsData):
-                    allKnots = knotsData.knots
-                    print("✅ 成功加载绳结数据: \(allKnots.count) 个绳结")
-                case .failure(let error):
-                    errorMessage = "绳结数据加载失败: \(error.localizedDescription)"
-                    print("❌ 绳结数据加载失败: \(error)")
-                }
-                
-            } catch {
-                errorMessage = "数据加载异常: \(error.localizedDescription)"
-                print("❌ 数据加载异常: \(error)")
+            // 并行加载数据
+            async let categoriesTask = loadKnotCategoriesAsync()
+            async let knotsTask = loadAllKnotsAsync()
+            
+            let (categoriesResult, knotsResult) = await (categoriesTask, knotsTask)
+            
+            // 处理分类数据结果
+            switch categoriesResult {
+            case .success(let knotCategories):
+                categories = knotCategories.filter { $0.type == "category" }
+                knotTypes = knotCategories.filter { $0.type == "type" }
+                print("✅ 成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
+            case .failure(let error):
+                errorMessage = "分类数据加载失败: \(error.localizedDescription)"
+                print("❌ 分类数据加载失败: \(error)")
+            }
+            
+            // 处理绳结数据结果
+            switch knotsResult {
+            case .success(let knotsData):
+                allKnots = knotsData.knots
+                print("✅ 成功加载绳结数据: \(allKnots.count) 个绳结")
+            case .failure(let error):
+                errorMessage = "绳结数据加载失败: \(error.localizedDescription)"
+                print("❌ 绳结数据加载失败: \(error)")
             }
             
             isLoading = false
@@ -86,30 +80,32 @@ class DataManager: ObservableObject {
     
     // 异步加载分类数据
     private func loadKnotCategoriesAsync() async -> Result<[KnotCategory], Error> {
-        return await withCheckedContinuation { continuation in
-            DispatchQueue.global(qos: .userInitiated).async {
-                do {
-                    let result = try self.syncLoadKnotCategories()
-                    continuation.resume(returning: .success(result))
-                } catch {
-                    continuation.resume(returning: .failure(error))
-                }
+        return await Task.detached { [weak self] in
+            guard let self = self else {
+                return .failure(DataLoadError.networkError("DataManager已释放"))
             }
-        }
+            do {
+                let result = try self.syncLoadKnotCategories()
+                return .success(result)
+            } catch {
+                return .failure(error)
+            }
+        }.value
     }
     
     // 异步加载绳结数据
     private func loadAllKnotsAsync() async -> Result<AllKnotsData, Error> {
-        return await withCheckedContinuation { continuation in
-            DispatchQueue.global(qos: .userInitiated).async {
-                do {
-                    let result = try self.syncLoadAllKnots()
-                    continuation.resume(returning: .success(result))
-                } catch {
-                    continuation.resume(returning: .failure(error))
-                }
+        return await Task.detached { [weak self] in
+            guard let self = self else {
+                return .failure(DataLoadError.networkError("DataManager已释放"))
             }
-        }
+            do {
+                let result = try self.syncLoadAllKnots()
+                return .success(result)
+            } catch {
+                return .failure(error)
+            }
+        }.value
     }
     
     // 同步版本的加载方法（用于异步调用）
@@ -338,16 +334,16 @@ class DataManager: ObservableObject {
                 categories.map { $0.image } + knotTypes.map { $0.image }
             }
             
-            // 批量预加载，限制并发数量
+            // 批量预加载，使用 TaskGroup 限制并发数量
             let maxConcurrent = 4
-            let semaphore = DispatchSemaphore(value: maxConcurrent)
+            let chunks = commonImages.chunked(into: maxConcurrent)
             
-            await withTaskGroup(of: Void.self) { group in
-                for imageName in commonImages {
-                    group.addTask { [weak self] in
-                        semaphore.wait()
-                        defer { semaphore.signal() }
-                        _ = self?.getImagePath(for: imageName)
+            for chunk in chunks {
+                await withTaskGroup(of: Void.self) { group in
+                    for imageName in chunk {
+                        group.addTask { [weak self] in
+                            _ = self?.getImagePath(for: imageName)
+                        }
                     }
                 }
             }

@@ -20,6 +20,7 @@
 /* Knot Detail Page */
 "detail_usage" = "用途";
 "detail_history" = "历史";
+"detail_aliases" = "别名";
 "detail_structure" = "结构";
 "detail_strength_reliability" = "强度可靠性";
 "detail_abok_number" = "ABOK编号";

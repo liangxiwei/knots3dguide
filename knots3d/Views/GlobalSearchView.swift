@@ -35,17 +35,30 @@ struct GlobalSearchView: View {
     @ViewBuilder
     private var searchResultsContent: some View {
         if searchManager.searchText.isEmpty {
-            // 空状态或搜索历史
+            // 空状态
             emptySearchState
         } else if searchManager.isSearching {
             // 搜索中状态
             LoadingView()
-        } else if searchManager.searchResults.isEmpty {
-            // 无结果状态
-            EmptySearchResultsView(
-                query: searchManager.searchText,
-                suggestions: getGlobalSuggestions()
-            )
+        } else if knotSearchResults.isEmpty {
+            // 无结果状态 - 不显示建议列表
+            VStack(spacing: 24) {
+                Image(systemName: "magnifyingglass")
+                    .font(.system(size: 48))
+                    .foregroundColor(.gray.opacity(0.5))
+                
+                VStack(spacing: 8) {
+                    Text("未找到相关绳结")
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                    
+                    Text("尝试其他关键词")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding()
         } else {
             // 搜索结果列表
             searchResultsList
@@ -72,47 +85,8 @@ struct GlobalSearchView: View {
                     .multilineTextAlignment(.center)
             }
             
-            // 快速搜索建议
-            if !searchManager.recentSearches.isEmpty {
-                VStack(alignment: .leading, spacing: 16) {
-                    Text("最近搜索")
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    
-                    LazyVGrid(columns: [
-                        GridItem(.flexible()),
-                        GridItem(.flexible())
-                    ], spacing: 12) {
-                        ForEach(searchManager.recentSearches.prefix(4), id: \.self) { search in
-                            Button(action: {
-                                searchManager.searchText = search
-                            }) {
-                                HStack {
-                                    Image(systemName: "clock")
-                                        .font(.caption)
-                                        .foregroundColor(.blue)
-                                    
-                                    Text(search)
-                                        .font(.subheadline)
-                                        .foregroundColor(.primary)
-                                        .lineLimit(1)
-                                    
-                                    Spacer()
-                                }
-                                .padding(.horizontal, 16)
-                                .padding(.vertical, 12)
-                                .background(Color(.systemGray6))
-                                .cornerRadius(8)
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                        }
-                    }
-                }
-                .padding(.horizontal)
-            } else {
-                // 热门搜索建议
-                popularSearchSuggestions
-            }
+            // 热门搜索建议
+            popularSearchSuggestions
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -150,75 +124,96 @@ struct GlobalSearchView: View {
     @ViewBuilder
     private var searchResultsList: some View {
         VStack(spacing: 0) {
-            // 搜索统计
-            SearchStatsView(stats: searchManager.searchStats)
+            // 绳结搜索统计
+            knotSearchStatsView
             
-            // 分组搜索结果
-            List {
-                searchResultSections
+            // 统一绳结列表
+            List(knotSearchResults) { result in
+                NavigationLink(destination: KnotDetailView(knot: result.knot)) {
+                    KnotSearchResultRowView(searchResult: result)
+                }
             }
             .listStyle(PlainListStyle())
         }
     }
     
+    private var knotSearchResults: [KnotSearchResult] {
+        return searchManager.searchKnotsComprehensive(searchManager.searchText)
+    }
+    
     @ViewBuilder
-    private var searchResultSections: some View {
-        let categoryResults = searchManager.searchCategories(searchManager.searchText)
-        let typeResults = searchManager.searchTypes(searchManager.searchText)
-        let knotResults = searchManager.searchKnots(searchManager.searchText)
-        
-        // 分类结果
-        if !categoryResults.isEmpty {
-            Section {
-                ForEach(categoryResults.prefix(5)) { category in
-                    NavigationLink(destination: KnotListView(category: category, tabType: .categories)) {
-                        SearchResultRowView(
-                            title: category.name,
-                            subtitle: category.desc,
-                            type: "用途分类",
-                            icon: "folder",
-                            searchQuery: searchManager.searchText
-                        )
+    private var knotSearchStatsView: some View {
+        let results = knotSearchResults
+        if !results.isEmpty {
+            VStack(spacing: 8) {
+                HStack {
+                    Text("找到 \(results.count) 个绳结")
+                        .font(.subheadline)
+                        .fontWeight(.medium)
+                        .foregroundColor(.primary)
+                    
+                    Spacer()
+                    
+                    Text("按相关度排序")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+                
+                // 匹配类型分布
+                if !results.isEmpty {
+                    let matchTypes = getMatchTypeDistribution(results: results)
+                    if !matchTypes.isEmpty {
+                        HStack(spacing: 12) {
+                            ForEach(matchTypes, id: \.0) { type, count in
+                                HStack(spacing: 4) {
+                                    Circle()
+                                        .fill(getMatchTypeColor(type))
+                                        .frame(width: 8, height: 8)
+                                    Text("\(type): \(count)")
+                                        .font(.caption2)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                            Spacer()
+                        }
                     }
                 }
-            } header: {
-                SectionHeaderView(title: "用途分类", count: categoryResults.count)
             }
+            .padding(.horizontal)
+            .padding(.vertical, 12)
+            .background(Color(.systemGray6))
+        }
+    }
+    
+    // 获取匹配类型分布统计
+    private func getMatchTypeDistribution(results: [KnotSearchResult]) -> [(String, Int)] {
+        var distribution: [String: Int] = [:]
+        
+        for result in results {
+            let type = result.matchTypeDescription
+            distribution[type] = (distribution[type] ?? 0) + 1
         }
         
-        // 类型结果
-        if !typeResults.isEmpty {
-            Section {
-                ForEach(typeResults.prefix(5)) { type in
-                    NavigationLink(destination: KnotListView(category: type, tabType: .types)) {
-                        SearchResultRowView(
-                            title: type.name,
-                            subtitle: type.desc,
-                            type: "绳结类型",
-                            icon: "tag",
-                            searchQuery: searchManager.searchText
-                        )
-                    }
-                }
-            } header: {
-                SectionHeaderView(title: "绳结类型", count: typeResults.count)
-            }
-        }
-        
-        // 绳结结果
-        if !knotResults.isEmpty {
-            Section {
-                ForEach(knotResults.prefix(10)) { knot in
-                    NavigationLink(destination: KnotDetailView(knot: knot)) {
-                        SearchResultKnotRowView(
-                            knot: knot,
-                            searchQuery: searchManager.searchText
-                        )
-                    }
-                }
-            } header: {
-                SectionHeaderView(title: "绳结", count: knotResults.count)
-            }
+        return distribution.sorted { $0.1 > $1.1 }.prefix(3).map { ($0.key, $0.value) }
+    }
+    
+    // 获取匹配类型对应的颜色
+    private func getMatchTypeColor(_ type: String) -> Color {
+        switch type {
+        case "名称匹配":
+            return .blue
+        case "别名匹配":
+            return .green
+        case "描述匹配":
+            return .orange
+        case "分类匹配":
+            return .purple
+        case "类型匹配":
+            return .pink
+        case "模糊匹配":
+            return .gray
+        default:
+            return .secondary
         }
     }
     
@@ -378,6 +373,135 @@ struct SectionHeaderView: View {
         }
         .padding(.vertical, 4)
         .textCase(nil)
+    }
+}
+
+// MARK: - Knot Search Result Components
+
+/// 绳结搜索结果行视图
+struct KnotSearchResultRowView: View {
+    let searchResult: KnotSearchResult
+    
+    @StateObject private var dataManager = DataManager.shared
+    
+    var body: some View {
+        HStack(spacing: 16) {
+            // 绳结图片
+            AsyncImage(url: coverImageURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.gray.opacity(0.3))
+                    .overlay(
+                        Image(systemName: "link")
+                            .foregroundColor(.gray)
+                    )
+            }
+            .frame(width: 50, height: 50)
+            .clipped()
+            .cornerRadius(8)
+            
+            // 内容
+            VStack(alignment: .leading, spacing: 6) {
+                // 绳结名称（高亮）
+                HStack(alignment: .top, spacing: 8) {
+                    Text(searchResult.highlightedName)
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                        .lineLimit(2)
+                    
+                    Spacer()
+                    
+                    // 收藏状态
+                    if dataManager.isFavorite(searchResult.knot.id) {
+                        Image(systemName: "heart.fill")
+                            .font(.caption)
+                            .foregroundColor(.red)
+                    }
+                }
+                
+                // 描述
+                Text(searchResult.knot.description)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .lineLimit(2)
+                
+                // 底部信息：匹配类型 + 分类标签
+                HStack(spacing: 8) {
+                    // 匹配类型标签
+                    HStack(spacing: 4) {
+                        Circle()
+                            .fill(getMatchTypeColor(searchResult.matchTypeDescription))
+                            .frame(width: 6, height: 6)
+                        
+                        Text(searchResult.matchTypeDescription)
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                    }
+                    
+                    // 分类标签
+                    if let firstType = searchResult.knot.classification.type.first {
+                        Text("•")
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                        
+                        Text(firstType)
+                            .font(.caption2)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.blue.opacity(0.1))
+                            .foregroundColor(.blue)
+                            .cornerRadius(3)
+                    }
+                    
+                    Spacer()
+                    
+                    // 相关度分数（调试用，可以在正式版本中移除）
+                    Text(String(format: "%.0f", searchResult.relevanceScore))
+                        .font(.caption2)
+                        .padding(.horizontal, 4)
+                        .padding(.vertical, 1)
+                        .background(Color.gray.opacity(0.1))
+                        .foregroundColor(.gray)
+                        .cornerRadius(2)
+                }
+            }
+            
+            Image(systemName: "chevron.right")
+                .foregroundColor(.gray)
+                .font(.caption)
+        }
+        .padding(.vertical, 8)
+    }
+    
+    private var coverImageURL: URL? {
+        guard let cover = searchResult.knot.cover else { return nil }
+        if let imagePath = DataManager.shared.getImagePath(for: cover) {
+            return URL(fileURLWithPath: imagePath)
+        }
+        return nil
+    }
+    
+    // 获取匹配类型对应的颜色
+    private func getMatchTypeColor(_ type: String) -> Color {
+        switch type {
+        case "名称匹配":
+            return .blue
+        case "别名匹配":
+            return .green
+        case "描述匹配":
+            return .orange
+        case "分类匹配":
+            return .purple
+        case "类型匹配":
+            return .pink
+        case "模糊匹配":
+            return .gray
+        default:
+            return .secondary
+        }
     }
 }
 

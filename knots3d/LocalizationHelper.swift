@@ -94,6 +94,7 @@ struct LocalizedStrings {
     struct Detail {
         static let usage = "detail_usage".localized
         static let history = "detail_history".localized
+        static let aliases = "detail_aliases".localized
         static let structure = "detail_structure".localized
         static let strengthReliability = "detail_strength_reliability".localized
         static let abokNumber = "detail_abok_number".localized

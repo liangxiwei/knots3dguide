@@ -185,13 +185,19 @@ struct EnhancedSearchBar: View {
                         .foregroundColor(.gray)
                     
                     TextField(LocalizedStrings.Search.placeholder, text: $searchManager.searchText)
-                        .onTapGesture {
+                        .textFieldStyle(.plain)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
+                        .onSubmit {
+                            // 提交搜索时隐藏建议
                             withAnimation(.easeInOut(duration: 0.2)) {
-                                showSuggestions = true
+                                showSuggestions = false
                             }
+                            hideKeyboard()
                         }
                         .onChange(of: searchManager.searchText) {
-                            showSuggestions = !searchManager.searchText.isEmpty && !searchManager.recentSearches.isEmpty
+                            // 不再显示搜索建议
+                            showSuggestions = false
                         }
                     
                     if searchManager.isSearching {
@@ -230,23 +236,7 @@ struct EnhancedSearchBar: View {
             .padding(.vertical, 8)
             .animation(.easeInOut(duration: 0.2), value: showSuggestions)
             
-            // 搜索建议
-            if showSuggestions && !searchManager.recentSearches.isEmpty {
-                RecentSearchesView(
-                    searches: searchManager.recentSearches,
-                    onSelect: { query in
-                        searchManager.searchText = query
-                        withAnimation {
-                            showSuggestions = false
-                        }
-                        hideKeyboard()
-                    },
-                    onClear: {
-                        searchManager.clearRecentSearches()
-                    }
-                )
-                .transition(.move(edge: .top).combined(with: .opacity))
-            }
+            // 搜索建议已移除
         }
     }
 }
@@ -489,6 +479,51 @@ struct HighlightedText: View {
         }
         
         return attributedString
+    }
+}
+
+// MARK: - Fake Search Bar (Button Style)
+
+/// 假搜索栏 - 看起来像输入框但实际是按钮，点击时进入全局搜索
+struct FakeSearchBar: View {
+    let placeholder: String
+    let onTap: () -> Void
+    
+    init(placeholder: String = "搜索绳结名称或描述", onTap: @escaping () -> Void) {
+        self.placeholder = placeholder
+        self.onTap = onTap
+    }
+    
+    var body: some View {
+        Button(action: onTap) {
+            HStack(spacing: 12) {
+                // 搜索图标
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 16, weight: .medium))
+                
+                // 占位符文本
+                Text(placeholder)
+                    .foregroundColor(.gray)
+                    .font(.system(size: 16))
+                
+                Spacer()
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color(.systemGray6))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color(.systemGray4), lineWidth: 0.5)
+                    )
+            )
+        }
+        .buttonStyle(PlainButtonStyle())
+        .padding(.horizontal)
+        .padding(.top, 8)
+        .padding(.bottom, 12)
     }
 }
 

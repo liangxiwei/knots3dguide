@@ -51,7 +51,7 @@ struct KnotDetailView: View {
             
             // 别名
             if let aliases = knot.aliases, !aliases.isEmpty {
-                Text(LocalizedStrings.Detail.history + ": " + aliases.joined(separator: ", "))
+                Text(LocalizedStrings.Detail.aliases + ": " + aliases.joined(separator: ", "))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }

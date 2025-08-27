@@ -11,6 +11,47 @@ enum SearchResultType {
     case knot(KnotDetail)
 }
 
+/// 绳结匹配类型
+enum KnotMatchType {
+    case directNameExact        // 绳结名称完全匹配
+    case directNamePrefix       // 绳结名称前缀匹配
+    case directNameContains     // 绳结名称包含匹配
+    case aliasExact            // 别名完全匹配
+    case aliasContains         // 别名包含匹配
+    case description           // 描述匹配
+    case categoryIndirect      // 通过分类间接匹配
+    case typeIndirect          // 通过类型间接匹配
+    case fuzzy                 // 模糊匹配
+}
+
+/// 绳结搜索结果
+struct KnotSearchResult: Identifiable {
+    let id = UUID()
+    let knot: KnotDetail
+    let relevanceScore: Double
+    let matchedFields: [KnotMatchType]
+    let highlightedName: String
+    
+    /// 获取匹配类型的显示文本
+    var matchTypeDescription: String {
+        if matchedFields.contains(.directNameExact) || matchedFields.contains(.directNamePrefix) {
+            return "名称匹配"
+        } else if matchedFields.contains(.aliasExact) || matchedFields.contains(.aliasContains) {
+            return "别名匹配"
+        } else if matchedFields.contains(.description) {
+            return "描述匹配"
+        } else if matchedFields.contains(.categoryIndirect) {
+            return "分类匹配"
+        } else if matchedFields.contains(.typeIndirect) {
+            return "类型匹配"
+        } else if matchedFields.contains(.fuzzy) {
+            return "模糊匹配"
+        } else {
+            return "匹配"
+        }
+    }
+}
+
 /// 高级搜索结果
 struct AdvancedSearchResult: Identifiable {
     let id = UUID()
@@ -364,6 +405,118 @@ class SearchManager: ObservableObject {
         return searchResults.compactMap { 
             if case .knot(let knot) = $0.type { return knot } else { return nil }
         }
+    }
+    
+    // MARK: - Knot-Centric Search (新的绳结为中心的搜索)
+    
+    /// 综合搜索绳结：包括直接匹配绳结字段和通过分类/类型间接匹配
+    func searchKnotsComprehensive(_ query: String) -> [KnotSearchResult] {
+        let trimmedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard trimmedQuery.count >= configuration.minSearchLength else {
+            return []
+        }
+        
+        let allKnots = dataManager.allKnots
+        var knotResults: [KnotSearchResult] = []
+        
+        for knot in allKnots {
+            if let result = createKnotSearchResult(knot: knot, query: trimmedQuery) {
+                knotResults.append(result)
+            }
+        }
+        
+        // 按相关度排序
+        return knotResults.sorted { $0.relevanceScore > $1.relevanceScore }
+    }
+    
+    /// 创建绳结搜索结果，包含多种匹配策略
+    private func createKnotSearchResult(knot: KnotDetail, query: String) -> KnotSearchResult? {
+        let lowercaseQuery = query.lowercased()
+        var totalScore = 0.0
+        var matchedFields: [KnotMatchType] = []
+        
+        // 1. 直接匹配绳结名称 (最高优先级: 100分)
+        let knotName = knot.name.lowercased()
+        if knotName == lowercaseQuery {
+            totalScore += 100.0
+            matchedFields.append(.directNameExact)
+        } else if knotName.contains(lowercaseQuery) {
+            if knotName.hasPrefix(lowercaseQuery) {
+                totalScore += 85.0
+                matchedFields.append(.directNamePrefix)
+            } else {
+                totalScore += 70.0
+                matchedFields.append(.directNameContains)
+            }
+        }
+        
+        // 2. 匹配绳结别名
+        if let aliases = knot.aliases {
+            for alias in aliases {
+                let lowercaseAlias = alias.lowercased()
+                if lowercaseAlias == lowercaseQuery {
+                    totalScore += 95.0
+                    matchedFields.append(.aliasExact)
+                    break
+                } else if lowercaseAlias.contains(lowercaseQuery) {
+                    totalScore += 60.0
+                    matchedFields.append(.aliasContains)
+                    break
+                }
+            }
+        }
+        
+        // 3. 匹配绳结描述 (中等优先级: 50分)
+        let description = knot.description.lowercased()
+        if description.contains(lowercaseQuery) {
+            totalScore += 50.0
+            matchedFields.append(.description)
+        }
+        
+        // 4. 通过分类间接匹配 (中等优先级: 40分)
+        let categories = dataManager.categories
+        for category in categories {
+            if category.name.lowercased().contains(lowercaseQuery) {
+                // 检查这个绳结是否属于这个分类
+                if knot.classification.foundIn.contains(where: { $0.lowercased() == category.name.lowercased() }) {
+                    totalScore += 40.0
+                    matchedFields.append(.categoryIndirect)
+                    break
+                }
+            }
+        }
+        
+        // 5. 通过类型间接匹配 (中等优先级: 35分)
+        let types = dataManager.knotTypes
+        for type in types {
+            if type.name.lowercased().contains(lowercaseQuery) {
+                // 检查这个绳结是否属于这个类型
+                if knot.classification.type.contains(where: { $0.lowercased() == type.name.lowercased() }) {
+                    totalScore += 35.0
+                    matchedFields.append(.typeIndirect)
+                    break
+                }
+            }
+        }
+        
+        // 6. 模糊匹配 (低优先级: 15-25分)
+        if configuration.enableFuzzySearch && totalScore == 0 {
+            let fuzzyScore = calculateFuzzyScore(query: lowercaseQuery, target: knotName)
+            if fuzzyScore > 0.6 {
+                totalScore += fuzzyScore * 25.0
+                matchedFields.append(.fuzzy)
+            }
+        }
+        
+        // 如果没有任何匹配，返回nil
+        guard totalScore > 0 else { return nil }
+        
+        return KnotSearchResult(
+            knot: knot,
+            relevanceScore: totalScore,
+            matchedFields: matchedFields,
+            highlightedName: configuration.enableHighlighting ? generateHighlightedText(original: knot.name, query: query) : knot.name
+        )
     }
     
     // MARK: - Utility Methods

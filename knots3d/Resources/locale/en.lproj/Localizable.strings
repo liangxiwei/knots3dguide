@@ -20,6 +20,7 @@
 /* Knot Detail Page */
 "detail_usage" = "Usage";
 "detail_history" = "History";
+"detail_aliases" = "Aliases";
 "detail_structure" = "Structure";
 "detail_strength_reliability" = "Strength & Reliability";
 "detail_abok_number" = "ABOK Number";
