@@ -5,14 +5,18 @@ struct CategoryListView: View {
     let tabType: TabType
     
     @StateObject private var dataManager = DataManager.shared
-    @State private var searchText = ""
-    @State private var isSearching = false
+    @StateObject private var searchManager = SearchManager.shared
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // 搜索栏
-                SearchBar(text: $searchText, isSearching: $isSearching)
+                // 增强搜索栏
+                EnhancedSearchBar()
+                
+                // 搜索统计
+                if searchManager.searchStats.isValid {
+                    SearchStatsView(stats: searchManager.searchStats)
+                }
                 
                 // 列表内容
                 if dataManager.isLoading {
@@ -28,21 +32,32 @@ struct CategoryListView: View {
             .navigationTitle(tabType.title)
             .navigationBarTitleDisplayMode(.large)
         }
+        .onDisappear {
+            // 离开页面时重置搜索状态
+            if !searchManager.searchText.isEmpty {
+                searchManager.resetSearch()
+            }
+        }
     }
     
     @ViewBuilder
     private var categoryList: some View {
         let items = filteredItems
         
-        if items.isEmpty {
+        if items.isEmpty && !searchManager.searchText.isEmpty {
+            EmptySearchResultsView(
+                query: searchManager.searchText,
+                suggestions: getSuggestions()
+            )
+        } else if items.isEmpty {
             EmptyStateView(
-                title: LocalizedStrings.Search.noResults,
-                systemImage: "magnifyingglass"
+                title: "暂无数据",
+                systemImage: tabType == .categories ? "folder" : "tag"
             )
         } else {
             List(items) { category in
                 NavigationLink(destination: KnotListView(category: category, tabType: tabType)) {
-                    CategoryRowView(category: category)
+                    EnhancedCategoryRowView(category: category, searchQuery: searchManager.searchText)
                 }
             }
             .listStyle(PlainListStyle())
@@ -50,26 +65,28 @@ struct CategoryListView: View {
     }
     
     private var filteredItems: [KnotCategory] {
-        let baseItems: [KnotCategory]
+        // 如果没有搜索，显示所有项目
+        if searchManager.searchText.isEmpty {
+            return tabType == .categories ? dataManager.categories : dataManager.knotTypes
+        }
         
+        // 使用增强搜索管理器
         switch tabType {
         case .categories:
-            baseItems = dataManager.categories
+            return searchManager.searchCategories(searchManager.searchText)
         case .types:
-            baseItems = dataManager.knotTypes
+            return searchManager.searchTypes(searchManager.searchText)
         default:
-            baseItems = []
+            return []
         }
-        
-        if searchText.isEmpty {
-            return baseItems
-        } else {
-            let lowercaseQuery = searchText.lowercased()
-            return baseItems.filter {
-                $0.name.lowercased().contains(lowercaseQuery) ||
-                $0.desc.lowercased().contains(lowercaseQuery)
-            }
-        }
+    }
+    
+    private func getSuggestions() -> [String] {
+        let allItems = tabType == .categories ? dataManager.categories : dataManager.knotTypes
+        return Array(Set(allItems.map { $0.name.components(separatedBy: " ").first ?? "" }))
+            .filter { !$0.isEmpty }
+            .prefix(3)
+            .map { String($0) }
     }
 }
 

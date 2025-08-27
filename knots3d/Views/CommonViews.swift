@@ -170,6 +170,322 @@ struct EmptyStateView: View {
 
 // MARK: - 工具扩展
 
+// MARK: - Enhanced Search Components
+
+/// 增强搜索栏
+struct EnhancedSearchBar: View {
+    @StateObject private var searchManager = SearchManager.shared
+    @State private var showSuggestions = false
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    
+                    TextField(LocalizedStrings.Search.placeholder, text: $searchManager.searchText)
+                        .onTapGesture {
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                showSuggestions = true
+                            }
+                        }
+                        .onChange(of: searchManager.searchText) { _ in
+                            showSuggestions = !searchManager.searchText.isEmpty && !searchManager.recentSearches.isEmpty
+                        }
+                    
+                    if searchManager.isSearching {
+                        ProgressView()
+                            .scaleEffect(0.8)
+                    } else if !searchManager.searchText.isEmpty {
+                        Button(action: {
+                            searchManager.resetSearch()
+                            withAnimation {
+                                showSuggestions = false
+                            }
+                        }) {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                
+                if showSuggestions {
+                    Button("取消") {
+                        searchManager.resetSearch()
+                        withAnimation {
+                            showSuggestions = false
+                        }
+                        hideKeyboard()
+                    }
+                    .foregroundColor(.blue)
+                    .transition(.move(edge: .trailing))
+                }
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .animation(.easeInOut(duration: 0.2), value: showSuggestions)
+            
+            // 搜索建议
+            if showSuggestions && !searchManager.recentSearches.isEmpty {
+                RecentSearchesView(
+                    searches: searchManager.recentSearches,
+                    onSelect: { query in
+                        searchManager.searchText = query
+                        withAnimation {
+                            showSuggestions = false
+                        }
+                        hideKeyboard()
+                    },
+                    onClear: {
+                        searchManager.clearRecentSearches()
+                    }
+                )
+                .transition(.move(edge: .top).combined(with: .opacity))
+            }
+        }
+    }
+}
+
+/// 最近搜索视图
+struct RecentSearchesView: View {
+    let searches: [String]
+    let onSelect: (String) -> Void
+    let onClear: () -> Void
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            HStack {
+                Text("最近搜索")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+                
+                Button("清空") {
+                    onClear()
+                }
+                .font(.caption)
+                .foregroundColor(.blue)
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .background(Color(.systemGray6))
+            
+            ForEach(searches.prefix(5), id: \.self) { search in
+                Button(action: {
+                    onSelect(search)
+                }) {
+                    HStack {
+                        Image(systemName: "clock")
+                            .foregroundColor(.gray)
+                            .font(.caption)
+                        
+                        Text(search)
+                            .foregroundColor(.primary)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "arrow.up.left")
+                            .foregroundColor(.gray)
+                            .font(.caption2)
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(PlainButtonStyle())
+                
+                if search != searches.prefix(5).last {
+                    Divider()
+                        .padding(.horizontal)
+                }
+            }
+        }
+        .background(Color(.systemBackground))
+        .overlay(
+            Rectangle()
+                .frame(height: 1)
+                .foregroundColor(Color(.systemGray4))
+                .padding(.horizontal),
+            alignment: .bottom
+        )
+    }
+}
+
+/// 搜索统计视图
+struct SearchStatsView: View {
+    let stats: SearchStats
+    
+    var body: some View {
+        HStack {
+            Text(stats.formattedSummary)
+                .font(.caption)
+                .foregroundColor(.secondary)
+            
+            Spacer()
+            
+            if stats.totalResults > 0 {
+                Text(stats.detailedSummary)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
+        }
+        .padding(.horizontal)
+        .padding(.vertical, 6)
+        .background(Color(.systemGray6).opacity(0.5))
+    }
+}
+
+/// 空搜索结果视图
+struct EmptySearchResultsView: View {
+    let query: String
+    let suggestions: [String]
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "magnifyingglass")
+                .font(.largeTitle)
+                .foregroundColor(.gray)
+            
+            Text("未找到\"\(query)\"的相关内容")
+                .font(.headline)
+                .foregroundColor(.primary)
+                .multilineTextAlignment(.center)
+            
+            if !suggestions.isEmpty {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("试试搜索：")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                    
+                    LazyVGrid(columns: [
+                        GridItem(.flexible()),
+                        GridItem(.flexible()),
+                        GridItem(.flexible())
+                    ], spacing: 8) {
+                        ForEach(suggestions, id: \.self) { suggestion in
+                            Button(suggestion) {
+                                SearchManager.shared.searchText = suggestion
+                            }
+                            .font(.caption)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.blue.opacity(0.1))
+                            .foregroundColor(.blue)
+                            .cornerRadius(12)
+                        }
+                    }
+                }
+            }
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemBackground))
+    }
+}
+
+/// 增强分类行视图（支持搜索高亮）
+struct EnhancedCategoryRowView: View {
+    let category: KnotCategory
+    let searchQuery: String
+    
+    var body: some View {
+        HStack(spacing: 16) {
+            // 图片
+            AsyncImage(url: imageURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.gray.opacity(0.3))
+                    .overlay(
+                        Image(systemName: "photo")
+                            .foregroundColor(.gray)
+                    )
+            }
+            .frame(width: 60, height: 60)
+            .clipped()
+            .cornerRadius(8)
+            
+            // 文本信息
+            VStack(alignment: .leading, spacing: 4) {
+                HighlightedText(
+                    text: category.name,
+                    highlight: searchQuery
+                )
+                .font(.headline)
+                .foregroundColor(.primary)
+                
+                HighlightedText(
+                    text: category.desc,
+                    highlight: searchQuery
+                )
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .lineLimit(2)
+            }
+            
+            Spacer()
+            
+            // 箭头
+            Image(systemName: "chevron.right")
+                .foregroundColor(.gray)
+                .font(.caption)
+        }
+        .padding(.vertical, 8)
+    }
+    
+    private var imageURL: URL? {
+        if let imagePath = DataManager.shared.getImagePath(for: category.image) {
+            return URL(fileURLWithPath: imagePath)
+        }
+        return nil
+    }
+}
+
+/// 高亮文本视图
+struct HighlightedText: View {
+    let text: String
+    let highlight: String
+    
+    var body: some View {
+        if highlight.isEmpty {
+            Text(text)
+        } else {
+            Text(attributedString)
+        }
+    }
+    
+    private var attributedString: AttributedString {
+        var attributedString = AttributedString(text)
+        
+        let lowercaseText = text.lowercased()
+        let lowercaseHighlight = highlight.lowercased()
+        
+        if let range = lowercaseText.range(of: lowercaseHighlight) {
+            let start = text.distance(from: text.startIndex, to: range.lowerBound)
+            let length = highlight.count
+            
+            let attributedStart = attributedString.index(attributedString.startIndex, offsetByCharacters: start)
+            let attributedEnd = attributedString.index(attributedStart, offsetByCharacters: length)
+            let attributedRange = attributedStart..<attributedEnd
+            
+            attributedString[attributedRange].backgroundColor = .yellow.opacity(0.3)
+            attributedString[attributedRange].foregroundColor = .primary
+        }
+        
+        return attributedString
+    }
+}
+
+// MARK: - Extensions
+
 extension View {
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
