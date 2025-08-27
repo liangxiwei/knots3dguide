@@ -668,6 +668,7 @@
 		34297E926C663D30DD4FD7B9 /* albertoknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 43EDCAF6BAA4D23198EB146D /* albertoknot.json */; };
 		345A8AC7AF8C9D37DFE972CA /* masthead.png in Resources */ = {isa = PBXBuildFile; fileRef = A417D3B4738F4E7D0088C76D /* masthead.png */; };
 		3464747868BD403FF3E102A4 /* klemheist360.json in Resources */ = {isa = PBXBuildFile; fileRef = AA371964F25C235EECB12051 /* klemheist360.json */; };
+		3489A66682A19667E6E97484 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */; };
 		348F2F17D38B6F8B8D51AC9B /* alpinebutterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E0C23DEC5A093FF89F6CC6 /* alpinebutterfly.png */; };
 		34920158211B828084A32EA7 /* thiefknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 31143C3EDA75BF910F1C40FF /* thiefknot.json */; };
 		34B0F49442BAA5E457EF407C /* scottslockedbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 02846E12132CC607C2AEFDC8 /* scottslockedbowline.json */; };
@@ -818,6 +819,7 @@
 		4136CDA73FA2168491DA4D73 /* fishermansknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD7BF9BB2DD8EDDC57CBE0 /* fishermansknot360.png */; };
 		414B81C570BF65BBF00BC329 /* doublesheetbend.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4301CB50B2BB16509F548 /* doublesheetbend.json */; };
 		41593100A06981C80413F79F /* piwich360.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6D961F513EAD6F88B556EC /* piwich360.png */; };
+		41A1394C3E4B699270662349 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE8501D803E59DB75F4064 /* AboutView.swift */; };
 		41B9E12FECD6A71D50547E7A /* woggle.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DA1A50B0E61A4A05825170 /* woggle.json */; };
 		41BC3817C038FC2C2E503922 /* doubledragonloop.json in Resources */ = {isa = PBXBuildFile; fileRef = BD4D9267CA1AD82AA90B5007 /* doubledragonloop.json */; };
 		41C4EF2291A658441DBB1DA6 /* poachersknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF70574CAFC0CEE74B2C987 /* poachersknot360.png */; };
@@ -828,6 +830,7 @@
 		422D90118371036EF8505215 /* catspaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */; };
 		42780BCE76D841917454C65C /* slippedbuntline360.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C78F841522AF826BF11C8A /* slippedbuntline360.png */; };
 		4278E36AF9D2CBCF69A149B3 /* yucatan.json in Resources */ = {isa = PBXBuildFile; fileRef = 980D0AA7FC17F2E117B6A8A1 /* yucatan.json */; };
+		42952B4BD8E6D8AA78965DB1 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */; };
 		42A057010A7AAB06F251A7C3 /* fgknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 71757BCB8BFF64449C6D953A /* fgknot.json */; };
 		42A2C3445FECE5D311E539CE /* halfwindsor360.png in Resources */ = {isa = PBXBuildFile; fileRef = 486515C7644854CC921633F4 /* halfwindsor360.png */; };
 		42B3BA8EDA062A537D169AB0 /* cow-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = D2DBCD5637EE13E24CD6AAD5 /* cow-hitch.webp */; };
@@ -1629,6 +1632,7 @@
 		819C075F9DAA95A7D48BE508 /* beckethitchslipped360.json in Resources */ = {isa = PBXBuildFile; fileRef = BB84C0B3D0EEA8E4F9EB52EB /* beckethitchslipped360.json */; };
 		81AF8619DCB3FB528F58216C /* poldotackle.json in Resources */ = {isa = PBXBuildFile; fileRef = BADC400AEFE564A0DBAA9413 /* poldotackle.json */; };
 		81DFF4E030DBC543A57D90BD /* farrimond.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB3A8BE14DB5F005570258B /* farrimond.png */; };
+		81E6BEEDA093B0AF1A337ADF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE8501D803E59DB75F4064 /* AboutView.swift */; };
 		81F107B8924970A23005D476 /* clovehitchtwoloops360.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15619D8A09F65E79DDDBA5 /* clovehitchtwoloops360.png */; };
 		82109103D931C96A921689A6 /* sandiegojam.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D31DB7E62B2855681FB83B /* sandiegojam.json */; };
 		8210E9C94788129C6FC13610 /* sailorscross.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF6E62682E99EFAAC3332D /* sailorscross.json */; };
@@ -2183,6 +2187,7 @@
 		AD46B7BB88052D6D2DF0A18C /* slipped-clove-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = E573F0F24991C1DEB9999B52 /* slipped-clove-hitch.webp */; };
 		AD54A99BFC5EF2CAD5028068 /* truckie360.png in Resources */ = {isa = PBXBuildFile; fileRef = 64DE1AF2CADD9F9F41E12DE4 /* truckie360.png */; };
 		AD5C4A926074EC05E32346A8 /* magnus360.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F1E1E6D6D48F79A9DFFC9D0 /* magnus360.png */; };
+		AD7883D6D5B15A3C84929AC7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE8501D803E59DB75F4064 /* AboutView.swift */; };
 		AD7B62AB29D5B9F9EC7702CD /* underwritersknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C1F8B04C96CB80FC7C03E95 /* underwritersknot360.json */; };
 		AD93D70174178684C5DEF238 /* bull-hitch-bight.webp in Resources */ = {isa = PBXBuildFile; fileRef = 639ED7A67AAF404B715AE609 /* bull-hitch-bight.webp */; };
 		AD9A36B81747A6E27E73630D /* davyknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B2B74BB281FF0A5B0188905 /* davyknot360.json */; };
@@ -2447,6 +2452,7 @@
 		C284F3782C9345E678911BE3 /* sheet-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1DCBC9BAE9E15EB361E3E9AE /* sheet-bend.webp */; };
 		C2894ACA26DA1FD088326AA9 /* bowknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = B60C26E0A0D9A5DA7D6B80C7 /* bowknot360.json */; };
 		C290F0D7DB7784BA2C5D8874 /* swissseat360.png in Resources */ = {isa = PBXBuildFile; fileRef = E6947225A8132FA2827A2F4C /* swissseat360.png */; };
+		C293608C7968B6C0058461DF /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */; };
 		C29B3FF0370048F673E1A464 /* munter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACD7756C1294793119B5123 /* munter.png */; };
 		C29EFF804EDC75CC94366A06 /* scaffoldknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 449774F311AB605B104A9F27 /* scaffoldknot.json */; };
 		C2B6FF3A28A786F4E90F1C92 /* truckershitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FBAC65FE18424875474D2AD /* truckershitch.json */; };
@@ -3404,6 +3410,7 @@
 		33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catspaw.json; sourceTree = "<group>"; };
 		33E3CE1961BE8C727E3B0237 /* overhand-knot.webp */ = {isa = PBXFileReference; path = "overhand-knot.webp"; sourceTree = "<group>"; };
 		341A389907C35A150C37CCE3 /* ashleysbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashleysbend.json; sourceTree = "<group>"; };
+		34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		3478699611ACB3719567EEBE /* anchor-hitch.webp */ = {isa = PBXFileReference; path = "anchor-hitch.webp"; sourceTree = "<group>"; };
 		351087120612A40208F7E956 /* loops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loops.jpg; sourceTree = "<group>"; };
 		35114F13564474F11CDB80E0 /* distel-hitch.webp */ = {isa = PBXFileReference; path = "distel-hitch.webp"; sourceTree = "<group>"; };
@@ -4024,6 +4031,7 @@
 		D71C3D15A9C338F2F83698C2 /* sailors-coil.webp */ = {isa = PBXFileReference; path = "sailors-coil.webp"; sourceTree = "<group>"; };
 		D72291B2E99901978FF0A42C /* westcountrywhipping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrywhipping.json; sourceTree = "<group>"; };
 		D7556A356405D0960D0E45F5 /* alpinebutterflyhandmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod.json; sourceTree = "<group>"; };
+		D7DE8501D803E59DB75F4064 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D7E6F8EE131DE35FF4E2E5F5 /* scottslockedbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scottslockedbowline.png; sourceTree = "<group>"; };
 		D8B00D65D295E5FE82DBFED7 /* handcuffknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handcuffknot.png; sourceTree = "<group>"; };
 		D8BB82606C386ED99EE6E371 /* knots3d.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4243,12 +4251,14 @@
 		29581FBE95F964F24CA87DD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7DE8501D803E59DB75F4064 /* AboutView.swift */,
 				99F24ADB06521316C68D5E20 /* CategoryListView.swift */,
 				2F7B44DDAC133ABE9EE4BDA4 /* CommonViews.swift */,
 				F694DCD0AA2DD8DB045D4D2E /* FavoritesView.swift */,
 				A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */,
 				0350E4CF8D1757241ACC7360 /* KnotDetailView.swift */,
 				920749078AF7F9F4FD1FDCBE /* KnotListView.swift */,
+				34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */,
 				9A467291B2434E8BD37D510B /* SettingsView.swift */,
 			);
 			path = Views;
@@ -8582,6 +8592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E6BEEDA093B0AF1A337ADF /* AboutView.swift in Sources */,
 				6AF56F6884B40B1E76AA5DDA /* CategoryListView.swift in Sources */,
 				80C32E177D53CB787F993F8A /* CommonViews.swift in Sources */,
 				C61CF3CBAEB193D7DA449CEB /* ContentView.swift in Sources */,
@@ -8596,6 +8607,7 @@
 				09F83DA7E578846846D02A53 /* LocalizationHelper.swift in Sources */,
 				E5DF6148E641772E61FDC5C8 /* MainTabView.swift in Sources */,
 				367BEF0FF3543833629598A9 /* Models.swift in Sources */,
+				C293608C7968B6C0058461DF /* PrivacyPolicyView.swift in Sources */,
 				B03564D262405D1574E2C5F7 /* SearchManager.swift in Sources */,
 				6E3CFAA8A2334744969A160F /* SettingsView.swift in Sources */,
 				5915646CE28D478B480F7B60 /* SpriteKitAnimationView.swift in Sources */,
@@ -8607,6 +8619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7883D6D5B15A3C84929AC7 /* AboutView.swift in Sources */,
 				6017A12B2119ABD44B2BD765 /* CategoryListView.swift in Sources */,
 				A4F28B1632820B7303EA60A6 /* CommonViews.swift in Sources */,
 				B3DCDE72FD012293D74C9DA0 /* ContentView.swift in Sources */,
@@ -8621,6 +8634,7 @@
 				117D8A47E308E4E60A47812A /* LocalizationHelper.swift in Sources */,
 				D02F10C81AC5B9347D00B63B /* MainTabView.swift in Sources */,
 				2AD57A96D502FF9B7BBB3A33 /* Models.swift in Sources */,
+				3489A66682A19667E6E97484 /* PrivacyPolicyView.swift in Sources */,
 				BA803A4CF95A4A89B9632461 /* SearchManager.swift in Sources */,
 				197890E3F1F1BB3CB5FDC67C /* SettingsView.swift in Sources */,
 				EA01B8D1933C79DE358220CD /* SpriteKitAnimationView.swift in Sources */,
@@ -8632,6 +8646,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A1394C3E4B699270662349 /* AboutView.swift in Sources */,
 				06E73BD9FBCA1D3489A6511E /* CategoryListView.swift in Sources */,
 				AA1C977D6999126DAF5B3104 /* CommonViews.swift in Sources */,
 				576ED0C388DFF2EC9D73FEBC /* ContentView.swift in Sources */,
@@ -8646,6 +8661,7 @@
 				0D828F003EB29B78A0B5E178 /* LocalizationHelper.swift in Sources */,
 				8E3A041E42E9A9483863D4DF /* MainTabView.swift in Sources */,
 				071BE0FA355EED945E8A23CB /* Models.swift in Sources */,
+				42952B4BD8E6D8AA78965DB1 /* PrivacyPolicyView.swift in Sources */,
 				2AC47DA566B03F743C4303D2 /* SearchManager.swift in Sources */,
 				AC12BFE2CA4CC0EBE0296AAA /* SettingsView.swift in Sources */,
 				30CE203981D2F442EC49D72A /* SpriteKitAnimationView.swift in Sources */,

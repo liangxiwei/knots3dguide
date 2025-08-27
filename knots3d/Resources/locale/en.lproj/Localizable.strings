@@ -54,6 +54,28 @@
 "settings_about" = "About";
 "settings_app_version" = "App Version";
 
+/* Privacy Policy */
+"privacy_title" = "Privacy Policy";
+"privacy_data_collection" = "Data Collection";
+"privacy_data_collection_content" = "This app does not collect any personal information or user data. Your favorites and language settings are stored locally on your device only.";
+"privacy_data_usage" = "Data Usage";
+"privacy_data_usage_content" = "This app works completely offline and does not send any data to third-party servers. All knot data and image resources are stored within the app.";
+"privacy_data_storage" = "Data Storage";
+"privacy_data_storage_content" = "Your favorites and settings preferences are securely stored on your device using iOS UserDefaults, accessible only by this app.";
+"privacy_contact" = "Contact Us";
+"privacy_contact_content" = "If you have any questions about our privacy policy, please contact us through the App Store page.";
+
+/* About */
+"about_title" = "About Knots 3D";
+"about_description" = "Knots 3D is a professional knot learning app featuring 200 knots with detailed tutorials and 3D animation demonstrations.";
+"about_features" = "Key Features";
+"about_features_content" = "• 200 professional knots included\n• 16 usage categories, 8 technical types\n• 3D animation tutorials\n• 360-degree rotation view\n• Offline learning support\n• Bilingual interface (Chinese/English)";
+"about_data_source" = "Data Source";
+"about_data_source_content" = "Knot data is compiled from authoritative knot references, with professionally crafted animations to ensure accuracy and practicality.";
+"about_version" = "Version Information";
+"about_developer" = "Development Team";
+"about_developer_content" = "Crafted by a professional development team dedicated to providing the best knot learning experience.";
+
 /* Alerts */
 "alert_error" = "Error";
 "alert_success" = "Success";

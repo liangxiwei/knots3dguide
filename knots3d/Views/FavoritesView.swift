@@ -2,19 +2,10 @@ import SwiftUI
 
 struct FavoritesView: View {
     @StateObject private var dataManager = DataManager.shared
-    @StateObject private var searchManager = SearchManager.shared
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // 增强搜索栏
-                EnhancedSearchBar()
-                
-                // 搜索统计
-                if searchManager.searchStats.isValid && !dataManager.favoriteKnots.isEmpty {
-                    SearchStatsView(stats: searchManager.searchStats)
-                }
-                
                 // 内容区域
                 if dataManager.favoriteKnots.isEmpty {
                     EmptyStateView(
@@ -29,51 +20,19 @@ struct FavoritesView: View {
             .navigationTitle(LocalizedStrings.TabBar.favorites)
             .navigationBarTitleDisplayMode(.large)
         }
-        .onDisappear {
-            // 离开页面时重置搜索状态
-            if !searchManager.searchText.isEmpty {
-                searchManager.resetSearch()
-            }
-        }
     }
     
     @ViewBuilder
     private var favoritesList: some View {
-        let filteredFavorites = filteredFavoriteKnots
-        
-        if filteredFavorites.isEmpty && !searchManager.searchText.isEmpty {
-            EmptySearchResultsView(
-                query: searchManager.searchText,
-                suggestions: getFavoriteSuggestions()
-            )
-        } else {
-            List(filteredFavorites) { knot in
-                NavigationLink(destination: KnotDetailView(knot: knot)) {
-                    EnhancedKnotRowView(
-                        knot: knot, 
-                        showFavoriteButton: true,
-                        searchQuery: searchManager.searchText
-                    )
-                }
+        List(dataManager.getFavoriteKnots()) { knot in
+            NavigationLink(destination: KnotDetailView(knot: knot)) {
+                KnotRowView(
+                    knot: knot, 
+                    showFavoriteButton: true
+                )
             }
-            .listStyle(PlainListStyle())
         }
-    }
-    
-    private var filteredFavoriteKnots: [KnotDetail] {
-        if searchManager.searchText.isEmpty {
-            return dataManager.getFavoriteKnots()
-        } else {
-            return searchManager.searchKnots(searchManager.searchText)
-                .filter { dataManager.isFavorite($0.id) }
-        }
-    }
-    
-    private func getFavoriteSuggestions() -> [String] {
-        let favorites = dataManager.getFavoriteKnots()
-        return Array(Set(favorites.flatMap { $0.classification.type }))
-            .prefix(3)
-            .map { String($0) }
+        .listStyle(PlainListStyle())
     }
 }
 

@@ -42,9 +42,7 @@ struct SettingsView: View {
                         icon: "info.circle"
                     )
                     
-                    Button(action: {
-                        // TODO: 实现隐私协议页面
-                    }) {
+                    NavigationLink(destination: PrivacyPolicyView()) {
                         HStack {
                             Image(systemName: "hand.raised")
                                 .foregroundColor(.blue)
@@ -61,9 +59,7 @@ struct SettingsView: View {
                         }
                     }
                     
-                    Button(action: {
-                        // TODO: 实现关于页面
-                    }) {
+                    NavigationLink(destination: AboutView()) {
                         HStack {
                             Image(systemName: "questionmark.circle")
                                 .foregroundColor(.blue)

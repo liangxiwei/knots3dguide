@@ -8,80 +8,44 @@ struct MainTabView: View {
     @State private var showGlobalSearch = false
     
     var body: some View {
-        ZStack {
-            // 主要内容
-            TabView(selection: $selectedTab) {
-                // 用途分类Tab
-                CategoryListView(tabType: .categories)
-                    .tabItem {
-                        Image(systemName: TabType.categories.iconName)
-                        Text(TabType.categories.title)
-                    }
-                    .tag(TabType.categories)
-                
-                // 绳结类型Tab
-                CategoryListView(tabType: .types)
-                    .tabItem {
-                        Image(systemName: TabType.types.iconName)
-                        Text(TabType.types.title)
-                    }
-                    .tag(TabType.types)
-                
-                // 收藏Tab
-                FavoritesView()
-                    .tabItem {
-                        Image(systemName: TabType.favorites.iconName)
-                        Text(TabType.favorites.title)
-                    }
-                    .tag(TabType.favorites)
-                
-                // 设置Tab
-                SettingsView()
-                    .tabItem {
-                        Image(systemName: TabType.settings.iconName)
-                        Text(TabType.settings.title)
-                    }
-                    .tag(TabType.settings)
+        TabView(selection: $selectedTab) {
+            // 用途分类Tab
+            CategoryListView(tabType: .categories, onSearchTap: {
+                showGlobalSearch = true
+            })
+            .tabItem {
+                Image(systemName: TabType.categories.iconName)
+                Text(TabType.categories.title)
             }
-            .accentColor(.blue)
+            .tag(TabType.categories)
             
-            // 全局搜索按钮
-            VStack {
-                Spacer()
-                
-                HStack {
-                    Spacer()
-                    
-                    Button(action: {
-                        showGlobalSearch = true
-                    }) {
-                        HStack {
-                            Image(systemName: "magnifyingglass")
-                                .font(.headline)
-                            Text("全局搜索")
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                        }
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 12)
-                        .background(
-                            LinearGradient(
-                                colors: [.blue, .blue.opacity(0.8)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                        .cornerRadius(25)
-                        .shadow(color: .blue.opacity(0.3), radius: 8, x: 0, y: 4)
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    
-                    Spacer()
-                }
-                .padding(.bottom, 100) // 避免被TabBar遮挡
+            // 绳结类型Tab
+            CategoryListView(tabType: .types, onSearchTap: {
+                showGlobalSearch = true
+            })
+            .tabItem {
+                Image(systemName: TabType.types.iconName)
+                Text(TabType.types.title)
             }
+            .tag(TabType.types)
+            
+            // 收藏Tab
+            FavoritesView()
+                .tabItem {
+                    Image(systemName: TabType.favorites.iconName)
+                    Text(TabType.favorites.title)
+                }
+                .tag(TabType.favorites)
+            
+            // 设置Tab
+            SettingsView()
+                .tabItem {
+                    Image(systemName: TabType.settings.iconName)
+                    Text(TabType.settings.title)
+                }
+                .tag(TabType.settings)
         }
+        .accentColor(.blue)
         .fullScreenCover(isPresented: $showGlobalSearch) {
             GlobalSearchView()
         }

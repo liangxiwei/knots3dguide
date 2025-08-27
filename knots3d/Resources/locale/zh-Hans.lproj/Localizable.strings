@@ -54,6 +54,28 @@
 "settings_about" = "关于我们";
 "settings_app_version" = "应用版本";
 
+/* Privacy Policy */
+"privacy_title" = "隐私协议";
+"privacy_data_collection" = "数据收集";
+"privacy_data_collection_content" = "本应用不收集任何个人信息或用户数据。您的收藏记录和语言设置仅存储在本地设备上。";
+"privacy_data_usage" = "数据使用";
+"privacy_data_usage_content" = "本应用完全离线运行，不会向任何第三方服务器发送数据。所有绳结数据和图片资源都存储在应用内部。";
+"privacy_data_storage" = "数据存储";
+"privacy_data_storage_content" = "您的收藏记录和设置偏好通过iOS系统的UserDefaults安全存储在您的设备上，仅限本应用访问。";
+"privacy_contact" = "联系我们";
+"privacy_contact_content" = "如果您对我们的隐私政策有任何疑问，请通过应用商店页面联系我们。";
+
+/* About */
+"about_title" = "关于绳结3D";
+"about_description" = "绳结3D是一款专业的绳结学习应用，包含200种绳结的详细教学和3D动画演示。";
+"about_features" = "主要功能";
+"about_features_content" = "• 200种专业绳结收录\n• 16个用途分类，8个技术类型\n• 3D动画教学演示\n• 360度旋转查看\n• 离线学习支持\n• 中英双语界面";
+"about_data_source" = "数据来源";
+"about_data_source_content" = "绳结数据基于权威绳结资料整理，动画资源经过专业制作，确保学习内容的准确性和实用性。";
+"about_version" = "版本信息";
+"about_developer" = "开发团队";
+"about_developer_content" = "由专业开发团队精心打造，致力于为用户提供最优质的绳结学习体验。";
+
 /* Alerts */
 "alert_error" = "错误";
 "alert_success" = "成功";

@@ -155,6 +155,32 @@ struct LocalizedStrings {
         static let network = "error_network".localized
     }
     
+    // MARK: - Privacy Policy
+    struct Privacy {
+        static let title = "privacy_title".localized
+        static let dataCollection = "privacy_data_collection".localized
+        static let dataCollectionContent = "privacy_data_collection_content".localized
+        static let dataUsage = "privacy_data_usage".localized
+        static let dataUsageContent = "privacy_data_usage_content".localized
+        static let dataStorage = "privacy_data_storage".localized
+        static let dataStorageContent = "privacy_data_storage_content".localized
+        static let contact = "privacy_contact".localized
+        static let contactContent = "privacy_contact_content".localized
+    }
+    
+    // MARK: - About
+    struct About {
+        static let title = "about_title".localized
+        static let description = "about_description".localized
+        static let features = "about_features".localized
+        static let featuresContent = "about_features_content".localized
+        static let dataSource = "about_data_source".localized
+        static let dataSourceContent = "about_data_source_content".localized
+        static let version = "about_version".localized
+        static let developer = "about_developer".localized
+        static let developerContent = "about_developer_content".localized
+    }
+    
     // MARK: - Navigation
     struct Navigation {
         static let knotList = "nav_knot_list".localized

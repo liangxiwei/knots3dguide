@@ -3,20 +3,18 @@ import SwiftUI
 /// 统一的分类列表视图（用于用途分类和绳结类型Tab）
 struct CategoryListView: View {
     let tabType: TabType
+    let onSearchTap: () -> Void
     
     @StateObject private var dataManager = DataManager.shared
-    @StateObject private var searchManager = SearchManager.shared
     
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // 增强搜索栏
-                EnhancedSearchBar()
-                
-                // 搜索统计
-                if searchManager.searchStats.isValid {
-                    SearchStatsView(stats: searchManager.searchStats)
-                }
+                // 假搜索栏（点击进入全局搜索）
+                FakeSearchBar(
+                    placeholder: tabType == .categories ? "搜索用途分类" : "搜索绳结类型",
+                    onTap: onSearchTap
+                )
                 
                 // 列表内容
                 if dataManager.isLoading {
@@ -32,24 +30,13 @@ struct CategoryListView: View {
             .navigationTitle(tabType.title)
             .navigationBarTitleDisplayMode(.large)
         }
-        .onDisappear {
-            // 离开页面时重置搜索状态
-            if !searchManager.searchText.isEmpty {
-                searchManager.resetSearch()
-            }
-        }
     }
     
     @ViewBuilder
     private var categoryList: some View {
-        let items = filteredItems
+        let items = tabType == .categories ? dataManager.categories : dataManager.knotTypes
         
-        if items.isEmpty && !searchManager.searchText.isEmpty {
-            EmptySearchResultsView(
-                query: searchManager.searchText,
-                suggestions: getSuggestions()
-            )
-        } else if items.isEmpty {
+        if items.isEmpty {
             EmptyStateView(
                 title: "暂无数据",
                 systemImage: tabType == .categories ? "folder" : "tag"
@@ -57,36 +44,11 @@ struct CategoryListView: View {
         } else {
             List(items) { category in
                 NavigationLink(destination: KnotListView(category: category, tabType: tabType)) {
-                    EnhancedCategoryRowView(category: category, searchQuery: searchManager.searchText)
+                    CategoryRowView(category: category)
                 }
             }
             .listStyle(PlainListStyle())
         }
-    }
-    
-    private var filteredItems: [KnotCategory] {
-        // 如果没有搜索，显示所有项目
-        if searchManager.searchText.isEmpty {
-            return tabType == .categories ? dataManager.categories : dataManager.knotTypes
-        }
-        
-        // 使用增强搜索管理器
-        switch tabType {
-        case .categories:
-            return searchManager.searchCategories(searchManager.searchText)
-        case .types:
-            return searchManager.searchTypes(searchManager.searchText)
-        default:
-            return []
-        }
-    }
-    
-    private func getSuggestions() -> [String] {
-        let allItems = tabType == .categories ? dataManager.categories : dataManager.knotTypes
-        return Array(Set(allItems.map { $0.name.components(separatedBy: " ").first ?? "" }))
-            .filter { !$0.isEmpty }
-            .prefix(3)
-            .map { String($0) }
     }
 }
 
@@ -126,11 +88,6 @@ struct CategoryRowView: View {
             }
             
             Spacer()
-            
-            // 箭头
-            Image(systemName: "chevron.right")
-                .foregroundColor(.gray)
-                .font(.caption)
         }
         .padding(.vertical, 8)
     }
@@ -144,5 +101,5 @@ struct CategoryRowView: View {
 }
 
 #Preview {
-    CategoryListView(tabType: .categories)
+    CategoryListView(tabType: .categories, onSearchTap: {})
 }
