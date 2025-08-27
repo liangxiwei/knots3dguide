@@ -190,7 +190,7 @@ struct EnhancedSearchBar: View {
                                 showSuggestions = true
                             }
                         }
-                        .onChange(of: searchManager.searchText) { _ in
+                        .onChange(of: searchManager.searchText) {
                             showSuggestions = !searchManager.searchText.isEmpty && !searchManager.recentSearches.isEmpty
                         }
                     
@@ -465,12 +465,20 @@ struct HighlightedText: View {
     private var attributedString: AttributedString {
         var attributedString = AttributedString(text)
         
+        guard !highlight.isEmpty, !text.isEmpty else {
+            return attributedString
+        }
+        
         let lowercaseText = text.lowercased()
         let lowercaseHighlight = highlight.lowercased()
         
         if let range = lowercaseText.range(of: lowercaseHighlight) {
             let start = text.distance(from: text.startIndex, to: range.lowerBound)
             let length = highlight.count
+            
+            guard start >= 0, length > 0, start + length <= text.count else {
+                return attributedString
+            }
             
             let attributedStart = attributedString.index(attributedString.startIndex, offsetByCharacters: start)
             let attributedEnd = attributedString.index(attributedStart, offsetByCharacters: length)

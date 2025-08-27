@@ -240,6 +240,7 @@ class SearchManager: ObservableObject {
             }
         }
         
+        guard query.count > 0 else { return 0.0 }
         return Double(matchCount) / Double(query.count)
     }
     
