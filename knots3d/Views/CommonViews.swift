@@ -195,7 +195,7 @@ struct EnhancedSearchBar: View {
                             }
                             hideKeyboard()
                         }
-                        .onChange(of: searchManager.searchText) {
+                        .onChange(of: searchManager.searchText) { _ in
                             // 不再显示搜索建议
                             showSuggestions = false
                         }

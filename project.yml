@@ -18,6 +18,9 @@ settings:
     SDKROOT: auto
     SUPPORTED_PLATFORMS: "iphoneos iphonesimulator macosx xros xrsimulator"
     TARGETED_DEVICE_FAMILY: "1,2,7"
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+    XROS_DEPLOYMENT_TARGET: 1.0
     LD_RUNPATH_SEARCH_PATHS:
       - "@executable_path/Frameworks"
       - "@executable_path/../Frameworks" # macOS
