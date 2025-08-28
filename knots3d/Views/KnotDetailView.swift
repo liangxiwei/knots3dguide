@@ -354,26 +354,21 @@ struct RelatedKnotCard: View {
     var body: some View {
         VStack(spacing: 6) {
             // 图片区域
-            if let knot = knot, let coverImage = knot.cover, !coverImage.isEmpty {
-                AsyncImage(url: URL(string: coverImage)) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                } placeholder: {
-                    Image(systemName: "link")
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                }
-                .frame(width: 50, height: 50)
-                .clipShape(RoundedRectangle(cornerRadius: 6))
-            } else {
-                Image(systemName: "link")
-                    .font(.title3)
-                    .foregroundColor(.blue)
-                    .frame(width: 50, height: 50)
-                    .background(Color(.systemGray6))
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
+            AsyncImage(url: coverImageURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                RoundedRectangle(cornerRadius: 6)
+                    .fill(Color.gray.opacity(0.3))
+                    .overlay(
+                        Image(systemName: "link")
+                            .foregroundColor(.gray)
+                    )
             }
+            .frame(width: 50, height: 50)
+            .clipped()
+            .cornerRadius(6)
             
             Text(knotName)
                 .font(.caption)
@@ -387,6 +382,14 @@ struct RelatedKnotCard: View {
         .background(Color(.systemBackground))
         .cornerRadius(8)
         .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
+    }
+    
+    private var coverImageURL: URL? {
+        guard let knot = knot, let cover = knot.cover else { return nil }
+        if let imagePath = DataManager.shared.getImagePath(for: cover) {
+            return URL(fileURLWithPath: imagePath)
+        }
+        return nil
     }
 }
 
