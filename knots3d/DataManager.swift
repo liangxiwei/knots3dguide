@@ -44,6 +44,9 @@ class DataManager: ObservableObject {
         guard !isLoading else { return } // 防止重复加载
         
         Task { @MainActor in
+            let startTime = CFAbsoluteTimeGetCurrent()
+            print("🚀 开始加载数据...")
+            
             isLoading = true
             errorMessage = nil
             
@@ -52,7 +55,6 @@ class DataManager: ObservableObject {
             async let knotsTask = loadAllKnotsAsync()
             
             let (categoriesResult, knotsResult) = await (categoriesTask, knotsTask)
-            
             // 处理分类数据结果
             switch categoriesResult {
             case .success(let knotCategories):
@@ -75,17 +77,24 @@ class DataManager: ObservableObject {
             }
             
             isLoading = false
+            
+            let endTime = CFAbsoluteTimeGetCurrent()
+            let loadTime = endTime - startTime
+            print("⏱️ 数据加载完成，耗时: \(String(format: "%.3f", loadTime)) 秒")
         }
     }
     
     // 异步加载分类数据
     private func loadKnotCategoriesAsync() async -> Result<[KnotCategory], Error> {
         return await Task.detached { [weak self] in
+            let startTime = CFAbsoluteTimeGetCurrent()
             guard let self = self else {
                 return .failure(DataLoadError.networkError("DataManager已释放"))
             }
             do {
                 let result = try self.syncLoadKnotCategories()
+                let loadTime = CFAbsoluteTimeGetCurrent() - startTime
+                print("📂 分类数据加载耗时: \(String(format: "%.3f", loadTime)) 秒")
                 return .success(result)
             } catch {
                 return .failure(error)
@@ -96,11 +105,14 @@ class DataManager: ObservableObject {
     // 异步加载绳结数据
     private func loadAllKnotsAsync() async -> Result<AllKnotsData, Error> {
         return await Task.detached { [weak self] in
+            let startTime = CFAbsoluteTimeGetCurrent()
             guard let self = self else {
                 return .failure(DataLoadError.networkError("DataManager已释放"))
             }
             do {
                 let result = try self.syncLoadAllKnots()
+                let loadTime = CFAbsoluteTimeGetCurrent() - startTime
+                print("🔗 绳结数据加载耗时: \(String(format: "%.3f", loadTime)) 秒")
                 return .success(result)
             } catch {
                 return .failure(error)
@@ -136,20 +148,20 @@ class DataManager: ObservableObject {
     
     private func syncLoadAllKnots() throws -> AllKnotsData {
         // 先尝试在Resources根目录查找
-        if let path = Bundle.main.path(forResource: "all_knots_data", ofType: "json", inDirectory: "Resources") {
+        if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json", inDirectory: "Resources") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
             return allKnotsData
         }
         
         // 备选：不指定目录
-        if let path = Bundle.main.path(forResource: "all_knots_data", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
             return allKnotsData
         }
         
-        throw DataLoadError.fileNotFound("all_knots_data.json not found in any expected location")
+        throw DataLoadError.fileNotFound("detailed_knots_data.json not found in any expected location")
     }
     
     // 保留旧版本方法作为同步备用

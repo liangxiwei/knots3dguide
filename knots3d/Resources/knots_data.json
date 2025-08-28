@@ -21,6 +21,7 @@
   { "type": "type", "name": "Lashings", "desc": "How to tie lashings.", "image": "lashings.jpg" },
   { "type": "type", "name": "Loops", "desc": "How to tie loop knots.", "image": "loops.jpg" },
   { "type": "type", "name": "Multi-Loop", "desc": "How to tie multi-loop knots.", "image": "multi_loop.jpg" },
+  { "type": "type", "name": "Special", "desc": "How to tie special knots.", "image": "special.jpg" },
   { "type": "type", "name": "Stoppers", "desc": "How to tie stopper knots.", "image": "stoppers.jpg" },
   { "type": "type", "name": "Whipping", "desc": "How to tie whipping knots.", "image": "whipping.jpg" }
 ]
