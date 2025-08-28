@@ -2,29 +2,26 @@ import SwiftUI
 
 struct KnotDetailView: View {
     let knot: KnotDetail
-    
+
     @StateObject private var dataManager = DataManager.shared
-    @State private var showAnimation = true
-    
+
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
                 // 1. 标题区域
                 titleSection
-                
+
                 // 2. 3D动画区域
-                if showAnimation {
-                    animationSection
-                }
-                
+                animationSection
+
                 // 3. 详情信息卡片
                 detailsSection
-                
+
                 // 4. 相关绳结区域
                 if let related = knot.related, !related.isEmpty {
                     relatedKnotsSection(relatedNames: related)
                 }
-                
+
                 // 5. 分类信息
                 classificationSection
             }
@@ -34,9 +31,9 @@ struct KnotDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing: favoriteButton)
     }
-    
+
     // MARK: - Title Section
-    
+
     @ViewBuilder
     private var titleSection: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -45,27 +42,30 @@ struct KnotDetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
-                
+
                 Spacer()
             }
-            
+
             // 别名
             if let aliases = knot.aliases, !aliases.isEmpty {
-                Text(LocalizedStrings.Detail.aliases + ": " + aliases.joined(separator: ", "))
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                Text(
+                    LocalizedStrings.Detail.aliases + ": "
+                        + aliases.joined(separator: ", ")
+                )
+                .font(.subheadline)
+                .foregroundColor(.secondary)
             }
-            
-            // 描述
-            Text(knot.description)
-                .font(.body)
-                .foregroundColor(.primary)
-                .fixedSize(horizontal: false, vertical: true)
+
+            // // 描述
+            // Text(knot.description)
+            //     .font(.body)
+            //     .foregroundColor(.primary)
+            //     .fixedSize(horizontal: false, vertical: true)
         }
     }
-    
+
     // MARK: - Animation Section
-    
+
     @ViewBuilder
     private var animationSection: some View {
         VStack(spacing: 12) {
@@ -73,41 +73,34 @@ struct KnotDetailView: View {
                 Text("3D动画演示")
                     .font(.headline)
                     .foregroundColor(.primary)
-                
+
                 Spacer()
-                
-                Button(action: {
-                    showAnimation.toggle()
-                }) {
-                    Image(systemName: showAnimation ? "eye.slash" : "eye")
-                        .foregroundColor(.blue)
-                }
+
             }
-            
-            if showAnimation {
-                // TODO: 集成SpriteKitAnimationView组件
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.gray.opacity(0.2))
-                    .frame(height: 300)
-                    .overlay(
-                        VStack {
-                            Image(systemName: "play.circle")
-                                .font(.largeTitle)
-                                .foregroundColor(.blue)
-                            Text("3D动画加载中...")
-                                .font(.subheadline)
-                                .foregroundColor(.secondary)
-                        }
-                    )
-            }
+
+            // TODO: 集成SpriteKitAnimationView组件
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.gray.opacity(0.2))
+                .frame(height: 300)
+                .overlay(
+                    VStack {
+                        Image(systemName: "play.circle")
+                            .font(.largeTitle)
+                            .foregroundColor(.blue)
+                        Text("3D动画加载中...")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                )
+
         }
         .padding()
         .background(Color(.systemGray6))
         .cornerRadius(12)
     }
-    
+
     // MARK: - Details Section
-    
+
     @ViewBuilder
     private var detailsSection: some View {
         VStack(spacing: 16) {
@@ -117,7 +110,7 @@ struct KnotDetailView: View {
                     .foregroundColor(.primary)
                 Spacer()
             }
-            
+
             VStack(spacing: 12) {
                 // 用途 - 必显示
                 if let usage = knot.details.usage, !usage.isEmpty {
@@ -127,7 +120,7 @@ struct KnotDetailView: View {
                         icon: "target"
                     )
                 }
-                
+
                 // 历史 - 条件显示
                 if let history = knot.details.history, !history.isEmpty {
                     DetailInfoCard(
@@ -136,7 +129,7 @@ struct KnotDetailView: View {
                         icon: "book"
                     )
                 }
-                
+
                 // 结构 - 条件显示
                 if let structure = knot.details.structure, !structure.isEmpty {
                     DetailInfoCard(
@@ -145,16 +138,18 @@ struct KnotDetailView: View {
                         icon: "building.2"
                     )
                 }
-                
+
                 // 强度可靠性 - 条件显示
-                if let strengthReliability = knot.details.strengthReliability, !strengthReliability.isEmpty {
+                if let strengthReliability = knot.details.strengthReliability,
+                    !strengthReliability.isEmpty
+                {
                     DetailInfoCard(
                         title: LocalizedStrings.Detail.strengthReliability,
                         content: strengthReliability,
                         icon: "bolt"
                     )
                 }
-                
+
                 // ABOK编号 - 条件显示
                 if let abok = knot.details.abok, !abok.isEmpty {
                     DetailInfoCard(
@@ -163,7 +158,7 @@ struct KnotDetailView: View {
                         icon: "book.closed"
                     )
                 }
-                
+
                 // 注意事项 - 条件显示
                 if let note = knot.details.note, !note.isEmpty {
                     DetailInfoCard(
@@ -176,9 +171,9 @@ struct KnotDetailView: View {
             }
         }
     }
-    
+
     // MARK: - Related Knots Section
-    
+
     @ViewBuilder
     private func relatedKnotsSection(relatedNames: [String]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -188,15 +183,16 @@ struct KnotDetailView: View {
                     .foregroundColor(.primary)
                 Spacer()
             }
-            
-            LazyVGrid(columns: [
-                GridItem(.flexible()),
-                GridItem(.flexible()),
-                GridItem(.flexible())
-            ], spacing: 12) {
+
+            LazyVGrid(
+                columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: 3),
+                spacing: 12
+            ) {
                 ForEach(relatedNames.prefix(9), id: \.self) { relatedName in
                     if let relatedKnot = findRelatedKnot(name: relatedName) {
-                        NavigationLink(destination: KnotDetailView(knot: relatedKnot)) {
+                        NavigationLink(
+                            destination: KnotDetailView(knot: relatedKnot)
+                        ) {
                             RelatedKnotCard(knot: relatedKnot)
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -210,9 +206,9 @@ struct KnotDetailView: View {
         .background(Color(.systemGray6))
         .cornerRadius(12)
     }
-    
+
     // MARK: - Classification Section
-    
+
     @ViewBuilder
     private var classificationSection: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -222,7 +218,7 @@ struct KnotDetailView: View {
                     .foregroundColor(.primary)
                 Spacer()
             }
-            
+
             VStack(alignment: .leading, spacing: 8) {
                 // 类型
                 if !knot.classification.type.isEmpty {
@@ -231,7 +227,7 @@ struct KnotDetailView: View {
                             .font(.subheadline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)
-                        
+
                         FlowLayout(items: knot.classification.type) { type in
                             Text(type)
                                 .font(.caption)
@@ -243,7 +239,7 @@ struct KnotDetailView: View {
                         }
                     }
                 }
-                
+
                 // 应用领域
                 if !knot.classification.foundIn.isEmpty {
                     HStack {
@@ -251,8 +247,9 @@ struct KnotDetailView: View {
                             .font(.subheadline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)
-                        
-                        FlowLayout(items: knot.classification.foundIn) { foundIn in
+
+                        FlowLayout(items: knot.classification.foundIn) {
+                            foundIn in
                             Text(foundIn)
                                 .font(.caption)
                                 .padding(.horizontal, 8)
@@ -269,22 +266,25 @@ struct KnotDetailView: View {
         .background(Color(.systemGray6))
         .cornerRadius(12)
     }
-    
+
     // MARK: - Favorite Button
-    
+
     @ViewBuilder
     private var favoriteButton: some View {
         Button(action: {
             dataManager.toggleFavorite(knot.id)
         }) {
-            Image(systemName: dataManager.isFavorite(knot.id) ? "heart.fill" : "heart")
-                .foregroundColor(dataManager.isFavorite(knot.id) ? .red : .blue)
-                .font(.title2)
+            Image(
+                systemName: dataManager.isFavorite(knot.id)
+                    ? "heart.fill" : "heart"
+            )
+            .foregroundColor(dataManager.isFavorite(knot.id) ? .red : .blue)
+            .font(.title2)
         }
     }
-    
+
     // MARK: - Helper Functions
-    
+
     private func findRelatedKnot(name: String) -> KnotDetail? {
         return dataManager.allKnots.first { knot in
             knot.name == name || knot.aliases?.contains(name) == true
@@ -299,29 +299,34 @@ struct DetailInfoCard: View {
     let content: String
     let icon: String
     let accentColor: Color
-    
-    init(title: String, content: String, icon: String, accentColor: Color = .blue) {
+
+    init(
+        title: String,
+        content: String,
+        icon: String,
+        accentColor: Color = .blue
+    ) {
         self.title = title
         self.content = content
         self.icon = icon
         self.accentColor = accentColor
     }
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Image(systemName: icon)
                     .foregroundColor(accentColor)
                     .frame(width: 20)
-                
+
                 Text(title)
                     .font(.headline)
                     .fontWeight(.medium)
                     .foregroundColor(.primary)
-                
+
                 Spacer()
             }
-            
+
             Text(content)
                 .font(.body)
                 .foregroundColor(.primary)
@@ -339,18 +344,18 @@ struct DetailInfoCard: View {
 struct RelatedKnotCard: View {
     let knot: KnotDetail?
     let knotName: String
-    
+
     // 支持两种初始化方式
     init(knot: KnotDetail) {
         self.knot = knot
         self.knotName = knot.name
     }
-    
+
     init(knotName: String) {
         self.knot = nil
         self.knotName = knotName
     }
-    
+
     var body: some View {
         VStack(spacing: 6) {
             // 图片区域
@@ -369,7 +374,7 @@ struct RelatedKnotCard: View {
             .frame(width: 50, height: 50)
             .clipped()
             .cornerRadius(6)
-            
+
             Text(knotName)
                 .font(.caption)
                 .fontWeight(.medium)
@@ -377,13 +382,13 @@ struct RelatedKnotCard: View {
                 .lineLimit(2)
                 .foregroundColor(.primary)
         }
-        .frame(minHeight: 80)
+        .frame(maxWidth: .infinity, minHeight: 80)
         .padding(8)
         .background(Color(.systemBackground))
         .cornerRadius(8)
         .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
     }
-    
+
     private var coverImageURL: URL? {
         guard let knot = knot, let cover = knot.cover else { return nil }
         if let imagePath = DataManager.shared.getImagePath(for: cover) {
@@ -398,12 +403,12 @@ struct RelatedKnotCard: View {
 struct FlowLayout<Item, ItemView>: View where Item: Hashable, ItemView: View {
     let items: [Item]
     let itemView: (Item) -> ItemView
-    
+
     init(items: [Item], @ViewBuilder itemView: @escaping (Item) -> ItemView) {
         self.items = items
         self.itemView = itemView
     }
-    
+
     var body: some View {
         LazyVStack(alignment: .leading, spacing: 4) {
             ForEach(Array(items.chunked(into: 3)), id: \.self) { rowItems in
@@ -423,34 +428,36 @@ struct FlowLayout<Item, ItemView>: View where Item: Hashable, ItemView: View {
 extension Array {
     func chunked(into size: Int) -> [[Element]] {
         return stride(from: 0, to: count, by: size).map {
-            Array(self[$0 ..< Swift.min($0 + size, count)])
+            Array(self[$0..<Swift.min($0 + size, count)])
         }
     }
 }
 
 #Preview {
     NavigationView {
-        KnotDetailView(knot: KnotDetail(
-            id: "sample",
-            name: "Sample Knot",
-            cover: nil,
-            aliases: ["Alias 1", "Alias 2"],
-            description: "A sample knot for preview purposes.",
-            animation: nil,
-            details: KnotDetails(
-                usage: "Sample usage description",
-                history: "Sample history",
-                alsoKnownAs: "Sample aliases",
-                structure: "Sample structure",
-                strengthReliability: "Sample strength info",
-                abok: "#123",
-                note: "Sample note"
-            ),
-            related: ["Related Knot 1", "Related Knot 2"],
-            classification: KnotClassification(
-                type: ["Sample Type"],
-                foundIn: ["Sample Category"]
+        KnotDetailView(
+            knot: KnotDetail(
+                id: "sample",
+                name: "Sample Knot",
+                cover: nil,
+                aliases: ["Alias 1", "Alias 2"],
+                description: "A sample knot for preview purposes.",
+                animation: nil,
+                details: KnotDetails(
+                    usage: "Sample usage description",
+                    history: "Sample history",
+                    alsoKnownAs: "Sample aliases",
+                    structure: "Sample structure",
+                    strengthReliability: "Sample strength info",
+                    abok: "#123",
+                    note: "Sample note"
+                ),
+                related: ["Related Knot 1", "Related Knot 2"],
+                classification: KnotClassification(
+                    type: ["Sample Type"],
+                    foundIn: ["Sample Category"]
+                )
             )
-        ))
+        )
     }
 }
