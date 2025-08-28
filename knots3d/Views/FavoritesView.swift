@@ -106,10 +106,6 @@ struct KnotRowView: View {
                         .font(.title2)
                 }
                 .buttonStyle(PlainButtonStyle())
-            } else {
-                Image(systemName: "chevron.right")
-                    .foregroundColor(.gray)
-                    .font(.caption)
             }
         }
         .padding(.vertical, 8)
@@ -196,10 +192,6 @@ struct EnhancedKnotRowView: View {
                         .font(.title2)
                 }
                 .buttonStyle(PlainButtonStyle())
-            } else {
-                Image(systemName: "chevron.right")
-                    .foregroundColor(.gray)
-                    .font(.caption)
             }
         }
         .padding(.vertical, 8)
