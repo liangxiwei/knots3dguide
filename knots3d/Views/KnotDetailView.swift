@@ -191,12 +191,13 @@ struct KnotDetailView: View {
             
             LazyVGrid(columns: [
                 GridItem(.flexible()),
+                GridItem(.flexible()),
                 GridItem(.flexible())
             ], spacing: 12) {
-                ForEach(relatedNames.prefix(6), id: \.self) { relatedName in
+                ForEach(relatedNames.prefix(9), id: \.self) { relatedName in
                     if let relatedKnot = findRelatedKnot(name: relatedName) {
                         NavigationLink(destination: KnotDetailView(knot: relatedKnot)) {
-                            RelatedKnotCard(knotName: relatedName)
+                            RelatedKnotCard(knot: relatedKnot)
                         }
                         .buttonStyle(PlainButtonStyle())
                     } else {
@@ -336,13 +337,43 @@ struct DetailInfoCard: View {
 // MARK: - Related Knot Card
 
 struct RelatedKnotCard: View {
+    let knot: KnotDetail?
     let knotName: String
     
+    // 支持两种初始化方式
+    init(knot: KnotDetail) {
+        self.knot = knot
+        self.knotName = knot.name
+    }
+    
+    init(knotName: String) {
+        self.knot = nil
+        self.knotName = knotName
+    }
+    
     var body: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "link")
-                .font(.title2)
-                .foregroundColor(.blue)
+        VStack(spacing: 6) {
+            // 图片区域
+            if let knot = knot, let coverImage = knot.cover, !coverImage.isEmpty {
+                AsyncImage(url: URL(string: coverImage)) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Image(systemName: "link")
+                        .font(.title3)
+                        .foregroundColor(.blue)
+                }
+                .frame(width: 50, height: 50)
+                .clipShape(RoundedRectangle(cornerRadius: 6))
+            } else {
+                Image(systemName: "link")
+                    .font(.title3)
+                    .foregroundColor(.blue)
+                    .frame(width: 50, height: 50)
+                    .background(Color(.systemGray6))
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
+            }
             
             Text(knotName)
                 .font(.caption)
@@ -351,8 +382,8 @@ struct RelatedKnotCard: View {
                 .lineLimit(2)
                 .foregroundColor(.primary)
         }
-        .frame(minHeight: 60)
-        .padding()
+        .frame(minHeight: 80)
+        .padding(8)
         .background(Color(.systemBackground))
         .cornerRadius(8)
         .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
