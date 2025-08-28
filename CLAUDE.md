@@ -11,3 +11,4 @@
 - 代码可以适当的加一些注释
 - 代码注意多语言支持
 - 每次修改完就 git commit，说明修改了什么
+- 使用 NavigationLink 的话，不要加右箭头，NavigationLink 本身就包含了右箭头

@@ -6,7 +6,7 @@ struct GlobalSearchView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 0) {
                 // 搜索栏
                 EnhancedSearchBar()
@@ -224,131 +224,6 @@ struct GlobalSearchView: View {
 }
 
 // MARK: - Search Result Components
-
-/// 搜索结果行视图
-struct SearchResultRowView: View {
-    let title: String
-    let subtitle: String
-    let type: String
-    let icon: String
-    let searchQuery: String
-    
-    var body: some View {
-        HStack(spacing: 16) {
-            // 图标
-            Image(systemName: icon)
-                .font(.title2)
-                .foregroundColor(.blue)
-                .frame(width: 30, height: 30)
-            
-            // 内容
-            VStack(alignment: .leading, spacing: 4) {
-                Text(title)
-                    .font(.headline)
-                    .foregroundColor(.primary)
-                
-                Text(subtitle)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .lineLimit(2)
-                
-                Text(type)
-                    .font(.caption)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 2)
-                    .background(Color.gray.opacity(0.1))
-                    .foregroundColor(.gray)
-                    .cornerRadius(4)
-            }
-            
-            Spacer()
-            
-            Image(systemName: "chevron.right")
-                .foregroundColor(.gray)
-                .font(.caption)
-        }
-        .padding(.vertical, 4)
-    }
-}
-
-/// 搜索结果绳结行视图
-struct SearchResultKnotRowView: View {
-    let knot: KnotDetail
-    let searchQuery: String
-    
-    @StateObject private var dataManager = DataManager.shared
-    
-    var body: some View {
-        HStack(spacing: 16) {
-            // 绳结图片
-            AsyncImage(url: coverImageURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.gray.opacity(0.3))
-                    .overlay(
-                        Image(systemName: "link")
-                            .foregroundColor(.gray)
-                    )
-            }
-            .frame(width: 40, height: 40)
-            .clipped()
-            .cornerRadius(6)
-            
-            // 内容
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text(knot.name)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                    
-                    Spacer()
-                    
-                    if dataManager.isFavorite(knot.id) {
-                        Image(systemName: "heart.fill")
-                            .font(.caption)
-                            .foregroundColor(.red)
-                    }
-                }
-                
-                Text(knot.description)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .lineLimit(2)
-                
-                // 分类标签
-                if !knot.classification.type.isEmpty {
-                    HStack {
-                        ForEach(knot.classification.type.prefix(2), id: \.self) { type in
-                            Text(type)
-                                .font(.caption2)
-                                .padding(.horizontal, 6)
-                                .padding(.vertical, 2)
-                                .background(Color.blue.opacity(0.1))
-                                .foregroundColor(.blue)
-                                .cornerRadius(3)
-                        }
-                    }
-                }
-            }
-            
-            Image(systemName: "chevron.right")
-                .foregroundColor(.gray)
-                .font(.caption)
-        }
-        .padding(.vertical, 4)
-    }
-    
-    private var coverImageURL: URL? {
-        guard let cover = knot.cover else { return nil }
-        if let imagePath = DataManager.shared.getImagePath(for: cover) {
-            return URL(fileURLWithPath: imagePath)
-        }
-        return nil
-    }
-}
 
 /// 区块标题视图
 struct SectionHeaderView: View {

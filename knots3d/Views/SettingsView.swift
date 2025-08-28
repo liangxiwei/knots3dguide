@@ -70,9 +70,7 @@ struct SettingsView: View {
                             
                             Spacer()
                             
-                            Image(systemName: "chevron.right")
-                                .foregroundColor(.gray)
-                                .font(.caption)
+                           
                         }
                     }
                 } header: {
