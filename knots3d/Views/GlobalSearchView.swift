@@ -25,10 +25,7 @@ struct GlobalSearchView: View {
             }
         }
         .onAppear {
-            // 清空之前的搜索状态
-            if searchManager.searchText.isEmpty {
-                searchManager.resetSearch()
-            }
+            // 不再自动重置搜索状态，保持用户的搜索上下文
         }
     }
     
