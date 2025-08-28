@@ -31,7 +31,7 @@ struct KnotListView: View {
             } else {
                 List(filteredKnots) { knot in
                     NavigationLink(destination: KnotDetailView(knot: knot)) {
-                        KnotRowView(knot: knot, showFavoriteButton: true)
+                        KnotRowView(knot: knot, showFavoriteButton: false)
                     }
                 }
                 .listStyle(PlainListStyle())
