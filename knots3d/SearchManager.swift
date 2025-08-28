@@ -84,7 +84,7 @@ struct SearchConfiguration {
     let minSearchLength: Int = 1
     let maxResults: Int = 50
     let enableFuzzySearch: Bool = true
-    let enableHighlighting: Bool = true
+    let enableHighlighting: Bool = false
 }
 
 // MARK: - Enhanced Search Manager

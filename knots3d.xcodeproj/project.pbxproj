@@ -5362,6 +5362,34 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
+		"TEMP_5AA6EF9E-70D1-45D6-A027-76E4C79FC500" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_935B6D61-B786-47D8-BE2E-DE20CB3902A3" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_CAA81A4E-2909-4B66-94CB-DFAA8A1C779E" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_DC4059D9-B27A-4931-B1FE-4C726BC6CAC7" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */

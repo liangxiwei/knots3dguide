@@ -405,20 +405,14 @@ struct EnhancedCategoryRowView: View {
             
             // 文本信息
             VStack(alignment: .leading, spacing: 4) {
-                HighlightedText(
-                    text: category.name,
-                    highlight: searchQuery
-                )
-                .font(.headline)
-                .foregroundColor(.primary)
+                Text(category.name)
+                    .font(.headline)
+                    .foregroundColor(.primary)
                 
-                HighlightedText(
-                    text: category.desc,
-                    highlight: searchQuery
-                )
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .lineLimit(2)
+                Text(category.desc)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .lineLimit(2)
             }
             
             Spacer()

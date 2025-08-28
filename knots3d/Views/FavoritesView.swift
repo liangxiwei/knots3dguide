@@ -159,20 +159,14 @@ struct EnhancedKnotRowView: View {
             
             // 文本信息
             VStack(alignment: .leading, spacing: 4) {
-                HighlightedText(
-                    text: knot.name,
-                    highlight: searchQuery
-                )
-                .font(.headline)
-                .foregroundColor(.primary)
+                Text(knot.name)
+                    .font(.headline)
+                    .foregroundColor(.primary)
                 
-                HighlightedText(
-                    text: knot.description,
-                    highlight: searchQuery
-                )
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .lineLimit(2)
+                Text(knot.description)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    .lineLimit(2)
                 
                 // 分类信息
                 if !knot.classification.type.isEmpty {

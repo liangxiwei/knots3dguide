@@ -246,11 +246,11 @@ struct SearchResultRowView: View {
             
             // 内容
             VStack(alignment: .leading, spacing: 4) {
-                HighlightedText(text: title, highlight: searchQuery)
+                Text(title)
                     .font(.headline)
                     .foregroundColor(.primary)
                 
-                HighlightedText(text: subtitle, highlight: searchQuery)
+                Text(subtitle)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
@@ -303,7 +303,7 @@ struct SearchResultKnotRowView: View {
             // 内容
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
-                    HighlightedText(text: knot.name, highlight: searchQuery)
+                    Text(knot.name)
                         .font(.headline)
                         .foregroundColor(.primary)
                     
@@ -316,7 +316,7 @@ struct SearchResultKnotRowView: View {
                     }
                 }
                 
-                HighlightedText(text: knot.description, highlight: searchQuery)
+                Text(knot.description)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
@@ -405,9 +405,9 @@ struct KnotSearchResultRowView: View {
             
             // 内容
             VStack(alignment: .leading, spacing: 6) {
-                // 绳结名称（高亮）
+                // 绳结名称
                 HStack(alignment: .top, spacing: 8) {
-                    Text(searchResult.highlightedName)
+                    Text(searchResult.knot.name)
                         .font(.headline)
                         .foregroundColor(.primary)
                         .lineLimit(2)
