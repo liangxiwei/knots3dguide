@@ -9,11 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        #if os(iOS)
         MainTabView()
-        #else
-        HelloWorldView()  // iPad和macOS暂时显示HelloWorld
-        #endif
     }
 }
 

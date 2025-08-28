@@ -1087,6 +1087,7 @@
 		570709A6B82BC5047131CD3B /* pile.json in Resources */ = {isa = PBXBuildFile; fileRef = 526B4D3C2A48839790927386 /* pile.json */; };
 		572F85D8D31713154ABF3493 /* cowboybowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = D361ABA778FF4A5ED7612DB9 /* cowboybowline360.json */; };
 		57378A07A46C3758E28A866B /* twohalfhitches.json in Resources */ = {isa = PBXBuildFile; fileRef = 371FD28FBDBF5302030C693F /* twohalfhitches.json */; };
+		573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */; };
 		573C80E6F67677CC0591AB94 /* ashleysbend.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D783AA6DD87714DA75B9E7F /* ashleysbend.png */; };
 		5766B859D645B0308F103FAD /* alpine-butterfly-hand-method.webp in Resources */ = {isa = PBXBuildFile; fileRef = D558C2BFB2A302E5C81F174C /* alpine-butterfly-hand-method.webp */; };
 		576ED0C388DFF2EC9D73FEBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */; };
@@ -1549,7 +1550,6 @@
 		7B648B2BC91D979CC6B97925 /* storage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 715CDB6CCA16073EC4CD8963 /* storage.jpg */; };
 		7B64F3C6F4A68961B6C7A345 /* highwaymans-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = FCABA9B4E3D8FE1458309182 /* highwaymans-hitch.webp */; };
 		7B80DA24B4DCE44AF7DFBAB1 /* jugknot.json in Resources */ = {isa = PBXBuildFile; fileRef = A1F65A309D843FF8C74C27A6 /* jugknot.json */; };
-		7B9DDFBDE50A8EDE36715B34 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 		7BA575B653522F5CD5BC003F /* klemheist.webp in Resources */ = {isa = PBXBuildFile; fileRef = A8F2928FDAFA16A0548DFF28 /* klemheist.webp */; };
 		7BA8BC926019A7C53D5D5668 /* rapalaknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5826BEEEA4C0800C69676A3C /* rapalaknot360.png */; };
 		7BB8405AF7000CF34632690A /* diamondknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 08531690B00611C67BEFDD2A /* diamondknot360.json */; };
@@ -1712,7 +1712,6 @@
 		89318C4349D2377127B6B955 /* doublefishermans.json in Resources */ = {isa = PBXBuildFile; fileRef = 772FC458029234BA0BB2697F /* doublefishermans.json */; };
 		893B41C55F865397EB277851 /* sailorscoil.json in Resources */ = {isa = PBXBuildFile; fileRef = 562810D8CCEFC5F2CF228F89 /* sailorscoil.json */; };
 		89548B77B5B41C8037B46D47 /* kreh-loop.webp in Resources */ = {isa = PBXBuildFile; fileRef = D2E3B447C9059CC0D035F61B /* kreh-loop.webp */; };
-		8958E661AECA246287C9AC4A /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 		896BFCFD7A95585EB1A61C9F /* bends.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A2693873B6652E7F28A364 /* bends.jpg */; };
 		898CB277D8F05B9903E50306 /* transom.json in Resources */ = {isa = PBXBuildFile; fileRef = C780A039D1E2F412C187B6CC /* transom.json */; };
 		89900D3BC9EFAD0D97F033A0 /* bellringer360.json in Resources */ = {isa = PBXBuildFile; fileRef = E17FB96FA35330D4E2D144A2 /* bellringer360.json */; };
@@ -2101,6 +2100,7 @@
 		A8AA211D6F9142B7E5938F39 /* bowlineonabight360.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C00D9A96A3C01A3ACAEA30 /* bowlineonabight360.png */; };
 		A8D0D6F037471EA85F25788C /* ashleysbend.json in Resources */ = {isa = PBXBuildFile; fileRef = 341A389907C35A150C37CCE3 /* ashleysbend.json */; };
 		A8EB49E1827F09BA5AC0675F /* clovehitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A95F32BA07F6AB7ACFA624F /* clovehitch.json */; };
+		A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */; };
 		A8F6369A6A4245F7391684B3 /* alpine-butterfly.webp in Resources */ = {isa = PBXBuildFile; fileRef = DBAF992B4D5391374BC00272 /* alpine-butterfly.webp */; };
 		A8F9561A2B4A8CD859462C3C /* doublebowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 81664B32E694E030CE96A168 /* doublebowline360.json */; };
 		A9156DCACFE8BFC8663A19D2 /* fgknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 71757BCB8BFF64449C6D953A /* fgknot.json */; };
@@ -2446,6 +2446,7 @@
 		C22020DD817A965159B50BDF /* double-coin-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 36F74C7243436F96AFBA0769 /* double-coin-knot.webp */; };
 		C23800F587A68FEDC4FDC79B /* farrimond.json in Resources */ = {isa = PBXBuildFile; fileRef = BA964E862FC861DE51255124 /* farrimond.json */; };
 		C23A7C7E6C98A2EA8593A375 /* mooringhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 20E20FE4FAC9A02D51B4CC56 /* mooringhitch360.json */; };
+		C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */; };
 		C259457657C9B8BEEB2AEBB5 /* muntermuleoverhand360.png in Resources */ = {isa = PBXBuildFile; fileRef = FB881AAC91706ABC01805744 /* muntermuleoverhand360.png */; };
 		C272A246BB3440287514102C /* tillershitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1356E2FE950B9B3A085FBDCB /* tillershitch.png */; };
 		C27C7B58311FD99F0EB92434 /* firemanschair360.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B645D163F0B337C6BBF864B /* firemanschair360.png */; };
@@ -3168,7 +3169,6 @@
 		FFA660039BA9C97994257F7C /* lanyard-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 65D6BDFCE0264773446CCCAD /* lanyard-hitch.webp */; };
 		FFAD2C12340BAFCF68A36497 /* true-lovers-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 93614C0CB68F0137CFAFE47B /* true-lovers-knot.webp */; };
 		FFB10D4E6CEB3E549B74CCD6 /* diagonallashing.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA2FD3D26F162518DA12E5C /* diagonallashing.png */; };
-		FFEA072F78B20CD6AEC0BA1B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3726,6 +3726,7 @@
 		7F9F21EBFEDF2C160995F074 /* shearlashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shearlashing360.png; sourceTree = "<group>"; };
 		7FBFCA87FD8DE9A759E34259 /* lightermanshitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lightermanshitch360.json; sourceTree = "<group>"; };
 		7FEF82B3A730EAD205F9EEBC /* poldotackle360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = poldotackle360.json; sourceTree = "<group>"; };
+		80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81117C30C8F218AD3EE6126D /* barrelhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelhitch360.png; sourceTree = "<group>"; };
 		81664B32E694E030CE96A168 /* doublebowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublebowline360.json; sourceTree = "<group>"; };
 		8288C736EF71EC92E9791C3D /* zeppelinbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zeppelinbend360.png; sourceTree = "<group>"; };
@@ -3913,7 +3914,6 @@
 		B958277BB149730F4198B0AF /* clovehitch-on-bight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clovehitch-on-bight.png"; sourceTree = "<group>"; };
 		B9867FD80BFAE2C5D64E8639 /* knots3d.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9968E2F5BBF073B2E92ADD0 /* alpinebutterflyhandmethod360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod360.json; sourceTree = "<group>"; };
-		B99AC171F2943713D4BC877C /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		B9C37843677C38D8F7BE8A00 /* doublefigureeight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefigureeight360.json; sourceTree = "<group>"; };
 		BA29086D2C8F165BDD241FDD /* valdotain360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valdotain360.png; sourceTree = "<group>"; };
 		BA4E1E0F1C48F3BC20560BAE /* piwich.webp */ = {isa = PBXFileReference; path = piwich.webp; sourceTree = "<group>"; };
@@ -4258,7 +4258,6 @@
 				A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */,
 				0350E4CF8D1757241ACC7360 /* KnotDetailView.swift */,
 				920749078AF7F9F4FD1FDCBE /* KnotListView.swift */,
-				B99AC171F2943713D4BC877C /* LaunchScreenView.swift */,
 				34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */,
 				9A467291B2434E8BD37D510B /* SettingsView.swift */,
 			);
@@ -4532,6 +4531,7 @@
 				EA9D4C8F208D0EAA760E4860 /* HelloWorldView.swift */,
 				36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */,
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
+				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
 				9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
@@ -5362,32 +5362,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_4588CA8A-E0A8-4F33-9CAB-BA16A45C7ABB" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_AA2ABD68-39D1-4B12-BEE4-B8DB05135C4A" /* Architecture */ = {
+		"TEMP_218B8A60-E4D4-4F1E-AD19-F5B79DDBF38A" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
 			sourceTree = "<group>";
 		};
-		"TEMP_C1980B8E-B3A4-4AC0-B11A-4492EF478FD4" /* Application */ = {
+		"TEMP_32C4A9BD-B212-4A53-BC42-DD6E149352CC" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Application;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_FCF92E03-2932-4C3F-8CBD-B688D53588B5" /* Presentation */ = {
+		"TEMP_74072CA3-BF2C-4EC1-A91E-85BCBA8F709F" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		"TEMP_78C74F55-29A8-4610-9750-C0CB36C71581" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5495,6 +5495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A961F1C0BB4C6B1382C9E6F9 /* Assets.xcassets in Resources */,
+				573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */,
 				838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */,
 				DEF95298509AD7CA07CD0B25 /* adjustable-grip-hitch.webp in Resources */,
 				C576C09301BE3B87DAF89BAC /* adjustablehitch.json in Resources */,
@@ -6537,6 +6538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04CAE98B658DA354E03EDF6 /* Assets.xcassets in Resources */,
+				C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */,
 				DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */,
 				3E2F9127C26197EB52A675F6 /* adjustable-grip-hitch.webp in Resources */,
 				E93F3E4AFFA1B55B2E98CF97 /* adjustablehitch.json in Resources */,
@@ -7579,6 +7581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */,
+				A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */,
 				44A12C84E79C309BCC741321 /* Localizable.strings in Resources */,
 				502AB4CE894D5D8BB33A11B2 /* adjustable-grip-hitch.webp in Resources */,
 				C6A3F544165FCC05C47589BB /* adjustablehitch.json in Resources */,
@@ -8633,7 +8636,6 @@
 				18883A73BB9924E1D64A4BBC /* HelloWorldView.swift in Sources */,
 				5C33B1F18269AD33999D7131 /* KnotDetailView.swift in Sources */,
 				30566A08CD6907B55E2D86FF /* KnotListView.swift in Sources */,
-				8958E661AECA246287C9AC4A /* LaunchScreenView.swift in Sources */,
 				09F83DA7E578846846D02A53 /* LocalizationHelper.swift in Sources */,
 				E5DF6148E641772E61FDC5C8 /* MainTabView.swift in Sources */,
 				367BEF0FF3543833629598A9 /* Models.swift in Sources */,
@@ -8659,7 +8661,6 @@
 				6A9BABC15A9DF5504A5722C8 /* HelloWorldView.swift in Sources */,
 				FEB9C87E62A6521D1A611780 /* KnotDetailView.swift in Sources */,
 				97C7D141C93BA258239D7D79 /* KnotListView.swift in Sources */,
-				FFEA072F78B20CD6AEC0BA1B /* LaunchScreenView.swift in Sources */,
 				117D8A47E308E4E60A47812A /* LocalizationHelper.swift in Sources */,
 				D02F10C81AC5B9347D00B63B /* MainTabView.swift in Sources */,
 				2AD57A96D502FF9B7BBB3A33 /* Models.swift in Sources */,
@@ -8685,7 +8686,6 @@
 				28EA2D1377A06A8B6CD3090B /* HelloWorldView.swift in Sources */,
 				A21546A16537D65D51D31E55 /* KnotDetailView.swift in Sources */,
 				2F7CE71439D7FBC46398C9C5 /* KnotListView.swift in Sources */,
-				7B9DDFBDE50A8EDE36715B34 /* LaunchScreenView.swift in Sources */,
 				0D828F003EB29B78A0B5E178 /* LocalizationHelper.swift in Sources */,
 				8E3A041E42E9A9483863D4DF /* MainTabView.swift in Sources */,
 				071BE0FA355EED945E8A23CB /* Models.swift in Sources */,
@@ -8797,8 +8797,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8830,8 +8830,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8861,8 +8861,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8894,8 +8894,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8926,8 +8926,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -9035,8 +9035,8 @@
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
