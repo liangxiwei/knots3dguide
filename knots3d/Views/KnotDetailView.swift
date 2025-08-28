@@ -229,13 +229,16 @@ struct KnotDetailView: View {
                             .foregroundColor(.secondary)
 
                         FlowLayout(items: knot.classification.type) { type in
-                            Text(type)
-                                .font(.caption)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 4)
-                                .background(Color.blue.opacity(0.1))
-                                .foregroundColor(.blue)
-                                .cornerRadius(4)
+                            NavigationLink(destination: createKnotListView(for: type, tabType: .types)) {
+                                Text(type)
+                                    .font(.caption)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(Color.blue.opacity(0.1))
+                                    .foregroundColor(.blue)
+                                    .cornerRadius(4)
+                            }
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }
@@ -250,13 +253,16 @@ struct KnotDetailView: View {
 
                         FlowLayout(items: knot.classification.foundIn) {
                             foundIn in
-                            Text(foundIn)
-                                .font(.caption)
-                                .padding(.horizontal, 8)
-                                .padding(.vertical, 4)
-                                .background(Color.green.opacity(0.1))
-                                .foregroundColor(.green)
-                                .cornerRadius(4)
+                            NavigationLink(destination: createKnotListView(for: foundIn, tabType: .categories)) {
+                                Text(foundIn)
+                                    .font(.caption)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(Color.green.opacity(0.1))
+                                    .foregroundColor(.green)
+                                    .cornerRadius(4)
+                            }
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }
@@ -289,6 +295,16 @@ struct KnotDetailView: View {
         return dataManager.allKnots.first { knot in
             knot.name == name || knot.aliases?.contains(name) == true
         }
+    }
+    
+    private func createKnotListView(for categoryName: String, tabType: TabType) -> KnotListView {
+        let category = KnotCategory(
+            type: tabType == .categories ? "category" : "type",
+            name: categoryName,
+            desc: "",
+            image: ""
+        )
+        return KnotListView(category: category, tabType: tabType)
     }
 }
 
