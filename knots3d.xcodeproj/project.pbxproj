@@ -125,7 +125,6 @@
 		0A627DE682FF5C36DABA9E38 /* firemanschair.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EDED38EE78E716A3402E0F /* firemanschair.json */; };
 		0A675517CE6588B0F9939CAC /* eskimobowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 7375030CB7685A5839FFE10A /* eskimobowline.json */; };
 		0A70CAE99CC9A46D7C01C8C3 /* diamondknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 11A1A8047EA5EEBAA117132A /* diamondknot.json */; };
-		0AB0D0E38B85EF22E3E308FB /* DataLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E269669A6B310FF050929 /* DataLoadingTests.swift */; };
 		0ABBBD3B62054684CDF1CC15 /* timber-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 182B6988746AA0ABE4AD4222 /* timber-hitch.webp */; };
 		0ACE9EE4184C47F46B1A67A9 /* grannyknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = F85BE167029E4892A5BE57AE /* grannyknot360.json */; };
 		0AD1EC7697406422150AACE8 /* pedigreecowhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 00C2E2D8F46FA8FCE824DBEE /* pedigreecowhitch.json */; };
@@ -394,7 +393,6 @@
 		1F7838015B959F2E185A38C6 /* ashleys-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = 65F7C0C108734A940024D278 /* ashleys-bend.webp */; };
 		1F78BD24A9B65D19065666E0 /* backsplice.png in Resources */ = {isa = PBXBuildFile; fileRef = D145E4B2E3F35113B6087ADB /* backsplice.png */; };
 		1F90D74C93CA37306AC5EBD9 /* tarbuck.webp in Resources */ = {isa = PBXBuildFile; fileRef = DEA221C47150E88D26D9D2D5 /* tarbuck.webp */; };
-		1FDEE0B37227BA706C6BEBD2 /* DataLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E269669A6B310FF050929 /* DataLoadingTests.swift */; };
 		1FF3FECC80585A87DB049810 /* barrelhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = BD026DA75A6CEF3985BB8603 /* barrelhitch360.json */; };
 		1FFF06624A60A0D19A1FB92C /* fishermansknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 927A021AFC67C2DEF14F02B7 /* fishermansknot360.json */; };
 		20040099E486F57041D320C7 /* edwardsbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 46EB801B72900D74C0F79C53 /* edwardsbowline.json */; };
@@ -1183,7 +1181,6 @@
 		5C6A7E87C230531E38DB3032 /* granny-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */; };
 		5C7913B8D684B6BABFC97945 /* bullhitchbightmethod360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9B03C006F0F20F00EC70F /* bullhitchbightmethod360.json */; };
 		5C7E33F0FA41E9C765AFDF85 /* bloodknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */; };
-		5C8BF5B4424EE66B97C3C722 /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33191DE987A0F423C0EF3AEB /* DataValidator.swift */; };
 		5CD7FA60455AE7C684AEC496 /* tripleroll.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FF7AE6602CC47451EC92F5D /* tripleroll.json */; };
 		5CEC0636D4E7980CA5649B98 /* inuit-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */; };
 		5CEF635B8F2A0C1684334BBB /* sailorscross360.json in Resources */ = {isa = PBXBuildFile; fileRef = B43C43AFE43756B4BF6DDC03 /* sailorscross360.json */; };
@@ -2618,7 +2615,6 @@
 		CF6B5BD17D0BA515611354E0 /* grief-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DAEECD1E3FE4F241EA10BDF2 /* grief-knot.webp */; };
 		CF7DBCC995A6C1E3C1C1E8C9 /* surgeonsloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = CBFA5D20FFE2757014E64087 /* surgeonsloop360.json */; };
 		CF91A9264059247F8C183407 /* heavinglineknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = B8304D125FF06E78D4ED1601 /* heavinglineknot360.png */; };
-		CFAE209C2F1400539E84A31E /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33191DE987A0F423C0EF3AEB /* DataValidator.swift */; };
 		CFC72CD2E900E7C579318F26 /* yosemite-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = 84DFF6E864069104E2BD2B9B /* yosemite-bowline.webp */; };
 		CFECB735A10057B14A3A5624 /* dropperloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = 02DD03C1EEE7810D6639E5A4 /* dropperloop360.json */; };
 		CFF6DE512A1920585FB37381 /* becket-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2796360EB907F8B3548AF5E5 /* becket-hitch.webp */; };
@@ -2713,7 +2709,6 @@
 		D7EC24F3873066412665733C /* siberianhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 1355EB1B4D362A238ACB716B /* siberianhitch360.json */; };
 		D7FA58C071775C9FD50CC7AA /* westcountrylashing.png in Resources */ = {isa = PBXBuildFile; fileRef = ED07180BC26DA4D89E5CA666 /* westcountrylashing.png */; };
 		D83BF6F2804072F95782DC99 /* timberhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6478EE28272E50324BB4389D /* timberhitch.json */; };
-		D83FED2017DBC0D68EEF7E6C /* DataLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E269669A6B310FF050929 /* DataLoadingTests.swift */; };
 		D846317A178317484E6314CA /* huntersbend.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E25808C900EA58B76F308A /* huntersbend.png */; };
 		D847DAD7AC0F4F68B4072774 /* timber-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 182B6988746AA0ABE4AD4222 /* timber-hitch.webp */; };
 		D86413DA6E16472FF829EA47 /* yucatan360.png in Resources */ = {isa = PBXBuildFile; fileRef = 66219292082239D34D2EF82F /* yucatan360.png */; };
@@ -2760,7 +2755,6 @@
 		DCB0BD8DBE839B933DA7027D /* cleathitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 97B3E59C0C93315F020E769F /* cleathitch360.json */; };
 		DCB418CFF46E77F46FA53266 /* waterbowline.png in Resources */ = {isa = PBXBuildFile; fileRef = 675F1DD0DD7A0A61C41D3D56 /* waterbowline.png */; };
 		DCBD20F53BA742168108244F /* woggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 141C4E263C7C56BF458FD7A5 /* woggle.png */; };
-		DCC1B6D46F1E7653538F5FFA /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33191DE987A0F423C0EF3AEB /* DataValidator.swift */; };
 		DCF440AE24FF8C485EA7FD4B /* gasketcoil360.json in Resources */ = {isa = PBXBuildFile; fileRef = DF4FB09CB6EBC5F7C0DD09B1 /* gasketcoil360.json */; };
 		DD3C878964068EA247F226E8 /* gasketcoil.png in Resources */ = {isa = PBXBuildFile; fileRef = 28711DCD976E75B7D938CF93 /* gasketcoil.png */; };
 		DD6336351EFB8D43DD52C092 /* alpinebutterflyhandmethod360.png in Resources */ = {isa = PBXBuildFile; fileRef = 92EAF0212AE82387EA94ABFF /* alpinebutterflyhandmethod360.png */; };
@@ -3403,7 +3397,6 @@
 		32DF480C09D260766A902D80 /* scottslockedbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scottslockedbowline360.png; sourceTree = "<group>"; };
 		33049838954EF4707AD4DC77 /* figureeightloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figureeightloop.json; sourceTree = "<group>"; };
 		330EF604D0696147DDFC048C /* diamondknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamondknot360.png; sourceTree = "<group>"; };
-		33191DE987A0F423C0EF3AEB /* DataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
 		3330980C0BDEE7B83E98CEA6 /* adjustablehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adjustablehitch.png; sourceTree = "<group>"; };
 		33622AE9E81C0240F574A20F /* packersknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = packersknot.json; sourceTree = "<group>"; };
 		33A7F96AF238353D991FE394 /* alpinebutterflybend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterflybend360.png; sourceTree = "<group>"; };
@@ -3850,7 +3843,6 @@
 		A4F130203B4A29582C79DEE8 /* groundlinehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groundlinehitch360.json; sourceTree = "<group>"; };
 		A4F60228EE3FC033080BDE1E /* slippedgroundlinehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedgroundlinehitch360.json; sourceTree = "<group>"; };
 		A514BF84D173DA51E8CFA588 /* griefknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = griefknot.png; sourceTree = "<group>"; };
-		A59E269669A6B310FF050929 /* DataLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingTests.swift; sourceTree = "<group>"; };
 		A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */ = {isa = PBXFileReference; path = "jury-mast-knot.webp"; sourceTree = "<group>"; };
 		A622EFF992AC4882AB46CB4F /* pedigreecowhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pedigreecowhitch360.png; sourceTree = "<group>"; };
 		A650CA34BD60EBA01E46B5E9 /* scotts-locked-bowline.webp */ = {isa = PBXFileReference; path = "scotts-locked-bowline.webp"; sourceTree = "<group>"; };
@@ -4526,9 +4518,7 @@
 			children = (
 				A27EA222373518AFACAFE548 /* Assets.xcassets */,
 				E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */,
-				A59E269669A6B310FF050929 /* DataLoadingTests.swift */,
 				D5CA79CA39D8D1C28310C71E /* DataManager.swift */,
-				33191DE987A0F423C0EF3AEB /* DataValidator.swift */,
 				EA9D4C8F208D0EAA760E4860 /* HelloWorldView.swift */,
 				36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */,
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
@@ -5362,28 +5352,28 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_5AA6EF9E-70D1-45D6-A027-76E4C79FC500" /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_935B6D61-B786-47D8-BE2E-DE20CB3902A3" /* Data */ = {
+		"TEMP_1D0D3410-047B-4C1C-95E2-E1D52EC69D0B" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_CAA81A4E-2909-4B66-94CB-DFAA8A1C779E" /* Application */ = {
+		"TEMP_9CFADEF9-B41E-44E4-9332-BC7A9E5E2747" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_B315BCB1-DD94-448F-B023-2DDCD5151B27" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_DC4059D9-B27A-4931-B1FE-4C726BC6CAC7" /* Presentation */ = {
+		"TEMP_CC5D3402-1D61-4DC4-8F34-5B5DF33B561B" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -8624,9 +8614,7 @@
 				6AF56F6884B40B1E76AA5DDA /* CategoryListView.swift in Sources */,
 				80C32E177D53CB787F993F8A /* CommonViews.swift in Sources */,
 				C61CF3CBAEB193D7DA449CEB /* ContentView.swift in Sources */,
-				1FDEE0B37227BA706C6BEBD2 /* DataLoadingTests.swift in Sources */,
 				87864140A9CE8EE8087FEC2F /* DataManager.swift in Sources */,
-				CFAE209C2F1400539E84A31E /* DataValidator.swift in Sources */,
 				3B0240FDB4C4C4D1D0DCD16A /* FavoritesView.swift in Sources */,
 				66EBE058B7C11391A9C2ECB6 /* GlobalSearchView.swift in Sources */,
 				18883A73BB9924E1D64A4BBC /* HelloWorldView.swift in Sources */,
@@ -8651,9 +8639,7 @@
 				6017A12B2119ABD44B2BD765 /* CategoryListView.swift in Sources */,
 				A4F28B1632820B7303EA60A6 /* CommonViews.swift in Sources */,
 				B3DCDE72FD012293D74C9DA0 /* ContentView.swift in Sources */,
-				0AB0D0E38B85EF22E3E308FB /* DataLoadingTests.swift in Sources */,
 				DDAB1B373E098AFEB4B8B4F8 /* DataManager.swift in Sources */,
-				DCC1B6D46F1E7653538F5FFA /* DataValidator.swift in Sources */,
 				57893C9BCB70A89B06EC8157 /* FavoritesView.swift in Sources */,
 				10A44369848511D3BCB63B4D /* GlobalSearchView.swift in Sources */,
 				6A9BABC15A9DF5504A5722C8 /* HelloWorldView.swift in Sources */,
@@ -8678,9 +8664,7 @@
 				06E73BD9FBCA1D3489A6511E /* CategoryListView.swift in Sources */,
 				AA1C977D6999126DAF5B3104 /* CommonViews.swift in Sources */,
 				576ED0C388DFF2EC9D73FEBC /* ContentView.swift in Sources */,
-				D83FED2017DBC0D68EEF7E6C /* DataLoadingTests.swift in Sources */,
 				6B3B1B83AA51BABF5869ECC6 /* DataManager.swift in Sources */,
-				5C8BF5B4424EE66B97C3C722 /* DataValidator.swift in Sources */,
 				64883FD6C89468C8915A1226 /* FavoritesView.swift in Sources */,
 				C3C3B0C72C50392C82A8266A /* GlobalSearchView.swift in Sources */,
 				28EA2D1377A06A8B6CD3090B /* HelloWorldView.swift in Sources */,

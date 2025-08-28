@@ -79,46 +79,6 @@ struct SettingsView: View {
                     Text("关于")
                 }
                 
-                // 开发者测试功能（仅Debug模式显示）
-                #if DEBUG
-                Section {
-                    NavigationLink(destination: DataTestView()) {
-                        HStack {
-                            Image(systemName: "wrench.and.screwdriver")
-                                .foregroundColor(.blue)
-                                .frame(width: 20)
-                            
-                            Text("数据加载测试")
-                                .foregroundColor(.primary)
-                            
-                            Spacer()
-                            
-                            Image(systemName: "chevron.right")
-                                .foregroundColor(.gray)
-                                .font(.caption)
-                        }
-                    }
-                    
-                    NavigationLink(destination: DataValidationView()) {
-                        HStack {
-                            Image(systemName: "checkmark.shield")
-                                .foregroundColor(.green)
-                                .frame(width: 20)
-                            
-                            Text("数据完整性验证")
-                                .foregroundColor(.primary)
-                            
-                            Spacer()
-                            
-                            Image(systemName: "chevron.right")
-                                .foregroundColor(.gray)
-                                .font(.caption)
-                        }
-                    }
-                } header: {
-                    Text("开发者工具")
-                }
-                #endif
             }
             .navigationTitle(LocalizedStrings.TabBar.settings)
             .navigationBarTitleDisplayMode(.large)
