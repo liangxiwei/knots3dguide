@@ -92,6 +92,7 @@
 		07346E1C2CDB8F8AAE4C52D2 /* reeverknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = DD98E2CE3F1ADA7E1F10CABF /* reeverknot360.png */; };
 		07576F666B27DBBC77ABDC35 /* clovehitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A95F32BA07F6AB7ACFA624F /* clovehitch.json */; };
 		0779D0CABB7CB9757058FB2E /* scaffoldknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = AD91F2C5BDA07EC816303DF4 /* scaffoldknot360.png */; };
+		0786EB25F91EA92363287015 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		0798EA088F280945D0C16038 /* sandiegojam.png in Resources */ = {isa = PBXBuildFile; fileRef = 69384A26EB0777A5D7AD6593 /* sandiegojam.png */; };
 		07CE8EFC39C71A35C4C8C4E0 /* bowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 64E511F1FC3BC71559D2171E /* bowline.json */; };
 		07CF3B535FB6E89E8BDAE0FD /* celticknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E0E7E21005B6BD090D0B /* celticknot360.png */; };
@@ -225,6 +226,7 @@
 		127525BCCBBD7D296269057D /* lariatloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = 59C47FB70EB9F14D97A456DE /* lariatloop360.json */; };
 		12B6B5E2A40845E11ADB024E /* roundlashing.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A1C42304A64EFFDD0BFDE5 /* roundlashing.png */; };
 		12C2AEEBEF86A98107C7AC8B /* distel-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 35114F13564474F11CDB80E0 /* distel-hitch.webp */; };
+		12C6EC851F5589B53FB591A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		12D98EE73AD048A237568F24 /* jugknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7E4D4C8388C6F960E0E66 /* jugknot.png */; };
 		12DCA95B7D0AD721A28AE5DD /* timberhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6478EE28272E50324BB4389D /* timberhitch.json */; };
 		12DDDB040E29D56A7C644023 /* slippedclovehitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = FB880E6DD81C2A51717D5393 /* slippedclovehitch360.json */; };
@@ -640,7 +642,6 @@
 		32624D21A5DFE2287212227A /* muntermuleoverhand.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B52339DF686E97CFBE2ED /* muntermuleoverhand.png */; };
 		32849AE26D5590B30DDE9048 /* perfectionloop360.png in Resources */ = {isa = PBXBuildFile; fileRef = 916D70EC118880F41F7C2158 /* perfectionloop360.png */; };
 		328680CA90ABD42F10267F3E /* constrictorknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = E964B77CDAC56F8A0B7D7E2E /* constrictorknot360.png */; };
-		329419D3C7DC0C6D17B7C111 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		32C6CA814C2E5C910FC5166E /* bullhitchbightmethod360.png in Resources */ = {isa = PBXBuildFile; fileRef = 17E3B48E9C02E8694DFCF965 /* bullhitchbightmethod360.png */; };
 		32CF1F96E990344DD5684163 /* klemheist360.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B835B610C3662A8458427 /* klemheist360.png */; };
 		33088517073697F10F786F28 /* crownknot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBBDBEEF13A0272CFE830E00 /* crownknot.json */; };
@@ -860,7 +861,6 @@
 		448BDC173AAAB52E044001D8 /* doubleconstrictor360.png in Resources */ = {isa = PBXBuildFile; fileRef = 315DC4110F67EA535DAA2904 /* doubleconstrictor360.png */; };
 		44947B192BD976511B0DDADA /* bunnyears360.json in Resources */ = {isa = PBXBuildFile; fileRef = 889CDB4DC6E34314DAD93C56 /* bunnyears360.json */; };
 		449F561FBED0BD715F940F38 /* fishermans-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6A438077E73EB5CF15B0EB4E /* fishermans-knot.webp */; };
-		44A12C84E79C309BCC741321 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		44A46F576F2C07DC4BEEAC60 /* bowlineonabight360.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C00D9A96A3C01A3ACAEA30 /* bowlineonabight360.png */; };
 		44D35E8448BB98A9660A60FA /* doublecoin360.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4200F410173214FEC84759 /* doublecoin360.png */; };
 		4500B6B8AF57FEBDAEFED659 /* surgeonsknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 661C5B3B8F7C9F150539621E /* surgeonsknot360.json */; };
@@ -1013,6 +1013,7 @@
 		523C089C825C2477CFBC27B9 /* lightermanshitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FBFCA87FD8DE9A759E34259 /* lightermanshitch360.json */; };
 		5254F8F1B713F2CC6C1A5A67 /* slippedbuntline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F26877A506BC42047AEF305 /* slippedbuntline.png */; };
 		52647BE1D0FC0BA2D4D2F38D /* constrictorknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A8674D0BFD3AA82C844C258 /* constrictorknot360.json */; };
+		526C9BF9E75629E5730D1BEC /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		527D506BF71DEE01E4E72480 /* palomar360.json in Resources */ = {isa = PBXBuildFile; fileRef = E68FB79DB75ECB4B09F5F721 /* palomar360.json */; };
 		52896834965A7F3315513FE4 /* loops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 351087120612A40208F7E956 /* loops.jpg */; };
 		5289C2D7BA7FCC4AF1A4FD79 /* catspaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */; };
@@ -1109,6 +1110,7 @@
 		58339429952CD6F4F7AC9839 /* prusikendline.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B771BC02F28B6A43615DD7D /* prusikendline.json */; };
 		5847AE8FD92B10F7EACDB63F /* yucatan-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DE14B9B4BD577EF9BDA9E26A /* yucatan-knot.webp */; };
 		585169785EEEA3043434FD4C /* alpinebutterfly360.json in Resources */ = {isa = PBXBuildFile; fileRef = F97DC0575D2F51FF8BC70BFF /* alpinebutterfly360.json */; };
+		58675D2F13BCA556AD46F2E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		58737CEFD81D82A809C90B18 /* dropperloop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7180DEB53CC1D695DCCF94DF /* dropperloop.png */; };
 		587F846E26E9E8D4360CC5DE /* buntline.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0BEFB6B270D080A19AE30 /* buntline.png */; };
 		58829D776BC8043910CB9952 /* fishermanseye360.png in Resources */ = {isa = PBXBuildFile; fileRef = 6203FA3DA14AD7A655FD0A6B /* fishermanseye360.png */; };
@@ -1654,7 +1656,6 @@
 		836C051B4288FDB426D78276 /* osselhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 401F91F7F33D77E2A1895D28 /* osselhitch360.json */; };
 		8374082D583F0BB27F152B9E /* rapalaknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 79B8CAD9F891702838AA50CD /* rapalaknot.json */; };
 		837F6D10ECD310649FDD177F /* beckethitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D9A2A0B7933F506CCEB359 /* beckethitch.png */; };
-		838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		83A0BCA6E1807C5EDDFFE8EE /* midshipmans-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 741FB520B574CD1D8FA994B3 /* midshipmans-hitch.webp */; };
 		83B0A31D2A70D2F2E787495F /* runningbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 23400FF1BACA4E221E457165 /* runningbowline.json */; };
 		83BD12E069A05DCA3BE32415 /* sheepshank.json in Resources */ = {isa = PBXBuildFile; fileRef = 64330E0664AD0CFF89A7EE15 /* sheepshank.json */; };
@@ -2767,11 +2768,11 @@
 		DD6336351EFB8D43DD52C092 /* alpinebutterflyhandmethod360.png in Resources */ = {isa = PBXBuildFile; fileRef = 92EAF0212AE82387EA94ABFF /* alpinebutterflyhandmethod360.png */; };
 		DD6D4A036B8B3DE219FA7861 /* runningbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 23400FF1BACA4E221E457165 /* runningbowline.json */; };
 		DD70B9B353EC9AFDB7B8ED04 /* slippedlappknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 8518F921B96D96E0617507E9 /* slippedlappknot360.png */; };
-		DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		DD7946F152438CCC32E73F9E /* diamond-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = C8EC06DC095441C5BB22F56D /* diamond-knot.webp */; };
 		DD81E81A5CE72C57695973A6 /* roundturntwohalfhitches.json in Resources */ = {isa = PBXBuildFile; fileRef = E57A2C9E3EE5947964EEAFC0 /* roundturntwohalfhitches.json */; };
 		DDAB1B373E098AFEB4B8B4F8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA79CA39D8D1C28310C71E /* DataManager.swift */; };
 		DDBF55A180F3FAE19E8F3AD9 /* slipknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE52281BC710F262B97F0AD /* slipknot360.png */; };
+		DDCA2E4B9A99CFA706C7D49C /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		DDD19641125286251439761D /* transom.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A98F0A9F2DC715EEF2CAF9A /* transom.png */; };
 		DDD9A515D07B32F5B40B5C53 /* whipping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3B7C8D0D3F0A6982459C606 /* whipping.jpg */; };
 		DDE2D5DB498A8F334B84DD0A /* backsplice360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9AF92A78CDA22E1748DBF /* backsplice360.json */; };
@@ -2866,7 +2867,6 @@
 		E45C869FD3D48169AF1259A9 /* clovehitchtwoloops360.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15619D8A09F65E79DDDBA5 /* clovehitchtwoloops360.png */; };
 		E45F7BA048F7E7349F39021A /* blakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9774BB2B3E849093ED6F9 /* blakes.json */; };
 		E465FFA37982646BE607BA49 /* snugglehitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E7F619DCAE23C13C6CB37 /* snugglehitch360.json */; };
-		E4798425879191DB16A3014C /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		E4B6B9192F2B1138699DA5FF /* heavinglineknot.json in Resources */ = {isa = PBXBuildFile; fileRef = CA16500AA11D11D0B2C1351F /* heavinglineknot.json */; };
 		E4C45D8CE7DD01D99B0CB667 /* overhand-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 33E3CE1961BE8C727E3B0237 /* overhand-knot.webp */; };
 		E5009110CEE27624364F8192 /* squarelashing.json in Resources */ = {isa = PBXBuildFile; fileRef = 30DFEDE73A73EE782EAFEB89 /* squarelashing.json */; };
@@ -2932,7 +2932,6 @@
 		EAD6DB1F8C9EDA30D2A110FE /* pitzen360.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CED66FFF651EB1739AA67A /* pitzen360.png */; };
 		EB059E12E13FFCACB72866A1 /* albertoknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C51968B0626FBDA61CCC9AE /* albertoknot360.json */; };
 		EB17918FCC80E7957C600BEF /* doubleoverhand.json in Resources */ = {isa = PBXBuildFile; fileRef = F01C3E08E0D7A87DD9FAE74D /* doubleoverhand.json */; };
-		EB1AB4023CD44376AFA2A38A /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		EB53F73D6E25C7022B74FB2F /* halfhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 76BDDB463A4B79EF4D07B1ED /* halfhitch.json */; };
 		EB6F42B7DA0245354D135185 /* cleathitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4448EC2FE26979DD9FC5F28E /* cleathitch.png */; };
 		EB6FB901EE944BE8A898E9F0 /* figure-eight-follow-through.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8912C53DFD42B865E251EA88 /* figure-eight-follow-through.webp */; };
@@ -2986,6 +2985,7 @@
 		F063E31CC13FE8CAC99F4FA2 /* kalmyk.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F817FAA3481BB26653B998 /* kalmyk.png */; };
 		F06B2172F81B19B01B1A2A1B /* chainsinnet360.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C4762465A14AE35AED247F /* chainsinnet360.json */; };
 		F07C77CD52987F8F44D9439C /* grief-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DAEECD1E3FE4F241EA10BDF2 /* grief-knot.webp */; };
+		F07CE21DC6AA3725EDF1A022 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		F07F2A1DD5F331C341F45390 /* snapbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D521B956CE523BBE18478 /* snapbowline.json */; };
 		F09E8D7395666044940E519F /* double-harness-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */; };
 		F09FC5363EF50A552E3BCEF0 /* bowknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D5AE0055FD8970D9E54383 /* bowknot360.png */; };
@@ -3202,7 +3202,6 @@
 		069AC0077D7CA055AF8D20E5 /* doubleharnessbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleharnessbend360.json; sourceTree = "<group>"; };
 		06DA7FF46FBE507D03F35FC1 /* heavinglineknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heavinglineknot360.json; sourceTree = "<group>"; };
 		070720F0D992BAB7B586CE1C /* beckethitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitch360.png; sourceTree = "<group>"; };
-		074D0A0C93814F6F3A4E90C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		076B30E24B3CBC3239C2366C /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		08531690B00611C67BEFDD2A /* diamondknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot360.json; sourceTree = "<group>"; };
 		085D9132DB9AD6482B096BB8 /* round-lashing.webp */ = {isa = PBXFileReference; path = "round-lashing.webp"; sourceTree = "<group>"; };
@@ -3210,7 +3209,6 @@
 		089F57C3FF9D3947D08733FC /* marlinspikehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marlinspikehitch.json; sourceTree = "<group>"; };
 		08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot360.png; sourceTree = "<group>"; };
 		08D2FC5133A691D48D4EBE9C /* snapbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapbowline.png; sourceTree = "<group>"; };
-		091BF9DB0231E2E2C70D59FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0965D7B8F7A9B932E8C11DDA /* palomar-knot.webp */ = {isa = PBXFileReference; path = "palomar-knot.webp"; sourceTree = "<group>"; };
 		09EDED38EE78E716A3402E0F /* firemanschair.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanschair.json; sourceTree = "<group>"; };
 		0A037777FB04842B3E8BB94F /* flemishflake.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flemishflake.json; sourceTree = "<group>"; };
@@ -3249,6 +3247,7 @@
 		119AF796155FE93C9BC37B57 /* squarelashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarelashing360.png; sourceTree = "<group>"; };
 		11A1A8047EA5EEBAA117132A /* diamondknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot.json; sourceTree = "<group>"; };
 		1208EF0249A12C1E8E56871F /* sailors-cross.webp */ = {isa = PBXFileReference; path = "sailors-cross.webp"; sourceTree = "<group>"; };
+		1293D34E9FC7C914A1FDEE6C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		12CC251F6A56480E5082D1CB /* double-bowline.webp */ = {isa = PBXFileReference; path = "double-bowline.webp"; sourceTree = "<group>"; };
 		12E6B917889B6ED15824F0BF /* loopknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loopknot360.png; sourceTree = "<group>"; };
 		130B1560568AE72BF634A2FB /* clove-hitch.webp */ = {isa = PBXFileReference; path = "clove-hitch.webp"; sourceTree = "<group>"; };
@@ -3362,6 +3361,7 @@
 		2891E2860787DB8E7F09DF6A /* gasket-coil.webp */ = {isa = PBXFileReference; path = "gasket-coil.webp"; sourceTree = "<group>"; };
 		28A3E73BB83F747849D3E245 /* backhandhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch360.json; sourceTree = "<group>"; };
 		28B379E58EB544751C7238B5 /* slip-figure-eight.webp */ = {isa = PBXFileReference; path = "slip-figure-eight.webp"; sourceTree = "<group>"; };
+		292857E4828B9A993B778FB3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		29667187170F62ADD4755DBD /* pile-hitch.webp */ = {isa = PBXFileReference; path = "pile-hitch.webp"; sourceTree = "<group>"; };
 		2A2A2974134E72C4527EE904 /* directionalfigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalfigureeight360.png; sourceTree = "<group>"; };
 		2A305CBA4AFBA8E497B587E0 /* davyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = davyknot.json; sourceTree = "<group>"; };
@@ -3544,7 +3544,6 @@
 		5386A254BA85A3BE890BB79D /* slippedclovehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedclovehitch.png; sourceTree = "<group>"; };
 		5386B8F9D72F2FF78059CA5F /* doubleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleoverhand360.json; sourceTree = "<group>"; };
 		5388B714CA9DEE3FF83E1A1B /* catspaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catspaw.png; sourceTree = "<group>"; };
-		53E26353A7D16EF5BC41CD10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5430E12F756B316E870E5CA6 /* clove-hitch-on-a-bight.webp */ = {isa = PBXFileReference; path = "clove-hitch-on-a-bight.webp"; sourceTree = "<group>"; };
 		54AAC043BA054C0B040BEF72 /* multipleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multipleoverhand.png; sourceTree = "<group>"; };
 		5526001104EF677F714E7788 /* shearlashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shearlashing.json; sourceTree = "<group>"; };
@@ -3627,7 +3626,6 @@
 		65F7C0C108734A940024D278 /* ashleys-bend.webp */ = {isa = PBXFileReference; path = "ashleys-bend.webp"; sourceTree = "<group>"; };
 		661C5B3B8F7C9F150539621E /* surgeonsknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot360.json; sourceTree = "<group>"; };
 		66219292082239D34D2EF82F /* yucatan360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yucatan360.png; sourceTree = "<group>"; };
-		66C9A314BFEF23160D7F3923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6736CF66453D284D012FDE26 /* lariatloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lariatloop360.png; sourceTree = "<group>"; };
 		675F1DD0DD7A0A61C41D3D56 /* waterbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterbowline.png; sourceTree = "<group>"; };
 		678600B505C8E3D16EAAD39D /* beckethitchslipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitchslipped.png; sourceTree = "<group>"; };
@@ -3687,6 +3685,7 @@
 		7180DEB53CC1D695DCCF94DF /* dropperloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropperloop.png; sourceTree = "<group>"; };
 		72123B1C637FAD07BA7853F7 /* jugknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknot360.json; sourceTree = "<group>"; };
 		7216F9543DD5E7539CDB6B10 /* multi_loop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multi_loop.jpg; sourceTree = "<group>"; };
+		72B37B96B992A9F803E07B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		72CC63B91545E07A59EC5672 /* jar-sling-knot-bight-method.webp */ = {isa = PBXFileReference; path = "jar-sling-knot-bight-method.webp"; sourceTree = "<group>"; };
 		730024598CC09D744FE2D89A /* doublecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublecoin.png; sourceTree = "<group>"; };
 		731196939F7BF0A66B1A2A1E /* stevedoresknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stevedoresknot360.png; sourceTree = "<group>"; };
@@ -4129,6 +4128,7 @@
 		EA1C92803ED6ADA2462E3F26 /* carrickbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carrickbend360.json; sourceTree = "<group>"; };
 		EA2569ED2A645959E9940C46 /* carrickbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrickbend360.png; sourceTree = "<group>"; };
 		EA47418F265F5FF824FDDEFF /* albrightknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albrightknot360.png; sourceTree = "<group>"; };
+		EA59F17781A3627D0CCAC5A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EA9D4C8F208D0EAA760E4860 /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
 		EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */ = {isa = PBXFileReference; path = "truckie-hitch.webp"; sourceTree = "<group>"; };
 		EACAE746084A9C345A96AB4F /* lightermanshitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch.png; sourceTree = "<group>"; };
@@ -4247,7 +4247,6 @@
 				CFCA797D5E9744E11C722ECE /* knots_data.json */,
 				8EC474D26A137928A604DDD2 /* category */,
 				8B07CC4C8469240784092548 /* images */,
-				8AB0B5477E3A25635434AD5E /* locale */,
 				F11139C0E7247F6CE3A20703 /* sprite */,
 			);
 			path = Resources;
@@ -4277,15 +4276,6 @@
 				B9867FD80BFAE2C5D64E8639 /* knots3d.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8AB0B5477E3A25635434AD5E /* locale */ = {
-			isa = PBXGroup;
-			children = (
-				31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */,
-				7B864340E465A2EE6D992730 /* Localizable.strings */,
-			);
-			path = locale;
 			sourceTree = "<group>";
 		};
 		8B07CC4C8469240784092548 /* images */ = {
@@ -4538,6 +4528,8 @@
 				36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */,
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
+				86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */,
+				80B2550209F6BE98550A283F /* Localizable.strings */,
 				9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
@@ -5368,32 +5360,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_14D5E2AF-06A8-40F0-8104-62B40D4D2521" /* Presentation */ = {
+		"TEMP_0E90D9F2-FE3C-4D2D-A8FB-D21436626D6C" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presentation;
+			path = Architecture;
 			sourceTree = "<group>";
 		};
-		"TEMP_3A9C40B1-BA49-4174-80B1-E68130A64810" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_78ABF8A1-8823-4F5A-AC4E-93283377D0C3" /* Application */ = {
+		"TEMP_44067094-F32B-451A-8FDD-85964A204CCC" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_80F7F6A8-1649-4329-BB34-D2379E30A943" /* Architecture */ = {
+		"TEMP_A5D4219B-45C4-476A-B29C-4328663045B8" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Architecture;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_DD179810-8D8A-4D57-AA35-A50B9CE53FD7" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5502,8 +5494,8 @@
 			files = (
 				A961F1C0BB4C6B1382C9E6F9 /* Assets.xcassets in Resources */,
 				573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */,
-				EB1AB4023CD44376AFA2A38A /* LaunchScreen.strings in Resources */,
-				838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */,
+				DDCA2E4B9A99CFA706C7D49C /* LaunchScreen.strings in Resources */,
+				58675D2F13BCA556AD46F2E9 /* Localizable.strings in Resources */,
 				DEF95298509AD7CA07CD0B25 /* adjustable-grip-hitch.webp in Resources */,
 				C576C09301BE3B87DAF89BAC /* adjustablehitch.json in Resources */,
 				79B20CDAA5C7CFE27A7B5488 /* adjustablehitch.png in Resources */,
@@ -6546,8 +6538,8 @@
 			files = (
 				E04CAE98B658DA354E03EDF6 /* Assets.xcassets in Resources */,
 				C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */,
-				329419D3C7DC0C6D17B7C111 /* LaunchScreen.strings in Resources */,
-				DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */,
+				F07CE21DC6AA3725EDF1A022 /* LaunchScreen.strings in Resources */,
+				12C6EC851F5589B53FB591A9 /* Localizable.strings in Resources */,
 				3E2F9127C26197EB52A675F6 /* adjustable-grip-hitch.webp in Resources */,
 				E93F3E4AFFA1B55B2E98CF97 /* adjustablehitch.json in Resources */,
 				13A887B404D6403A037CAFDC /* adjustablehitch.png in Resources */,
@@ -7590,8 +7582,8 @@
 			files = (
 				B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */,
 				A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */,
-				E4798425879191DB16A3014C /* LaunchScreen.strings in Resources */,
-				44A12C84E79C309BCC741321 /* Localizable.strings in Resources */,
+				526C9BF9E75629E5730D1BEC /* LaunchScreen.strings in Resources */,
+				0786EB25F91EA92363287015 /* Localizable.strings in Resources */,
 				502AB4CE894D5D8BB33A11B2 /* adjustable-grip-hitch.webp in Resources */,
 				C6A3F544165FCC05C47589BB /* adjustablehitch.json in Resources */,
 				5176E80A75FD98062F15C3D7 /* adjustablehitch.png in Resources */,
@@ -8709,22 +8701,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */ = {
+		80B2550209F6BE98550A283F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				66C9A314BFEF23160D7F3923 /* en */,
-				091BF9DB0231E2E2C70D59FD /* zh-Hans */,
-			);
-			name = LaunchScreen.strings;
-			sourceTree = "<group>";
-		};
-		7B864340E465A2EE6D992730 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				074D0A0C93814F6F3A4E90C3 /* en */,
-				53E26353A7D16EF5BC41CD10 /* zh-Hans */,
+				72B37B96B992A9F803E07B13 /* en */,
+				292857E4828B9A993B778FB3 /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA59F17781A3627D0CCAC5A9 /* en */,
+				1293D34E9FC7C914A1FDEE6C /* zh-Hans */,
+			);
+			name = LaunchScreen.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
