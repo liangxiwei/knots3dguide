@@ -93,3 +93,6 @@
 /* Navigation */
 "nav_knot_list" = "绳结列表";
 "nav_knot_detail" = "绳结详情";
+
+/* Launch Screen */
+"app_subtitle" = "学习绳结的最佳伙伴";

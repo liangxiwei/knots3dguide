@@ -640,6 +640,7 @@
 		32624D21A5DFE2287212227A /* muntermuleoverhand.png in Resources */ = {isa = PBXBuildFile; fileRef = 434B52339DF686E97CFBE2ED /* muntermuleoverhand.png */; };
 		32849AE26D5590B30DDE9048 /* perfectionloop360.png in Resources */ = {isa = PBXBuildFile; fileRef = 916D70EC118880F41F7C2158 /* perfectionloop360.png */; };
 		328680CA90ABD42F10267F3E /* constrictorknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = E964B77CDAC56F8A0B7D7E2E /* constrictorknot360.png */; };
+		329419D3C7DC0C6D17B7C111 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		32C6CA814C2E5C910FC5166E /* bullhitchbightmethod360.png in Resources */ = {isa = PBXBuildFile; fileRef = 17E3B48E9C02E8694DFCF965 /* bullhitchbightmethod360.png */; };
 		32CF1F96E990344DD5684163 /* klemheist360.png in Resources */ = {isa = PBXBuildFile; fileRef = A81B835B610C3662A8458427 /* klemheist360.png */; };
 		33088517073697F10F786F28 /* crownknot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBBDBEEF13A0272CFE830E00 /* crownknot.json */; };
@@ -2865,6 +2866,7 @@
 		E45C869FD3D48169AF1259A9 /* clovehitchtwoloops360.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15619D8A09F65E79DDDBA5 /* clovehitchtwoloops360.png */; };
 		E45F7BA048F7E7349F39021A /* blakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9774BB2B3E849093ED6F9 /* blakes.json */; };
 		E465FFA37982646BE607BA49 /* snugglehitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E7F619DCAE23C13C6CB37 /* snugglehitch360.json */; };
+		E4798425879191DB16A3014C /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		E4B6B9192F2B1138699DA5FF /* heavinglineknot.json in Resources */ = {isa = PBXBuildFile; fileRef = CA16500AA11D11D0B2C1351F /* heavinglineknot.json */; };
 		E4C45D8CE7DD01D99B0CB667 /* overhand-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 33E3CE1961BE8C727E3B0237 /* overhand-knot.webp */; };
 		E5009110CEE27624364F8192 /* squarelashing.json in Resources */ = {isa = PBXBuildFile; fileRef = 30DFEDE73A73EE782EAFEB89 /* squarelashing.json */; };
@@ -2930,6 +2932,7 @@
 		EAD6DB1F8C9EDA30D2A110FE /* pitzen360.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CED66FFF651EB1739AA67A /* pitzen360.png */; };
 		EB059E12E13FFCACB72866A1 /* albertoknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C51968B0626FBDA61CCC9AE /* albertoknot360.json */; };
 		EB17918FCC80E7957C600BEF /* doubleoverhand.json in Resources */ = {isa = PBXBuildFile; fileRef = F01C3E08E0D7A87DD9FAE74D /* doubleoverhand.json */; };
+		EB1AB4023CD44376AFA2A38A /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */; };
 		EB53F73D6E25C7022B74FB2F /* halfhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 76BDDB463A4B79EF4D07B1ED /* halfhitch.json */; };
 		EB6F42B7DA0245354D135185 /* cleathitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4448EC2FE26979DD9FC5F28E /* cleathitch.png */; };
 		EB6FB901EE944BE8A898E9F0 /* figure-eight-follow-through.webp in Resources */ = {isa = PBXBuildFile; fileRef = 8912C53DFD42B865E251EA88 /* figure-eight-follow-through.webp */; };
@@ -3207,6 +3210,7 @@
 		089F57C3FF9D3947D08733FC /* marlinspikehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marlinspikehitch.json; sourceTree = "<group>"; };
 		08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot360.png; sourceTree = "<group>"; };
 		08D2FC5133A691D48D4EBE9C /* snapbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapbowline.png; sourceTree = "<group>"; };
+		091BF9DB0231E2E2C70D59FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0965D7B8F7A9B932E8C11DDA /* palomar-knot.webp */ = {isa = PBXFileReference; path = "palomar-knot.webp"; sourceTree = "<group>"; };
 		09EDED38EE78E716A3402E0F /* firemanschair.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanschair.json; sourceTree = "<group>"; };
 		0A037777FB04842B3E8BB94F /* flemishflake.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flemishflake.json; sourceTree = "<group>"; };
@@ -3623,6 +3627,7 @@
 		65F7C0C108734A940024D278 /* ashleys-bend.webp */ = {isa = PBXFileReference; path = "ashleys-bend.webp"; sourceTree = "<group>"; };
 		661C5B3B8F7C9F150539621E /* surgeonsknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot360.json; sourceTree = "<group>"; };
 		66219292082239D34D2EF82F /* yucatan360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yucatan360.png; sourceTree = "<group>"; };
+		66C9A314BFEF23160D7F3923 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6736CF66453D284D012FDE26 /* lariatloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lariatloop360.png; sourceTree = "<group>"; };
 		675F1DD0DD7A0A61C41D3D56 /* waterbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterbowline.png; sourceTree = "<group>"; };
 		678600B505C8E3D16EAAD39D /* beckethitchslipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitchslipped.png; sourceTree = "<group>"; };
@@ -4277,6 +4282,7 @@
 		8AB0B5477E3A25635434AD5E /* locale */ = {
 			isa = PBXGroup;
 			children = (
+				31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */,
 				7B864340E465A2EE6D992730 /* Localizable.strings */,
 			);
 			path = locale;
@@ -5362,32 +5368,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_218B8A60-E4D4-4F1E-AD19-F5B79DDBF38A" /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_32C4A9BD-B212-4A53-BC42-DD6E149352CC" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_74072CA3-BF2C-4EC1-A91E-85BCBA8F709F" /* Presentation */ = {
+		"TEMP_14D5E2AF-06A8-40F0-8104-62B40D4D2521" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_78C74F55-29A8-4610-9750-C0CB36C71581" /* Application */ = {
+		"TEMP_3A9C40B1-BA49-4174-80B1-E68130A64810" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_78ABF8A1-8823-4F5A-AC4E-93283377D0C3" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_80F7F6A8-1649-4329-BB34-D2379E30A943" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5496,6 +5502,7 @@
 			files = (
 				A961F1C0BB4C6B1382C9E6F9 /* Assets.xcassets in Resources */,
 				573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */,
+				EB1AB4023CD44376AFA2A38A /* LaunchScreen.strings in Resources */,
 				838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */,
 				DEF95298509AD7CA07CD0B25 /* adjustable-grip-hitch.webp in Resources */,
 				C576C09301BE3B87DAF89BAC /* adjustablehitch.json in Resources */,
@@ -6539,6 +6546,7 @@
 			files = (
 				E04CAE98B658DA354E03EDF6 /* Assets.xcassets in Resources */,
 				C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */,
+				329419D3C7DC0C6D17B7C111 /* LaunchScreen.strings in Resources */,
 				DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */,
 				3E2F9127C26197EB52A675F6 /* adjustable-grip-hitch.webp in Resources */,
 				E93F3E4AFFA1B55B2E98CF97 /* adjustablehitch.json in Resources */,
@@ -7582,6 +7590,7 @@
 			files = (
 				B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */,
 				A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */,
+				E4798425879191DB16A3014C /* LaunchScreen.strings in Resources */,
 				44A12C84E79C309BCC741321 /* Localizable.strings in Resources */,
 				502AB4CE894D5D8BB33A11B2 /* adjustable-grip-hitch.webp in Resources */,
 				C6A3F544165FCC05C47589BB /* adjustablehitch.json in Resources */,
@@ -8700,6 +8709,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		31D2AD88295EF6B2D46100D9 /* LaunchScreen.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C9A314BFEF23160D7F3923 /* en */,
+				091BF9DB0231E2E2C70D59FD /* zh-Hans */,
+			);
+			name = LaunchScreen.strings;
+			sourceTree = "<group>";
+		};
 		7B864340E465A2EE6D992730 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

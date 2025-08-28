@@ -93,3 +93,6 @@
 /* Navigation */
 "nav_knot_list" = "Knot List";
 "nav_knot_detail" = "Knot Detail";
+
+/* Launch Screen */
+"app_subtitle" = "Your Ultimate Knot Learning Companion";

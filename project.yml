@@ -2,6 +2,9 @@ name: knots3d
 options:
   bundleIdPrefix: mozata.knots
   developmentLanguage: en
+  localizations:
+    - en
+    - zh-Hans
   deploymentTarget:
     iOS: 16
     macOS: 13.0
