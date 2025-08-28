@@ -3,9 +3,9 @@ options:
   bundleIdPrefix: mozata.knots
   developmentLanguage: en
   deploymentTarget:
-    iOS: 15
-    macOS: 15.5
-    visionOS: 2.5
+    iOS: 16
+    macOS: 13.0
+    visionOS: 1.0
 
 settings:
   base:
@@ -52,3 +52,5 @@ targets:
       INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]: UIStatusBarStyleDefault
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+      INFOPLIST_KEY_CFBundleDisplayName: Knots 3D Guide
+      INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education

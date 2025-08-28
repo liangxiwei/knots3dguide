@@ -1549,6 +1549,7 @@
 		7B648B2BC91D979CC6B97925 /* storage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 715CDB6CCA16073EC4CD8963 /* storage.jpg */; };
 		7B64F3C6F4A68961B6C7A345 /* highwaymans-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = FCABA9B4E3D8FE1458309182 /* highwaymans-hitch.webp */; };
 		7B80DA24B4DCE44AF7DFBAB1 /* jugknot.json in Resources */ = {isa = PBXBuildFile; fileRef = A1F65A309D843FF8C74C27A6 /* jugknot.json */; };
+		7B9DDFBDE50A8EDE36715B34 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 		7BA575B653522F5CD5BC003F /* klemheist.webp in Resources */ = {isa = PBXBuildFile; fileRef = A8F2928FDAFA16A0548DFF28 /* klemheist.webp */; };
 		7BA8BC926019A7C53D5D5668 /* rapalaknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5826BEEEA4C0800C69676A3C /* rapalaknot360.png */; };
 		7BB8405AF7000CF34632690A /* diamondknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 08531690B00611C67BEFDD2A /* diamondknot360.json */; };
@@ -1711,6 +1712,7 @@
 		89318C4349D2377127B6B955 /* doublefishermans.json in Resources */ = {isa = PBXBuildFile; fileRef = 772FC458029234BA0BB2697F /* doublefishermans.json */; };
 		893B41C55F865397EB277851 /* sailorscoil.json in Resources */ = {isa = PBXBuildFile; fileRef = 562810D8CCEFC5F2CF228F89 /* sailorscoil.json */; };
 		89548B77B5B41C8037B46D47 /* kreh-loop.webp in Resources */ = {isa = PBXBuildFile; fileRef = D2E3B447C9059CC0D035F61B /* kreh-loop.webp */; };
+		8958E661AECA246287C9AC4A /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 		896BFCFD7A95585EB1A61C9F /* bends.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A2693873B6652E7F28A364 /* bends.jpg */; };
 		898CB277D8F05B9903E50306 /* transom.json in Resources */ = {isa = PBXBuildFile; fileRef = C780A039D1E2F412C187B6CC /* transom.json */; };
 		89900D3BC9EFAD0D97F033A0 /* bellringer360.json in Resources */ = {isa = PBXBuildFile; fileRef = E17FB96FA35330D4E2D144A2 /* bellringer360.json */; };
@@ -3166,6 +3168,7 @@
 		FFA660039BA9C97994257F7C /* lanyard-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 65D6BDFCE0264773446CCCAD /* lanyard-hitch.webp */; };
 		FFAD2C12340BAFCF68A36497 /* true-lovers-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 93614C0CB68F0137CFAFE47B /* true-lovers-knot.webp */; };
 		FFB10D4E6CEB3E549B74CCD6 /* diagonallashing.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA2FD3D26F162518DA12E5C /* diagonallashing.png */; };
+		FFEA072F78B20CD6AEC0BA1B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AC171F2943713D4BC877C /* LaunchScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3910,6 +3913,7 @@
 		B958277BB149730F4198B0AF /* clovehitch-on-bight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clovehitch-on-bight.png"; sourceTree = "<group>"; };
 		B9867FD80BFAE2C5D64E8639 /* knots3d.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9968E2F5BBF073B2E92ADD0 /* alpinebutterflyhandmethod360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod360.json; sourceTree = "<group>"; };
+		B99AC171F2943713D4BC877C /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		B9C37843677C38D8F7BE8A00 /* doublefigureeight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefigureeight360.json; sourceTree = "<group>"; };
 		BA29086D2C8F165BDD241FDD /* valdotain360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valdotain360.png; sourceTree = "<group>"; };
 		BA4E1E0F1C48F3BC20560BAE /* piwich.webp */ = {isa = PBXFileReference; path = piwich.webp; sourceTree = "<group>"; };
@@ -4254,6 +4258,7 @@
 				A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */,
 				0350E4CF8D1757241ACC7360 /* KnotDetailView.swift */,
 				920749078AF7F9F4FD1FDCBE /* KnotListView.swift */,
+				B99AC171F2943713D4BC877C /* LaunchScreenView.swift */,
 				34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */,
 				9A467291B2434E8BD37D510B /* SettingsView.swift */,
 			);
@@ -5357,32 +5362,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_3EC4154E-4132-4DB6-BC9F-3B050A66F392" /* Data */ = {
+		"TEMP_4588CA8A-E0A8-4F33-9CAB-BA16A45C7ABB" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_60D1F781-9A06-4CAE-B9D7-5851698C43D7" /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		"TEMP_94339120-50C1-4F8B-B904-F5B504CBAE3C" /* Architecture */ = {
+		"TEMP_AA2ABD68-39D1-4B12-BEE4-B8DB05135C4A" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
 			sourceTree = "<group>";
 		};
-		"TEMP_CC5EFD8C-6B00-405A-8F4C-E4E2B8D0044E" /* Application */ = {
+		"TEMP_C1980B8E-B3A4-4AC0-B11A-4492EF478FD4" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_FCF92E03-2932-4C3F-8CBD-B688D53588B5" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8628,6 +8633,7 @@
 				18883A73BB9924E1D64A4BBC /* HelloWorldView.swift in Sources */,
 				5C33B1F18269AD33999D7131 /* KnotDetailView.swift in Sources */,
 				30566A08CD6907B55E2D86FF /* KnotListView.swift in Sources */,
+				8958E661AECA246287C9AC4A /* LaunchScreenView.swift in Sources */,
 				09F83DA7E578846846D02A53 /* LocalizationHelper.swift in Sources */,
 				E5DF6148E641772E61FDC5C8 /* MainTabView.swift in Sources */,
 				367BEF0FF3543833629598A9 /* Models.swift in Sources */,
@@ -8653,6 +8659,7 @@
 				6A9BABC15A9DF5504A5722C8 /* HelloWorldView.swift in Sources */,
 				FEB9C87E62A6521D1A611780 /* KnotDetailView.swift in Sources */,
 				97C7D141C93BA258239D7D79 /* KnotListView.swift in Sources */,
+				FFEA072F78B20CD6AEC0BA1B /* LaunchScreenView.swift in Sources */,
 				117D8A47E308E4E60A47812A /* LocalizationHelper.swift in Sources */,
 				D02F10C81AC5B9347D00B63B /* MainTabView.swift in Sources */,
 				2AD57A96D502FF9B7BBB3A33 /* Models.swift in Sources */,
@@ -8678,6 +8685,7 @@
 				28EA2D1377A06A8B6CD3090B /* HelloWorldView.swift in Sources */,
 				A21546A16537D65D51D31E55 /* KnotDetailView.swift in Sources */,
 				2F7CE71439D7FBC46398C9C5 /* KnotListView.swift in Sources */,
+				7B9DDFBDE50A8EDE36715B34 /* LaunchScreenView.swift in Sources */,
 				0D828F003EB29B78A0B5E178 /* LocalizationHelper.swift in Sources */,
 				8E3A041E42E9A9483863D4DF /* MainTabView.swift in Sources */,
 				071BE0FA355EED945E8A23CB /* Models.swift in Sources */,
@@ -8758,7 +8766,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -8770,7 +8778,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -8783,6 +8791,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -8814,6 +8824,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -8843,6 +8855,8 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -8874,6 +8888,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -8904,6 +8920,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -8986,7 +9004,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -8999,7 +9017,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -9011,6 +9029,8 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
