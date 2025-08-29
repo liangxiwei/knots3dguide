@@ -39,7 +39,7 @@ struct SpriteKitAnimationView: View {
     let showControls: Bool
     let animationData: KnotAnimation?
 
-    @State private var scene: SpriteAnimationScene
+    @StateObject private var scene: SpriteAnimationScene
 
     init(width: CGFloat = 200, height: CGFloat = 400, showControls: Bool = true, animationData: KnotAnimation? = nil)
     {
@@ -47,8 +47,8 @@ struct SpriteKitAnimationView: View {
         self.height = height
         self.showControls = showControls
         self.animationData = animationData
-        self._scene = State(
-            initialValue: SpriteAnimationScene(
+        self._scene = StateObject(
+            wrappedValue: SpriteAnimationScene(
                 size: CGSize(width: width, height: height),
                 animationData: animationData
             )
@@ -497,10 +497,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             !isPlaying
         else { return }
 
-        // 使用DispatchQueue确保UI更新
-        DispatchQueue.main.async {
-            self.isPlaying = true
-        }
+        isPlaying = true
 
         // 重要：按照JS逻辑，360度动画固定使用7fps，普通动画使用计算出的帧率
         let actualFrameRate = is360Mode ? 7 : framerate
@@ -546,20 +543,14 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     func pauseAnimation() {
         guard let node = spriteNode else { return }
 
-        // 使用DispatchQueue确保UI更新
-        DispatchQueue.main.async {
-            self.isPlaying = false
-        }
+        isPlaying = false
         node.removeAction(forKey: "spriteAnimation")
     }
 
     func stopAnimation() {
         guard let node = spriteNode else { return }
 
-        // 使用DispatchQueue确保UI更新
-        DispatchQueue.main.async {
-            self.isPlaying = false
-        }
+        isPlaying = false
         node.removeAction(forKey: "spriteAnimation")
         showLastFrame()
     }
@@ -629,9 +620,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         showLastFrame()
 
         // 根据JS逻辑，模式切换时自动开始播放动画
-        DispatchQueue.main.async {
-            self.isPlaying = true
-        }
+        isPlaying = true
         playAnimation()
     }
 
