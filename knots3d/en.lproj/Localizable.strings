@@ -131,6 +131,7 @@
 /* Knot Detail */
 "knot_detail_animation_demo" = "3D Animation Demo";
 "knot_detail_animation_loading" = "Loading 3D animation...";
+"knot_detail_no_animation_available" = "No Animation Available";
 "knot_detail_detailed_info" = "Detailed Information";
 
 /* Knot List */

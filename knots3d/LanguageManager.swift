@@ -233,6 +233,7 @@ struct LocalizedStrings {
     struct KnotDetail {
         static let animationDemo = "knot_detail_animation_demo"
         static let animationLoading = "knot_detail_animation_loading"
+        static let noAnimationAvailable = "knot_detail_no_animation_available"
         static let detailedInfo = "knot_detail_detailed_info"
     }
     

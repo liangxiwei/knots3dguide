@@ -140,17 +140,20 @@ struct SpriteKitAnimationView: View {
     let width: CGFloat
     let height: CGFloat
     let showControls: Bool
+    let animationData: KnotAnimation?
 
     @State private var scene: SpriteAnimationScene
 
-    init(width: CGFloat = 200, height: CGFloat = 400, showControls: Bool = true)
+    init(width: CGFloat = 200, height: CGFloat = 400, showControls: Bool = true, animationData: KnotAnimation? = nil)
     {
         self.width = width
         self.height = height
         self.showControls = showControls
+        self.animationData = animationData
         self._scene = State(
             initialValue: SpriteAnimationScene(
-                size: CGSize(width: width, height: height)
+                size: CGSize(width: width, height: height),
+                animationData: animationData
             )
         )
     }
@@ -266,10 +269,20 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     private var framerate: Int = 10
     private var baseFramerate: Int = 10
     private var currentRotation: CGFloat = 0
+    private var animationData: KnotAnimation?
 
     // 记录当前动画状态，用于模式切换时的状态同步
     private var currentScale: CGFloat = 1.0
     private var currentMirrorScale: CGFloat = 1.0
+    
+    init(size: CGSize, animationData: KnotAnimation? = nil) {
+        self.animationData = animationData
+        super.init(size: size)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -277,14 +290,24 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     }
 
     func loadSpriteAnimation() {
+        guard let animationData = animationData,
+              let drawingAnimation = animationData.drawingAnimation else {
+            print("动画数据不可用")
+            return
+        }
+        
+        // 获取文件名（去掉扩展名）
+        let jsonName = String(drawingAnimation.spriteData.dropLast(5)) // 去掉.json
+        let imageName = String(drawingAnimation.spriteImage.dropLast(4)) // 去掉.png
+        
         // 加载普通动画资源
         guard
             let jsonPath = findResourcePath(
-                for: "adjustablehitch",
+                for: jsonName,
                 extension: "json"
             ),
             let imagePath = findResourcePath(
-                for: "adjustablehitch",
+                for: imageName,
                 extension: "png"
             ),
             let jsonData = try? Data(
@@ -296,32 +319,39 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             ),
             let spriteImage = UIImage(contentsOfFile: imagePath)
         else {
-            print("加载普通动画精灵数据失败")
+            print("加载普通动画精灵数据失败: \(drawingAnimation.spriteData), \(drawingAnimation.spriteImage)")
             return
         }
 
         // 加载360度动画资源（可选）
-        if let json360Path = findResourcePath(
-            for: "adjustablehitch360",
-            extension: "json"
-        ),
-            let image360Path = findResourcePath(
-                for: "adjustablehitch360",
-                extension: "png"
+        if let rotation360 = animationData.rotation360 {
+            let json360Name = String(rotation360.spriteData.dropLast(5)) // 去掉.json
+            let image360Name = String(rotation360.spriteImage.dropLast(4)) // 去掉.png
+            
+            if let json360Path = findResourcePath(
+                for: json360Name,
+                extension: "json"
             ),
-            let json360Data = try? Data(
-                contentsOf: URL(fileURLWithPath: json360Path)
-            ),
-            let sprite360Data = try? JSONDecoder().decode(
-                SpriteAnimationData.self,
-                from: json360Data
-            ),
-            let sprite360Image = UIImage(contentsOfFile: image360Path)
-        {
-            generate360Textures(from: sprite360Image, with: sprite360Data)
-            print("360度动画资源加载成功")
+                let image360Path = findResourcePath(
+                    for: image360Name,
+                    extension: "png"
+                ),
+                let json360Data = try? Data(
+                    contentsOf: URL(fileURLWithPath: json360Path)
+                ),
+                let sprite360Data = try? JSONDecoder().decode(
+                    SpriteAnimationData.self,
+                    from: json360Data
+                ),
+                let sprite360Image = UIImage(contentsOfFile: image360Path)
+            {
+                generate360Textures(from: sprite360Image, with: sprite360Data)
+                print("360度动画资源加载成功")
+            } else {
+                print("360度动画资源加载失败: \(rotation360.spriteData), \(rotation360.spriteImage)")
+            }
         } else {
-            print("360度动画资源未找到，仅使用普通动画模式")
+            print("360度动画资源未提供，仅使用普通动画模式")
         }
 
         generateTextures(from: spriteImage, with: spriteData)
@@ -379,7 +409,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         with data: SpriteAnimationData
     ) {
         guard let cgImage = image.cgImage,
-            let animation = data.animations["adjustablehitch"]
+            let animation = data.animations.values.first
         else { return }
 
         spriteTextures.removeAll()

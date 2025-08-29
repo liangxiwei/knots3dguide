@@ -60,7 +60,3 @@ targets:
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
       INFOPLIST_KEY_CFBundleDisplayName: Knots 3D Guide
       INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
-      
-      # Network permissions for WebView
-      INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: NO
-      INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent: YES

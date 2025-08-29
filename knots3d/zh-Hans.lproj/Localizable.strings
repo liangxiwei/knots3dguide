@@ -131,6 +131,7 @@
 /* Knot Detail */
 "knot_detail_animation_demo" = "3D动画演示";
 "knot_detail_animation_loading" = "3D动画加载中...";
+"knot_detail_no_animation_available" = "暂无动画数据";
 "knot_detail_detailed_info" = "详细信息";
 
 /* Knot List */

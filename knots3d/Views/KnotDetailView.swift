@@ -78,20 +78,28 @@ struct KnotDetailView: View {
 
             }
 
-            // TODO: 集成SpriteKitAnimationView组件
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color.gray.opacity(0.2))
-                .frame(height: 300)
-                .overlay(
-                    VStack {
-                        Image(systemName: "play.circle")
-                            .font(.largeTitle)
-                            .foregroundColor(.blue)
-                        Text(LocalizedStrings.KnotDetail.animationLoading.localized)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                    }
+            if let animation = knot.animation {
+                SpriteKitAnimationView(
+                    width: 300,
+                    height: 300,
+                    showControls: true,
+                    animationData: animation
                 )
+            } else {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.gray.opacity(0.2))
+                    .frame(height: 300)
+                    .overlay(
+                        VStack {
+                            Image(systemName: "exclamationmark.triangle")
+                                .font(.largeTitle)
+                                .foregroundColor(.orange)
+                            Text(LocalizedStrings.KnotDetail.noAnimationAvailable.localized)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                    )
+            }
 
         }
         .padding()
