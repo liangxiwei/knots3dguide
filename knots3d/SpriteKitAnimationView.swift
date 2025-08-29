@@ -583,7 +583,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         guard let node = spriteNode else { return }
 
         // 每次逆时针旋转90度 (π/2弧度)
-        currentRotation -= CGFloat.pi / 2
+        currentRotation += CGFloat.pi / 2
 
         // 旋转动画持续时间为1000ms，使用线性缓动
         let flipDuration = 1.0  // 1000ms转换为秒
