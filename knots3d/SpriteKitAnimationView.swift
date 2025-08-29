@@ -583,19 +583,19 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         guard let node = spriteNode else { return }
 
         isMirrored.toggle()
-
-        // 记录节点是否被暂停，以便后续恢复
-        let wasPaused = node.isPaused
         
-        // 临时取消暂停以执行镜像动画
-        if wasPaused {
-            node.isPaused = false
-        }
-
-        // JS中镜像动画持续时间为750ms，使用线性缓动
-        let mirrorDuration = 0.75  // 750ms转换为秒
         let targetScaleX = isMirrored ? -abs(currentScale) : abs(currentScale)
 
+        // 如果动画处于暂停状态，直接设置变换而不播放动画
+        if node.isPaused {
+            node.xScale = targetScaleX
+            currentMirrorScale = targetScaleX
+            print("镜像状态: \(isMirrored ? "开启" : "关闭") (静态变换), 目标缩放: \(targetScaleX)")
+            return
+        }
+
+        // 如果动画正在播放，使用动画过渡
+        let mirrorDuration = 0.75  // 750ms转换为秒
         let flipAction = SKAction.scaleX(
             to: targetScaleX,
             duration: mirrorDuration
@@ -604,26 +604,14 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         node.run(flipAction) {
             self.currentMirrorScale = targetScaleX
-            // 如果之前是暂停状态，恢复暂停
-            if wasPaused {
-                node.isPaused = true
-            }
         }
 
-        print("镜像状态: \(isMirrored ? "开启" : "关闭"), 目标缩放: \(targetScaleX)")
+        print("镜像状态: \(isMirrored ? "开启" : "关闭") (动画过渡), 目标缩放: \(targetScaleX)")
     }
 
     // 90度逆时针旋转功能
     func rotateSprite() {
         guard let node = spriteNode else { return }
-
-        // 记录节点是否被暂停，以便后续恢复
-        let wasPaused = node.isPaused
-        
-        // 临时取消暂停以执行旋转动画
-        if wasPaused {
-            node.isPaused = false
-        }
 
         // 每次逆时针旋转90度 (π/2弧度)
         currentRotation += CGFloat.pi / 2
@@ -632,7 +620,16 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         let normalizedRotation = currentRotation.truncatingRemainder(dividingBy: 2 * CGFloat.pi)
         isRotated = abs(normalizedRotation) > 0.01 // 考虑浮点数精度问题
 
-        // 旋转动画持续时间为1000ms，使用线性缓动
+        let degrees = Int(currentRotation * 180 / CGFloat.pi) % 360
+
+        // 如果动画处于暂停状态，直接设置变换而不播放动画
+        if node.isPaused {
+            node.zRotation = currentRotation
+            print("逆时针旋转90度，当前角度: \(degrees)度 (静态变换)，旋转状态: \(isRotated)")
+            return
+        }
+
+        // 如果动画正在播放，使用动画过渡
         let flipDuration = 1.0  // 1000ms转换为秒
         let rotateAction = SKAction.rotate(
             toAngle: currentRotation,
@@ -640,16 +637,9 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         )
         rotateAction.timingMode = .linear
 
-        node.run(rotateAction) {
-            // 如果之前是暂停状态，恢复暂停
-            if wasPaused {
-                node.isPaused = true
-            }
-        }
+        node.run(rotateAction)
 
-        // 将角度转换为度数显示
-        let degrees = Int(currentRotation * 180 / CGFloat.pi) % 360
-        print("逆时针旋转90度，当前角度: \(degrees)度，旋转状态: \(isRotated)")
+        print("逆时针旋转90度，当前角度: \(degrees)度 (动画过渡)，旋转状态: \(isRotated)")
     }
 
     // 360度模式切换，完全还原JS的handleModeSwitch逻辑
