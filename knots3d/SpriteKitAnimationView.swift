@@ -70,14 +70,17 @@ struct SpriteKitAnimationView: View {
     }
 
     private var controlsView: some View {
-        HStack(spacing: 20) {
-            // 镜像反转按钮 - 使用更好看的图标
+        HStack(spacing: 15) {
+            // 镜像反转按钮
             Button(action: {
                 scene.toggleMirror()
             }) {
                 Image(systemName: "arrow.left.and.right")
                     .font(.title2)
-                    .foregroundColor(scene.isMirrored ? .orange : .gray)
+                    .foregroundColor(scene.isMirrored ? .orange : .primary)
+                    .frame(width: 44, height: 44)
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(8)
             }
 
             // 180度旋转按钮
@@ -87,6 +90,9 @@ struct SpriteKitAnimationView: View {
                 Image(systemName: "arrow.triangle.2.circlepath")
                     .font(.title2)
                     .foregroundColor(.purple)
+                    .frame(width: 44, height: 44)
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(8)
             }
 
             // 播放/暂停按钮
@@ -102,6 +108,9 @@ struct SpriteKitAnimationView: View {
                 )
                 .font(.title2)
                 .foregroundColor(.blue)
+                .frame(width: 44, height: 44)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(8)
             }
 
             // 停止按钮
@@ -111,17 +120,24 @@ struct SpriteKitAnimationView: View {
                 Image(systemName: "stop.fill")
                     .font(.title2)
                     .foregroundColor(.red)
+                    .frame(width: 44, height: 44)
+                    .background(Color.gray.opacity(0.1))
+                    .cornerRadius(8)
             }
 
-            // 360度模式按钮 - 使用图标
+            // 360度模式按钮
             Button(action: {
                 scene.toggle360Mode()
             }) {
                 Image(systemName: "rotate.3d")
                     .font(.title2)
-                    .foregroundColor(scene.is360Mode ? .green : .gray)
+                    .foregroundColor(scene.is360Mode ? .green : .primary)
+                    .frame(width: 44, height: 44)
+                    .background(scene.is360Mode ? Color.green.opacity(0.2) : Color.gray.opacity(0.1))
+                    .cornerRadius(8)
             }
         }
+        .padding(.vertical, 8)
     }
 
     func play() {
