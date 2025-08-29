@@ -139,3 +139,27 @@
 
 /* Favorites Extended */
 "favorites_add_some_knots" = "收藏一些绳结后，它们将显示在这里";
+
+/* Settings Extended */
+"settings_general" = "通用";
+"settings_about_section" = "关于";
+
+/* WebView */
+"webview_loading" = "加载中...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "未找到文件";
+"data_error_decoding" = "解码失败";
+"data_error_network" = "网络错误";
+"data_error_categories_load_failed" = "分类数据加载失败";
+"data_error_knots_load_failed" = "绳结数据加载失败";
+"data_error_manager_released" = "数据管理器已释放";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "未找到结果";
+"search_stats_results_found" = "找到 %d 个结果";
+"search_stats_no_results_for_query" = "未找到与\"%@\"相关的内容";
+"search_stats_categories" = "%d个分类";
+"search_stats_types" = "%d个类型";
+"search_stats_knots" = "%d个绳结";
+"search_stats_match_type" = "匹配";

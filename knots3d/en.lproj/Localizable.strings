@@ -139,3 +139,27 @@
 
 /* Favorites Extended */
 "favorites_add_some_knots" = "Favorite knots will appear here";
+
+/* Settings Extended */
+"settings_general" = "General";
+"settings_about_section" = "About";
+
+/* WebView */
+"webview_loading" = "Loading...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "File not found";
+"data_error_decoding" = "Decoding failed";
+"data_error_network" = "Network error";
+"data_error_categories_load_failed" = "Failed to load categories";
+"data_error_knots_load_failed" = "Failed to load knots";
+"data_error_manager_released" = "Data manager released";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "No results found";
+"search_stats_results_found" = "Found %d results";
+"search_stats_no_results_for_query" = "No results found for \"%@\"";
+"search_stats_categories" = "%d categories";
+"search_stats_types" = "%d types";
+"search_stats_knots" = "%d knots";
+"search_stats_match_type" = "match";

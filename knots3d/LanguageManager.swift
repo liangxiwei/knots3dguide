@@ -230,4 +230,36 @@ struct LocalizedStrings {
     struct FavoritesExtended {
         static let addSomeKnots = "favorites_add_some_knots"
     }
+    
+    // MARK: - Settings Extended
+    struct SettingsExtended {
+        static let general = "settings_general"
+        static let aboutSection = "settings_about_section"
+    }
+    
+    // MARK: - WebView
+    struct WebView {
+        static let loading = "webview_loading"
+    }
+    
+    // MARK: - DataManager Errors
+    struct DataErrors {
+        static let fileNotFound = "data_error_file_not_found"
+        static let decodingError = "data_error_decoding"
+        static let networkError = "data_error_network"
+        static let categoriesLoadFailed = "data_error_categories_load_failed"
+        static let knotsLoadFailed = "data_error_knots_load_failed"
+        static let dataManagerReleased = "data_error_manager_released"
+    }
+    
+    // MARK: - SearchManager Stats
+    struct SearchStats {
+        static let noResultsFound = "search_stats_no_results"
+        static let resultsFound = "search_stats_results_found"
+        static let noResultsForQuery = "search_stats_no_results_for_query"
+        static let categoriesFound = "search_stats_categories"
+        static let typesFound = "search_stats_types"
+        static let knotsFound = "search_stats_knots"
+        static let matchType = "search_stats_match_type"
+    }
 }

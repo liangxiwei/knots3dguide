@@ -31,7 +31,7 @@ struct SettingsView: View {
                         }
                     }
                 } header: {
-                    Text("通用")
+                    Text(LocalizedStrings.SettingsExtended.general.localized)
                 }
                 
                 // 关于信息
@@ -73,7 +73,7 @@ struct SettingsView: View {
                         }
                     }
                 } header: {
-                    Text("关于")
+                    Text(LocalizedStrings.SettingsExtended.aboutSection.localized)
                 }
                 
             }

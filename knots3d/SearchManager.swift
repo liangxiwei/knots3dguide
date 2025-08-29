@@ -35,19 +35,19 @@ struct KnotSearchResult: Identifiable {
     /// 获取匹配类型的显示文本
     var matchTypeDescription: String {
         if matchedFields.contains(.directNameExact) || matchedFields.contains(.directNamePrefix) {
-            return "名称匹配"
+            return LocalizedStrings.Search.nameMatch.localized
         } else if matchedFields.contains(.aliasExact) || matchedFields.contains(.aliasContains) {
-            return "别名匹配"
+            return LocalizedStrings.Search.aliasMatch.localized
         } else if matchedFields.contains(.description) {
-            return "描述匹配"
+            return LocalizedStrings.Search.descriptionMatch.localized
         } else if matchedFields.contains(.categoryIndirect) {
-            return "分类匹配"
+            return LocalizedStrings.Search.categoryMatch.localized
         } else if matchedFields.contains(.typeIndirect) {
-            return "类型匹配"
+            return LocalizedStrings.Search.typeMatch.localized
         } else if matchedFields.contains(.fuzzy) {
-            return "模糊匹配"
+            return LocalizedStrings.Search.fuzzyMatch.localized
         } else {
-            return "匹配"
+            return LocalizedStrings.SearchStats.matchType.localized
         }
     }
 }
@@ -563,21 +563,21 @@ struct SearchStats {
     
     var formattedSummary: String {
         if totalResults == 0 {
-            return "未找到结果"
+            return LocalizedStrings.SearchStats.noResultsFound.localized
         } else {
-            return "找到 \(totalResults) 个结果"
+            return LocalizedStrings.SearchStats.resultsFound.localized(with: totalResults)
         }
     }
     
     var detailedSummary: String {
         if totalResults == 0 {
-            return "未找到与\"\(query)\"相关的内容"
+            return LocalizedStrings.SearchStats.noResultsForQuery.localized(with: query)
         }
         
         var parts: [String] = []
-        if categoryResults > 0 { parts.append("\(categoryResults)个分类") }
-        if typeResults > 0 { parts.append("\(typeResults)个类型") }
-        if knotResults > 0 { parts.append("\(knotResults)个绳结") }
+        if categoryResults > 0 { parts.append(LocalizedStrings.SearchStats.categoriesFound.localized(with: categoryResults)) }
+        if typeResults > 0 { parts.append(LocalizedStrings.SearchStats.typesFound.localized(with: typeResults)) }
+        if knotResults > 0 { parts.append(LocalizedStrings.SearchStats.knotsFound.localized(with: knotResults)) }
         
         return "找到 \(parts.joined(separator: "、"))"
     }

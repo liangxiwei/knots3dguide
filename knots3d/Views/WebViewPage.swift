@@ -14,7 +14,7 @@ struct WebViewPage: View {
                 VStack {
                     ProgressView()
                         .scaleEffect(1.2)
-                    Text("加载中...")
+                    Text(LocalizedStrings.WebView.loading.localized)
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .padding(.top, 8)
@@ -91,7 +91,7 @@ struct WebView: UIViewRepresentable {
     NavigationView {
         WebViewPage(
             url: URL(string: "https://knots3dguide.liangxiwei.com/privacy")!,
-            title: "隐私协议"
+            title: LocalizedStrings.Settings.privacyPolicy.localized
         )
     }
 }

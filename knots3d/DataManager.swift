@@ -11,11 +11,11 @@ enum DataLoadError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .fileNotFound(let message):
-            return "File not found: \(message)"
+            return "\(LocalizedStrings.DataErrors.fileNotFound.localized): \(message)"
         case .decodingError(let message):
-            return "Decoding error: \(message)"
+            return "\(LocalizedStrings.DataErrors.decodingError.localized): \(message)"
         case .networkError(let message):
-            return "Network error: \(message)"
+            return "\(LocalizedStrings.DataErrors.networkError.localized): \(message)"
         }
     }
 }
@@ -62,7 +62,7 @@ class DataManager: ObservableObject {
                 knotTypes = knotCategories.filter { $0.type == "type" }
                 print("✅ 成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
             case .failure(let error):
-                errorMessage = "分类数据加载失败: \(error.localizedDescription)"
+                errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
                 print("❌ 分类数据加载失败: \(error)")
             }
             
@@ -72,7 +72,7 @@ class DataManager: ObservableObject {
                 allKnots = knotsData.knots
                 print("✅ 成功加载绳结数据: \(allKnots.count) 个绳结")
             case .failure(let error):
-                errorMessage = "绳结数据加载失败: \(error.localizedDescription)"
+                errorMessage = "\(LocalizedStrings.DataErrors.knotsLoadFailed.localized): \(error.localizedDescription)"
                 print("❌ 绳结数据加载失败: \(error)")
             }
             
@@ -89,7 +89,7 @@ class DataManager: ObservableObject {
         return await Task.detached { [weak self] in
             let startTime = CFAbsoluteTimeGetCurrent()
             guard let self = self else {
-                return .failure(DataLoadError.networkError("DataManager已释放"))
+                return .failure(DataLoadError.networkError(LocalizedStrings.DataErrors.dataManagerReleased.localized))
             }
             do {
                 let result = try self.syncLoadKnotCategories()
@@ -107,7 +107,7 @@ class DataManager: ObservableObject {
         return await Task.detached { [weak self] in
             let startTime = CFAbsoluteTimeGetCurrent()
             guard let self = self else {
-                return .failure(DataLoadError.networkError("DataManager已释放"))
+                return .failure(DataLoadError.networkError(LocalizedStrings.DataErrors.dataManagerReleased.localized))
             }
             do {
                 let result = try self.syncLoadAllKnots()
