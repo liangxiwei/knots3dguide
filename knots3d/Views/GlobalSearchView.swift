@@ -6,7 +6,7 @@ struct GlobalSearchView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 0) {
                 // 搜索栏
                 EnhancedSearchBar()

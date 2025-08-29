@@ -8,7 +8,7 @@ struct CategoryListView: View {
     @StateObject private var dataManager = DataManager.shared
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 0) {
                 // 假搜索栏（点击进入全局搜索）
                 FakeSearchBar(
