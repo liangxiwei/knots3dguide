@@ -497,7 +497,10 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             !isPlaying
         else { return }
 
-        isPlaying = true
+        // 使用DispatchQueue确保UI更新
+        DispatchQueue.main.async {
+            self.isPlaying = true
+        }
 
         // 重要：按照JS逻辑，360度动画固定使用7fps，普通动画使用计算出的帧率
         let actualFrameRate = is360Mode ? 7 : framerate
@@ -543,14 +546,20 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     func pauseAnimation() {
         guard let node = spriteNode else { return }
 
-        isPlaying = false
+        // 使用DispatchQueue确保UI更新
+        DispatchQueue.main.async {
+            self.isPlaying = false
+        }
         node.removeAction(forKey: "spriteAnimation")
     }
 
     func stopAnimation() {
         guard let node = spriteNode else { return }
 
-        isPlaying = false
+        // 使用DispatchQueue确保UI更新
+        DispatchQueue.main.async {
+            self.isPlaying = false
+        }
         node.removeAction(forKey: "spriteAnimation")
         showLastFrame()
     }
@@ -620,7 +629,9 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         showLastFrame()
 
         // 根据JS逻辑，模式切换时自动开始播放动画
-        isPlaying = true
+        DispatchQueue.main.async {
+            self.isPlaying = true
+        }
         playAnimation()
     }
 
