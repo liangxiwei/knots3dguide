@@ -17,7 +17,7 @@ struct SettingsView: View {
                                 .foregroundColor(.blue)
                                 .frame(width: 20)
                             
-                            Text(LocalizedStrings.Settings.language)
+                            Text(LocalizedStrings.Settings.language.localized)
                                 .foregroundColor(.primary)
                             
                             Spacer()
@@ -37,23 +37,27 @@ struct SettingsView: View {
                 // 关于信息
                 Section {
                     SettingsRowView(
-                        title: LocalizedStrings.Settings.appVersion,
+                        title: LocalizedStrings.Settings.appVersion.localized,
                         value: appVersion,
                         icon: "info.circle"
                     )
                     
-                    NavigationLink(destination: PrivacyPolicyView()) {
+                    Button(action: {
+                        if let url = URL(string: "https://knots3dguide.liangxiwei.com/privacy") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
                         HStack {
                             Image(systemName: "hand.raised")
                                 .foregroundColor(.blue)
                                 .frame(width: 20)
                             
-                            Text(LocalizedStrings.Settings.privacyPolicy)
+                            Text(LocalizedStrings.Settings.privacyPolicy.localized)
                                 .foregroundColor(.primary)
                             
                             Spacer()
                             
-                            Image(systemName: "chevron.right")
+                            Image(systemName: "arrow.up.right")
                                 .foregroundColor(.gray)
                                 .font(.caption)
                         }
@@ -65,7 +69,7 @@ struct SettingsView: View {
                                 .foregroundColor(.blue)
                                 .frame(width: 20)
                             
-                            Text(LocalizedStrings.Settings.about)
+                            Text(LocalizedStrings.Settings.about.localized)
                                 .foregroundColor(.primary)
                             
                             Spacer()
@@ -78,7 +82,7 @@ struct SettingsView: View {
                 }
                 
             }
-            .navigationTitle(LocalizedStrings.TabBar.settings)
+            .navigationTitle(LocalizedStrings.TabBar.settings.localized)
             .navigationBarTitleDisplayMode(.large)
         }
         .actionSheet(isPresented: $showLanguagePicker) {
@@ -105,7 +109,7 @@ struct SettingsView: View {
         } + [ActionSheet.Button.cancel()]
         
         return ActionSheet(
-            title: Text(LocalizedStrings.Settings.language),
+            title: Text(LocalizedStrings.Settings.language.localized),
             buttons: buttons
         )
     }
