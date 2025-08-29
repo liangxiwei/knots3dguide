@@ -14,7 +14,7 @@ settings:
   base:
     SWIFT_VERSION: 5.0
     ENABLE_PREVIEWS: YES
-    GENERATE_INFOPLIST_FILE: NO
+    GENERATE_INFOPLIST_FILE: YES
     SDKROOT: auto
     SUPPORTED_PLATFORMS: "iphoneos iphonesimulator macosx xros xrsimulator"
     TARGETED_DEVICE_FAMILY: "1,2,7"
@@ -38,11 +38,6 @@ targets:
       - knots3d/
     resources:
       - knots3d/Resources
-    info: # 新增 info 块
-      path: knots3d/Info.plist # 替换为你的 Info.plist 路径
-      properties:
-        LaunchScreen: # 新增 UILaunchScreen 键
-          - LaunchScreen # Launch
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.liangxiwei.knots3dguide
       MARKETING_VERSION: 1.0
@@ -63,3 +58,4 @@ targets:
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
       INFOPLIST_KEY_CFBundleDisplayName: Knots 3D Guide
       INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
