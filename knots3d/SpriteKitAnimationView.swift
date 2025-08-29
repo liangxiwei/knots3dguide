@@ -83,11 +83,11 @@ struct SpriteKitAnimationView: View {
                     .cornerRadius(8)
             }
 
-            // 180度旋转按钮
+            // 90度逆时针旋转按钮
             Button(action: {
                 scene.rotateSprite()
             }) {
-                Image(systemName: "arrow.triangle.2.circlepath")
+                Image(systemName: "rectangle.landscape.rotate")
                     .font(.title2)
                     .foregroundColor(.purple)
                     .frame(width: 44, height: 44)
@@ -131,9 +131,9 @@ struct SpriteKitAnimationView: View {
             }) {
                 Image(systemName: "rotate.3d")
                     .font(.title2)
-                    .foregroundColor(scene.is360Mode ? .white : .primary)
+                    .foregroundColor(.primary)
                     .frame(width: 44, height: 44)
-                    .background(scene.is360Mode ? Color.green : Color(UIColor.systemGray4))
+                    .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
             }
         }
@@ -578,25 +578,26 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         print("镜像状态: \(isMirrored ? "开启" : "关闭"), 目标缩放: \(targetScaleX)")
     }
 
-    // 180度旋转功能，完全还原JS的handleRotate逻辑
+    // 90度逆时针旋转功能
     func rotateSprite() {
         guard let node = spriteNode else { return }
 
-        // JS中使用180度增量旋转，并在0度和180度之间切换
-        let isFlipped = Int(currentRotation / CGFloat.pi) % 2 == 1
-        currentRotation = isFlipped ? 0 : CGFloat.pi
+        // 每次逆时针旋转90度 (π/2弧度)
+        currentRotation -= CGFloat.pi / 2
 
-        // JS中旋转动画持续时间为2000ms，使用线性缓动
-        let flipDuration = 2.0  // 2000ms转换为秒
+        // 旋转动画持续时间为1000ms，使用线性缓动
+        let flipDuration = 1.0  // 1000ms转换为秒
         let rotateAction = SKAction.rotate(
             toAngle: currentRotation,
             duration: flipDuration
         )
-        rotateAction.timingMode = .linear  // 对应JS的createjs.Ease.linear()
+        rotateAction.timingMode = .linear
 
         node.run(rotateAction)
 
-        print("旋转到: \(isFlipped ? 0 : 180)度")
+        // 将角度转换为度数显示
+        let degrees = Int(currentRotation * 180 / CGFloat.pi) % 360
+        print("逆时针旋转90度，当前角度: \(degrees)度")
     }
 
     // 360度模式切换，完全还原JS的handleModeSwitch逻辑
