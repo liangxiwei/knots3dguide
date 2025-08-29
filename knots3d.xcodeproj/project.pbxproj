@@ -5357,32 +5357,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_6C27B6B8-8077-47DF-AFBC-6FF9B7A08089" /* Application */ = {
+		"TEMP_426457CE-827F-4371-AE46-14301F1E9FCE" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_8E200E81-FD13-4E0D-97DF-C16F71F590BB" /* Data */ = {
+		"TEMP_4B949377-031F-4256-BA0A-2F8D5470C995" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_BA03F68F-143F-4706-8C86-8B0176C3A94C" /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		"TEMP_D39E49E5-E334-4E2A-99FB-1D3BAAC80894" /* Architecture */ = {
+		"TEMP_5ABDCB07-F84E-44CB-8562-281A6436E692" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_7BE5A5D2-E27E-420B-8CF7-42A1611FFA39" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8756,7 +8756,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
@@ -8990,7 +8990,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",

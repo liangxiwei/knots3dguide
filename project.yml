@@ -14,7 +14,7 @@ settings:
   base:
     SWIFT_VERSION: 5.0
     ENABLE_PREVIEWS: YES
-    GENERATE_INFOPLIST_FILE: YES
+    GENERATE_INFOPLIST_FILE: NO
     SDKROOT: auto
     SUPPORTED_PLATFORMS: "iphoneos iphonesimulator macosx xros xrsimulator"
     TARGETED_DEVICE_FAMILY: "1,2,7"
