@@ -42,11 +42,10 @@ struct SettingsView: View {
                         icon: "info.circle"
                     )
                     
-                    Button(action: {
-                        if let url = URL(string: "https://knots3dguide.liangxiwei.com/privacy") {
-                            UIApplication.shared.open(url)
-                        }
-                    }) {
+                    NavigationLink(destination: WebViewPage(
+                        url: URL(string: "https://knots3dguide.liangxiwei.com/privacy")!,
+                        title: LocalizedStrings.Settings.privacyPolicy.localized
+                    )) {
                         HStack {
                             Image(systemName: "hand.raised")
                                 .foregroundColor(.blue)
@@ -56,10 +55,6 @@ struct SettingsView: View {
                                 .foregroundColor(.primary)
                             
                             Spacer()
-                            
-                            Image(systemName: "arrow.up.right")
-                                .foregroundColor(.gray)
-                                .font(.caption)
                         }
                     }
                     

@@ -169,7 +169,7 @@ class DataManager: ObservableObject {
         guard let path = Bundle.main.path(forResource: "knots_data", ofType: "json", inDirectory: "Resources/category"),
               let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
               let knotCategories = try? JSONDecoder().decode([KnotCategory].self, from: data) else {
-            errorMessage = LocalizedStrings.Errors.loadData
+            errorMessage = LocalizedStrings.Errors.loadData.localized
             return
         }
         
@@ -182,7 +182,7 @@ class DataManager: ObservableObject {
         guard let path = Bundle.main.path(forResource: "all_knots_data", ofType: "json", inDirectory: "Resources"),
               let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
               let allKnotsData = try? JSONDecoder().decode(AllKnotsData.self, from: data) else {
-            errorMessage = LocalizedStrings.Errors.loadData
+            errorMessage = LocalizedStrings.Errors.loadData.localized
             return
         }
         

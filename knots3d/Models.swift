@@ -84,13 +84,13 @@ enum TabType: String, CaseIterable {
     var title: String {
         switch self {
         case .categories:
-            return LocalizedStrings.TabBar.categories
+            return LocalizedStrings.TabBar.categories.localized
         case .types:
-            return LocalizedStrings.TabBar.types
+            return LocalizedStrings.TabBar.types.localized
         case .favorites:
-            return LocalizedStrings.TabBar.favorites
+            return LocalizedStrings.TabBar.favorites.localized
         case .settings:
-            return LocalizedStrings.TabBar.settings
+            return LocalizedStrings.TabBar.settings.localized
         }
     }
     

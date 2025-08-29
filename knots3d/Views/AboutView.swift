@@ -19,7 +19,7 @@ struct AboutView: View {
                         .shadow(color: .blue.opacity(0.3), radius: 10, x: 0, y: 5)
                     
                     VStack(spacing: 8) {
-                        Text(LocalizedStrings.About.title)
+                        Text(LocalizedStrings.About.title.localized)
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.primary)
@@ -33,29 +33,29 @@ struct AboutView: View {
                 // 应用描述
                 AboutSectionView(
                     title: "",
-                    content: LocalizedStrings.About.description,
+                    content: LocalizedStrings.About.description.localized,
                     icon: "",
                     showIcon: false
                 )
                 
                 // 主要功能
                 AboutSectionView(
-                    title: LocalizedStrings.About.features,
-                    content: LocalizedStrings.About.featuresContent,
+                    title: LocalizedStrings.About.features.localized,
+                    content: LocalizedStrings.About.featuresContent.localized,
                     icon: "star.circle.fill"
                 )
                 
                 // 数据来源
                 AboutSectionView(
-                    title: LocalizedStrings.About.dataSource,
-                    content: LocalizedStrings.About.dataSourceContent,
+                    title: LocalizedStrings.About.dataSource.localized,
+                    content: LocalizedStrings.About.dataSourceContent.localized,
                     icon: "book.circle.fill"
                 )
                 
                 // 开发团队
                 AboutSectionView(
-                    title: LocalizedStrings.About.developer,
-                    content: LocalizedStrings.About.developerContent,
+                    title: LocalizedStrings.About.developer.localized,
+                    content: LocalizedStrings.About.developerContent.localized,
                     icon: "person.2.circle.fill"
                 )
                 
@@ -66,7 +66,7 @@ struct AboutView: View {
                             .foregroundColor(.blue)
                             .font(.title2)
                         
-                        Text(LocalizedStrings.About.version)
+                        Text(LocalizedStrings.About.version.localized)
                             .font(.headline)
                             .fontWeight(.semibold)
                             .foregroundColor(.primary)
@@ -102,7 +102,7 @@ struct AboutView: View {
             }
             .padding()
         }
-        .navigationTitle(LocalizedStrings.About.title)
+        .navigationTitle(LocalizedStrings.About.title.localized)
         .navigationBarTitleDisplayMode(.large)
     }
     

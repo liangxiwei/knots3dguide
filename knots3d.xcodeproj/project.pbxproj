@@ -121,7 +121,6 @@
 		09DF601B942A516DDE554BCE /* double-coin-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 36F74C7243436F96AFBA0769 /* double-coin-knot.webp */; };
 		09E4225F02F7446573D9747B /* portuguesebowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DDDC54AD3018D07C02B13D /* portuguesebowline360.json */; };
 		09F0E281AB963594546ACA2C /* slipknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0BC4671E08CBB5E5994EA /* slipknot.json */; };
-		09F83DA7E578846846D02A53 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */; };
 		0A27B71BBEA3524305211440 /* beckethitchslipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 678600B505C8E3D16EAAD39D /* beckethitchslipped.png */; };
 		0A627DE682FF5C36DABA9E38 /* firemanschair.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EDED38EE78E716A3402E0F /* firemanschair.json */; };
 		0A675517CE6588B0F9939CAC /* eskimobowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 7375030CB7685A5839FFE10A /* eskimobowline.json */; };
@@ -170,7 +169,6 @@
 		0D59E60E24FFBF295FE27316 /* woggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 141C4E263C7C56BF458FD7A5 /* woggle.png */; };
 		0D5DADF3D8F8BF200C6D099B /* pitzen360.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CED66FFF651EB1739AA67A /* pitzen360.png */; };
 		0D6A23194CC953F66496C005 /* roundturntwohalfhitches360.png in Resources */ = {isa = PBXBuildFile; fileRef = 1666249CD8AF5C3304B9932F /* roundturntwohalfhitches360.png */; };
-		0D828F003EB29B78A0B5E178 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */; };
 		0D8BE6376DB387D274C8DE38 /* clinchknotimproved.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F2512FA8B66FF4B7F1ABD2B /* clinchknotimproved.json */; };
 		0DA41D7162CE97281EF62139 /* hitches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F66CCF502CEE1C081CBBE79 /* hitches.jpg */; };
 		0DE2D49BBA74E7902960B1AE /* surgeonsloop360.png in Resources */ = {isa = PBXBuildFile; fileRef = E6DC13529F70831B8DD9CB3D /* surgeonsloop360.png */; };
@@ -209,7 +207,6 @@
 		1153C29D06632FB822F7ADA1 /* yucatan360.png in Resources */ = {isa = PBXBuildFile; fileRef = 66219292082239D34D2EF82F /* yucatan360.png */; };
 		1164AC697FDDB26252FCC5E0 /* yosemitebowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E6C018210B0B4003C30FE67 /* yosemitebowline.json */; };
 		1164E25FE5ABEA07F75E7832 /* bullhitchendmethod360.json in Resources */ = {isa = PBXBuildFile; fileRef = 65BDDDA527BAEA5A70EAC94C /* bullhitchendmethod360.json */; };
-		117D8A47E308E4E60A47812A /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */; };
 		118AF17365DFBF051B3E9917 /* portuguesebowline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B80EBBBD8591CF74C41EDC1 /* portuguesebowline.png */; };
 		118BC8A535371D48B88CB01B /* friendshipknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 889CCBA544BF86B5402C2314 /* friendshipknot360.png */; };
 		118E42A152AE841929BCD3F2 /* surgeonsknot-fishing360.json in Resources */ = {isa = PBXBuildFile; fileRef = E77E7DDE44C0BDE85C8A9D4E /* surgeonsknot-fishing360.json */; };
@@ -272,6 +269,7 @@
 		151CDC2FDD6A99799961B968 /* fgknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 451695B840984F835F778C2A /* fgknot360.json */; };
 		152EA86D571DFF08FA2183F9 /* capuchin.webp in Resources */ = {isa = PBXBuildFile; fileRef = E907FABF0E2E4D626132F1C4 /* capuchin.webp */; };
 		15449E6E769CAD961BC245D6 /* caving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4176E5F3829F5E7E3BF91EA3 /* caving.jpg */; };
+		156E1296C15B0C86C9D4CAC5 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80277F797A820834F890AC /* LanguageManager.swift */; };
 		15710532B0795EAB0DBB0BC2 /* surgeonsloop.json in Resources */ = {isa = PBXBuildFile; fileRef = E22A50842AF761CBFC5BC98E /* surgeonsloop.json */; };
 		157636240B666234B6C50D85 /* doubleoverhand.json in Resources */ = {isa = PBXBuildFile; fileRef = F01C3E08E0D7A87DD9FAE74D /* doubleoverhand.json */; };
 		157B898B53E8D9EB9C909A48 /* squareknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 102875CF34528B63052D11C0 /* squareknot.json */; };
@@ -395,6 +393,7 @@
 		1F7838015B959F2E185A38C6 /* ashleys-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = 65F7C0C108734A940024D278 /* ashleys-bend.webp */; };
 		1F78BD24A9B65D19065666E0 /* backsplice.png in Resources */ = {isa = PBXBuildFile; fileRef = D145E4B2E3F35113B6087ADB /* backsplice.png */; };
 		1F90D74C93CA37306AC5EBD9 /* tarbuck.webp in Resources */ = {isa = PBXBuildFile; fileRef = DEA221C47150E88D26D9D2D5 /* tarbuck.webp */; };
+		1FE0FDF71A3E76A61DA566C7 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80277F797A820834F890AC /* LanguageManager.swift */; };
 		1FF3FECC80585A87DB049810 /* barrelhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = BD026DA75A6CEF3985BB8603 /* barrelhitch360.json */; };
 		1FFF06624A60A0D19A1FB92C /* fishermansknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 927A021AFC67C2DEF14F02B7 /* fishermansknot360.json */; };
 		20040099E486F57041D320C7 /* edwardsbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 46EB801B72900D74C0F79C53 /* edwardsbowline.json */; };
@@ -595,6 +594,7 @@
 		2F208393BAA151676ECBF3F0 /* rollinghitch2v.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D8007065CE798BB18423F5B /* rollinghitch2v.json */; };
 		2F2DDD9C612D73E0335BDBFB /* doubledavyknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 398595DC26279795A7637A6C /* doubledavyknot360.json */; };
 		2F3AF2DD1DB0A5D5C247BF31 /* necktie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F901E5995351C860270B515 /* necktie.jpg */; };
+		2F4D3126DB4454F841404A01 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135392D6C273275421FC6B4 /* WebViewPage.swift */; };
 		2F60D39451E52AA933514BF6 /* midshipman.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D75A6296C62EEC480BE14 /* midshipman.png */; };
 		2F7CE71439D7FBC46398C9C5 /* KnotListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920749078AF7F9F4FD1FDCBE /* KnotListView.swift */; };
 		2F7DF4BC9A4F360C09119FDD /* yosemitebowline360.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F5DFFB8D7D855EBDAC09F0 /* yosemitebowline360.png */; };
@@ -1054,6 +1054,7 @@
 		54CE65F05CE1A4E352889F3C /* surgeons-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 55FD83F007F6FFEF77DD8F85 /* surgeons-knot.webp */; };
 		54D5B0B6A24CBC1E35B8B066 /* davyknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A305CBA4AFBA8E497B587E0 /* davyknot.json */; };
 		54D9DFB100A04ED72C5DBC75 /* swissseat360.png in Resources */ = {isa = PBXBuildFile; fileRef = E6947225A8132FA2827A2F4C /* swissseat360.png */; };
+		54FC7DCD0A0ABF197BF4A94A /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E80277F797A820834F890AC /* LanguageManager.swift */; };
 		550F9F7F84642F9F414971F8 /* ashleystopper.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFEA90466C1C6AA4178136 /* ashleystopper.png */; };
 		551AD1BEAE8F994967981745 /* fullwindsor.png in Resources */ = {isa = PBXBuildFile; fileRef = 227432817CF5381213455A53 /* fullwindsor.png */; };
 		554504ECDD85E408440C71B7 /* thief-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6ADCC0A1FFC3B3113988DABF /* thief-knot.webp */; };
@@ -1370,6 +1371,7 @@
 		6C870B53C8531203927F225D /* valdotain.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C93443C2C6882BC91109E8 /* valdotain.png */; };
 		6C8EFC19E5642C37B5BA13C2 /* slippedbuntline.json in Resources */ = {isa = PBXBuildFile; fileRef = 626705F665E35D90A968B331 /* slippedbuntline.json */; };
 		6C93D7B13544E0A25BACC1B3 /* figurenineloop.json in Resources */ = {isa = PBXBuildFile; fileRef = 1495A27BC7D09D1F3164CC7C /* figurenineloop.json */; };
+		6CA4BA755883ACF1506FD75D /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135392D6C273275421FC6B4 /* WebViewPage.swift */; };
 		6CA752B741CCE09CB9605A57 /* triplebowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C0302EF55DC98AEAD33D3BD /* triplebowline360.json */; };
 		6CB8E65074B7B45EBBDA70CC /* portuguese-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = 282F9EB12F7B2A909B748B08 /* portuguese-bowline.webp */; };
 		6CC2844A2EC4E2D6BBB7979C /* portuguesebowline360.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7B7E4D6003A162B842D2 /* portuguesebowline360.png */; };
@@ -2199,6 +2201,7 @@
 		ADCD8445641D8D774BA06237 /* monkeysfist360.json in Resources */ = {isa = PBXBuildFile; fileRef = BAEA01C3BBD08AA05B635032 /* monkeysfist360.json */; };
 		ADDE2AF2BDA1849D85258E5F /* jar-sling-knot-end-method.webp in Resources */ = {isa = PBXBuildFile; fileRef = ECFB51BB1BE0BB80006420B8 /* jar-sling-knot-end-method.webp */; };
 		ADE02371E10D7382F282C0F1 /* quickhitch360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5132B72600FC280B8E7FD170 /* quickhitch360.png */; };
+		ADE2F2D0E423D939BC05C7CD /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135392D6C273275421FC6B4 /* WebViewPage.swift */; };
 		AE25758DBD365CBD619F3A0F /* distel.json in Resources */ = {isa = PBXBuildFile; fileRef = 49C3449BE307291E7C90F4E8 /* distel.json */; };
 		AE2A4CE59EA44328FF028323 /* jury-mast-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */; };
 		AE2C79B8DF7CAB20D4F34879 /* double-davy.webp in Resources */ = {isa = PBXBuildFile; fileRef = B6A6407B4F7F3F7C33382233 /* double-davy.webp */; };
@@ -3456,6 +3459,7 @@
 		3DCE04882E81500A60FD4328 /* alpinecoil360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinecoil360.png; sourceTree = "<group>"; };
 		3E32930720E87066ACEC6958 /* tripleroll360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripleroll360.json; sourceTree = "<group>"; };
 		3E6E4FA01BAAA5ED64D0C099 /* sailorscross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sailorscross.png; sourceTree = "<group>"; };
+		3E80277F797A820834F890AC /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		3ED251857232122FB88F3122 /* alpinebutterflybend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterflybend.png; sourceTree = "<group>"; };
 		3ED9AF92A78CDA22E1748DBF /* backsplice360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backsplice360.json; sourceTree = "<group>"; };
 		3EDBA9A667F5FC91530A461C /* bowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bowline360.json; sourceTree = "<group>"; };
@@ -3467,6 +3471,7 @@
 		403BECDC802921E5901D4791 /* transom360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transom360.json; sourceTree = "<group>"; };
 		40BDA264FA42649B16D14AFF /* marlinspike-hitch.webp */ = {isa = PBXFileReference; path = "marlinspike-hitch.webp"; sourceTree = "<group>"; };
 		41114443C0EB8330053ECCBD /* edk.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edk.json; sourceTree = "<group>"; };
+		4135392D6C273275421FC6B4 /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		413C0C70A06FEB24AAA3DA7F /* waterbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterbowline360.png; sourceTree = "<group>"; };
 		4161102A33828E44050E2FC1 /* fullwindsor360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullwindsor360.json; sourceTree = "<group>"; };
 		4176E5F3829F5E7E3BF91EA3 /* caving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caving.jpg; sourceTree = "<group>"; };
@@ -3660,6 +3665,7 @@
 		6D877557CDF6023705D26608 /* doublecoin360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublecoin360.json; sourceTree = "<group>"; };
 		6E21C633BDC9E9F0C80C85B2 /* double-overhand-knot.webp */ = {isa = PBXFileReference; path = "double-overhand-knot.webp"; sourceTree = "<group>"; };
 		6E3BC4EC1DF727A418724313 /* snell-knot.webp */ = {isa = PBXFileReference; path = "snell-knot.webp"; sourceTree = "<group>"; };
+		6E8000AA0CB27E0A05804A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6E9848ADB17EF45602F2584C /* killick-hitch.webp */ = {isa = PBXFileReference; path = "killick-hitch.webp"; sourceTree = "<group>"; };
 		6E9AD1AA714622350A0A9E4A /* firemanscoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanscoil.json; sourceTree = "<group>"; };
 		6F292F1016CA50E849A0B6FB /* mooringhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooringhitch.png; sourceTree = "<group>"; };
@@ -3831,7 +3837,6 @@
 		9D9FB9F0B5BF02C28EAE75FB /* japanesemarkII360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = japanesemarkII360.json; sourceTree = "<group>"; };
 		9DA0C98EE714443C18DDD87D /* highwaymans360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = highwaymans360.json; sourceTree = "<group>"; };
 		9ECD78BAE33EEA44D9A8E2B5 /* becket-hitch-slipped.webp */ = {isa = PBXFileReference; path = "becket-hitch-slipped.webp"; sourceTree = "<group>"; };
-		9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		9F26EEAC9CDFBE9DF9495AE7 /* reeverknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reeverknot360.json; sourceTree = "<group>"; };
 		9F9059328635301BF08D81C4 /* masthead360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masthead360.png; sourceTree = "<group>"; };
 		9FBAC65FE18424875474D2AD /* truckershitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truckershitch.json; sourceTree = "<group>"; };
@@ -4068,6 +4073,7 @@
 		DEA221C47150E88D26D9D2D5 /* tarbuck.webp */ = {isa = PBXFileReference; path = tarbuck.webp; sourceTree = "<group>"; };
 		DEC682EE1AC3AE350878C028 /* buntline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buntline360.json; sourceTree = "<group>"; };
 		DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */ = {isa = PBXFileReference; path = "double-harness-bend.webp"; sourceTree = "<group>"; };
+		DECE3159DDF9E788B2B8CE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DEFAF47E09B841ADFF051F61 /* tensionlesshitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tensionlesshitch360.json; sourceTree = "<group>"; };
 		DF03F393BE291784FF41C07B /* cleat-hitch.webp */ = {isa = PBXFileReference; path = "cleat-hitch.webp"; sourceTree = "<group>"; };
 		DF0703744535BFDDB57F8C87 /* boating.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boating.jpg; sourceTree = "<group>"; };
@@ -4264,6 +4270,7 @@
 				920749078AF7F9F4FD1FDCBE /* KnotListView.swift */,
 				34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */,
 				9A467291B2434E8BD37D510B /* SettingsView.swift */,
+				4135392D6C273275421FC6B4 /* WebViewPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -4527,10 +4534,10 @@
 				EA9D4C8F208D0EAA760E4860 /* HelloWorldView.swift */,
 				36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */,
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
+				3E80277F797A820834F890AC /* LanguageManager.swift */,
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
 				86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */,
 				80B2550209F6BE98550A283F /* Localizable.strings */,
-				9F1D7F4CC57BFC526EB0C5F1 /* LocalizationHelper.swift */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
 				076B30E24B3CBC3239C2366C /* SearchManager.swift */,
@@ -5360,32 +5367,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_C7504F5A-D42B-442A-8FD7-19C0FEAA16D0" /* Application */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		"TEMP_F2F80F8A-1D7F-4FA9-9701-5004BA25B389" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_F845D754-F306-440C-A05C-05CC8B7760AA" /* Presentation */ = {
+		"TEMP_5EC952D5-DD36-43B5-B1FB-1D48B34EF98B" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_FCB6B24F-77D9-4C36-AF4F-F34EDA2E322F" /* Architecture */ = {
+		"TEMP_6FE68503-3357-4783-81D6-099574C74BA7" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_7AEC14FF-8B2C-42D7-BC10-5A3960879183" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_B035F7C0-9D18-4A6E-AA8E-462FF02538D0" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8637,13 +8644,14 @@
 				18883A73BB9924E1D64A4BBC /* HelloWorldView.swift in Sources */,
 				5C33B1F18269AD33999D7131 /* KnotDetailView.swift in Sources */,
 				30566A08CD6907B55E2D86FF /* KnotListView.swift in Sources */,
-				09F83DA7E578846846D02A53 /* LocalizationHelper.swift in Sources */,
+				54FC7DCD0A0ABF197BF4A94A /* LanguageManager.swift in Sources */,
 				E5DF6148E641772E61FDC5C8 /* MainTabView.swift in Sources */,
 				367BEF0FF3543833629598A9 /* Models.swift in Sources */,
 				C293608C7968B6C0058461DF /* PrivacyPolicyView.swift in Sources */,
 				B03564D262405D1574E2C5F7 /* SearchManager.swift in Sources */,
 				6E3CFAA8A2334744969A160F /* SettingsView.swift in Sources */,
 				5915646CE28D478B480F7B60 /* SpriteKitAnimationView.swift in Sources */,
+				6CA4BA755883ACF1506FD75D /* WebViewPage.swift in Sources */,
 				F4100E092583BD91DC50E515 /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8662,13 +8670,14 @@
 				6A9BABC15A9DF5504A5722C8 /* HelloWorldView.swift in Sources */,
 				FEB9C87E62A6521D1A611780 /* KnotDetailView.swift in Sources */,
 				97C7D141C93BA258239D7D79 /* KnotListView.swift in Sources */,
-				117D8A47E308E4E60A47812A /* LocalizationHelper.swift in Sources */,
+				1FE0FDF71A3E76A61DA566C7 /* LanguageManager.swift in Sources */,
 				D02F10C81AC5B9347D00B63B /* MainTabView.swift in Sources */,
 				2AD57A96D502FF9B7BBB3A33 /* Models.swift in Sources */,
 				3489A66682A19667E6E97484 /* PrivacyPolicyView.swift in Sources */,
 				BA803A4CF95A4A89B9632461 /* SearchManager.swift in Sources */,
 				197890E3F1F1BB3CB5FDC67C /* SettingsView.swift in Sources */,
 				EA01B8D1933C79DE358220CD /* SpriteKitAnimationView.swift in Sources */,
+				ADE2F2D0E423D939BC05C7CD /* WebViewPage.swift in Sources */,
 				27F6D5E9A49D11E4FDD1C558 /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8687,13 +8696,14 @@
 				28EA2D1377A06A8B6CD3090B /* HelloWorldView.swift in Sources */,
 				A21546A16537D65D51D31E55 /* KnotDetailView.swift in Sources */,
 				2F7CE71439D7FBC46398C9C5 /* KnotListView.swift in Sources */,
-				0D828F003EB29B78A0B5E178 /* LocalizationHelper.swift in Sources */,
+				156E1296C15B0C86C9D4CAC5 /* LanguageManager.swift in Sources */,
 				8E3A041E42E9A9483863D4DF /* MainTabView.swift in Sources */,
 				071BE0FA355EED945E8A23CB /* Models.swift in Sources */,
 				42952B4BD8E6D8AA78965DB1 /* PrivacyPolicyView.swift in Sources */,
 				2AC47DA566B03F743C4303D2 /* SearchManager.swift in Sources */,
 				AC12BFE2CA4CC0EBE0296AAA /* SettingsView.swift in Sources */,
 				30CE203981D2F442EC49D72A /* SpriteKitAnimationView.swift in Sources */,
+				2F4D3126DB4454F841404A01 /* WebViewPage.swift in Sources */,
 				63846E749A574F954859DBCE /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8704,6 +8714,7 @@
 		80B2550209F6BE98550A283F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
+				6E8000AA0CB27E0A05804A83 /* Base */,
 				72B37B96B992A9F803E07B13 /* en */,
 				292857E4828B9A993B778FB3 /* zh-Hans */,
 			);
@@ -8713,6 +8724,7 @@
 		86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
+				DECE3159DDF9E788B2B8CE3E /* Base */,
 				EA59F17781A3627D0CCAC5A9 /* en */,
 				1293D34E9FC7C914A1FDEE6C /* zh-Hans */,
 			);

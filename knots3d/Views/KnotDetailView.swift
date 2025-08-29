@@ -49,7 +49,7 @@ struct KnotDetailView: View {
             // 别名
             if let aliases = knot.aliases, !aliases.isEmpty {
                 Text(
-                    LocalizedStrings.Detail.aliases + ": "
+                    LocalizedStrings.Detail.aliases.localized + ": "
                         + aliases.joined(separator: ", ")
                 )
                 .font(.subheadline)
@@ -115,7 +115,7 @@ struct KnotDetailView: View {
                 // 用途 - 必显示
                 if let usage = knot.details.usage, !usage.isEmpty {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.usage,
+                        title: LocalizedStrings.Detail.usage.localized,
                         content: usage,
                         icon: "target"
                     )
@@ -124,7 +124,7 @@ struct KnotDetailView: View {
                 // 历史 - 条件显示
                 if let history = knot.details.history, !history.isEmpty {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.history,
+                        title: LocalizedStrings.Detail.history.localized,
                         content: history,
                         icon: "book"
                     )
@@ -133,7 +133,7 @@ struct KnotDetailView: View {
                 // 结构 - 条件显示
                 if let structure = knot.details.structure, !structure.isEmpty {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.structure,
+                        title: LocalizedStrings.Detail.structure.localized,
                         content: structure,
                         icon: "building.2"
                     )
@@ -144,7 +144,7 @@ struct KnotDetailView: View {
                     !strengthReliability.isEmpty
                 {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.strengthReliability,
+                        title: LocalizedStrings.Detail.strengthReliability.localized,
                         content: strengthReliability,
                         icon: "bolt"
                     )
@@ -153,7 +153,7 @@ struct KnotDetailView: View {
                 // ABOK编号 - 条件显示
                 if let abok = knot.details.abok, !abok.isEmpty {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.abokNumber,
+                        title: LocalizedStrings.Detail.abokNumber.localized,
                         content: abok,
                         icon: "book.closed"
                     )
@@ -162,7 +162,7 @@ struct KnotDetailView: View {
                 // 注意事项 - 条件显示
                 if let note = knot.details.note, !note.isEmpty {
                     DetailInfoCard(
-                        title: LocalizedStrings.Detail.notes,
+                        title: LocalizedStrings.Detail.notes.localized,
                         content: note,
                         icon: "exclamationmark.triangle",
                         accentColor: .orange
@@ -178,7 +178,7 @@ struct KnotDetailView: View {
     private func relatedKnotsSection(relatedNames: [String]) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text(LocalizedStrings.Detail.relatedKnots)
+                Text(LocalizedStrings.Detail.relatedKnots.localized)
                     .font(.headline)
                     .foregroundColor(.primary)
                 Spacer()
@@ -213,7 +213,7 @@ struct KnotDetailView: View {
     private var classificationSection: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                Text(LocalizedStrings.Detail.classification)
+                Text(LocalizedStrings.Detail.classification.localized)
                     .font(.headline)
                     .foregroundColor(.primary)
                 Spacer()
@@ -223,7 +223,7 @@ struct KnotDetailView: View {
                 // 类型
                 if !knot.classification.type.isEmpty {
                     HStack {
-                        Text(LocalizedStrings.Detail.type + ":")
+                        Text(LocalizedStrings.Detail.type.localized + ":")
                             .font(.subheadline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)
@@ -246,7 +246,7 @@ struct KnotDetailView: View {
                 // 应用领域
                 if !knot.classification.foundIn.isEmpty {
                     HStack {
-                        Text(LocalizedStrings.Detail.foundIn + ":")
+                        Text(LocalizedStrings.Detail.foundIn.localized + ":")
                             .font(.subheadline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)

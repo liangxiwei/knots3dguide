@@ -24,7 +24,7 @@ struct KnotListView: View {
                     )
                 } else {
                     EmptyStateView(
-                        title: LocalizedStrings.Search.noResults,
+                        title: LocalizedStrings.Search.noResults.localized,
                         systemImage: "magnifyingglass"
                     )
                 }

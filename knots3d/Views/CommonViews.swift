@@ -12,7 +12,7 @@ struct SearchBar: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                 
-                TextField(LocalizedStrings.Search.placeholder, text: $text)
+                TextField(LocalizedStrings.Search.placeholder.localized, text: $text)
                     .onTapGesture {
                         isSearching = true
                     }
@@ -32,7 +32,7 @@ struct SearchBar: View {
             .cornerRadius(10)
             
             if isSearching {
-                Button(LocalizedStrings.Actions.cancel) {
+                Button(LocalizedStrings.Actions.cancel.localized) {
                     text = ""
                     isSearching = false
                     hideKeyboard()
@@ -55,7 +55,7 @@ struct LoadingView: View {
             ProgressView()
                 .scaleEffect(1.5)
             
-            Text(LocalizedStrings.Loading.knots)
+            Text(LocalizedStrings.Loading.knots.localized)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
         }
@@ -184,7 +184,7 @@ struct EnhancedSearchBar: View {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
                     
-                    TextField(LocalizedStrings.Search.placeholder, text: $searchManager.searchText)
+                    TextField(LocalizedStrings.Search.placeholder.localized, text: $searchManager.searchText)
                         .textFieldStyle(.plain)
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.never)

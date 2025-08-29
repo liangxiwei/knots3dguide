@@ -7,29 +7,29 @@ struct PrivacyPolicyView: View {
                 
                 // 数据收集
                 PolicySectionView(
-                    title: LocalizedStrings.Privacy.dataCollection,
-                    content: LocalizedStrings.Privacy.dataCollectionContent,
+                    title: LocalizedStrings.Privacy.dataCollection.localized,
+                    content: LocalizedStrings.Privacy.dataCollectionContent.localized,
                     icon: "shield.checkerboard"
                 )
                 
                 // 数据使用
                 PolicySectionView(
-                    title: LocalizedStrings.Privacy.dataUsage,
-                    content: LocalizedStrings.Privacy.dataUsageContent,
+                    title: LocalizedStrings.Privacy.dataUsage.localized,
+                    content: LocalizedStrings.Privacy.dataUsageContent.localized,
                     icon: "network"
                 )
                 
                 // 数据存储
                 PolicySectionView(
-                    title: LocalizedStrings.Privacy.dataStorage,
-                    content: LocalizedStrings.Privacy.dataStorageContent,
+                    title: LocalizedStrings.Privacy.dataStorage.localized,
+                    content: LocalizedStrings.Privacy.dataStorageContent.localized,
                     icon: "externaldrive"
                 )
                 
                 // 联系我们
                 PolicySectionView(
-                    title: LocalizedStrings.Privacy.contact,
-                    content: LocalizedStrings.Privacy.contactContent,
+                    title: LocalizedStrings.Privacy.contact.localized,
+                    content: LocalizedStrings.Privacy.contactContent.localized,
                     icon: "envelope"
                 )
                 
@@ -37,7 +37,7 @@ struct PrivacyPolicyView: View {
             }
             .padding()
         }
-        .navigationTitle(LocalizedStrings.Privacy.title)
+        .navigationTitle(LocalizedStrings.Privacy.title.localized)
         .navigationBarTitleDisplayMode(.large)
     }
 }
