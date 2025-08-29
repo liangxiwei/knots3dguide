@@ -476,14 +476,18 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         let currentFrameDataList = is360Mode ? frame360DataList : frameDataList
 
         guard !currentTextures.isEmpty,
-            !currentFrameDataList.isEmpty,
-            let node = spriteNode
+              !currentFrameDataList.isEmpty,
+              let node = spriteNode,
+              let lastTexture = currentTextures.last // 安全地获取最后一帧纹理
         else { return }
 
-        // 设置为最后一帧纹理
-        node.texture = currentTextures.last
+        // 1. 设置为最后一帧纹理
+        node.texture = lastTexture
 
-        // 更新锚点为最后一帧的注册点
+        // 2. 【关键修复】将节点的 size 同步为最后一帧纹理的尺寸
+//        node.size = lastTexture.size()
+
+        // 3. 更新锚点为最后一帧的注册点
         let lastFrameData = currentFrameDataList.last!
         let anchorX = CGFloat(lastFrameData.regX) / CGFloat(lastFrameData.width)
         let anchorY =
@@ -492,72 +496,87 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     }
 
     func playAnimation() {
-        // 根据当前模式选择纹理和帧数据
-        let currentTextures = is360Mode ? sprite360Textures : spriteTextures
-        let currentFrameDataList = is360Mode ? frame360DataList : frameDataList
+        guard let node = spriteNode else { return }
+        
+        // 如果动画已经在播放，则不做任何事
+        if isPlaying { return }
 
-        guard !currentTextures.isEmpty,
-            !currentFrameDataList.isEmpty,
-            let node = spriteNode,
-            !isPlaying
-        else { return }
+        // 检查节点上是否已存在动画
+        // 如果存在，说明是暂停状态，我们只需要恢复即可
+        if node.action(forKey: "spriteAnimation") != nil {
+            node.isPaused = false
+            isPlaying = true
+            print("动画已从暂停处恢复")
+        } 
+        // 如果不存在，说明是首次播放或停止后播放，需要创建新动画
+        else {
+            // 根据当前模式选择纹理和帧数据
+            let currentTextures = is360Mode ? sprite360Textures : spriteTextures
+            let currentFrameDataList = is360Mode ? frame360DataList : frameDataList
 
-        isPlaying = true
+            guard !currentTextures.isEmpty, !currentFrameDataList.isEmpty else { return }
 
-        // 重要：按照JS逻辑，360度动画固定使用7fps，普通动画使用计算出的帧率
-        let actualFrameRate = is360Mode ? 7 : framerate
-        let frameTime = 1.0 / Double(actualFrameRate)
-        var actions: [SKAction] = []
+            // 重要：按照JS逻辑，360度动画固定使用7fps，普通动画使用计算出的帧率
+            let actualFrameRate = is360Mode ? 7 : framerate
+            let frameTime = 1.0 / Double(actualFrameRate)
+            var actions: [SKAction] = []
 
-        print(
-            "开始播放动画 - 模式: \(is360Mode ? "360°" : "普通"), 帧率: \(actualFrameRate), 总帧数: \(currentTextures.count)"
-        )
+            print(
+                "开始创建并播放新动画 - 模式: \(is360Mode ? "360°" : "普通"), 帧率: \(actualFrameRate), 总帧数: \(currentTextures.count)"
+            )
 
-        // 为每一帧创建动作，包括纹理和锚点变化
-        for i in 0..<currentTextures.count {
-            let texture = currentTextures[i]
-            let frameData = currentFrameDataList[i]
+            // 为每一帧创建动作，包括纹理和锚点变化
+            for i in 0..<currentTextures.count {
+                let texture = currentTextures[i]
+                let frameData = currentFrameDataList[i]
 
-            let textureAction = SKAction.setTexture(texture,resize: true)
+                let textureAction = SKAction.setTexture(texture,resize: true)
 
-            // 计算锚点，完全还原JS的注册点逻辑
-            let anchorX = CGFloat(frameData.regX) / CGFloat(frameData.width)
-            let anchorY = CGFloat(frameData.regY) / CGFloat(frameData.height)
-            let anchorPoint = CGPoint(x: anchorX, y: 1.0 - anchorY)
+                // 计算锚点，完全还原JS的注册点逻辑
+                let anchorX = CGFloat(frameData.regX) / CGFloat(frameData.width)
+                let anchorY = CGFloat(frameData.regY) / CGFloat(frameData.height)
+                let anchorPoint = CGPoint(x: anchorX, y: 1.0 - anchorY)
 
-            let anchorAction = SKAction.run {
-                node.anchorPoint = anchorPoint
+                let anchorAction = SKAction.run {
+                    node.anchorPoint = anchorPoint
+                }
+
+                // 组合纹理和锚点动作
+                let combinedAction = SKAction.group([textureAction, anchorAction])
+                let timedAction = SKAction.sequence([
+                    combinedAction, SKAction.wait(forDuration: frameTime),
+                ])
+
+                actions.append(timedAction)
             }
 
-            // 组合纹理和锚点动作
-            let combinedAction = SKAction.group([textureAction, anchorAction])
-            let timedAction = SKAction.sequence([
-                combinedAction, SKAction.wait(forDuration: frameTime),
-            ])
+            let animationSequence = SKAction.sequence(actions)
+            let repeatAction = SKAction.repeatForever(animationSequence)
 
-            actions.append(timedAction)
+            animationAction = repeatAction
+            node.run(repeatAction, withKey: "spriteAnimation")
+            isPlaying = true
         }
-
-        let animationSequence = SKAction.sequence(actions)
-        let repeatAction = SKAction.repeatForever(animationSequence)
-
-        animationAction = repeatAction
-        node.run(repeatAction, withKey: "spriteAnimation")
     }
 
     func pauseAnimation() {
-        guard let node = spriteNode else { return }
+        guard let node = spriteNode, isPlaying else { return }
 
+        // 不再移除Action，而是将节点暂停
+        node.isPaused = true
         isPlaying = false
-        node.removeAction(forKey: "spriteAnimation")
+        print("动画已暂停")
     }
 
     func stopAnimation() {
         guard let node = spriteNode else { return }
 
         isPlaying = false
+        // 确保节点不是暂停状态，以防万一
+        node.isPaused = false
         node.removeAction(forKey: "spriteAnimation")
         showLastFrame()
+        print("动画已停止并重置")
     }
 
     // 镜像翻转功能，完全还原JS的handleMirror逻辑
