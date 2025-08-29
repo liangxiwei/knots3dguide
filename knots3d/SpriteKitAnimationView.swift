@@ -285,23 +285,30 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     private func findResourcePath(for name: String, extension ext: String)
         -> String?
     {
+        // 首先在 bundle 根目录查找
         if let path = Bundle.main.path(forResource: name, ofType: ext) {
+            print("找到资源文件: \(path)")
             return path
         }
+        // 然后在 Resources/sprite 目录查找
         if let path = Bundle.main.path(
             forResource: name,
             ofType: ext,
             inDirectory: "Resources/sprite"
         ) {
+            print("在 Resources/sprite 找到资源文件: \(path)")
             return path
         }
+        // 最后在 sprite 目录查找
         if let path = Bundle.main.path(
             forResource: name,
             ofType: ext,
             inDirectory: "sprite"
         ) {
+            print("在 sprite 找到资源文件: \(path)")
             return path
         }
+        print("未找到资源文件: \(name).\(ext)")
         return nil
     }
 
