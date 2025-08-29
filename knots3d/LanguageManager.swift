@@ -74,6 +74,20 @@ struct LocalizedStrings {
         static let placeholder = "search_placeholder"
         static let noResults = "search_no_results"
         static let resultsCount = "search_results_count"
+        static let globalSearch = "search_global_search"
+        static let discoverKnots = "search_discover_knots"
+        static let searchPlaceholderDesc = "search_placeholder_description"
+        static let popularSearch = "search_popular_search"
+        static let noResultsFound = "search_no_results_found"
+        static let tryOtherKeywords = "search_try_other_keywords"
+        static let foundKnots = "search_found_knots"
+        static let sortedByRelevance = "search_sorted_by_relevance"
+        static let nameMatch = "search_match_name"
+        static let aliasMatch = "search_match_alias"
+        static let descriptionMatch = "search_match_description"
+        static let categoryMatch = "search_match_category"
+        static let typeMatch = "search_match_type"
+        static let fuzzyMatch = "search_match_fuzzy"
     }
     
     // MARK: - Knot Detail

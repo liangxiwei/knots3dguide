@@ -14,11 +14,11 @@ struct GlobalSearchView: View {
                 // 搜索结果
                 searchResultsContent
             }
-            .navigationTitle("全局搜索")
+            .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("完成") {
+                    Button(LocalizedStrings.Actions.done.localized) {
                         dismiss()
                     }
                 }
@@ -45,11 +45,11 @@ struct GlobalSearchView: View {
                     .foregroundColor(.gray.opacity(0.5))
                 
                 VStack(spacing: 8) {
-                    Text("未找到相关绳结")
+                    Text(LocalizedStrings.Search.noResultsFound.localized)
                         .font(.headline)
                         .foregroundColor(.primary)
                     
-                    Text("尝试其他关键词")
+                    Text(LocalizedStrings.Search.tryOtherKeywords.localized)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
@@ -71,12 +71,12 @@ struct GlobalSearchView: View {
                 .foregroundColor(.blue.opacity(0.3))
             
             VStack(spacing: 12) {
-                Text("发现更多绳结")
+                Text(LocalizedStrings.Search.discoverKnots.localized)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(.primary)
                 
-                Text("搜索绳结名称、描述或分类")
+                Text(LocalizedStrings.Search.searchPlaceholderDesc.localized)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
@@ -92,7 +92,7 @@ struct GlobalSearchView: View {
     @ViewBuilder
     private var popularSearchSuggestions: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("热门搜索")
+            Text(LocalizedStrings.Search.popularSearch.localized)
                 .font(.headline)
                 .foregroundColor(.primary)
             
@@ -144,14 +144,14 @@ struct GlobalSearchView: View {
         if !results.isEmpty {
             VStack(spacing: 8) {
                 HStack {
-                    Text("找到 \(results.count) 个绳结")
+                    Text(LocalizedStrings.Search.foundKnots.localized(with: results.count))
                         .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(.primary)
                     
                     Spacer()
                     
-                    Text("按相关度排序")
+                    Text(LocalizedStrings.Search.sortedByRelevance.localized)
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
@@ -197,17 +197,17 @@ struct GlobalSearchView: View {
     // 获取匹配类型对应的颜色
     private func getMatchTypeColor(_ type: String) -> Color {
         switch type {
-        case "名称匹配":
+        case LocalizedStrings.Search.nameMatch.localized:
             return .blue
-        case "别名匹配":
+        case LocalizedStrings.Search.aliasMatch.localized:
             return .green
-        case "描述匹配":
+        case LocalizedStrings.Search.descriptionMatch.localized:
             return .orange
-        case "分类匹配":
+        case LocalizedStrings.Search.categoryMatch.localized:
             return .purple
-        case "类型匹配":
+        case LocalizedStrings.Search.typeMatch.localized:
             return .pink
-        case "模糊匹配":
+        case LocalizedStrings.Search.fuzzyMatch.localized:
             return .gray
         default:
             return .secondary
@@ -359,17 +359,17 @@ struct KnotSearchResultRowView: View {
     // 获取匹配类型对应的颜色
     private func getMatchTypeColor(_ type: String) -> Color {
         switch type {
-        case "名称匹配":
+        case LocalizedStrings.Search.nameMatch.localized:
             return .blue
-        case "别名匹配":
+        case LocalizedStrings.Search.aliasMatch.localized:
             return .green
-        case "描述匹配":
+        case LocalizedStrings.Search.descriptionMatch.localized:
             return .orange
-        case "分类匹配":
+        case LocalizedStrings.Search.categoryMatch.localized:
             return .purple
-        case "类型匹配":
+        case LocalizedStrings.Search.typeMatch.localized:
             return .pink
-        case "模糊匹配":
+        case LocalizedStrings.Search.fuzzyMatch.localized:
             return .gray
         default:
             return .secondary

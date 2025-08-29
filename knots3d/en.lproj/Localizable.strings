@@ -16,6 +16,20 @@
 "search_placeholder" = "Search knot name or description";
 "search_no_results" = "No results found";
 "search_results_count" = "Found %d results";
+"search_global_search" = "Global Search";
+"search_discover_knots" = "Discover More Knots";
+"search_placeholder_description" = "Search knot names, descriptions or categories";
+"search_popular_search" = "Popular Searches";
+"search_no_results_found" = "No Related Knots Found";
+"search_try_other_keywords" = "Try other keywords";
+"search_found_knots" = "Found %d knots";
+"search_sorted_by_relevance" = "Sorted by relevance";
+"search_match_name" = "Name Match";
+"search_match_alias" = "Alias Match";
+"search_match_description" = "Description Match";
+"search_match_category" = "Category Match";
+"search_match_type" = "Type Match";
+"search_match_fuzzy" = "Fuzzy Match";
 
 /* Knot Detail Page */
 "detail_usage" = "Usage";
