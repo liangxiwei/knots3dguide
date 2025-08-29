@@ -584,6 +584,14 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         isMirrored.toggle()
 
+        // 记录节点是否被暂停，以便后续恢复
+        let wasPaused = node.isPaused
+        
+        // 临时取消暂停以执行镜像动画
+        if wasPaused {
+            node.isPaused = false
+        }
+
         // JS中镜像动画持续时间为750ms，使用线性缓动
         let mirrorDuration = 0.75  // 750ms转换为秒
         let targetScaleX = isMirrored ? -abs(currentScale) : abs(currentScale)
@@ -596,6 +604,10 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         node.run(flipAction) {
             self.currentMirrorScale = targetScaleX
+            // 如果之前是暂停状态，恢复暂停
+            if wasPaused {
+                node.isPaused = true
+            }
         }
 
         print("镜像状态: \(isMirrored ? "开启" : "关闭"), 目标缩放: \(targetScaleX)")
@@ -604,6 +616,14 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     // 90度逆时针旋转功能
     func rotateSprite() {
         guard let node = spriteNode else { return }
+
+        // 记录节点是否被暂停，以便后续恢复
+        let wasPaused = node.isPaused
+        
+        // 临时取消暂停以执行旋转动画
+        if wasPaused {
+            node.isPaused = false
+        }
 
         // 每次逆时针旋转90度 (π/2弧度)
         currentRotation += CGFloat.pi / 2
@@ -620,7 +640,12 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         )
         rotateAction.timingMode = .linear
 
-        node.run(rotateAction)
+        node.run(rotateAction) {
+            // 如果之前是暂停状态，恢复暂停
+            if wasPaused {
+                node.isPaused = true
+            }
+        }
 
         // 将角度转换为度数显示
         let degrees = Int(currentRotation * 180 / CGFloat.pi) % 360
