@@ -570,12 +570,11 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
     func stopAnimation() {
         guard let node = spriteNode else { return }
-
         isPlaying = false
         // 确保节点不是暂停状态，以防万一
         node.isPaused = false
         node.removeAction(forKey: "spriteAnimation")
-        showLastFrame()
+        setupSpriteNode()
         print("动画已停止并重置")
     }
 
@@ -629,28 +628,54 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     }
 
     // 360度模式切换，完全还原JS的handleModeSwitch逻辑
+//    func toggle360Mode() {
+//        guard !sprite360Textures.isEmpty else {
+//            print("360度动画资源不可用")
+//            return
+//        }
+//
+//        let wasPlaying = isPlaying
+//        if wasPlaying {
+//            pauseAnimation()
+//        }
+//
+//        // 切换模式
+//        is360Mode.toggle()
+//        print("切换到\(is360Mode ? "360°" : "绘制")模式")
+//
+//        // 重要：使用状态同步功能保持变换状态一致
+//        syncAnimationState()
+//        showLastFrame()
+//
+//        // 根据JS逻辑，模式切换时自动开始播放动画
+//        isPlaying = true
+//        playAnimation()
+//    }
     func toggle360Mode() {
         guard !sprite360Textures.isEmpty else {
             print("360度动画资源不可用")
             return
         }
 
+        // 1. 记录切换前是否正在播放
         let wasPlaying = isPlaying
+
+        // 2. 如果正在播放，先调用我们已有的暂停函数来停止它
+        //    这个函数会自动将 isPlaying 设置为 false，这是关键
         if wasPlaying {
             pauseAnimation()
         }
 
-        // 切换模式
+        // 3. 切换模式，并同步状态（这会重建 spriteNode）
         is360Mode.toggle()
         print("切换到\(is360Mode ? "360°" : "绘制")模式")
-
-        // 重要：使用状态同步功能保持变换状态一致
         syncAnimationState()
-        showLastFrame()
 
-        // 根据JS逻辑，模式切换时自动开始播放动画
-        isPlaying = true
-        playAnimation()
+        // 4. 如果切换前是在播放，那么现在就播放新的动画
+        //    因为 isPlaying 在第2步已经变成 false，所以 playAnimation 会正常执行
+        if wasPlaying {
+            playAnimation()
+        }
     }
 
 }

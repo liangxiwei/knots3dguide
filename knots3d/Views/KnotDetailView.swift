@@ -87,7 +87,7 @@ struct KnotDetailView: View {
                         animationData: animation
                     )
                 }
-                .frame(height: 300)
+                .frame(height: 380)
             } else {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.gray.opacity(0.2))

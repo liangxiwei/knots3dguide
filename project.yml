@@ -41,7 +41,7 @@ targets:
     info: # 新增 info 块
       path: knots3d/Info.plist # 替换为你的 Info.plist 路径
       properties:
-        UILaunchScreen: # 新增 UILaunchScreen 键
+        LaunchScreen: # 新增 UILaunchScreen 键
           - LaunchScreen # Launch
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.liangxiwei.knots3dguide
