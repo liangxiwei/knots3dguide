@@ -5355,32 +5355,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_1A539BAD-B60A-4F5F-A244-43FFF57762A8" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_6CD1BFF7-5F8E-4D18-96DA-AA24362D76CE" /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_D2F93E76-227B-480B-9AC2-03D343FEDDB8" /* Application */ = {
+		"TEMP_061B8ACC-F22F-431A-8AB1-B1EAC10D6472" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_D73DE8BF-EC75-4BFD-AC61-FEB16807760F" /* Presentation */ = {
+		"TEMP_3867F797-C8A2-4F9A-8870-A8DDD79F7801" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		"TEMP_B21F8ECD-410B-4235-9A6E-75BB931F0A63" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_B574DF9F-C9D7-458D-9D39-378790239EA6" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

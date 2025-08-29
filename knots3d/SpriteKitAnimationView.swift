@@ -201,28 +201,37 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         let jsonName = String(drawingAnimation.spriteData.dropLast(5)) // 去掉.json
         let imageName = String(drawingAnimation.spriteImage.dropLast(4)) // 去掉.png
         
-        // 加载普通动画资源
-        guard
-            let jsonPath = findResourcePath(
-                for: jsonName,
-                extension: "json"
-            ),
-            let imagePath = findResourcePath(
-                for: imageName,
-                extension: "png"
-            ),
-            let jsonData = try? Data(
-                contentsOf: URL(fileURLWithPath: jsonPath)
-            ),
-            let spriteData = try? JSONDecoder().decode(
-                SpriteAnimationData.self,
-                from: jsonData
-            ),
-            let spriteImage = UIImage(contentsOfFile: imagePath)
-        else {
-            print("加载普通动画精灵数据失败: \(drawingAnimation.spriteData), \(drawingAnimation.spriteImage)")
+        // 加载普通动画资源 - 详细错误检查
+        guard let jsonPath = findResourcePath(for: jsonName, extension: "json") else {
+            print("找不到JSON文件: \(jsonName).json")
             return
         }
+        
+        guard let imagePath = findResourcePath(for: imageName, extension: "png") else {
+            print("找不到图片文件: \(imageName).png")
+            return
+        }
+        
+        guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
+            print("无法读取JSON数据: \(jsonPath)")
+            return
+        }
+        
+        let spriteData: SpriteAnimationData
+        do {
+            spriteData = try JSONDecoder().decode(SpriteAnimationData.self, from: jsonData)
+            print("JSON解析成功")
+        } catch {
+            print("JSON解析失败: \(error)")
+            return
+        }
+        
+        guard let spriteImage = UIImage(contentsOfFile: imagePath) else {
+            print("无法加载图片: \(imagePath)")
+            return
+        }
+        
+        print("所有资源加载成功，开始生成纹理")
 
         // 加载360度动画资源（可选）
         if let rotation360 = animationData.rotation360 {
