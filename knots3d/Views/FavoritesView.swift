@@ -11,7 +11,7 @@ struct FavoritesView: View {
                     EmptyStateView(
                         title: LocalizedStrings.Favorites.empty.localized,
                         systemImage: "heart",
-                        subtitle: "收藏一些绳结后，它们将显示在这里"
+                        subtitle: LocalizedStrings.FavoritesExtended.addSomeKnots.localized
                     )
                 } else {
                     favoritesList

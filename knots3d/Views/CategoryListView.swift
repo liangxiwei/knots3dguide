@@ -12,7 +12,7 @@ struct CategoryListView: View {
             VStack(spacing: 0) {
                 // 假搜索栏（点击进入全局搜索）
                 FakeSearchBar(
-                    placeholder: tabType == .categories ? "搜索用途分类" : "搜索绳结类型",
+                    placeholder: tabType == .categories ? LocalizedStrings.Category.searchCategories.localized : LocalizedStrings.Category.searchTypes.localized,
                     onTap: onSearchTap
                 )
                 
@@ -38,7 +38,7 @@ struct CategoryListView: View {
         
         if items.isEmpty {
             EmptyStateView(
-                title: "暂无数据",
+                title: LocalizedStrings.Category.noData.localized,
                 systemImage: tabType == .categories ? "folder" : "tag"
             )
         } else {

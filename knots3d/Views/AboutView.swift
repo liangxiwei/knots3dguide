@@ -74,7 +74,7 @@ struct AboutView: View {
                     
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
-                            Text("版本号:")
+                            Text(LocalizedStrings.Common.version.localized)
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             Spacer()
@@ -84,7 +84,7 @@ struct AboutView: View {
                         }
                         
                         HStack {
-                            Text("构建日期:")
+                            Text(LocalizedStrings.Common.buildDate.localized)
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             Spacer()

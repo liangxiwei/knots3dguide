@@ -110,3 +110,32 @@
 
 /* Launch Screen */
 "app_subtitle" = "学习绳结的最佳伙伴";
+
+/* Category & Type List */
+"category_search_categories" = "搜索用途分类";
+"category_search_types" = "搜索绳结类型";
+"category_no_data" = "暂无数据";
+
+/* Common UI Elements */
+"common_loading_failed" = "数据加载失败";
+"common_retry" = "重新加载";
+"common_show_details" = "显示详情";
+"common_hide_details" = "隐藏详情";
+"common_recent_searches" = "最近搜索";
+"common_clear" = "清空";
+"common_search_not_found" = "未找到\"%@\"的相关内容";
+"common_try_suggestions" = "试试搜索：";
+"common_version" = "版本号:";
+"common_build_date" = "构建日期:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D动画演示";
+"knot_detail_animation_loading" = "3D动画加载中...";
+"knot_detail_detailed_info" = "详细信息";
+
+/* Knot List */
+"knot_list_no_knots" = "暂无绳结";
+"knot_list_no_knots_in_category" = "该分类下暂时没有相关绳结";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "收藏一些绳结后，它们将显示在这里";

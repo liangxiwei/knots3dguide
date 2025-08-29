@@ -9,6 +9,10 @@
   `xcodebuild -scheme knots3d_iOS -destination 'platform=iOS Simulator,name=iPhone 16' build`
 - 代码要整洁，重复的代码需要抽出来
 - 代码可以适当的加一些注释
-- 代码里的各种文本需要 **多语言**支持
+
+### 代码里的各种文本需要适配**多语言**
+
+- 多语言 key 常量在 LanguageManager.swift
+
 - 每次修改完就 git commit，说明修改了什么
 - 使用 NavigationLink 的话，不要加右箭头，NavigationLink 本身就包含了右箭头

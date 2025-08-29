@@ -85,7 +85,7 @@ struct ErrorView: View {
                 .font(.largeTitle)
                 .foregroundColor(.orange)
             
-            Text("数据加载失败")
+            Text(LocalizedStrings.Common.loadingFailed.localized)
                 .font(.headline)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.primary)
@@ -104,7 +104,7 @@ struct ErrorView: View {
                 Button(action: retryAction) {
                     HStack {
                         Image(systemName: "arrow.clockwise")
-                        Text("重新加载")
+                        Text(LocalizedStrings.Common.retry.localized)
                     }
                     .font(.subheadline)
                     .foregroundColor(.white)
@@ -118,7 +118,7 @@ struct ErrorView: View {
                     Button(action: {
                         showDetailedError.toggle()
                     }) {
-                        Text(showDetailedError ? "隐藏详情" : "显示详情")
+                        Text(showDetailedError ? LocalizedStrings.Common.hideDetails.localized : LocalizedStrings.Common.showDetails.localized)
                             .font(.caption)
                             .foregroundColor(.blue)
                     }
@@ -221,7 +221,7 @@ struct EnhancedSearchBar: View {
                 .cornerRadius(10)
                 
                 if showSuggestions {
-                    Button("取消") {
+                    Button(LocalizedStrings.Actions.cancel.localized) {
                         searchManager.resetSearch()
                         withAnimation {
                             showSuggestions = false
@@ -250,13 +250,13 @@ struct RecentSearchesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
-                Text("最近搜索")
+                Text(LocalizedStrings.Common.recentSearches.localized)
                     .font(.caption)
                     .foregroundColor(.secondary)
                 
                 Spacer()
                 
-                Button("清空") {
+                Button(LocalizedStrings.Common.clear.localized) {
                     onClear()
                 }
                 .font(.caption)
@@ -342,14 +342,14 @@ struct EmptySearchResultsView: View {
                 .font(.largeTitle)
                 .foregroundColor(.gray)
             
-            Text("未找到\"\(query)\"的相关内容")
+            Text(LocalizedStrings.Common.searchNotFound.localized(with: query))
                 .font(.headline)
                 .foregroundColor(.primary)
                 .multilineTextAlignment(.center)
             
             if !suggestions.isEmpty {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("试试搜索：")
+                    Text(LocalizedStrings.Common.trySuggestions.localized)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     

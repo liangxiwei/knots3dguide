@@ -70,7 +70,7 @@ struct KnotDetailView: View {
     private var animationSection: some View {
         VStack(spacing: 12) {
             HStack {
-                Text("3D动画演示")
+                Text(LocalizedStrings.KnotDetail.animationDemo.localized)
                     .font(.headline)
                     .foregroundColor(.primary)
 
@@ -87,7 +87,7 @@ struct KnotDetailView: View {
                         Image(systemName: "play.circle")
                             .font(.largeTitle)
                             .foregroundColor(.blue)
-                        Text("3D动画加载中...")
+                        Text(LocalizedStrings.KnotDetail.animationLoading.localized)
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
@@ -105,7 +105,7 @@ struct KnotDetailView: View {
     private var detailsSection: some View {
         VStack(spacing: 16) {
             HStack {
-                Text("详细信息")
+                Text(LocalizedStrings.KnotDetail.detailedInfo.localized)
                     .font(.headline)
                     .foregroundColor(.primary)
                 Spacer()

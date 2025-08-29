@@ -191,4 +191,43 @@ struct LocalizedStrings {
     struct Launch {
         static let subtitle = "app_subtitle"
     }
+    
+    // MARK: - Category & Type List
+    struct Category {
+        static let searchCategories = "category_search_categories"
+        static let searchTypes = "category_search_types"
+        static let noData = "category_no_data"
+    }
+    
+    // MARK: - Common UI Elements
+    struct Common {
+        static let loadingFailed = "common_loading_failed"
+        static let retry = "common_retry"
+        static let showDetails = "common_show_details"
+        static let hideDetails = "common_hide_details"
+        static let recentSearches = "common_recent_searches"
+        static let clear = "common_clear"
+        static let searchNotFound = "common_search_not_found"
+        static let trySuggestions = "common_try_suggestions"
+        static let version = "common_version"
+        static let buildDate = "common_build_date"
+    }
+    
+    // MARK: - Knot Detail
+    struct KnotDetail {
+        static let animationDemo = "knot_detail_animation_demo"
+        static let animationLoading = "knot_detail_animation_loading"
+        static let detailedInfo = "knot_detail_detailed_info"
+    }
+    
+    // MARK: - Knot List
+    struct KnotList {
+        static let noKnots = "knot_list_no_knots"
+        static let noKnotsInCategory = "knot_list_no_knots_in_category"
+    }
+    
+    // MARK: - Favorites Extended
+    struct FavoritesExtended {
+        static let addSomeKnots = "favorites_add_some_knots"
+    }
 }

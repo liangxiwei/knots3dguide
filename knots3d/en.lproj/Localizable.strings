@@ -110,3 +110,32 @@
 
 /* Launch Screen */
 "app_subtitle" = "Your Ultimate Knot Learning Companion";
+
+/* Category & Type List */
+"category_search_categories" = "Search categories";
+"category_search_types" = "Search knot types";
+"category_no_data" = "No data available";
+
+/* Common UI Elements */
+"common_loading_failed" = "Data loading failed";
+"common_retry" = "Retry";
+"common_show_details" = "Show details";
+"common_hide_details" = "Hide details";
+"common_recent_searches" = "Recent searches";
+"common_clear" = "Clear";
+"common_search_not_found" = "No results found for \"%@\"";
+"common_try_suggestions" = "Try searching for:";
+"common_version" = "Version:";
+"common_build_date" = "Build Date:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D Animation Demo";
+"knot_detail_animation_loading" = "Loading 3D animation...";
+"knot_detail_detailed_info" = "Detailed Information";
+
+/* Knot List */
+"knot_list_no_knots" = "No knots available";
+"knot_list_no_knots_in_category" = "No knots in this category";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favorite knots will appear here";

@@ -18,9 +18,9 @@ struct KnotListView: View {
             if filteredKnots.isEmpty {
                 if searchText.isEmpty {
                     EmptyStateView(
-                        title: "暂无绳结",
+                        title: LocalizedStrings.KnotList.noKnots.localized,
                         systemImage: "link",
-                        subtitle: "该分类下暂时没有相关绳结"
+                        subtitle: LocalizedStrings.KnotList.noKnotsInCategory.localized
                     )
                 } else {
                     EmptyStateView(
