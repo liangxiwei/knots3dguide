@@ -6,6 +6,7 @@ class LanguageManager: ObservableObject {
     static let shared = LanguageManager()
     
     @Published var currentLanguage: String = "zh-Hans"
+    private var currentBundle: Bundle?
     
     private init() {
         // 获取用户偏好的语言，默认为中文
@@ -17,6 +18,7 @@ class LanguageManager: ObservableObject {
             currentLanguage = systemLanguage.hasPrefix("zh") ? "zh-Hans" : "en"
             UserDefaults.standard.set(currentLanguage, forKey: "AppLanguage")
         }
+        updateCurrentBundle()
     }
     
     func setLanguage(_ language: String) {
@@ -24,6 +26,20 @@ class LanguageManager: ObservableObject {
         UserDefaults.standard.set(language, forKey: "AppLanguage")
         UserDefaults.standard.set([language], forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
+        updateCurrentBundle()
+    }
+    
+    private func updateCurrentBundle() {
+        if let path = Bundle.main.path(forResource: currentLanguage, ofType: "lproj"),
+           let bundle = Bundle(path: path) {
+            currentBundle = bundle
+        } else {
+            currentBundle = Bundle.main
+        }
+    }
+    
+    func localizedString(for key: String) -> String {
+        return currentBundle?.localizedString(forKey: key, value: nil, table: nil) ?? key
     }
     
     var availableLanguages: [(code: String, name: String)] {
@@ -38,12 +54,12 @@ class LanguageManager: ObservableObject {
 extension String {
     /// 获取本地化字符串
     var localized: String {
-        return NSLocalizedString(self, comment: "")
+        return LanguageManager.shared.localizedString(for: self)
     }
     
     /// 获取带参数的本地化字符串
     func localized(with arguments: CVarArg...) -> String {
-        let localizedString = NSLocalizedString(self, comment: "")
+        let localizedString = LanguageManager.shared.localizedString(for: self)
         return String(format: localizedString, arguments: arguments)
     }
 }
