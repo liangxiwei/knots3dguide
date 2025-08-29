@@ -13,15 +13,15 @@ struct SpriteAnimationData: Codable {
         let width: Int  // 宽度
         let height: Int  // 高度
         let imageIndex: Int  // 图片索引
-        let regX: Int  // X轴注册点
-        let regY: Int  // Y轴注册点
+        let regX: Double  // X轴注册点（支持浮点数）
+        let regY: Double  // Y轴注册点（支持浮点数）
 
-        init(from array: [Int]) {
-            self.x = array.count > 0 ? array[0] : 0
-            self.y = array.count > 1 ? array[1] : 0
-            self.width = array.count > 2 ? array[2] : 0
-            self.height = array.count > 3 ? array[3] : 0
-            self.imageIndex = array.count > 4 ? array[4] : 0
+        init(from array: [Double]) {
+            self.x = array.count > 0 ? Int(array[0]) : 0
+            self.y = array.count > 1 ? Int(array[1]) : 0
+            self.width = array.count > 2 ? Int(array[2]) : 0
+            self.height = array.count > 3 ? Int(array[3]) : 0
+            self.imageIndex = array.count > 4 ? Int(array[4]) : 0
             self.regX = array.count > 5 ? array[5] : 0
             self.regY = array.count > 6 ? array[6] : 0
         }
@@ -29,7 +29,7 @@ struct SpriteAnimationData: Codable {
 
     let images: [String]
     let framerate: Int
-    let frames: [[Int]]
+    let frames: [[Double]]  // 修改为支持浮点数
     let animations: [String: Animation]
 }
 
@@ -451,10 +451,8 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
             // 设置锚点位置（注册点）
             // SKSpriteNode的anchorPoint是相对位置（0-1），需要转换
-            let anchorX =
-                CGFloat(lastFrameData.regX) / CGFloat(lastFrameData.width)
-            let anchorY =
-                CGFloat(lastFrameData.regY) / CGFloat(lastFrameData.height)
+            let anchorX = CGFloat(lastFrameData.regX) / CGFloat(lastFrameData.width)
+            let anchorY = CGFloat(lastFrameData.regY) / CGFloat(lastFrameData.height)
             node.anchorPoint = CGPoint(x: anchorX, y: 1.0 - anchorY)  // Y轴翻转，因为SpriteKit和CreateJS的坐标系不同
 
             // 设置节点位置
@@ -508,8 +506,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         // 3. 更新锚点为最后一帧的注册点
         let lastFrameData = currentFrameDataList.last!
         let anchorX = CGFloat(lastFrameData.regX) / CGFloat(lastFrameData.width)
-        let anchorY =
-            CGFloat(lastFrameData.regY) / CGFloat(lastFrameData.height)
+        let anchorY = CGFloat(lastFrameData.regY) / CGFloat(lastFrameData.height)
         node.anchorPoint = CGPoint(x: anchorX, y: 1.0 - anchorY)
     }
 
