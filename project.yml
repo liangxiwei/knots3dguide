@@ -1,6 +1,6 @@
 name: knots3d
 options:
-  bundleIdPrefix: mozata.knots
+  bundleIdPrefix: com.liangxiwei
   developmentLanguage: en
   localizations:
     - en
@@ -38,8 +38,13 @@ targets:
       - knots3d/
     resources:
       - knots3d/Resources
+    info: # 新增 info 块
+      path: knots3d/Info.plist # 替换为你的 Info.plist 路径
+      properties:
+        UILaunchScreen: # 新增 UILaunchScreen 键
+          - LaunchScreen # Launch
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: mozata.knots.knots3d
+      PRODUCT_BUNDLE_IDENTIFIER: com.liangxiwei.knots3dguide
       MARKETING_VERSION: 1.0
       CURRENT_PROJECT_VERSION: 1
       CODE_SIGN_STYLE: Automatic
@@ -52,8 +57,6 @@ targets:
       INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]: YES
       INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]: YES
       INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]: YES
-      INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]: LaunchScreen
-      INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]: LaunchScreen
       INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]: UIStatusBarStyleDefault
       INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]: UIStatusBarStyleDefault
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"

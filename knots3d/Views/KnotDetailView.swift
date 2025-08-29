@@ -79,12 +79,15 @@ struct KnotDetailView: View {
             }
 
             if let animation = knot.animation {
-                SpriteKitAnimationView(
-                    width: 300,
-                    height: 300,
-                    showControls: true,
-                    animationData: animation
-                )
+                GeometryReader { geometry in
+                    SpriteKitAnimationView(
+                        width: geometry.size.width,
+                        height: 300,
+                        showControls: true,
+                        animationData: animation
+                    )
+                }
+                .frame(height: 300)
             } else {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color.gray.opacity(0.2))

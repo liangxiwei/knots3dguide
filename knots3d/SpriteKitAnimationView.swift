@@ -1,109 +1,6 @@
 import SpriteKit
 import SwiftUI
 
-// MARK: - Frames Debug View
-
-struct FramesDebugView: View {
-    @ObservedObject var scene: SpriteAnimationScene
-    @State private var showDebugInfo: Bool = false
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            // 调试信息开关
-            HStack {
-                Button(action: {
-                    showDebugInfo.toggle()
-                }) {
-                    HStack {
-                        Image(systemName: showDebugInfo ? "eye.slash.fill" : "eye.fill")
-                        Text("帧调试")
-                        Spacer()
-                        Text("\(scene.getCurrentModeInfo().totalFrames) 帧")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    .foregroundColor(.primary)
-                }
-                .padding(.horizontal)
-                
-                Spacer()
-                
-                // 模式信息
-                let modeInfo = scene.getCurrentModeInfo()
-                VStack(alignment: .trailing, spacing: 2) {
-                    Text(modeInfo.mode)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                    Text("\(modeInfo.frameRate) fps")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-            }
-            
-            if showDebugInfo {
-                framesGridView
-            }
-        }
-        .padding(.vertical)
-        .background(Color(UIColor.systemGray6))
-        .cornerRadius(10)
-    }
-    
-    private var framesGridView: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: [
-                
-                GridItem(.flexible(), spacing: 2)
-            ], spacing: 8) {
-                let textures = scene.getCurrentFrameTextures()
-                let frameData = scene.getCurrentFrameData()
-                
-                ForEach(0..<textures.count, id: \.self) { index in
-                    frameItemView(
-                        texture: textures[index], 
-                        frameData: frameData.count > index ? frameData[index] : nil,
-                        index: index
-                    )
-                }
-            }
-            .padding(.horizontal)
-        }
-        .frame(height: 500) // 两行的高度
-    }
-    
-    private func frameItemView(texture: SKTexture, frameData: SpriteAnimationData.FrameData?, index: Int) -> some View {
-                VStack(spacing: 4) {
-            // 帧图像
-            Rectangle()
-                .fill(Color.white)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 250, height: 250)
-                .overlay(
-                        Image(uiImage: UIImage(cgImage: texture.cgImage()))
-                            .scaledToFit()
-                    , alignment: .top) // 设置overlay的对齐方式为顶部
-                .border(Color.gray.opacity(0.3), width: 1)
-            
-            // 帧信息
-            VStack(spacing: 1) {
-                Text("帧 \(index) \(texture.cgImage().width)-\(texture.cgImage().height)")
-                    .font(.caption2)
-                    .foregroundColor(.primary)
-                
-                if let data = frameData {
-                    Text("\(data.width)×\(data.height)")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                    Text("注册点: \(data.regX),\(data.regY)")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                        .lineLimit(1)
-                }
-            }
-        }
-        .frame(width: 250)
-    }
-}
 
 struct SpriteAnimationData: Codable {
     struct Animation: Codable {
@@ -169,75 +66,60 @@ struct SpriteKitAnimationView: View {
             if showControls {
                 controlsView
             }
-            
-            // 帧调试视图
-            FramesDebugView(scene: scene)
-                .padding(.horizontal)
         }
     }
 
     private var controlsView: some View {
-        VStack(spacing: 10) {
-            // 主要控制按钮
-            HStack(spacing: 15) {
-                Button(action: {
-                    scene.toggleMirror()
-                }) {
-                    Image(
-                        systemName:
-                            "arrow.left.and.right.righttriangle.left.righttriangle.right"
-                    )
+        HStack(spacing: 20) {
+            // 镜像反转按钮 - 使用更好看的图标
+            Button(action: {
+                scene.toggleMirror()
+            }) {
+                Image(systemName: "arrow.left.and.right")
                     .font(.title2)
                     .foregroundColor(scene.isMirrored ? .orange : .gray)
-                }
-
-                Button(action: {
-                    scene.rotateSprite()
-                }) {
-                    Image(systemName: "arrow.triangle.2.circlepath")
-                        .font(.title2)
-                        .foregroundColor(.purple)
-                }
-
-                Button(action: {
-                    if scene.isPlaying {
-                        scene.pauseAnimation()
-                    } else {
-                        scene.playAnimation()
-                    }
-                }) {
-                    Image(
-                        systemName: scene.isPlaying ? "pause.fill" : "play.fill"
-                    )
-                    .font(.title2)
-                    .foregroundColor(.blue)
-                }
-
-                Button(action: {
-                    scene.toggle360Mode()
-                }) {
-                    Text("360")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(scene.is360Mode ? .green : .gray)
-                }
-
-                Button(action: {
-                    scene.saveCurrentFrame()
-                }) {
-                    Image(systemName: "square.and.arrow.down")
-                        .font(.title2)
-                        .foregroundColor(.indigo)
-                }
             }
 
-            // 停止按钮单独一行
+            // 180度旋转按钮
+            Button(action: {
+                scene.rotateSprite()
+            }) {
+                Image(systemName: "arrow.triangle.2.circlepath")
+                    .font(.title2)
+                    .foregroundColor(.purple)
+            }
+
+            // 播放/暂停按钮
+            Button(action: {
+                if scene.isPlaying {
+                    scene.pauseAnimation()
+                } else {
+                    scene.playAnimation()
+                }
+            }) {
+                Image(
+                    systemName: scene.isPlaying ? "pause.fill" : "play.fill"
+                )
+                .font(.title2)
+                .foregroundColor(.blue)
+            }
+
+            // 停止按钮
             Button(action: {
                 scene.stopAnimation()
             }) {
                 Image(systemName: "stop.fill")
                     .font(.title2)
                     .foregroundColor(.red)
+            }
+
+            // 360度模式按钮 - 使用图标
+            Button(action: {
+                scene.toggle360Mode()
+            }) {
+                Image(systemName: "rotate.3d")
+                    .font(.title2)
+                    .foregroundColor(scene.is360Mode ? .green : .gray)
             }
         }
     }
@@ -726,40 +608,4 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         playAnimation()
     }
 
-    // 保存当前帧
-    func saveCurrentFrame() {
-        guard let node = spriteNode,
-            let texture = node.texture
-        else {
-            print("无法获取当前帧")
-            return
-        }
-
-        let image = UIImage(cgImage: texture.cgImage())
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-        print("当前帧已保存到相册")
-    }
-    
-    // MARK: - Debug Methods
-    
-    /// 获取当前模式的所有帧纹理，用于调试显示
-    func getCurrentFrameTextures() -> [SKTexture] {
-        return is360Mode ? sprite360Textures : spriteTextures
-    }
-    
-    /// 获取当前模式的所有帧数据，用于调试显示
-    func getCurrentFrameData() -> [SpriteAnimationData.FrameData] {
-        return is360Mode ? frame360DataList : frameDataList
-    }
-    
-    /// 获取当前模式信息
-    func getCurrentModeInfo() -> (mode: String, frameRate: Int, totalFrames: Int) {
-        let currentTextures = is360Mode ? sprite360Textures : spriteTextures
-        let actualFrameRate = is360Mode ? 7 : framerate
-        return (
-            mode: is360Mode ? "360°" : "普通",
-            frameRate: actualFrameRate,
-            totalFrames: currentTextures.count
-        )
-    }
 }

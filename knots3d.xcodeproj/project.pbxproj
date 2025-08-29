@@ -1011,7 +1011,6 @@
 		523C089C825C2477CFBC27B9 /* lightermanshitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FBFCA87FD8DE9A759E34259 /* lightermanshitch360.json */; };
 		5254F8F1B713F2CC6C1A5A67 /* slippedbuntline.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F26877A506BC42047AEF305 /* slippedbuntline.png */; };
 		52647BE1D0FC0BA2D4D2F38D /* constrictorknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A8674D0BFD3AA82C844C258 /* constrictorknot360.json */; };
-		526C9BF9E75629E5730D1BEC /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		527D506BF71DEE01E4E72480 /* palomar360.json in Resources */ = {isa = PBXBuildFile; fileRef = E68FB79DB75ECB4B09F5F721 /* palomar360.json */; };
 		52896834965A7F3315513FE4 /* loops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 351087120612A40208F7E956 /* loops.jpg */; };
 		5289C2D7BA7FCC4AF1A4FD79 /* catspaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */; };
@@ -2772,7 +2771,6 @@
 		DD81E81A5CE72C57695973A6 /* roundturntwohalfhitches.json in Resources */ = {isa = PBXBuildFile; fileRef = E57A2C9E3EE5947964EEAFC0 /* roundturntwohalfhitches.json */; };
 		DDAB1B373E098AFEB4B8B4F8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA79CA39D8D1C28310C71E /* DataManager.swift */; };
 		DDBF55A180F3FAE19E8F3AD9 /* slipknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE52281BC710F262B97F0AD /* slipknot360.png */; };
-		DDCA2E4B9A99CFA706C7D49C /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		DDD19641125286251439761D /* transom.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A98F0A9F2DC715EEF2CAF9A /* transom.png */; };
 		DDD9A515D07B32F5B40B5C53 /* whipping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3B7C8D0D3F0A6982459C606 /* whipping.jpg */; };
 		DDE2D5DB498A8F334B84DD0A /* backsplice360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9AF92A78CDA22E1748DBF /* backsplice360.json */; };
@@ -2985,7 +2983,6 @@
 		F063E31CC13FE8CAC99F4FA2 /* kalmyk.png in Resources */ = {isa = PBXBuildFile; fileRef = 73F817FAA3481BB26653B998 /* kalmyk.png */; };
 		F06B2172F81B19B01B1A2A1B /* chainsinnet360.json in Resources */ = {isa = PBXBuildFile; fileRef = 96C4762465A14AE35AED247F /* chainsinnet360.json */; };
 		F07C77CD52987F8F44D9439C /* grief-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DAEECD1E3FE4F241EA10BDF2 /* grief-knot.webp */; };
-		F07CE21DC6AA3725EDF1A022 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */; };
 		F07F2A1DD5F331C341F45390 /* snapbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D521B956CE523BBE18478 /* snapbowline.json */; };
 		F09E8D7395666044940E519F /* double-harness-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */; };
 		F09FC5363EF50A552E3BCEF0 /* bowknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D5AE0055FD8970D9E54383 /* bowknot360.png */; };
@@ -3247,7 +3244,6 @@
 		119AF796155FE93C9BC37B57 /* squarelashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarelashing360.png; sourceTree = "<group>"; };
 		11A1A8047EA5EEBAA117132A /* diamondknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot.json; sourceTree = "<group>"; };
 		1208EF0249A12C1E8E56871F /* sailors-cross.webp */ = {isa = PBXFileReference; path = "sailors-cross.webp"; sourceTree = "<group>"; };
-		1293D34E9FC7C914A1FDEE6C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		12CC251F6A56480E5082D1CB /* double-bowline.webp */ = {isa = PBXFileReference; path = "double-bowline.webp"; sourceTree = "<group>"; };
 		12E6B917889B6ED15824F0BF /* loopknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loopknot360.png; sourceTree = "<group>"; };
 		130B1560568AE72BF634A2FB /* clove-hitch.webp */ = {isa = PBXFileReference; path = "clove-hitch.webp"; sourceTree = "<group>"; };
@@ -3379,6 +3375,7 @@
 		2DA8DFD41A7560A472EC6439 /* firemanscoil360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanscoil360.json; sourceTree = "<group>"; };
 		2DCE960EF7240B82AF096ECB /* prusikendline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prusikendline360.json; sourceTree = "<group>"; };
 		2E1B7021231811F688DD22AE /* doubleuniknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleuniknot.json; sourceTree = "<group>"; };
+		2E9E1326F1E043F21774653E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2EA0BC4671E08CBB5E5994EA /* slipknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slipknot.json; sourceTree = "<group>"; };
 		2ED3414CB67E92A92F91D933 /* woggle360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woggle360.json; sourceTree = "<group>"; };
 		2ED864067B985B5F99AB75C6 /* bunnyears.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bunnyears.json; sourceTree = "<group>"; };
@@ -4070,7 +4067,6 @@
 		DEA221C47150E88D26D9D2D5 /* tarbuck.webp */ = {isa = PBXFileReference; path = tarbuck.webp; sourceTree = "<group>"; };
 		DEC682EE1AC3AE350878C028 /* buntline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buntline360.json; sourceTree = "<group>"; };
 		DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */ = {isa = PBXFileReference; path = "double-harness-bend.webp"; sourceTree = "<group>"; };
-		DECE3159DDF9E788B2B8CE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DEFAF47E09B841ADFF051F61 /* tensionlesshitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tensionlesshitch360.json; sourceTree = "<group>"; };
 		DF03F393BE291784FF41C07B /* cleat-hitch.webp */ = {isa = PBXFileReference; path = "cleat-hitch.webp"; sourceTree = "<group>"; };
 		DF0703744535BFDDB57F8C87 /* boating.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boating.jpg; sourceTree = "<group>"; };
@@ -4131,7 +4127,6 @@
 		EA1C92803ED6ADA2462E3F26 /* carrickbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carrickbend360.json; sourceTree = "<group>"; };
 		EA2569ED2A645959E9940C46 /* carrickbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrickbend360.png; sourceTree = "<group>"; };
 		EA47418F265F5FF824FDDEFF /* albrightknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albrightknot360.png; sourceTree = "<group>"; };
-		EA59F17781A3627D0CCAC5A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */ = {isa = PBXFileReference; path = "truckie-hitch.webp"; sourceTree = "<group>"; };
 		EACAE746084A9C345A96AB4F /* lightermanshitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch.png; sourceTree = "<group>"; };
 		EB6092F7721A55E818C29AD3 /* munter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = munter.json; sourceTree = "<group>"; };
@@ -4527,11 +4522,11 @@
 				A27EA222373518AFACAFE548 /* Assets.xcassets */,
 				E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */,
 				D5CA79CA39D8D1C28310C71E /* DataManager.swift */,
+				2E9E1326F1E043F21774653E /* Info.plist */,
 				36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */,
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
 				3E80277F797A820834F890AC /* LanguageManager.swift */,
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
-				86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */,
 				80B2550209F6BE98550A283F /* Localizable.strings */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
@@ -5362,32 +5357,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_2339CC44-CA50-4C82-BD17-EC6F546FFCA1" /* Presentation */ = {
+		"TEMP_0D0BC6A2-CB38-4658-8918-8C8B79B9B068" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_56A544C4-CE5A-4C58-9782-E190F8FFAA52" /* Application */ = {
+		"TEMP_89DB604E-0B59-4C7B-85D2-F0FF6D340084" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_6ACAC392-AAC9-4ABF-ADFF-163EF39E50C2" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_731F646D-8067-44CF-B259-23940DCB8FC5" /* Architecture */ = {
+		"TEMP_B38E0715-CC26-4F26-A5AD-12ED5B32FEED" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_C19497BD-B2D8-463F-B8C2-6B8363EAF0FC" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5496,7 +5491,6 @@
 			files = (
 				A961F1C0BB4C6B1382C9E6F9 /* Assets.xcassets in Resources */,
 				573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */,
-				DDCA2E4B9A99CFA706C7D49C /* LaunchScreen.strings in Resources */,
 				58675D2F13BCA556AD46F2E9 /* Localizable.strings in Resources */,
 				DEF95298509AD7CA07CD0B25 /* adjustable-grip-hitch.webp in Resources */,
 				C576C09301BE3B87DAF89BAC /* adjustablehitch.json in Resources */,
@@ -6540,7 +6534,6 @@
 			files = (
 				E04CAE98B658DA354E03EDF6 /* Assets.xcassets in Resources */,
 				C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */,
-				F07CE21DC6AA3725EDF1A022 /* LaunchScreen.strings in Resources */,
 				12C6EC851F5589B53FB591A9 /* Localizable.strings in Resources */,
 				3E2F9127C26197EB52A675F6 /* adjustable-grip-hitch.webp in Resources */,
 				E93F3E4AFFA1B55B2E98CF97 /* adjustablehitch.json in Resources */,
@@ -7584,7 +7577,6 @@
 			files = (
 				B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */,
 				A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */,
-				526C9BF9E75629E5730D1BEC /* LaunchScreen.strings in Resources */,
 				0786EB25F91EA92363287015 /* Localizable.strings in Resources */,
 				502AB4CE894D5D8BB33A11B2 /* adjustable-grip-hitch.webp in Resources */,
 				C6A3F544165FCC05C47589BB /* adjustablehitch.json in Resources */,
@@ -8713,16 +8705,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		86F3A3F0A7DEE2DDDD508634 /* LaunchScreen.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DECE3159DDF9E788B2B8CE3E /* Base */,
-				EA59F17781A3627D0CCAC5A9 /* en */,
-				1293D34E9FC7C914A1FDEE6C /* zh-Hans */,
-			);
-			name = LaunchScreen.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -8806,16 +8788,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8825,7 +8804,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8841,16 +8820,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8860,7 +8836,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = macosx;
 			};
@@ -8874,16 +8850,13 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8893,7 +8866,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = xros;
 				TARGETED_DEVICE_FAMILY = 7;
@@ -8909,16 +8882,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8928,7 +8898,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = macosx;
 			};
@@ -8943,16 +8913,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -8962,7 +8929,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -9055,16 +9022,13 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = knots3d/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Knots 3D Guide";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = NO;
-				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoadsInWebContent = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphoneos*]" = LaunchScreen;
-				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=iphonesimulator*]" = LaunchScreen;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -9074,7 +9038,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mozata.knots.knots3d;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = xros;
 				TARGETED_DEVICE_FAMILY = 7;
