@@ -7,14 +7,9 @@ struct KnotListView: View {
     
     @StateObject private var dataManager = DataManager.shared
     @State private var searchText = ""
-    @State private var isSearching = false
     
     var body: some View {
-        VStack(spacing: 0) {
-            // 搜索栏
-            SearchBar(text: $searchText, isSearching: $isSearching)
-            
-            // 绳结列表
+        Group {
             if filteredKnots.isEmpty {
                 if searchText.isEmpty {
                     EmptyStateView(
@@ -39,6 +34,11 @@ struct KnotListView: View {
         }
         .navigationTitle(category.name)
         .navigationBarTitleDisplayMode(.inline)
+        .searchable(
+            text: $searchText,
+            placement: .navigationBarDrawer(displayMode: .always),
+            prompt: LocalizedStrings.Search.placeholder.localized
+        )
     }
     
     private var baseKnots: [KnotDetail] {
