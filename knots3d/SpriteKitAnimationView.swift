@@ -77,7 +77,7 @@ struct SpriteKitAnimationView: View {
             }) {
                 Image(systemName: "arrow.left.and.right")
                     .font(.title2)
-                    .foregroundColor(scene.isMirrored ? .orange : .primary)
+                    .foregroundColor(scene.isMirrored ? .blue : .primary)
                     .frame(width: 44, height: 44)
                     .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
@@ -89,7 +89,7 @@ struct SpriteKitAnimationView: View {
             }) {
                 Image(systemName: "rectangle.landscape.rotate")
                     .font(.title2)
-                    .foregroundColor(.purple)
+                    .foregroundColor(scene.isRotated ? .blue : .primary)
                     .frame(width: 44, height: 44)
                     .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
@@ -129,9 +129,9 @@ struct SpriteKitAnimationView: View {
             Button(action: {
                 scene.toggle360Mode()
             }) {
-                Image(systemName: "rotate.3d")
+                Image(systemName: "arrow.trianglehead.counterclockwise.rotate.90")
                     .font(.title2)
-                    .foregroundColor(.primary)
+                    .foregroundColor(scene.is360Mode ? .blue : .primary)
                     .frame(width: 44, height: 44)
                     .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
@@ -157,6 +157,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     @Published var isPlaying: Bool = false
     @Published var isMirrored: Bool = false
     @Published var is360Mode: Bool = false
+    @Published var isRotated: Bool = false
 
     private var spriteNode: SKSpriteNode?
     private var spriteTextures: [SKTexture] = []
@@ -460,6 +461,10 @@ class SpriteAnimationScene: SKScene, ObservableObject {
                 currentMirrorScale = node.xScale
             }
             node.zRotation = currentRotation
+            
+            // 更新旋转状态
+            let normalizedRotation = currentRotation.truncatingRemainder(dividingBy: 2 * CGFloat.pi)
+            isRotated = abs(normalizedRotation) > 0.01
 
             addChild(node)
         }
@@ -585,6 +590,10 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         // 每次逆时针旋转90度 (π/2弧度)
         currentRotation += CGFloat.pi / 2
 
+        // 更新旋转状态：检查角度是否为0的倍数
+        let normalizedRotation = currentRotation.truncatingRemainder(dividingBy: 2 * CGFloat.pi)
+        isRotated = abs(normalizedRotation) > 0.01 // 考虑浮点数精度问题
+
         // 旋转动画持续时间为1000ms，使用线性缓动
         let flipDuration = 1.0  // 1000ms转换为秒
         let rotateAction = SKAction.rotate(
@@ -597,7 +606,7 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         // 将角度转换为度数显示
         let degrees = Int(currentRotation * 180 / CGFloat.pi) % 360
-        print("逆时针旋转90度，当前角度: \(degrees)度")
+        print("逆时针旋转90度，当前角度: \(degrees)度，旋转状态: \(isRotated)")
     }
 
     // 360度模式切换，完全还原JS的handleModeSwitch逻辑
