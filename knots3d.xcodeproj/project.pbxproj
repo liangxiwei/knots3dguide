@@ -5367,32 +5367,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_5EC952D5-DD36-43B5-B1FB-1D48B34EF98B" /* Presentation */ = {
+		"TEMP_25A252AC-0044-484B-90EF-8E2287059821" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presentation;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_6FE68503-3357-4783-81D6-099574C74BA7" /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_7AEC14FF-8B2C-42D7-BC10-5A3960879183" /* Data */ = {
+		"TEMP_2AC4A2C8-7378-4373-AE3D-981A1A3E3888" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_B035F7C0-9D18-4A6E-AA8E-462FF02538D0" /* Application */ = {
+		"TEMP_773F060D-CBCF-4D63-9DB2-915106802A05" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Application;
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_9CA60AFA-19AE-4160-B894-AE17686FF99B" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
