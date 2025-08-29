@@ -79,7 +79,7 @@ struct SpriteKitAnimationView: View {
                     .font(.title2)
                     .foregroundColor(scene.isMirrored ? .orange : .primary)
                     .frame(width: 44, height: 44)
-                    .background(Color.gray.opacity(0.1))
+                    .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
             }
 
@@ -91,7 +91,7 @@ struct SpriteKitAnimationView: View {
                     .font(.title2)
                     .foregroundColor(.purple)
                     .frame(width: 44, height: 44)
-                    .background(Color.gray.opacity(0.1))
+                    .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
             }
 
@@ -109,7 +109,7 @@ struct SpriteKitAnimationView: View {
                 .font(.title2)
                 .foregroundColor(.blue)
                 .frame(width: 44, height: 44)
-                .background(Color.gray.opacity(0.1))
+                .background(Color(UIColor.systemGray4))
                 .cornerRadius(8)
             }
 
@@ -121,7 +121,7 @@ struct SpriteKitAnimationView: View {
                     .font(.title2)
                     .foregroundColor(.red)
                     .frame(width: 44, height: 44)
-                    .background(Color.gray.opacity(0.1))
+                    .background(Color(UIColor.systemGray4))
                     .cornerRadius(8)
             }
 
@@ -131,9 +131,9 @@ struct SpriteKitAnimationView: View {
             }) {
                 Image(systemName: "rotate.3d")
                     .font(.title2)
-                    .foregroundColor(scene.is360Mode ? .green : .primary)
+                    .foregroundColor(scene.is360Mode ? .white : .primary)
                     .frame(width: 44, height: 44)
-                    .background(scene.is360Mode ? Color.green.opacity(0.2) : Color.gray.opacity(0.1))
+                    .background(scene.is360Mode ? Color.green : Color(UIColor.systemGray4))
                     .cornerRadius(8)
             }
         }
