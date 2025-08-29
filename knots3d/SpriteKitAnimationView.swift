@@ -59,6 +59,8 @@ struct SpriteKitAnimationView: View {
         VStack(spacing: 20) {
             SpriteView(scene: scene)
                 .frame(width: width, height: height)
+                .background(Color.black)
+                .cornerRadius(12)
                 .onAppear {
                     scene.loadSpriteAnimation()
                 }
