@@ -2,6 +2,7 @@ import SwiftUI
 
 struct FavoritesView: View {
     @StateObject private var dataManager = DataManager.shared
+    @StateObject private var languageManager = LanguageManager.shared
     
     var body: some View {
         NavigationView {

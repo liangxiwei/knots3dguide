@@ -15,7 +15,7 @@ struct MainTabView: View {
             })
             .tabItem {
                 Image(systemName: TabType.categories.iconName)
-                Text(TabType.categories.title)
+                Text(LocalizedStrings.TabBar.categories.localized)
             }
             .tag(TabType.categories)
             
@@ -25,7 +25,7 @@ struct MainTabView: View {
             })
             .tabItem {
                 Image(systemName: TabType.types.iconName)
-                Text(TabType.types.title)
+                Text(LocalizedStrings.TabBar.types.localized)
             }
             .tag(TabType.types)
             
@@ -33,7 +33,7 @@ struct MainTabView: View {
             FavoritesView()
                 .tabItem {
                     Image(systemName: TabType.favorites.iconName)
-                    Text(TabType.favorites.title)
+                    Text(LocalizedStrings.TabBar.favorites.localized)
                 }
                 .tag(TabType.favorites)
             
@@ -41,10 +41,12 @@ struct MainTabView: View {
             SettingsView()
                 .tabItem {
                     Image(systemName: TabType.settings.iconName)
-                    Text(TabType.settings.title)
+                    Text(LocalizedStrings.TabBar.settings.localized)
                 }
                 .tag(TabType.settings)
         }
+        // 添加一个不可见的 id，当语言变化时强制重新渲染
+        .id(languageManager.currentLanguage)
         .accentColor(.blue)
         .fullScreenCover(isPresented: $showGlobalSearch) {
             GlobalSearchView()
