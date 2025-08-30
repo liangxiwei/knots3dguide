@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Категории";
+"tab_types" = "Типы";
+"tab_favorites" = "Избранное";
+"tab_settings" = "Настройки";
+
+/* Common Actions */
+"action_search" = "Поиск";
+"action_cancel" = "Отмена";
+"action_ok" = "ОК";
+"action_save" = "Сохранить";
+"action_back" = "Назад";
+"action_done" = "Готово";
+
+/* Search */
+"search_placeholder" = "Поиск названия или описания узла";
+"search_no_results" = "Результаты не найдены";
+"search_results_count" = "Найдено %d результатов";
+"search_global_search" = "Глобальный поиск";
+"search_discover_knots" = "Открыть больше узлов";
+"search_placeholder_description" = "Поиск названий узлов, описаний или категорий";
+"search_popular_search" = "Популярные поиски";
+"search_no_results_found" = "Связанные узлы не найдены";
+"search_try_other_keywords" = "Попробуйте другие ключевые слова";
+"search_found_knots" = "Найдено %d узлов";
+"search_sorted_by_relevance" = "Сортировка по релевантности";
+"search_match_name" = "Совпадение названия";
+"search_match_alias" = "Совпадение псевдонима";
+"search_match_description" = "Совпадение описания";
+"search_match_category" = "Совпадение категории";
+"search_match_type" = "Совпадение типа";
+"search_match_fuzzy" = "Нечёткое совпадение";
+
+/* Knot Detail Page */
+"detail_usage" = "Использование";
+"detail_history" = "История";
+"detail_aliases" = "Псевдонимы";
+"detail_structure" = "Структура";
+"detail_strength_reliability" = "Прочность и надёжность";
+"detail_abok_number" = "Номер ABOK";
+"detail_notes" = "Заметки";
+"detail_related_knots" = "Связанные узлы";
+"detail_classification" = "Классификация";
+"detail_type" = "Тип";
+"detail_found_in" = "Найдено в";
+
+/* Animation Controls */
+"control_play" = "Воспроизвести";
+"control_pause" = "Пауза";
+"control_stop" = "Остановить";
+"control_mirror" = "Зеркало";
+"control_360_mode" = "Режим 360°";
+"control_save_frame" = "Сохранить кадр";
+
+/* Favorites */
+"favorites_empty" = "Избранных узлов пока нет";
+"favorites_add" = "Добавить в избранное";
+"favorites_remove" = "Удалить из избранного";
+"favorites_added" = "Добавлено в избранное";
+"favorites_removed" = "Удалено из избранного";
+
+/* Settings */
+"settings_language" = "Язык";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Политика конфиденциальности";
+"settings_version_info" = "Информация о версии";
+"settings_about" = "О программе";
+"settings_app_version" = "Версия приложения";
+
+/* Privacy Policy */
+"privacy_title" = "Политика конфиденциальности";
+"privacy_data_collection" = "Сбор данных";
+"privacy_data_collection_content" = "Это приложение не собирает личную информацию или пользовательские данные. Ваши избранные и языковые настройки хранятся только локально на вашем устройстве.";
+"privacy_data_usage" = "Использование данных";
+"privacy_data_usage_content" = "Это приложение работает полностью в автономном режиме и не отправляет данные на сторонние серверы. Все данные узлов и изображения хранятся в приложении.";
+"privacy_data_storage" = "Хранение данных";
+"privacy_data_storage_content" = "Ваши избранные и настройки безопасно хранятся на вашем устройстве с помощью iOS UserDefaults, доступны только этому приложению.";
+"privacy_contact" = "Связаться с нами";
+"privacy_contact_content" = "Если у вас есть вопросы о нашей политике конфиденциальности, свяжитесь с нами через страницу App Store.";
+
+/* About */
+"about_title" = "О Knots 3D";
+"about_description" = "Knots 3D - профессиональное приложение для изучения узлов с 200 узлами с подробными руководствами и 3D-анимационными демонстрациями.";
+"about_features" = "Основные возможности";
+"about_features_content" = "• 200 профессиональных узлов включено\n• 16 категорий использования, 8 технических типов\n• 3D-анимационные руководства\n• 360-градусный поворотный вид\n• Поддержка автономного обучения\n• Двуязычный интерфейс (китайский/английский)";
+"about_data_source" = "Источник данных";
+"about_data_source_content" = "Данные узлов составлены из авторитетных справочников по узлам с профессионально созданными анимациями для обеспечения точности и практичности.";
+"about_version" = "Информация о версии";
+"about_developer" = "Команда разработчиков";
+"about_developer_content" = "Создано профессиональной командой разработчиков, посвятившей себя предоставлению лучшего опыта изучения узлов.";
+
+/* Alerts */
+"alert_error" = "Ошибка";
+"alert_success" = "Успех";
+"alert_confirm" = "Подтвердить";
+
+/* Loading States */
+"loading_knots" = "Загрузка данных узлов...";
+"loading_animation" = "Загрузка анимации...";
+
+/* Error Messages */
+"error_load_data" = "Не удалось загрузить данные";
+"error_animation_load" = "Не удалось загрузить анимацию";
+"error_network" = "Ошибка сетевого соединения";
+
+/* Navigation */
+"nav_knot_list" = "Список узлов";
+"nav_knot_detail" = "Детали узла";
+
+/* Launch Screen */
+"app_subtitle" = "Ваш идеальный помощник в изучении узлов";
+
+/* Category & Type List */
+"category_search_categories" = "Поиск категорий";
+"category_search_types" = "Поиск типов узлов";
+"category_no_data" = "Данные недоступны";
+
+/* Common UI Elements */
+"common_loading_failed" = "Загрузка данных не удалась";
+"common_retry" = "Повторить";
+"common_show_details" = "Показать детали";
+"common_hide_details" = "Скрыть детали";
+"common_recent_searches" = "Недавние поиски";
+"common_clear" = "Очистить";
+"common_search_not_found" = "Результаты для \"%@\" не найдены";
+"common_try_suggestions" = "Попробуйте поискать:";
+"common_version" = "Версия:";
+"common_build_date" = "Дата сборки:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D Анимационная демонстрация";
+"knot_detail_animation_loading" = "Загрузка 3D анимации...";
+"knot_detail_no_animation_available" = "Анимация недоступна";
+"knot_detail_detailed_info" = "Подробная информация";
+
+/* Knot List */
+"knot_list_no_knots" = "Узлы недоступны";
+"knot_list_no_knots_in_category" = "В этой категории нет узлов";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Избранные узлы будут отображаться здесь";
+
+/* Settings Extended */
+"settings_general" = "Основные";
+"settings_about_section" = "О программе";
+
+/* WebView */
+"webview_loading" = "Загрузка...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Файл не найден";
+"data_error_decoding" = "Ошибка декодирования";
+"data_error_network" = "Сетевая ошибка";
+"data_error_categories_load_failed" = "Не удалось загрузить категории";
+"data_error_knots_load_failed" = "Не удалось загрузить узлы";
+"data_error_manager_released" = "Менеджер данных освобожден";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Результаты не найдены";
+"search_stats_results_found" = "Найдено %d результатов";
+"search_stats_no_results_for_query" = "Результаты для \"%@\" не найдены";
+"search_stats_categories" = "%d категорий";
+"search_stats_types" = "%d типов";
+"search_stats_knots" = "%d узлов";
+"search_stats_match_type" = "совпадение";

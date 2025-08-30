@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategorier";
+"tab_types" = "Typer";
+"tab_favorites" = "Favoriter";
+"tab_settings" = "Inställningar";
+
+/* Common Actions */
+"action_search" = "Sök";
+"action_cancel" = "Avbryt";
+"action_ok" = "OK";
+"action_save" = "Spara";
+"action_back" = "Tillbaka";
+"action_done" = "Klar";
+
+/* Search */
+"search_placeholder" = "Sök knutens namn eller beskrivning";
+"search_no_results" = "Inga resultat hittades";
+"search_results_count" = "Hittade %d resultat";
+"search_global_search" = "Global sökning";
+"search_discover_knots" = "Upptäck fler knutar";
+"search_placeholder_description" = "Sök knutnamn, beskrivningar eller kategorier";
+"search_popular_search" = "Populära sökningar";
+"search_no_results_found" = "Inga relaterade knutar hittades";
+"search_try_other_keywords" = "Prova andra nyckelord";
+"search_found_knots" = "Hittade %d knutar";
+"search_sorted_by_relevance" = "Sorterade efter relevans";
+"search_match_name" = "Namnträff";
+"search_match_alias" = "Aliasmatchning";
+"search_match_description" = "Beskrivningsmatchning";
+"search_match_category" = "Kategoriträff";
+"search_match_type" = "Typträff";
+"search_match_fuzzy" = "Fuzzy matchning";
+
+/* Knot Detail Page */
+"detail_usage" = "Användning";
+"detail_history" = "Historia";
+"detail_aliases" = "Alias";
+"detail_structure" = "Struktur";
+"detail_strength_reliability" = "Styrka och tillförlitlighet";
+"detail_abok_number" = "ABOK-nummer";
+"detail_notes" = "Anteckningar";
+"detail_related_knots" = "Relaterade knutar";
+"detail_classification" = "Klassificering";
+"detail_type" = "Typ";
+"detail_found_in" = "Hittas i";
+
+/* Animation Controls */
+"control_play" = "Spela";
+"control_pause" = "Pausa";
+"control_stop" = "Stoppa";
+"control_mirror" = "Spegla";
+"control_360_mode" = "360° läge";
+"control_save_frame" = "Spara bild";
+
+/* Favorites */
+"favorites_empty" = "Inga favoritknutar än";
+"favorites_add" = "Lägg till i favoriter";
+"favorites_remove" = "Ta bort från favoriter";
+"favorites_added" = "Tillagd i favoriter";
+"favorites_removed" = "Borttagen från favoriter";
+
+/* Settings */
+"settings_language" = "Språk";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Integritetspolicy";
+"settings_version_info" = "Versionsinformation";
+"settings_about" = "Om";
+"settings_app_version" = "App-version";
+
+/* Privacy Policy */
+"privacy_title" = "Integritetspolicy";
+"privacy_data_collection" = "Datainsamling";
+"privacy_data_collection_content" = "Den här appen samlar inte in personlig information eller användardata. Dina favoriter och språkinställningar lagras endast lokalt på din enhet.";
+"privacy_data_usage" = "Dataanvändning";
+"privacy_data_usage_content" = "Den här appen fungerar helt offline och skickar inte data till tredjepartsservrar. All knutdata och bildresurser lagras i appen.";
+"privacy_data_storage" = "Datalagring";
+"privacy_data_storage_content" = "Dina favoriter och inställningar lagras säkert på din enhet med iOS UserDefaults, endast tillgängligt för denna app.";
+"privacy_contact" = "Kontakta oss";
+"privacy_contact_content" = "Om du har frågor om vår integritetspolicy, kontakta oss genom App Store-sidan.";
+
+/* About */
+"about_title" = "Om Knots 3D";
+"about_description" = "Knots 3D är en professionell knutinlärningsapp med 200 knutar med detaljerade tutorials och 3D-animationsdemonstrationer.";
+"about_features" = "Huvudfunktioner";
+"about_features_content" = "• 200 professionella knutar inkluderade\n• 16 användningskategorier, 8 tekniska typer\n• 3D-animationstutorials\n• 360-graders rotationsvy\n• Offline-inlärningsstöd\n• Tvåspråkigt gränssnitt (kinesiska/engelska)";
+"about_data_source" = "Datakälla";
+"about_data_source_content" = "Knutdata är sammanställd från auktoritativa knutreferenser med professionellt skapade animationer för att säkerställa noggrannhet och praktisk användning.";
+"about_version" = "Versionsinformation";
+"about_developer" = "Utvecklingsteam";
+"about_developer_content" = "Skapad av ett professionellt utvecklingsteam som är dedikerat till att ge den bästa knutinlärningsupplevelsen.";
+
+/* Alerts */
+"alert_error" = "Fel";
+"alert_success" = "Framgång";
+"alert_confirm" = "Bekräfta";
+
+/* Loading States */
+"loading_knots" = "Laddar knutdata...";
+"loading_animation" = "Laddar animation...";
+
+/* Error Messages */
+"error_load_data" = "Kunde inte ladda data";
+"error_animation_load" = "Kunde inte ladda animation";
+"error_network" = "Nätverksanslutningsfel";
+
+/* Navigation */
+"nav_knot_list" = "Knutlista";
+"nav_knot_detail" = "Knutdetaljer";
+
+/* Launch Screen */
+"app_subtitle" = "Din ultimata knutinlärningspartner";
+
+/* Category & Type List */
+"category_search_categories" = "Sök kategorier";
+"category_search_types" = "Sök knuttyper";
+"category_no_data" = "Ingen data tillgänglig";
+
+/* Common UI Elements */
+"common_loading_failed" = "Dataladdning misslyckades";
+"common_retry" = "Försök igen";
+"common_show_details" = "Visa detaljer";
+"common_hide_details" = "Dölj detaljer";
+"common_recent_searches" = "Senaste sökningar";
+"common_clear" = "Rensa";
+"common_search_not_found" = "Inga resultat hittades för \"%@\"";
+"common_try_suggestions" = "Försök söka efter:";
+"common_version" = "Version:";
+"common_build_date" = "Byggnaddatum:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D-animationsdemo";
+"knot_detail_animation_loading" = "Laddar 3D-animation...";
+"knot_detail_no_animation_available" = "Ingen animation tillgänglig";
+"knot_detail_detailed_info" = "Detaljerad information";
+
+/* Knot List */
+"knot_list_no_knots" = "Inga knutar tillgängliga";
+"knot_list_no_knots_in_category" = "Inga knutar i denna kategori";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favoritknutar kommer att visas här";
+
+/* Settings Extended */
+"settings_general" = "Allmänt";
+"settings_about_section" = "Om";
+
+/* WebView */
+"webview_loading" = "Laddar...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Fil hittades inte";
+"data_error_decoding" = "Avkodning misslyckades";
+"data_error_network" = "Nätverksfel";
+"data_error_categories_load_failed" = "Kunde inte ladda kategorier";
+"data_error_knots_load_failed" = "Kunde inte ladda knutar";
+"data_error_manager_released" = "Datahanterare släppt";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Inga resultat hittades";
+"search_stats_results_found" = "Hittade %d resultat";
+"search_stats_no_results_for_query" = "Inga resultat hittades för \"%@\"";
+"search_stats_categories" = "%d kategorier";
+"search_stats_types" = "%d typer";
+"search_stats_knots" = "%d knutar";
+"search_stats_match_type" = "träff";

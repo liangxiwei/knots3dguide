@@ -45,7 +45,22 @@ class LanguageManager: ObservableObject {
     var availableLanguages: [(code: String, name: String)] {
         return [
             ("zh-Hans", "中文"),
-            ("en", "English")
+            ("en", "English"),
+            ("da", "Dansk"),
+            ("de", "Deutsch"),
+            ("es", "Español"),
+            ("fr", "Français"),
+            ("it", "Italiano"),
+            ("ja", "日本語"),
+            ("ko", "한국어"),
+            ("nl", "Nederlands"),
+            ("no", "Norsk"),
+            ("pl", "Polski"),
+            ("pt", "Português"),
+            ("ru", "Русский"),
+            ("sv", "Svenska"),
+            ("tr", "Türkçe"),
+            ("zh-TW", "繁體中文")
         ]
     }
 }

@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Catégories";
+"tab_types" = "Types";
+"tab_favorites" = "Favoris";
+"tab_settings" = "Paramètres";
+
+/* Common Actions */
+"action_search" = "Rechercher";
+"action_cancel" = "Annuler";
+"action_ok" = "OK";
+"action_save" = "Enregistrer";
+"action_back" = "Retour";
+"action_done" = "Terminé";
+
+/* Search */
+"search_placeholder" = "Rechercher nom ou description du nœud";
+"search_no_results" = "Aucun résultat trouvé";
+"search_results_count" = "%d résultats trouvés";
+"search_global_search" = "Recherche Globale";
+"search_discover_knots" = "Découvrir Plus de Nœuds";
+"search_placeholder_description" = "Rechercher noms de nœuds, descriptions ou catégories";
+"search_popular_search" = "Recherches Populaires";
+"search_no_results_found" = "Aucun Nœud Associé Trouvé";
+"search_try_other_keywords" = "Essayez d'autres mots-clés";
+"search_found_knots" = "%d nœuds trouvés";
+"search_sorted_by_relevance" = "Triés par pertinence";
+"search_match_name" = "Correspondance de Nom";
+"search_match_alias" = "Correspondance d'Alias";
+"search_match_description" = "Correspondance de Description";
+"search_match_category" = "Correspondance de Catégorie";
+"search_match_type" = "Correspondance de Type";
+"search_match_fuzzy" = "Correspondance Floue";
+
+/* Knot Detail Page */
+"detail_usage" = "Utilisation";
+"detail_history" = "Histoire";
+"detail_aliases" = "Alias";
+"detail_structure" = "Structure";
+"detail_strength_reliability" = "Résistance et Fiabilité";
+"detail_abok_number" = "Numéro ABOK";
+"detail_notes" = "Notes";
+"detail_related_knots" = "Nœuds Associés";
+"detail_classification" = "Classification";
+"detail_type" = "Type";
+"detail_found_in" = "Trouvé dans";
+
+/* Animation Controls */
+"control_play" = "Jouer";
+"control_pause" = "Pause";
+"control_stop" = "Arrêter";
+"control_mirror" = "Miroir";
+"control_360_mode" = "Mode 360°";
+"control_save_frame" = "Sauvegarder l'Image";
+
+/* Favorites */
+"favorites_empty" = "Pas encore de nœuds favoris";
+"favorites_add" = "Ajouter aux Favoris";
+"favorites_remove" = "Supprimer des Favoris";
+"favorites_added" = "Ajouté aux favoris";
+"favorites_removed" = "Supprimé des favoris";
+
+/* Settings */
+"settings_language" = "Langue";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Politique de Confidentialité";
+"settings_version_info" = "Informations de Version";
+"settings_about" = "À propos";
+"settings_app_version" = "Version de l'App";
+
+/* Privacy Policy */
+"privacy_title" = "Politique de Confidentialité";
+"privacy_data_collection" = "Collecte de Données";
+"privacy_data_collection_content" = "Cette application ne collecte aucune information personnelle ou données utilisateur. Vos favoris et paramètres de langue sont stockés uniquement localement sur votre appareil.";
+"privacy_data_usage" = "Utilisation des Données";
+"privacy_data_usage_content" = "Cette application fonctionne entièrement hors ligne et n'envoie aucune donnée vers des serveurs tiers. Toutes les données de nœuds et ressources d'images sont stockées dans l'application.";
+"privacy_data_storage" = "Stockage des Données";
+"privacy_data_storage_content" = "Vos favoris et préférences de paramètres sont stockés en sécurité sur votre appareil en utilisant iOS UserDefaults, accessible uniquement par cette application.";
+"privacy_contact" = "Nous Contacter";
+"privacy_contact_content" = "Si vous avez des questions concernant notre politique de confidentialité, veuillez nous contacter via la page App Store.";
+
+/* About */
+"about_title" = "À propos de Knots 3D";
+"about_description" = "Knots 3D est une application professionnelle d'apprentissage des nœuds présentant 200 nœuds avec des tutoriels détaillés et des démonstrations d'animation 3D.";
+"about_features" = "Fonctionnalités Principales";
+"about_features_content" = "• 200 nœuds professionnels inclus\n• 16 catégories d'utilisation, 8 types techniques\n• Tutoriels d'animation 3D\n• Vue de rotation à 360 degrés\n• Support d'apprentissage hors ligne\n• Interface bilingue (chinois/anglais)";
+"about_data_source" = "Source de Données";
+"about_data_source_content" = "Les données de nœuds sont compilées à partir de références de nœuds faisant autorité, avec des animations créées professionnellement pour assurer la précision et la praticité.";
+"about_version" = "Informations de Version";
+"about_developer" = "Équipe de Développement";
+"about_developer_content" = "Créé par une équipe de développement professionnelle dédiée à fournir la meilleure expérience d'apprentissage des nœuds.";
+
+/* Alerts */
+"alert_error" = "Erreur";
+"alert_success" = "Succès";
+"alert_confirm" = "Confirmer";
+
+/* Loading States */
+"loading_knots" = "Chargement des données de nœuds...";
+"loading_animation" = "Chargement de l'animation...";
+
+/* Error Messages */
+"error_load_data" = "Échec du chargement des données";
+"error_animation_load" = "Échec du chargement de l'animation";
+"error_network" = "Erreur de connexion réseau";
+
+/* Navigation */
+"nav_knot_list" = "Liste des Nœuds";
+"nav_knot_detail" = "Détails du Nœud";
+
+/* Launch Screen */
+"app_subtitle" = "Votre Compagnon Ultime pour Apprendre les Nœuds";
+
+/* Category & Type List */
+"category_search_categories" = "Rechercher catégories";
+"category_search_types" = "Rechercher types de nœuds";
+"category_no_data" = "Aucune donnée disponible";
+
+/* Common UI Elements */
+"common_loading_failed" = "Échec du chargement des données";
+"common_retry" = "Réessayer";
+"common_show_details" = "Afficher les détails";
+"common_hide_details" = "Masquer les détails";
+"common_recent_searches" = "Recherches récentes";
+"common_clear" = "Effacer";
+"common_search_not_found" = "Aucun résultat trouvé pour \"%@\"";
+"common_try_suggestions" = "Essayez de rechercher :";
+"common_version" = "Version :";
+"common_build_date" = "Date de Compilation :";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "Démonstration d'Animation 3D";
+"knot_detail_animation_loading" = "Chargement de l'animation 3D...";
+"knot_detail_no_animation_available" = "Aucune Animation Disponible";
+"knot_detail_detailed_info" = "Informations Détaillées";
+
+/* Knot List */
+"knot_list_no_knots" = "Aucun nœud disponible";
+"knot_list_no_knots_in_category" = "Aucun nœud dans cette catégorie";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Les nœuds favoris apparaîtront ici";
+
+/* Settings Extended */
+"settings_general" = "Général";
+"settings_about_section" = "À propos";
+
+/* WebView */
+"webview_loading" = "Chargement...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Fichier non trouvé";
+"data_error_decoding" = "Échec du décodage";
+"data_error_network" = "Erreur réseau";
+"data_error_categories_load_failed" = "Échec du chargement des catégories";
+"data_error_knots_load_failed" = "Échec du chargement des nœuds";
+"data_error_manager_released" = "Gestionnaire de données libéré";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Aucun résultat trouvé";
+"search_stats_results_found" = "%d résultats trouvés";
+"search_stats_no_results_for_query" = "Aucun résultat trouvé pour \"%@\"";
+"search_stats_categories" = "%d catégories";
+"search_stats_types" = "%d types";
+"search_stats_knots" = "%d nœuds";
+"search_stats_match_type" = "correspondance";

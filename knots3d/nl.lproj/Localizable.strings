@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Categorieën";
+"tab_types" = "Types";
+"tab_favorites" = "Favorieten";
+"tab_settings" = "Instellingen";
+
+/* Common Actions */
+"action_search" = "Zoeken";
+"action_cancel" = "Annuleren";
+"action_ok" = "OK";
+"action_save" = "Opslaan";
+"action_back" = "Terug";
+"action_done" = "Klaar";
+
+/* Search */
+"search_placeholder" = "Zoek knoop naam of beschrijving";
+"search_no_results" = "Geen resultaten gevonden";
+"search_results_count" = "%d resultaten gevonden";
+"search_global_search" = "Globaal zoeken";
+"search_discover_knots" = "Ontdek meer knopen";
+"search_placeholder_description" = "Zoek knoop namen, beschrijvingen of categorieën";
+"search_popular_search" = "Populaire zoekopdrachten";
+"search_no_results_found" = "Geen gerelateerde knopen gevonden";
+"search_try_other_keywords" = "Probeer andere zoekwoorden";
+"search_found_knots" = "%d knopen gevonden";
+"search_sorted_by_relevance" = "Gesorteerd op relevantie";
+"search_match_name" = "Naam overeenkomst";
+"search_match_alias" = "Alias overeenkomst";
+"search_match_description" = "Beschrijving overeenkomst";
+"search_match_category" = "Categorie overeenkomst";
+"search_match_type" = "Type overeenkomst";
+"search_match_fuzzy" = "Vage overeenkomst";
+
+/* Knot Detail Page */
+"detail_usage" = "Gebruik";
+"detail_history" = "Geschiedenis";
+"detail_aliases" = "Aliassen";
+"detail_structure" = "Structuur";
+"detail_strength_reliability" = "Sterkte & Betrouwbaarheid";
+"detail_abok_number" = "ABOK nummer";
+"detail_notes" = "Notities";
+"detail_related_knots" = "Gerelateerde knopen";
+"detail_classification" = "Classificatie";
+"detail_type" = "Type";
+"detail_found_in" = "Gevonden in";
+
+/* Animation Controls */
+"control_play" = "Afspelen";
+"control_pause" = "Pauzeren";
+"control_stop" = "Stoppen";
+"control_mirror" = "Spiegelen";
+"control_360_mode" = "360° modus";
+"control_save_frame" = "Frame opslaan";
+
+/* Favorites */
+"favorites_empty" = "Nog geen favoriete knopen";
+"favorites_add" = "Toevoegen aan favorieten";
+"favorites_remove" = "Verwijderen uit favorieten";
+"favorites_added" = "Toegevoegd aan favorieten";
+"favorites_removed" = "Verwijderd uit favorieten";
+
+/* Settings */
+"settings_language" = "Taal";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Privacybeleid";
+"settings_version_info" = "Versie informatie";
+"settings_about" = "Over";
+"settings_app_version" = "App versie";
+
+/* Privacy Policy */
+"privacy_title" = "Privacybeleid";
+"privacy_data_collection" = "Gegevensverzameling";
+"privacy_data_collection_content" = "Deze app verzamelt geen persoonlijke informatie of gebruikersgegevens. Uw favorieten en taalinstellingen worden alleen lokaal op uw apparaat opgeslagen.";
+"privacy_data_usage" = "Gegevensgebruik";
+"privacy_data_usage_content" = "Deze app werkt volledig offline en verzendt geen gegevens naar servers van derden. Alle knoopgegevens en afbeeldingsbronnen zijn opgeslagen in de app.";
+"privacy_data_storage" = "Gegevensopslag";
+"privacy_data_storage_content" = "Uw favorieten en instellingsvoorkeuren worden veilig opgeslagen op uw apparaat met iOS UserDefaults, alleen toegankelijk door deze app.";
+"privacy_contact" = "Contact opnemen";
+"privacy_contact_content" = "Als u vragen heeft over ons privacybeleid, neem dan contact met ons op via de App Store pagina.";
+
+/* About */
+"about_title" = "Over Knots 3D";
+"about_description" = "Knots 3D is een professionele knoop leer-app met 200 knopen met gedetailleerde tutorials en 3D animatie demonstraties.";
+"about_features" = "Hoofdkenmerken";
+"about_features_content" = "• 200 professionele knopen inbegrepen\n• 16 gebruikscategorieën, 8 technische types\n• 3D animatie tutorials\n• 360-graden rotatieweergave\n• Offline leerondersteuning\n• Tweetalige interface (Chinees/Engels)";
+"about_data_source" = "Gegevensbron";
+"about_data_source_content" = "Knoopgegevens zijn samengesteld uit gezaghebbende knoopreferenties, met professioneel vervaardigde animaties om nauwkeurigheid en bruikbaarheid te garanderen.";
+"about_version" = "Versie informatie";
+"about_developer" = "Ontwikkelingsteam";
+"about_developer_content" = "Gemaakt door een professioneel ontwikkelingsteam dat zich toelegt op het bieden van de beste knoop leerervaring.";
+
+/* Alerts */
+"alert_error" = "Fout";
+"alert_success" = "Succes";
+"alert_confirm" = "Bevestigen";
+
+/* Loading States */
+"loading_knots" = "Knoopgegevens laden...";
+"loading_animation" = "Animatie laden...";
+
+/* Error Messages */
+"error_load_data" = "Gegevens laden mislukt";
+"error_animation_load" = "Animatie laden mislukt";
+"error_network" = "Netwerkverbinding fout";
+
+/* Navigation */
+"nav_knot_list" = "Knopenlijst";
+"nav_knot_detail" = "Knoopdetails";
+
+/* Launch Screen */
+"app_subtitle" = "Uw ultieme knoop leer partner";
+
+/* Category & Type List */
+"category_search_categories" = "Zoek categorieën";
+"category_search_types" = "Zoek knooptypes";
+"category_no_data" = "Geen gegevens beschikbaar";
+
+/* Common UI Elements */
+"common_loading_failed" = "Gegevens laden mislukt";
+"common_retry" = "Opnieuw proberen";
+"common_show_details" = "Details tonen";
+"common_hide_details" = "Details verbergen";
+"common_recent_searches" = "Recente zoekopdrachten";
+"common_clear" = "Wissen";
+"common_search_not_found" = "Geen resultaten gevonden voor \"%@\"";
+"common_try_suggestions" = "Probeer te zoeken naar:";
+"common_version" = "Versie:";
+"common_build_date" = "Bouwdatum:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D Animatie Demo";
+"knot_detail_animation_loading" = "3D animatie laden...";
+"knot_detail_no_animation_available" = "Geen animatie beschikbaar";
+"knot_detail_detailed_info" = "Gedetailleerde informatie";
+
+/* Knot List */
+"knot_list_no_knots" = "Geen knopen beschikbaar";
+"knot_list_no_knots_in_category" = "Geen knopen in deze categorie";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favoriete knopen zullen hier verschijnen";
+
+/* Settings Extended */
+"settings_general" = "Algemeen";
+"settings_about_section" = "Over";
+
+/* WebView */
+"webview_loading" = "Laden...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Bestand niet gevonden";
+"data_error_decoding" = "Decodering mislukt";
+"data_error_network" = "Netwerkfout";
+"data_error_categories_load_failed" = "Categorieën laden mislukt";
+"data_error_knots_load_failed" = "Knopen laden mislukt";
+"data_error_manager_released" = "Gegevensbeheerder vrijgegeven";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Geen resultaten gevonden";
+"search_stats_results_found" = "%d resultaten gevonden";
+"search_stats_no_results_for_query" = "Geen resultaten gevonden voor \"%@\"";
+"search_stats_categories" = "%d categorieën";
+"search_stats_types" = "%d types";
+"search_stats_knots" = "%d knopen";
+"search_stats_match_type" = "overeenkomst";

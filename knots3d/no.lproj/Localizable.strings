@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategorier";
+"tab_types" = "Typer";
+"tab_favorites" = "Favoritter";
+"tab_settings" = "Innstillinger";
+
+/* Common Actions */
+"action_search" = "Søk";
+"action_cancel" = "Avbryt";
+"action_ok" = "OK";
+"action_save" = "Lagre";
+"action_back" = "Tilbake";
+"action_done" = "Ferdig";
+
+/* Search */
+"search_placeholder" = "Søk etter knutens navn eller beskrivelse";
+"search_no_results" = "Ingen resultater funnet";
+"search_results_count" = "Fant %d resultater";
+"search_global_search" = "Global søk";
+"search_discover_knots" = "Oppdag flere knuter";
+"search_placeholder_description" = "Søk etter knutenavn, beskrivelser eller kategorier";
+"search_popular_search" = "Populære søk";
+"search_no_results_found" = "Ingen relaterte knuter funnet";
+"search_try_other_keywords" = "Prøv andre nøkkelord";
+"search_found_knots" = "Fant %d knuter";
+"search_sorted_by_relevance" = "Sortert etter relevans";
+"search_match_name" = "Navnetreff";
+"search_match_alias" = "Aliastreff";
+"search_match_description" = "Beskrivelsestreff";
+"search_match_category" = "Kategoritreff";
+"search_match_type" = "Typetreff";
+"search_match_fuzzy" = "Utydelig treff";
+
+/* Knot Detail Page */
+"detail_usage" = "Bruk";
+"detail_history" = "Historie";
+"detail_aliases" = "Alias";
+"detail_structure" = "Struktur";
+"detail_strength_reliability" = "Styrke og pålitelighet";
+"detail_abok_number" = "ABOK-nummer";
+"detail_notes" = "Notater";
+"detail_related_knots" = "Relaterte knuter";
+"detail_classification" = "Klassifisering";
+"detail_type" = "Type";
+"detail_found_in" = "Funnet i";
+
+/* Animation Controls */
+"control_play" = "Spill av";
+"control_pause" = "Pause";
+"control_stop" = "Stopp";
+"control_mirror" = "Speiling";
+"control_360_mode" = "360° modus";
+"control_save_frame" = "Lagre ramme";
+
+/* Favorites */
+"favorites_empty" = "Ingen favorittknuter ennå";
+"favorites_add" = "Legg til i favoritter";
+"favorites_remove" = "Fjern fra favoritter";
+"favorites_added" = "Lagt til i favoritter";
+"favorites_removed" = "Fjernet fra favoritter";
+
+/* Settings */
+"settings_language" = "Språk";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Personvernregler";
+"settings_version_info" = "Versjonsinformasjon";
+"settings_about" = "Om";
+"settings_app_version" = "App-versjon";
+
+/* Privacy Policy */
+"privacy_title" = "Personvernregler";
+"privacy_data_collection" = "Datainnsamling";
+"privacy_data_collection_content" = "Denne appen samler ikke inn personlig informasjon eller brukerdata. Dine favoritter og språkinnstillinger lagres kun lokalt på enheten din.";
+"privacy_data_usage" = "Databruk";
+"privacy_data_usage_content" = "Denne appen fungerer helt offline og sender ikke data til tredjepartsservere. All knutedata og bilderessurser lagres i appen.";
+"privacy_data_storage" = "Datalagring";
+"privacy_data_storage_content" = "Dine favoritter og innstillinger lagres trygt på enheten din ved hjelp av iOS UserDefaults, kun tilgjengelig for denne appen.";
+"privacy_contact" = "Kontakt oss";
+"privacy_contact_content" = "Hvis du har spørsmål om våre personvernregler, vennligst kontakt oss gjennom App Store-siden.";
+
+/* About */
+"about_title" = "Om Knots 3D";
+"about_description" = "Knots 3D er en profesjonell knutelæringsapp med 200 knuter med detaljerte veiledninger og 3D-animasjonsdemonstrasjoner.";
+"about_features" = "Hovedfunksjoner";
+"about_features_content" = "• 200 profesjonelle knuter inkludert\n• 16 brukskategorier, 8 tekniske typer\n• 3D-animasjonsveiledninger\n• 360-graders rotasjonsvisning\n• Offline læringsstøtte\n• Tospråklig grensesnitt (kinesisk/engelsk)";
+"about_data_source" = "Datakilde";
+"about_data_source_content" = "Knutedata er samlet fra autoritative knutereferanser med profesjonelt laget animasjoner for å sikre nøyaktighet og praktisk anvendelse.";
+"about_version" = "Versjonsinformasjon";
+"about_developer" = "Utviklingsteam";
+"about_developer_content" = "Laget av et profesjonelt utviklingsteam dedikert til å gi den beste knutelæringsopplevelsen.";
+
+/* Alerts */
+"alert_error" = "Feil";
+"alert_success" = "Suksess";
+"alert_confirm" = "Bekreft";
+
+/* Loading States */
+"loading_knots" = "Laster knutedata...";
+"loading_animation" = "Laster animasjon...";
+
+/* Error Messages */
+"error_load_data" = "Kunne ikke laste data";
+"error_animation_load" = "Kunne ikke laste animasjon";
+"error_network" = "Nettverksforbindelsesfeil";
+
+/* Navigation */
+"nav_knot_list" = "Knuteliste";
+"nav_knot_detail" = "Knutedetaljer";
+
+/* Launch Screen */
+"app_subtitle" = "Din ultimate knutelæringspartner";
+
+/* Category & Type List */
+"category_search_categories" = "Søk i kategorier";
+"category_search_types" = "Søk i knutetyper";
+"category_no_data" = "Ingen data tilgjengelig";
+
+/* Common UI Elements */
+"common_loading_failed" = "Datalasting mislyktes";
+"common_retry" = "Prøv igjen";
+"common_show_details" = "Vis detaljer";
+"common_hide_details" = "Skjul detaljer";
+"common_recent_searches" = "Nylige søk";
+"common_clear" = "Tøm";
+"common_search_not_found" = "Ingen resultater funnet for \"%@\"";
+"common_try_suggestions" = "Prøv å søke etter:";
+"common_version" = "Versjon:";
+"common_build_date" = "Byggedato:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D-animasjonsdemo";
+"knot_detail_animation_loading" = "Laster 3D-animasjon...";
+"knot_detail_no_animation_available" = "Ingen animasjon tilgjengelig";
+"knot_detail_detailed_info" = "Detaljert informasjon";
+
+/* Knot List */
+"knot_list_no_knots" = "Ingen knuter tilgjengelig";
+"knot_list_no_knots_in_category" = "Ingen knuter i denne kategorien";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favorittknuter vil vises her";
+
+/* Settings Extended */
+"settings_general" = "Generelt";
+"settings_about_section" = "Om";
+
+/* WebView */
+"webview_loading" = "Laster...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Fil ikke funnet";
+"data_error_decoding" = "Dekoding mislyktes";
+"data_error_network" = "Nettverksfeil";
+"data_error_categories_load_failed" = "Kunne ikke laste kategorier";
+"data_error_knots_load_failed" = "Kunne ikke laste knuter";
+"data_error_manager_released" = "Databehandler frigitt";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Ingen resultater funnet";
+"search_stats_results_found" = "Fant %d resultater";
+"search_stats_no_results_for_query" = "Ingen resultater funnet for \"%@\"";
+"search_stats_categories" = "%d kategorier";
+"search_stats_types" = "%d typer";
+"search_stats_knots" = "%d knuter";
+"search_stats_match_type" = "treff";

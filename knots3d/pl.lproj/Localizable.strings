@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategorie";
+"tab_types" = "Typy";
+"tab_favorites" = "Ulubione";
+"tab_settings" = "Ustawienia";
+
+/* Common Actions */
+"action_search" = "Szukaj";
+"action_cancel" = "Anuluj";
+"action_ok" = "OK";
+"action_save" = "Zapisz";
+"action_back" = "Wstecz";
+"action_done" = "Gotowe";
+
+/* Search */
+"search_placeholder" = "Szukaj nazwy lub opisu węzła";
+"search_no_results" = "Nie znaleziono wyników";
+"search_results_count" = "Znaleziono %d wyników";
+"search_global_search" = "Wyszukiwanie globalne";
+"search_discover_knots" = "Odkryj więcej węzłów";
+"search_placeholder_description" = "Szukaj nazw węzłów, opisów lub kategorii";
+"search_popular_search" = "Popularne wyszukiwania";
+"search_no_results_found" = "Nie znaleziono powiązanych węzłów";
+"search_try_other_keywords" = "Spróbuj innych słów kluczowych";
+"search_found_knots" = "Znaleziono %d węzłów";
+"search_sorted_by_relevance" = "Posortowane według trafności";
+"search_match_name" = "Dopasowanie nazwy";
+"search_match_alias" = "Dopasowanie aliasu";
+"search_match_description" = "Dopasowanie opisu";
+"search_match_category" = "Dopasowanie kategorii";
+"search_match_type" = "Dopasowanie typu";
+"search_match_fuzzy" = "Dopasowanie rozmyte";
+
+/* Knot Detail Page */
+"detail_usage" = "Zastosowanie";
+"detail_history" = "Historia";
+"detail_aliases" = "Aliasy";
+"detail_structure" = "Struktura";
+"detail_strength_reliability" = "Wytrzymałość i niezawodność";
+"detail_abok_number" = "Numer ABOK";
+"detail_notes" = "Uwagi";
+"detail_related_knots" = "Powiązane węzły";
+"detail_classification" = "Klasyfikacja";
+"detail_type" = "Typ";
+"detail_found_in" = "Znaleziono w";
+
+/* Animation Controls */
+"control_play" = "Odtwórz";
+"control_pause" = "Pauza";
+"control_stop" = "Zatrzymaj";
+"control_mirror" = "Lustro";
+"control_360_mode" = "Tryb 360°";
+"control_save_frame" = "Zapisz klatkę";
+
+/* Favorites */
+"favorites_empty" = "Brak ulubionych węzłów";
+"favorites_add" = "Dodaj do ulubionych";
+"favorites_remove" = "Usuń z ulubionych";
+"favorites_added" = "Dodano do ulubionych";
+"favorites_removed" = "Usunięto z ulubionych";
+
+/* Settings */
+"settings_language" = "Język";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Polityka prywatności";
+"settings_version_info" = "Informacje o wersji";
+"settings_about" = "O aplikacji";
+"settings_app_version" = "Wersja aplikacji";
+
+/* Privacy Policy */
+"privacy_title" = "Polityka prywatności";
+"privacy_data_collection" = "Zbieranie danych";
+"privacy_data_collection_content" = "Ta aplikacja nie zbiera informacji osobistych ani danych użytkownika. Twoje ulubione i ustawienia języka są przechowywane tylko lokalnie na Twoim urządzeniu.";
+"privacy_data_usage" = "Użycie danych";
+"privacy_data_usage_content" = "Ta aplikacja działa całkowicie offline i nie wysyła danych do serwerów zewnętrznych. Wszystkie dane węzłów i zasoby obrazów są przechowywane w aplikacji.";
+"privacy_data_storage" = "Przechowywanie danych";
+"privacy_data_storage_content" = "Twoje ulubione i ustawienia są bezpiecznie przechowywane na Twoim urządzeniu za pomocą iOS UserDefaults, dostępne tylko dla tej aplikacji.";
+"privacy_contact" = "Kontakt";
+"privacy_contact_content" = "Jeśli masz pytania dotyczące naszej polityki prywatności, skontaktuj się z nami przez stronę App Store.";
+
+/* About */
+"about_title" = "O Knots 3D";
+"about_description" = "Knots 3D to profesjonalna aplikacja do nauki węzłów z 200 węzłów ze szczegółowymi samouczkami i demonstracjami animacji 3D.";
+"about_features" = "Główne funkcje";
+"about_features_content" = "• 200 profesjonalnych węzłów\n• 16 kategorii użycia, 8 typów technicznych\n• Samouczki animacji 3D\n• Widok obrotu 360 stopni\n• Wsparcie nauki offline\n• Dwujęzyczny interfejs (chiński/angielski)";
+"about_data_source" = "Źródło danych";
+"about_data_source_content" = "Dane węzłów są skompilowane z autorytatywnych źródeł węzłów z profesjonalnie wykonanymi animacjami w celu zapewnienia dokładności i praktyczności.";
+"about_version" = "Informacje o wersji";
+"about_developer" = "Zespół deweloperski";
+"about_developer_content" = "Stworzone przez profesjonalny zespół deweloperski, który dąży do zapewnienia najlepszego doświadczenia nauki węzłów.";
+
+/* Alerts */
+"alert_error" = "Błąd";
+"alert_success" = "Sukces";
+"alert_confirm" = "Potwierdź";
+
+/* Loading States */
+"loading_knots" = "Ładowanie danych węzłów...";
+"loading_animation" = "Ładowanie animacji...";
+
+/* Error Messages */
+"error_load_data" = "Nie udało się załadować danych";
+"error_animation_load" = "Nie udało się załadować animacji";
+"error_network" = "Błąd połączenia sieciowego";
+
+/* Navigation */
+"nav_knot_list" = "Lista węzłów";
+"nav_knot_detail" = "Szczegóły węzła";
+
+/* Launch Screen */
+"app_subtitle" = "Twój ultimatywny partner w nauce węzłów";
+
+/* Category & Type List */
+"category_search_categories" = "Szukaj kategorii";
+"category_search_types" = "Szukaj typów węzłów";
+"category_no_data" = "Brak dostępnych danych";
+
+/* Common UI Elements */
+"common_loading_failed" = "Ładowanie danych nie powiodło się";
+"common_retry" = "Ponów";
+"common_show_details" = "Pokaż szczegóły";
+"common_hide_details" = "Ukryj szczegóły";
+"common_recent_searches" = "Ostatnie wyszukiwania";
+"common_clear" = "Wyczyść";
+"common_search_not_found" = "Nie znaleziono wyników dla \"%@\"";
+"common_try_suggestions" = "Spróbuj wyszukać:";
+"common_version" = "Wersja:";
+"common_build_date" = "Data kompilacji:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "Demonstracja animacji 3D";
+"knot_detail_animation_loading" = "Ładowanie animacji 3D...";
+"knot_detail_no_animation_available" = "Brak dostępnej animacji";
+"knot_detail_detailed_info" = "Szczegółowe informacje";
+
+/* Knot List */
+"knot_list_no_knots" = "Brak dostępnych węzłów";
+"knot_list_no_knots_in_category" = "Brak węzłów w tej kategorii";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Ulubione węzły pojawią się tutaj";
+
+/* Settings Extended */
+"settings_general" = "Ogólne";
+"settings_about_section" = "O aplikacji";
+
+/* WebView */
+"webview_loading" = "Ładowanie...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Nie znaleziono pliku";
+"data_error_decoding" = "Dekodowanie nie powiodło się";
+"data_error_network" = "Błąd sieci";
+"data_error_categories_load_failed" = "Nie udało się załadować kategorii";
+"data_error_knots_load_failed" = "Nie udało się załadować węzłów";
+"data_error_manager_released" = "Menedżer danych został zwolniony";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Nie znaleziono wyników";
+"search_stats_results_found" = "Znaleziono %d wyników";
+"search_stats_no_results_for_query" = "Nie znaleziono wyników dla \"%@\"";
+"search_stats_categories" = "%d kategorii";
+"search_stats_types" = "%d typów";
+"search_stats_knots" = "%d węzłów";
+"search_stats_match_type" = "dopasowanie";

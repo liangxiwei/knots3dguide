@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategorien";
+"tab_types" = "Arten";
+"tab_favorites" = "Favoriten";
+"tab_settings" = "Einstellungen";
+
+/* Common Actions */
+"action_search" = "Suchen";
+"action_cancel" = "Abbrechen";
+"action_ok" = "OK";
+"action_save" = "Speichern";
+"action_back" = "Zurück";
+"action_done" = "Fertig";
+
+/* Search */
+"search_placeholder" = "Knotennamen oder Beschreibung suchen";
+"search_no_results" = "Keine Ergebnisse gefunden";
+"search_results_count" = "%d Ergebnisse gefunden";
+"search_global_search" = "Globale Suche";
+"search_discover_knots" = "Weitere Knoten entdecken";
+"search_placeholder_description" = "Knotennamen, Beschreibungen oder Kategorien durchsuchen";
+"search_popular_search" = "Beliebte Suchen";
+"search_no_results_found" = "Keine verwandten Knoten gefunden";
+"search_try_other_keywords" = "Andere Stichwörter versuchen";
+"search_found_knots" = "%d Knoten gefunden";
+"search_sorted_by_relevance" = "Nach Relevanz sortiert";
+"search_match_name" = "Namensübereinstimmung";
+"search_match_alias" = "Alias-Übereinstimmung";
+"search_match_description" = "Beschreibungsübereinstimmung";
+"search_match_category" = "Kategorieübereinstimmung";
+"search_match_type" = "Typübereinstimmung";
+"search_match_fuzzy" = "Ungefähre Übereinstimmung";
+
+/* Knot Detail Page */
+"detail_usage" = "Verwendung";
+"detail_history" = "Geschichte";
+"detail_aliases" = "Aliase";
+"detail_structure" = "Struktur";
+"detail_strength_reliability" = "Festigkeit & Zuverlässigkeit";
+"detail_abok_number" = "ABOK-Nummer";
+"detail_notes" = "Notizen";
+"detail_related_knots" = "Verwandte Knoten";
+"detail_classification" = "Klassifizierung";
+"detail_type" = "Typ";
+"detail_found_in" = "Gefunden in";
+
+/* Animation Controls */
+"control_play" = "Abspielen";
+"control_pause" = "Pausieren";
+"control_stop" = "Stoppen";
+"control_mirror" = "Spiegeln";
+"control_360_mode" = "360°-Modus";
+"control_save_frame" = "Bild speichern";
+
+/* Favorites */
+"favorites_empty" = "Noch keine Lieblingsknoten";
+"favorites_add" = "Zu Favoriten hinzufügen";
+"favorites_remove" = "Aus Favoriten entfernen";
+"favorites_added" = "Zu Favoriten hinzugefügt";
+"favorites_removed" = "Aus Favoriten entfernt";
+
+/* Settings */
+"settings_language" = "Sprache";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Datenschutzrichtlinie";
+"settings_version_info" = "Versionsinformationen";
+"settings_about" = "Über";
+"settings_app_version" = "App-Version";
+
+/* Privacy Policy */
+"privacy_title" = "Datenschutzrichtlinie";
+"privacy_data_collection" = "Datenerfassung";
+"privacy_data_collection_content" = "Diese App sammelt keine persönlichen Informationen oder Benutzerdaten. Ihre Favoriten und Spracheinstellungen werden nur lokal auf Ihrem Gerät gespeichert.";
+"privacy_data_usage" = "Datennutzung";
+"privacy_data_usage_content" = "Diese App funktioniert vollständig offline und sendet keine Daten an Drittanbieter-Server. Alle Knotendaten und Bildressourcen sind in der App gespeichert.";
+"privacy_data_storage" = "Datenspeicherung";
+"privacy_data_storage_content" = "Ihre Favoriten und Einstellungspräferenzen werden sicher auf Ihrem Gerät mit iOS UserDefaults gespeichert und sind nur für diese App zugänglich.";
+"privacy_contact" = "Kontakt";
+"privacy_contact_content" = "Wenn Sie Fragen zu unserer Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über die App Store-Seite.";
+
+/* About */
+"about_title" = "Über Knots 3D";
+"about_description" = "Knots 3D ist eine professionelle Knotenlern-App mit 200 Knoten mit detaillierten Anleitungen und 3D-Animationsdemonstrationen.";
+"about_features" = "Hauptfunktionen";
+"about_features_content" = "• 200 professionelle Knoten enthalten\n• 16 Verwendungskategorien, 8 technische Typen\n• 3D-Animations-Tutorials\n• 360-Grad-Rotationsansicht\n• Offline-Lernunterstützung\n• Zweisprachige Benutzeroberfläche (Chinesisch/Englisch)";
+"about_data_source" = "Datenquelle";
+"about_data_source_content" = "Knotendaten stammen aus autoritativen Knotenreferenzen mit professionell erstellten Animationen, um Genauigkeit und Praktikabilität zu gewährleisten.";
+"about_version" = "Versionsinformationen";
+"about_developer" = "Entwicklungsteam";
+"about_developer_content" = "Erstellt von einem professionellen Entwicklungsteam, das sich der besten Knotenlern-Erfahrung widmet.";
+
+/* Alerts */
+"alert_error" = "Fehler";
+"alert_success" = "Erfolg";
+"alert_confirm" = "Bestätigen";
+
+/* Loading States */
+"loading_knots" = "Knotendaten werden geladen...";
+"loading_animation" = "Animation wird geladen...";
+
+/* Error Messages */
+"error_load_data" = "Daten konnten nicht geladen werden";
+"error_animation_load" = "Animation konnte nicht geladen werden";
+"error_network" = "Netzwerkverbindungsfehler";
+
+/* Navigation */
+"nav_knot_list" = "Knotenliste";
+"nav_knot_detail" = "Knotendetails";
+
+/* Launch Screen */
+"app_subtitle" = "Ihr ultimativer Knotenlern-Begleiter";
+
+/* Category & Type List */
+"category_search_categories" = "Kategorien durchsuchen";
+"category_search_types" = "Knotentypen durchsuchen";
+"category_no_data" = "Keine Daten verfügbar";
+
+/* Common UI Elements */
+"common_loading_failed" = "Datenladen fehlgeschlagen";
+"common_retry" = "Wiederholen";
+"common_show_details" = "Details anzeigen";
+"common_hide_details" = "Details verbergen";
+"common_recent_searches" = "Letzte Suchen";
+"common_clear" = "Löschen";
+"common_search_not_found" = "Keine Ergebnisse für \"%@\" gefunden";
+"common_try_suggestions" = "Versuchen Sie zu suchen nach:";
+"common_version" = "Version:";
+"common_build_date" = "Erstellungsdatum:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D-Animationsdemonstration";
+"knot_detail_animation_loading" = "3D-Animation wird geladen...";
+"knot_detail_no_animation_available" = "Keine Animation verfügbar";
+"knot_detail_detailed_info" = "Detaillierte Informationen";
+
+/* Knot List */
+"knot_list_no_knots" = "Keine Knoten verfügbar";
+"knot_list_no_knots_in_category" = "Keine Knoten in dieser Kategorie";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Lieblingsknoten werden hier angezeigt";
+
+/* Settings Extended */
+"settings_general" = "Allgemein";
+"settings_about_section" = "Über";
+
+/* WebView */
+"webview_loading" = "Wird geladen...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Datei nicht gefunden";
+"data_error_decoding" = "Dekodierung fehlgeschlagen";
+"data_error_network" = "Netzwerkfehler";
+"data_error_categories_load_failed" = "Kategorien konnten nicht geladen werden";
+"data_error_knots_load_failed" = "Knoten konnten nicht geladen werden";
+"data_error_manager_released" = "Datenmanager freigegeben";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Keine Ergebnisse gefunden";
+"search_stats_results_found" = "%d Ergebnisse gefunden";
+"search_stats_no_results_for_query" = "Keine Ergebnisse für \"%@\" gefunden";
+"search_stats_categories" = "%d Kategorien";
+"search_stats_types" = "%d Typen";
+"search_stats_knots" = "%d Knoten";
+"search_stats_match_type" = "Übereinstimmung";

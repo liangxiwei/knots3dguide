@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Categorie";
+"tab_types" = "Tipi";
+"tab_favorites" = "Preferiti";
+"tab_settings" = "Impostazioni";
+
+/* Common Actions */
+"action_search" = "Cerca";
+"action_cancel" = "Annulla";
+"action_ok" = "OK";
+"action_save" = "Salva";
+"action_back" = "Indietro";
+"action_done" = "Fatto";
+
+/* Search */
+"search_placeholder" = "Cerca nome o descrizione del nodo";
+"search_no_results" = "Nessun risultato trovato";
+"search_results_count" = "Trovati %d risultati";
+"search_global_search" = "Ricerca Globale";
+"search_discover_knots" = "Scopri Altri Nodi";
+"search_placeholder_description" = "Cerca nomi di nodi, descrizioni o categorie";
+"search_popular_search" = "Ricerche Popolari";
+"search_no_results_found" = "Nessun Nodo Correlato Trovato";
+"search_try_other_keywords" = "Prova altre parole chiave";
+"search_found_knots" = "Trovati %d nodi";
+"search_sorted_by_relevance" = "Ordinati per rilevanza";
+"search_match_name" = "Corrispondenza Nome";
+"search_match_alias" = "Corrispondenza Alias";
+"search_match_description" = "Corrispondenza Descrizione";
+"search_match_category" = "Corrispondenza Categoria";
+"search_match_type" = "Corrispondenza Tipo";
+"search_match_fuzzy" = "Corrispondenza Approssimativa";
+
+/* Knot Detail Page */
+"detail_usage" = "Utilizzo";
+"detail_history" = "Storia";
+"detail_aliases" = "Alias";
+"detail_structure" = "Struttura";
+"detail_strength_reliability" = "Resistenza e Affidabilità";
+"detail_abok_number" = "Numero ABOK";
+"detail_notes" = "Note";
+"detail_related_knots" = "Nodi Correlati";
+"detail_classification" = "Classificazione";
+"detail_type" = "Tipo";
+"detail_found_in" = "Trovato in";
+
+/* Animation Controls */
+"control_play" = "Riproduci";
+"control_pause" = "Pausa";
+"control_stop" = "Ferma";
+"control_mirror" = "Specchio";
+"control_360_mode" = "Modalità 360°";
+"control_save_frame" = "Salva Immagine";
+
+/* Favorites */
+"favorites_empty" = "Nessun nodo preferito ancora";
+"favorites_add" = "Aggiungi ai Preferiti";
+"favorites_remove" = "Rimuovi dai Preferiti";
+"favorites_added" = "Aggiunto ai preferiti";
+"favorites_removed" = "Rimosso dai preferiti";
+
+/* Settings */
+"settings_language" = "Lingua";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Informativa sulla Privacy";
+"settings_version_info" = "Informazioni Versione";
+"settings_about" = "Info";
+"settings_app_version" = "Versione App";
+
+/* Privacy Policy */
+"privacy_title" = "Informativa sulla Privacy";
+"privacy_data_collection" = "Raccolta Dati";
+"privacy_data_collection_content" = "Questa app non raccoglie informazioni personali o dati utente. I tuoi preferiti e impostazioni della lingua sono memorizzati solo localmente sul tuo dispositivo.";
+"privacy_data_usage" = "Uso dei Dati";
+"privacy_data_usage_content" = "Questa app funziona completamente offline e non invia dati a server di terze parti. Tutti i dati dei nodi e le risorse delle immagini sono memorizzati nell'app.";
+"privacy_data_storage" = "Archiviazione Dati";
+"privacy_data_storage_content" = "I tuoi preferiti e le preferenze delle impostazioni sono archiviati in modo sicuro sul tuo dispositivo utilizzando iOS UserDefaults, accessibile solo da questa app.";
+"privacy_contact" = "Contattaci";
+"privacy_contact_content" = "Se hai domande sulla nostra informativa sulla privacy, contattaci tramite la pagina App Store.";
+
+/* About */
+"about_title" = "Informazioni su Knots 3D";
+"about_description" = "Knots 3D è un'app professionale per imparare i nodi con 200 nodi con tutorial dettagliati e dimostrazioni di animazione 3D.";
+"about_features" = "Caratteristiche Principali";
+"about_features_content" = "• 200 nodi professionali inclusi\n• 16 categorie di utilizzo, 8 tipi tecnici\n• Tutorial di animazione 3D\n• Vista rotazione a 360 gradi\n• Supporto apprendimento offline\n• Interfaccia bilingue (cinese/inglese)";
+"about_data_source" = "Fonte Dati";
+"about_data_source_content" = "I dati dei nodi sono compilati da riferimenti autorevoli sui nodi, con animazioni create professionalmente per garantire accuratezza e praticità.";
+"about_version" = "Informazioni Versione";
+"about_developer" = "Team di Sviluppo";
+"about_developer_content" = "Creato da un team di sviluppo professionale dedicato a fornire la migliore esperienza di apprendimento dei nodi.";
+
+/* Alerts */
+"alert_error" = "Errore";
+"alert_success" = "Successo";
+"alert_confirm" = "Conferma";
+
+/* Loading States */
+"loading_knots" = "Caricamento dati nodi...";
+"loading_animation" = "Caricamento animazione...";
+
+/* Error Messages */
+"error_load_data" = "Caricamento dati fallito";
+"error_animation_load" = "Caricamento animazione fallito";
+"error_network" = "Errore connessione di rete";
+
+/* Navigation */
+"nav_knot_list" = "Elenco Nodi";
+"nav_knot_detail" = "Dettagli Nodo";
+
+/* Launch Screen */
+"app_subtitle" = "Il Tuo Compagno Definitivo per Imparare i Nodi";
+
+/* Category & Type List */
+"category_search_categories" = "Cerca categorie";
+"category_search_types" = "Cerca tipi di nodi";
+"category_no_data" = "Nessun dato disponibile";
+
+/* Common UI Elements */
+"common_loading_failed" = "Caricamento dati fallito";
+"common_retry" = "Riprova";
+"common_show_details" = "Mostra dettagli";
+"common_hide_details" = "Nascondi dettagli";
+"common_recent_searches" = "Ricerche recenti";
+"common_clear" = "Cancella";
+"common_search_not_found" = "Nessun risultato trovato per \"%@\"";
+"common_try_suggestions" = "Prova a cercare:";
+"common_version" = "Versione:";
+"common_build_date" = "Data di Compilazione:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "Dimostrazione Animazione 3D";
+"knot_detail_animation_loading" = "Caricamento animazione 3D...";
+"knot_detail_no_animation_available" = "Nessuna Animazione Disponibile";
+"knot_detail_detailed_info" = "Informazioni Dettagliate";
+
+/* Knot List */
+"knot_list_no_knots" = "Nessun nodo disponibile";
+"knot_list_no_knots_in_category" = "Nessun nodo in questa categoria";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "I nodi preferiti appariranno qui";
+
+/* Settings Extended */
+"settings_general" = "Generale";
+"settings_about_section" = "Info";
+
+/* WebView */
+"webview_loading" = "Caricamento...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "File non trovato";
+"data_error_decoding" = "Decodifica fallita";
+"data_error_network" = "Errore di rete";
+"data_error_categories_load_failed" = "Caricamento categorie fallito";
+"data_error_knots_load_failed" = "Caricamento nodi fallito";
+"data_error_manager_released" = "Gestore dati rilasciato";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Nessun risultato trovato";
+"search_stats_results_found" = "Trovati %d risultati";
+"search_stats_no_results_for_query" = "Nessun risultato trovato per \"%@\"";
+"search_stats_categories" = "%d categorie";
+"search_stats_types" = "%d tipi";
+"search_stats_knots" = "%d nodi";
+"search_stats_match_type" = "corrispondenza";

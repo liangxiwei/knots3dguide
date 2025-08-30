@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategorier";
+"tab_types" = "Typer";
+"tab_favorites" = "Favoritter";
+"tab_settings" = "Indstillinger";
+
+/* Common Actions */
+"action_search" = "Søg";
+"action_cancel" = "Annuller";
+"action_ok" = "OK";
+"action_save" = "Gem";
+"action_back" = "Tilbage";
+"action_done" = "Færdig";
+
+/* Search */
+"search_placeholder" = "Søg efter knobens navn eller beskrivelse";
+"search_no_results" = "Ingen resultater fundet";
+"search_results_count" = "Fandt %d resultater";
+"search_global_search" = "Global søgning";
+"search_discover_knots" = "Opdag flere knob";
+"search_placeholder_description" = "Søg efter knobenavne, beskrivelser eller kategorier";
+"search_popular_search" = "Populære søgninger";
+"search_no_results_found" = "Ingen relaterede knob fundet";
+"search_try_other_keywords" = "Prøv andre nøgleord";
+"search_found_knots" = "Fandt %d knob";
+"search_sorted_by_relevance" = "Sorteret efter relevans";
+"search_match_name" = "Navnematch";
+"search_match_alias" = "Aliasmatch";
+"search_match_description" = "Beskrivelsesmatch";
+"search_match_category" = "Kategorimatch";
+"search_match_type" = "Typematch";
+"search_match_fuzzy" = "Uskarp match";
+
+/* Knot Detail Page */
+"detail_usage" = "Anvendelse";
+"detail_history" = "Historie";
+"detail_aliases" = "Aliaser";
+"detail_structure" = "Struktur";
+"detail_strength_reliability" = "Styrke & Pålidelighed";
+"detail_abok_number" = "ABOK-nummer";
+"detail_notes" = "Noter";
+"detail_related_knots" = "Relaterede knob";
+"detail_classification" = "Klassifikation";
+"detail_type" = "Type";
+"detail_found_in" = "Findes i";
+
+/* Animation Controls */
+"control_play" = "Afspil";
+"control_pause" = "Pause";
+"control_stop" = "Stop";
+"control_mirror" = "Spejl";
+"control_360_mode" = "360° tilstand";
+"control_save_frame" = "Gem billede";
+
+/* Favorites */
+"favorites_empty" = "Ingen favoritknob endnu";
+"favorites_add" = "Tilføj til favoritter";
+"favorites_remove" = "Fjern fra favoritter";
+"favorites_added" = "Tilføjet til favoritter";
+"favorites_removed" = "Fjernet fra favoritter";
+
+/* Settings */
+"settings_language" = "Sprog";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Privatlivspolitik";
+"settings_version_info" = "Versionsinfo";
+"settings_about" = "Om";
+"settings_app_version" = "App-version";
+
+/* Privacy Policy */
+"privacy_title" = "Privatlivspolitik";
+"privacy_data_collection" = "Dataindsamling";
+"privacy_data_collection_content" = "Denne app indsamler ikke personlige oplysninger eller brugerdata. Dine favoritter og sprogindstillinger gemmes kun lokalt på din enhed.";
+"privacy_data_usage" = "Databrug";
+"privacy_data_usage_content" = "Denne app fungerer helt offline og sender ikke data til tredjepartsservere. Alle knobedata og billedressourcer gemmes i appen.";
+"privacy_data_storage" = "Datalagring";
+"privacy_data_storage_content" = "Dine favoritter og indstillingspræferencer gemmes sikkert på din enhed ved hjælp af iOS UserDefaults, kun tilgængelige for denne app.";
+"privacy_contact" = "Kontakt os";
+"privacy_contact_content" = "Hvis du har spørgsmål om vores privatlivspolitik, bedes du kontakte os gennem App Store-siden.";
+
+/* About */
+"about_title" = "Om Knots 3D";
+"about_description" = "Knots 3D er en professionel app til at lære knob med 200 knob med detaljerede vejledninger og 3D-animationsdemonstrationer.";
+"about_features" = "Hovedfunktioner";
+"about_features_content" = "• 200 professionelle knob inkluderet\n• 16 brugskategorier, 8 tekniske typer\n• 3D-animationsvejledninger\n• 360-graders rotationsvisning\n• Offline læringsstøtte\n• Tosproget grænseflade (kinesisk/engelsk)";
+"about_data_source" = "Datakilde";
+"about_data_source_content" = "Knobedata er samlet fra autoritative knobereferencer med professionelt fremstillede animationer for at sikre nøjagtighed og praktisk anvendelse.";
+"about_version" = "Versionsinformation";
+"about_developer" = "Udviklingsteam";
+"about_developer_content" = "Skabt af et professionelt udviklingsteam, der er dedikeret til at give den bedste knobelæringsoplevelse.";
+
+/* Alerts */
+"alert_error" = "Fejl";
+"alert_success" = "Succes";
+"alert_confirm" = "Bekræft";
+
+/* Loading States */
+"loading_knots" = "Indlæser knobedata...";
+"loading_animation" = "Indlæser animation...";
+
+/* Error Messages */
+"error_load_data" = "Kunne ikke indlæse data";
+"error_animation_load" = "Kunne ikke indlæse animation";
+"error_network" = "Netværksforbindelsesfejl";
+
+/* Navigation */
+"nav_knot_list" = "Knobeliste";
+"nav_knot_detail" = "Knobedetaljer";
+
+/* Launch Screen */
+"app_subtitle" = "Din ultimative knobelæringskammerat";
+
+/* Category & Type List */
+"category_search_categories" = "Søg i kategorier";
+"category_search_types" = "Søg i knobetyper";
+"category_no_data" = "Ingen data tilgængelig";
+
+/* Common UI Elements */
+"common_loading_failed" = "Dataindlæsning mislykkedes";
+"common_retry" = "Prøv igen";
+"common_show_details" = "Vis detaljer";
+"common_hide_details" = "Skjul detaljer";
+"common_recent_searches" = "Seneste søgninger";
+"common_clear" = "Ryd";
+"common_search_not_found" = "Ingen resultater fundet for \"%@\"";
+"common_try_suggestions" = "Prøv at søge efter:";
+"common_version" = "Version:";
+"common_build_date" = "Buildato:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D-animationsdemonstration";
+"knot_detail_animation_loading" = "Indlæser 3D-animation...";
+"knot_detail_no_animation_available" = "Ingen animation tilgængelig";
+"knot_detail_detailed_info" = "Detaljeret information";
+
+/* Knot List */
+"knot_list_no_knots" = "Ingen knob tilgængelige";
+"knot_list_no_knots_in_category" = "Ingen knob i denne kategori";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favoritknob vil blive vist her";
+
+/* Settings Extended */
+"settings_general" = "Generelt";
+"settings_about_section" = "Om";
+
+/* WebView */
+"webview_loading" = "Indlæser...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Fil ikke fundet";
+"data_error_decoding" = "Dekodning mislykkedes";
+"data_error_network" = "Netværksfejl";
+"data_error_categories_load_failed" = "Kunne ikke indlæse kategorier";
+"data_error_knots_load_failed" = "Kunne ikke indlæse knob";
+"data_error_manager_released" = "Datamanager frigivet";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Ingen resultater fundet";
+"search_stats_results_found" = "Fandt %d resultater";
+"search_stats_no_results_for_query" = "Ingen resultater fundet for \"%@\"";
+"search_stats_categories" = "%d kategorier";
+"search_stats_types" = "%d typer";
+"search_stats_knots" = "%d knob";
+"search_stats_match_type" = "match";

@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "用途分類";
+"tab_types" = "繩結類型";
+"tab_favorites" = "收藏";
+"tab_settings" = "設定";
+
+/* Common Actions */
+"action_search" = "搜尋";
+"action_cancel" = "取消";
+"action_ok" = "確定";
+"action_save" = "儲存";
+"action_back" = "返回";
+"action_done" = "完成";
+
+/* Search */
+"search_placeholder" = "搜尋繩結名稱或描述";
+"search_no_results" = "未找到相關結果";
+"search_results_count" = "找到 %d 個結果";
+"search_global_search" = "全域搜尋";
+"search_discover_knots" = "發現更多繩結";
+"search_placeholder_description" = "搜尋繩結名稱、描述或分類";
+"search_popular_search" = "熱門搜尋";
+"search_no_results_found" = "未找到相關繩結";
+"search_try_other_keywords" = "嘗試其他關鍵詞";
+"search_found_knots" = "找到 %d 個繩結";
+"search_sorted_by_relevance" = "按相關度排序";
+"search_match_name" = "名稱匹配";
+"search_match_alias" = "別名匹配";
+"search_match_description" = "描述匹配";
+"search_match_category" = "分類匹配";
+"search_match_type" = "類型匹配";
+"search_match_fuzzy" = "模糊匹配";
+
+/* Knot Detail Page */
+"detail_usage" = "用途";
+"detail_history" = "歷史";
+"detail_aliases" = "別名";
+"detail_structure" = "結構";
+"detail_strength_reliability" = "強度可靠性";
+"detail_abok_number" = "ABOK編號";
+"detail_notes" = "注意事項";
+"detail_related_knots" = "相關繩結";
+"detail_classification" = "分類資訊";
+"detail_type" = "類型";
+"detail_found_in" = "應用領域";
+
+/* Animation Controls */
+"control_play" = "播放";
+"control_pause" = "暫停";
+"control_stop" = "停止";
+"control_mirror" = "鏡像";
+"control_360_mode" = "360°模式";
+"control_save_frame" = "儲存目前畫面";
+
+/* Favorites */
+"favorites_empty" = "暫無收藏的繩結";
+"favorites_add" = "收藏";
+"favorites_remove" = "取消收藏";
+"favorites_added" = "已新增至收藏";
+"favorites_removed" = "已從收藏移除";
+
+/* Settings */
+"settings_language" = "語言設定";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "隱私政策";
+"settings_version_info" = "版本資訊";
+"settings_about" = "關於我們";
+"settings_app_version" = "應用程式版本";
+
+/* Privacy Policy */
+"privacy_title" = "隱私政策";
+"privacy_data_collection" = "資料收集";
+"privacy_data_collection_content" = "本應用程式不收集任何個人資訊或使用者資料。您的收藏記錄和語言設定僅儲存在本機裝置上。";
+"privacy_data_usage" = "資料使用";
+"privacy_data_usage_content" = "本應用程式完全離線運行，不會向任何第三方伺服器傳送資料。所有繩結資料和圖片資源都儲存在應用程式內部。";
+"privacy_data_storage" = "資料儲存";
+"privacy_data_storage_content" = "您的收藏記錄和設定偏好透過iOS系統的UserDefaults安全儲存在您的裝置上，僅限本應用程式存取。";
+"privacy_contact" = "聯絡我們";
+"privacy_contact_content" = "如果您對我們的隱私政策有任何疑問，請透過應用程式商店頁面聯絡我們。";
+
+/* About */
+"about_title" = "關於繩結3D";
+"about_description" = "繩結3D是一款專業的繩結學習應用程式，包含200種繩結的詳細教學和3D動畫演示。";
+"about_features" = "主要功能";
+"about_features_content" = "• 200種專業繩結收錄\n• 16個用途分類，8個技術類型\n• 3D動畫教學演示\n• 360度旋轉檢視\n• 離線學習支援\n• 中英雙語介面";
+"about_data_source" = "資料來源";
+"about_data_source_content" = "繩結資料基於權威繩結資料整理，動畫資源經過專業製作，確保學習內容的準確性和實用性。";
+"about_version" = "版本資訊";
+"about_developer" = "開發團隊";
+"about_developer_content" = "由專業開發團隊精心打造，致力於為使用者提供最優質的繩結學習體驗。";
+
+/* Alerts */
+"alert_error" = "錯誤";
+"alert_success" = "成功";
+"alert_confirm" = "確認";
+
+/* Loading States */
+"loading_knots" = "正在載入繩結資料...";
+"loading_animation" = "正在載入動畫...";
+
+/* Error Messages */
+"error_load_data" = "資料載入失敗";
+"error_animation_load" = "動畫載入失敗";
+"error_network" = "網路連線錯誤";
+
+/* Navigation */
+"nav_knot_list" = "繩結列表";
+"nav_knot_detail" = "繩結詳情";
+
+/* Launch Screen */
+"app_subtitle" = "學習繩結的最佳夥伴";
+
+/* Category & Type List */
+"category_search_categories" = "搜尋用途分類";
+"category_search_types" = "搜尋繩結類型";
+"category_no_data" = "暫無資料";
+
+/* Common UI Elements */
+"common_loading_failed" = "資料載入失敗";
+"common_retry" = "重新載入";
+"common_show_details" = "顯示詳情";
+"common_hide_details" = "隱藏詳情";
+"common_recent_searches" = "最近搜尋";
+"common_clear" = "清空";
+"common_search_not_found" = "未找到\"%@\"的相關內容";
+"common_try_suggestions" = "試試搜尋：";
+"common_version" = "版本號:";
+"common_build_date" = "建置日期:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D動畫演示";
+"knot_detail_animation_loading" = "3D動畫載入中...";
+"knot_detail_no_animation_available" = "暫無動畫資料";
+"knot_detail_detailed_info" = "詳細資訊";
+
+/* Knot List */
+"knot_list_no_knots" = "暫無繩結";
+"knot_list_no_knots_in_category" = "該分類下暫時沒有相關繩結";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "收藏一些繩結後，它們將顯示在這裡";
+
+/* Settings Extended */
+"settings_general" = "一般";
+"settings_about_section" = "關於";
+
+/* WebView */
+"webview_loading" = "載入中...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "未找到檔案";
+"data_error_decoding" = "解碼失敗";
+"data_error_network" = "網路錯誤";
+"data_error_categories_load_failed" = "分類資料載入失敗";
+"data_error_knots_load_failed" = "繩結資料載入失敗";
+"data_error_manager_released" = "資料管理器已釋放";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "未找到結果";
+"search_stats_results_found" = "找到 %d 個結果";
+"search_stats_no_results_for_query" = "未找到與\"%@\"相關的內容";
+"search_stats_categories" = "%d個分類";
+"search_stats_types" = "%d個類型";
+"search_stats_knots" = "%d個繩結";
+"search_stats_match_type" = "匹配";

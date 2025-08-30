@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "카테고리";
+"tab_types" = "유형";
+"tab_favorites" = "즐겨찾기";
+"tab_settings" = "설정";
+
+/* Common Actions */
+"action_search" = "검색";
+"action_cancel" = "취소";
+"action_ok" = "확인";
+"action_save" = "저장";
+"action_back" = "뒤로";
+"action_done" = "완료";
+
+/* Search */
+"search_placeholder" = "매듭 이름 또는 설명 검색";
+"search_no_results" = "결과를 찾을 수 없습니다";
+"search_results_count" = "%d개 결과 발견";
+"search_global_search" = "전체 검색";
+"search_discover_knots" = "더 많은 매듭 발견";
+"search_placeholder_description" = "매듭 이름, 설명 또는 카테고리 검색";
+"search_popular_search" = "인기 검색";
+"search_no_results_found" = "관련 매듭을 찾을 수 없음";
+"search_try_other_keywords" = "다른 키워드를 시도해보세요";
+"search_found_knots" = "%d개 매듭 발견";
+"search_sorted_by_relevance" = "관련성순으로 정렬";
+"search_match_name" = "이름 일치";
+"search_match_alias" = "별칭 일치";
+"search_match_description" = "설명 일치";
+"search_match_category" = "카테고리 일치";
+"search_match_type" = "유형 일치";
+"search_match_fuzzy" = "유사 일치";
+
+/* Knot Detail Page */
+"detail_usage" = "용도";
+"detail_history" = "역사";
+"detail_aliases" = "별칭";
+"detail_structure" = "구조";
+"detail_strength_reliability" = "강도 및 신뢰성";
+"detail_abok_number" = "ABOK 번호";
+"detail_notes" = "참고사항";
+"detail_related_knots" = "관련 매듭";
+"detail_classification" = "분류";
+"detail_type" = "유형";
+"detail_found_in" = "발견 위치";
+
+/* Animation Controls */
+"control_play" = "재생";
+"control_pause" = "일시정지";
+"control_stop" = "정지";
+"control_mirror" = "미러";
+"control_360_mode" = "360° 모드";
+"control_save_frame" = "프레임 저장";
+
+/* Favorites */
+"favorites_empty" = "아직 즐겨찾는 매듭이 없습니다";
+"favorites_add" = "즐겨찾기에 추가";
+"favorites_remove" = "즐겨찾기에서 제거";
+"favorites_added" = "즐겨찾기에 추가됨";
+"favorites_removed" = "즐겨찾기에서 제거됨";
+
+/* Settings */
+"settings_language" = "언어";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "개인정보 처리방침";
+"settings_version_info" = "버전 정보";
+"settings_about" = "정보";
+"settings_app_version" = "앱 버전";
+
+/* Privacy Policy */
+"privacy_title" = "개인정보 처리방침";
+"privacy_data_collection" = "데이터 수집";
+"privacy_data_collection_content" = "이 앱은 개인정보나 사용자 데이터를 수집하지 않습니다. 즐겨찾기와 언어 설정은 귀하의 기기에만 로컬로 저장됩니다.";
+"privacy_data_usage" = "데이터 사용";
+"privacy_data_usage_content" = "이 앱은 완전히 오프라인으로 작동하며 제3자 서버로 데이터를 전송하지 않습니다. 모든 매듭 데이터와 이미지 리소스는 앱 내에 저장됩니다.";
+"privacy_data_storage" = "데이터 저장";
+"privacy_data_storage_content" = "즐겨찾기와 설정 기본설정은 iOS UserDefaults를 사용하여 기기에 안전하게 저장되며, 이 앱에서만 접근할 수 있습니다.";
+"privacy_contact" = "문의하기";
+"privacy_contact_content" = "개인정보 처리방침에 대한 질문이 있으시면 App Store 페이지를 통해 문의해 주세요.";
+
+/* About */
+"about_title" = "Knots 3D 정보";
+"about_description" = "Knots 3D는 200개 매듭의 상세한 튜토리얼과 3D 애니메이션 데모를 제공하는 전문 매듭 학습 앱입니다.";
+"about_features" = "주요 기능";
+"about_features_content" = "• 200개 전문 매듭 포함\n• 16개 용도 카테고리, 8개 기술 유형\n• 3D 애니메이션 튜토리얼\n• 360도 회전 뷰\n• 오프라인 학습 지원\n• 이중 언어 인터페이스 (중국어/영어)";
+"about_data_source" = "데이터 소스";
+"about_data_source_content" = "매듭 데이터는 권위 있는 매듭 참조 자료에서 편집되었으며, 정확성과 실용성을 보장하기 위해 전문적으로 제작된 애니메이션입니다.";
+"about_version" = "버전 정보";
+"about_developer" = "개발팀";
+"about_developer_content" = "최고의 매듭 학습 경험을 제공하는 데 전념하는 전문 개발팀에 의해 제작되었습니다.";
+
+/* Alerts */
+"alert_error" = "오류";
+"alert_success" = "성공";
+"alert_confirm" = "확인";
+
+/* Loading States */
+"loading_knots" = "매듭 데이터 로딩 중...";
+"loading_animation" = "애니메이션 로딩 중...";
+
+/* Error Messages */
+"error_load_data" = "데이터 로딩 실패";
+"error_animation_load" = "애니메이션 로딩 실패";
+"error_network" = "네트워크 연결 오류";
+
+/* Navigation */
+"nav_knot_list" = "매듭 목록";
+"nav_knot_detail" = "매듭 세부사항";
+
+/* Launch Screen */
+"app_subtitle" = "궁극의 매듭 학습 동반자";
+
+/* Category & Type List */
+"category_search_categories" = "카테고리 검색";
+"category_search_types" = "매듭 유형 검색";
+"category_no_data" = "사용 가능한 데이터 없음";
+
+/* Common UI Elements */
+"common_loading_failed" = "데이터 로딩 실패";
+"common_retry" = "재시도";
+"common_show_details" = "세부사항 표시";
+"common_hide_details" = "세부사항 숨기기";
+"common_recent_searches" = "최근 검색";
+"common_clear" = "지우기";
+"common_search_not_found" = "\"%@\"에 대한 결과를 찾을 수 없습니다";
+"common_try_suggestions" = "다음을 검색해보세요:";
+"common_version" = "버전:";
+"common_build_date" = "빌드 날짜:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D 애니메이션 데모";
+"knot_detail_animation_loading" = "3D 애니메이션 로딩 중...";
+"knot_detail_no_animation_available" = "사용 가능한 애니메이션 없음";
+"knot_detail_detailed_info" = "상세 정보";
+
+/* Knot List */
+"knot_list_no_knots" = "사용 가능한 매듭 없음";
+"knot_list_no_knots_in_category" = "이 카테고리에 매듭 없음";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "즐겨찾는 매듭이 여기에 표시됩니다";
+
+/* Settings Extended */
+"settings_general" = "일반";
+"settings_about_section" = "정보";
+
+/* WebView */
+"webview_loading" = "로딩 중...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "파일을 찾을 수 없음";
+"data_error_decoding" = "디코딩 실패";
+"data_error_network" = "네트워크 오류";
+"data_error_categories_load_failed" = "카테고리 로딩 실패";
+"data_error_knots_load_failed" = "매듭 로딩 실패";
+"data_error_manager_released" = "데이터 매니저 해제됨";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "결과를 찾을 수 없음";
+"search_stats_results_found" = "%d개 결과 발견";
+"search_stats_no_results_for_query" = "\"%@\"에 대한 결과를 찾을 수 없음";
+"search_stats_categories" = "%d개 카테고리";
+"search_stats_types" = "%d개 유형";
+"search_stats_knots" = "%d개 매듭";
+"search_stats_match_type" = "일치";

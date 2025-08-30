@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Categorias";
+"tab_types" = "Tipos";
+"tab_favorites" = "Favoritos";
+"tab_settings" = "Configurações";
+
+/* Common Actions */
+"action_search" = "Pesquisar";
+"action_cancel" = "Cancelar";
+"action_ok" = "OK";
+"action_save" = "Salvar";
+"action_back" = "Voltar";
+"action_done" = "Concluído";
+
+/* Search */
+"search_placeholder" = "Pesquisar nome ou descrição do nó";
+"search_no_results" = "Nenhum resultado encontrado";
+"search_results_count" = "%d resultados encontrados";
+"search_global_search" = "Pesquisa Global";
+"search_discover_knots" = "Descobrir Mais Nós";
+"search_placeholder_description" = "Pesquisar nomes de nós, descrições ou categorias";
+"search_popular_search" = "Pesquisas Populares";
+"search_no_results_found" = "Nenhum Nó Relacionado Encontrado";
+"search_try_other_keywords" = "Tente outras palavras-chave";
+"search_found_knots" = "%d nós encontrados";
+"search_sorted_by_relevance" = "Ordenados por relevância";
+"search_match_name" = "Correspondência de Nome";
+"search_match_alias" = "Correspondência de Alias";
+"search_match_description" = "Correspondência de Descrição";
+"search_match_category" = "Correspondência de Categoria";
+"search_match_type" = "Correspondência de Tipo";
+"search_match_fuzzy" = "Correspondência Difusa";
+
+/* Knot Detail Page */
+"detail_usage" = "Uso";
+"detail_history" = "História";
+"detail_aliases" = "Aliases";
+"detail_structure" = "Estrutura";
+"detail_strength_reliability" = "Resistência e Confiabilidade";
+"detail_abok_number" = "Número ABOK";
+"detail_notes" = "Notas";
+"detail_related_knots" = "Nós Relacionados";
+"detail_classification" = "Classificação";
+"detail_type" = "Tipo";
+"detail_found_in" = "Encontrado em";
+
+/* Animation Controls */
+"control_play" = "Reproduzir";
+"control_pause" = "Pausar";
+"control_stop" = "Parar";
+"control_mirror" = "Espelhar";
+"control_360_mode" = "Modo 360°";
+"control_save_frame" = "Salvar Quadro";
+
+/* Favorites */
+"favorites_empty" = "Ainda não há nós favoritos";
+"favorites_add" = "Adicionar aos Favoritos";
+"favorites_remove" = "Remover dos Favoritos";
+"favorites_added" = "Adicionado aos favoritos";
+"favorites_removed" = "Removido dos favoritos";
+
+/* Settings */
+"settings_language" = "Idioma";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Política de Privacidade";
+"settings_version_info" = "Informações da Versão";
+"settings_about" = "Sobre";
+"settings_app_version" = "Versão do App";
+
+/* Privacy Policy */
+"privacy_title" = "Política de Privacidade";
+"privacy_data_collection" = "Coleta de Dados";
+"privacy_data_collection_content" = "Este aplicativo não coleta informações pessoais ou dados do usuário. Seus favoritos e configurações de idioma são armazenados apenas localmente em seu dispositivo.";
+"privacy_data_usage" = "Uso de Dados";
+"privacy_data_usage_content" = "Este aplicativo funciona completamente offline e não envia dados para servidores de terceiros. Todos os dados de nós e recursos de imagem são armazenados dentro do aplicativo.";
+"privacy_data_storage" = "Armazenamento de Dados";
+"privacy_data_storage_content" = "Seus favoritos e preferências de configurações são armazenados com segurança em seu dispositivo usando iOS UserDefaults, acessível apenas por este aplicativo.";
+"privacy_contact" = "Entre em Contato";
+"privacy_contact_content" = "Se você tiver alguma dúvida sobre nossa política de privacidade, entre em contato conosco através da página da App Store.";
+
+/* About */
+"about_title" = "Sobre Knots 3D";
+"about_description" = "Knots 3D é um aplicativo profissional de aprendizado de nós com 200 nós com tutoriais detalhados e demonstrações de animação 3D.";
+"about_features" = "Principais Recursos";
+"about_features_content" = "• 200 nós profissionais incluídos\n• 16 categorias de uso, 8 tipos técnicos\n• Tutoriais de animação 3D\n• Visualização de rotação 360 graus\n• Suporte ao aprendizado offline\n• Interface bilíngue (chinês/inglês)";
+"about_data_source" = "Fonte de Dados";
+"about_data_source_content" = "Os dados dos nós são compilados de referências autorizadas de nós, com animações criadas profissionalmente para garantir precisão e praticidade.";
+"about_version" = "Informações da Versão";
+"about_developer" = "Equipe de Desenvolvimento";
+"about_developer_content" = "Criado por uma equipe de desenvolvimento profissional dedicada a fornecer a melhor experiência de aprendizado de nós.";
+
+/* Alerts */
+"alert_error" = "Erro";
+"alert_success" = "Sucesso";
+"alert_confirm" = "Confirmar";
+
+/* Loading States */
+"loading_knots" = "Carregando dados de nós...";
+"loading_animation" = "Carregando animação...";
+
+/* Error Messages */
+"error_load_data" = "Falha ao carregar dados";
+"error_animation_load" = "Falha ao carregar animação";
+"error_network" = "Erro de conexão de rede";
+
+/* Navigation */
+"nav_knot_list" = "Lista de Nós";
+"nav_knot_detail" = "Detalhes do Nó";
+
+/* Launch Screen */
+"app_subtitle" = "Seu Companheiro Definitivo para Aprender Nós";
+
+/* Category & Type List */
+"category_search_categories" = "Pesquisar categorias";
+"category_search_types" = "Pesquisar tipos de nós";
+"category_no_data" = "Nenhum dado disponível";
+
+/* Common UI Elements */
+"common_loading_failed" = "Falha no carregamento de dados";
+"common_retry" = "Tentar novamente";
+"common_show_details" = "Mostrar detalhes";
+"common_hide_details" = "Ocultar detalhes";
+"common_recent_searches" = "Pesquisas recentes";
+"common_clear" = "Limpar";
+"common_search_not_found" = "Nenhum resultado encontrado para \"%@\"";
+"common_try_suggestions" = "Tente pesquisar por:";
+"common_version" = "Versão:";
+"common_build_date" = "Data de Compilação:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "Demonstração de Animação 3D";
+"knot_detail_animation_loading" = "Carregando animação 3D...";
+"knot_detail_no_animation_available" = "Nenhuma Animação Disponível";
+"knot_detail_detailed_info" = "Informações Detalhadas";
+
+/* Knot List */
+"knot_list_no_knots" = "Nenhum nó disponível";
+"knot_list_no_knots_in_category" = "Nenhum nó nesta categoria";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Nós favoritos aparecerão aqui";
+
+/* Settings Extended */
+"settings_general" = "Geral";
+"settings_about_section" = "Sobre";
+
+/* WebView */
+"webview_loading" = "Carregando...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Arquivo não encontrado";
+"data_error_decoding" = "Falha na decodificação";
+"data_error_network" = "Erro de rede";
+"data_error_categories_load_failed" = "Falha ao carregar categorias";
+"data_error_knots_load_failed" = "Falha ao carregar nós";
+"data_error_manager_released" = "Gerenciador de dados liberado";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Nenhum resultado encontrado";
+"search_stats_results_found" = "%d resultados encontrados";
+"search_stats_no_results_for_query" = "Nenhum resultado encontrado para \"%@\"";
+"search_stats_categories" = "%d categorias";
+"search_stats_types" = "%d tipos";
+"search_stats_knots" = "%d nós";
+"search_stats_match_type" = "correspondência";

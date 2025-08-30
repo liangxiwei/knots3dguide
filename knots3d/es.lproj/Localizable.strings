@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Categorías";
+"tab_types" = "Tipos";
+"tab_favorites" = "Favoritos";
+"tab_settings" = "Ajustes";
+
+/* Common Actions */
+"action_search" = "Buscar";
+"action_cancel" = "Cancelar";
+"action_ok" = "OK";
+"action_save" = "Guardar";
+"action_back" = "Atrás";
+"action_done" = "Hecho";
+
+/* Search */
+"search_placeholder" = "Buscar nombre o descripción del nudo";
+"search_no_results" = "No se encontraron resultados";
+"search_results_count" = "Se encontraron %d resultados";
+"search_global_search" = "Búsqueda Global";
+"search_discover_knots" = "Descubre Más Nudos";
+"search_placeholder_description" = "Buscar nombres de nudos, descripciones o categorías";
+"search_popular_search" = "Búsquedas Populares";
+"search_no_results_found" = "No Se Encontraron Nudos Relacionados";
+"search_try_other_keywords" = "Prueba otras palabras clave";
+"search_found_knots" = "Se encontraron %d nudos";
+"search_sorted_by_relevance" = "Ordenados por relevancia";
+"search_match_name" = "Coincidencia de Nombre";
+"search_match_alias" = "Coincidencia de Alias";
+"search_match_description" = "Coincidencia de Descripción";
+"search_match_category" = "Coincidencia de Categoría";
+"search_match_type" = "Coincidencia de Tipo";
+"search_match_fuzzy" = "Coincidencia Difusa";
+
+/* Knot Detail Page */
+"detail_usage" = "Uso";
+"detail_history" = "Historia";
+"detail_aliases" = "Alias";
+"detail_structure" = "Estructura";
+"detail_strength_reliability" = "Resistencia y Confiabilidad";
+"detail_abok_number" = "Número ABOK";
+"detail_notes" = "Notas";
+"detail_related_knots" = "Nudos Relacionados";
+"detail_classification" = "Clasificación";
+"detail_type" = "Tipo";
+"detail_found_in" = "Encontrado en";
+
+/* Animation Controls */
+"control_play" = "Reproducir";
+"control_pause" = "Pausar";
+"control_stop" = "Detener";
+"control_mirror" = "Espejo";
+"control_360_mode" = "Modo 360°";
+"control_save_frame" = "Guardar Imagen";
+
+/* Favorites */
+"favorites_empty" = "Aún no hay nudos favoritos";
+"favorites_add" = "Agregar a Favoritos";
+"favorites_remove" = "Quitar de Favoritos";
+"favorites_added" = "Agregado a favoritos";
+"favorites_removed" = "Quitado de favoritos";
+
+/* Settings */
+"settings_language" = "Idioma";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Política de Privacidad";
+"settings_version_info" = "Información de Versión";
+"settings_about" = "Acerca de";
+"settings_app_version" = "Versión de la App";
+
+/* Privacy Policy */
+"privacy_title" = "Política de Privacidad";
+"privacy_data_collection" = "Recopilación de Datos";
+"privacy_data_collection_content" = "Esta aplicación no recopila información personal ni datos de usuario. Sus favoritos y configuraciones de idioma se almacenan únicamente en su dispositivo de forma local.";
+"privacy_data_usage" = "Uso de Datos";
+"privacy_data_usage_content" = "Esta aplicación funciona completamente sin conexión y no envía datos a servidores de terceros. Todos los datos de nudos y recursos de imágenes se almacenan dentro de la aplicación.";
+"privacy_data_storage" = "Almacenamiento de Datos";
+"privacy_data_storage_content" = "Sus favoritos y preferencias de configuración se almacenan de forma segura en su dispositivo usando iOS UserDefaults, accesible solo por esta aplicación.";
+"privacy_contact" = "Contáctanos";
+"privacy_contact_content" = "Si tiene alguna pregunta sobre nuestra política de privacidad, contáctenos a través de la página del App Store.";
+
+/* About */
+"about_title" = "Acerca de Knots 3D";
+"about_description" = "Knots 3D es una aplicación profesional de aprendizaje de nudos que presenta 200 nudos con tutoriales detallados y demostraciones de animación 3D.";
+"about_features" = "Características Principales";
+"about_features_content" = "• 200 nudos profesionales incluidos\n• 16 categorías de uso, 8 tipos técnicos\n• Tutoriales de animación 3D\n• Vista de rotación de 360 grados\n• Soporte de aprendizaje sin conexión\n• Interfaz bilingüe (chino/inglés)";
+"about_data_source" = "Fuente de Datos";
+"about_data_source_content" = "Los datos de nudos se compilan de referencias autorizadas de nudos, con animaciones creadas profesionalmente para garantizar precisión y practicidad.";
+"about_version" = "Información de Versión";
+"about_developer" = "Equipo de Desarrollo";
+"about_developer_content" = "Creado por un equipo de desarrollo profesional dedicado a brindar la mejor experiencia de aprendizaje de nudos.";
+
+/* Alerts */
+"alert_error" = "Error";
+"alert_success" = "Éxito";
+"alert_confirm" = "Confirmar";
+
+/* Loading States */
+"loading_knots" = "Cargando datos de nudos...";
+"loading_animation" = "Cargando animación...";
+
+/* Error Messages */
+"error_load_data" = "Error al cargar datos";
+"error_animation_load" = "Error al cargar animación";
+"error_network" = "Error de conexión de red";
+
+/* Navigation */
+"nav_knot_list" = "Lista de Nudos";
+"nav_knot_detail" = "Detalles del Nudo";
+
+/* Launch Screen */
+"app_subtitle" = "Tu Compañero Definitivo para Aprender Nudos";
+
+/* Category & Type List */
+"category_search_categories" = "Buscar categorías";
+"category_search_types" = "Buscar tipos de nudos";
+"category_no_data" = "No hay datos disponibles";
+
+/* Common UI Elements */
+"common_loading_failed" = "Error al cargar datos";
+"common_retry" = "Reintentar";
+"common_show_details" = "Mostrar detalles";
+"common_hide_details" = "Ocultar detalles";
+"common_recent_searches" = "Búsquedas recientes";
+"common_clear" = "Limpiar";
+"common_search_not_found" = "No se encontraron resultados para \"%@\"";
+"common_try_suggestions" = "Intenta buscar:";
+"common_version" = "Versión:";
+"common_build_date" = "Fecha de Compilación:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "Demostración de Animación 3D";
+"knot_detail_animation_loading" = "Cargando animación 3D...";
+"knot_detail_no_animation_available" = "No Hay Animación Disponible";
+"knot_detail_detailed_info" = "Información Detallada";
+
+/* Knot List */
+"knot_list_no_knots" = "No hay nudos disponibles";
+"knot_list_no_knots_in_category" = "No hay nudos en esta categoría";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Los nudos favoritos aparecerán aquí";
+
+/* Settings Extended */
+"settings_general" = "General";
+"settings_about_section" = "Acerca de";
+
+/* WebView */
+"webview_loading" = "Cargando...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Archivo no encontrado";
+"data_error_decoding" = "Error de decodificación";
+"data_error_network" = "Error de red";
+"data_error_categories_load_failed" = "Error al cargar categorías";
+"data_error_knots_load_failed" = "Error al cargar nudos";
+"data_error_manager_released" = "Gestor de datos liberado";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "No se encontraron resultados";
+"search_stats_results_found" = "Se encontraron %d resultados";
+"search_stats_no_results_for_query" = "No se encontraron resultados para \"%@\"";
+"search_stats_categories" = "%d categorías";
+"search_stats_types" = "%d tipos";
+"search_stats_knots" = "%d nudos";
+"search_stats_match_type" = "coincidencia";

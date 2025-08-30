@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "カテゴリー";
+"tab_types" = "タイプ";
+"tab_favorites" = "お気に入り";
+"tab_settings" = "設定";
+
+/* Common Actions */
+"action_search" = "検索";
+"action_cancel" = "キャンセル";
+"action_ok" = "OK";
+"action_save" = "保存";
+"action_back" = "戻る";
+"action_done" = "完了";
+
+/* Search */
+"search_placeholder" = "結び方の名前または説明を検索";
+"search_no_results" = "結果が見つかりません";
+"search_results_count" = "%d件の結果が見つかりました";
+"search_global_search" = "グローバル検索";
+"search_discover_knots" = "より多くの結び方を発見";
+"search_placeholder_description" = "結び方の名前、説明、またはカテゴリーを検索";
+"search_popular_search" = "人気の検索";
+"search_no_results_found" = "関連する結び方が見つかりません";
+"search_try_other_keywords" = "他のキーワードを試してください";
+"search_found_knots" = "%d個の結び方が見つかりました";
+"search_sorted_by_relevance" = "関連度順に並び替え";
+"search_match_name" = "名前の一致";
+"search_match_alias" = "別名の一致";
+"search_match_description" = "説明の一致";
+"search_match_category" = "カテゴリーの一致";
+"search_match_type" = "タイプの一致";
+"search_match_fuzzy" = "曖昧一致";
+
+/* Knot Detail Page */
+"detail_usage" = "用途";
+"detail_history" = "歴史";
+"detail_aliases" = "別名";
+"detail_structure" = "構造";
+"detail_strength_reliability" = "強度と信頼性";
+"detail_abok_number" = "ABOK番号";
+"detail_notes" = "備考";
+"detail_related_knots" = "関連する結び方";
+"detail_classification" = "分類";
+"detail_type" = "タイプ";
+"detail_found_in" = "見つかった場所";
+
+/* Animation Controls */
+"control_play" = "再生";
+"control_pause" = "一時停止";
+"control_stop" = "停止";
+"control_mirror" = "ミラー";
+"control_360_mode" = "360°モード";
+"control_save_frame" = "フレームを保存";
+
+/* Favorites */
+"favorites_empty" = "お気に入りの結び方はまだありません";
+"favorites_add" = "お気に入りに追加";
+"favorites_remove" = "お気に入りから削除";
+"favorites_added" = "お気に入りに追加されました";
+"favorites_removed" = "お気に入りから削除されました";
+
+/* Settings */
+"settings_language" = "言語";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "プライバシーポリシー";
+"settings_version_info" = "バージョン情報";
+"settings_about" = "概要";
+"settings_app_version" = "アプリバージョン";
+
+/* Privacy Policy */
+"privacy_title" = "プライバシーポリシー";
+"privacy_data_collection" = "データ収集";
+"privacy_data_collection_content" = "このアプリは個人情報やユーザーデータを収集しません。お気に入りと言語設定はお使いのデバイスにのみローカルに保存されます。";
+"privacy_data_usage" = "データの使用";
+"privacy_data_usage_content" = "このアプリは完全にオフラインで動作し、第三者のサーバーにデータを送信しません。すべての結び方データと画像リソースはアプリ内に保存されています。";
+"privacy_data_storage" = "データ保存";
+"privacy_data_storage_content" = "お気に入りと設定の設定は、iOS UserDefaultsを使用してデバイスに安全に保存され、このアプリでのみアクセス可能です。";
+"privacy_contact" = "お問い合わせ";
+"privacy_contact_content" = "プライバシーポリシーについてご質問がございましたら、App Storeページからお問い合わせください。";
+
+/* About */
+"about_title" = "Knots 3Dについて";
+"about_description" = "Knots 3Dは200種類の結び方の詳細なチュートリアルと3Dアニメーションデモンストレーションを提供するプロフェッショナルな結び方学習アプリです。";
+"about_features" = "主要機能";
+"about_features_content" = "• 200種類のプロフェッショナルな結び方を収録\n• 16の用途カテゴリー、8つの技術タイプ\n• 3Dアニメーションチュートリアル\n• 360度回転ビュー\n• オフライン学習サポート\n• バイリンガルインターフェース（中国語/英語）";
+"about_data_source" = "データソース";
+"about_data_source_content" = "結び方データは権威ある結び方参考文献から編集され、精度と実用性を確保するためにプロフェッショナルに作成されたアニメーションです。";
+"about_version" = "バージョン情報";
+"about_developer" = "開発チーム";
+"about_developer_content" = "最高の結び方学習体験を提供することに専念するプロフェッショナル開発チームによって作成されました。";
+
+/* Alerts */
+"alert_error" = "エラー";
+"alert_success" = "成功";
+"alert_confirm" = "確認";
+
+/* Loading States */
+"loading_knots" = "結び方データを読み込み中...";
+"loading_animation" = "アニメーションを読み込み中...";
+
+/* Error Messages */
+"error_load_data" = "データの読み込みに失敗";
+"error_animation_load" = "アニメーションの読み込みに失敗";
+"error_network" = "ネットワーク接続エラー";
+
+/* Navigation */
+"nav_knot_list" = "結び方リスト";
+"nav_knot_detail" = "結び方の詳細";
+
+/* Launch Screen */
+"app_subtitle" = "あなたの究極の結び方学習パートナー";
+
+/* Category & Type List */
+"category_search_categories" = "カテゴリーを検索";
+"category_search_types" = "結び方のタイプを検索";
+"category_no_data" = "データがありません";
+
+/* Common UI Elements */
+"common_loading_failed" = "データの読み込みに失敗";
+"common_retry" = "再試行";
+"common_show_details" = "詳細を表示";
+"common_hide_details" = "詳細を非表示";
+"common_recent_searches" = "最近の検索";
+"common_clear" = "クリア";
+"common_search_not_found" = "\"%@\"の結果が見つかりません";
+"common_try_suggestions" = "以下を検索してみてください:";
+"common_version" = "バージョン:";
+"common_build_date" = "ビルド日:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3Dアニメーションデモ";
+"knot_detail_animation_loading" = "3Dアニメーションを読み込み中...";
+"knot_detail_no_animation_available" = "アニメーションはありません";
+"knot_detail_detailed_info" = "詳細情報";
+
+/* Knot List */
+"knot_list_no_knots" = "結び方がありません";
+"knot_list_no_knots_in_category" = "このカテゴリーには結び方がありません";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "お気に入りの結び方がここに表示されます";
+
+/* Settings Extended */
+"settings_general" = "一般";
+"settings_about_section" = "概要";
+
+/* WebView */
+"webview_loading" = "読み込み中...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "ファイルが見つかりません";
+"data_error_decoding" = "デコードに失敗";
+"data_error_network" = "ネットワークエラー";
+"data_error_categories_load_failed" = "カテゴリーの読み込みに失敗";
+"data_error_knots_load_failed" = "結び方の読み込みに失敗";
+"data_error_manager_released" = "データマネージャーがリリースされました";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "結果が見つかりません";
+"search_stats_results_found" = "%d件の結果が見つかりました";
+"search_stats_no_results_for_query" = "\"%@\"の結果が見つかりません";
+"search_stats_categories" = "%dカテゴリー";
+"search_stats_types" = "%dタイプ";
+"search_stats_knots" = "%d結び方";
+"search_stats_match_type" = "一致";

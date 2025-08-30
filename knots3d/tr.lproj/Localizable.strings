@@ -1,0 +1,166 @@
+/* Tab Bar Titles */
+"tab_categories" = "Kategoriler";
+"tab_types" = "Türler";
+"tab_favorites" = "Favoriler";
+"tab_settings" = "Ayarlar";
+
+/* Common Actions */
+"action_search" = "Ara";
+"action_cancel" = "İptal";
+"action_ok" = "Tamam";
+"action_save" = "Kaydet";
+"action_back" = "Geri";
+"action_done" = "Bitti";
+
+/* Search */
+"search_placeholder" = "Düğüm adı veya açıklaması ara";
+"search_no_results" = "Sonuç bulunamadı";
+"search_results_count" = "%d sonuç bulundu";
+"search_global_search" = "Global Arama";
+"search_discover_knots" = "Daha Fazla Düğüm Keşfedin";
+"search_placeholder_description" = "Düğüm adları, açıklamaları veya kategorileri ara";
+"search_popular_search" = "Popüler Aramalar";
+"search_no_results_found" = "İlgili Düğüm Bulunamadı";
+"search_try_other_keywords" = "Diğer anahtar kelimeleri deneyin";
+"search_found_knots" = "%d düğüm bulundu";
+"search_sorted_by_relevance" = "İlgiye göre sıralandı";
+"search_match_name" = "İsim Eşleşmesi";
+"search_match_alias" = "Takma Ad Eşleşmesi";
+"search_match_description" = "Açıklama Eşleşmesi";
+"search_match_category" = "Kategori Eşleşmesi";
+"search_match_type" = "Tür Eşleşmesi";
+"search_match_fuzzy" = "Belirsiz Eşleşme";
+
+/* Knot Detail Page */
+"detail_usage" = "Kullanım";
+"detail_history" = "Tarihçe";
+"detail_aliases" = "Takma Adlar";
+"detail_structure" = "Yapı";
+"detail_strength_reliability" = "Güç ve Güvenilirlik";
+"detail_abok_number" = "ABOK Numarası";
+"detail_notes" = "Notlar";
+"detail_related_knots" = "İlgili Düğümler";
+"detail_classification" = "Sınıflandırma";
+"detail_type" = "Tür";
+"detail_found_in" = "Bulunduğu Yer";
+
+/* Animation Controls */
+"control_play" = "Oynat";
+"control_pause" = "Duraklat";
+"control_stop" = "Durdur";
+"control_mirror" = "Aynala";
+"control_360_mode" = "360° Modu";
+"control_save_frame" = "Kareyi Kaydet";
+
+/* Favorites */
+"favorites_empty" = "Henüz favori düğüm yok";
+"favorites_add" = "Favorilere Ekle";
+"favorites_remove" = "Favorilerden Çıkar";
+"favorites_added" = "Favorilere eklendi";
+"favorites_removed" = "Favorilerden çıkarıldı";
+
+/* Settings */
+"settings_language" = "Dil";
+"settings_language_chinese" = "中文";
+"settings_language_english" = "English";
+"settings_privacy_policy" = "Gizlilik Politikası";
+"settings_version_info" = "Sürüm Bilgisi";
+"settings_about" = "Hakkında";
+"settings_app_version" = "Uygulama Sürümü";
+
+/* Privacy Policy */
+"privacy_title" = "Gizlilik Politikası";
+"privacy_data_collection" = "Veri Toplama";
+"privacy_data_collection_content" = "Bu uygulama kişisel bilgi veya kullanıcı verisi toplamaz. Favorileriniz ve dil ayarlarınız yalnızca cihazınızda yerel olarak saklanır.";
+"privacy_data_usage" = "Veri Kullanımı";
+"privacy_data_usage_content" = "Bu uygulama tamamen çevrimdışı çalışır ve üçüncü taraf sunuculara veri göndermez. Tüm düğüm verileri ve görsel kaynaklar uygulama içinde saklanır.";
+"privacy_data_storage" = "Veri Saklama";
+"privacy_data_storage_content" = "Favorileriniz ve ayar tercihleriniz iOS UserDefaults kullanılarak cihazınızda güvenle saklanır, yalnızca bu uygulama tarafından erişilebilir.";
+"privacy_contact" = "Bizimle İletişime Geçin";
+"privacy_contact_content" = "Gizlilik politikamız hakkında sorularınız varsa, lütfen App Store sayfası üzerinden bizimle iletişime geçin.";
+
+/* About */
+"about_title" = "Knots 3D Hakkında";
+"about_description" = "Knots 3D, detaylı eğitimler ve 3D animasyon gösterileriyle 200 düğüm içeren profesyonel bir düğüm öğrenme uygulamasıdır.";
+"about_features" = "Ana Özellikler";
+"about_features_content" = "• 200 profesyonel düğüm dahil\n• 16 kullanım kategorisi, 8 teknik tür\n• 3D animasyon eğitimleri\n• 360 derece döndürme görünümü\n• Çevrimdışı öğrenme desteği\n• İki dilli arayüz (Çince/İngilizce)";
+"about_data_source" = "Veri Kaynağı";
+"about_data_source_content" = "Düğüm verileri, doğruluk ve pratikliği sağlamak için profesyonel olarak hazırlanmış animasyonlarla yetkili düğüm referanslarından derlenmiştir.";
+"about_version" = "Sürüm Bilgisi";
+"about_developer" = "Geliştirme Ekibi";
+"about_developer_content" = "En iyi düğüm öğrenme deneyimini sağlamaya odaklanan profesyonel bir geliştirme ekibi tarafından oluşturulmuştur.";
+
+/* Alerts */
+"alert_error" = "Hata";
+"alert_success" = "Başarılı";
+"alert_confirm" = "Onayla";
+
+/* Loading States */
+"loading_knots" = "Düğüm verileri yükleniyor...";
+"loading_animation" = "Animasyon yükleniyor...";
+
+/* Error Messages */
+"error_load_data" = "Veri yükleme başarısız";
+"error_animation_load" = "Animasyon yükleme başarısız";
+"error_network" = "Ağ bağlantı hatası";
+
+/* Navigation */
+"nav_knot_list" = "Düğüm Listesi";
+"nav_knot_detail" = "Düğüm Detayları";
+
+/* Launch Screen */
+"app_subtitle" = "Nihai Düğüm Öğrenme Arkadaşınız";
+
+/* Category & Type List */
+"category_search_categories" = "Kategorilerde ara";
+"category_search_types" = "Düğüm türlerinde ara";
+"category_no_data" = "Veri mevcut değil";
+
+/* Common UI Elements */
+"common_loading_failed" = "Veri yükleme başarısız";
+"common_retry" = "Tekrar dene";
+"common_show_details" = "Detayları göster";
+"common_hide_details" = "Detayları gizle";
+"common_recent_searches" = "Son aramalar";
+"common_clear" = "Temizle";
+"common_search_not_found" = "\"%@\" için sonuç bulunamadı";
+"common_try_suggestions" = "Şunları aramayı deneyin:";
+"common_version" = "Sürüm:";
+"common_build_date" = "Yapım Tarihi:";
+
+/* Knot Detail */
+"knot_detail_animation_demo" = "3D Animasyon Demosu";
+"knot_detail_animation_loading" = "3D animasyon yükleniyor...";
+"knot_detail_no_animation_available" = "Animasyon Mevcut Değil";
+"knot_detail_detailed_info" = "Detaylı Bilgi";
+
+/* Knot List */
+"knot_list_no_knots" = "Düğüm mevcut değil";
+"knot_list_no_knots_in_category" = "Bu kategoride düğüm yok";
+
+/* Favorites Extended */
+"favorites_add_some_knots" = "Favori düğümler burada görünecek";
+
+/* Settings Extended */
+"settings_general" = "Genel";
+"settings_about_section" = "Hakkında";
+
+/* WebView */
+"webview_loading" = "Yükleniyor...";
+
+/* DataManager Errors */
+"data_error_file_not_found" = "Dosya bulunamadı";
+"data_error_decoding" = "Kod çözme başarısız";
+"data_error_network" = "Ağ hatası";
+"data_error_categories_load_failed" = "Kategoriler yüklenemedi";
+"data_error_knots_load_failed" = "Düğümler yüklenemedi";
+"data_error_manager_released" = "Veri yöneticisi serbest bırakıldı";
+
+/* SearchManager Stats */
+"search_stats_no_results" = "Sonuç bulunamadı";
+"search_stats_results_found" = "%d sonuç bulundu";
+"search_stats_no_results_for_query" = "\"%@\" için sonuç bulunamadı";
+"search_stats_categories" = "%d kategori";
+"search_stats_types" = "%d tür";
+"search_stats_knots" = "%d düğüm";
+"search_stats_match_type" = "eşleşme";
