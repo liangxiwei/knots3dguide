@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 // MARK: - Data Load Errors
 
@@ -33,9 +34,43 @@ class DataManager: ObservableObject {
     @Published var errorMessage: String?
     
     private let favoritesKey = "FavoriteKnots"
+    private var languageObserver: AnyCancellable?
     
     private init() {
         loadFavorites()
+        setupLanguageObserver()
+    }
+    
+    // MARK: - Language Observer Setup
+    
+    private func setupLanguageObserver() {
+        languageObserver = LanguageManager.shared.$currentLanguage
+            .removeDuplicates()
+            .sink { [weak self] _ in
+                Task { @MainActor in
+                    // 语言切换时重新加载分类数据
+                    self?.reloadCategoriesForLanguageChange()
+                }
+            }
+    }
+    
+    private func reloadCategoriesForLanguageChange() {
+        guard !categories.isEmpty else { return } // 只有在已有数据时才重新加载
+        
+        print("🌐 语言切换，重新加载分类数据...")
+        
+        Task { @MainActor in
+            let categoriesResult = await loadKnotCategoriesAsync()
+            switch categoriesResult {
+            case .success(let knotCategories):
+                categories = knotCategories.filter { $0.type == "category" }
+                knotTypes = knotCategories.filter { $0.type == "type" }
+                print("✅ 语言切换后成功重新加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
+            case .failure(let error):
+                errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
+                print("❌ 语言切换后分类数据重新加载失败: \(error)")
+            }
+        }
     }
     
     // MARK: - Data Loading
@@ -122,28 +157,45 @@ class DataManager: ObservableObject {
     
     // 同步版本的加载方法（用于异步调用）
     private func syncLoadKnotCategories() throws -> [KnotCategory] {
-        // 先尝试在Resources根目录查找
-        if let path = Bundle.main.path(forResource: "knots_data", ofType: "json", inDirectory: "Resources") {
+        let currentLanguage = LanguageManager.shared.currentLanguage
+        let localizedFileName = "category_\(currentLanguage)"
+        
+        // 先尝试加载多语言版本的JSON文件
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
+            print("✅ 成功加载多语言分类文件: \(localizedFileName).json")
+            return knotCategories
+        }
+        
+        // 如果找不到对应语言的文件，回退到默认的category.json
+        print("⚠️ 未找到语言文件 \(localizedFileName).json，回退到默认文件")
+        
+        // 先尝试在Resources根目录查找
+        if let path = Bundle.main.path(forResource: "category", ofType: "json", inDirectory: "Resources") {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
+            print("✅ 成功加载默认分类文件: category.json (Resources目录)")
             return knotCategories
         }
         
         // 备选：在Resources/category目录查找
-        if let path = Bundle.main.path(forResource: "knots_data", ofType: "json", inDirectory: "Resources/category") {
+        if let path = Bundle.main.path(forResource: "category", ofType: "json", inDirectory: "Resources/category") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
+            print("✅ 成功加载默认分类文件: category.json (Resources/category目录)")
             return knotCategories
         }
         
         // 最后尝试：不指定目录
-        if let path = Bundle.main.path(forResource: "knots_data", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "category", ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
+            print("✅ 成功加载默认分类文件: category.json (根目录)")
             return knotCategories
         }
         
-        throw DataLoadError.fileNotFound("knots_data.json not found in any expected location")
+        throw DataLoadError.fileNotFound("category.json not found in any expected location")
     }
     
     private func syncLoadAllKnots() throws -> AllKnotsData {
@@ -166,7 +218,7 @@ class DataManager: ObservableObject {
     
     // 保留旧版本方法作为同步备用
     private func loadKnotCategories() {
-        guard let path = Bundle.main.path(forResource: "knots_data", ofType: "json", inDirectory: "Resources/category"),
+        guard let path = Bundle.main.path(forResource: "category", ofType: "json", inDirectory: "Resources/category"),
               let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
               let knotCategories = try? JSONDecoder().decode([KnotCategory].self, from: data) else {
             errorMessage = LocalizedStrings.Errors.loadData.localized
