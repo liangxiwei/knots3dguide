@@ -30,6 +30,16 @@ class LanguageManager: ObservableObject {
     }
     
     private func updateCurrentBundle() {
+        // 优先在Resources/locale目录下查找语言包
+        if let resourcePath = Bundle.main.resourcePath {
+            let localePath = "\(resourcePath)/locale/\(currentLanguage).lproj"
+            if let bundle = Bundle(path: localePath) {
+                currentBundle = bundle
+                return
+            }
+        }
+        
+        // 备用方案：在Bundle根目录下查找语言包
         if let path = Bundle.main.path(forResource: currentLanguage, ofType: "lproj"),
            let bundle = Bundle(path: path) {
             currentBundle = bundle

@@ -92,7 +92,6 @@
 		07346E1C2CDB8F8AAE4C52D2 /* reeverknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = DD98E2CE3F1ADA7E1F10CABF /* reeverknot360.png */; };
 		07576F666B27DBBC77ABDC35 /* clovehitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A95F32BA07F6AB7ACFA624F /* clovehitch.json */; };
 		0779D0CABB7CB9757058FB2E /* scaffoldknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = AD91F2C5BDA07EC816303DF4 /* scaffoldknot360.png */; };
-		0786EB25F91EA92363287015 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		0798EA088F280945D0C16038 /* sandiegojam.png in Resources */ = {isa = PBXBuildFile; fileRef = 69384A26EB0777A5D7AD6593 /* sandiegojam.png */; };
 		07CE8EFC39C71A35C4C8C4E0 /* bowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 64E511F1FC3BC71559D2171E /* bowline.json */; };
 		07CF3B535FB6E89E8BDAE0FD /* celticknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E0E7E21005B6BD090D0B /* celticknot360.png */; };
@@ -223,7 +222,6 @@
 		127525BCCBBD7D296269057D /* lariatloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = 59C47FB70EB9F14D97A456DE /* lariatloop360.json */; };
 		12B6B5E2A40845E11ADB024E /* roundlashing.png in Resources */ = {isa = PBXBuildFile; fileRef = 85A1C42304A64EFFDD0BFDE5 /* roundlashing.png */; };
 		12C2AEEBEF86A98107C7AC8B /* distel-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 35114F13564474F11CDB80E0 /* distel-hitch.webp */; };
-		12C6EC851F5589B53FB591A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		12D98EE73AD048A237568F24 /* jugknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB7E4D4C8388C6F960E0E66 /* jugknot.png */; };
 		12DCA95B7D0AD721A28AE5DD /* timberhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6478EE28272E50324BB4389D /* timberhitch.json */; };
 		12DDDB040E29D56A7C644023 /* slippedclovehitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = FB880E6DD81C2A51717D5393 /* slippedclovehitch360.json */; };
@@ -859,6 +857,7 @@
 		448BDC173AAAB52E044001D8 /* doubleconstrictor360.png in Resources */ = {isa = PBXBuildFile; fileRef = 315DC4110F67EA535DAA2904 /* doubleconstrictor360.png */; };
 		44947B192BD976511B0DDADA /* bunnyears360.json in Resources */ = {isa = PBXBuildFile; fileRef = 889CDB4DC6E34314DAD93C56 /* bunnyears360.json */; };
 		449F561FBED0BD715F940F38 /* fishermans-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6A438077E73EB5CF15B0EB4E /* fishermans-knot.webp */; };
+		44A12C84E79C309BCC741321 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		44A46F576F2C07DC4BEEAC60 /* bowlineonabight360.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C00D9A96A3C01A3ACAEA30 /* bowlineonabight360.png */; };
 		44D35E8448BB98A9660A60FA /* doublecoin360.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4200F410173214FEC84759 /* doublecoin360.png */; };
 		4500B6B8AF57FEBDAEFED659 /* surgeonsknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 661C5B3B8F7C9F150539621E /* surgeonsknot360.json */; };
@@ -1108,7 +1107,6 @@
 		58339429952CD6F4F7AC9839 /* prusikendline.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B771BC02F28B6A43615DD7D /* prusikendline.json */; };
 		5847AE8FD92B10F7EACDB63F /* yucatan-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DE14B9B4BD577EF9BDA9E26A /* yucatan-knot.webp */; };
 		585169785EEEA3043434FD4C /* alpinebutterfly360.json in Resources */ = {isa = PBXBuildFile; fileRef = F97DC0575D2F51FF8BC70BFF /* alpinebutterfly360.json */; };
-		58675D2F13BCA556AD46F2E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80B2550209F6BE98550A283F /* Localizable.strings */; };
 		58737CEFD81D82A809C90B18 /* dropperloop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7180DEB53CC1D695DCCF94DF /* dropperloop.png */; };
 		587F846E26E9E8D4360CC5DE /* buntline.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C0BEFB6B270D080A19AE30 /* buntline.png */; };
 		58829D776BC8043910CB9952 /* fishermanseye360.png in Resources */ = {isa = PBXBuildFile; fileRef = 6203FA3DA14AD7A655FD0A6B /* fishermanseye360.png */; };
@@ -1654,6 +1652,7 @@
 		836C051B4288FDB426D78276 /* osselhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 401F91F7F33D77E2A1895D28 /* osselhitch360.json */; };
 		8374082D583F0BB27F152B9E /* rapalaknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 79B8CAD9F891702838AA50CD /* rapalaknot.json */; };
 		837F6D10ECD310649FDD177F /* beckethitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D9A2A0B7933F506CCEB359 /* beckethitch.png */; };
+		838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		83A0BCA6E1807C5EDDFFE8EE /* midshipmans-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 741FB520B574CD1D8FA994B3 /* midshipmans-hitch.webp */; };
 		83B0A31D2A70D2F2E787495F /* runningbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 23400FF1BACA4E221E457165 /* runningbowline.json */; };
 		83BD12E069A05DCA3BE32415 /* sheepshank.json in Resources */ = {isa = PBXBuildFile; fileRef = 64330E0664AD0CFF89A7EE15 /* sheepshank.json */; };
@@ -2767,6 +2766,7 @@
 		DD6336351EFB8D43DD52C092 /* alpinebutterflyhandmethod360.png in Resources */ = {isa = PBXBuildFile; fileRef = 92EAF0212AE82387EA94ABFF /* alpinebutterflyhandmethod360.png */; };
 		DD6D4A036B8B3DE219FA7861 /* runningbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 23400FF1BACA4E221E457165 /* runningbowline.json */; };
 		DD70B9B353EC9AFDB7B8ED04 /* slippedlappknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 8518F921B96D96E0617507E9 /* slippedlappknot360.png */; };
+		DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B864340E465A2EE6D992730 /* Localizable.strings */; };
 		DD7946F152438CCC32E73F9E /* diamond-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = C8EC06DC095441C5BB22F56D /* diamond-knot.webp */; };
 		DD81E81A5CE72C57695973A6 /* roundturntwohalfhitches.json in Resources */ = {isa = PBXBuildFile; fileRef = E57A2C9E3EE5947964EEAFC0 /* roundturntwohalfhitches.json */; };
 		DDAB1B373E098AFEB4B8B4F8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA79CA39D8D1C28310C71E /* DataManager.swift */; };
@@ -3179,7 +3179,6 @@
 		00D5AE0055FD8970D9E54383 /* bowknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowknot360.png; sourceTree = "<group>"; };
 		0135CDF076304314C4749029 /* lightermanshitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch360.png; sourceTree = "<group>"; };
 		01413E5C7F7F7272F68236C1 /* adjustablehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adjustablehitch360.png; sourceTree = "<group>"; };
-		01714F0BEB61D82E2EFD9567 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0230772FC11EF11B3F4D4F22 /* figureeightbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figureeightbend360.json; sourceTree = "<group>"; };
 		0260A12E86FE8F1621A9F44C /* blakes-hitch.webp */ = {isa = PBXFileReference; path = "blakes-hitch.webp"; sourceTree = "<group>"; };
 		02846E12132CC607C2AEFDC8 /* scottslockedbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scottslockedbowline.json; sourceTree = "<group>"; };
@@ -3196,12 +3195,11 @@
 		05A3CDFABC45E9F04ACB9E70 /* handcuffknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = handcuffknot.json; sourceTree = "<group>"; };
 		05A4FCB9F9190EDCE472D6EB /* ossel-hitch.webp */ = {isa = PBXFileReference; path = "ossel-hitch.webp"; sourceTree = "<group>"; };
 		060F5D3016E9067C52C1464E /* westcountrywhipping360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrywhipping360.json; sourceTree = "<group>"; };
-		06187AFE75DC6E3B20864F73 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0699A387C85A43420E9C718F /* eskimobowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = eskimobowline360.json; sourceTree = "<group>"; };
 		069AC0077D7CA055AF8D20E5 /* doubleharnessbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleharnessbend360.json; sourceTree = "<group>"; };
 		06DA7FF46FBE507D03F35FC1 /* heavinglineknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heavinglineknot360.json; sourceTree = "<group>"; };
 		070720F0D992BAB7B586CE1C /* beckethitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitch360.png; sourceTree = "<group>"; };
-		0739F0420969D62E5B9C0E55 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		074D0A0C93814F6F3A4E90C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		076B30E24B3CBC3239C2366C /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		08531690B00611C67BEFDD2A /* diamondknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot360.json; sourceTree = "<group>"; };
 		085D9132DB9AD6482B096BB8 /* round-lashing.webp */ = {isa = PBXFileReference; path = "round-lashing.webp"; sourceTree = "<group>"; };
@@ -3210,13 +3208,13 @@
 		08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot360.png; sourceTree = "<group>"; };
 		08D2FC5133A691D48D4EBE9C /* snapbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapbowline.png; sourceTree = "<group>"; };
 		0965D7B8F7A9B932E8C11DDA /* palomar-knot.webp */ = {isa = PBXFileReference; path = "palomar-knot.webp"; sourceTree = "<group>"; };
+		098EA2E97EC317C5B61F5E1D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09EDED38EE78E716A3402E0F /* firemanschair.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanschair.json; sourceTree = "<group>"; };
 		0A037777FB04842B3E8BB94F /* flemishflake.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flemishflake.json; sourceTree = "<group>"; };
 		0A1C08BF2D1F617333415F44 /* woodlandziptielashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodlandziptielashing360.png; sourceTree = "<group>"; };
 		0A82F9EAA88B6B176A690512 /* midshipman360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = midshipman360.json; sourceTree = "<group>"; };
 		0A8E1218C0FB71B0C48743A0 /* fishermansknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishermansknot.png; sourceTree = "<group>"; };
 		0A8E89436CC76D62D17CB579 /* truckershitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckershitch360.png; sourceTree = "<group>"; };
-		0AD0B363BC4011CEA85664B9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AFD016EDF3A1C741CBBDEEB /* figure8followthru.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figure8followthru.json; sourceTree = "<group>"; };
 		0BDA1C6F2433E79B5E12E766 /* klemheist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = klemheist.png; sourceTree = "<group>"; };
 		0C1D75A6296C62EEC480BE14 /* midshipman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midshipman.png; sourceTree = "<group>"; };
@@ -3247,11 +3245,9 @@
 		116D54E91AB2DF5EFCD26647 /* lariatloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lariatloop.json; sourceTree = "<group>"; };
 		119AF796155FE93C9BC37B57 /* squarelashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarelashing360.png; sourceTree = "<group>"; };
 		11A1A8047EA5EEBAA117132A /* diamondknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot.json; sourceTree = "<group>"; };
-		11EADFF1A3A39C53FE1C559B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1208EF0249A12C1E8E56871F /* sailors-cross.webp */ = {isa = PBXFileReference; path = "sailors-cross.webp"; sourceTree = "<group>"; };
 		12CC251F6A56480E5082D1CB /* double-bowline.webp */ = {isa = PBXFileReference; path = "double-bowline.webp"; sourceTree = "<group>"; };
 		12E6B917889B6ED15824F0BF /* loopknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loopknot360.png; sourceTree = "<group>"; };
-		12EC0B1EFE77940278FCF3E6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		130B1560568AE72BF634A2FB /* clove-hitch.webp */ = {isa = PBXFileReference; path = "clove-hitch.webp"; sourceTree = "<group>"; };
 		1355EB1B4D362A238ACB716B /* siberianhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = siberianhitch360.json; sourceTree = "<group>"; };
 		1356E2FE950B9B3A085FBDCB /* tillershitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tillershitch.png; sourceTree = "<group>"; };
@@ -3291,7 +3287,6 @@
 		198FCFCB89FAA9A75FE625D9 /* backhandhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch.json; sourceTree = "<group>"; };
 		199660A2AF729EC022F8D992 /* pitzen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pitzen.json; sourceTree = "<group>"; };
 		1997406ED92AC1743D449038 /* krehloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = krehloop360.json; sourceTree = "<group>"; };
-		19B2BFF99CE88920D54F90B5 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		19BBC5F19D0B04FF5C894C5E /* scouting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scouting.jpg; sourceTree = "<group>"; };
 		19D94605574D67A9823E38DE /* diamondknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamondknot.png; sourceTree = "<group>"; };
 		19F1EC70D4675CD4D763D854 /* poldotackle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poldotackle.png; sourceTree = "<group>"; };
@@ -3304,6 +3299,7 @@
 		1B6ACE491DA63C0D981537A0 /* multipleoverhand360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multipleoverhand360.png; sourceTree = "<group>"; };
 		1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */ = {isa = PBXFileReference; path = "triple-bowline.webp"; sourceTree = "<group>"; };
 		1C50445A81A72DD68E919B3F /* clovehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clovehitch360.json; sourceTree = "<group>"; };
+		1C596A173B2758F880C07D31 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C9D056281FD5E2F9E93F1A5 /* doubleuniknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleuniknot360.png; sourceTree = "<group>"; };
 		1CE35F0CFA56A8482F420083 /* farrimond-friction-hitch.webp */ = {isa = PBXFileReference; path = "farrimond-friction-hitch.webp"; sourceTree = "<group>"; };
 		1D34D2776CC8C4D9C1D731F4 /* reeverknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reeverknot.json; sourceTree = "<group>"; };
@@ -3325,6 +3321,7 @@
 		202C8A948F1295E74CD9EB47 /* killickhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = killickhitch360.png; sourceTree = "<group>"; };
 		2062A26058E7D2228DCFAD07 /* runningbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = runningbowline360.json; sourceTree = "<group>"; };
 		206822116FC29F4349180848 /* iciclehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = iciclehitch.json; sourceTree = "<group>"; };
+		20B91898A6E4872E4CD0CA39 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		20DF89A48F88E15E55C5C144 /* figurenineloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figurenineloop360.png; sourceTree = "<group>"; };
 		20E20FE4FAC9A02D51B4CC56 /* mooringhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mooringhitch360.json; sourceTree = "<group>"; };
 		21039A481A0ACD4A68569475 /* constrictor-knot.webp */ = {isa = PBXFileReference; path = "constrictor-knot.webp"; sourceTree = "<group>"; };
@@ -3364,11 +3361,11 @@
 		2891E2860787DB8E7F09DF6A /* gasket-coil.webp */ = {isa = PBXFileReference; path = "gasket-coil.webp"; sourceTree = "<group>"; };
 		28A3E73BB83F747849D3E245 /* backhandhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch360.json; sourceTree = "<group>"; };
 		28B379E58EB544751C7238B5 /* slip-figure-eight.webp */ = {isa = PBXFileReference; path = "slip-figure-eight.webp"; sourceTree = "<group>"; };
-		292857E4828B9A993B778FB3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		29667187170F62ADD4755DBD /* pile-hitch.webp */ = {isa = PBXFileReference; path = "pile-hitch.webp"; sourceTree = "<group>"; };
 		2A2A2974134E72C4527EE904 /* directionalfigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalfigureeight360.png; sourceTree = "<group>"; };
 		2A305CBA4AFBA8E497B587E0 /* davyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = davyknot.json; sourceTree = "<group>"; };
 		2A6D961F513EAD6F88B556EC /* piwich360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piwich360.png; sourceTree = "<group>"; };
+		2A9446525C547B6670C8C285 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2A95F32BA07F6AB7ACFA624F /* clovehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clovehitch.json; sourceTree = "<group>"; };
 		2AB9870EBF11E4EB6345D3AD /* ashleystopper360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashleystopper360.png; sourceTree = "<group>"; };
 		2AEAC0B91CE40273640A0A12 /* perfectionloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = perfectionloop360.json; sourceTree = "<group>"; };
@@ -3476,6 +3473,7 @@
 		4161102A33828E44050E2FC1 /* fullwindsor360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullwindsor360.json; sourceTree = "<group>"; };
 		4176E5F3829F5E7E3BF91EA3 /* caving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caving.jpg; sourceTree = "<group>"; };
 		4249E8538BACDC300E6005F4 /* valdotain-tresse.webp */ = {isa = PBXFileReference; path = "valdotain-tresse.webp"; sourceTree = "<group>"; };
+		42DD422E328E721E84226F85 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		430015B2F00AE25DF9307880 /* crownknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crownknot.png; sourceTree = "<group>"; };
 		434B52339DF686E97CFBE2ED /* muntermuleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muntermuleoverhand.png; sourceTree = "<group>"; };
 		43DC43FCECA750CD6C903380 /* special.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = special.jpg; sourceTree = "<group>"; };
@@ -3549,7 +3547,9 @@
 		5386A254BA85A3BE890BB79D /* slippedclovehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedclovehitch.png; sourceTree = "<group>"; };
 		5386B8F9D72F2FF78059CA5F /* doubleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleoverhand360.json; sourceTree = "<group>"; };
 		5388B714CA9DEE3FF83E1A1B /* catspaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catspaw.png; sourceTree = "<group>"; };
+		53E26353A7D16EF5BC41CD10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5430E12F756B316E870E5CA6 /* clove-hitch-on-a-bight.webp */ = {isa = PBXFileReference; path = "clove-hitch-on-a-bight.webp"; sourceTree = "<group>"; };
+		54A67F14DDDDCF2BDE200DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		54AAC043BA054C0B040BEF72 /* multipleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multipleoverhand.png; sourceTree = "<group>"; };
 		5526001104EF677F714E7788 /* shearlashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shearlashing.json; sourceTree = "<group>"; };
 		5547F1086B5F784849E61E5A /* binding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = binding.jpg; sourceTree = "<group>"; };
@@ -3567,6 +3567,7 @@
 		575AEF57BA410F415AAB86B5 /* timberhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = timberhitch360.json; sourceTree = "<group>"; };
 		5783A64B6EC621ED986B6E92 /* beckethitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitch360.json; sourceTree = "<group>"; };
 		578EDCB01A7570597943657F /* retracedbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = retracedbowline360.json; sourceTree = "<group>"; };
+		57F285348330549A19AB8198 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5826BEEEA4C0800C69676A3C /* rapalaknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rapalaknot360.png; sourceTree = "<group>"; };
 		5857817B1470285E1C0834EF /* jugknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jugknot360.png; sourceTree = "<group>"; };
 		586C25BD49F985B7F0E1576C /* bowlineonabight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowlineonabight.png; sourceTree = "<group>"; };
@@ -3590,6 +3591,7 @@
 		5C66150D9BCC0659B8B877DE /* squarelashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = squarelashing360.json; sourceTree = "<group>"; };
 		5C70F2FC187DA408D68C6B8C /* pile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pile.png; sourceTree = "<group>"; };
 		5CC60ED82D6F2EAA0C493C7D /* scaffold-knot.webp */ = {isa = PBXFileReference; path = "scaffold-knot.webp"; sourceTree = "<group>"; };
+		5CCEC2D0B60CB1CCE2F88136 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5CF7A5A6BAB911ADED8721ED /* orvisknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orvisknot.png; sourceTree = "<group>"; };
 		5D0B8FC742E22A38327C9720 /* overhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = overhand360.json; sourceTree = "<group>"; };
 		5D8007065CE798BB18423F5B /* rollinghitch2v.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rollinghitch2v.json; sourceTree = "<group>"; };
@@ -3639,6 +3641,7 @@
 		688C5E7E539C507BC41C56CB /* twohalfhitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twohalfhitches.png; sourceTree = "<group>"; };
 		68CC7A2A60FD81989BF33AA6 /* friendshipknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = friendshipknot360.json; sourceTree = "<group>"; };
 		68E7683FEE9E12451C88041D /* mooringhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooringhitch360.png; sourceTree = "<group>"; };
+		68EB9F2AA17F10C21122B39A /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6917CC350D247B60FC35EDDB /* waterknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterknot.json; sourceTree = "<group>"; };
 		6919EDB5296B479652E26AB6 /* figure-eight-bend.webp */ = {isa = PBXFileReference; path = "figure-eight-bend.webp"; sourceTree = "<group>"; };
 		691AA9534C178BBA16BD0A52 /* nail360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nail360.png; sourceTree = "<group>"; };
@@ -3665,7 +3668,6 @@
 		6D877557CDF6023705D26608 /* doublecoin360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublecoin360.json; sourceTree = "<group>"; };
 		6E21C633BDC9E9F0C80C85B2 /* double-overhand-knot.webp */ = {isa = PBXFileReference; path = "double-overhand-knot.webp"; sourceTree = "<group>"; };
 		6E3BC4EC1DF727A418724313 /* snell-knot.webp */ = {isa = PBXFileReference; path = "snell-knot.webp"; sourceTree = "<group>"; };
-		6E8000AA0CB27E0A05804A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6E9848ADB17EF45602F2584C /* killick-hitch.webp */ = {isa = PBXFileReference; path = "killick-hitch.webp"; sourceTree = "<group>"; };
 		6E9AD1AA714622350A0A9E4A /* firemanscoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanscoil.json; sourceTree = "<group>"; };
 		6F292F1016CA50E849A0B6FB /* mooringhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooringhitch.png; sourceTree = "<group>"; };
@@ -3691,7 +3693,6 @@
 		7180DEB53CC1D695DCCF94DF /* dropperloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropperloop.png; sourceTree = "<group>"; };
 		72123B1C637FAD07BA7853F7 /* jugknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknot360.json; sourceTree = "<group>"; };
 		7216F9543DD5E7539CDB6B10 /* multi_loop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multi_loop.jpg; sourceTree = "<group>"; };
-		72B37B96B992A9F803E07B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		72CC63B91545E07A59EC5672 /* jar-sling-knot-bight-method.webp */ = {isa = PBXFileReference; path = "jar-sling-knot-bight-method.webp"; sourceTree = "<group>"; };
 		730024598CC09D744FE2D89A /* doublecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublecoin.png; sourceTree = "<group>"; };
 		731196939F7BF0A66B1A2A1E /* stevedoresknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stevedoresknot360.png; sourceTree = "<group>"; };
@@ -3712,6 +3713,7 @@
 		76A043A656EEDDED059F69F5 /* sailorscross360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sailorscross360.png; sourceTree = "<group>"; };
 		76BDDB463A4B79EF4D07B1ED /* halfhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfhitch.json; sourceTree = "<group>"; };
 		772FC458029234BA0BB2697F /* doublefishermans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefishermans.json; sourceTree = "<group>"; };
+		788671C2B79CDB26AFCAB527 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		78EFB26149AA48C8BDCBBEA6 /* flemish-flake.webp */ = {isa = PBXFileReference; path = "flemish-flake.webp"; sourceTree = "<group>"; };
 		798C2055528E106D6D0A665C /* doubleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleoverhand.png; sourceTree = "<group>"; };
 		79AA107F11799F049B4F7D93 /* detailed_knots_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data.json; sourceTree = "<group>"; };
@@ -3739,10 +3741,10 @@
 		80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81117C30C8F218AD3EE6126D /* barrelhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelhitch360.png; sourceTree = "<group>"; };
 		81664B32E694E030CE96A168 /* doublebowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublebowline360.json; sourceTree = "<group>"; };
-		81CA0C99B4BCB6318CC6DE3D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8288C736EF71EC92E9791C3D /* zeppelinbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zeppelinbend360.png; sourceTree = "<group>"; };
 		833DA6C27A5AA8EB384B010D /* chainsinnet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chainsinnet.json; sourceTree = "<group>"; };
 		841531D7A7933979B33C7A89 /* truelovers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truelovers.json; sourceTree = "<group>"; };
+		84A8AC5542869FD63CD8A525 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84DFF6E864069104E2BD2B9B /* yosemite-bowline.webp */ = {isa = PBXFileReference; path = "yosemite-bowline.webp"; sourceTree = "<group>"; };
 		84E4BD2E2F6C6FF65A33818E /* tarbuck.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tarbuck.json; sourceTree = "<group>"; };
 		8518F921B96D96E0617507E9 /* slippedlappknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedlappknot360.png; sourceTree = "<group>"; };
@@ -3763,6 +3765,7 @@
 		889CDB4DC6E34314DAD93C56 /* bunnyears360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bunnyears360.json; sourceTree = "<group>"; };
 		88D52B85DA7A49E7D4A72112 /* boomhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boomhitch360.png; sourceTree = "<group>"; };
 		8912C53DFD42B865E251EA88 /* figure-eight-follow-through.webp */ = {isa = PBXFileReference; path = "figure-eight-follow-through.webp"; sourceTree = "<group>"; };
+		89219D8E01E91E28D605A4E3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8A1B7C8F21DC4AE12833A6C0 /* back-splice.webp */ = {isa = PBXFileReference; path = "back-splice.webp"; sourceTree = "<group>"; };
 		8A1CBE5474C972E049AAAD31 /* camping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camping.jpg; sourceTree = "<group>"; };
 		8AA034D3F481F9EF2D231F9C /* single-rope-braid.webp */ = {isa = PBXFileReference; path = "single-rope-braid.webp"; sourceTree = "<group>"; };
@@ -3847,7 +3850,6 @@
 		A15984A68757A97D2EE4E4D2 /* rapalaknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rapalaknot360.json; sourceTree = "<group>"; };
 		A176A7314D8F2BD497C429D2 /* celtic-knot.webp */ = {isa = PBXFileReference; path = "celtic-knot.webp"; sourceTree = "<group>"; };
 		A190F7421DD79C330CCB50B6 /* doublebowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublebowline.json; sourceTree = "<group>"; };
-		A1A9DE8A3FABDBA28B12F784 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1F65A309D843FF8C74C27A6 /* jugknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknot.json; sourceTree = "<group>"; };
 		A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchView.swift; sourceTree = "<group>"; };
 		A268E01091E2CCD35F459CAD /* doubleuniknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleuniknot360.json; sourceTree = "<group>"; };
@@ -3875,7 +3877,6 @@
 		A80A7994FC79E8211B61B465 /* woodlandziptielashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woodlandziptielashing.json; sourceTree = "<group>"; };
 		A81B835B610C3662A8458427 /* klemheist360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = klemheist360.png; sourceTree = "<group>"; };
 		A8F2928FDAFA16A0548DFF28 /* klemheist.webp */ = {isa = PBXFileReference; path = klemheist.webp; sourceTree = "<group>"; };
-		A939334A42B2B57263C24EAF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A93B33124012E5D100942937 /* tautline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tautline.png; sourceTree = "<group>"; };
 		A9CED69436FE917BF60988F4 /* rackingbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rackingbend.png; sourceTree = "<group>"; };
 		A9E2EC825C96A60D712ED854 /* munter360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = munter360.json; sourceTree = "<group>"; };
@@ -3889,7 +3890,6 @@
 		ACB986CFBE65C533C0D98897 /* clovehitch-on-bight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "clovehitch-on-bight360.json"; sourceTree = "<group>"; };
 		ACC2946608B4C2B7271ACBCA /* climbing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = climbing.jpg; sourceTree = "<group>"; };
 		ACFA5BECD11B9E23A6BADCF4 /* mooringhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mooringhitch.json; sourceTree = "<group>"; };
-		AD7743AFA86B4EC285E483E7 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD91F2C5BDA07EC816303DF4 /* scaffoldknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaffoldknot360.png; sourceTree = "<group>"; };
 		AE9B1F6D095D1E190F89302E /* tripleoverhand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripleoverhand.json; sourceTree = "<group>"; };
 		AEF1CF1846667D78F24259C3 /* bull-hitch-end.webp */ = {isa = PBXFileReference; path = "bull-hitch-end.webp"; sourceTree = "<group>"; };
@@ -3943,7 +3943,6 @@
 		BD3EE06966C8CA73E9BEED89 /* west-country-whipping.webp */ = {isa = PBXFileReference; path = "west-country-whipping.webp"; sourceTree = "<group>"; };
 		BD4D9267CA1AD82AA90B5007 /* doubledragonloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubledragonloop.json; sourceTree = "<group>"; };
 		BDA3B1ED23220BD5CEC1D010 /* squareknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareknot.png; sourceTree = "<group>"; };
-		BDA88733A1DA652F3E99A727 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BDC0B864AF9E29F3DCF6F20D /* ground-line-hitch.webp */ = {isa = PBXFileReference; path = "ground-line-hitch.webp"; sourceTree = "<group>"; };
 		BDF29FF99727BE82C9C0EB24 /* edk360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edk360.json; sourceTree = "<group>"; };
 		BE4996E5027464B72C0B6F3D /* waterknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterknot360.json; sourceTree = "<group>"; };
@@ -3958,12 +3957,10 @@
 		C14D938F21206F08F7DE1CE0 /* surgeonsknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot.json; sourceTree = "<group>"; };
 		C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */ = {isa = PBXFileReference; path = "inuit-bowline.webp"; sourceTree = "<group>"; };
 		C1E3064C8898B7E00A18F4B3 /* groundlinehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundlinehitch.png; sourceTree = "<group>"; };
-		C211F385727F1089C0651D51 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C22C510F0F88D9B485548840 /* griefknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = griefknot360.png; sourceTree = "<group>"; };
 		C2C73225EDA8C37DB30F32E3 /* slippedconstrictorknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedconstrictorknot.json; sourceTree = "<group>"; };
 		C2E80936F76A7FE955C1DE93 /* halfhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfhitch.png; sourceTree = "<group>"; };
 		C34613E216B4EFD1FA439711 /* slipfigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slipfigureeight360.png; sourceTree = "<group>"; };
-		C34664C50553070F488FF941 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C35C14A2652639CE4B360E9D /* gasketcoil360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasketcoil360.png; sourceTree = "<group>"; };
 		C37E1DB9C65A1E30357AEC53 /* zeppelinbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zeppelinbend.png; sourceTree = "<group>"; };
 		C43DB72CC9BA88871BE541A9 /* tautline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tautline360.png; sourceTree = "<group>"; };
@@ -4006,6 +4003,7 @@
 		CC070BB04CAC9FC44B289CF1 /* halfhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfhitch360.png; sourceTree = "<group>"; };
 		CC48B0B7AB3DF2E3727CAEFA /* doubleharnessbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleharnessbend.json; sourceTree = "<group>"; };
 		CC6A8401F198514D9785C928 /* knots3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3FB40B53B09230B02D6C17 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CDF65D06B8E7EBB151F3B30E /* reever-knot.webp */ = {isa = PBXFileReference; path = "reever-knot.webp"; sourceTree = "<group>"; };
 		CE03258B022AE1FE560ED91C /* reeverknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reeverknot.png; sourceTree = "<group>"; };
 		CE18FC0F820F759B260A4669 /* magnus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = magnus.json; sourceTree = "<group>"; };
@@ -4043,9 +4041,11 @@
 		D59D4E25D75C8FCD9E0BCA52 /* bloodknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bloodknot360.json; sourceTree = "<group>"; };
 		D5CA79CA39D8D1C28310C71E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D5CEE3F0E901B456848B7266 /* woggle360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woggle360.png; sourceTree = "<group>"; };
+		D5F4DE267F07F545F2887542 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D61A88C20A1362C725E276D1 /* clovehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitch.png; sourceTree = "<group>"; };
 		D71C3D15A9C338F2F83698C2 /* sailors-coil.webp */ = {isa = PBXFileReference; path = "sailors-coil.webp"; sourceTree = "<group>"; };
 		D72291B2E99901978FF0A42C /* westcountrywhipping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrywhipping.json; sourceTree = "<group>"; };
+		D748955B55CFA9ACB278FCF1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7556A356405D0960D0E45F5 /* alpinebutterflyhandmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod.json; sourceTree = "<group>"; };
 		D7DE8501D803E59DB75F4064 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D7E6F8EE131DE35FF4E2E5F5 /* scottslockedbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scottslockedbowline.png; sourceTree = "<group>"; };
@@ -4179,6 +4179,7 @@
 		F2DBBF4D9521B7BF1A564916 /* west-country-lashing.webp */ = {isa = PBXFileReference; path = "west-country-lashing.webp"; sourceTree = "<group>"; };
 		F324563AB6251D70304CB786 /* prusik.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prusik.json; sourceTree = "<group>"; };
 		F32A970D837D879140E93460 /* bloodknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot.png; sourceTree = "<group>"; };
+		F34C5A37BBDE6205FF7BB647 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F36BE6F98683A90812DBBC07 /* buntline-hitch.webp */ = {isa = PBXFileReference; path = "buntline-hitch.webp"; sourceTree = "<group>"; };
 		F39944069757033036440CE6 /* truckie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truckie.json; sourceTree = "<group>"; };
 		F3CF70ADB8030961E0C6BEC3 /* loopknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loopknot360.json; sourceTree = "<group>"; };
@@ -4216,7 +4217,6 @@
 		F97DC0575D2F51FF8BC70BFF /* alpinebutterfly360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterfly360.json; sourceTree = "<group>"; };
 		FAB301DFF6567EEDDBE956FC /* voodoohitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = voodoohitch360.json; sourceTree = "<group>"; };
 		FAB6050B891DD0EF60C9DC63 /* beckethitchslipped.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitchslipped.json; sourceTree = "<group>"; };
-		FAC6C75D8E85084EEB1A7772 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB1E047C88E85ADB04730099 /* retracedbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = retracedbowline.json; sourceTree = "<group>"; };
 		FB7C3BF473C4DAF74A3CA467 /* trefoil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trefoil.png; sourceTree = "<group>"; };
 		FB880E6DD81C2A51717D5393 /* slippedclovehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedclovehitch360.json; sourceTree = "<group>"; };
@@ -4258,6 +4258,7 @@
 				CFCA797D5E9744E11C722ECE /* knots_data.json */,
 				8EC474D26A137928A604DDD2 /* category */,
 				8B07CC4C8469240784092548 /* images */,
+				8AB0B5477E3A25635434AD5E /* locale */,
 				F11139C0E7247F6CE3A20703 /* sprite */,
 			);
 			path = Resources;
@@ -4288,6 +4289,14 @@
 				B9867FD80BFAE2C5D64E8639 /* knots3d.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8AB0B5477E3A25635434AD5E /* locale */ = {
+			isa = PBXGroup;
+			children = (
+				7B864340E465A2EE6D992730 /* Localizable.strings */,
+			);
+			path = locale;
 			sourceTree = "<group>";
 		};
 		8B07CC4C8469240784092548 /* images */ = {
@@ -4540,7 +4549,6 @@
 				1B435AAE0969E58F31D0D730 /* knots3dApp.swift */,
 				3E80277F797A820834F890AC /* LanguageManager.swift */,
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
-				80B2550209F6BE98550A283F /* Localizable.strings */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
 				076B30E24B3CBC3239C2366C /* SearchManager.swift */,
@@ -5370,32 +5378,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_411B118C-F1EF-4BEA-B93F-AFE7194929E5" /* Presentation */ = {
+		"TEMP_2D9F76B7-D0FF-4FB3-8062-D31CADA77B4C" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_76876A85-E45F-4A24-BE98-A5276CCB8578" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_9DE8C61A-1224-4C77-BE3E-F2B9B6B52AD6" /* Application */ = {
+		"TEMP_B8CECE64-11DC-4269-9B34-858AB0047213" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_F797C870-54D0-4063-9D27-14BA20B6B978" /* Architecture */ = {
+		"TEMP_C158E15B-372D-44A6-9354-53B7AACE06D0" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_D01DB7B4-A658-410D-BB91-CE6B34531085" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5519,7 +5527,7 @@
 			files = (
 				A961F1C0BB4C6B1382C9E6F9 /* Assets.xcassets in Resources */,
 				573BE03375CED01391899238 /* LaunchScreen.storyboard in Resources */,
-				58675D2F13BCA556AD46F2E9 /* Localizable.strings in Resources */,
+				838D2D3FC6494EC36DAEB291 /* Localizable.strings in Resources */,
 				DEF95298509AD7CA07CD0B25 /* adjustable-grip-hitch.webp in Resources */,
 				C576C09301BE3B87DAF89BAC /* adjustablehitch.json in Resources */,
 				79B20CDAA5C7CFE27A7B5488 /* adjustablehitch.png in Resources */,
@@ -6562,7 +6570,7 @@
 			files = (
 				E04CAE98B658DA354E03EDF6 /* Assets.xcassets in Resources */,
 				C24F5DCF6AABF0A0C1F55D29 /* LaunchScreen.storyboard in Resources */,
-				12C6EC851F5589B53FB591A9 /* Localizable.strings in Resources */,
+				DD74338DD9134C7F5B8F51CA /* Localizable.strings in Resources */,
 				3E2F9127C26197EB52A675F6 /* adjustable-grip-hitch.webp in Resources */,
 				E93F3E4AFFA1B55B2E98CF97 /* adjustablehitch.json in Resources */,
 				13A887B404D6403A037CAFDC /* adjustablehitch.png in Resources */,
@@ -7605,7 +7613,7 @@
 			files = (
 				B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */,
 				A8F3E6886A874D5242FBC4C4 /* LaunchScreen.storyboard in Resources */,
-				0786EB25F91EA92363287015 /* Localizable.strings in Resources */,
+				44A12C84E79C309BCC741321 /* Localizable.strings in Resources */,
 				502AB4CE894D5D8BB33A11B2 /* adjustable-grip-hitch.webp in Resources */,
 				C6A3F544165FCC05C47589BB /* adjustablehitch.json in Resources */,
 				5176E80A75FD98062F15C3D7 /* adjustablehitch.png in Resources */,
@@ -8723,27 +8731,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		80B2550209F6BE98550A283F /* Localizable.strings */ = {
+		7B864340E465A2EE6D992730 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E8000AA0CB27E0A05804A83 /* Base */,
-				A1A9DE8A3FABDBA28B12F784 /* da */,
-				FAC6C75D8E85084EEB1A7772 /* de */,
-				72B37B96B992A9F803E07B13 /* en */,
-				0AD0B363BC4011CEA85664B9 /* es */,
-				BDA88733A1DA652F3E99A727 /* fr */,
-				A939334A42B2B57263C24EAF /* it */,
-				06187AFE75DC6E3B20864F73 /* ja */,
-				12EC0B1EFE77940278FCF3E6 /* ko */,
-				AD7743AFA86B4EC285E483E7 /* nl */,
-				01714F0BEB61D82E2EFD9567 /* no */,
-				0739F0420969D62E5B9C0E55 /* pl */,
-				C34664C50553070F488FF941 /* pt */,
-				81CA0C99B4BCB6318CC6DE3D /* ru */,
-				11EADFF1A3A39C53FE1C559B /* sv */,
-				C211F385727F1089C0651D51 /* tr */,
-				292857E4828B9A993B778FB3 /* zh-Hans */,
-				19B2BFF99CE88920D54F90B5 /* zh-TW */,
+				54A67F14DDDDCF2BDE200DF4 /* Base */,
+				20B91898A6E4872E4CD0CA39 /* da */,
+				84A8AC5542869FD63CD8A525 /* de */,
+				074D0A0C93814F6F3A4E90C3 /* en */,
+				42DD422E328E721E84226F85 /* es */,
+				788671C2B79CDB26AFCAB527 /* fr */,
+				D748955B55CFA9ACB278FCF1 /* it */,
+				5CCEC2D0B60CB1CCE2F88136 /* ja */,
+				57F285348330549A19AB8198 /* ko */,
+				F34C5A37BBDE6205FF7BB647 /* nl */,
+				1C596A173B2758F880C07D31 /* no */,
+				89219D8E01E91E28D605A4E3 /* pl */,
+				68EB9F2AA17F10C21122B39A /* pt */,
+				098EA2E97EC317C5B61F5E1D /* ru */,
+				D5F4DE267F07F545F2887542 /* sv */,
+				2A9446525C547B6670C8C285 /* tr */,
+				53E26353A7D16EF5BC41CD10 /* zh-Hans */,
+				CD3FB40B53B09230B02D6C17 /* zh-TW */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
