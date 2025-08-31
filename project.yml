@@ -75,4 +75,4 @@ targets:
       INFOPLIST_KEY_CFBundleName: $(PRODUCT_NAME)
       INFOPLIST_KEY_LSHasLocalizedDisplayName: YES
       INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
-      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
