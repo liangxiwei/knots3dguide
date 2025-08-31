@@ -98,41 +98,11 @@ struct GlobalSearchView: View {
                     .multilineTextAlignment(.center)
             }
             
-            // 热门搜索建议
-            popularSearchSuggestions
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
-    @ViewBuilder
-    private var popularSearchSuggestions: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStrings.Search.popularSearch.localized)
-                .font(.headline)
-                .foregroundColor(.primary)
-            
-            LazyVGrid(columns: [
-                GridItem(.flexible()),
-                GridItem(.flexible()),
-                GridItem(.flexible())
-            ], spacing: 12) {
-                ForEach(getPopularSearches(), id: \.self) { term in
-                    Button(term) {
-                        searchManager.searchText = term
-                    }
-                    .font(.subheadline)
-                    .foregroundColor(.blue)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(16)
-                    .buttonStyle(PlainButtonStyle())
-                }
-            }
-        }
-        .padding(.horizontal)
-    }
     
     @ViewBuilder
     private var searchResultsList: some View {
@@ -230,13 +200,6 @@ struct GlobalSearchView: View {
         }
     }
     
-    private func getPopularSearches() -> [String] {
-        return DataManager.shared.getRandomPopularSearches()
-    }
-    
-    private func getGlobalSuggestions() -> [String] {
-        return getPopularSearches()
-    }
 }
 
 // MARK: - Search Result Components
