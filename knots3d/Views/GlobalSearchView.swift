@@ -6,26 +6,42 @@ struct GlobalSearchView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                // 搜索栏
-                EnhancedSearchBar()
-                
-                // 搜索结果
-                searchResultsContent
+        contentView
+            .onAppear {
+                // 不再自动重置搜索状态，保持用户的搜索上下文
             }
-            .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(LocalizedStrings.Actions.done.localized) {
-                        dismiss()
-                    }
-                }
+    }
+    
+    @ViewBuilder
+    private var contentView: some View {
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                mainContent
+            }
+        } else {
+            NavigationView {
+                mainContent
             }
         }
-        .onAppear {
-            // 不再自动重置搜索状态，保持用户的搜索上下文
+    }
+    
+    @ViewBuilder
+    private var mainContent: some View {
+        VStack(spacing: 0) {
+            // 搜索栏
+            EnhancedSearchBar()
+            
+            // 搜索结果
+            searchResultsContent
+        }
+        .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(LocalizedStrings.Actions.done.localized) {
+                    dismiss()
+                }
+            }
         }
     }
     

@@ -5,21 +5,40 @@ struct FavoritesView: View {
     @StateObject private var languageManager = LanguageManager.shared
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                // 内容区域
-                if dataManager.favoriteKnots.isEmpty {
-                    EmptyStateView(
-                        title: LocalizedStrings.Favorites.empty.localized,
-                        systemImage: "heart",
-                        subtitle: LocalizedStrings.FavoritesExtended.addSomeKnots.localized
-                    )
-                } else {
-                    favoritesList
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                VStack(spacing: 0) {
+                    // 内容区域
+                    if dataManager.favoriteKnots.isEmpty {
+                        EmptyStateView(
+                            title: LocalizedStrings.Favorites.empty.localized,
+                            systemImage: "heart",
+                            subtitle: LocalizedStrings.FavoritesExtended.addSomeKnots.localized
+                        )
+                    } else {
+                        favoritesList
+                    }
                 }
+                .navigationTitle(LocalizedStrings.TabBar.favorites.localized)
+                .navigationBarTitleDisplayMode(.large)
             }
-            .navigationTitle(LocalizedStrings.TabBar.favorites.localized)
-            .navigationBarTitleDisplayMode(.large)
+        } else {
+            NavigationView {
+                VStack(spacing: 0) {
+                    // 内容区域
+                    if dataManager.favoriteKnots.isEmpty {
+                        EmptyStateView(
+                            title: LocalizedStrings.Favorites.empty.localized,
+                            systemImage: "heart",
+                            subtitle: LocalizedStrings.FavoritesExtended.addSomeKnots.localized
+                        )
+                    } else {
+                        favoritesList
+                    }
+                }
+                .navigationTitle(LocalizedStrings.TabBar.favorites.localized)
+                .navigationBarTitleDisplayMode(.large)
+            }
         }
     }
     
