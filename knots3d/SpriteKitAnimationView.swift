@@ -90,6 +90,7 @@ struct SpriteKitAnimationView: View {
                 scene.rotateSprite()
             }) {
                 Image("rectangle.landscape.rotate")
+                    .renderingMode(.template)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)
@@ -134,6 +135,7 @@ struct SpriteKitAnimationView: View {
                 scene.toggle360Mode()
             }) {
                 Image("arrow.trianglehead.counterclockwise.rotate.90")
+                    .renderingMode(.template)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 24, height: 24)
