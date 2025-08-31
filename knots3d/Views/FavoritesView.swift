@@ -71,7 +71,7 @@ struct KnotRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             // 绳结图片
-            AsyncImage(url: coverImageURL) { image in
+            CompatibleAsyncImage(url: coverImageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -157,7 +157,7 @@ struct EnhancedKnotRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             // 绳结图片
-            AsyncImage(url: coverImageURL) { image in
+            CompatibleAsyncImage(url: coverImageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)

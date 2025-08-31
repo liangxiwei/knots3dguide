@@ -3,7 +3,7 @@ import SwiftUI
 /// 全局搜索视图
 struct GlobalSearchView: View {
     @StateObject private var searchManager = SearchManager.shared
-    @Environment(\.dismiss) private var dismiss
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         contentView
@@ -39,7 +39,7 @@ struct GlobalSearchView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(LocalizedStrings.Actions.done.localized) {
-                    dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
         }
@@ -238,7 +238,7 @@ struct KnotSearchResultRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             // 绳结图片
-            AsyncImage(url: coverImageURL) { image in
+            CompatibleAsyncImage(url: coverImageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)

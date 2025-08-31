@@ -384,7 +384,7 @@ struct RelatedKnotCard: View {
     var body: some View {
         VStack(spacing: 6) {
             // 图片区域
-            AsyncImage(url: coverImageURL) { image in
+            CompatibleAsyncImage(url: coverImageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)

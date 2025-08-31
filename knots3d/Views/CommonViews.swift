@@ -184,17 +184,16 @@ struct EnhancedSearchBar: View {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
                     
-                    TextField(LocalizedStrings.Search.placeholder.localized, text: $searchManager.searchText)
+                    TextField(LocalizedStrings.Search.placeholder.localized, text: $searchManager.searchText, onCommit: {
+                        // 提交搜索时隐藏建议
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            showSuggestions = false
+                        }
+                        hideKeyboard()
+                    })
                         .textFieldStyle(.plain)
                         .autocorrectionDisabled()
-                        .textInputAutocapitalization(.never)
-                        .onSubmit {
-                            // 提交搜索时隐藏建议
-                            withAnimation(.easeInOut(duration: 0.2)) {
-                                showSuggestions = false
-                            }
-                            hideKeyboard()
-                        }
+                        .modifier(ConditionalTextInputModifier())
                         .onChange(of: searchManager.searchText) { _ in
                             // 不再显示搜索建议
                             showSuggestions = false
@@ -387,7 +386,7 @@ struct EnhancedCategoryRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             // 图片
-            AsyncImage(url: imageURL) { image in
+            CompatibleAsyncImage(url: imageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -437,37 +436,201 @@ struct HighlightedText: View {
         if highlight.isEmpty {
             Text(text)
         } else {
-            Text(attributedString)
+            highlightedTextView
         }
     }
     
-    private var attributedString: AttributedString {
-        var attributedString = AttributedString(text)
+    private var highlightedTextView: some View {
+        let components = splitTextWithHighlight()
         
+        return HStack(spacing: 0) {
+            ForEach(0..<components.count, id: \.self) { index in
+                let component = components[index]
+                if component.isHighlighted {
+                    Text(component.text)
+                        .foregroundColor(.primary)
+                        .background(Color.yellow.opacity(0.3))
+                } else {
+                    Text(component.text)
+                }
+            }
+        }
+    }
+    
+    private func splitTextWithHighlight() -> [TextComponent] {
         guard !highlight.isEmpty, !text.isEmpty else {
-            return attributedString
+            return [TextComponent(text: text, isHighlighted: false)]
         }
         
         let lowercaseText = text.lowercased()
         let lowercaseHighlight = highlight.lowercased()
         
-        if let range = lowercaseText.range(of: lowercaseHighlight) {
-            let start = text.distance(from: text.startIndex, to: range.lowerBound)
-            let length = highlight.count
-            
-            guard start >= 0, length > 0, start + length <= text.count else {
-                return attributedString
+        var components: [TextComponent] = []
+        var searchText = text
+        var searchLowercase = lowercaseText
+        
+        while let range = searchLowercase.range(of: lowercaseHighlight) {
+            // 添加高亮前的部分
+            let beforeRange = searchText.startIndex..<range.lowerBound
+            if !beforeRange.isEmpty {
+                let beforeText = String(searchText[beforeRange])
+                if !beforeText.isEmpty {
+                    components.append(TextComponent(text: beforeText, isHighlighted: false))
+                }
             }
             
-            let attributedStart = attributedString.index(attributedString.startIndex, offsetByCharacters: start)
-            let attributedEnd = attributedString.index(attributedStart, offsetByCharacters: length)
-            let attributedRange = attributedStart..<attributedEnd
+            // 添加高亮部分
+            let highlightRange = range.lowerBound..<range.upperBound
+            let highlightText = String(searchText[highlightRange])
+            components.append(TextComponent(text: highlightText, isHighlighted: true))
             
-            attributedString[attributedRange].backgroundColor = .yellow.opacity(0.3)
-            attributedString[attributedRange].foregroundColor = .primary
+            // 继续搜索剩余部分
+            let remainingStart = range.upperBound
+            if remainingStart < searchText.endIndex {
+                searchText = String(searchText[remainingStart...])
+                searchLowercase = String(searchLowercase[remainingStart...])
+            } else {
+                break
+            }
         }
         
-        return attributedString
+        // 添加剩余文本
+        if !searchText.isEmpty {
+            components.append(TextComponent(text: searchText, isHighlighted: false))
+        }
+        
+        return components.isEmpty ? [TextComponent(text: text, isHighlighted: false)] : components
+    }
+}
+
+private struct TextComponent {
+    let text: String
+    let isHighlighted: Bool
+}
+
+// MARK: - iOS 14 Compatible AsyncImage
+
+/// iOS 14 兼容的异步图像视图
+struct CompatibleAsyncImage<Content: View, Placeholder: View>: View {
+    let url: URL?
+    let content: (Image) -> Content
+    let placeholder: () -> Placeholder
+    
+    @State private var image: UIImage?
+    @State private var isLoading = true
+    
+    init(
+        url: URL?,
+        @ViewBuilder content: @escaping (Image) -> Content,
+        @ViewBuilder placeholder: @escaping () -> Placeholder
+    ) {
+        self.url = url
+        self.content = content
+        self.placeholder = placeholder
+    }
+    
+    var body: some View {
+        Group {
+            if let image = image {
+                content(Image(uiImage: image))
+            } else if isLoading {
+                placeholder()
+            } else {
+                placeholder()
+            }
+        }
+        .onAppear {
+            loadImage()
+        }
+        .onChange(of: url) { _ in
+            loadImage()
+        }
+    }
+    
+    private func loadImage() {
+        guard let url = url else {
+            isLoading = false
+            return
+        }
+        
+        isLoading = true
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            DispatchQueue.main.async {
+                if let data = data, let uiImage = UIImage(data: data) {
+                    self.image = uiImage
+                } else {
+                    self.image = nil
+                }
+                self.isLoading = false
+            }
+        }.resume()
+    }
+}
+
+extension CompatibleAsyncImage where Content == Image, Placeholder == Color {
+    init(url: URL?) {
+        self.init(
+            url: url,
+            content: { $0 },
+            placeholder: { Color.gray.opacity(0.3) }
+        )
+    }
+}
+
+extension CompatibleAsyncImage where Placeholder == Color {
+    init(url: URL?, @ViewBuilder content: @escaping (Image) -> Content) {
+        self.init(
+            url: url,
+            content: content,
+            placeholder: { Color.gray.opacity(0.3) }
+        )
+    }
+}
+
+// MARK: - iOS 14 Compatible Modifiers
+
+struct ConditionalTextInputModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 15.0, *) {
+            content
+                .textInputAutocapitalization(.never)
+        } else {
+            content
+                .autocapitalization(.none)
+        }
+    }
+}
+
+struct ConditionalSearchModifier: ViewModifier {
+    @Binding var searchText: String
+    
+    func body(content: Content) -> some View {
+        if #available(iOS 15.0, *) {
+            content
+                .searchable(
+                    text: $searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: LocalizedStrings.Search.placeholder.localized
+                )
+        } else {
+            VStack(spacing: 0) {
+                // iOS 14 兼容的搜索栏
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    
+                    TextField(LocalizedStrings.Search.placeholder.localized, text: $searchText)
+                        .textFieldStyle(.roundedBorder)
+                        .autocorrectionDisabled()
+                        .modifier(ConditionalTextInputModifier())
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 8)
+                
+                content
+            }
+        }
     }
 }
 

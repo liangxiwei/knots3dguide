@@ -87,7 +87,7 @@ struct CategoryRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             // 图片
-            AsyncImage(url: imageURL) { image in
+            CompatibleAsyncImage(url: imageURL) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)

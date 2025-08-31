@@ -34,11 +34,7 @@ struct KnotListView: View {
         }
         .navigationTitle(category.name)
         .navigationBarTitleDisplayMode(.inline)
-        .searchable(
-            text: $searchText,
-            placement: .navigationBarDrawer(displayMode: .always),
-            prompt: LocalizedStrings.Search.placeholder.localized
-        )
+        .modifier(ConditionalSearchModifier(searchText: $searchText))
     }
     
     private var baseKnots: [KnotDetail] {
