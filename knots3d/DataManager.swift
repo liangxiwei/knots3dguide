@@ -48,19 +48,25 @@ class DataManager: ObservableObject {
             .removeDuplicates()
             .sink { [weak self] _ in
                 Task { @MainActor in
-                    // 语言切换时重新加载分类数据
-                    self?.reloadCategoriesForLanguageChange()
+                    // 语言切换时重新加载所有数据
+                    self?.reloadDataForLanguageChange()
                 }
             }
     }
     
-    private func reloadCategoriesForLanguageChange() {
-        guard !categories.isEmpty else { return } // 只有在已有数据时才重新加载
+    private func reloadDataForLanguageChange() {
+        guard !categories.isEmpty || !allKnots.isEmpty else { return } // 只有在已有数据时才重新加载
         
-        print("🌐 语言切换，重新加载分类数据...")
+        print("🌐 语言切换，重新加载所有数据...")
         
         Task { @MainActor in
-            let categoriesResult = await loadKnotCategoriesAsync()
+            // 并行加载分类和绳结数据
+            async let categoriesTask = loadKnotCategoriesAsync()
+            async let knotsTask = loadAllKnotsAsync()
+            
+            let (categoriesResult, knotsResult) = await (categoriesTask, knotsTask)
+            
+            // 处理分类数据结果
             switch categoriesResult {
             case .success(let knotCategories):
                 categories = knotCategories.filter { $0.type == "category" }
@@ -69,6 +75,19 @@ class DataManager: ObservableObject {
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
                 print("❌ 语言切换后分类数据重新加载失败: \(error)")
+            }
+            
+            // 处理绳结数据结果
+            switch knotsResult {
+            case .success(let knotsData):
+                allKnots = knotsData.knots
+                print("✅ 语言切换后成功重新加载绳结数据: \(allKnots.count) 个绳结")
+            case .failure(let error):
+                // 如果分类数据没有错误，则不覆盖错误消息
+                if errorMessage == nil {
+                    errorMessage = "\(LocalizedStrings.DataErrors.knotsLoadFailed.localized): \(error.localizedDescription)"
+                }
+                print("❌ 语言切换后绳结数据重新加载失败: \(error)")
             }
         }
     }
@@ -161,7 +180,7 @@ class DataManager: ObservableObject {
         let localizedFileName = "category_\(currentLanguage)"
         
         // 先尝试加载多语言版本的JSON文件
-        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/json") {
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
             print("✅ 成功加载多语言分类文件: \(localizedFileName).json")
@@ -199,10 +218,25 @@ class DataManager: ObservableObject {
     }
     
     private func syncLoadAllKnots() throws -> AllKnotsData {
+        let currentLanguage = LanguageManager.shared.currentLanguage
+        let localizedFileName = "detailed_knots_data_\(currentLanguage)"
+        
+        // 先尝试加载多语言版本的JSON文件
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
+            print("✅ 成功加载多语言绳结文件: \(localizedFileName).json")
+            return allKnotsData
+        }
+        
+        // 如果找不到对应语言的文件，回退到默认的detailed_knots_data.json
+        print("⚠️ 未找到绳结语言文件 \(localizedFileName).json，回退到默认文件")
+        
         // 先尝试在Resources根目录查找
         if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json", inDirectory: "Resources") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
+            print("✅ 成功加载默认绳结文件: detailed_knots_data.json (Resources目录)")
             return allKnotsData
         }
         
@@ -210,6 +244,7 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
+            print("✅ 成功加载默认绳结文件: detailed_knots_data.json (根目录)")
             return allKnotsData
         }
         
