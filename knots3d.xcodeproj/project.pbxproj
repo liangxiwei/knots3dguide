@@ -841,6 +841,7 @@
 		41DABF9B68E731F7BAB1775D /* tripleoverhand360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A110FE82D70876D90F6F7F3 /* tripleoverhand360.json */; };
 		41E6B64DF3A2C30E140C69B2 /* diagonallashing360.json in Resources */ = {isa = PBXBuildFile; fileRef = F4C993B62719F760C05382D6 /* diagonallashing360.json */; };
 		422D90118371036EF8505215 /* catspaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */; };
+		425274C6B5372AFBA1B345C5 /* detailed_knots_data_zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */; };
 		42780BCE76D841917454C65C /* slippedbuntline360.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C78F841522AF826BF11C8A /* slippedbuntline360.png */; };
 		4278E36AF9D2CBCF69A149B3 /* yucatan.json in Resources */ = {isa = PBXBuildFile; fileRef = 980D0AA7FC17F2E117B6A8A1 /* yucatan.json */; };
 		42952B4BD8E6D8AA78965DB1 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */; };
@@ -1058,9 +1059,11 @@
 		53DE2191CF65F326AEC4A8B9 /* japanesemarkII.png in Resources */ = {isa = PBXBuildFile; fileRef = DF68347EC0989D6762870626 /* japanesemarkII.png */; };
 		5402C600362988970F33F941 /* tripodlashing360.json in Resources */ = {isa = PBXBuildFile; fileRef = 44E3809B9F298A547EA97409 /* tripodlashing360.json */; };
 		54107F8F1DC3A39AC17FC457 /* kalmyk-loop.webp in Resources */ = {isa = PBXBuildFile; fileRef = CFEEB597E4DBC2389774D7F8 /* kalmyk-loop.webp */; };
+		541C953085A0F805780B8E63 /* detailed_knots_data_zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */; };
 		541DD788BD533972666C22D2 /* halyardhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 52EA7A811D4E3EDC0D2E35E5 /* halyardhitch.json */; };
 		5423D48493737B8BC5CD01DA /* turkshead3L5B360.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D825E1F9E1636D84D0CA11D /* turkshead3L5B360.json */; };
 		54339A5F038068E7F6343997 /* shear-lashing.webp in Resources */ = {isa = PBXBuildFile; fileRef = EB7C42E8B6BBFF6DDABBDC58 /* shear-lashing.webp */; };
+		543E5BCB674503A1B1A84A8C /* detailed_knots_data_zh-Hans.json in Resources */ = {isa = PBXBuildFile; fileRef = EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */; };
 		544540FB1E31E1F1891187E1 /* piwich.json in Resources */ = {isa = PBXBuildFile; fileRef = 3124EAAFB69628D16B8EA729 /* piwich.json */; };
 		5447E9F95716E8A892207F6D /* snapbowline360.png in Resources */ = {isa = PBXBuildFile; fileRef = 23029AE325F4158449ADB0D4 /* snapbowline360.png */; };
 		547E9D5E98B8DE5B9157C9FC /* halfhitch.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E80936F76A7FE955C1DE93 /* halfhitch.png */; };
@@ -4273,6 +4276,7 @@
 		EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */ = {isa = PBXFileReference; path = "truckie-hitch.webp"; sourceTree = "<group>"; };
 		EACAE746084A9C345A96AB4F /* lightermanshitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch.png; sourceTree = "<group>"; };
 		EB129C71683F7F2CA778268E /* detailed_knots_data_ru.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_ru.json; sourceTree = "<group>"; };
+		EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detailed_knots_data_zh-Hans.json"; sourceTree = "<group>"; };
 		EB6092F7721A55E818C29AD3 /* munter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = munter.json; sourceTree = "<group>"; };
 		EB7C42E8B6BBFF6DDABBDC58 /* shear-lashing.webp */ = {isa = PBXFileReference; path = "shear-lashing.webp"; sourceTree = "<group>"; };
 		EB8E5D6114E873D24B8EF456 /* truckers-hitch.webp */ = {isa = PBXFileReference; path = "truckers-hitch.webp"; sourceTree = "<group>"; };
@@ -4715,6 +4719,7 @@
 				EB129C71683F7F2CA778268E /* detailed_knots_data_ru.json */,
 				8CF7F1C76758C7FA6FAB76EC /* detailed_knots_data_sv.json */,
 				0084ACF30AA656A9E7921445 /* detailed_knots_data_tr.json */,
+				EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */,
 				BBC4DA1C416705006820B641 /* detailed_knots_data_zh-TW.json */,
 			);
 			path = detail;
@@ -5559,32 +5564,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_01C6D6C8-477C-4C72-8F48-A1BEBD99F520" /* Application */ = {
+		"TEMP_14B1E036-AB05-4FCB-B2AF-ED75AAC1FA79" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Application;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_1CC7B517-DAC6-413D-AB4F-9E037910E0F9" /* Presentation */ = {
+		"TEMP_53EBF550-61EF-467E-807C-49E6129EC6B2" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_6C5E9E2B-7D3E-4C43-A24E-9AFA85F98DAE" /* Architecture */ = {
+		"TEMP_7A6AB0FE-F9C6-4BA2-A736-8CDFA1C4E60E" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_9DF3A012-BF2E-4797-A972-00BF050AEB10" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_C57317F5-7D03-4239-885D-3185CFF5A1F1" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5963,6 +5968,7 @@
 				83D873FA2C86273024C724E3 /* detailed_knots_data_ru.json in Resources */,
 				CB6AD6136EBA1C7D21BDE0F0 /* detailed_knots_data_sv.json in Resources */,
 				E2115F45CCA1BA91EA6692BE /* detailed_knots_data_tr.json in Resources */,
+				425274C6B5372AFBA1B345C5 /* detailed_knots_data_zh-Hans.json in Resources */,
 				9F9734DB472B31F1628DA25E /* detailed_knots_data_zh-TW.json in Resources */,
 				2D8530CA7D9470BE4F9ABD92 /* diagonal-lashing.webp in Resources */,
 				6581ACE84034FEE20A49F304 /* diagonallashing.json in Resources */,
@@ -7039,6 +7045,7 @@
 				E0CB6C831AF0A69105FE5A9F /* detailed_knots_data_ru.json in Resources */,
 				53B5E68A10BA028F5A060824 /* detailed_knots_data_sv.json in Resources */,
 				FAB3DAE7F30EFCC87C572492 /* detailed_knots_data_tr.json in Resources */,
+				541C953085A0F805780B8E63 /* detailed_knots_data_zh-Hans.json in Resources */,
 				7F082F473AE36D72EC2B62EB /* detailed_knots_data_zh-TW.json in Resources */,
 				873CE04CEC630202739B714C /* diagonal-lashing.webp in Resources */,
 				B5B22A7AA223BBD0C4551A2E /* diagonallashing.json in Resources */,
@@ -8115,6 +8122,7 @@
 				BD0E8FA903E29D2674A6F031 /* detailed_knots_data_ru.json in Resources */,
 				1C26A701D6D47E16E2F94018 /* detailed_knots_data_sv.json in Resources */,
 				DDAD3F7441AF550ED4D3F3C1 /* detailed_knots_data_tr.json in Resources */,
+				543E5BCB674503A1B1A84A8C /* detailed_knots_data_zh-Hans.json in Resources */,
 				6486E4401C727FA6DC1545C8 /* detailed_knots_data_zh-TW.json in Resources */,
 				7D77759722BEAC65E3AFCFB2 /* diagonal-lashing.webp in Resources */,
 				E61F4CFAE566CE83CF78547A /* diagonallashing.json in Resources */,
