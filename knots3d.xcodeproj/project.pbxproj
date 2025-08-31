@@ -738,7 +738,6 @@
 		39F248003D6931DE6CA0828E /* woodlandziptielashing360.json in Resources */ = {isa = PBXBuildFile; fileRef = 15759A6D1978324000372E71 /* woodlandziptielashing360.json */; };
 		3A09057B39CD13F435D6FB55 /* poachers-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = EDF9A72719F327284DB13EFB /* poachers-knot.webp */; };
 		3A0C1CB1532B094101C83628 /* prusik360.json in Resources */ = {isa = PBXBuildFile; fileRef = 15740CB6F8C5A9EA454CA8CE /* prusik360.json */; };
-		3A0C9DFB07644F8BF608239C /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		3A18A885F62D009C08A6A9CD /* water-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = CE9825FC3A1C1042FBEA3CDE /* water-knot.webp */; };
 		3A27D0AF384EF38A9DCF7B2A /* taut-line-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = DE826338E635F4E6EBFAC793 /* taut-line-hitch.webp */; };
 		3A5F0A74674034DB2DFD76E2 /* figure8followthru360.png in Resources */ = {isa = PBXBuildFile; fileRef = C71D9E246E238CD45550889A /* figure8followthru360.png */; };
@@ -831,7 +830,6 @@
 		40E903884A0CC3C46109DFED /* uliknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2847FB4F2B24D9D4719864 /* uliknot.png */; };
 		410D8709B07AD43FE56D5835 /* grannyknot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC3E325A84FFF16276D19AB /* grannyknot.json */; };
 		4136CDA73FA2168491DA4D73 /* fishermansknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD7BF9BB2DD8EDDC57CBE0 /* fishermansknot360.png */; };
-		4148C0DB3029BF23730D4368 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		414B81C570BF65BBF00BC329 /* doublesheetbend.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4301CB50B2BB16509F548 /* doublesheetbend.json */; };
 		41593100A06981C80413F79F /* piwich360.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6D961F513EAD6F88B556EC /* piwich360.png */; };
 		41A1394C3E4B699270662349 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE8501D803E59DB75F4064 /* AboutView.swift */; };
@@ -886,7 +884,6 @@
 		4523BA3320DBA6A3BDC439D7 /* alpinecoil.png in Resources */ = {isa = PBXBuildFile; fileRef = 64FC06C58FF72D6F09364059 /* alpinecoil.png */; };
 		4535F9DE5BB802F19D676BDF /* category_nl.json in Resources */ = {isa = PBXBuildFile; fileRef = C2832A21171BC1C2CFF4296A /* category_nl.json */; };
 		455719F3EEA8B9F26B9C463D /* loopknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E03800E5B5E49F531B170C5 /* loopknot.json */; };
-		4589031E50AAE047EE15F217 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */; };
 		4597B9BEA711CEB268DD9EA7 /* lapp-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = C8547C48D7FD84BAF301B746 /* lapp-knot.webp */; };
 		45B743C82792445397977DE9 /* dropperloop.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6B5895885008E9B8A2BA9 /* dropperloop.json */; };
 		45C309D092A18E45499C4CAE /* boom-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = D1835589794586042DCF38DE /* boom-hitch.webp */; };
@@ -1217,7 +1214,6 @@
 		5C6A7E87C230531E38DB3032 /* granny-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */; };
 		5C7913B8D684B6BABFC97945 /* bullhitchbightmethod360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9B03C006F0F20F00EC70F /* bullhitchbightmethod360.json */; };
 		5C7E33F0FA41E9C765AFDF85 /* bloodknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */; };
-		5C8FEC43B509026766C9F534 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		5CC8C64F6753B84DDB1170A3 /* detailed_knots_data_en.json in Resources */ = {isa = PBXBuildFile; fileRef = FA72ADFCFC6C37CA9E121F2A /* detailed_knots_data_en.json */; };
 		5CD7FA60455AE7C684AEC496 /* tripleroll.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FF7AE6602CC47451EC92F5D /* tripleroll.json */; };
 		5CEC0636D4E7980CA5649B98 /* inuit-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */; };
@@ -1545,7 +1541,6 @@
 		77808446B5818D1D7FCAD6E6 /* figure-eight-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6919EDB5296B479652E26AB6 /* figure-eight-bend.webp */; };
 		778E030CBCA694F528FEFA27 /* handcuff-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6755060C815FA9F72C573 /* handcuff-knot.webp */; };
 		77A020B6B080911310FC0163 /* munter360.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7565CF2E3850C955935837 /* munter360.png */; };
-		77C5800FFDC84AF0F68274D2 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		77DACCB12AF059CBD553E6FA /* trefoil-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 652419FD91E8D1F950A8D6A6 /* trefoil-knot.webp */; };
 		77EE95528C049B77DB8BD0FE /* west-country-whipping.webp in Resources */ = {isa = PBXBuildFile; fileRef = BD3EE06966C8CA73E9BEED89 /* west-country-whipping.webp */; };
 		7800DB28CAC359276F12C93C /* retracedbowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 578EDCB01A7570597943657F /* retracedbowline360.json */; };
@@ -1888,7 +1883,6 @@
 		91EA3185F4CD269879D4C013 /* truckie-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */; };
 		91EE2F192F8AE0B216ECAF09 /* bellringer.png in Resources */ = {isa = PBXBuildFile; fileRef = F256D2A1552121542D3DF038 /* bellringer.png */; };
 		92281D898BD8FBD3AD14DB57 /* doubledragonbend360.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF6CE0BA1EC6827B69991B5 /* doubledragonbend360.png */; };
-		923F655AAC3D0539B9F3AB5A /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		924BF0E4B0221B96DA09223F /* scaffoldknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD08BC10091D7E53B2E9ED /* scaffoldknot.png */; };
 		9270F862C3DDD1912B8E0A27 /* roundturntwohalfhitches360.png in Resources */ = {isa = PBXBuildFile; fileRef = 1666249CD8AF5C3304B9932F /* roundturntwohalfhitches360.png */; };
 		92933BCFCA8CC72DC816949A /* squareknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 102875CF34528B63052D11C0 /* squareknot.json */; };
@@ -2351,7 +2345,6 @@
 		B3C7B40072FE6BF0E0C3CF94 /* scouting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19BBC5F19D0B04FF5C894C5E /* scouting.jpg */; };
 		B3DCDE72FD012293D74C9DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */; };
 		B3F7D6468076BA5345E4DE4F /* surgeonsknot.png in Resources */ = {isa = PBXBuildFile; fileRef = E2798AAD137941E55A90E044 /* surgeonsknot.png */; };
-		B3FD7C611D450ED2C0D73E29 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		B414F72FC02805596215F5C7 /* detailed_knots_data_nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 88E138B0513C2B37942802D6 /* detailed_knots_data_nl.json */; };
 		B419DA747C70095E2FE60CA9 /* jury-mast-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */; };
 		B420C0B9F9F90789A7412D9B /* truckie.png in Resources */ = {isa = PBXBuildFile; fileRef = D29A2FF2E91CBDDE5FF16EB3 /* truckie.png */; };
@@ -2378,7 +2371,6 @@
 		B5B4500714B738EE09B71882 /* cleathitch.json in Resources */ = {isa = PBXBuildFile; fileRef = F04025CCC45FDB372457707A /* cleathitch.json */; };
 		B5C80A647067ECF36443C158 /* kalmyk360.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E2E26D7D16CD9E97EDAA597 /* kalmyk360.json */; };
 		B5E33348A6C9E705F72EDDBB /* mooring-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = CA15FFE87BFFE5B783BA1C26 /* mooring-hitch.webp */; };
-		B5E621A3B15F5FE36B3CAD27 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */; };
 		B5F85AA6AD3F103D66213ECE /* doublesheetbend.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC7FA8FC193A1669D13073 /* doublesheetbend.png */; };
 		B6084FCF900C200DA71D5841 /* doublecoin.json in Resources */ = {isa = PBXBuildFile; fileRef = F0060763CD16547AE0D746A5 /* doublecoin.json */; };
 		B60CFC8A1F5DA7999E04F43B /* portuguesebowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DDDC54AD3018D07C02B13D /* portuguesebowline360.json */; };
@@ -2397,7 +2389,6 @@
 		B6F09459A7AE75654CA40EE8 /* transom-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22861140FD94C98A5CE62959 /* transom-knot.webp */; };
 		B6F3E4DD0AC56C1791AD5ACD /* schwabisch.json in Resources */ = {isa = PBXBuildFile; fileRef = BEB28289A45044910AE7792B /* schwabisch.json */; };
 		B6FF4B6239612CAF3A81480A /* lariatloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = 59C47FB70EB9F14D97A456DE /* lariatloop360.json */; };
-		B701351FDFC1C5E3AB49A8AB /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		B71688A99B30DAE1454A5967 /* doublefigureeight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4755680E40CA9963DF92290D /* doublefigureeight.png */; };
 		B721673C808A9E884EEAE1FF /* backhandhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A3E73BB83F747849D3E245 /* backhandhitch360.json */; };
 		B74E42F579824C71DC8854FA /* carrick-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = E16841F4FE8CB84963688ABF /* carrick-bend.webp */; };
@@ -2624,7 +2615,6 @@
 		C76D89C3F7D09C8DFBBF736D /* lanyardhitch.png in Resources */ = {isa = PBXBuildFile; fileRef = A69D08C08003534A699F05B1 /* lanyardhitch.png */; };
 		C775E8BA818F1840AEC063FC /* handcuffknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = E60FDC7A18CD46D343940EA2 /* handcuffknot360.png */; };
 		C79C67DE7918683B1CD49765 /* caving.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4176E5F3829F5E7E3BF91EA3 /* caving.jpg */; };
-		C7B1632D78FF472E2EEC3DD0 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */; };
 		C7BBD51DE56B76B4B61C0538 /* cleathitch.json in Resources */ = {isa = PBXBuildFile; fileRef = F04025CCC45FDB372457707A /* cleathitch.json */; };
 		C7BF45D58A8F0000CF3D0890 /* windsor.webp in Resources */ = {isa = PBXBuildFile; fileRef = 93C55C1EDF455B691E88A7F9 /* windsor.webp */; };
 		C7CA4ADC203148BF8C4EB285 /* slippedconstrictorknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5A42A724A572F4AC90316 /* slippedconstrictorknot.png */; };
@@ -3072,7 +3062,6 @@
 		ED9C26BF80B165F0F491050D /* klemheist.json in Resources */ = {isa = PBXBuildFile; fileRef = C454B1FBDB885401E5845C86 /* klemheist.json */; };
 		EE0B6C558217F3CF177CF7BB /* doubledavyknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF6D0CEAFE7C3859E5C104 /* doubledavyknot360.png */; };
 		EE1BAF2814AC11A50A285463 /* albrightknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = EA47418F265F5FF824FDDEFF /* albrightknot360.png */; };
-		EE8328718345BD61EF8590CC /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		EEBE4EE1C9975C66AACD10AC /* tripleoverhand.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1DD6C50C83B5782D6828FA /* tripleoverhand.png */; };
 		EEE363E4337CCEB46D756008 /* doublebowline.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DFF81654CF9693CFE3F827 /* doublebowline.png */; };
 		EEEA3CE8D0FFB2098D50BFA7 /* singlebraid360.json in Resources */ = {isa = PBXBuildFile; fileRef = 009C65F2B783FE2B0F1902C4 /* singlebraid360.json */; };
@@ -3235,7 +3224,6 @@
 		FB47EF3B9E5B63D17770D567 /* timberhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6478EE28272E50324BB4389D /* timberhitch.json */; };
 		FB495B87F01808608544960C /* killickhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 320E87D79C21DE01ED9F778E /* killickhitch360.json */; };
 		FB4AD9C4917281088F31BEA4 /* carrickbend360.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2569ED2A645959E9940C46 /* carrickbend360.png */; };
-		FB5E9884EEBE8990687B1B37 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		FB7A47A91F3516F991FBD25D /* woodlandziptie360.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B5F05536B3F3C5F62975DB0 /* woodlandziptie360.json */; };
 		FB8778A0613FDC87C524A69C /* triple-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */; };
 		FB8DB92F4DD5399EAC3293CD /* slippedlappknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA941A18B4DCC033A12C036 /* slippedlappknot.png */; };
@@ -3320,7 +3308,6 @@
 		070720F0D992BAB7B586CE1C /* beckethitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitch360.png; sourceTree = "<group>"; };
 		074D0A0C93814F6F3A4E90C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		076B30E24B3CBC3239C2366C /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
-		07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.landscape.rotate.png; sourceTree = "<group>"; };
 		08531690B00611C67BEFDD2A /* diamondknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot360.json; sourceTree = "<group>"; };
 		085D9132DB9AD6482B096BB8 /* round-lashing.webp */ = {isa = PBXFileReference; path = "round-lashing.webp"; sourceTree = "<group>"; };
 		0877439A4A64268227AF8954 /* bowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowline360.png; sourceTree = "<group>"; };
@@ -4030,7 +4017,6 @@
 		A7F84FFFC221D1E1FE0BBAF3 /* turkshead3L5B360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turkshead3L5B360.png; sourceTree = "<group>"; };
 		A80A7994FC79E8211B61B465 /* woodlandziptielashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woodlandziptielashing.json; sourceTree = "<group>"; };
 		A81B835B610C3662A8458427 /* klemheist360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = klemheist360.png; sourceTree = "<group>"; };
-		A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.landscape.rotate.png; sourceTree = "<group>"; };
 		A8F2928FDAFA16A0548DFF28 /* klemheist.webp */ = {isa = PBXFileReference; path = klemheist.webp; sourceTree = "<group>"; };
 		A93B33124012E5D100942937 /* tautline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tautline.png; sourceTree = "<group>"; };
 		A992EE736CEA3E42DB65629A /* category_pt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_pt.json; sourceTree = "<group>"; };
@@ -4095,7 +4081,6 @@
 		BA964E862FC861DE51255124 /* farrimond.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = farrimond.json; sourceTree = "<group>"; };
 		BADC400AEFE564A0DBAA9413 /* poldotackle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = poldotackle.json; sourceTree = "<group>"; };
 		BAEA01C3BBD08AA05B635032 /* monkeysfist360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = monkeysfist360.json; sourceTree = "<group>"; };
-		BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.trianglehead.counterclockwise.rotate.90.png; sourceTree = "<group>"; };
 		BB84C0B3D0EEA8E4F9EB52EB /* beckethitchslipped360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitchslipped360.json; sourceTree = "<group>"; };
 		BBC4DA1C416705006820B641 /* detailed_knots_data_zh-TW.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detailed_knots_data_zh-TW.json"; sourceTree = "<group>"; };
 		BC59E85D58A6014A7B5F44B5 /* surgeonsloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surgeonsloop.png; sourceTree = "<group>"; };
@@ -4329,7 +4314,6 @@
 		EEAB2FDC90A1DD6BF6DE3EFC /* buntline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buntline360.png; sourceTree = "<group>"; };
 		EF15619D8A09F65E79DDDBA5 /* clovehitchtwoloops360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitchtwoloops360.png; sourceTree = "<group>"; };
 		EF4E89C124D374AE9D4D43B3 /* truckershitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckershitch.png; sourceTree = "<group>"; };
-		EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.trianglehead.counterclockwise.rotate.90.png; sourceTree = "<group>"; };
 		EF941E855508AE28AD697A45 /* packers-knot.webp */ = {isa = PBXFileReference; path = "packers-knot.webp"; sourceTree = "<group>"; };
 		EFB87B915E834EC13A74F6ED /* beckethitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitch.json; sourceTree = "<group>"; };
 		F0060763CD16547AE0D746A5 /* doublecoin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublecoin.json; sourceTree = "<group>"; };
@@ -4431,7 +4415,6 @@
 				79AA107F11799F049B4F7D93 /* detailed_knots_data.json */,
 				8EC474D26A137928A604DDD2 /* category */,
 				AB7E468A0E8A607B2C0F4B0C /* detail */,
-				B3FE65A9BD394BC0DE846E87 /* icon */,
 				8B07CC4C8469240784092548 /* images */,
 				183FA8EBE7034A73EC1A1C9A /* json */,
 				8AB0B5477E3A25635434AD5E /* locale */,
@@ -4763,19 +4746,9 @@
 			path = detail;
 			sourceTree = "<group>";
 		};
-		B3FE65A9BD394BC0DE846E87 /* icon */ = {
-			isa = PBXGroup;
-			children = (
-				BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */,
-				07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */,
-			);
-			path = icon;
-			sourceTree = "<group>";
-		};
 		DD23C5A733A38C5604542F99 /* knots3d */ = {
 			isa = PBXGroup;
 			children = (
-				EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */,
 				A27EA222373518AFACAFE548 /* Assets.xcassets */,
 				E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */,
 				D5CA79CA39D8D1C28310C71E /* DataManager.swift */,
@@ -4786,7 +4759,6 @@
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
-				A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */,
 				076B30E24B3CBC3239C2366C /* SearchManager.swift */,
 				B1ED6806C2D09D02C000B7DB /* SpriteKitAnimationView.swift */,
 				04AF30E046F52A0A21D6A42C /* Resources */,
@@ -5614,32 +5586,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_02E14F9E-400E-4588-8E2F-8DDCE973A9B8" /* Architecture */ = {
+		"TEMP_745FBF53-4927-429D-A1F0-C2B5E161D94E" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Architecture;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_17C21D9E-F38D-4843-A214-1E506EE3E9B2" /* Application */ = {
+		"TEMP_971A5B55-5FA3-4F81-B5F1-75F4B99E1BBC" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_3ACC8C5F-9F4C-4D40-B97B-228C96BB465A" /* Data */ = {
+		"TEMP_CC618CD9-9C08-4BF5-991C-8C9FA5FE5A8D" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_E740B3E8-CF54-4F01-AE97-54A7E1895720" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_60CDADD3-F99F-4EF3-8251-91B11199170B" /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5812,8 +5784,6 @@
 				5B785A0B48076CDE5EED64A8 /* arborknot.png in Resources */,
 				55F862001D7C2DCEEAD9AD2A /* arborknot360.json in Resources */,
 				D2035C48CFB33E40342DC122 /* arborknot360.png in Resources */,
-				77C5800FFDC84AF0F68274D2 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
-				B701351FDFC1C5E3AB49A8AB /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				7B0DEACD8F14817DDD3FCA15 /* ashley-stopper-knot.webp in Resources */,
 				1F7838015B959F2E185A38C6 /* ashleys-bend.webp in Resources */,
 				6084B0C6A7E59CC6AA618D19 /* ashleysbend.json in Resources */,
@@ -6472,8 +6442,6 @@
 				3AB03F4C5FF0087BF6D8A81E /* rapalaknot.png in Resources */,
 				F7055E21EB6215995581C888 /* rapalaknot360.json in Resources */,
 				7BA8BC926019A7C53D5D5668 /* rapalaknot360.png in Resources */,
-				B3FD7C611D450ED2C0D73E29 /* rectangle.landscape.rotate.png in Resources */,
-				C7B1632D78FF472E2EEC3DD0 /* rectangle.landscape.rotate.png in Resources */,
 				43B89D5340574441136E4DC9 /* reever-knot.webp in Resources */,
 				4AA96B6BE0D922B542755F3F /* reeverknot.json in Resources */,
 				686605618018AF98D4104E02 /* reeverknot.png in Resources */,
@@ -6894,8 +6862,6 @@
 				87B9B78CEA63047090FE13FE /* arborknot.png in Resources */,
 				5F2C13B338D7CBCEC4030990 /* arborknot360.json in Resources */,
 				73462FD2A7A5BE9E15BDD5C3 /* arborknot360.png in Resources */,
-				3A0C9DFB07644F8BF608239C /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
-				923F655AAC3D0539B9F3AB5A /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				8E9E85B4EA9EBBF60A57652D /* ashley-stopper-knot.webp in Resources */,
 				12E9582897123B8E1450A993 /* ashleys-bend.webp in Resources */,
 				1BB3A74B27018CA0DF566F82 /* ashleysbend.json in Resources */,
@@ -7554,8 +7520,6 @@
 				5123864A3CAD6CECB8E1F532 /* rapalaknot.png in Resources */,
 				4CCC6E58DAF3EF652996D4AC /* rapalaknot360.json in Resources */,
 				2831D2F3CE3E98590DEA0193 /* rapalaknot360.png in Resources */,
-				5C8FEC43B509026766C9F534 /* rectangle.landscape.rotate.png in Resources */,
-				4589031E50AAE047EE15F217 /* rectangle.landscape.rotate.png in Resources */,
 				E8668BF441A4135DE1805FCF /* reever-knot.webp in Resources */,
 				6E1A6A096D2C082C8AE12089 /* reeverknot.json in Resources */,
 				3078DC32F562B11206B31985 /* reeverknot.png in Resources */,
@@ -7976,8 +7940,6 @@
 				C6D32D602A0EE09D5CD063CF /* arborknot.png in Resources */,
 				6B4FBEB58402794127003E4C /* arborknot360.json in Resources */,
 				7DA280D57DA29F08855088BA /* arborknot360.png in Resources */,
-				EE8328718345BD61EF8590CC /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
-				4148C0DB3029BF23730D4368 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				3170E18A972211DF068F97DF /* ashley-stopper-knot.webp in Resources */,
 				6DF22E896B426AD240A58D15 /* ashleys-bend.webp in Resources */,
 				A8D0D6F037471EA85F25788C /* ashleysbend.json in Resources */,
@@ -8636,8 +8598,6 @@
 				C487C20E1FFD46B743FE5F49 /* rapalaknot.png in Resources */,
 				E552224A3992B1669C716988 /* rapalaknot360.json in Resources */,
 				9F1ED23DE692AE11992B626D /* rapalaknot360.png in Resources */,
-				FB5E9884EEBE8990687B1B37 /* rectangle.landscape.rotate.png in Resources */,
-				B5E621A3B15F5FE36B3CAD27 /* rectangle.landscape.rotate.png in Resources */,
 				C8CC4E979A66C7D52130A4B3 /* reever-knot.webp in Resources */,
 				6E6808532160523E45E8AFC4 /* reeverknot.json in Resources */,
 				35791AD3AA5EE531E3C1B9CE /* reeverknot.png in Resources */,
