@@ -9,7 +9,11 @@ struct AboutView: View {
                 VStack(spacing: 16) {
                     // App 图标占位（如果有的话）
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.blue.gradient)
+                        .fill(LinearGradient(
+                            gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.blue]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        ))
                         .frame(width: 100, height: 100)
                         .overlay(
                             Image(systemName: "link.circle.fill")

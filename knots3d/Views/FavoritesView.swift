@@ -5,7 +5,7 @@ struct FavoritesView: View {
     @StateObject private var languageManager = LanguageManager.shared
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 0) {
                 // 内容区域
                 if dataManager.favoriteKnots.isEmpty {

@@ -14,7 +14,7 @@ class LanguageManager: ObservableObject {
             currentLanguage = savedLanguage
         } else {
             // 如果没有保存的语言偏好，使用系统语言
-            let systemLanguage = Locale.current.language.languageCode?.identifier ?? "zh"
+            let systemLanguage = Locale.current.languageCode ?? "zh"
             currentLanguage = systemLanguage.hasPrefix("zh") ? "zh-Hans" : "en"
             UserDefaults.standard.set(currentLanguage, forKey: "AppLanguage")
         }
