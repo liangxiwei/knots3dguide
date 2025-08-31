@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -738,6 +738,7 @@
 		39F248003D6931DE6CA0828E /* woodlandziptielashing360.json in Resources */ = {isa = PBXBuildFile; fileRef = 15759A6D1978324000372E71 /* woodlandziptielashing360.json */; };
 		3A09057B39CD13F435D6FB55 /* poachers-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = EDF9A72719F327284DB13EFB /* poachers-knot.webp */; };
 		3A0C1CB1532B094101C83628 /* prusik360.json in Resources */ = {isa = PBXBuildFile; fileRef = 15740CB6F8C5A9EA454CA8CE /* prusik360.json */; };
+		3A0C9DFB07644F8BF608239C /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		3A18A885F62D009C08A6A9CD /* water-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = CE9825FC3A1C1042FBEA3CDE /* water-knot.webp */; };
 		3A27D0AF384EF38A9DCF7B2A /* taut-line-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = DE826338E635F4E6EBFAC793 /* taut-line-hitch.webp */; };
 		3A5F0A74674034DB2DFD76E2 /* figure8followthru360.png in Resources */ = {isa = PBXBuildFile; fileRef = C71D9E246E238CD45550889A /* figure8followthru360.png */; };
@@ -830,6 +831,7 @@
 		40E903884A0CC3C46109DFED /* uliknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2847FB4F2B24D9D4719864 /* uliknot.png */; };
 		410D8709B07AD43FE56D5835 /* grannyknot.json in Resources */ = {isa = PBXBuildFile; fileRef = FBC3E325A84FFF16276D19AB /* grannyknot.json */; };
 		4136CDA73FA2168491DA4D73 /* fishermansknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD7BF9BB2DD8EDDC57CBE0 /* fishermansknot360.png */; };
+		4148C0DB3029BF23730D4368 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		414B81C570BF65BBF00BC329 /* doublesheetbend.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF4301CB50B2BB16509F548 /* doublesheetbend.json */; };
 		41593100A06981C80413F79F /* piwich360.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A6D961F513EAD6F88B556EC /* piwich360.png */; };
 		41A1394C3E4B699270662349 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE8501D803E59DB75F4064 /* AboutView.swift */; };
@@ -903,9 +905,6 @@
 		46D296008C40360BCE1AAEB8 /* bow-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = DC3D5E281C03E33B3E090AA4 /* bow-knot.webp */; };
 		46F07A1B3569434BB5952BA3 /* tensionless-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 46A184ECA84A935284C27B03 /* tensionless-hitch.webp */; };
 		470842261D051703CAE7CACE /* stevedoresknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2D0E1779F1E36D9A72B697 /* stevedoresknot.png */; };
-		471139962E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = 471139952E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
-		471139972E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = 471139952E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
-		471139982E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = 471139952E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		4725F662298AA120444E4124 /* truelovers360.json in Resources */ = {isa = PBXBuildFile; fileRef = ED26D81375634D23F6E6613D /* truelovers360.json */; };
 		472834EBEF86D3FCCEF148D7 /* doubledragonbend360.json in Resources */ = {isa = PBXBuildFile; fileRef = E6480AF87A0A11E509A5AA9B /* doubledragonbend360.json */; };
 		475518880CBD634F003F6068 /* trefoil.json in Resources */ = {isa = PBXBuildFile; fileRef = D55E4D909A387D3A5A8D9AE8 /* trefoil.json */; };
@@ -1218,6 +1217,7 @@
 		5C6A7E87C230531E38DB3032 /* granny-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */; };
 		5C7913B8D684B6BABFC97945 /* bullhitchbightmethod360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9B03C006F0F20F00EC70F /* bullhitchbightmethod360.json */; };
 		5C7E33F0FA41E9C765AFDF85 /* bloodknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */; };
+		5C8FEC43B509026766C9F534 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		5CC8C64F6753B84DDB1170A3 /* detailed_knots_data_en.json in Resources */ = {isa = PBXBuildFile; fileRef = FA72ADFCFC6C37CA9E121F2A /* detailed_knots_data_en.json */; };
 		5CD7FA60455AE7C684AEC496 /* tripleroll.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FF7AE6602CC47451EC92F5D /* tripleroll.json */; };
 		5CEC0636D4E7980CA5649B98 /* inuit-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */; };
@@ -1545,6 +1545,7 @@
 		77808446B5818D1D7FCAD6E6 /* figure-eight-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6919EDB5296B479652E26AB6 /* figure-eight-bend.webp */; };
 		778E030CBCA694F528FEFA27 /* handcuff-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6755060C815FA9F72C573 /* handcuff-knot.webp */; };
 		77A020B6B080911310FC0163 /* munter360.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B7565CF2E3850C955935837 /* munter360.png */; };
+		77C5800FFDC84AF0F68274D2 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		77DACCB12AF059CBD553E6FA /* trefoil-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 652419FD91E8D1F950A8D6A6 /* trefoil-knot.webp */; };
 		77EE95528C049B77DB8BD0FE /* west-country-whipping.webp in Resources */ = {isa = PBXBuildFile; fileRef = BD3EE06966C8CA73E9BEED89 /* west-country-whipping.webp */; };
 		7800DB28CAC359276F12C93C /* retracedbowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 578EDCB01A7570597943657F /* retracedbowline360.json */; };
@@ -1887,6 +1888,7 @@
 		91EA3185F4CD269879D4C013 /* truckie-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */; };
 		91EE2F192F8AE0B216ECAF09 /* bellringer.png in Resources */ = {isa = PBXBuildFile; fileRef = F256D2A1552121542D3DF038 /* bellringer.png */; };
 		92281D898BD8FBD3AD14DB57 /* doubledragonbend360.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF6CE0BA1EC6827B69991B5 /* doubledragonbend360.png */; };
+		923F655AAC3D0539B9F3AB5A /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		924BF0E4B0221B96DA09223F /* scaffoldknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD08BC10091D7E53B2E9ED /* scaffoldknot.png */; };
 		9270F862C3DDD1912B8E0A27 /* roundturntwohalfhitches360.png in Resources */ = {isa = PBXBuildFile; fileRef = 1666249CD8AF5C3304B9932F /* roundturntwohalfhitches360.png */; };
 		92933BCFCA8CC72DC816949A /* squareknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 102875CF34528B63052D11C0 /* squareknot.json */; };
@@ -2349,6 +2351,7 @@
 		B3C7B40072FE6BF0E0C3CF94 /* scouting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19BBC5F19D0B04FF5C894C5E /* scouting.jpg */; };
 		B3DCDE72FD012293D74C9DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */; };
 		B3F7D6468076BA5345E4DE4F /* surgeonsknot.png in Resources */ = {isa = PBXBuildFile; fileRef = E2798AAD137941E55A90E044 /* surgeonsknot.png */; };
+		B3FD7C611D450ED2C0D73E29 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		B414F72FC02805596215F5C7 /* detailed_knots_data_nl.json in Resources */ = {isa = PBXBuildFile; fileRef = 88E138B0513C2B37942802D6 /* detailed_knots_data_nl.json */; };
 		B419DA747C70095E2FE60CA9 /* jury-mast-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */; };
 		B420C0B9F9F90789A7412D9B /* truckie.png in Resources */ = {isa = PBXBuildFile; fileRef = D29A2FF2E91CBDDE5FF16EB3 /* truckie.png */; };
@@ -2394,6 +2397,7 @@
 		B6F09459A7AE75654CA40EE8 /* transom-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 22861140FD94C98A5CE62959 /* transom-knot.webp */; };
 		B6F3E4DD0AC56C1791AD5ACD /* schwabisch.json in Resources */ = {isa = PBXBuildFile; fileRef = BEB28289A45044910AE7792B /* schwabisch.json */; };
 		B6FF4B6239612CAF3A81480A /* lariatloop360.json in Resources */ = {isa = PBXBuildFile; fileRef = 59C47FB70EB9F14D97A456DE /* lariatloop360.json */; };
+		B701351FDFC1C5E3AB49A8AB /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		B71688A99B30DAE1454A5967 /* doublefigureeight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4755680E40CA9963DF92290D /* doublefigureeight.png */; };
 		B721673C808A9E884EEAE1FF /* backhandhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A3E73BB83F747849D3E245 /* backhandhitch360.json */; };
 		B74E42F579824C71DC8854FA /* carrick-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = E16841F4FE8CB84963688ABF /* carrick-bend.webp */; };
@@ -3068,6 +3072,7 @@
 		ED9C26BF80B165F0F491050D /* klemheist.json in Resources */ = {isa = PBXBuildFile; fileRef = C454B1FBDB885401E5845C86 /* klemheist.json */; };
 		EE0B6C558217F3CF177CF7BB /* doubledavyknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CF6D0CEAFE7C3859E5C104 /* doubledavyknot360.png */; };
 		EE1BAF2814AC11A50A285463 /* albrightknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = EA47418F265F5FF824FDDEFF /* albrightknot360.png */; };
+		EE8328718345BD61EF8590CC /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */; };
 		EEBE4EE1C9975C66AACD10AC /* tripleoverhand.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1DD6C50C83B5782D6828FA /* tripleoverhand.png */; };
 		EEE363E4337CCEB46D756008 /* doublebowline.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DFF81654CF9693CFE3F827 /* doublebowline.png */; };
 		EEEA3CE8D0FFB2098D50BFA7 /* singlebraid360.json in Resources */ = {isa = PBXBuildFile; fileRef = 009C65F2B783FE2B0F1902C4 /* singlebraid360.json */; };
@@ -3230,6 +3235,7 @@
 		FB47EF3B9E5B63D17770D567 /* timberhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 6478EE28272E50324BB4389D /* timberhitch.json */; };
 		FB495B87F01808608544960C /* killickhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 320E87D79C21DE01ED9F778E /* killickhitch360.json */; };
 		FB4AD9C4917281088F31BEA4 /* carrickbend360.png in Resources */ = {isa = PBXBuildFile; fileRef = EA2569ED2A645959E9940C46 /* carrickbend360.png */; };
+		FB5E9884EEBE8990687B1B37 /* rectangle.landscape.rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */; };
 		FB7A47A91F3516F991FBD25D /* woodlandziptie360.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B5F05536B3F3C5F62975DB0 /* woodlandziptie360.json */; };
 		FB8778A0613FDC87C524A69C /* triple-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */; };
 		FB8DB92F4DD5399EAC3293CD /* slippedlappknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA941A18B4DCC033A12C036 /* slippedlappknot.png */; };
@@ -3284,7 +3290,7 @@
 
 /* Begin PBXFileReference section */
 		0016EFAC1EBE83DE71819306 /* monkeysfist360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkeysfist360.png; sourceTree = "<group>"; };
-		001FA7B09E2E23D92E764CD3 /* double-dragon-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-dragon-bend.webp"; sourceTree = "<group>"; };
+		001FA7B09E2E23D92E764CD3 /* double-dragon-bend.webp */ = {isa = PBXFileReference; path = "double-dragon-bend.webp"; sourceTree = "<group>"; };
 		0084ACF30AA656A9E7921445 /* detailed_knots_data_tr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_tr.json; sourceTree = "<group>"; };
 		009C65F2B783FE2B0F1902C4 /* singlebraid360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = singlebraid360.json; sourceTree = "<group>"; };
 		00C2E2D8F46FA8FCE824DBEE /* pedigreecowhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pedigreecowhitch.json; sourceTree = "<group>"; };
@@ -3292,7 +3298,7 @@
 		0135CDF076304314C4749029 /* lightermanshitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch360.png; sourceTree = "<group>"; };
 		01413E5C7F7F7272F68236C1 /* adjustablehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adjustablehitch360.png; sourceTree = "<group>"; };
 		0230772FC11EF11B3F4D4F22 /* figureeightbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figureeightbend360.json; sourceTree = "<group>"; };
-		0260A12E86FE8F1621A9F44C /* blakes-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blakes-hitch.webp"; sourceTree = "<group>"; };
+		0260A12E86FE8F1621A9F44C /* blakes-hitch.webp */ = {isa = PBXFileReference; path = "blakes-hitch.webp"; sourceTree = "<group>"; };
 		02846E12132CC607C2AEFDC8 /* scottslockedbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scottslockedbowline.json; sourceTree = "<group>"; };
 		02931EF801E1F147178E3E0B /* highwaymans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highwaymans.png; sourceTree = "<group>"; };
 		02DD03C1EEE7810D6639E5A4 /* dropperloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dropperloop360.json; sourceTree = "<group>"; };
@@ -3302,10 +3308,10 @@
 		0436B343D662FBF0449CFE6F /* slipknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slipknot360.json; sourceTree = "<group>"; };
 		04418E58A4B234878D70A3D2 /* doublefigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublefigureeight360.png; sourceTree = "<group>"; };
 		04D31DB7E62B2855681FB83B /* sandiegojam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sandiegojam.json; sourceTree = "<group>"; };
-		04DF20A16D4C4F2F5F2828A6 /* cats-paw.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cats-paw.webp"; sourceTree = "<group>"; };
+		04DF20A16D4C4F2F5F2828A6 /* cats-paw.webp */ = {isa = PBXFileReference; path = "cats-paw.webp"; sourceTree = "<group>"; };
 		056D21C30F74D1E4F8BF6DA0 /* bowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowline.png; sourceTree = "<group>"; };
 		05A3CDFABC45E9F04ACB9E70 /* handcuffknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = handcuffknot.json; sourceTree = "<group>"; };
-		05A4FCB9F9190EDCE472D6EB /* ossel-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ossel-hitch.webp"; sourceTree = "<group>"; };
+		05A4FCB9F9190EDCE472D6EB /* ossel-hitch.webp */ = {isa = PBXFileReference; path = "ossel-hitch.webp"; sourceTree = "<group>"; };
 		060F5D3016E9067C52C1464E /* westcountrywhipping360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrywhipping360.json; sourceTree = "<group>"; };
 		0635C0D8655A3D21A6DEE7E8 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0699A387C85A43420E9C718F /* eskimobowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = eskimobowline360.json; sourceTree = "<group>"; };
@@ -3316,12 +3322,12 @@
 		076B30E24B3CBC3239C2366C /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.landscape.rotate.png; sourceTree = "<group>"; };
 		08531690B00611C67BEFDD2A /* diamondknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot360.json; sourceTree = "<group>"; };
-		085D9132DB9AD6482B096BB8 /* round-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "round-lashing.webp"; sourceTree = "<group>"; };
+		085D9132DB9AD6482B096BB8 /* round-lashing.webp */ = {isa = PBXFileReference; path = "round-lashing.webp"; sourceTree = "<group>"; };
 		0877439A4A64268227AF8954 /* bowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowline360.png; sourceTree = "<group>"; };
 		089F57C3FF9D3947D08733FC /* marlinspikehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marlinspikehitch.json; sourceTree = "<group>"; };
 		08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot360.png; sourceTree = "<group>"; };
 		08D2FC5133A691D48D4EBE9C /* snapbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapbowline.png; sourceTree = "<group>"; };
-		0965D7B8F7A9B932E8C11DDA /* palomar-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "palomar-knot.webp"; sourceTree = "<group>"; };
+		0965D7B8F7A9B932E8C11DDA /* palomar-knot.webp */ = {isa = PBXFileReference; path = "palomar-knot.webp"; sourceTree = "<group>"; };
 		098EA2E97EC317C5B61F5E1D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09DDC277924A3E27E30668D0 /* detailed_knots_data_da.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_da.json; sourceTree = "<group>"; };
 		09EDED38EE78E716A3402E0F /* firemanschair.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanschair.json; sourceTree = "<group>"; };
@@ -3348,32 +3354,32 @@
 		0F3331990BBDFD5E9E523563 /* snugglehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = snugglehitch.json; sourceTree = "<group>"; };
 		0F66CCF502CEE1C081CBBE79 /* hitches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hitches.jpg; sourceTree = "<group>"; };
 		0F79768DB1553F8ADE75B2B2 /* hansonknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hansonknot.json; sourceTree = "<group>"; };
-		0F8FC9FE19AC60599DAE185D /* slipped-buntline-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slipped-buntline-hitch.webp"; sourceTree = "<group>"; };
-		0FA9E4966880E7C151CE3BA4 /* icicle-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "icicle-hitch.webp"; sourceTree = "<group>"; };
-		0FAA8A5B9E192128072E8AD7 /* prusik.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = prusik.webp; sourceTree = "<group>"; };
+		0F8FC9FE19AC60599DAE185D /* slipped-buntline-hitch.webp */ = {isa = PBXFileReference; path = "slipped-buntline-hitch.webp"; sourceTree = "<group>"; };
+		0FA9E4966880E7C151CE3BA4 /* icicle-hitch.webp */ = {isa = PBXFileReference; path = "icicle-hitch.webp"; sourceTree = "<group>"; };
+		0FAA8A5B9E192128072E8AD7 /* prusik.webp */ = {isa = PBXFileReference; path = prusik.webp; sourceTree = "<group>"; };
 		0FE8064ABCA7F9C50FB8C646 /* constrictorknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constrictorknot.png; sourceTree = "<group>"; };
 		102875CF34528B63052D11C0 /* squareknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = squareknot.json; sourceTree = "<group>"; };
 		1078BC9E4EC92DBDD198794D /* flemishflake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flemishflake.png; sourceTree = "<group>"; };
 		10F78BC8753F9D0B7190DB8E /* celticknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = celticknot.json; sourceTree = "<group>"; };
 		111D0648ACF070474FF5E73B /* distel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distel.png; sourceTree = "<group>"; };
-		11208B26396456B980657624 /* woodland-zip-tie-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "woodland-zip-tie-lashing.webp"; sourceTree = "<group>"; };
+		11208B26396456B980657624 /* woodland-zip-tie-lashing.webp */ = {isa = PBXFileReference; path = "woodland-zip-tie-lashing.webp"; sourceTree = "<group>"; };
 		1121754F9278D5950A9A19AC /* lariatloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lariatloop.png; sourceTree = "<group>"; };
 		116D54E91AB2DF5EFCD26647 /* lariatloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lariatloop.json; sourceTree = "<group>"; };
 		119AF796155FE93C9BC37B57 /* squarelashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarelashing360.png; sourceTree = "<group>"; };
 		11A1A8047EA5EEBAA117132A /* diamondknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamondknot.json; sourceTree = "<group>"; };
-		1208EF0249A12C1E8E56871F /* sailors-cross.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sailors-cross.webp"; sourceTree = "<group>"; };
-		12CC251F6A56480E5082D1CB /* double-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-bowline.webp"; sourceTree = "<group>"; };
+		1208EF0249A12C1E8E56871F /* sailors-cross.webp */ = {isa = PBXFileReference; path = "sailors-cross.webp"; sourceTree = "<group>"; };
+		12CC251F6A56480E5082D1CB /* double-bowline.webp */ = {isa = PBXFileReference; path = "double-bowline.webp"; sourceTree = "<group>"; };
 		12E6B917889B6ED15824F0BF /* loopknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loopknot360.png; sourceTree = "<group>"; };
-		130B1560568AE72BF634A2FB /* clove-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clove-hitch.webp"; sourceTree = "<group>"; };
+		130B1560568AE72BF634A2FB /* clove-hitch.webp */ = {isa = PBXFileReference; path = "clove-hitch.webp"; sourceTree = "<group>"; };
 		1355EB1B4D362A238ACB716B /* siberianhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = siberianhitch360.json; sourceTree = "<group>"; };
 		1356E2FE950B9B3A085FBDCB /* tillershitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tillershitch.png; sourceTree = "<group>"; };
 		13A38D0165652DB4798F936A /* doubleconstrictor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleconstrictor.json; sourceTree = "<group>"; };
 		13DCA139127DA22D03C5D692 /* krehloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krehloop.png; sourceTree = "<group>"; };
 		13E40F2DD240081F3390124F /* doublefishermans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublefishermans.png; sourceTree = "<group>"; };
-		141AA02ECDF5BCAE75B5A316 /* bell-ringers-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bell-ringers-knot.webp"; sourceTree = "<group>"; };
+		141AA02ECDF5BCAE75B5A316 /* bell-ringers-knot.webp */ = {isa = PBXFileReference; path = "bell-ringers-knot.webp"; sourceTree = "<group>"; };
 		141C4E263C7C56BF458FD7A5 /* woggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woggle.png; sourceTree = "<group>"; };
 		1437438C2C037A6E3BA6CDE6 /* alpinebutterflybend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflybend360.json; sourceTree = "<group>"; };
-		1444F5B83EC1D3F2BB48C3D6 /* slipped-ground-line-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slipped-ground-line-hitch.webp"; sourceTree = "<group>"; };
+		1444F5B83EC1D3F2BB48C3D6 /* slipped-ground-line-hitch.webp */ = {isa = PBXFileReference; path = "slipped-ground-line-hitch.webp"; sourceTree = "<group>"; };
 		147E8B532D9618FC11BA28B5 /* sheepshank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheepshank.png; sourceTree = "<group>"; };
 		1495A27BC7D09D1F3164CC7C /* figurenineloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figurenineloop.json; sourceTree = "<group>"; };
 		14D833F9F17DA2AC7D03F518 /* woodlandziptie360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodlandziptie360.png; sourceTree = "<group>"; };
@@ -3393,13 +3399,13 @@
 		179A1935F4E7CE5E21160DF5 /* turle360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = turle360.json; sourceTree = "<group>"; };
 		17E3B48E9C02E8694DFCF965 /* bullhitchbightmethod360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullhitchbightmethod360.png; sourceTree = "<group>"; };
 		1829155AE1E0644DCDC93FC9 /* jugknotbight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknotbight360.json; sourceTree = "<group>"; };
-		182B6988746AA0ABE4AD4222 /* timber-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "timber-hitch.webp"; sourceTree = "<group>"; };
+		182B6988746AA0ABE4AD4222 /* timber-hitch.webp */ = {isa = PBXFileReference; path = "timber-hitch.webp"; sourceTree = "<group>"; };
 		1836426EEC51031D548E50BA /* packersknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packersknot360.png; sourceTree = "<group>"; };
 		184606D4C428356F3F675D71 /* osselhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osselhitch360.png; sourceTree = "<group>"; };
 		1880EA325D61F75455A20034 /* palomar360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palomar360.png; sourceTree = "<group>"; };
 		18ADA6544D8D8069BF38B52A /* uliknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = uliknot360.json; sourceTree = "<group>"; };
 		18B45AD3C8B0CF4AEDF70C49 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		18FCE9A9F47E58B52D015452 /* figure-nine-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "figure-nine-loop.webp"; sourceTree = "<group>"; };
+		18FCE9A9F47E58B52D015452 /* figure-nine-loop.webp */ = {isa = PBXFileReference; path = "figure-nine-loop.webp"; sourceTree = "<group>"; };
 		197C4A7E34F1F9471D7A03EC /* hansonknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hansonknot360.json; sourceTree = "<group>"; };
 		197F55B67F7BF86BC453540B /* westcountrywhipping360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westcountrywhipping360.png; sourceTree = "<group>"; };
 		198FCFCB89FAA9A75FE625D9 /* backhandhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch.json; sourceTree = "<group>"; };
@@ -3409,32 +3415,32 @@
 		19D94605574D67A9823E38DE /* diamondknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamondknot.png; sourceTree = "<group>"; };
 		19F1EC70D4675CD4D763D854 /* poldotackle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poldotackle.png; sourceTree = "<group>"; };
 		1A0D9B029158C60EA8EEA9FC /* directionalfigureeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalfigureeight.png; sourceTree = "<group>"; };
-		1A62458D85232680D5ED639C /* figure-eight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "figure-eight.webp"; sourceTree = "<group>"; };
+		1A62458D85232680D5ED639C /* figure-eight.webp */ = {isa = PBXFileReference; path = "figure-eight.webp"; sourceTree = "<group>"; };
 		1AAF6E62682E99EFAAC3332D /* sailorscross.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sailorscross.json; sourceTree = "<group>"; };
 		1ADF211880EF13E5F48C136D /* grannyknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grannyknot360.png; sourceTree = "<group>"; };
 		1B435AAE0969E58F31D0D730 /* knots3dApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knots3dApp.swift; sourceTree = "<group>"; };
 		1B645D163F0B337C6BBF864B /* firemanschair360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firemanschair360.png; sourceTree = "<group>"; };
 		1B6ACE491DA63C0D981537A0 /* multipleoverhand360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multipleoverhand360.png; sourceTree = "<group>"; };
-		1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "triple-bowline.webp"; sourceTree = "<group>"; };
+		1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */ = {isa = PBXFileReference; path = "triple-bowline.webp"; sourceTree = "<group>"; };
 		1BCE6024A5AD68E8EAF21CE3 /* category_zh-TW.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "category_zh-TW.json"; sourceTree = "<group>"; };
 		1C50445A81A72DD68E919B3F /* clovehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clovehitch360.json; sourceTree = "<group>"; };
 		1C596A173B2758F880C07D31 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C9D056281FD5E2F9E93F1A5 /* doubleuniknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleuniknot360.png; sourceTree = "<group>"; };
-		1CE35F0CFA56A8482F420083 /* farrimond-friction-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "farrimond-friction-hitch.webp"; sourceTree = "<group>"; };
+		1CE35F0CFA56A8482F420083 /* farrimond-friction-hitch.webp */ = {isa = PBXFileReference; path = "farrimond-friction-hitch.webp"; sourceTree = "<group>"; };
 		1D34D2776CC8C4D9C1D731F4 /* reeverknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reeverknot.json; sourceTree = "<group>"; };
 		1D37EF05368735F15F758B32 /* osselhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = osselhitch.json; sourceTree = "<group>"; };
-		1DCBC9BAE9E15EB361E3E9AE /* sheet-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sheet-bend.webp"; sourceTree = "<group>"; };
+		1DCBC9BAE9E15EB361E3E9AE /* sheet-bend.webp */ = {isa = PBXFileReference; path = "sheet-bend.webp"; sourceTree = "<group>"; };
 		1DEEAA43120EF2FE95867BBC /* waterknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterknot360.png; sourceTree = "<group>"; };
 		1E21E0DA95B5202A09D15C3F /* trefoil360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trefoil360.png; sourceTree = "<group>"; };
 		1E4130669A89C0D492EFD041 /* killickhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = killickhitch.png; sourceTree = "<group>"; };
 		1E6C018210B0B4003C30FE67 /* yosemitebowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yosemitebowline.json; sourceTree = "<group>"; };
 		1F11449D86CEA7DF4462ECC2 /* bullhitchbightmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bullhitchbightmethod.json; sourceTree = "<group>"; };
-		1F2E71D29174FAFDD8094646 /* swiss-seat.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swiss-seat.webp"; sourceTree = "<group>"; };
+		1F2E71D29174FAFDD8094646 /* swiss-seat.webp */ = {isa = PBXFileReference; path = "swiss-seat.webp"; sourceTree = "<group>"; };
 		1F300733DCDEB688C652B808 /* twohalfhitches360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = twohalfhitches360.json; sourceTree = "<group>"; };
 		1F62CBD2F9CD748ACC7E5E4E /* huntersbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntersbend360.png; sourceTree = "<group>"; };
 		1F69D65B9334A2C421E10C9A /* category_zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "category_zh-Hans.json"; sourceTree = "<group>"; };
 		1F6C7D2F0C9B42B61FF65692 /* supermunter360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = supermunter360.json; sourceTree = "<group>"; };
-		1F762E1444912BA060220C73 /* woodland-zip-tie.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "woodland-zip-tie.webp"; sourceTree = "<group>"; };
+		1F762E1444912BA060220C73 /* woodland-zip-tie.webp */ = {isa = PBXFileReference; path = "woodland-zip-tie.webp"; sourceTree = "<group>"; };
 		1F901E5995351C860270B515 /* necktie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = necktie.jpg; sourceTree = "<group>"; };
 		1FF7AE6602CC47451EC92F5D /* tripleroll.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripleroll.json; sourceTree = "<group>"; };
 		20114D9B20A876C392EFED4C /* roundturntwohalfhitches360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roundturntwohalfhitches360.json; sourceTree = "<group>"; };
@@ -3444,17 +3450,17 @@
 		20B91898A6E4872E4CD0CA39 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		20DF89A48F88E15E55C5C144 /* figurenineloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figurenineloop360.png; sourceTree = "<group>"; };
 		20E20FE4FAC9A02D51B4CC56 /* mooringhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mooringhitch360.json; sourceTree = "<group>"; };
-		21039A481A0ACD4A68569475 /* constrictor-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "constrictor-knot.webp"; sourceTree = "<group>"; };
+		21039A481A0ACD4A68569475 /* constrictor-knot.webp */ = {isa = PBXFileReference; path = "constrictor-knot.webp"; sourceTree = "<group>"; };
 		210D216A84F4C5ED9BC74D6B /* jugknotbight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jugknotbight.png; sourceTree = "<group>"; };
 		2144BE1DED0E3E4F5A92E724 /* squareknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = squareknot360.json; sourceTree = "<group>"; };
 		214A2FC068AA633439E5B86E /* detailed_knots_data_pt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_pt.json; sourceTree = "<group>"; };
 		2188EE84C5BB4231895134F1 /* masthead360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = masthead360.json; sourceTree = "<group>"; };
-		21BDEFAE84FF1CA9F2C6AF7D /* lightermans-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lightermans-hitch.webp"; sourceTree = "<group>"; };
+		21BDEFAE84FF1CA9F2C6AF7D /* lightermans-hitch.webp */ = {isa = PBXFileReference; path = "lightermans-hitch.webp"; sourceTree = "<group>"; };
 		21CCD95DA81C18C99080D7F1 /* bullhitchendmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bullhitchendmethod.json; sourceTree = "<group>"; };
 		220A1CCE4A823BF88D9FCE6B /* detailed_knots_data_es.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_es.json; sourceTree = "<group>"; };
-		226E9F3B903041F6796D3C2F /* uni-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uni-knot.webp"; sourceTree = "<group>"; };
+		226E9F3B903041F6796D3C2F /* uni-knot.webp */ = {isa = PBXFileReference; path = "uni-knot.webp"; sourceTree = "<group>"; };
 		227432817CF5381213455A53 /* fullwindsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullwindsor.png; sourceTree = "<group>"; };
-		22861140FD94C98A5CE62959 /* transom-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "transom-knot.webp"; sourceTree = "<group>"; };
+		22861140FD94C98A5CE62959 /* transom-knot.webp */ = {isa = PBXFileReference; path = "transom-knot.webp"; sourceTree = "<group>"; };
 		23029AE325F4158449ADB0D4 /* snapbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapbowline360.png; sourceTree = "<group>"; };
 		231AC95AA5CFCF92E0FDDA8D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23400FF1BACA4E221E457165 /* runningbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = runningbowline.json; sourceTree = "<group>"; };
@@ -3462,30 +3468,30 @@
 		2383957A80C11D6EF4A607EF /* spanishbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spanishbowline.json; sourceTree = "<group>"; };
 		23AB7BD74ADD458BF8DA1AFB /* anchorhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = anchorhitch.json; sourceTree = "<group>"; };
 		241634FE551853376A6751E6 /* sheetbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheetbend.png; sourceTree = "<group>"; };
-		242D92FC8778A8C12E88499D /* alpine-coil.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alpine-coil.webp"; sourceTree = "<group>"; };
+		242D92FC8778A8C12E88499D /* alpine-coil.webp */ = {isa = PBXFileReference; path = "alpine-coil.webp"; sourceTree = "<group>"; };
 		2450CD3EDD9A76808A7BEF04 /* nail360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nail360.json; sourceTree = "<group>"; };
-		2452B2E662BCA2F6EE11C068 /* ashley-stopper-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ashley-stopper-knot.webp"; sourceTree = "<group>"; };
+		2452B2E662BCA2F6EE11C068 /* ashley-stopper-knot.webp */ = {isa = PBXFileReference; path = "ashley-stopper-knot.webp"; sourceTree = "<group>"; };
 		245ED2C33C447E4AB53F0FD7 /* essential_knots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = essential_knots.jpg; sourceTree = "<group>"; };
-		2499383B4D0F5C40A7107957 /* snuggle-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snuggle-hitch.webp"; sourceTree = "<group>"; };
-		24F118A7BF4943E3C5FD9E57 /* turle-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "turle-knot.webp"; sourceTree = "<group>"; };
+		2499383B4D0F5C40A7107957 /* snuggle-hitch.webp */ = {isa = PBXFileReference; path = "snuggle-hitch.webp"; sourceTree = "<group>"; };
+		24F118A7BF4943E3C5FD9E57 /* turle-knot.webp */ = {isa = PBXFileReference; path = "turle-knot.webp"; sourceTree = "<group>"; };
 		253C1439B158DAB7EC3E27B9 /* lanyardhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lanyardhitch360.json; sourceTree = "<group>"; };
 		25553FD8172E737B68AFB99E /* fgknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fgknot360.png; sourceTree = "<group>"; };
-		258B4BF19EBE3087C82BF795 /* firemans-coil.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "firemans-coil.webp"; sourceTree = "<group>"; };
+		258B4BF19EBE3087C82BF795 /* firemans-coil.webp */ = {isa = PBXFileReference; path = "firemans-coil.webp"; sourceTree = "<group>"; };
 		25C1ED0D809F584C191189EF /* fgknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fgknot.png; sourceTree = "<group>"; };
 		25C44EC9005B5011FBCEE0F3 /* figureeightloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figureeightloop.png; sourceTree = "<group>"; };
 		264AE12CE36EE2BDE5CEA77D /* supermunter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = supermunter.json; sourceTree = "<group>"; };
 		26648FA43EC97391ED9EB937 /* detailed_knots_data_ja.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_ja.json; sourceTree = "<group>"; };
 		26C646E876578233B94EB048 /* packersknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = packersknot.png; sourceTree = "<group>"; };
 		2708DF4EFEB20B7F1AC1545A /* tensionlesshitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tensionlesshitch.png; sourceTree = "<group>"; };
-		2771F2010CB286116DC0F665 /* bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = bowline.webp; sourceTree = "<group>"; };
-		2796360EB907F8B3548AF5E5 /* becket-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "becket-hitch.webp"; sourceTree = "<group>"; };
-		282F9EB12F7B2A909B748B08 /* portuguese-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "portuguese-bowline.webp"; sourceTree = "<group>"; };
+		2771F2010CB286116DC0F665 /* bowline.webp */ = {isa = PBXFileReference; path = bowline.webp; sourceTree = "<group>"; };
+		2796360EB907F8B3548AF5E5 /* becket-hitch.webp */ = {isa = PBXFileReference; path = "becket-hitch.webp"; sourceTree = "<group>"; };
+		282F9EB12F7B2A909B748B08 /* portuguese-bowline.webp */ = {isa = PBXFileReference; path = "portuguese-bowline.webp"; sourceTree = "<group>"; };
 		28622CA2A4DEA226EDF10B4F /* magnus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnus.png; sourceTree = "<group>"; };
 		28711DCD976E75B7D938CF93 /* gasketcoil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasketcoil.png; sourceTree = "<group>"; };
-		2891E2860787DB8E7F09DF6A /* gasket-coil.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gasket-coil.webp"; sourceTree = "<group>"; };
+		2891E2860787DB8E7F09DF6A /* gasket-coil.webp */ = {isa = PBXFileReference; path = "gasket-coil.webp"; sourceTree = "<group>"; };
 		28A3E73BB83F747849D3E245 /* backhandhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch360.json; sourceTree = "<group>"; };
-		28B379E58EB544751C7238B5 /* slip-figure-eight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slip-figure-eight.webp"; sourceTree = "<group>"; };
-		29667187170F62ADD4755DBD /* pile-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pile-hitch.webp"; sourceTree = "<group>"; };
+		28B379E58EB544751C7238B5 /* slip-figure-eight.webp */ = {isa = PBXFileReference; path = "slip-figure-eight.webp"; sourceTree = "<group>"; };
+		29667187170F62ADD4755DBD /* pile-hitch.webp */ = {isa = PBXFileReference; path = "pile-hitch.webp"; sourceTree = "<group>"; };
 		2A2A2974134E72C4527EE904 /* directionalfigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalfigureeight360.png; sourceTree = "<group>"; };
 		2A305CBA4AFBA8E497B587E0 /* davyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = davyknot.json; sourceTree = "<group>"; };
 		2A6D961F513EAD6F88B556EC /* piwich360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piwich360.png; sourceTree = "<group>"; };
@@ -3495,8 +3501,8 @@
 		2AEAC0B91CE40273640A0A12 /* perfectionloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = perfectionloop360.json; sourceTree = "<group>"; };
 		2B391BA45B86ABE11C0E6585 /* iciclehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iciclehitch.png; sourceTree = "<group>"; };
 		2B771BC02F28B6A43615DD7D /* prusikendline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prusikendline.json; sourceTree = "<group>"; };
-		2B8B1BB434B3FB1B3FE539B7 /* perfection-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "perfection-loop.webp"; sourceTree = "<group>"; };
-		2C088365760035F26A6FED95 /* diagonal-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "diagonal-lashing.webp"; sourceTree = "<group>"; };
+		2B8B1BB434B3FB1B3FE539B7 /* perfection-loop.webp */ = {isa = PBXFileReference; path = "perfection-loop.webp"; sourceTree = "<group>"; };
+		2C088365760035F26A6FED95 /* diagonal-lashing.webp */ = {isa = PBXFileReference; path = "diagonal-lashing.webp"; sourceTree = "<group>"; };
 		2C7EF3AA7BD1B290A9D41295 /* edk360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edk360.png; sourceTree = "<group>"; };
 		2D783AA6DD87714DA75B9E7F /* ashleysbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashleysbend.png; sourceTree = "<group>"; };
 		2D825E1F9E1636D84D0CA11D /* turkshead3L5B360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = turkshead3L5B360.json; sourceTree = "<group>"; };
@@ -3506,7 +3512,7 @@
 		2EA0BC4671E08CBB5E5994EA /* slipknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slipknot.json; sourceTree = "<group>"; };
 		2ED3414CB67E92A92F91D933 /* woggle360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woggle360.json; sourceTree = "<group>"; };
 		2ED864067B985B5F99AB75C6 /* bunnyears.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bunnyears.json; sourceTree = "<group>"; };
-		2EE016546F4E7CA1826C6627 /* cowboy-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cowboy-bowline.webp"; sourceTree = "<group>"; };
+		2EE016546F4E7CA1826C6627 /* cowboy-bowline.webp */ = {isa = PBXFileReference; path = "cowboy-bowline.webp"; sourceTree = "<group>"; };
 		2F10EF7574D3D362ACE8316D /* underwritersknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = underwritersknot.json; sourceTree = "<group>"; };
 		2F1E1E6D6D48F79A9DFFC9D0 /* magnus360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnus360.png; sourceTree = "<group>"; };
 		2F7179B911029D129447FB54 /* alpinebutterflyhandmethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterflyhandmethod.png; sourceTree = "<group>"; };
@@ -3522,10 +3528,10 @@
 		3124EAAFB69628D16B8EA729 /* piwich.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = piwich.json; sourceTree = "<group>"; };
 		315DC4110F67EA535DAA2904 /* doubleconstrictor360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleconstrictor360.png; sourceTree = "<group>"; };
 		31600B96026941858F8D92C6 /* doubleuniknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleuniknot.png; sourceTree = "<group>"; };
-		318A343DE5A00B9EB1E4B848 /* blood-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blood-knot.webp"; sourceTree = "<group>"; };
+		318A343DE5A00B9EB1E4B848 /* blood-knot.webp */ = {isa = PBXFileReference; path = "blood-knot.webp"; sourceTree = "<group>"; };
 		31A6C8A790645CA1C79E62BA /* tensionlesshitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tensionlesshitch.json; sourceTree = "<group>"; };
 		320E87D79C21DE01ED9F778E /* killickhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = killickhitch360.json; sourceTree = "<group>"; };
-		32262741A0A6FF4A9F9847CF /* square-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "square-knot.webp"; sourceTree = "<group>"; };
+		32262741A0A6FF4A9F9847CF /* square-knot.webp */ = {isa = PBXFileReference; path = "square-knot.webp"; sourceTree = "<group>"; };
 		32C3980126B690A4E12CD469 /* siberianhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siberianhitch360.png; sourceTree = "<group>"; };
 		32D080099C6C9B720333EB7D /* slippedgroundlinehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedgroundlinehitch.png; sourceTree = "<group>"; };
 		32DF480C09D260766A902D80 /* scottslockedbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scottslockedbowline360.png; sourceTree = "<group>"; };
@@ -3535,26 +3541,26 @@
 		33622AE9E81C0240F574A20F /* packersknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = packersknot.json; sourceTree = "<group>"; };
 		33A7F96AF238353D991FE394 /* alpinebutterflybend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterflybend360.png; sourceTree = "<group>"; };
 		33B1B7FBA7A023E73AC5CCA8 /* catspaw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catspaw.json; sourceTree = "<group>"; };
-		33E3CE1961BE8C727E3B0237 /* overhand-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "overhand-knot.webp"; sourceTree = "<group>"; };
+		33E3CE1961BE8C727E3B0237 /* overhand-knot.webp */ = {isa = PBXFileReference; path = "overhand-knot.webp"; sourceTree = "<group>"; };
 		341A389907C35A150C37CCE3 /* ashleysbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashleysbend.json; sourceTree = "<group>"; };
 		34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		34587D11C303C4F4BE6E110D /* category_it.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_it.json; sourceTree = "<group>"; };
-		3478699611ACB3719567EEBE /* anchor-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "anchor-hitch.webp"; sourceTree = "<group>"; };
+		3478699611ACB3719567EEBE /* anchor-hitch.webp */ = {isa = PBXFileReference; path = "anchor-hitch.webp"; sourceTree = "<group>"; };
 		351087120612A40208F7E956 /* loops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loops.jpg; sourceTree = "<group>"; };
-		35114F13564474F11CDB80E0 /* distel-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "distel-hitch.webp"; sourceTree = "<group>"; };
+		35114F13564474F11CDB80E0 /* distel-hitch.webp */ = {isa = PBXFileReference; path = "distel-hitch.webp"; sourceTree = "<group>"; };
 		35213EDFFBD388E67E15760C /* edwardsbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edwardsbowline360.json; sourceTree = "<group>"; };
 		3544C66242A4FB015892D74A /* distel360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = distel360.json; sourceTree = "<group>"; };
 		354C8D0020476CB9B2C0033E /* surgeonsknot-fishing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "surgeonsknot-fishing.json"; sourceTree = "<group>"; };
 		354CB0C19162BC37A680C3DE /* bellringer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bellringer.json; sourceTree = "<group>"; };
-		36CB5C1731CFC76BE4ECFD99 /* quick-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quick-hitch.webp"; sourceTree = "<group>"; };
+		36CB5C1731CFC76BE4ECFD99 /* quick-hitch.webp */ = {isa = PBXFileReference; path = "quick-hitch.webp"; sourceTree = "<group>"; };
 		36DC8CC730F48E3737CE3F1C /* knots3d.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = knots3d.entitlements; sourceTree = "<group>"; };
-		36F74C7243436F96AFBA0769 /* double-coin-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-coin-knot.webp"; sourceTree = "<group>"; };
+		36F74C7243436F96AFBA0769 /* double-coin-knot.webp */ = {isa = PBXFileReference; path = "double-coin-knot.webp"; sourceTree = "<group>"; };
 		371EFAA5E853BA1C5A8547E1 /* alpinebutterfly360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterfly360.png; sourceTree = "<group>"; };
 		371FD28FBDBF5302030C693F /* twohalfhitches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = twohalfhitches.json; sourceTree = "<group>"; };
 		372766F7E04E8ECBB82F9C14 /* westcountrylashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrylashing.json; sourceTree = "<group>"; };
 		37A0FD445865622758A321BD /* singlebraid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singlebraid.png; sourceTree = "<group>"; };
 		37BB41B256650453D1123FE2 /* rackingbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rackingbend360.json; sourceTree = "<group>"; };
-		387C6673A3468738032F60FD /* half-windsor.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "half-windsor.webp"; sourceTree = "<group>"; };
+		387C6673A3468738032F60FD /* half-windsor.webp */ = {isa = PBXFileReference; path = "half-windsor.webp"; sourceTree = "<group>"; };
 		394742D42A57FEBBEEF22215 /* halfwindsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfwindsor.png; sourceTree = "<group>"; };
 		398595DC26279795A7637A6C /* doubledavyknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubledavyknot360.json; sourceTree = "<group>"; };
 		398AE46E194058FAACB23D74 /* loopknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loopknot.png; sourceTree = "<group>"; };
@@ -3563,14 +3569,14 @@
 		3A110FE82D70876D90F6F7F3 /* tripleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripleoverhand360.json; sourceTree = "<group>"; };
 		3A35D8B82CBC16016FD13530 /* sheepshank360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheepshank360.png; sourceTree = "<group>"; };
 		3A627E0A8A1FF70D15F15B1F /* zeppelinbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = zeppelinbend.json; sourceTree = "<group>"; };
-		3AC73D9F745322D20FC8E900 /* halyard-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "halyard-hitch.webp"; sourceTree = "<group>"; };
+		3AC73D9F745322D20FC8E900 /* halyard-hitch.webp */ = {isa = PBXFileReference; path = "halyard-hitch.webp"; sourceTree = "<group>"; };
 		3AF2EACDA641156CDE5E06D2 /* zeppelinbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = zeppelinbend360.json; sourceTree = "<group>"; };
 		3B2B74BB281FF0A5B0188905 /* davyknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = davyknot360.json; sourceTree = "<group>"; };
 		3B39FBA342C073789756AAEB /* lightermanshitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lightermanshitch.json; sourceTree = "<group>"; };
 		3BEC79D5F5D88D7D99FBD507 /* lappknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lappknot.png; sourceTree = "<group>"; };
 		3C0302EF55DC98AEAD33D3BD /* triplebowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = triplebowline360.json; sourceTree = "<group>"; };
 		3C80DCC82BF174E8374AE9B2 /* thiefknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thiefknot.png; sourceTree = "<group>"; };
-		3CB6755060C815FA9F72C573 /* handcuff-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "handcuff-knot.webp"; sourceTree = "<group>"; };
+		3CB6755060C815FA9F72C573 /* handcuff-knot.webp */ = {isa = PBXFileReference; path = "handcuff-knot.webp"; sourceTree = "<group>"; };
 		3CD52D3E9F571EF7536A9E93 /* adjustablehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adjustablehitch360.json; sourceTree = "<group>"; };
 		3CFC1A07E4A98236754DE93A /* theatre___film.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "theatre___film.jpg"; sourceTree = "<group>"; };
 		3D1DD6C50C83B5782D6828FA /* tripleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripleoverhand.png; sourceTree = "<group>"; };
@@ -3591,32 +3597,31 @@
 		401F91F7F33D77E2A1895D28 /* osselhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = osselhitch360.json; sourceTree = "<group>"; };
 		40285C80262D290E220DF0CB /* figureeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figureeight.png; sourceTree = "<group>"; };
 		403BECDC802921E5901D4791 /* transom360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transom360.json; sourceTree = "<group>"; };
-		40BDA264FA42649B16D14AFF /* marlinspike-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "marlinspike-hitch.webp"; sourceTree = "<group>"; };
+		40BDA264FA42649B16D14AFF /* marlinspike-hitch.webp */ = {isa = PBXFileReference; path = "marlinspike-hitch.webp"; sourceTree = "<group>"; };
 		41114443C0EB8330053ECCBD /* edk.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edk.json; sourceTree = "<group>"; };
 		4135392D6C273275421FC6B4 /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		413C0C70A06FEB24AAA3DA7F /* waterbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterbowline360.png; sourceTree = "<group>"; };
 		4161102A33828E44050E2FC1 /* fullwindsor360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullwindsor360.json; sourceTree = "<group>"; };
 		4176E5F3829F5E7E3BF91EA3 /* caving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caving.jpg; sourceTree = "<group>"; };
-		4249E8538BACDC300E6005F4 /* valdotain-tresse.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "valdotain-tresse.webp"; sourceTree = "<group>"; };
+		4249E8538BACDC300E6005F4 /* valdotain-tresse.webp */ = {isa = PBXFileReference; path = "valdotain-tresse.webp"; sourceTree = "<group>"; };
 		42DD422E328E721E84226F85 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		430015B2F00AE25DF9307880 /* crownknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crownknot.png; sourceTree = "<group>"; };
 		434B52339DF686E97CFBE2ED /* muntermuleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muntermuleoverhand.png; sourceTree = "<group>"; };
 		43DC43FCECA750CD6C903380 /* special.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = special.jpg; sourceTree = "<group>"; };
 		43EDCAF6BAA4D23198EB146D /* albertoknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albertoknot.json; sourceTree = "<group>"; };
-		43EF7E882F2A51555AE1C79A /* surgeons-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "surgeons-loop.webp"; sourceTree = "<group>"; };
+		43EF7E882F2A51555AE1C79A /* surgeons-loop.webp */ = {isa = PBXFileReference; path = "surgeons-loop.webp"; sourceTree = "<group>"; };
 		4448EC2FE26979DD9FC5F28E /* cleathitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cleathitch.png; sourceTree = "<group>"; };
 		44659BE29D4B274C77CEF89A /* larkshead360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = larkshead360.png; sourceTree = "<group>"; };
 		449774F311AB605B104A9F27 /* scaffoldknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scaffoldknot.json; sourceTree = "<group>"; };
 		44E3809B9F298A547EA97409 /* tripodlashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripodlashing360.json; sourceTree = "<group>"; };
 		451695B840984F835F778C2A /* fgknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fgknot360.json; sourceTree = "<group>"; };
 		45C00D9A96A3C01A3ACAEA30 /* bowlineonabight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowlineonabight360.png; sourceTree = "<group>"; };
-		45EC423A458FFA724751BD29 /* multiple-overhand-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "multiple-overhand-knot.webp"; sourceTree = "<group>"; };
+		45EC423A458FFA724751BD29 /* multiple-overhand-knot.webp */ = {isa = PBXFileReference; path = "multiple-overhand-knot.webp"; sourceTree = "<group>"; };
 		46994216C3634FAD33EBFEB3 /* clovehitchtwoloops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitchtwoloops.png; sourceTree = "<group>"; };
-		46A184ECA84A935284C27B03 /* tensionless-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tensionless-hitch.webp"; sourceTree = "<group>"; };
-		46CB2CEB5CA21F7E22DC9617 /* surgeons-knot-fishing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "surgeons-knot-fishing.webp"; sourceTree = "<group>"; };
+		46A184ECA84A935284C27B03 /* tensionless-hitch.webp */ = {isa = PBXFileReference; path = "tensionless-hitch.webp"; sourceTree = "<group>"; };
+		46CB2CEB5CA21F7E22DC9617 /* surgeons-knot-fishing.webp */ = {isa = PBXFileReference; path = "surgeons-knot-fishing.webp"; sourceTree = "<group>"; };
 		46D9A2A0B7933F506CCEB359 /* beckethitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitch.png; sourceTree = "<group>"; };
 		46EB801B72900D74C0F79C53 /* edwardsbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edwardsbowline.json; sourceTree = "<group>"; };
-		471139952E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.trianglehead.counterclockwise.rotate.90.png; sourceTree = "<group>"; };
 		4752A8C634AAD3BBE4614C62 /* runningbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runningbowline360.png; sourceTree = "<group>"; };
 		4755680E40CA9963DF92290D /* doublefigureeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublefigureeight.png; sourceTree = "<group>"; };
 		476CB4F6455B596FC7D9DA09 /* halfhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfhitch360.json; sourceTree = "<group>"; };
@@ -3627,7 +3632,7 @@
 		4899719B65A94A535E5A7C3F /* magnus360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = magnus360.json; sourceTree = "<group>"; };
 		48CF6D0CEAFE7C3859E5C104 /* doubledavyknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledavyknot360.png; sourceTree = "<group>"; };
 		49402FBA7736F7DAA0F6678C /* sheetbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheetbend360.png; sourceTree = "<group>"; };
-		49854884071F6F8F42899E0B /* rolling-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rolling-hitch.webp"; sourceTree = "<group>"; };
+		49854884071F6F8F42899E0B /* rolling-hitch.webp */ = {isa = PBXFileReference; path = "rolling-hitch.webp"; sourceTree = "<group>"; };
 		49BC0BE11A4ECA0460AC8976 /* tripodlashing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripodlashing.png; sourceTree = "<group>"; };
 		49C3449BE307291E7C90F4E8 /* distel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = distel.json; sourceTree = "<group>"; };
 		4A0D3E44A6ABEF67FA1A9050 /* waterbowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterbowline.json; sourceTree = "<group>"; };
@@ -3643,7 +3648,7 @@
 		4BB7E4D4C8388C6F960E0E66 /* jugknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jugknot.png; sourceTree = "<group>"; };
 		4C6FCA402C469C62E514CCEE /* chainsinnet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chainsinnet.png; sourceTree = "<group>"; };
 		4C898CB43E6D9F587B7D00AA /* anchorhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchorhitch360.png; sourceTree = "<group>"; };
-		4CD77ED9058CF2B5D95CB157 /* square-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "square-lashing.webp"; sourceTree = "<group>"; };
+		4CD77ED9058CF2B5D95CB157 /* square-lashing.webp */ = {isa = PBXFileReference; path = "square-lashing.webp"; sourceTree = "<group>"; };
 		4CFFEF5D7734AC90CB58771B /* muntermuleoverhand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = muntermuleoverhand.json; sourceTree = "<group>"; };
 		4D07F772C82435E497FA02B4 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D44FC8B59F2B131D5130D83 /* griefknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = griefknot.json; sourceTree = "<group>"; };
@@ -3653,7 +3658,7 @@
 		4E641A36FF85D0E66D76F4CF /* detailed_knots_data_it.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_it.json; sourceTree = "<group>"; };
 		4E77A9B04A2E3D64A42C622F /* slipknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slipknot.png; sourceTree = "<group>"; };
 		4EC71F3BD3B2238FE30E2DE2 /* monkeysfist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = monkeysfist.json; sourceTree = "<group>"; };
-		4ECD17A782E16F0F8674394B /* canadian-jam-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "canadian-jam-knot.webp"; sourceTree = "<group>"; };
+		4ECD17A782E16F0F8674394B /* canadian-jam-knot.webp */ = {isa = PBXFileReference; path = "canadian-jam-knot.webp"; sourceTree = "<group>"; };
 		4EDB016D8DFF5BE52204BE8A /* shearlashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shearlashing360.json; sourceTree = "<group>"; };
 		4EFFEA90466C1C6AA4178136 /* ashleystopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashleystopper.png; sourceTree = "<group>"; };
 		4F09DF3E1E62C843BFCE3E42 /* bullhitchendmethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullhitchendmethod.png; sourceTree = "<group>"; };
@@ -3661,12 +3666,12 @@
 		5012751F198AE4A3C4E681CC /* halyardhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halyardhitch360.png; sourceTree = "<group>"; };
 		503B6F7822040A4F98FE23B8 /* figure8followthru360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figure8followthru360.json; sourceTree = "<group>"; };
 		503E86D66B6871053F65E9E0 /* blakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blakes.png; sourceTree = "<group>"; };
-		50B6103E3F5589773832268E /* swing-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swing-hitch.webp"; sourceTree = "<group>"; };
+		50B6103E3F5589773832268E /* swing-hitch.webp */ = {isa = PBXFileReference; path = "swing-hitch.webp"; sourceTree = "<group>"; };
 		50FDA38FC6CDCCC5E99801DC /* catspaw360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catspaw360.json; sourceTree = "<group>"; };
 		51115559AE4D87FB5E960F21 /* yucatan360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yucatan360.json; sourceTree = "<group>"; };
 		5112CFC2EE8C0C7A017B211F /* halyardhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halyardhitch.png; sourceTree = "<group>"; };
 		5132B72600FC280B8E7FD170 /* quickhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quickhitch360.png; sourceTree = "<group>"; };
-		51CCF0867955386E2217CE57 /* barrel-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "barrel-hitch.webp"; sourceTree = "<group>"; };
+		51CCF0867955386E2217CE57 /* barrel-hitch.webp */ = {isa = PBXFileReference; path = "barrel-hitch.webp"; sourceTree = "<group>"; };
 		526B4D3C2A48839790927386 /* pile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pile.json; sourceTree = "<group>"; };
 		52B375C2D4E14824DB23336F /* boomhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boomhitch.png; sourceTree = "<group>"; };
 		52CB87E1FC89DD0B5808837B /* arborknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arborknot.png; sourceTree = "<group>"; };
@@ -3676,7 +3681,7 @@
 		5386B8F9D72F2FF78059CA5F /* doubleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleoverhand360.json; sourceTree = "<group>"; };
 		5388B714CA9DEE3FF83E1A1B /* catspaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catspaw.png; sourceTree = "<group>"; };
 		53E26353A7D16EF5BC41CD10 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		5430E12F756B316E870E5CA6 /* clove-hitch-on-a-bight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clove-hitch-on-a-bight.webp"; sourceTree = "<group>"; };
+		5430E12F756B316E870E5CA6 /* clove-hitch-on-a-bight.webp */ = {isa = PBXFileReference; path = "clove-hitch-on-a-bight.webp"; sourceTree = "<group>"; };
 		54A67F14DDDDCF2BDE200DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		54AAC043BA054C0B040BEF72 /* multipleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multipleoverhand.png; sourceTree = "<group>"; };
 		5526001104EF677F714E7788 /* shearlashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shearlashing.json; sourceTree = "<group>"; };
@@ -3685,14 +3690,14 @@
 		55797EDF9670DAC871727E92 /* triplebowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = triplebowline.json; sourceTree = "<group>"; };
 		558E88441B8B1E3ECD3191DB /* multipleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = multipleoverhand360.json; sourceTree = "<group>"; };
 		55AF722CD6EC16917219CEE7 /* commonwhipping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commonwhipping.png; sourceTree = "<group>"; };
-		55FD83F007F6FFEF77DD8F85 /* surgeons-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "surgeons-knot.webp"; sourceTree = "<group>"; };
+		55FD83F007F6FFEF77DD8F85 /* surgeons-knot.webp */ = {isa = PBXFileReference; path = "surgeons-knot.webp"; sourceTree = "<group>"; };
 		561E937DE759A1BD76E666D5 /* roundlashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roundlashing360.json; sourceTree = "<group>"; };
 		562810D8CCEFC5F2CF228F89 /* sailorscoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sailorscoil.json; sourceTree = "<group>"; };
 		56C1FBE851EA48ED84C0AE08 /* detailed_knots_data_de.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_de.json; sourceTree = "<group>"; };
 		56CB65DB18D0BCB682F5E2F4 /* sandiegojam360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandiegojam360.png; sourceTree = "<group>"; };
 		56F15D926FD738683F1B1CDF /* eskimobowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eskimobowline360.png; sourceTree = "<group>"; };
-		573A9EACF3F2BE75861C8B27 /* double-sheet-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-sheet-bend.webp"; sourceTree = "<group>"; };
-		574343261BDD7F3E08033E1C /* voodoo-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "voodoo-hitch.webp"; sourceTree = "<group>"; };
+		573A9EACF3F2BE75861C8B27 /* double-sheet-bend.webp */ = {isa = PBXFileReference; path = "double-sheet-bend.webp"; sourceTree = "<group>"; };
+		574343261BDD7F3E08033E1C /* voodoo-hitch.webp */ = {isa = PBXFileReference; path = "voodoo-hitch.webp"; sourceTree = "<group>"; };
 		575AEF57BA410F415AAB86B5 /* timberhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = timberhitch360.json; sourceTree = "<group>"; };
 		5783A64B6EC621ED986B6E92 /* beckethitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitch360.json; sourceTree = "<group>"; };
 		578EDCB01A7570597943657F /* retracedbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = retracedbowline360.json; sourceTree = "<group>"; };
@@ -3707,8 +3712,8 @@
 		59C47FB70EB9F14D97A456DE /* lariatloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lariatloop360.json; sourceTree = "<group>"; };
 		59D4BEDB0D4252442773AAA4 /* transom360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transom360.png; sourceTree = "<group>"; };
 		5A20CBE39D71B3AFD6182CE7 /* pile360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pile360.json; sourceTree = "<group>"; };
-		5A4DBF48A7CAFCA6EFE5E414 /* in-line-figure-eight-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "in-line-figure-eight-loop.webp"; sourceTree = "<group>"; };
-		5A8D63F0B449FC7B34037E94 /* double-constrictor.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-constrictor.webp"; sourceTree = "<group>"; };
+		5A4DBF48A7CAFCA6EFE5E414 /* in-line-figure-eight-loop.webp */ = {isa = PBXFileReference; path = "in-line-figure-eight-loop.webp"; sourceTree = "<group>"; };
+		5A8D63F0B449FC7B34037E94 /* double-constrictor.webp */ = {isa = PBXFileReference; path = "double-constrictor.webp"; sourceTree = "<group>"; };
 		5B2AE4FF56B50FFBD7E81DC2 /* timberhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timberhitch.png; sourceTree = "<group>"; };
 		5B2D0E1779F1E36D9A72B697 /* stevedoresknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stevedoresknot.png; sourceTree = "<group>"; };
 		5B7B605FD231025FFF788694 /* doublefishermans360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefishermans360.json; sourceTree = "<group>"; };
@@ -3719,23 +3724,23 @@
 		5BF70574CAFC0CEE74B2C987 /* poachersknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poachersknot360.png; sourceTree = "<group>"; };
 		5C66150D9BCC0659B8B877DE /* squarelashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = squarelashing360.json; sourceTree = "<group>"; };
 		5C70F2FC187DA408D68C6B8C /* pile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pile.png; sourceTree = "<group>"; };
-		5CC60ED82D6F2EAA0C493C7D /* scaffold-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "scaffold-knot.webp"; sourceTree = "<group>"; };
+		5CC60ED82D6F2EAA0C493C7D /* scaffold-knot.webp */ = {isa = PBXFileReference; path = "scaffold-knot.webp"; sourceTree = "<group>"; };
 		5CCEC2D0B60CB1CCE2F88136 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5CF7A5A6BAB911ADED8721ED /* orvisknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orvisknot.png; sourceTree = "<group>"; };
 		5D0B8FC742E22A38327C9720 /* overhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = overhand360.json; sourceTree = "<group>"; };
 		5D8007065CE798BB18423F5B /* rollinghitch2v.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rollinghitch2v.json; sourceTree = "<group>"; };
 		5DA964A0F2C5C755CD22529D /* slippedgroundlinehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedgroundlinehitch360.png; sourceTree = "<group>"; };
-		5EBBC09355CB97304B010A8A /* alpine-butterfly-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alpine-butterfly-bend.webp"; sourceTree = "<group>"; };
-		5F3646D8A5248D4706F53978 /* double-bight-figure-eight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-bight-figure-eight.webp"; sourceTree = "<group>"; };
+		5EBBC09355CB97304B010A8A /* alpine-butterfly-bend.webp */ = {isa = PBXFileReference; path = "alpine-butterfly-bend.webp"; sourceTree = "<group>"; };
+		5F3646D8A5248D4706F53978 /* double-bight-figure-eight.webp */ = {isa = PBXFileReference; path = "double-bight-figure-eight.webp"; sourceTree = "<group>"; };
 		5F57C3CC774D6253A30AFEAB /* scottslockedbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scottslockedbowline360.json; sourceTree = "<group>"; };
 		5FD5DB4D451740877D6C767D /* bowknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowknot.png; sourceTree = "<group>"; };
 		5FF26D424CB1263B25B4F138 /* valdotain.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = valdotain.json; sourceTree = "<group>"; };
 		6002540B2E5043CAEF8A652E /* tarbuck360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarbuck360.png; sourceTree = "<group>"; };
-		60257178230DA7C7A8A32726 /* edwards-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "edwards-bowline.webp"; sourceTree = "<group>"; };
-		6034FF4E451B340197F94EC7 /* spanish-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "spanish-bowline.webp"; sourceTree = "<group>"; };
+		60257178230DA7C7A8A32726 /* edwards-bowline.webp */ = {isa = PBXFileReference; path = "edwards-bowline.webp"; sourceTree = "<group>"; };
+		6034FF4E451B340197F94EC7 /* spanish-bowline.webp */ = {isa = PBXFileReference; path = "spanish-bowline.webp"; sourceTree = "<group>"; };
 		607CF5612A17AE76916921CB /* crownknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = crownknot360.json; sourceTree = "<group>"; };
-		6092E10F3F5CD00DE2912AEB /* half-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "half-hitch.webp"; sourceTree = "<group>"; };
-		60A668DE16078A61EFCE3E48 /* rethreaded-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rethreaded-bowline.webp"; sourceTree = "<group>"; };
+		6092E10F3F5CD00DE2912AEB /* half-hitch.webp */ = {isa = PBXFileReference; path = "half-hitch.webp"; sourceTree = "<group>"; };
+		60A668DE16078A61EFCE3E48 /* rethreaded-bowline.webp */ = {isa = PBXFileReference; path = "rethreaded-bowline.webp"; sourceTree = "<group>"; };
 		60B15A03925573A9FA1FA38C /* commonwhipping360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = commonwhipping360.json; sourceTree = "<group>"; };
 		60C57BD509F2C977D5CEDB91 /* twohalfhitches360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twohalfhitches360.png; sourceTree = "<group>"; };
 		6203FA3DA14AD7A655FD0A6B /* fishermanseye360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishermanseye360.png; sourceTree = "<group>"; };
@@ -3744,24 +3749,24 @@
 		62B6E0E7E21005B6BD090D0B /* celticknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = celticknot360.png; sourceTree = "<group>"; };
 		63496DDF070EBB73C04221DC /* spanishbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spanishbowline.png; sourceTree = "<group>"; };
 		6383C7AD7BEAF9FA520B2A06 /* tensionlesshitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tensionlesshitch360.png; sourceTree = "<group>"; };
-		639ED7A67AAF404B715AE609 /* bull-hitch-bight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bull-hitch-bight.webp"; sourceTree = "<group>"; };
+		639ED7A67AAF404B715AE609 /* bull-hitch-bight.webp */ = {isa = PBXFileReference; path = "bull-hitch-bight.webp"; sourceTree = "<group>"; };
 		640CA7286E09718053668F96 /* prusikendline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prusikendline360.png; sourceTree = "<group>"; };
 		641A3D11590EE9C2BA21E087 /* category_no.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_no.json; sourceTree = "<group>"; };
 		64330E0664AD0CFF89A7EE15 /* sheepshank.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sheepshank.json; sourceTree = "<group>"; };
 		6478EE28272E50324BB4389D /* timberhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = timberhitch.json; sourceTree = "<group>"; };
 		64DE1AF2CADD9F9F41E12DE4 /* truckie360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckie360.png; sourceTree = "<group>"; };
 		64E511F1FC3BC71559D2171E /* bowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bowline.json; sourceTree = "<group>"; };
-		64F646B046D0BD1AB9BCCC83 /* two-half-hitches.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "two-half-hitches.webp"; sourceTree = "<group>"; };
+		64F646B046D0BD1AB9BCCC83 /* two-half-hitches.webp */ = {isa = PBXFileReference; path = "two-half-hitches.webp"; sourceTree = "<group>"; };
 		64F64DC1E27840283BE419D3 /* doubledragonbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledragonbend.png; sourceTree = "<group>"; };
 		64FC06C58FF72D6F09364059 /* alpinecoil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinecoil.png; sourceTree = "<group>"; };
-		651268DBA72560C10510C0C5 /* pitzen-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pitzen-knot.webp"; sourceTree = "<group>"; };
-		652419FD91E8D1F950A8D6A6 /* trefoil-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trefoil-knot.webp"; sourceTree = "<group>"; };
+		651268DBA72560C10510C0C5 /* pitzen-knot.webp */ = {isa = PBXFileReference; path = "pitzen-knot.webp"; sourceTree = "<group>"; };
+		652419FD91E8D1F950A8D6A6 /* trefoil-knot.webp */ = {isa = PBXFileReference; path = "trefoil-knot.webp"; sourceTree = "<group>"; };
 		652B8307642CEEE065B8CDFD /* marlinspikehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marlinspikehitch360.png; sourceTree = "<group>"; };
 		652CD1B0BBE973D01E48C204 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65BDDDA527BAEA5A70EAC94C /* bullhitchendmethod360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bullhitchendmethod360.json; sourceTree = "<group>"; };
-		65D6BDFCE0264773446CCCAD /* lanyard-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lanyard-hitch.webp"; sourceTree = "<group>"; };
+		65D6BDFCE0264773446CCCAD /* lanyard-hitch.webp */ = {isa = PBXFileReference; path = "lanyard-hitch.webp"; sourceTree = "<group>"; };
 		65DEBCD65EBC003E9A1DA0D6 /* midshipman360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midshipman360.png; sourceTree = "<group>"; };
-		65F7C0C108734A940024D278 /* ashleys-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ashleys-bend.webp"; sourceTree = "<group>"; };
+		65F7C0C108734A940024D278 /* ashleys-bend.webp */ = {isa = PBXFileReference; path = "ashleys-bend.webp"; sourceTree = "<group>"; };
 		661C5B3B8F7C9F150539621E /* surgeonsknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot360.json; sourceTree = "<group>"; };
 		66219292082239D34D2EF82F /* yucatan360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yucatan360.png; sourceTree = "<group>"; };
 		6736CF66453D284D012FDE26 /* lariatloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lariatloop360.png; sourceTree = "<group>"; };
@@ -3774,39 +3779,39 @@
 		68E7683FEE9E12451C88041D /* mooringhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooringhitch360.png; sourceTree = "<group>"; };
 		68EB9F2AA17F10C21122B39A /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6917CC350D247B60FC35EDDB /* waterknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterknot.json; sourceTree = "<group>"; };
-		6919EDB5296B479652E26AB6 /* figure-eight-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "figure-eight-bend.webp"; sourceTree = "<group>"; };
+		6919EDB5296B479652E26AB6 /* figure-eight-bend.webp */ = {isa = PBXFileReference; path = "figure-eight-bend.webp"; sourceTree = "<group>"; };
 		691AA9534C178BBA16BD0A52 /* nail360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nail360.png; sourceTree = "<group>"; };
 		69384A26EB0777A5D7AD6593 /* sandiegojam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sandiegojam.png; sourceTree = "<group>"; };
-		69738CD20949555B5731E00E /* water-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "water-bowline.webp"; sourceTree = "<group>"; };
+		69738CD20949555B5731E00E /* water-bowline.webp */ = {isa = PBXFileReference; path = "water-bowline.webp"; sourceTree = "<group>"; };
 		69833E617A32577711E85813 /* bowknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bowknot.json; sourceTree = "<group>"; };
 		69876296209B3BD2F1A419A2 /* tarbuck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarbuck.png; sourceTree = "<group>"; };
 		69CD83D64E727B012905B1D1 /* westcountrywhipping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westcountrywhipping.png; sourceTree = "<group>"; };
-		6A0082AD80A50C38578AAF97 /* slipped-constrictor-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slipped-constrictor-knot.webp"; sourceTree = "<group>"; };
+		6A0082AD80A50C38578AAF97 /* slipped-constrictor-knot.webp */ = {isa = PBXFileReference; path = "slipped-constrictor-knot.webp"; sourceTree = "<group>"; };
 		6A41075B400DDB8C14419A45 /* doubledavyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubledavyknot.json; sourceTree = "<group>"; };
 		6A4200F410173214FEC84759 /* doublecoin360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublecoin360.png; sourceTree = "<group>"; };
-		6A438077E73EB5CF15B0EB4E /* fishermans-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fishermans-knot.webp"; sourceTree = "<group>"; };
-		6AD41A3A4AA659B8AD092AF8 /* chain-sinnet.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chain-sinnet.webp"; sourceTree = "<group>"; };
-		6ADCC0A1FFC3B3113988DABF /* thief-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "thief-knot.webp"; sourceTree = "<group>"; };
+		6A438077E73EB5CF15B0EB4E /* fishermans-knot.webp */ = {isa = PBXFileReference; path = "fishermans-knot.webp"; sourceTree = "<group>"; };
+		6AD41A3A4AA659B8AD092AF8 /* chain-sinnet.webp */ = {isa = PBXFileReference; path = "chain-sinnet.webp"; sourceTree = "<group>"; };
+		6ADCC0A1FFC3B3113988DABF /* thief-knot.webp */ = {isa = PBXFileReference; path = "thief-knot.webp"; sourceTree = "<group>"; };
 		6AE0087A9A8259A49510B99D /* trileneknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trileneknot360.png; sourceTree = "<group>"; };
 		6AE9FA588411AF057EEBFD0B /* figureeightloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figureeightloop360.png; sourceTree = "<group>"; };
 		6B02BF16EDA95C67B5F09A6A /* truckie360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truckie360.json; sourceTree = "<group>"; };
 		6B4E98951A2C60AF3C6A193B /* doubleconstrictor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleconstrictor.png; sourceTree = "<group>"; };
-		6B78133C57410B306CCACE17 /* fishermans-eye.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fishermans-eye.webp"; sourceTree = "<group>"; };
+		6B78133C57410B306CCACE17 /* fishermans-eye.webp */ = {isa = PBXFileReference; path = "fishermans-eye.webp"; sourceTree = "<group>"; };
 		6B80EBBBD8591CF74C41EDC1 /* portuguesebowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portuguesebowline.png; sourceTree = "<group>"; };
 		6C5FCA6D9EE86A6122689453 /* woodlandziptie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodlandziptie.png; sourceTree = "<group>"; };
-		6C6B912611CD20E06EFC2D93 /* double-dragon.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-dragon.webp"; sourceTree = "<group>"; };
+		6C6B912611CD20E06EFC2D93 /* double-dragon.webp */ = {isa = PBXFileReference; path = "double-dragon.webp"; sourceTree = "<group>"; };
 		6CE8F00CA8CAC204F2F40ED9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		6D6F8554BB4607EDC5DD6F64 /* fire___rescue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fire___rescue.jpg"; sourceTree = "<group>"; };
 		6D877557CDF6023705D26608 /* doublecoin360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublecoin360.json; sourceTree = "<group>"; };
-		6E21C633BDC9E9F0C80C85B2 /* double-overhand-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-overhand-knot.webp"; sourceTree = "<group>"; };
-		6E3BC4EC1DF727A418724313 /* snell-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snell-knot.webp"; sourceTree = "<group>"; };
-		6E9848ADB17EF45602F2584C /* killick-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "killick-hitch.webp"; sourceTree = "<group>"; };
+		6E21C633BDC9E9F0C80C85B2 /* double-overhand-knot.webp */ = {isa = PBXFileReference; path = "double-overhand-knot.webp"; sourceTree = "<group>"; };
+		6E3BC4EC1DF727A418724313 /* snell-knot.webp */ = {isa = PBXFileReference; path = "snell-knot.webp"; sourceTree = "<group>"; };
+		6E9848ADB17EF45602F2584C /* killick-hitch.webp */ = {isa = PBXFileReference; path = "killick-hitch.webp"; sourceTree = "<group>"; };
 		6E9AD1AA714622350A0A9E4A /* firemanscoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanscoil.json; sourceTree = "<group>"; };
 		6F292F1016CA50E849A0B6FB /* mooringhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooringhitch.png; sourceTree = "<group>"; };
 		6F493923C3DAFC4C9AF0C466 /* turkshead3L5B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turkshead3L5B.png; sourceTree = "<group>"; };
-		6F5B5B7F8B697C8941B30FB3 /* alberto-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alberto-knot.webp"; sourceTree = "<group>"; };
+		6F5B5B7F8B697C8941B30FB3 /* alberto-knot.webp */ = {isa = PBXFileReference; path = "alberto-knot.webp"; sourceTree = "<group>"; };
 		6F7247A5F9E938C1CE51F826 /* boomhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = boomhitch360.json; sourceTree = "<group>"; };
-		6F846F51D0C1D92F2832D8A8 /* hunters-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hunters-bend.webp"; sourceTree = "<group>"; };
+		6F846F51D0C1D92F2832D8A8 /* hunters-bend.webp */ = {isa = PBXFileReference; path = "hunters-bend.webp"; sourceTree = "<group>"; };
 		6FA9774BB2B3E849093ED6F9 /* blakes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blakes.json; sourceTree = "<group>"; };
 		6FDBA3E63027A7AE7A6167E6 /* rollinghitch2v360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rollinghitch2v360.png; sourceTree = "<group>"; };
 		6FF22F47EB9CB886AEEA4ADD /* ashleystopper.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashleystopper.json; sourceTree = "<group>"; };
@@ -3814,7 +3819,7 @@
 		7006F92C6799034985CC965B /* portuguesebowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portuguesebowline.json; sourceTree = "<group>"; };
 		7018159FC1EC8F3F4BAEA63D /* slippedlappknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedlappknot360.json; sourceTree = "<group>"; };
 		70B12B0E69EA7560B4192FFF /* figure8followthru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figure8followthru.png; sourceTree = "<group>"; };
-		70B225005E7BE0EE234872C3 /* munter-mule.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "munter-mule.webp"; sourceTree = "<group>"; };
+		70B225005E7BE0EE234872C3 /* munter-mule.webp */ = {isa = PBXFileReference; path = "munter-mule.webp"; sourceTree = "<group>"; };
 		70DA1A50B0E61A4A05825170 /* woggle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woggle.json; sourceTree = "<group>"; };
 		70DDDC54AD3018D07C02B13D /* portuguesebowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = portuguesebowline360.json; sourceTree = "<group>"; };
 		70DE2C812F4EF3AE77BB9608 /* celticknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = celticknot.png; sourceTree = "<group>"; };
@@ -3826,31 +3831,31 @@
 		71FFB2C77214AF1DABF969B5 /* category_pl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_pl.json; sourceTree = "<group>"; };
 		72123B1C637FAD07BA7853F7 /* jugknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknot360.json; sourceTree = "<group>"; };
 		7216F9543DD5E7539CDB6B10 /* multi_loop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = multi_loop.jpg; sourceTree = "<group>"; };
-		72CC63B91545E07A59EC5672 /* jar-sling-knot-bight-method.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jar-sling-knot-bight-method.webp"; sourceTree = "<group>"; };
+		72CC63B91545E07A59EC5672 /* jar-sling-knot-bight-method.webp */ = {isa = PBXFileReference; path = "jar-sling-knot-bight-method.webp"; sourceTree = "<group>"; };
 		730024598CC09D744FE2D89A /* doublecoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublecoin.png; sourceTree = "<group>"; };
 		731196939F7BF0A66B1A2A1E /* stevedoresknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stevedoresknot360.png; sourceTree = "<group>"; };
 		734CECEA56E8F113AE9F4EAA /* firemanschair360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = firemanschair360.json; sourceTree = "<group>"; };
 		7375030CB7685A5839FFE10A /* eskimobowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = eskimobowline.json; sourceTree = "<group>"; };
-		73B503DEF712DD8D47F073B8 /* triple-overhand-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "triple-overhand-knot.webp"; sourceTree = "<group>"; };
+		73B503DEF712DD8D47F073B8 /* triple-overhand-knot.webp */ = {isa = PBXFileReference; path = "triple-overhand-knot.webp"; sourceTree = "<group>"; };
 		73E88802929A8C4EC4F26744 /* larkshead.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = larkshead.json; sourceTree = "<group>"; };
 		73F817FAA3481BB26653B998 /* kalmyk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kalmyk.png; sourceTree = "<group>"; };
-		741FB520B574CD1D8FA994B3 /* midshipmans-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "midshipmans-hitch.webp"; sourceTree = "<group>"; };
+		741FB520B574CD1D8FA994B3 /* midshipmans-hitch.webp */ = {isa = PBXFileReference; path = "midshipmans-hitch.webp"; sourceTree = "<group>"; };
 		745D44DC74A9FCAB6B5E3BB2 /* jugknotbight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknotbight.json; sourceTree = "<group>"; };
 		74778AB6AA4F6F105BE47056 /* alpinecoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinecoil.json; sourceTree = "<group>"; };
 		74D0F2A40C55A51C2A557BC2 /* pitzen360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pitzen360.json; sourceTree = "<group>"; };
 		74D41CF3314E4F137A612120 /* uliknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uliknot360.png; sourceTree = "<group>"; };
-		752E1420E9C4001E559AD443 /* bowline-on-a-bight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bowline-on-a-bight.webp"; sourceTree = "<group>"; };
+		752E1420E9C4001E559AD443 /* bowline-on-a-bight.webp */ = {isa = PBXFileReference; path = "bowline-on-a-bight.webp"; sourceTree = "<group>"; };
 		75348B3AF26F95469BF49352 /* tillershitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tillershitch360.json; sourceTree = "<group>"; };
 		76088865470EB51F511349AB /* clovehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitch360.png; sourceTree = "<group>"; };
-		760CB32607F97219C3A2AC0F /* uni-to-uni-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "uni-to-uni-knot.webp"; sourceTree = "<group>"; };
+		760CB32607F97219C3A2AC0F /* uni-to-uni-knot.webp */ = {isa = PBXFileReference; path = "uni-to-uni-knot.webp"; sourceTree = "<group>"; };
 		76A043A656EEDDED059F69F5 /* sailorscross360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sailorscross360.png; sourceTree = "<group>"; };
 		76BDDB463A4B79EF4D07B1ED /* halfhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfhitch.json; sourceTree = "<group>"; };
 		772FC458029234BA0BB2697F /* doublefishermans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefishermans.json; sourceTree = "<group>"; };
 		788671C2B79CDB26AFCAB527 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		78EFB26149AA48C8BDCBBEA6 /* flemish-flake.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "flemish-flake.webp"; sourceTree = "<group>"; };
+		78EFB26149AA48C8BDCBBEA6 /* flemish-flake.webp */ = {isa = PBXFileReference; path = "flemish-flake.webp"; sourceTree = "<group>"; };
 		798C2055528E106D6D0A665C /* doubleoverhand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleoverhand.png; sourceTree = "<group>"; };
 		79AA107F11799F049B4F7D93 /* detailed_knots_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data.json; sourceTree = "<group>"; };
-		79B040BC83FC197283C3AA1E /* offset-figure-eight-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "offset-figure-eight-bend.webp"; sourceTree = "<group>"; };
+		79B040BC83FC197283C3AA1E /* offset-figure-eight-bend.webp */ = {isa = PBXFileReference; path = "offset-figure-eight-bend.webp"; sourceTree = "<group>"; };
 		79B8CAD9F891702838AA50CD /* rapalaknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rapalaknot.json; sourceTree = "<group>"; };
 		7A8674D0BFD3AA82C844C258 /* constrictorknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = constrictorknot360.json; sourceTree = "<group>"; };
 		7A98F0A9F2DC715EEF2CAF9A /* transom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transom.png; sourceTree = "<group>"; };
@@ -3866,7 +3871,7 @@
 		7D8C981F72DF773C365369B4 /* uniknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = uniknot.json; sourceTree = "<group>"; };
 		7E171A4B199B6B7C6D4008FC /* snell360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snell360.png; sourceTree = "<group>"; };
 		7E2E26D7D16CD9E97EDAA597 /* kalmyk360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kalmyk360.json; sourceTree = "<group>"; };
-		7E5137C108E5C6FFA418E459 /* crown-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crown-knot.webp"; sourceTree = "<group>"; };
+		7E5137C108E5C6FFA418E459 /* crown-knot.webp */ = {isa = PBXFileReference; path = "crown-knot.webp"; sourceTree = "<group>"; };
 		7E8D1D789D32F30989D1AAD8 /* davyknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = davyknot360.png; sourceTree = "<group>"; };
 		7F26877A506BC42047AEF305 /* slippedbuntline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedbuntline.png; sourceTree = "<group>"; };
 		7F697876B9D0A1BCF99D7CA5 /* swinghitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swinghitch.json; sourceTree = "<group>"; };
@@ -3882,7 +3887,7 @@
 		841531D7A7933979B33C7A89 /* truelovers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truelovers.json; sourceTree = "<group>"; };
 		8454E7F4DC521933EECE406A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84A8AC5542869FD63CD8A525 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		84DFF6E864069104E2BD2B9B /* yosemite-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yosemite-bowline.webp"; sourceTree = "<group>"; };
+		84DFF6E864069104E2BD2B9B /* yosemite-bowline.webp */ = {isa = PBXFileReference; path = "yosemite-bowline.webp"; sourceTree = "<group>"; };
 		84E4BD2E2F6C6FF65A33818E /* tarbuck.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tarbuck.json; sourceTree = "<group>"; };
 		8518F921B96D96E0617507E9 /* slippedlappknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedlappknot360.png; sourceTree = "<group>"; };
 		854DF7DEB619A239EC94F210 /* arborknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arborknot.json; sourceTree = "<group>"; };
@@ -3890,25 +3895,25 @@
 		85B2F877FB4000042F4A34D5 /* pedigreecowhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pedigreecowhitch360.json; sourceTree = "<group>"; };
 		85CBD72896683275A9413193 /* slipfigureeight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slipfigureeight.json; sourceTree = "<group>"; };
 		860F8807F043C361BE61256D /* quickhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quickhitch360.json; sourceTree = "<group>"; };
-		863E5A6E071A2E4FC02F6382 /* pedigree-cow-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pedigree-cow-hitch.webp"; sourceTree = "<group>"; };
+		863E5A6E071A2E4FC02F6382 /* pedigree-cow-hitch.webp */ = {isa = PBXFileReference; path = "pedigree-cow-hitch.webp"; sourceTree = "<group>"; };
 		864B3D9DB53C64FD3C04D6B1 /* poachersknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poachersknot.png; sourceTree = "<group>"; };
-		86D9C50420ABA8C49B3D51DC /* monkeys-fist.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "monkeys-fist.webp"; sourceTree = "<group>"; };
-		86DF80F8F7E485DEC0D845B5 /* lariat-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lariat-loop.webp"; sourceTree = "<group>"; };
+		86D9C50420ABA8C49B3D51DC /* monkeys-fist.webp */ = {isa = PBXFileReference; path = "monkeys-fist.webp"; sourceTree = "<group>"; };
+		86DF80F8F7E485DEC0D845B5 /* lariat-loop.webp */ = {isa = PBXFileReference; path = "lariat-loop.webp"; sourceTree = "<group>"; };
 		871EA8F8B2CCBE1D41A095E9 /* krehloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = krehloop360.png; sourceTree = "<group>"; };
 		87D4241169F29F2011B78C8F /* barrelhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelhitch.png; sourceTree = "<group>"; };
 		880B7FD6B4BFA0EBD245749D /* category_da.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_da.json; sourceTree = "<group>"; };
 		88509D09435D5DF17F761817 /* groundlinehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groundlinehitch.json; sourceTree = "<group>"; };
 		885B1E982E6DA8C7B9DB9CE5 /* detailed_knots_data_ko.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_ko.json; sourceTree = "<group>"; };
-		8895675AFAF97EC05003A6A8 /* albright-special.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "albright-special.webp"; sourceTree = "<group>"; };
+		8895675AFAF97EC05003A6A8 /* albright-special.webp */ = {isa = PBXFileReference; path = "albright-special.webp"; sourceTree = "<group>"; };
 		889CCBA544BF86B5402C2314 /* friendshipknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendshipknot360.png; sourceTree = "<group>"; };
 		889CDB4DC6E34314DAD93C56 /* bunnyears360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bunnyears360.json; sourceTree = "<group>"; };
 		88D52B85DA7A49E7D4A72112 /* boomhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boomhitch360.png; sourceTree = "<group>"; };
 		88E138B0513C2B37942802D6 /* detailed_knots_data_nl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_nl.json; sourceTree = "<group>"; };
-		8912C53DFD42B865E251EA88 /* figure-eight-follow-through.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "figure-eight-follow-through.webp"; sourceTree = "<group>"; };
+		8912C53DFD42B865E251EA88 /* figure-eight-follow-through.webp */ = {isa = PBXFileReference; path = "figure-eight-follow-through.webp"; sourceTree = "<group>"; };
 		89219D8E01E91E28D605A4E3 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8A1B7C8F21DC4AE12833A6C0 /* back-splice.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "back-splice.webp"; sourceTree = "<group>"; };
+		8A1B7C8F21DC4AE12833A6C0 /* back-splice.webp */ = {isa = PBXFileReference; path = "back-splice.webp"; sourceTree = "<group>"; };
 		8A1CBE5474C972E049AAAD31 /* camping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camping.jpg; sourceTree = "<group>"; };
-		8AA034D3F481F9EF2D231F9C /* single-rope-braid.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "single-rope-braid.webp"; sourceTree = "<group>"; };
+		8AA034D3F481F9EF2D231F9C /* single-rope-braid.webp */ = {isa = PBXFileReference; path = "single-rope-braid.webp"; sourceTree = "<group>"; };
 		8AE74BF09987E083B85C71AD /* tautline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tautline.json; sourceTree = "<group>"; };
 		8BA643A46813EC8DE55C0DB8 /* piwich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piwich.png; sourceTree = "<group>"; };
 		8BFA986F0B8FF55E3518DB95 /* poldotackle360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poldotackle360.png; sourceTree = "<group>"; };
@@ -3930,21 +3935,21 @@
 		90CF00CB87B3519C8B230C25 /* squarelashing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarelashing.png; sourceTree = "<group>"; };
 		91154265BEBE4150E4A7D2DA /* squareknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareknot360.png; sourceTree = "<group>"; };
 		9128739C850D99F6697F86AF /* category_es.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_es.json; sourceTree = "<group>"; };
-		912887E0F3D2BE37339442E4 /* hanson-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hanson-loop.webp"; sourceTree = "<group>"; };
+		912887E0F3D2BE37339442E4 /* hanson-loop.webp */ = {isa = PBXFileReference; path = "hanson-loop.webp"; sourceTree = "<group>"; };
 		91372CFF4B5174CF953E0E91 /* diagonallashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diagonallashing.json; sourceTree = "<group>"; };
 		916D70EC118880F41F7C2158 /* perfectionloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfectionloop360.png; sourceTree = "<group>"; };
 		920749078AF7F9F4FD1FDCBE /* KnotListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotListView.swift; sourceTree = "<group>"; };
 		924777E59BC1499136E3EF18 /* schwabisch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schwabisch.png; sourceTree = "<group>"; };
 		927A021AFC67C2DEF14F02B7 /* fishermansknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fishermansknot360.json; sourceTree = "<group>"; };
 		92A57C03ABB08D317516FF7C /* thiefknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thiefknot360.json; sourceTree = "<group>"; };
-		92BA92DBE2033BC8F04BE70E /* heaving-line-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "heaving-line-knot.webp"; sourceTree = "<group>"; };
+		92BA92DBE2033BC8F04BE70E /* heaving-line-knot.webp */ = {isa = PBXFileReference; path = "heaving-line-knot.webp"; sourceTree = "<group>"; };
 		92EAF0212AE82387EA94ABFF /* alpinebutterflyhandmethod360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpinebutterflyhandmethod360.png; sourceTree = "<group>"; };
 		9345B4AFA42E67EC37DE60DA /* doubledavyknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledavyknot.png; sourceTree = "<group>"; };
-		93563FC85781CB185FA3FD59 /* firemans-chair.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "firemans-chair.webp"; sourceTree = "<group>"; };
-		93614C0CB68F0137CFAFE47B /* true-lovers-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "true-lovers-knot.webp"; sourceTree = "<group>"; };
-		936C2CB565730C2AA3C808A8 /* loop-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "loop-knot.webp"; sourceTree = "<group>"; };
+		93563FC85781CB185FA3FD59 /* firemans-chair.webp */ = {isa = PBXFileReference; path = "firemans-chair.webp"; sourceTree = "<group>"; };
+		93614C0CB68F0137CFAFE47B /* true-lovers-knot.webp */ = {isa = PBXFileReference; path = "true-lovers-knot.webp"; sourceTree = "<group>"; };
+		936C2CB565730C2AA3C808A8 /* loop-knot.webp */ = {isa = PBXFileReference; path = "loop-knot.webp"; sourceTree = "<group>"; };
 		937D1EAC135D5FB28371C0DD /* barrelhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = barrelhitch.json; sourceTree = "<group>"; };
-		93C55C1EDF455B691E88A7F9 /* windsor.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = windsor.webp; sourceTree = "<group>"; };
+		93C55C1EDF455B691E88A7F9 /* windsor.webp */ = {isa = PBXFileReference; path = windsor.webp; sourceTree = "<group>"; };
 		93CB9EF531D0991BFAADC06C /* category_en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_en.json; sourceTree = "<group>"; };
 		93D41489A602475CADEE8089 /* swissseat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swissseat.png; sourceTree = "<group>"; };
 		93D81A1DFAED3EF06B292AFE /* monkeysfist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkeysfist.png; sourceTree = "<group>"; };
@@ -3954,9 +3959,9 @@
 		9493079ECB04BEF770A727A8 /* sandiegojam360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sandiegojam360.json; sourceTree = "<group>"; };
 		94ADEBA8CF71561E6509CA07 /* retracedbowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retracedbowline360.png; sourceTree = "<group>"; };
 		95CEBEE15BA25EA6456446BE /* bullhitchendmethod360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullhitchendmethod360.png; sourceTree = "<group>"; };
-		96086CCEDDD12853F94268E9 /* simple-overhand-noose.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "simple-overhand-noose.webp"; sourceTree = "<group>"; };
+		96086CCEDDD12853F94268E9 /* simple-overhand-noose.webp */ = {isa = PBXFileReference; path = "simple-overhand-noose.webp"; sourceTree = "<group>"; };
 		961B8E147E91BD5E049C1D1D /* griefknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = griefknot360.json; sourceTree = "<group>"; };
-		962316B1586EA78E2A3AC09F /* munter-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "munter-hitch.webp"; sourceTree = "<group>"; };
+		962316B1586EA78E2A3AC09F /* munter-hitch.webp */ = {isa = PBXFileReference; path = "munter-hitch.webp"; sourceTree = "<group>"; };
 		9671CFF172CFFBF6DBB31407 /* doubledragonbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubledragonbend.json; sourceTree = "<group>"; };
 		9680243072FE8E8D72238D0C /* palomar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = palomar.json; sourceTree = "<group>"; };
 		96C4762465A14AE35AED247F /* chainsinnet360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chainsinnet360.json; sourceTree = "<group>"; };
@@ -3966,7 +3971,7 @@
 		97B3E59C0C93315F020E769F /* cleathitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cleathitch360.json; sourceTree = "<group>"; };
 		97D5E4C40C5C4F2A679AB044 /* waterbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterbowline360.json; sourceTree = "<group>"; };
 		980D0AA7FC17F2E117B6A8A1 /* yucatan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = yucatan.json; sourceTree = "<group>"; };
-		9887D995377F83E3F94CEE49 /* poldo-tackle.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poldo-tackle.webp"; sourceTree = "<group>"; };
+		9887D995377F83E3F94CEE49 /* poldo-tackle.webp */ = {isa = PBXFileReference; path = "poldo-tackle.webp"; sourceTree = "<group>"; };
 		991EF22F878D202A4E0D4A62 /* firemanschair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firemanschair.png; sourceTree = "<group>"; };
 		99929DD25E3A66D6D71A0304 /* marlinspikehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = marlinspikehitch360.json; sourceTree = "<group>"; };
 		999327D55480C9403169BEC3 /* category_sv.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_sv.json; sourceTree = "<group>"; };
@@ -3980,13 +3985,13 @@
 		9BF92B0DE058CFF4A7BE9EFB /* arborist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arborist.jpg; sourceTree = "<group>"; };
 		9C1F8B04C96CB80FC7C03E95 /* underwritersknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = underwritersknot360.json; sourceTree = "<group>"; };
 		9C51968B0626FBDA61CCC9AE /* albertoknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = albertoknot360.json; sourceTree = "<group>"; };
-		9C8B66A1C53367131618284D /* snap-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "snap-bowline.webp"; sourceTree = "<group>"; };
+		9C8B66A1C53367131618284D /* snap-bowline.webp */ = {isa = PBXFileReference; path = "snap-bowline.webp"; sourceTree = "<group>"; };
 		9CB6B5895885008E9B8A2BA9 /* dropperloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dropperloop.json; sourceTree = "<group>"; };
 		9D1DE2268A0055D1C35AEBB8 /* packersknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = packersknot360.json; sourceTree = "<group>"; };
 		9D72950511CD16D8990C07ED /* boomhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = boomhitch.json; sourceTree = "<group>"; };
 		9D9FB9F0B5BF02C28EAE75FB /* japanesemarkII360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = japanesemarkII360.json; sourceTree = "<group>"; };
 		9DA0C98EE714443C18DDD87D /* highwaymans360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = highwaymans360.json; sourceTree = "<group>"; };
-		9ECD78BAE33EEA44D9A8E2B5 /* becket-hitch-slipped.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "becket-hitch-slipped.webp"; sourceTree = "<group>"; };
+		9ECD78BAE33EEA44D9A8E2B5 /* becket-hitch-slipped.webp */ = {isa = PBXFileReference; path = "becket-hitch-slipped.webp"; sourceTree = "<group>"; };
 		9F26EEAC9CDFBE9DF9495AE7 /* reeverknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reeverknot360.json; sourceTree = "<group>"; };
 		9F9059328635301BF08D81C4 /* masthead360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masthead360.png; sourceTree = "<group>"; };
 		9FBAC65FE18424875474D2AD /* truckershitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truckershitch.json; sourceTree = "<group>"; };
@@ -3995,7 +4000,7 @@
 		A09948961589F53D5C12D514 /* scaffoldknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scaffoldknot360.json; sourceTree = "<group>"; };
 		A13F7DBC98D98DAC7146A086 /* pitzen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitzen.png; sourceTree = "<group>"; };
 		A15984A68757A97D2EE4E4D2 /* rapalaknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rapalaknot360.json; sourceTree = "<group>"; };
-		A176A7314D8F2BD497C429D2 /* celtic-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "celtic-knot.webp"; sourceTree = "<group>"; };
+		A176A7314D8F2BD497C429D2 /* celtic-knot.webp */ = {isa = PBXFileReference; path = "celtic-knot.webp"; sourceTree = "<group>"; };
 		A190F7421DD79C330CCB50B6 /* doublebowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublebowline.json; sourceTree = "<group>"; };
 		A1F65A309D843FF8C74C27A6 /* jugknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jugknot.json; sourceTree = "<group>"; };
 		A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchView.swift; sourceTree = "<group>"; };
@@ -4005,7 +4010,7 @@
 		A2BB132AA2597B005BB0ACDD /* catspaw360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catspaw360.png; sourceTree = "<group>"; };
 		A356427DC942508258F058ED /* hansonknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hansonknot.png; sourceTree = "<group>"; };
 		A3E5BF9915F488062EC12478 /* clovehitchtwoloops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = clovehitchtwoloops.json; sourceTree = "<group>"; };
-		A3E71B962D797318CF1FB8A5 /* dropper-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dropper-loop.webp"; sourceTree = "<group>"; };
+		A3E71B962D797318CF1FB8A5 /* dropper-loop.webp */ = {isa = PBXFileReference; path = "dropper-loop.webp"; sourceTree = "<group>"; };
 		A417D3B4738F4E7D0088C76D /* masthead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masthead.png; sourceTree = "<group>"; };
 		A427FD02D3CFD7B645B476C8 /* nail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nail.json; sourceTree = "<group>"; };
 		A45F55094088A9B037DB8132 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -4013,19 +4018,20 @@
 		A4F130203B4A29582C79DEE8 /* groundlinehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = groundlinehitch360.json; sourceTree = "<group>"; };
 		A4F60228EE3FC033080BDE1E /* slippedgroundlinehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedgroundlinehitch360.json; sourceTree = "<group>"; };
 		A514BF84D173DA51E8CFA588 /* griefknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = griefknot.png; sourceTree = "<group>"; };
-		A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jury-mast-knot.webp"; sourceTree = "<group>"; };
+		A5FE87B2FE2DCF6C17E84050 /* jury-mast-knot.webp */ = {isa = PBXFileReference; path = "jury-mast-knot.webp"; sourceTree = "<group>"; };
 		A622EFF992AC4882AB46CB4F /* pedigreecowhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pedigreecowhitch360.png; sourceTree = "<group>"; };
-		A650CA34BD60EBA01E46B5E9 /* scotts-locked-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "scotts-locked-bowline.webp"; sourceTree = "<group>"; };
+		A650CA34BD60EBA01E46B5E9 /* scotts-locked-bowline.webp */ = {isa = PBXFileReference; path = "scotts-locked-bowline.webp"; sourceTree = "<group>"; };
 		A67B708AE16F93D2DA5FA805 /* doubleoverhand360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleoverhand360.png; sourceTree = "<group>"; };
 		A69D08C08003534A699F05B1 /* lanyardhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanyardhitch.png; sourceTree = "<group>"; };
-		A74AFC54569F8821BF1BC7CB /* backhand-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "backhand-hitch.webp"; sourceTree = "<group>"; };
+		A74AFC54569F8821BF1BC7CB /* backhand-hitch.webp */ = {isa = PBXFileReference; path = "backhand-hitch.webp"; sourceTree = "<group>"; };
 		A7CB25BC5124040E1544FEA6 /* cowboybowline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cowboybowline.json; sourceTree = "<group>"; };
 		A7DFF81654CF9693CFE3F827 /* doublebowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublebowline.png; sourceTree = "<group>"; };
-		A7F19392EAC5A4CC3CF6CBEF /* racking-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "racking-bend.webp"; sourceTree = "<group>"; };
+		A7F19392EAC5A4CC3CF6CBEF /* racking-bend.webp */ = {isa = PBXFileReference; path = "racking-bend.webp"; sourceTree = "<group>"; };
 		A7F84FFFC221D1E1FE0BBAF3 /* turkshead3L5B360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turkshead3L5B360.png; sourceTree = "<group>"; };
 		A80A7994FC79E8211B61B465 /* woodlandziptielashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woodlandziptielashing.json; sourceTree = "<group>"; };
 		A81B835B610C3662A8458427 /* klemheist360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = klemheist360.png; sourceTree = "<group>"; };
-		A8F2928FDAFA16A0548DFF28 /* klemheist.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = klemheist.webp; sourceTree = "<group>"; };
+		A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.landscape.rotate.png; sourceTree = "<group>"; };
+		A8F2928FDAFA16A0548DFF28 /* klemheist.webp */ = {isa = PBXFileReference; path = klemheist.webp; sourceTree = "<group>"; };
 		A93B33124012E5D100942937 /* tautline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tautline.png; sourceTree = "<group>"; };
 		A992EE736CEA3E42DB65629A /* category_pt.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_pt.json; sourceTree = "<group>"; };
 		A9CED69436FE917BF60988F4 /* rackingbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rackingbend.png; sourceTree = "<group>"; };
@@ -4033,7 +4039,7 @@
 		A9E71B8175E05F51D24A2742 /* cowboybowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cowboybowline.png; sourceTree = "<group>"; };
 		AA371964F25C235EECB12051 /* klemheist360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = klemheist360.json; sourceTree = "<group>"; };
 		AA41DB5FED6E59280BFE92FC /* huntersbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = huntersbend.json; sourceTree = "<group>"; };
-		AAF5FBA955774D1FFA3D83A6 /* double-fishermans-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-fishermans-knot.webp"; sourceTree = "<group>"; };
+		AAF5FBA955774D1FFA3D83A6 /* double-fishermans-knot.webp */ = {isa = PBXFileReference; path = "double-fishermans-knot.webp"; sourceTree = "<group>"; };
 		ABC38F7B475B85385D37EA8A /* beckethitchslipped360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beckethitchslipped360.png; sourceTree = "<group>"; };
 		AC02DC335CA4972B0A0DB16D /* surgeonsknot-fishing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surgeonsknot-fishing.png"; sourceTree = "<group>"; };
 		AC84119C4824D525B6B7E8D3 /* halfwindsor360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfwindsor360.json; sourceTree = "<group>"; };
@@ -4042,14 +4048,14 @@
 		ACFA5BECD11B9E23A6BADCF4 /* mooringhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mooringhitch.json; sourceTree = "<group>"; };
 		AD91F2C5BDA07EC816303DF4 /* scaffoldknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaffoldknot360.png; sourceTree = "<group>"; };
 		AE9B1F6D095D1E190F89302E /* tripleoverhand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripleoverhand.json; sourceTree = "<group>"; };
-		AEF1CF1846667D78F24259C3 /* bull-hitch-end.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bull-hitch-end.webp"; sourceTree = "<group>"; };
+		AEF1CF1846667D78F24259C3 /* bull-hitch-end.webp */ = {isa = PBXFileReference; path = "bull-hitch-end.webp"; sourceTree = "<group>"; };
 		AEFE03D0ADA60CA3D4E63CF1 /* category_tr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_tr.json; sourceTree = "<group>"; };
 		AF94B1139CC3C3A2320959EA /* turle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = turle.json; sourceTree = "<group>"; };
 		AF961911B8099818340EA5A6 /* halfwindsor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = halfwindsor.json; sourceTree = "<group>"; };
 		AFB3A8BE14DB5F005570258B /* farrimond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farrimond.png; sourceTree = "<group>"; };
 		B01E1D25AF08F5657B8A9162 /* gasketcoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gasketcoil.json; sourceTree = "<group>"; };
 		B0305ABBB710DF8CF96966EB /* doublesheetbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublesheetbend360.png; sourceTree = "<group>"; };
-		B0B80A7C2A226E45C32C7AA4 /* arbor-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "arbor-knot.webp"; sourceTree = "<group>"; };
+		B0B80A7C2A226E45C32C7AA4 /* arbor-knot.webp */ = {isa = PBXFileReference; path = "arbor-knot.webp"; sourceTree = "<group>"; };
 		B16AC221F811186329E13FFC /* triplebowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triplebowline.png; sourceTree = "<group>"; };
 		B16B4985976D023DC6FFE2FA /* ashleysbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashleysbend360.png; sourceTree = "<group>"; };
 		B17C857E61EE8BDDCE533C85 /* japanesemarkII360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japanesemarkII360.png; sourceTree = "<group>"; };
@@ -4057,8 +4063,8 @@
 		B1ED6806C2D09D02C000B7DB /* SpriteKitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitAnimationView.swift; sourceTree = "<group>"; };
 		B2379908D0632A50878C40B4 /* fullwindsor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullwindsor.json; sourceTree = "<group>"; };
 		B25D65F19AFF1445E91FA379 /* snugglehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snugglehitch360.png; sourceTree = "<group>"; };
-		B2709AC9A94DD42B2D1CDED9 /* clinch-knot-improved.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clinch-knot-improved.webp"; sourceTree = "<group>"; };
-		B2BBCF7E99C750881C361562 /* zeppelin-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "zeppelin-bend.webp"; sourceTree = "<group>"; };
+		B2709AC9A94DD42B2D1CDED9 /* clinch-knot-improved.webp */ = {isa = PBXFileReference; path = "clinch-knot-improved.webp"; sourceTree = "<group>"; };
+		B2BBCF7E99C750881C361562 /* zeppelin-bend.webp */ = {isa = PBXFileReference; path = "zeppelin-bend.webp"; sourceTree = "<group>"; };
 		B316703B39366654F9C80561 /* truelovers360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truelovers360.png; sourceTree = "<group>"; };
 		B411A8BD72FABB7BE3E5DAD6 /* eskimobowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eskimobowline.png; sourceTree = "<group>"; };
 		B43C43AFE43756B4BF6DDC03 /* sailorscross360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sailorscross360.json; sourceTree = "<group>"; };
@@ -4068,7 +4074,7 @@
 		B5066CFE59730A7D4223E1F3 /* firemanscoil360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firemanscoil360.png; sourceTree = "<group>"; };
 		B60C26E0A0D9A5DA7D6B80C7 /* bowknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bowknot360.json; sourceTree = "<group>"; };
 		B68967268231CEE6256121AE /* detailed_knots_data_no.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_no.json; sourceTree = "<group>"; };
-		B6A6407B4F7F3F7C33382233 /* double-davy.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-davy.webp"; sourceTree = "<group>"; };
+		B6A6407B4F7F3F7C33382233 /* double-davy.webp */ = {isa = PBXFileReference; path = "double-davy.webp"; sourceTree = "<group>"; };
 		B8304D125FF06E78D4ED1601 /* heavinglineknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heavinglineknot360.png; sourceTree = "<group>"; };
 		B84C252D2727558F1FD59777 /* detailed_knots_data_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_fr.json; sourceTree = "<group>"; };
 		B84CD17058E72295ECB7A45E /* albertoknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albertoknot360.png; sourceTree = "<group>"; };
@@ -4077,18 +4083,19 @@
 		B884BE052FC81D1402D93CD8 /* valdotain360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = valdotain360.json; sourceTree = "<group>"; };
 		B8999F820A403CBF1D35BC46 /* poachersknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = poachersknot.json; sourceTree = "<group>"; };
 		B8A54B3A6001E7A21347F95A /* constrictorknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = constrictorknot.json; sourceTree = "<group>"; };
-		B8C7A7F80F075CCC952DD5AB /* prusik-end-line.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "prusik-end-line.webp"; sourceTree = "<group>"; };
+		B8C7A7F80F075CCC952DD5AB /* prusik-end-line.webp */ = {isa = PBXFileReference; path = "prusik-end-line.webp"; sourceTree = "<group>"; };
 		B90A3FC4324DA8096B51BF27 /* category_ko.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_ko.json; sourceTree = "<group>"; };
 		B958277BB149730F4198B0AF /* clovehitch-on-bight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clovehitch-on-bight.png"; sourceTree = "<group>"; };
 		B9867FD80BFAE2C5D64E8639 /* knots3d.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9968E2F5BBF073B2E92ADD0 /* alpinebutterflyhandmethod360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod360.json; sourceTree = "<group>"; };
 		B9C37843677C38D8F7BE8A00 /* doublefigureeight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublefigureeight360.json; sourceTree = "<group>"; };
 		BA29086D2C8F165BDD241FDD /* valdotain360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valdotain360.png; sourceTree = "<group>"; };
-		BA4E1E0F1C48F3BC20560BAE /* piwich.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = piwich.webp; sourceTree = "<group>"; };
+		BA4E1E0F1C48F3BC20560BAE /* piwich.webp */ = {isa = PBXFileReference; path = piwich.webp; sourceTree = "<group>"; };
 		BA53AD840FADC0B8886E0BD7 /* doublefishermans360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doublefishermans360.png; sourceTree = "<group>"; };
 		BA964E862FC861DE51255124 /* farrimond.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = farrimond.json; sourceTree = "<group>"; };
 		BADC400AEFE564A0DBAA9413 /* poldotackle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = poldotackle.json; sourceTree = "<group>"; };
 		BAEA01C3BBD08AA05B635032 /* monkeysfist360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = monkeysfist360.json; sourceTree = "<group>"; };
+		BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.trianglehead.counterclockwise.rotate.90.png; sourceTree = "<group>"; };
 		BB84C0B3D0EEA8E4F9EB52EB /* beckethitchslipped360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitchslipped360.json; sourceTree = "<group>"; };
 		BBC4DA1C416705006820B641 /* detailed_knots_data_zh-TW.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detailed_knots_data_zh-TW.json"; sourceTree = "<group>"; };
 		BC59E85D58A6014A7B5F44B5 /* surgeonsloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surgeonsloop.png; sourceTree = "<group>"; };
@@ -4096,10 +4103,10 @@
 		BCC5D176FEA4F693F96F7DFB /* muntermuleoverhand360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = muntermuleoverhand360.json; sourceTree = "<group>"; };
 		BD026DA75A6CEF3985BB8603 /* barrelhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = barrelhitch360.json; sourceTree = "<group>"; };
 		BD21CE3830B552F3B2DB027D /* sheetbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sheetbend360.json; sourceTree = "<group>"; };
-		BD3EE06966C8CA73E9BEED89 /* west-country-whipping.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "west-country-whipping.webp"; sourceTree = "<group>"; };
+		BD3EE06966C8CA73E9BEED89 /* west-country-whipping.webp */ = {isa = PBXFileReference; path = "west-country-whipping.webp"; sourceTree = "<group>"; };
 		BD4D9267CA1AD82AA90B5007 /* doubledragonloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubledragonloop.json; sourceTree = "<group>"; };
 		BDA3B1ED23220BD5CEC1D010 /* squareknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareknot.png; sourceTree = "<group>"; };
-		BDC0B864AF9E29F3DCF6F20D /* ground-line-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-line-hitch.webp"; sourceTree = "<group>"; };
+		BDC0B864AF9E29F3DCF6F20D /* ground-line-hitch.webp */ = {isa = PBXFileReference; path = "ground-line-hitch.webp"; sourceTree = "<group>"; };
 		BDF29FF99727BE82C9C0EB24 /* edk360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edk360.json; sourceTree = "<group>"; };
 		BE0BA6B2F6A6F71F74DA972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE4996E5027464B72C0B6F3D /* waterknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = waterknot360.json; sourceTree = "<group>"; };
@@ -4107,12 +4114,12 @@
 		BEB28289A45044910AE7792B /* schwabisch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schwabisch.json; sourceTree = "<group>"; };
 		BEF17060D4625B90B034A0EB /* fishermanseye360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fishermanseye360.json; sourceTree = "<group>"; };
 		BF18E17B109AB55D5467F1DA /* dropperloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropperloop360.png; sourceTree = "<group>"; };
-		BFF3BBA4623EC32DF737E447 /* san-diego-jam.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "san-diego-jam.webp"; sourceTree = "<group>"; };
-		C01BF26BA6A1662B289137BA /* running-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "running-bowline.webp"; sourceTree = "<group>"; };
+		BFF3BBA4623EC32DF737E447 /* san-diego-jam.webp */ = {isa = PBXFileReference; path = "san-diego-jam.webp"; sourceTree = "<group>"; };
+		C01BF26BA6A1662B289137BA /* running-bowline.webp */ = {isa = PBXFileReference; path = "running-bowline.webp"; sourceTree = "<group>"; };
 		C04F7635EF6F30B9A04F8F27 /* lashings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lashings.jpg; sourceTree = "<group>"; };
 		C09E3532024F2CB782555A9F /* uniknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = uniknot360.json; sourceTree = "<group>"; };
 		C14D938F21206F08F7DE1CE0 /* surgeonsknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot.json; sourceTree = "<group>"; };
-		C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "inuit-bowline.webp"; sourceTree = "<group>"; };
+		C1B14745BB3FE05E7C975E7D /* inuit-bowline.webp */ = {isa = PBXFileReference; path = "inuit-bowline.webp"; sourceTree = "<group>"; };
 		C1E3064C8898B7E00A18F4B3 /* groundlinehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundlinehitch.png; sourceTree = "<group>"; };
 		C22C510F0F88D9B485548840 /* griefknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = griefknot360.png; sourceTree = "<group>"; };
 		C2832A21171BC1C2CFF4296A /* category_nl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = category_nl.json; sourceTree = "<group>"; };
@@ -4131,27 +4138,27 @@
 		C51070D30C85A760C9EF103C /* stevedoresknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stevedoresknot.json; sourceTree = "<group>"; };
 		C51D8C1A37AA12039F112DF0 /* masthead.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = masthead.json; sourceTree = "<group>"; };
 		C59C40957CA5D5204BD7AFD1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C5C392C58FC440181640023A /* siberian-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "siberian-hitch.webp"; sourceTree = "<group>"; };
+		C5C392C58FC440181640023A /* siberian-hitch.webp */ = {isa = PBXFileReference; path = "siberian-hitch.webp"; sourceTree = "<group>"; };
 		C68050288D106B68C7B51421 /* tripleroll360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripleroll360.png; sourceTree = "<group>"; };
 		C6CE380AFD71D87A8E410BCA /* multipleoverhand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = multipleoverhand.json; sourceTree = "<group>"; };
-		C70B7BA5C66F8722D3DE35CA /* clove-hitch-two-loops.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clove-hitch-two-loops.webp"; sourceTree = "<group>"; };
+		C70B7BA5C66F8722D3DE35CA /* clove-hitch-two-loops.webp */ = {isa = PBXFileReference; path = "clove-hitch-two-loops.webp"; sourceTree = "<group>"; };
 		C71D9E246E238CD45550889A /* figure8followthru360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figure8followthru360.png; sourceTree = "<group>"; };
 		C73240038678CA7F8523ABF2 /* edwardsbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edwardsbowline.png; sourceTree = "<group>"; };
 		C780A039D1E2F412C187B6CC /* transom.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transom.json; sourceTree = "<group>"; };
-		C7BC994A19BF201050EF4A54 /* magnus-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "magnus-hitch.webp"; sourceTree = "<group>"; };
+		C7BC994A19BF201050EF4A54 /* magnus-hitch.webp */ = {isa = PBXFileReference; path = "magnus-hitch.webp"; sourceTree = "<group>"; };
 		C7DA953C7437026F8C49C85C /* snapbowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = snapbowline360.json; sourceTree = "<group>"; };
 		C7FE22E44B24F67F4EB6E315 /* iciclehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = iciclehitch360.json; sourceTree = "<group>"; };
 		C82843E6B1213BC6090DDA72 /* lanyardhitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lanyardhitch360.png; sourceTree = "<group>"; };
-		C8547C48D7FD84BAF301B746 /* lapp-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lapp-knot.webp"; sourceTree = "<group>"; };
+		C8547C48D7FD84BAF301B746 /* lapp-knot.webp */ = {isa = PBXFileReference; path = "lapp-knot.webp"; sourceTree = "<group>"; };
 		C855F6619794508E06A21013 /* woodlandziptie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woodlandziptie.json; sourceTree = "<group>"; };
 		C870C5F20CAA3E4C341BC0E1 /* piwich360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = piwich360.json; sourceTree = "<group>"; };
 		C8A2693873B6652E7F28A364 /* bends.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bends.jpg; sourceTree = "<group>"; };
-		C8EC06DC095441C5BB22F56D /* diamond-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "diamond-knot.webp"; sourceTree = "<group>"; };
+		C8EC06DC095441C5BB22F56D /* diamond-knot.webp */ = {isa = PBXFileReference; path = "diamond-knot.webp"; sourceTree = "<group>"; };
 		C93C383544A69FACDCA740F3 /* doubledragonloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledragonloop.png; sourceTree = "<group>"; };
-		C95683E986B2A38CFA4B7B7B /* davy-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "davy-knot.webp"; sourceTree = "<group>"; };
+		C95683E986B2A38CFA4B7B7B /* davy-knot.webp */ = {isa = PBXFileReference; path = "davy-knot.webp"; sourceTree = "<group>"; };
 		C963687AB20084BFC9BCEB50 /* figurenineloop360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figurenineloop360.json; sourceTree = "<group>"; };
 		C9C0341F789DA9B1AFC46050 /* overhand360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overhand360.png; sourceTree = "<group>"; };
-		CA15FFE87BFFE5B783BA1C26 /* mooring-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mooring-hitch.webp"; sourceTree = "<group>"; };
+		CA15FFE87BFFE5B783BA1C26 /* mooring-hitch.webp */ = {isa = PBXFileReference; path = "mooring-hitch.webp"; sourceTree = "<group>"; };
 		CA16500AA11D11D0B2C1351F /* heavinglineknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heavinglineknot.json; sourceTree = "<group>"; };
 		CA3130E088F1F353A1ED7774 /* westcountrylashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrylashing360.json; sourceTree = "<group>"; };
 		CA9D4528D53CBED5B54DBE38 /* sailorscoil360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sailorscoil360.json; sourceTree = "<group>"; };
@@ -4163,38 +4170,38 @@
 		CC48B0B7AB3DF2E3727CAEFA /* doubleharnessbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleharnessbend.json; sourceTree = "<group>"; };
 		CC6A8401F198514D9785C928 /* knots3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3FB40B53B09230B02D6C17 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		CDF65D06B8E7EBB151F3B30E /* reever-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "reever-knot.webp"; sourceTree = "<group>"; };
+		CDF65D06B8E7EBB151F3B30E /* reever-knot.webp */ = {isa = PBXFileReference; path = "reever-knot.webp"; sourceTree = "<group>"; };
 		CE03258B022AE1FE560ED91C /* reeverknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reeverknot.png; sourceTree = "<group>"; };
 		CE18FC0F820F759B260A4669 /* magnus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = magnus.json; sourceTree = "<group>"; };
 		CE5D7FA7BA03073A7DBBB139 /* thiefknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thiefknot360.png; sourceTree = "<group>"; };
-		CE9825FC3A1C1042FBEA3CDE /* water-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "water-knot.webp"; sourceTree = "<group>"; };
+		CE9825FC3A1C1042FBEA3CDE /* water-knot.webp */ = {isa = PBXFileReference; path = "water-knot.webp"; sourceTree = "<group>"; };
 		CEA2FD3D26F162518DA12E5C /* diagonallashing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagonallashing.png; sourceTree = "<group>"; };
 		CEB96E6CDC577A3E7A7B9829 /* highwaymans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = highwaymans.json; sourceTree = "<group>"; };
 		CEC5D73F4885F8E114B1C1D7 /* fishing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fishing.jpg; sourceTree = "<group>"; };
 		CF08C528D536D5827AB6969D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CF4A9CA8D9930AAF99FD1DBD /* alpinecoil360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinecoil360.json; sourceTree = "<group>"; };
-		CF63CEC54A60EAE78EC62389 /* fg-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fg-knot.webp"; sourceTree = "<group>"; };
+		CF63CEC54A60EAE78EC62389 /* fg-knot.webp */ = {isa = PBXFileReference; path = "fg-knot.webp"; sourceTree = "<group>"; };
 		CF9EBF524DB69D88AE649E92 /* albertoknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albertoknot.png; sourceTree = "<group>"; };
 		CFA1C439FD314EDFF4F0404F /* tripleroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripleroll.png; sourceTree = "<group>"; };
-		CFD215690F7768FF98F90804 /* turks-head-woggle.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "turks-head-woggle.webp"; sourceTree = "<group>"; };
-		CFEEB597E4DBC2389774D7F8 /* kalmyk-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kalmyk-loop.webp"; sourceTree = "<group>"; };
+		CFD215690F7768FF98F90804 /* turks-head-woggle.webp */ = {isa = PBXFileReference; path = "turks-head-woggle.webp"; sourceTree = "<group>"; };
+		CFEEB597E4DBC2389774D7F8 /* kalmyk-loop.webp */ = {isa = PBXFileReference; path = "kalmyk-loop.webp"; sourceTree = "<group>"; };
 		D0D5FDA67DF9A8392B2DD472 /* flemishflake360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flemishflake360.json; sourceTree = "<group>"; };
 		D0E1CA8FE8298719E53639CC /* tautline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tautline360.json; sourceTree = "<group>"; };
 		D145E4B2E3F35113B6087ADB /* backsplice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backsplice.png; sourceTree = "<group>"; };
-		D1835589794586042DCF38DE /* boom-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "boom-hitch.webp"; sourceTree = "<group>"; };
+		D1835589794586042DCF38DE /* boom-hitch.webp */ = {isa = PBXFileReference; path = "boom-hitch.webp"; sourceTree = "<group>"; };
 		D1C08853E3DB40432106BCEB /* snell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snell.png; sourceTree = "<group>"; };
 		D1E5D1822260090E442F8594 /* alpinebutterflybend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflybend.json; sourceTree = "<group>"; };
 		D1F5F79B6C03F7B8A714B65A /* quickhitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quickhitch.json; sourceTree = "<group>"; };
 		D220F74808D1603C2EE6A63D /* orvisknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orvisknot360.png; sourceTree = "<group>"; };
-		D254B2723EE3E850B18E6088 /* round-turn-two-half-hitches.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "round-turn-two-half-hitches.webp"; sourceTree = "<group>"; };
+		D254B2723EE3E850B18E6088 /* round-turn-two-half-hitches.webp */ = {isa = PBXFileReference; path = "round-turn-two-half-hitches.webp"; sourceTree = "<group>"; };
 		D29A2FF2E91CBDDE5FF16EB3 /* truckie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckie.png; sourceTree = "<group>"; };
-		D2DBCD5637EE13E24CD6AAD5 /* cow-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cow-hitch.webp"; sourceTree = "<group>"; };
-		D2E3B447C9059CC0D035F61B /* kreh-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kreh-loop.webp"; sourceTree = "<group>"; };
+		D2DBCD5637EE13E24CD6AAD5 /* cow-hitch.webp */ = {isa = PBXFileReference; path = "cow-hitch.webp"; sourceTree = "<group>"; };
+		D2E3B447C9059CC0D035F61B /* kreh-loop.webp */ = {isa = PBXFileReference; path = "kreh-loop.webp"; sourceTree = "<group>"; };
 		D361ABA778FF4A5ED7612DB9 /* cowboybowline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cowboybowline360.json; sourceTree = "<group>"; };
 		D36AF221B7256083F840D5BB /* marlinspikehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marlinspikehitch.png; sourceTree = "<group>"; };
 		D402986B218844168BA05EC4 /* grannyknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grannyknot.png; sourceTree = "<group>"; };
 		D4F3E8D442A27F3D1FEA5B73 /* roundturntwohalfhitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roundturntwohalfhitches.png; sourceTree = "<group>"; };
-		D558C2BFB2A302E5C81F174C /* alpine-butterfly-hand-method.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alpine-butterfly-hand-method.webp"; sourceTree = "<group>"; };
+		D558C2BFB2A302E5C81F174C /* alpine-butterfly-hand-method.webp */ = {isa = PBXFileReference; path = "alpine-butterfly-hand-method.webp"; sourceTree = "<group>"; };
 		D55E4D909A387D3A5A8D9AE8 /* trefoil.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trefoil.json; sourceTree = "<group>"; };
 		D576E180237795BBEED91291 /* sheetbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sheetbend.json; sourceTree = "<group>"; };
 		D59D4E25D75C8FCD9E0BCA52 /* bloodknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bloodknot360.json; sourceTree = "<group>"; };
@@ -4202,7 +4209,7 @@
 		D5CEE3F0E901B456848B7266 /* woggle360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woggle360.png; sourceTree = "<group>"; };
 		D5F4DE267F07F545F2887542 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D61A88C20A1362C725E276D1 /* clovehitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitch.png; sourceTree = "<group>"; };
-		D71C3D15A9C338F2F83698C2 /* sailors-coil.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sailors-coil.webp"; sourceTree = "<group>"; };
+		D71C3D15A9C338F2F83698C2 /* sailors-coil.webp */ = {isa = PBXFileReference; path = "sailors-coil.webp"; sourceTree = "<group>"; };
 		D72291B2E99901978FF0A42C /* westcountrywhipping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = westcountrywhipping.json; sourceTree = "<group>"; };
 		D748955B55CFA9ACB278FCF1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7556A356405D0960D0E45F5 /* alpinebutterflyhandmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod.json; sourceTree = "<group>"; };
@@ -4215,13 +4222,13 @@
 		DA7048715530844C43D2FEC4 /* roundlashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roundlashing360.png; sourceTree = "<group>"; };
 		DA7AC505E38D7189D6B770F6 /* sheepshank360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sheepshank360.json; sourceTree = "<group>"; };
 		DADFA3DC89735523B5B0264D /* commonwhipping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = commonwhipping.json; sourceTree = "<group>"; };
-		DAEECD1E3FE4F241EA10BDF2 /* grief-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grief-knot.webp"; sourceTree = "<group>"; };
+		DAEECD1E3FE4F241EA10BDF2 /* grief-knot.webp */ = {isa = PBXFileReference; path = "grief-knot.webp"; sourceTree = "<group>"; };
 		DB1577405263C44B5CBC1934 /* bowlineonabight360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bowlineonabight360.json; sourceTree = "<group>"; };
 		DB160F77C07D25E851869DAB /* tripodlashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tripodlashing.json; sourceTree = "<group>"; };
-		DB3805A26DE3DF439F71BA9E /* common-whipping.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "common-whipping.webp"; sourceTree = "<group>"; };
+		DB3805A26DE3DF439F71BA9E /* common-whipping.webp */ = {isa = PBXFileReference; path = "common-whipping.webp"; sourceTree = "<group>"; };
 		DBABFC9791B36E303FD1A056 /* figureeight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figureeight.json; sourceTree = "<group>"; };
-		DBAF992B4D5391374BC00272 /* alpine-butterfly.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "alpine-butterfly.webp"; sourceTree = "<group>"; };
-		DC3D5E281C03E33B3E090AA4 /* bow-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bow-knot.webp"; sourceTree = "<group>"; };
+		DBAF992B4D5391374BC00272 /* alpine-butterfly.webp */ = {isa = PBXFileReference; path = "alpine-butterfly.webp"; sourceTree = "<group>"; };
+		DC3D5E281C03E33B3E090AA4 /* bow-knot.webp */ = {isa = PBXFileReference; path = "bow-knot.webp"; sourceTree = "<group>"; };
 		DCCCF6F45DA238F2C22C9CC7 /* rackingbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rackingbend.json; sourceTree = "<group>"; };
 		DCFD7BF9BB2DD8EDDC57CBE0 /* fishermansknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishermansknot360.png; sourceTree = "<group>"; };
 		DD69B064BA121666730C4273 /* anchorhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchorhitch.png; sourceTree = "<group>"; };
@@ -4230,17 +4237,17 @@
 		DDB7FE56746A2FCFA7871895 /* sailorscoil360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sailorscoil360.png; sourceTree = "<group>"; };
 		DDFD63A673A9308F041F7111 /* flemishflake360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flemishflake360.png; sourceTree = "<group>"; };
 		DE0F482691D4BB70C107A5DB /* directionalfigureeight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = directionalfigureeight.json; sourceTree = "<group>"; };
-		DE14B9B4BD577EF9BDA9E26A /* yucatan-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "yucatan-knot.webp"; sourceTree = "<group>"; };
-		DE1A67B92D4243E6E813D6B9 /* stevedores-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "stevedores-knot.webp"; sourceTree = "<group>"; };
+		DE14B9B4BD577EF9BDA9E26A /* yucatan-knot.webp */ = {isa = PBXFileReference; path = "yucatan-knot.webp"; sourceTree = "<group>"; };
+		DE1A67B92D4243E6E813D6B9 /* stevedores-knot.webp */ = {isa = PBXFileReference; path = "stevedores-knot.webp"; sourceTree = "<group>"; };
 		DE2B7F0D8CCEC7EC075DDF37 /* anchorhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = anchorhitch360.json; sourceTree = "<group>"; };
-		DE6D7A57A676E6DB7E268A62 /* figure-eight-loop.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "figure-eight-loop.webp"; sourceTree = "<group>"; };
-		DE826338E635F4E6EBFAC793 /* taut-line-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "taut-line-hitch.webp"; sourceTree = "<group>"; };
+		DE6D7A57A676E6DB7E268A62 /* figure-eight-loop.webp */ = {isa = PBXFileReference; path = "figure-eight-loop.webp"; sourceTree = "<group>"; };
+		DE826338E635F4E6EBFAC793 /* taut-line-hitch.webp */ = {isa = PBXFileReference; path = "taut-line-hitch.webp"; sourceTree = "<group>"; };
 		DE88AD4B3875FADF829AF5AF /* adjustablehitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adjustablehitch.json; sourceTree = "<group>"; };
-		DEA221C47150E88D26D9D2D5 /* tarbuck.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarbuck.webp; sourceTree = "<group>"; };
+		DEA221C47150E88D26D9D2D5 /* tarbuck.webp */ = {isa = PBXFileReference; path = tarbuck.webp; sourceTree = "<group>"; };
 		DEC682EE1AC3AE350878C028 /* buntline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buntline360.json; sourceTree = "<group>"; };
-		DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "double-harness-bend.webp"; sourceTree = "<group>"; };
+		DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */ = {isa = PBXFileReference; path = "double-harness-bend.webp"; sourceTree = "<group>"; };
 		DEFAF47E09B841ADFF051F61 /* tensionlesshitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tensionlesshitch360.json; sourceTree = "<group>"; };
-		DF03F393BE291784FF41C07B /* cleat-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cleat-hitch.webp"; sourceTree = "<group>"; };
+		DF03F393BE291784FF41C07B /* cleat-hitch.webp */ = {isa = PBXFileReference; path = "cleat-hitch.webp"; sourceTree = "<group>"; };
 		DF0703744535BFDDB57F8C87 /* boating.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boating.jpg; sourceTree = "<group>"; };
 		DF29EA0AD515E3C74AEBA452 /* albrightknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albrightknot.png; sourceTree = "<group>"; };
 		DF4FB09CB6EBC5F7C0DD09B1 /* gasketcoil360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gasketcoil360.json; sourceTree = "<group>"; };
@@ -4249,26 +4256,26 @@
 		DFFAA2E9A1CFDE40AB3E0CE2 /* crownknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crownknot360.png; sourceTree = "<group>"; };
 		E041A9F0AE4029D121D0C11E /* rollinghitch2v.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rollinghitch2v.png; sourceTree = "<group>"; };
 		E0F0FA9EF79FD2B8E0EAEC11 /* doubleharnessbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleharnessbend360.png; sourceTree = "<group>"; };
-		E0F1B6B3CEBC68632B9BE9BC /* friendship-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "friendship-knot.webp"; sourceTree = "<group>"; };
+		E0F1B6B3CEBC68632B9BE9BC /* friendship-knot.webp */ = {isa = PBXFileReference; path = "friendship-knot.webp"; sourceTree = "<group>"; };
 		E10D35C96C2FC147AA1208C7 /* slipfigureeight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slipfigureeight.png; sourceTree = "<group>"; };
 		E122C79199FC6BF670458609 /* palomar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palomar.png; sourceTree = "<group>"; };
-		E16841F4FE8CB84963688ABF /* carrick-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "carrick-bend.webp"; sourceTree = "<group>"; };
+		E16841F4FE8CB84963688ABF /* carrick-bend.webp */ = {isa = PBXFileReference; path = "carrick-bend.webp"; sourceTree = "<group>"; };
 		E17FB96FA35330D4E2D144A2 /* bellringer360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bellringer360.json; sourceTree = "<group>"; };
 		E1A3871027A1F4E13A9ED8A5 /* japanesemarkII.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = japanesemarkII.json; sourceTree = "<group>"; };
 		E20DA880CFB9958332159037 /* singlebraid360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singlebraid360.png; sourceTree = "<group>"; };
 		E22A50842AF761CBFC5BC98E /* surgeonsloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsloop.json; sourceTree = "<group>"; };
 		E2798AAD137941E55A90E044 /* surgeonsknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surgeonsknot.png; sourceTree = "<group>"; };
-		E2C45266283DAB99B3B41B88 /* japanese-square-lashing-mkii.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "japanese-square-lashing-mkii.webp"; sourceTree = "<group>"; };
+		E2C45266283DAB99B3B41B88 /* japanese-square-lashing-mkii.webp */ = {isa = PBXFileReference; path = "japanese-square-lashing-mkii.webp"; sourceTree = "<group>"; };
 		E2CED66FFF651EB1739AA67A /* pitzen360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitzen360.png; sourceTree = "<group>"; };
 		E2D7D92167364324AC916C7B /* turle360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turle360.png; sourceTree = "<group>"; };
 		E2E25808C900EA58B76F308A /* huntersbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntersbend.png; sourceTree = "<group>"; };
 		E3A2853B8AE7E026E18AE604 /* truelovers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truelovers.png; sourceTree = "<group>"; };
 		E3B7C8D0D3F0A6982459C606 /* whipping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whipping.jpg; sourceTree = "<group>"; };
-		E3DA185C706D06A97EFBB79C /* sheepshank.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = sheepshank.webp; sourceTree = "<group>"; };
+		E3DA185C706D06A97EFBB79C /* sheepshank.webp */ = {isa = PBXFileReference; path = sheepshank.webp; sourceTree = "<group>"; };
 		E3DA7D36F6168915F9CFE596 /* canadianjam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canadianjam.png; sourceTree = "<group>"; };
 		E463E8597BBD2F5B67BB5DCC /* doublesheetbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublesheetbend360.json; sourceTree = "<group>"; };
-		E547F7E73AA03F9758B58A44 /* slipped-lapp-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slipped-lapp-knot.webp"; sourceTree = "<group>"; };
-		E573F0F24991C1DEB9999B52 /* slipped-clove-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slipped-clove-hitch.webp"; sourceTree = "<group>"; };
+		E547F7E73AA03F9758B58A44 /* slipped-lapp-knot.webp */ = {isa = PBXFileReference; path = "slipped-lapp-knot.webp"; sourceTree = "<group>"; };
+		E573F0F24991C1DEB9999B52 /* slipped-clove-hitch.webp */ = {isa = PBXFileReference; path = "slipped-clove-hitch.webp"; sourceTree = "<group>"; };
 		E57A2C9E3EE5947964EEAFC0 /* roundturntwohalfhitches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roundturntwohalfhitches.json; sourceTree = "<group>"; };
 		E5A21297D00963F5AF170D63 /* rackingbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rackingbend360.png; sourceTree = "<group>"; };
 		E5B9EA7F7C506DBD6D061EF1 /* swinghitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swinghitch360.png; sourceTree = "<group>"; };
@@ -4284,7 +4291,7 @@
 		E6947225A8132FA2827A2F4C /* swissseat360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swissseat360.png; sourceTree = "<group>"; };
 		E6DC13529F70831B8DD9CB3D /* surgeonsloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surgeonsloop360.png; sourceTree = "<group>"; };
 		E6F5DFFB8D7D855EBDAC09F0 /* yosemitebowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yosemitebowline360.png; sourceTree = "<group>"; };
-		E713A747F7301BBDE796246D /* orvis-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orvis-knot.webp"; sourceTree = "<group>"; };
+		E713A747F7301BBDE796246D /* orvis-knot.webp */ = {isa = PBXFileReference; path = "orvis-knot.webp"; sourceTree = "<group>"; };
 		E77E7DDE44C0BDE85C8A9D4E /* surgeonsknot-fishing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "surgeonsknot-fishing360.json"; sourceTree = "<group>"; };
 		E786995161281E18316833B4 /* figureeightbend.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = figureeightbend.json; sourceTree = "<group>"; };
 		E7BFB677D9C119EFF062C5DA /* perfectionloop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = perfectionloop.json; sourceTree = "<group>"; };
@@ -4293,7 +4300,7 @@
 		E820562F4959196F296D76C2 /* lappknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lappknot360.png; sourceTree = "<group>"; };
 		E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8F229A5DA36DA5AF773F0B1 /* diving.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diving.jpg; sourceTree = "<group>"; };
-		E907FABF0E2E4D626132F1C4 /* capuchin.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = capuchin.webp; sourceTree = "<group>"; };
+		E907FABF0E2E4D626132F1C4 /* capuchin.webp */ = {isa = PBXFileReference; path = capuchin.webp; sourceTree = "<group>"; };
 		E9209DE818A8B79936919532 /* military.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = military.jpg; sourceTree = "<group>"; };
 		E964B77CDAC56F8A0B7D7E2E /* constrictorknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constrictorknot360.png; sourceTree = "<group>"; };
 		E97F34E66A848A38798F18F5 /* figureeightbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figureeightbend360.png; sourceTree = "<group>"; };
@@ -4302,27 +4309,28 @@
 		EA1C92803ED6ADA2462E3F26 /* carrickbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carrickbend360.json; sourceTree = "<group>"; };
 		EA2569ED2A645959E9940C46 /* carrickbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrickbend360.png; sourceTree = "<group>"; };
 		EA47418F265F5FF824FDDEFF /* albrightknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = albrightknot360.png; sourceTree = "<group>"; };
-		EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "truckie-hitch.webp"; sourceTree = "<group>"; };
+		EAC8D788A9977C6D3CBCF766 /* truckie-hitch.webp */ = {isa = PBXFileReference; path = "truckie-hitch.webp"; sourceTree = "<group>"; };
 		EACAE746084A9C345A96AB4F /* lightermanshitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightermanshitch.png; sourceTree = "<group>"; };
 		EB129C71683F7F2CA778268E /* detailed_knots_data_ru.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = detailed_knots_data_ru.json; sourceTree = "<group>"; };
 		EB18C1A01D758B11A038F4AC /* detailed_knots_data_zh-Hans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "detailed_knots_data_zh-Hans.json"; sourceTree = "<group>"; };
 		EB6092F7721A55E818C29AD3 /* munter.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = munter.json; sourceTree = "<group>"; };
-		EB7C42E8B6BBFF6DDABBDC58 /* shear-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "shear-lashing.webp"; sourceTree = "<group>"; };
-		EB8E5D6114E873D24B8EF456 /* truckers-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "truckers-hitch.webp"; sourceTree = "<group>"; };
+		EB7C42E8B6BBFF6DDABBDC58 /* shear-lashing.webp */ = {isa = PBXFileReference; path = "shear-lashing.webp"; sourceTree = "<group>"; };
+		EB8E5D6114E873D24B8EF456 /* truckers-hitch.webp */ = {isa = PBXFileReference; path = "truckers-hitch.webp"; sourceTree = "<group>"; };
 		EBBE9B3CAE08450D801F6D2B /* slippedclovehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedclovehitch360.png; sourceTree = "<group>"; };
 		EBF6DA0B2FCD48DBC5A45E69 /* roundlashing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roundlashing.json; sourceTree = "<group>"; };
 		ECAE0B70E6A947720E69EBD6 /* groundlinehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundlinehitch360.png; sourceTree = "<group>"; };
-		ECFB51BB1BE0BB80006420B8 /* jar-sling-knot-end-method.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jar-sling-knot-end-method.webp"; sourceTree = "<group>"; };
+		ECFB51BB1BE0BB80006420B8 /* jar-sling-knot-end-method.webp */ = {isa = PBXFileReference; path = "jar-sling-knot-end-method.webp"; sourceTree = "<group>"; };
 		ED07180BC26DA4D89E5CA666 /* westcountrylashing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westcountrylashing.png; sourceTree = "<group>"; };
 		ED26D81375634D23F6E6613D /* truelovers360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truelovers360.json; sourceTree = "<group>"; };
-		ED2EAE6C15BE181FFA8C8B64 /* flat-overhand-bend.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "flat-overhand-bend.webp"; sourceTree = "<group>"; };
+		ED2EAE6C15BE181FFA8C8B64 /* flat-overhand-bend.webp */ = {isa = PBXFileReference; path = "flat-overhand-bend.webp"; sourceTree = "<group>"; };
 		ED6B1CE847D77922D18CFFF6 /* trileneknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trileneknot.json; sourceTree = "<group>"; };
-		EDF9A72719F327284DB13EFB /* poachers-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poachers-knot.webp"; sourceTree = "<group>"; };
-		EE43180B749C239C074DEA6B /* triple-roll.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "triple-roll.webp"; sourceTree = "<group>"; };
+		EDF9A72719F327284DB13EFB /* poachers-knot.webp */ = {isa = PBXFileReference; path = "poachers-knot.webp"; sourceTree = "<group>"; };
+		EE43180B749C239C074DEA6B /* triple-roll.webp */ = {isa = PBXFileReference; path = "triple-roll.webp"; sourceTree = "<group>"; };
 		EEAB2FDC90A1DD6BF6DE3EFC /* buntline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buntline360.png; sourceTree = "<group>"; };
 		EF15619D8A09F65E79DDDBA5 /* clovehitchtwoloops360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clovehitchtwoloops360.png; sourceTree = "<group>"; };
 		EF4E89C124D374AE9D4D43B3 /* truckershitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = truckershitch.png; sourceTree = "<group>"; };
-		EF941E855508AE28AD697A45 /* packers-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "packers-knot.webp"; sourceTree = "<group>"; };
+		EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.trianglehead.counterclockwise.rotate.90.png; sourceTree = "<group>"; };
+		EF941E855508AE28AD697A45 /* packers-knot.webp */ = {isa = PBXFileReference; path = "packers-knot.webp"; sourceTree = "<group>"; };
 		EFB87B915E834EC13A74F6ED /* beckethitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beckethitch.json; sourceTree = "<group>"; };
 		F0060763CD16547AE0D746A5 /* doublecoin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doublecoin.json; sourceTree = "<group>"; };
 		F01C3E08E0D7A87DD9FAE74D /* doubleoverhand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleoverhand.json; sourceTree = "<group>"; };
@@ -4340,26 +4348,26 @@
 		F2684006BEE7209D03CE35A1 /* tarbuck360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tarbuck360.json; sourceTree = "<group>"; };
 		F2815369EB49C06EF38BE7C4 /* tripodlashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripodlashing360.png; sourceTree = "<group>"; };
 		F2A07E2095A974127CF1FFBF /* nail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nail.png; sourceTree = "<group>"; };
-		F2DBBF4D9521B7BF1A564916 /* west-country-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "west-country-lashing.webp"; sourceTree = "<group>"; };
+		F2DBBF4D9521B7BF1A564916 /* west-country-lashing.webp */ = {isa = PBXFileReference; path = "west-country-lashing.webp"; sourceTree = "<group>"; };
 		F324563AB6251D70304CB786 /* prusik.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = prusik.json; sourceTree = "<group>"; };
 		F32A970D837D879140E93460 /* bloodknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodknot.png; sourceTree = "<group>"; };
 		F34C5A37BBDE6205FF7BB647 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F36BE6F98683A90812DBBC07 /* buntline-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "buntline-hitch.webp"; sourceTree = "<group>"; };
+		F36BE6F98683A90812DBBC07 /* buntline-hitch.webp */ = {isa = PBXFileReference; path = "buntline-hitch.webp"; sourceTree = "<group>"; };
 		F39944069757033036440CE6 /* truckie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truckie.json; sourceTree = "<group>"; };
 		F3CF70ADB8030961E0C6BEC3 /* loopknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loopknot360.json; sourceTree = "<group>"; };
 		F4A64118F92B2A79572614F7 /* doubleconstrictor360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = doubleconstrictor360.json; sourceTree = "<group>"; };
 		F4C993B62719F760C05382D6 /* diagonallashing360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diagonallashing360.json; sourceTree = "<group>"; };
-		F50621CC5DA02EE48C2D4A67 /* underwriters-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "underwriters-knot.webp"; sourceTree = "<group>"; };
+		F50621CC5DA02EE48C2D4A67 /* underwriters-knot.webp */ = {isa = PBXFileReference; path = "underwriters-knot.webp"; sourceTree = "<group>"; };
 		F511FF0DB2D157FDD2DD73C2 /* slippedconstrictorknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slippedconstrictorknot360.png; sourceTree = "<group>"; };
 		F529477FB246F534E50DFC55 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F53674E163CB539171409375 /* supermunter360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supermunter360.png; sourceTree = "<group>"; };
 		F53928F0EFC789C207F5B1D6 /* commonwhipping360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commonwhipping360.png; sourceTree = "<group>"; };
 		F5393C5E702DCC3E48731E76 /* westcountrylashing360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = westcountrylashing360.png; sourceTree = "<group>"; };
-		F599D9C7ADB1CA3918FBB587 /* trilene-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trilene-knot.webp"; sourceTree = "<group>"; };
-		F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "granny-knot.webp"; sourceTree = "<group>"; };
+		F599D9C7ADB1CA3918FBB587 /* trilene-knot.webp */ = {isa = PBXFileReference; path = "trilene-knot.webp"; sourceTree = "<group>"; };
+		F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */ = {isa = PBXFileReference; path = "granny-knot.webp"; sourceTree = "<group>"; };
 		F5EF06826DAE52ED0D71A53F /* canadianjam360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canadianjam360.png; sourceTree = "<group>"; };
 		F5FA9B75D2344BB5C988097F /* midshipman.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = midshipman.json; sourceTree = "<group>"; };
-		F605D2F8F286DD05F814AE89 /* rapala-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rapala-knot.webp"; sourceTree = "<group>"; };
+		F605D2F8F286DD05F814AE89 /* rapala-knot.webp */ = {isa = PBXFileReference; path = "rapala-knot.webp"; sourceTree = "<group>"; };
 		F63D66F08D00D22C7A2A1DBB /* larkshead360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = larkshead360.json; sourceTree = "<group>"; };
 		F65F09AA5C084CEB0DA2B572 /* orvisknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = orvisknot360.json; sourceTree = "<group>"; };
 		F66A4BBBAA275F2C1E08D3F1 /* surgeonsknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = surgeonsknot360.png; sourceTree = "<group>"; };
@@ -4368,13 +4376,13 @@
 		F694DCD0AA2DD8DB045D4D2E /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F6AB7B7E4D6003A162B842D2 /* portuguesebowline360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portuguesebowline360.png; sourceTree = "<group>"; };
 		F6C1BFCE03DC8EF90EE75FB3 /* bullhitchbightmethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullhitchbightmethod.png; sourceTree = "<group>"; };
-		F6F3CEB91059A7106E8D89A1 /* super-munter.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "super-munter.webp"; sourceTree = "<group>"; };
+		F6F3CEB91059A7106E8D89A1 /* super-munter.webp */ = {isa = PBXFileReference; path = "super-munter.webp"; sourceTree = "<group>"; };
 		F738750D0FD8A63D569D23E7 /* fishermanseye.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fishermanseye.json; sourceTree = "<group>"; };
 		F75E5662FD03956C0646241F /* prusik360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prusik360.png; sourceTree = "<group>"; };
 		F84362E424F283F4741CB608 /* blakes360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blakes360.png; sourceTree = "<group>"; };
 		F85BE167029E4892A5BE57AE /* grannyknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grannyknot360.json; sourceTree = "<group>"; };
 		F874ABD088D6FBA5722E3C74 /* ashleystopper360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashleystopper360.json; sourceTree = "<group>"; };
-		F8752DF8B56EF2AE3E83427C /* schwabisch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = schwabisch.webp; sourceTree = "<group>"; };
+		F8752DF8B56EF2AE3E83427C /* schwabisch.webp */ = {isa = PBXFileReference; path = schwabisch.webp; sourceTree = "<group>"; };
 		F8FDD8C6E397DC64D974AD99 /* clinchknotimproved360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinchknotimproved360.png; sourceTree = "<group>"; };
 		F95F43561271A57EB9D40600 /* buntline.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = buntline.json; sourceTree = "<group>"; };
 		F9770A09A453229EDCC90A8B /* trefoil360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trefoil360.json; sourceTree = "<group>"; };
@@ -4387,23 +4395,23 @@
 		FB880E6DD81C2A51717D5393 /* slippedclovehitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedclovehitch360.json; sourceTree = "<group>"; };
 		FB881AAC91706ABC01805744 /* muntermuleoverhand360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = muntermuleoverhand360.png; sourceTree = "<group>"; };
 		FBB304EAC472D53D28573C0C /* huntersbend360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = huntersbend360.json; sourceTree = "<group>"; };
-		FBB674AF76FAA8CF06F6ADAE /* turks-head-mat.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "turks-head-mat.webp"; sourceTree = "<group>"; };
+		FBB674AF76FAA8CF06F6ADAE /* turks-head-mat.webp */ = {isa = PBXFileReference; path = "turks-head-mat.webp"; sourceTree = "<group>"; };
 		FBBDBEEF13A0272CFE830E00 /* crownknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = crownknot.json; sourceTree = "<group>"; };
 		FBC3E325A84FFF16276D19AB /* grannyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grannyknot.json; sourceTree = "<group>"; };
 		FBC78B91E6A21DD436622908 /* osselhitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osselhitch.png; sourceTree = "<group>"; };
 		FBEE5E146531ADED315C02B3 /* doubledragonloop360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledragonloop360.png; sourceTree = "<group>"; };
-		FC0246C79E0ADC11BBD9F0B6 /* adjustable-grip-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "adjustable-grip-hitch.webp"; sourceTree = "<group>"; };
+		FC0246C79E0ADC11BBD9F0B6 /* adjustable-grip-hitch.webp */ = {isa = PBXFileReference; path = "adjustable-grip-hitch.webp"; sourceTree = "<group>"; };
 		FC6A3E1C444FBC39818F9827 /* canadianjam360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = canadianjam360.json; sourceTree = "<group>"; };
 		FC773F62D1AA1FB04FCC11B4 /* farrimond360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farrimond360.png; sourceTree = "<group>"; };
-		FCABA9B4E3D8FE1458309182 /* highwaymans-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "highwaymans-hitch.webp"; sourceTree = "<group>"; };
+		FCABA9B4E3D8FE1458309182 /* highwaymans-hitch.webp */ = {isa = PBXFileReference; path = "highwaymans-hitch.webp"; sourceTree = "<group>"; };
 		FCCC380FA0E5EB6C1454CBF6 /* iciclehitch360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iciclehitch360.png; sourceTree = "<group>"; };
 		FCE6865AB4774C9437CD99D7 /* perfectionloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perfectionloop.png; sourceTree = "<group>"; };
 		FD0C93AFDAF3BE6F8E60568C /* slippedbuntline360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = slippedbuntline360.json; sourceTree = "<group>"; };
 		FD1CAF4BC46D2D66130F439F /* pioneering.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pioneering.jpg; sourceTree = "<group>"; };
 		FDB31354163B781ECF2B256D /* backsplice.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backsplice.json; sourceTree = "<group>"; };
 		FDB8EF676A4C79FAC4BF0305 /* swissseat360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swissseat360.json; sourceTree = "<group>"; };
-		FDE3775834315417F35DA340 /* tripod-lashing.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tripod-lashing.webp"; sourceTree = "<group>"; };
-		FE4335CFEC1F8DE98128ABEF /* nail-knot.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nail-knot.webp"; sourceTree = "<group>"; };
+		FDE3775834315417F35DA340 /* tripod-lashing.webp */ = {isa = PBXFileReference; path = "tripod-lashing.webp"; sourceTree = "<group>"; };
+		FE4335CFEC1F8DE98128ABEF /* nail-knot.webp */ = {isa = PBXFileReference; path = "nail-knot.webp"; sourceTree = "<group>"; };
 		FEB4EDE6DA43D8E46B588827 /* swinghitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swinghitch360.json; sourceTree = "<group>"; };
 		FEE722DC495A79F8153D98C6 /* trileneknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trileneknot.png; sourceTree = "<group>"; };
 		FEF6CE0BA1EC6827B69991B5 /* doubledragonbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledragonbend360.png; sourceTree = "<group>"; };
@@ -4411,7 +4419,7 @@
 		FF1F834941DA9C15C8E79088 /* kalmyk360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kalmyk360.png; sourceTree = "<group>"; };
 		FFA1720841F134A3D915C06D /* prusikendline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prusikendline.png; sourceTree = "<group>"; };
 		FFE52281BC710F262B97F0AD /* slipknot360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slipknot360.png; sourceTree = "<group>"; };
-		FFF60F6CACEAEA4E7B83A508 /* tillers-hitch.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tillers-hitch.webp"; sourceTree = "<group>"; };
+		FFF60F6CACEAEA4E7B83A508 /* tillers-hitch.webp */ = {isa = PBXFileReference; path = "tillers-hitch.webp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -4758,7 +4766,7 @@
 		B3FE65A9BD394BC0DE846E87 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				471139952E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png */,
+				BB4C078B428BEF717BC6A451 /* arrow.trianglehead.counterclockwise.rotate.90.png */,
 				07B810EE719C405D99A6EE1F /* rectangle.landscape.rotate.png */,
 			);
 			path = icon;
@@ -4767,6 +4775,7 @@
 		DD23C5A733A38C5604542F99 /* knots3d */ = {
 			isa = PBXGroup;
 			children = (
+				EF7ED483DD4534DB51A78E91 /* arrow.trianglehead.counterclockwise.rotate.90.png */,
 				A27EA222373518AFACAFE548 /* Assets.xcassets */,
 				E8A6D4DFA82F3793A8F090C4 /* ContentView.swift */,
 				D5CA79CA39D8D1C28310C71E /* DataManager.swift */,
@@ -4777,6 +4786,7 @@
 				80FC23E51C3B530C89896A5F /* LaunchScreen.storyboard */,
 				4B90162AAC5CC98AA037C04E /* MainTabView.swift */,
 				F529477FB246F534E50DFC55 /* Models.swift */,
+				A84ADC119974CC74EEB726DF /* rectangle.landscape.rotate.png */,
 				076B30E24B3CBC3239C2366C /* SearchManager.swift */,
 				B1ED6806C2D09D02C000B7DB /* SpriteKitAnimationView.swift */,
 				04AF30E046F52A0A21D6A42C /* Resources */,
@@ -5604,6 +5614,34 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
+		"TEMP_02E14F9E-400E-4588-8E2F-8DDCE973A9B8" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_17C21D9E-F38D-4843-A214-1E506EE3E9B2" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_3ACC8C5F-9F4C-4D40-B97B-228C96BB465A" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		"TEMP_60CDADD3-F99F-4EF3-8251-91B11199170B" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -5707,6 +5745,7 @@
 			);
 			mainGroup = E27FCB79F61104ACE734BFD4;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -5773,6 +5812,8 @@
 				5B785A0B48076CDE5EED64A8 /* arborknot.png in Resources */,
 				55F862001D7C2DCEEAD9AD2A /* arborknot360.json in Resources */,
 				D2035C48CFB33E40342DC122 /* arborknot360.png in Resources */,
+				77C5800FFDC84AF0F68274D2 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
+				B701351FDFC1C5E3AB49A8AB /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				7B0DEACD8F14817DDD3FCA15 /* ashley-stopper-knot.webp in Resources */,
 				1F7838015B959F2E185A38C6 /* ashleys-bend.webp in Resources */,
 				6084B0C6A7E59CC6AA618D19 /* ashleysbend.json in Resources */,
@@ -6431,6 +6472,7 @@
 				3AB03F4C5FF0087BF6D8A81E /* rapalaknot.png in Resources */,
 				F7055E21EB6215995581C888 /* rapalaknot360.json in Resources */,
 				7BA8BC926019A7C53D5D5668 /* rapalaknot360.png in Resources */,
+				B3FD7C611D450ED2C0D73E29 /* rectangle.landscape.rotate.png in Resources */,
 				C7B1632D78FF472E2EEC3DD0 /* rectangle.landscape.rotate.png in Resources */,
 				43B89D5340574441136E4DC9 /* reever-knot.webp in Resources */,
 				4AA96B6BE0D922B542755F3F /* reeverknot.json in Resources */,
@@ -6770,7 +6812,6 @@
 				0605D6AF0D888A953B7E9A4D /* woggle360.json in Resources */,
 				53B0CC0B3E9017356425686E /* woggle360.png in Resources */,
 				89F2791939D16E31B8742A8A /* woodland-zip-tie-lashing.webp in Resources */,
-				471139972E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				593151D84E8E92E2404A1765 /* woodland-zip-tie.webp in Resources */,
 				A6A1D69F355E23374E77FFD7 /* woodlandziptie.json in Resources */,
 				E85025590E6B8B8936C0A3BC /* woodlandziptie.png in Resources */,
@@ -6853,6 +6894,8 @@
 				87B9B78CEA63047090FE13FE /* arborknot.png in Resources */,
 				5F2C13B338D7CBCEC4030990 /* arborknot360.json in Resources */,
 				73462FD2A7A5BE9E15BDD5C3 /* arborknot360.png in Resources */,
+				3A0C9DFB07644F8BF608239C /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
+				923F655AAC3D0539B9F3AB5A /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				8E9E85B4EA9EBBF60A57652D /* ashley-stopper-knot.webp in Resources */,
 				12E9582897123B8E1450A993 /* ashleys-bend.webp in Resources */,
 				1BB3A74B27018CA0DF566F82 /* ashleysbend.json in Resources */,
@@ -7511,6 +7554,7 @@
 				5123864A3CAD6CECB8E1F532 /* rapalaknot.png in Resources */,
 				4CCC6E58DAF3EF652996D4AC /* rapalaknot360.json in Resources */,
 				2831D2F3CE3E98590DEA0193 /* rapalaknot360.png in Resources */,
+				5C8FEC43B509026766C9F534 /* rectangle.landscape.rotate.png in Resources */,
 				4589031E50AAE047EE15F217 /* rectangle.landscape.rotate.png in Resources */,
 				E8668BF441A4135DE1805FCF /* reever-knot.webp in Resources */,
 				6E1A6A096D2C082C8AE12089 /* reeverknot.json in Resources */,
@@ -7850,7 +7894,6 @@
 				E2FBBADF6ED51890ED840B2D /* woggle360.json in Resources */,
 				443F148E10C81B4A07FFBAF6 /* woggle360.png in Resources */,
 				976D7A4E1A7591B923B53742 /* woodland-zip-tie-lashing.webp in Resources */,
-				471139982E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				331674C23385A01ACA5216A5 /* woodland-zip-tie.webp in Resources */,
 				63D747C8D2E6891162F85986 /* woodlandziptie.json in Resources */,
 				69D399D2911D24C30E264A49 /* woodlandziptie.png in Resources */,
@@ -7933,6 +7976,8 @@
 				C6D32D602A0EE09D5CD063CF /* arborknot.png in Resources */,
 				6B4FBEB58402794127003E4C /* arborknot360.json in Resources */,
 				7DA280D57DA29F08855088BA /* arborknot360.png in Resources */,
+				EE8328718345BD61EF8590CC /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
+				4148C0DB3029BF23730D4368 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				3170E18A972211DF068F97DF /* ashley-stopper-knot.webp in Resources */,
 				6DF22E896B426AD240A58D15 /* ashleys-bend.webp in Resources */,
 				A8D0D6F037471EA85F25788C /* ashleysbend.json in Resources */,
@@ -8591,6 +8636,7 @@
 				C487C20E1FFD46B743FE5F49 /* rapalaknot.png in Resources */,
 				E552224A3992B1669C716988 /* rapalaknot360.json in Resources */,
 				9F1ED23DE692AE11992B626D /* rapalaknot360.png in Resources */,
+				FB5E9884EEBE8990687B1B37 /* rectangle.landscape.rotate.png in Resources */,
 				B5E621A3B15F5FE36B3CAD27 /* rectangle.landscape.rotate.png in Resources */,
 				C8CC4E979A66C7D52130A4B3 /* reever-knot.webp in Resources */,
 				6E6808532160523E45E8AFC4 /* reeverknot.json in Resources */,
@@ -8930,7 +8976,6 @@
 				52CF381FED831051E2A7E5E7 /* woggle360.json in Resources */,
 				111A437ADD69A3AA6EED6A1B /* woggle360.png in Resources */,
 				07D96823718DB622FEE79FF1 /* woodland-zip-tie-lashing.webp in Resources */,
-				471139962E6438ED00493ED3 /* arrow.trianglehead.counterclockwise.rotate.90.png in Resources */,
 				48457916C87997C248E3C78F /* woodland-zip-tie.webp in Resources */,
 				60B9EFA132EB736E56EE7A8C /* woodlandziptie.json in Resources */,
 				9B6FAACA40BB60265E332CA6 /* woodlandziptie.png in Resources */,
