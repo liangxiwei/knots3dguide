@@ -450,4 +450,17 @@ class DataManager: ObservableObject {
             print("✅ 预加载完成: \(commonImages.count) 个图片路径")
         }
     }
+    
+    // MARK: - Popular Search
+    
+    /// 获取随机的热门搜索词（从所有绳结名称中随机抽取8个）
+    func getRandomPopularSearches() -> [String] {
+        guard !allKnots.isEmpty else { return [] }
+        
+        // 从所有绳结中随机抽取8个，使用name字段作为搜索词
+        let shuffledKnots = allKnots.shuffled()
+        let maxCount = min(8, shuffledKnots.count)
+        
+        return Array(shuffledKnots.prefix(maxCount).map { $0.name })
+    }
 }

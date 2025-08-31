@@ -231,7 +231,7 @@ struct GlobalSearchView: View {
     }
     
     private func getPopularSearches() -> [String] {
-        return ["Bowline", "Hitch", "Loop", "Bend", "Clove", "Figure", "Knot", "Tie"]
+        return DataManager.shared.getRandomPopularSearches()
     }
     
     private func getGlobalSuggestions() -> [String] {
