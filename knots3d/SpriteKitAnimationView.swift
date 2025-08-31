@@ -89,8 +89,10 @@ struct SpriteKitAnimationView: View {
             Button(action: {
                 scene.rotateSprite()
             }) {
-                Image(systemName: "rectangle.landscape.rotate")
-                    .font(.title2)
+                Image("rectangle.landscape.rotate")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 24, height: 24)
                     .foregroundColor(scene.isRotated ? .blue : .primary)
                     .frame(width: 44, height: 44)
                     .background(Color(UIColor.systemGray4))
@@ -131,8 +133,10 @@ struct SpriteKitAnimationView: View {
             Button(action: {
                 scene.toggle360Mode()
             }) {
-                Image(systemName: "arrow.trianglehead.counterclockwise.rotate.90")
-                    .font(.title2)
+                Image("arrow.trianglehead.counterclockwise.rotate.90")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 24, height: 24)
                     .foregroundColor(scene.is360Mode ? .blue : .primary)
                     .frame(width: 44, height: 44)
                     .background(Color(UIColor.systemGray4))
