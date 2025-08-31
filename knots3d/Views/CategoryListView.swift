@@ -8,27 +8,52 @@ struct CategoryListView: View {
     @StateObject private var dataManager = DataManager.shared
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                // 假搜索栏（点击进入全局搜索）
-                FakeSearchBar(
-                    placeholder: tabType == .categories ? LocalizedStrings.Category.searchCategories.localized : LocalizedStrings.Category.searchTypes.localized,
-                    onTap: onSearchTap
-                )
-                
-                // 列表内容
-                if dataManager.isLoading {
-                    LoadingView()
-                } else if let errorMessage = dataManager.errorMessage {
-                    ErrorView(message: errorMessage) {
-                        dataManager.loadData()
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                VStack(spacing: 0) {
+                    // 假搜索栏（点击进入全局搜索）
+                    FakeSearchBar(
+                        placeholder: tabType == .categories ? LocalizedStrings.Category.searchCategories.localized : LocalizedStrings.Category.searchTypes.localized,
+                        onTap: onSearchTap
+                    )
+                    
+                    // 列表内容
+                    if dataManager.isLoading {
+                        LoadingView()
+                    } else if let errorMessage = dataManager.errorMessage {
+                        ErrorView(message: errorMessage) {
+                            dataManager.loadData()
+                        }
+                    } else {
+                        categoryList
                     }
-                } else {
-                    categoryList
                 }
+                .navigationTitle(tabType.title)
+                .navigationBarTitleDisplayMode(.large)
             }
-            .navigationTitle(tabType.title)
-            .navigationBarTitleDisplayMode(.large)
+        } else {
+            NavigationView {
+                VStack(spacing: 0) {
+                    // 假搜索栏（点击进入全局搜索）
+                    FakeSearchBar(
+                        placeholder: tabType == .categories ? LocalizedStrings.Category.searchCategories.localized : LocalizedStrings.Category.searchTypes.localized,
+                        onTap: onSearchTap
+                    )
+                    
+                    // 列表内容
+                    if dataManager.isLoading {
+                        LoadingView()
+                    } else if let errorMessage = dataManager.errorMessage {
+                        ErrorView(message: errorMessage) {
+                            dataManager.loadData()
+                        }
+                    } else {
+                        categoryList
+                    }
+                }
+                .navigationTitle(tabType.title)
+                .navigationBarTitleDisplayMode(.large)
+            }
         }
     }
     
