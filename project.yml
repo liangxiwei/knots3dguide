@@ -5,6 +5,21 @@ options:
   localizations:
     - en
     - zh-Hans
+    - da
+    - de
+    - es
+    - fr
+    - it
+    - ja
+    - ko
+    - nl
+    - no
+    - pl
+    - pt
+    - ru
+    - sv
+    - tr
+    - zh-TW
   deploymentTarget:
     iOS: 16
     macOS: 13.0
@@ -56,6 +71,8 @@ targets:
       INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]: UIStatusBarStyleDefault
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
       INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
-      INFOPLIST_KEY_CFBundleDisplayName: Knots 3D Guide
+      INFOPLIST_KEY_CFBundleDisplayName: $(PRODUCT_NAME)
+      INFOPLIST_KEY_CFBundleName: $(PRODUCT_NAME)
+      INFOPLIST_KEY_LSHasLocalizedDisplayName: YES
       INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
       INFOPLIST_KEY_UILaunchScreen_Generation: YES
