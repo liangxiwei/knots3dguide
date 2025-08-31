@@ -340,10 +340,6 @@ struct KnotSearchResultRowView: View {
                         .cornerRadius(2)
                 }
             }
-            
-            Image(systemName: "chevron.right")
-                .foregroundColor(.gray)
-                .font(.caption)
         }
         .padding(.vertical, 8)
     }
