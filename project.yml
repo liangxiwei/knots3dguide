@@ -76,3 +76,4 @@ targets:
       INFOPLIST_KEY_LSHasLocalizedDisplayName: YES
       INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
       INFOPLIST_KEY_UILaunchStoryboardName: LaunchScreen
+      INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
