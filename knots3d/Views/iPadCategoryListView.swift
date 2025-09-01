@@ -141,21 +141,47 @@ struct iPadCategoryListView: View {
         } else {
             let _ = print("📋 显示列表 - 数据数量: \(filteredCategories.count)")
             
-            // 临时简化版本用于调试
-            VStack {
-                Text("找到 \(filteredCategories.count) 个分类")
-                    .font(.headline)
-                    .padding()
-                
-                List(filteredCategories, id: \.id) { category in
-                    Text(category.name)
-                        .font(.body)
-                        .onTapGesture {
+            // 使用ScrollView + LazyVStack 替代List，避免渲染问题
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    Text("找到 \(filteredCategories.count) 个\(tabType == .categories ? "分类" : "类型")")
+                        .font(.headline)
+                        .foregroundColor(.secondary)
+                        .padding()
+                    
+                    ForEach(filteredCategories, id: \.id) { category in
+                        Button(action: {
+                            print("📝 选择了: \(category.name)")
                             selectedCategory = category
                             selectedKnot = nil
+                        }) {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(category.name)
+                                        .font(.headline)
+                                        .foregroundColor(.primary)
+                                    Text(category.desc)
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                        .lineLimit(2)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(.secondary)
+                                    .font(.footnote)
+                            }
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 12)
+                            .background(Color.clear)
                         }
+                        .buttonStyle(.plain)
+                        
+                        if category.id != filteredCategories.last?.id {
+                            Divider()
+                                .padding(.leading, 16)
+                        }
+                    }
                 }
-                .listStyle(.plain)
             }
         }
     }
