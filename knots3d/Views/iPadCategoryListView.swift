@@ -93,7 +93,6 @@ struct iPadCategoryListView: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .padding(.horizontal, 16)
                 .padding(.vertical, 12)
             }
         }
@@ -114,12 +113,14 @@ struct iPadCategoryRowView: View {
         HStack(spacing: 16) {
             categoryImage
             categoryInfo
-            Spacer()
+            Spacer(minLength: 0)
             knotCountBadge
         }
         .padding(.vertical, 8)
+        .padding(.horizontal, 16)
         .background(selectionBackground)
         .overlay(selectionBorder)
+        .contentShape(Rectangle()) // 确保整个区域都可以点击
     }
     
     // MARK: - 子视图组件
