@@ -95,11 +95,15 @@ class DataManager: ObservableObject {
     // MARK: - Data Loading
     
     func loadData() {
-        guard !isLoading else { return } // 防止重复加载
+        guard !isLoading else { 
+            print("⚠️ 数据正在加载中，跳过重复加载")
+            return 
+        }
         
         Task { @MainActor in
             let startTime = CFAbsoluteTimeGetCurrent()
-            print("🚀 开始加载数据...")
+            print("🚀 DataManager开始加载数据...")
+            print("📂 当前语言: \(LanguageManager.shared.currentLanguage)")
             
             isLoading = true
             errorMessage = nil
@@ -114,7 +118,8 @@ class DataManager: ObservableObject {
             case .success(let knotCategories):
                 categories = knotCategories.filter { $0.type == "category" }
                 knotTypes = knotCategories.filter { $0.type == "type" }
-                print("✅ 成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
+                print("✅ DataManager成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
+                print("📋 分类列表: \(categories.map { $0.name }.joined(separator: ", "))")
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
                 print("❌ 分类数据加载失败: \(error)")
@@ -124,7 +129,7 @@ class DataManager: ObservableObject {
             switch knotsResult {
             case .success(let knotsData):
                 allKnots = knotsData.knots
-                print("✅ 成功加载绳结数据: \(allKnots.count) 个绳结")
+                print("✅ DataManager成功加载绳结数据: \(allKnots.count) 个绳结")
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.knotsLoadFailed.localized): \(error.localizedDescription)"
                 print("❌ 绳结数据加载失败: \(error)")

@@ -92,15 +92,19 @@ struct iPadMainView: View {
         .listStyle(.sidebar)
         .navigationTitle(LocalizedStrings.App.title.localized)
         .onChange(of: selectedSidebarItem) { newValue in
+            print("🔄 侧边栏切换: \(String(describing: newValue))")
             // 切换侧边栏项目时，清除选中的分类和绳结
             selectedCategory = nil
             selectedKnot = nil
+            print("✅ 已清空选中状态")
         }
     }
     
     // MARK: - 内容视图（中间列）
     @ViewBuilder
     private var contentView: some View {
+        let _ = print("🎯 contentView渲染 - selectedSidebarItem: \(String(describing: selectedSidebarItem))")
+        
         if let selectedItem = selectedSidebarItem {
             switch selectedItem {
             case .categories:
@@ -109,12 +113,14 @@ struct iPadMainView: View {
                     selectedCategory: $selectedCategory,
                     selectedKnot: $selectedKnot
                 )
+                .id("categories")
             case .types:
                 iPadCategoryListView(
                     tabType: .types,
                     selectedCategory: $selectedCategory,
                     selectedKnot: $selectedKnot
                 )
+                .id("types")
             case .favorites:
                 iPadFavoritesView(selectedKnot: $selectedKnot)
             case .settings:

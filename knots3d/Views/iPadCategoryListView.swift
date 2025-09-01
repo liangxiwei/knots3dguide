@@ -13,6 +13,10 @@ struct iPadCategoryListView: View {
     private var filteredCategories: [KnotCategory] {
         let categories = tabType == .categories ? dataManager.categories : dataManager.knotTypes
         
+        // 调试输出
+        print("🔍 iPad分类视图 - tabType: \(tabType), categories数量: \(dataManager.categories.count), types数量: \(dataManager.knotTypes.count)")
+        print("📋 当前显示类型的数据数量: \(categories.count)")
+        
         if searchText.isEmpty {
             return categories
         } else {
@@ -56,6 +60,16 @@ struct iPadCategoryListView: View {
         }
         .navigationTitle(tabType.title)
         .navigationBarTitleDisplayMode(.large)
+        .onAppear {
+            print("🎯 iPadCategoryListView出现 - tabType: \(tabType)")
+            print("📊 当前数据状态 - categories: \(dataManager.categories.count), types: \(dataManager.knotTypes.count), allKnots: \(dataManager.allKnots.count)")
+            
+            // 如果没有数据，强制加载
+            if dataManager.categories.isEmpty && dataManager.knotTypes.isEmpty && dataManager.allKnots.isEmpty {
+                print("🔄 数据为空，强制加载数据...")
+                dataManager.loadData()
+            }
+        }
     }
     
     // MARK: - 搜索栏
@@ -109,7 +123,10 @@ struct iPadCategoryListView: View {
     // MARK: - 分类内容
     @ViewBuilder
     private var categoryContent: some View {
+        let _ = print("🎯 categoryContent被调用 - filteredCategories.isEmpty: \(filteredCategories.isEmpty)")
+        
         if filteredCategories.isEmpty {
+            let _ = print("📱 显示空状态 - searchText: '\(searchText)', tabType: \(tabType)")
             if searchText.isEmpty {
                 EmptyStateView(
                     title: LocalizedStrings.Category.noData.localized,
@@ -122,18 +139,24 @@ struct iPadCategoryListView: View {
                 )
             }
         } else {
-            List(filteredCategories, selection: $selectedCategory) { category in
-                iPadCategoryRowView(
-                    category: category,
-                    tabType: tabType,
-                    isSelected: selectedCategory?.id == category.id
-                )
-                .onTapGesture {
-                    selectedCategory = category
-                    selectedKnot = nil // 清除选中的绳结
+            let _ = print("📋 显示列表 - 数据数量: \(filteredCategories.count)")
+            
+            // 临时简化版本用于调试
+            VStack {
+                Text("找到 \(filteredCategories.count) 个分类")
+                    .font(.headline)
+                    .padding()
+                
+                List(filteredCategories, id: \.id) { category in
+                    Text(category.name)
+                        .font(.body)
+                        .onTapGesture {
+                            selectedCategory = category
+                            selectedKnot = nil
+                        }
                 }
+                .listStyle(.plain)
             }
-            .listStyle(.insetGrouped)
         }
     }
 }
@@ -147,6 +170,8 @@ struct iPadCategoryRowView: View {
     @StateObject private var dataManager = DataManager.shared
     
     var body: some View {
+        let _ = print("🎯 渲染iPadCategoryRowView - category: \(category.name)")
+        
         HStack(spacing: 16) {
             categoryImage
             categoryInfo
