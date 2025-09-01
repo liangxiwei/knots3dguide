@@ -257,16 +257,17 @@ struct iPadSearchResultRowView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             } placeholder: {
-                RoundedRectangle(cornerRadius: 6)
+                RoundedRectangle(cornerRadius: 8)
                     .fill(Color.gray.opacity(0.3))
                     .overlay(
                         Image(systemName: "link")
+                            .font(.title2)
                             .foregroundColor(.gray)
                     )
             }
-            .frame(width: 40, height: 40)
+            .frame(width: 60, height: 60)
             .clipped()
-            .cornerRadius(6)
+            .cornerRadius(8)
             
             // 内容
             VStack(alignment: .leading, spacing: 4) {
@@ -315,7 +316,7 @@ struct iPadSearchResultRowView: View {
             }
         }
         .padding(.horizontal, 12)
-        .padding(.vertical, 8)
+        .padding(.vertical, 12)
         .background(isSelected ? Color.blue.opacity(0.1) : Color.clear)
         .cornerRadius(8)
         .overlay(
