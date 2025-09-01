@@ -144,15 +144,22 @@ struct iPadKnotDetailView: View {
 
             // 动画视图
             GeometryReader { animationGeometry in
-                let spriteHeight = min(animationGeometry.size.width * 1.2, 320)
-                animationView(width: animationGeometry.size.width, height: spriteHeight)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(Color(.systemBackground))
-                            .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
-                    )
+                // 关键修复：全屏显示时移除原始动画视图，避免SpriteKit实例冲突
+                if !showFullScreenAnimation {
+                    let spriteHeight = min(animationGeometry.size.width * 1.2, 320)
+                    animationView(width: animationGeometry.size.width, height: spriteHeight)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(Color(.systemBackground))
+                                .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
+                        )
+                } else {
+                    // 全屏显示时显示空占位符，保持布局稳定
+                    Rectangle()
+                        .fill(Color.clear)
+                }
             }
-            .frame(height: 420) // 增加高度为控制按钮留出空间
+            .frame(height: 420) // 保持框架高度不变，防止布局跳动
         }
         .padding()
         .background(
