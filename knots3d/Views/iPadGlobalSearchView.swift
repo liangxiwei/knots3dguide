@@ -32,6 +32,7 @@ struct iPadGlobalSearchView: View {
                 // 右侧详情区域
                 if let selectedResult = selectedSearchResult {
                     iPadKnotDetailView(knot: selectedResult.knot)
+                        .id(selectedResult.knot.id) // 强制在绳结切换时重新创建详情视图
                 } else {
                     searchPlaceholderView
                 }
