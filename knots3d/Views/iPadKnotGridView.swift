@@ -7,7 +7,6 @@ struct iPadKnotGridView: View {
     @Binding var selectedKnot: KnotDetail?
     
     @StateObject private var dataManager = DataManager.shared
-    @State private var searchText = ""
     @State private var gridColumns = 3
     @State private var sortOption: SortOption = .name
     
@@ -23,12 +22,7 @@ struct iPadKnotGridView: View {
     }
     
     private var filteredAndSortedKnots: [KnotDetail] {
-        let filtered = searchText.isEmpty ? baseKnots : baseKnots.filter { knot in
-            knot.name.localizedCaseInsensitiveContains(searchText) ||
-            knot.description.localizedCaseInsensitiveContains(searchText)
-        }
-        
-        return sortKnots(filtered, by: sortOption)
+        return sortKnots(baseKnots, by: sortOption)
     }
     
     private var columns: [GridItem] {
@@ -70,30 +64,8 @@ struct iPadKnotGridView: View {
     @ViewBuilder
     private var toolbarSection: some View {
         VStack(spacing: 12) {
-            // 搜索和排序控制
+            // 排序和网格控制
             HStack {
-                // 搜索栏
-                HStack {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.gray)
-                    
-                    TextField(LocalizedStrings.SearchExtended.searchKnots.localized, text: $searchText)
-                        .textFieldStyle(.plain)
-                        .autocorrectionDisabled()
-                        .modifier(ConditionalTextInputModifier())
-                    
-                    if !searchText.isEmpty {
-                        Button(action: { searchText = "" }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundColor(.gray)
-                        }
-                    }
-                }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-                
                 Spacer()
                 
                 // 排序菜单
@@ -149,12 +121,6 @@ struct iPadKnotGridView: View {
                     .foregroundColor(.secondary)
                 
                 Spacer()
-                
-                if !searchText.isEmpty {
-                    Text(LocalizedStrings.SearchExtended.searchResults.localized(with: searchText))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
             }
             .padding(.horizontal)
         }
@@ -186,25 +152,18 @@ struct iPadKnotGridView: View {
     @ViewBuilder
     private var emptyStateView: some View {
         VStack(spacing: 20) {
-            Image(systemName: searchText.isEmpty ? "link" : "magnifyingglass")
+            Image(systemName: "link")
                 .font(.system(size: 48))
                 .foregroundColor(.gray)
             
-            Text(searchText.isEmpty ? LocalizedStrings.KnotList.noKnots.localized : LocalizedStrings.Search.noResults.localized)
+            Text(LocalizedStrings.KnotList.noKnots.localized)
                 .font(.headline)
                 .foregroundColor(.primary)
             
-            if searchText.isEmpty {
-                Text(LocalizedStrings.KnotList.noKnotsInCategory.localized)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-            } else {
-                Button(LocalizedStrings.ActionsExtended.clearSearch.localized) {
-                    searchText = ""
-                }
-                .foregroundColor(.blue)
-            }
+            Text(LocalizedStrings.KnotList.noKnotsInCategory.localized)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
