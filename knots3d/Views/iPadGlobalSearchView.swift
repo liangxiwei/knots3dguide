@@ -4,7 +4,7 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct iPadGlobalSearchView: View {
     @StateObject private var searchManager = SearchManager.shared
-    @Environment(\.presentationMode) private var presentationMode
+    @Environment(\.dismiss) private var dismiss
     @Binding var selectedKnot: KnotDetail?
     
     var body: some View {
@@ -36,22 +36,22 @@ struct iPadGlobalSearchView: View {
                     searchPlaceholderView
                 }
             }
-        }
-        .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                    HStack(spacing: 6) {
-                        Image(systemName: "chevron.left")
-                            .font(.system(size: 17, weight: .medium))
-                        Text(LocalizedStrings.Actions.back.localized)
-                            .font(.system(size: 17))
+            .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        HStack(spacing: 6) {
+                            Image(systemName: "chevron.left")
+                                .font(.system(size: 17, weight: .medium))
+                            Text(LocalizedStrings.Actions.back.localized)
+                                .font(.system(size: 17))
+                        }
+                        .foregroundColor(.blue)
                     }
-                    .foregroundColor(.blue)
                 }
             }
         }
