@@ -148,10 +148,27 @@
 "common_other" = "Other";
 
 /* Knot Detail */
+"knot_detail_animation" = "Demo Animation";
 "knot_detail_animation_demo" = "3D Animation Demo";
 "knot_detail_animation_loading" = "Loading 3D animation...";
+"knot_detail_animation_type" = "Animation Type";
+"knot_detail_drawing_animation" = "Drawing Demo";
+"knot_detail_rotation_360" = "360° Rotation";
 "knot_detail_no_animation_available" = "No Animation Available";
 "knot_detail_detailed_info" = "Detailed Information";
+"knot_detail_details" = "Detailed Information";
+"knot_detail_usage" = "Usage";
+"knot_detail_history" = "History";
+"knot_detail_structure" = "Structure";
+"knot_detail_strength_reliability" = "Strength & Reliability";
+"knot_detail_abok" = "ABOK Number";
+"knot_detail_note" = "Notes";
+"knot_detail_also_known_as" = "Also Known As";
+"knot_detail_related_knots" = "Related Knots";
+"knot_detail_no_related_knots" = "No related knots available";
+"knot_detail_classification" = "Classification";
+"knot_detail_types" = "Types";
+"knot_detail_found_in" = "Found In";
 
 /* Knot List */
 "knot_list_no_knots" = "No knots available";
