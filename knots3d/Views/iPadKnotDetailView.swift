@@ -365,21 +365,53 @@ struct iPadKnotDetailView: View {
             ZStack {
                 Color.black.ignoresSafeArea()
                 
-                VStack {
+                VStack(spacing: 20) {
                     HStack {
                         Spacer()
                         Button(LocalizedStrings.Actions.done.localized) {
                             showFullScreenAnimation = false
                         }
                         .foregroundColor(.white)
+                        .font(.headline)
                         .padding()
                     }
                     
                     let screenSize = fullScreenGeometry.size
-                    let animationSize = min(screenSize.width * 0.8, screenSize.height * 0.7)
+                    let animationSize = min(screenSize.width * 0.85, screenSize.height * 0.6)
                     
-                    animationView(width: animationSize, height: animationSize)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    // 全屏动画视图
+                    Group {
+                        if let animation = currentAnimation {
+                            SpriteKitAnimationView(
+                                width: animationSize,
+                                height: animationSize,
+                                showControls: true,
+                                animationData: KnotAnimation(
+                                    drawingAnimation: animation,
+                                    rotation360: selectedKnot.animation?.rotation360
+                                )
+                            )
+                            .id("fullscreen-\(selectedKnot.id)") // 确保全屏时重新创建
+                        } else {
+                            // 静态图片占位
+                            CompatibleAsyncImage(url: staticImageURL) { image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: animationSize, height: animationSize)
+                            } placeholder: {
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.gray.opacity(0.3))
+                                    .frame(width: animationSize, height: animationSize)
+                                    .overlay(
+                                        Image(systemName: "link")
+                                            .font(.largeTitle)
+                                            .foregroundColor(.gray)
+                                    )
+                            }
+                        }
+                    }
+                    .cornerRadius(12)
                     
                     Spacer()
                 }
