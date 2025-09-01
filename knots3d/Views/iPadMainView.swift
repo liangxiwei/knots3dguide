@@ -81,10 +81,12 @@ struct iPadMainView: View {
             selectedCategory = nil
             selectedKnot = nil
             
-            // 根据tab类型调整列布局
-            if newValue == .favorites {
+            // 根据tab类型调整列布局 - 但不强制收藏tab为detailOnly，允许用户手动切换
+            if newValue == .favorites && columnVisibility == .doubleColumn {
+                // 仅在当前为doubleColumn时才切换到detailOnly，其他情况保持用户选择
                 columnVisibility = .detailOnly
-            } else {
+            } else if newValue != .favorites && columnVisibility == .detailOnly {
+                // 非收藏tab默认使用doubleColumn
                 columnVisibility = .doubleColumn
             }
             print("✅ 已清空选中状态，布局: \(columnVisibility)")
@@ -113,8 +115,15 @@ struct iPadMainView: View {
                 )
                 .id("types")
             case .favorites:
-                // 收藏tab不需要中间列，显示空视图
-                Color.clear
+                // 收藏tab：根据列布局显示不同内容
+                if columnVisibility == .detailOnly {
+                    // 2栏模式：不显示中间列
+                    Color.clear
+                } else {
+                    // 3栏模式：在中间列显示收藏内容
+                    iPadFavoritesView(selectedKnot: $selectedKnot)
+                        .id("favorites")
+                }
             case .settings:
                 SettingsView()
             }
@@ -127,11 +136,21 @@ struct iPadMainView: View {
     @ViewBuilder
     private var detailView: some View {
         Group {
-            if let selectedKnot = selectedKnot {
+            if selectedSidebarItem == .favorites {
+                // 收藏tab：根据列布局显示不同内容
+                if columnVisibility == .detailOnly {
+                    // 2栏模式：在详情列显示收藏网格
+                    iPadFavoritesDetailView(selectedKnot: $selectedKnot)
+                } else {
+                    // 3栏模式：显示占位视图或绳结详情
+                    if let selectedKnot = selectedKnot {
+                        iPadKnotDetailView(knot: selectedKnot)
+                    } else {
+                        iPadPlaceholderView()
+                    }
+                }
+            } else if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)
-            } else if selectedSidebarItem == .favorites {
-                // 收藏tab：直接在详情列显示收藏网格
-                iPadFavoritesDetailView(selectedKnot: $selectedKnot)
             } else if let selectedCategory = selectedCategory {
                 iPadKnotGridView(
                     category: selectedCategory,
