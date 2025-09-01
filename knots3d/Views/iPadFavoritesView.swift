@@ -147,9 +147,6 @@ struct iPadFavoriteRowView: View {
             knotInfo
             
             Spacer()
-            
-            // 收藏状态图标
-            favoriteIcon
         }
         .padding(.vertical, 8)
         .background(selectionBackground)
@@ -214,18 +211,6 @@ struct iPadFavoriteRowView: View {
         }
     }
     
-    @ViewBuilder
-    private var favoriteIcon: some View {
-        Image(systemName: "heart.fill")
-            .font(.title3)
-            .foregroundColor(.red)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.red.opacity(0.1))
-            )
-    }
     
     @ViewBuilder
     private var selectionBackground: some View {
