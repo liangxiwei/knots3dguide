@@ -30,6 +30,11 @@
 "search_match_category" = "Category Match";
 "search_match_type" = "Type Match";
 "search_match_fuzzy" = "Fuzzy Match";
+"search_all_knots" = "Search all knots";
+"search_knots" = "Search knots";
+"search_favorites" = "Search favorites";
+"search_results_for_query" = "Search results for \"%@\"";
+"search_filtered_results" = "Showing %d of %d results";
 
 /* Knot Detail Page */
 "detail_usage" = "Usage";
@@ -58,6 +63,7 @@
 "favorites_remove" = "Remove from Favorites";
 "favorites_added" = "Added to favorites";
 "favorites_removed" = "Removed from favorites";
+"favorites_total_favorites" = "Total %d favorites";
 
 /* Settings */
 "settings_language" = "Language";
@@ -127,6 +133,11 @@
 "common_try_suggestions" = "Try searching for:";
 "common_version" = "Version:";
 "common_build_date" = "Build Date:";
+"common_total_knots" = "Total %d knots";
+"common_knots" = "knots";
+"common_columns" = "columns";
+"common_sort_by" = "Sort by";
+"common_and_more" = "and %d more";
 
 /* Knot Detail */
 "knot_detail_animation_demo" = "3D Animation Demo";
@@ -164,3 +175,9 @@
 "search_stats_types" = "%d types";
 "search_stats_knots" = "%d knots";
 "search_stats_match_type" = "match";
+
+/* Sort Options */
+"sort_name_asc" = "Name (A-Z)";
+"sort_name_desc" = "Name (Z-A)";
+"sort_favorites" = "Favorites First";
+"sort_date_added" = "Date Added";
