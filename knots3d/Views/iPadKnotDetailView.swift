@@ -8,6 +8,7 @@ struct iPadKnotDetailView: View {
     @State private var selectedAnimationType: AnimationType = .drawing
     @State private var showFullScreenAnimation = false
     @State private var selectedKnot: KnotDetail
+    @State private var shouldScrollToTop = false
     
     init(knot: KnotDetail) {
         self.knot = knot
@@ -55,6 +56,14 @@ struct iPadKnotDetailView: View {
                             classificationSection
                         }
                         .padding()
+                    }
+                }
+                .onChange(of: shouldScrollToTop) { _ in
+                    if shouldScrollToTop {
+                        withAnimation(.easeOut(duration: 0.5)) {
+                            proxy.scrollTo("top", anchor: .top)
+                        }
+                        shouldScrollToTop = false
                     }
                 }
             }
@@ -209,8 +218,9 @@ struct iPadKnotDetailView: View {
                     ], spacing: 12) {
                         ForEach(relatedKnots.prefix(4)) { relatedKnot in
                             RelatedKnotCardView(knot: relatedKnot) {
-                                // 点击相关绳结，切换到对应绳结详情
+                                // 点击相关绳结，切换到对应绳结详情并回到顶部
                                 selectedKnot = relatedKnot
+                                shouldScrollToTop = true
                             }
                         }
                     }
