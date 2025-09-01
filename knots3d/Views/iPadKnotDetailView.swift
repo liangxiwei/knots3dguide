@@ -336,6 +336,7 @@ struct iPadKnotDetailView: View {
                         rotation360: selectedKnot.animation?.rotation360
                     )
                 )
+                .id(selectedKnot.id) // 强制在绳结切换时重新创建动画视图
             } else {
                 // 静态图片占位
                 CompatibleAsyncImage(url: staticImageURL) { image in
@@ -353,6 +354,7 @@ struct iPadKnotDetailView: View {
                                 .foregroundColor(.gray)
                         )
                 }
+                .id(selectedKnot.id) // 确保静态图片也会正确更新
             }
         }
         .cornerRadius(12)
