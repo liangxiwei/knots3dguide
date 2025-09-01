@@ -137,6 +137,9 @@ class LanguageManager: ObservableObject {
         "sort_favorites": "收藏优先",
         
         // Actions
+        "action_back": "返回",
+        "action_cancel": "取消",
+        "action_done": "完成",
         "actions_cancel": "取消",
         "actions_done": "完成",
         "actions_clear_search": "清除搜索",

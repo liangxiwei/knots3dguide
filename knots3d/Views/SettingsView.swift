@@ -76,8 +76,8 @@ struct SettingsView: View {
                 }
                 
         }
-        .actionSheet(isPresented: $showLanguagePicker) {
-            languageActionSheet
+        .sheet(isPresented: $showLanguagePicker) {
+            languagePickerView
         }
     }
     
@@ -92,17 +92,51 @@ struct SettingsView: View {
         return "\(version) (\(build))"
     }
     
-    private var languageActionSheet: ActionSheet {
-        let buttons = languageManager.availableLanguages.map { language in
-            ActionSheet.Button.default(Text(language.name)) {
-                languageManager.setLanguage(language.code)
+    private var languagePickerView: some View {
+        NavigationView {
+            List {
+                ForEach(languageManager.availableLanguages, id: \.code) { language in
+                    Button(action: {
+                        languageManager.setLanguage(language.code)
+                        showLanguagePicker = false
+                    }) {
+                        HStack {
+                            Text(language.name)
+                                .foregroundColor(.primary)
+                            
+                            Spacer()
+                            
+                            if language.code == languageManager.currentLanguage {
+                                Image(systemName: "checkmark")
+                                    .foregroundColor(.blue)
+                                    .font(.body.weight(.medium))
+                            }
+                        }
+                    }
+                }
             }
-        } + [ActionSheet.Button.cancel()]
-        
-        return ActionSheet(
-            title: Text(LocalizedStrings.Settings.language.localized),
-            buttons: buttons
-        )
+            .navigationTitle(LocalizedStrings.Settings.language.localized)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(LocalizedStrings.Actions.done.localized) {
+                        showLanguagePicker = false
+                    }
+                }
+            }
+        }
+        .modifier(PresentationDetentsModifier())
+    }
+}
+
+/// 条件性presentationDetents修饰符
+struct PresentationDetentsModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 16.0, *) {
+            content.presentationDetents([.medium])
+        } else {
+            content
+        }
     }
 }
 
