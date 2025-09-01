@@ -80,7 +80,14 @@ struct iPadMainView: View {
             // 切换侧边栏项目时，清除选中的分类和绳结
             selectedCategory = nil
             selectedKnot = nil
-            print("✅ 已清空选中状态")
+            
+            // 根据tab类型调整列布局
+            if newValue == .favorites {
+                columnVisibility = .detailOnly
+            } else {
+                columnVisibility = .doubleColumn
+            }
+            print("✅ 已清空选中状态，布局: \(columnVisibility)")
         }
     }
     
@@ -106,7 +113,8 @@ struct iPadMainView: View {
                 )
                 .id("types")
             case .favorites:
-                iPadFavoritesView(selectedKnot: $selectedKnot)
+                // 收藏tab不需要中间列，显示空视图
+                Color.clear
             case .settings:
                 SettingsView()
             }
@@ -121,6 +129,9 @@ struct iPadMainView: View {
         Group {
             if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)
+            } else if selectedSidebarItem == .favorites {
+                // 收藏tab：直接在详情列显示收藏网格
+                iPadFavoritesDetailView(selectedKnot: $selectedKnot)
             } else if let selectedCategory = selectedCategory {
                 iPadKnotGridView(
                     category: selectedCategory,
