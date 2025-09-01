@@ -139,14 +139,15 @@ struct iPadKnotDetailView: View {
             }
             
             // 动画视图
-            animationView
-                .aspectRatio(1, contentMode: .fit)
-                .frame(maxHeight: 400)
-                .background(
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(Color(.systemBackground))
-                        .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
-                )
+            GeometryReader { animationGeometry in
+                animationView(width: animationGeometry.size.width, height: min(animationGeometry.size.width * 1.5, 400))
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color(.systemBackground))
+                            .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
+                    )
+            }
+            .frame(height: 320) // 设置GeometryReader的高度
         }
         .padding()
         .background(
@@ -307,13 +308,17 @@ struct iPadKnotDetailView: View {
         }
     }
     
-    private var animationView: some View {
+    @ViewBuilder
+    private func animationView(width: CGFloat, height: CGFloat) -> some View {
         Group {
             if let animation = currentAnimation {
                 SpriteKitAnimationView(
+                    width: width,
+                    height: height,
+                    showControls: true,
                     animationData: KnotAnimation(
                         drawingAnimation: animation,
-                        rotation360: nil
+                        rotation360: knot.animation?.rotation360
                     )
                 )
             } else {
@@ -322,9 +327,11 @@ struct iPadKnotDetailView: View {
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: width, height: height)
                 } placeholder: {
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color.gray.opacity(0.3))
+                        .frame(width: width, height: height)
                         .overlay(
                             Image(systemName: "link")
                                 .font(.largeTitle)
@@ -337,23 +344,28 @@ struct iPadKnotDetailView: View {
     }
     
     private var fullScreenAnimationView: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
-            
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(LocalizedStrings.Actions.done.localized) {
-                        showFullScreenAnimation = false
+        GeometryReader { fullScreenGeometry in
+            ZStack {
+                Color.black.ignoresSafeArea()
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button(LocalizedStrings.Actions.done.localized) {
+                            showFullScreenAnimation = false
+                        }
+                        .foregroundColor(.white)
+                        .padding()
                     }
-                    .foregroundColor(.white)
-                    .padding()
+                    
+                    let screenSize = fullScreenGeometry.size
+                    let animationSize = min(screenSize.width * 0.8, screenSize.height * 0.7)
+                    
+                    animationView(width: animationSize, height: animationSize)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
+                    Spacer()
                 }
-                
-                animationView
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                
-                Spacer()
             }
         }
     }
