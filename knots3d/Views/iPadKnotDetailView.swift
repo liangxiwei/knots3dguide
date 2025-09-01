@@ -7,17 +7,25 @@ struct iPadKnotDetailView: View {
     @StateObject private var dataManager = DataManager.shared
     @State private var selectedAnimationType: AnimationType = .drawing
     @State private var showFullScreenAnimation = false
+    @State private var selectedKnot: KnotDetail
+    
+    init(knot: KnotDetail) {
+        self.knot = knot
+        self._selectedKnot = State(initialValue: knot)
+    }
     
     private var isFavorite: Bool {
-        dataManager.favoriteKnots.contains(knot.id)
+        dataManager.favoriteKnots.contains(selectedKnot.id)
     }
     
     var body: some View {
         GeometryReader { geometry in
-            ScrollView {
-                VStack(spacing: 0) {
-                    // 顶部信息区域
-                    headerSection
+            ScrollViewReader { proxy in
+                ScrollView {
+                    VStack(spacing: 0) {
+                        // 顶部信息区域
+                        headerSection
+                            .id("top")
                     
                     if geometry.size.width > 800 {
                         // 横屏或大屏幕：左右分栏布局
@@ -32,7 +40,8 @@ struct iPadKnotDetailView: View {
                             // 右侧：详情信息
                             VStack(alignment: .leading, spacing: 24) {
                                 detailsSection
-                                relatedAndClassificationSection
+                                relatedKnotsInlineSection
+                                classificationSection
                             }
                             .frame(maxWidth: .infinity)
                         }
@@ -42,14 +51,16 @@ struct iPadKnotDetailView: View {
                         VStack(spacing: 24) {
                             animationSection
                             detailsSection
-                            relatedAndClassificationSection
+                            relatedKnotsInlineSection
+                            classificationSection
                         }
                         .padding()
                     }
                 }
             }
+            }
         }
-        .navigationTitle(knot.name)
+        .navigationTitle(selectedKnot.name)
         .navigationBarTitleDisplayMode(.inline)
         .fullScreenCover(isPresented: $showFullScreenAnimation) {
             fullScreenAnimationView
@@ -63,7 +74,7 @@ struct iPadKnotDetailView: View {
             // 绳结标题和别名
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text(knot.name)
+                    Text(selectedKnot.name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
@@ -78,7 +89,7 @@ struct iPadKnotDetailView: View {
                     }
                 }
                 
-                if let aliases = knot.aliases, !aliases.isEmpty {
+                if let aliases = selectedKnot.aliases, !aliases.isEmpty {
                     Text(LocalizedStrings.KnotDetailExtended.alsoKnownAs.localized + ": " + aliases.joined(separator: ", "))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
@@ -90,7 +101,7 @@ struct iPadKnotDetailView: View {
             }
             
             // 绳结描述
-            Text(knot.description)
+            Text(selectedKnot.description)
                 .font(.body)
                 .foregroundColor(.primary)
                 .lineLimit(nil)
@@ -151,22 +162,22 @@ struct iPadKnotDetailView: View {
             
             VStack(spacing: 12) {
                 detailRow(title: LocalizedStrings.KnotDetailExtended.usage.localized, 
-                         content: knot.details.usage)
+                         content: selectedKnot.details.usage)
                 
                 detailRow(title: LocalizedStrings.KnotDetailExtended.history.localized, 
-                         content: knot.details.history)
+                         content: selectedKnot.details.history)
                 
                 detailRow(title: LocalizedStrings.KnotDetailExtended.structure.localized, 
-                         content: knot.details.structure)
+                         content: selectedKnot.details.structure)
                 
                 detailRow(title: LocalizedStrings.KnotDetailExtended.strengthReliability.localized, 
-                         content: knot.details.strengthReliability)
+                         content: selectedKnot.details.strengthReliability)
                 
                 detailRowWithLeftAlignment(title: LocalizedStrings.KnotDetailExtended.abok.localized, 
-                                          content: knot.details.abok)
+                                          content: selectedKnot.details.abok)
                 
                 detailRow(title: LocalizedStrings.KnotDetailExtended.note.localized, 
-                         content: knot.details.note)
+                         content: selectedKnot.details.note)
             }
         }
         .padding()
@@ -174,59 +185,50 @@ struct iPadKnotDetailView: View {
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.secondarySystemGroupedBackground))
         )
-    }
-    
-    // MARK: - 相关绳结和分类信息区域
-    @ViewBuilder
-    private var relatedAndClassificationSection: some View {
-        VStack(spacing: 20) {
-            // 相关绳结
-            if let related = knot.related, !related.isEmpty {
-                relatedKnotsSection(relatedNames: related)
-            }
-            
-            // 分类信息
-            classificationSection
-        }
     }
     
     // MARK: - 相关绳结区域
     @ViewBuilder
-    private func relatedKnotsSection(relatedNames: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(LocalizedStrings.KnotDetailExtended.relatedKnots.localized)
-                .font(.title2)
-                .fontWeight(.semibold)
-            
-            let relatedKnots = dataManager.getKnotsByNames(relatedNames)
-            
-            if relatedKnots.isEmpty {
-                Text(LocalizedStrings.KnotDetailExtended.noRelatedKnots.localized)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            } else {
-                LazyVGrid(columns: [
-                    GridItem(.flexible()),
-                    GridItem(.flexible())
-                ], spacing: 12) {
-                    ForEach(relatedKnots.prefix(4)) { relatedKnot in
-                        RelatedKnotCardView(knot: relatedKnot)
+    private var relatedKnotsInlineSection: some View {
+        if let related = selectedKnot.related, !related.isEmpty {
+            VStack(alignment: .leading, spacing: 16) {
+                Text(LocalizedStrings.KnotDetailExtended.relatedKnots.localized)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
+                let relatedKnots = dataManager.getKnotsByNames(related)
+                
+                if relatedKnots.isEmpty {
+                    Text(LocalizedStrings.KnotDetailExtended.noRelatedKnots.localized)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                } else {
+                    LazyVGrid(columns: [
+                        GridItem(.flexible()),
+                        GridItem(.flexible())
+                    ], spacing: 12) {
+                        ForEach(relatedKnots.prefix(4)) { relatedKnot in
+                            RelatedKnotCardView(knot: relatedKnot) {
+                                // 点击相关绳结，切换到对应绳结详情
+                                selectedKnot = relatedKnot
+                            }
+                        }
+                    }
+                    
+                    if relatedKnots.count > 4 {
+                        Text(LocalizedStrings.CommonExtended.andMore.localized(with: relatedKnots.count - 4))
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                            .padding(.top, 8)
                     }
                 }
-                
-                if relatedKnots.count > 4 {
-                    Text(LocalizedStrings.CommonExtended.andMore.localized(with: relatedKnots.count - 4))
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                        .padding(.top, 8)
-                }
             }
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color(.secondarySystemGroupedBackground))
+            )
         }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(Color(.secondarySystemGroupedBackground))
-        )
     }
     
     // MARK: - 分类信息区域
@@ -239,19 +241,19 @@ struct iPadKnotDetailView: View {
             
             VStack(alignment: .leading, spacing: 12) {
                 // 绳结类型
-                if !knot.classification.type.isEmpty {
+                if !selectedKnot.classification.type.isEmpty {
                     classificationRow(
                         title: LocalizedStrings.KnotDetailExtended.types.localized,
-                        items: knot.classification.type,
+                        items: selectedKnot.classification.type,
                         color: .blue
                     )
                 }
                 
                 // 应用场景
-                if !knot.classification.foundIn.isEmpty {
+                if !selectedKnot.classification.foundIn.isEmpty {
                     classificationRow(
                         title: LocalizedStrings.KnotDetailExtended.foundIn.localized,
-                        items: knot.classification.foundIn,
+                        items: selectedKnot.classification.foundIn,
                         color: .green
                     )
                 }
@@ -321,7 +323,7 @@ struct iPadKnotDetailView: View {
                     showControls: true,
                     animationData: KnotAnimation(
                         drawingAnimation: animation,
-                        rotation360: knot.animation?.rotation360
+                        rotation360: selectedKnot.animation?.rotation360
                     )
                 )
             } else {
@@ -378,20 +380,20 @@ struct iPadKnotDetailView: View {
     private var currentAnimation: AnimationFiles? {
         switch selectedAnimationType {
         case .drawing:
-            return knot.animation?.drawingAnimation
+            return selectedKnot.animation?.drawingAnimation
         case .rotation:
-            return knot.animation?.rotation360
+            return selectedKnot.animation?.rotation360
         }
     }
     
     private var hasMultipleAnimations: Bool {
-        let hasDrawing = knot.animation?.drawingAnimation != nil
-        let hasRotation = knot.animation?.rotation360 != nil
+        let hasDrawing = selectedKnot.animation?.drawingAnimation != nil
+        let hasRotation = selectedKnot.animation?.rotation360 != nil
         return hasDrawing && hasRotation
     }
     
     private var staticImageURL: URL? {
-        if let cover = knot.cover,
+        if let cover = selectedKnot.cover,
            let imagePath = dataManager.getImagePath(for: cover) {
             return URL(fileURLWithPath: imagePath)
         }
@@ -399,7 +401,7 @@ struct iPadKnotDetailView: View {
     }
     
     private func toggleFavorite() {
-        dataManager.toggleFavorite(knot.id)
+        dataManager.toggleFavorite(selectedKnot.id)
     }
 }
 
@@ -412,37 +414,42 @@ enum AnimationType: CaseIterable {
 // MARK: - 相关绳结卡片视图
 struct RelatedKnotCardView: View {
     let knot: KnotDetail
+    let onTap: () -> Void
     @StateObject private var dataManager = DataManager.shared
     
     var body: some View {
-        VStack(spacing: 8) {
-            CompatibleAsyncImage(url: knotImageURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.gray.opacity(0.3))
-                    .overlay(
-                        Image(systemName: "link")
-                            .foregroundColor(.gray)
-                    )
-            }
-            .frame(height: 80)
-            .clipped()
-            .cornerRadius(8)
+        Button(action: onTap) {
+            VStack(spacing: 8) {
+                CompatibleAsyncImage(url: knotImageURL) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color.gray.opacity(0.3))
+                        .overlay(
+                            Image(systemName: "link")
+                                .foregroundColor(.gray)
+                        )
+                }
+                .frame(height: 120) // 增加高度从80到120，让图片更完整
+                .clipped()
+                .cornerRadius(8)
             
-            Text(knot.name)
-                .font(.caption)
-                .fontWeight(.medium)
-                .lineLimit(2)
-                .multilineTextAlignment(.center)
+                Text(knot.name)
+                    .font(.caption)
+                    .fontWeight(.medium)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.primary)
+            }
+            .padding(8)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color(.tertiarySystemGroupedBackground))
+            )
         }
-        .padding(8)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(.tertiarySystemGroupedBackground))
-        )
+        .buttonStyle(PlainButtonStyle())
     }
     
     private var knotImageURL: URL? {
