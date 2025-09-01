@@ -179,11 +179,19 @@ class DataManager: ObservableObject {
         let currentLanguage = LanguageManager.shared.currentLanguage
         let localizedFileName = "category_\(currentLanguage)"
         
-        // 先尝试加载多语言版本的JSON文件
-        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
+        // 先尝试加载多语言版本的JSON文件，查找Resources/json目录
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
             print("✅ 成功加载多语言分类文件: \(localizedFileName).json")
+            return knotCategories
+        }
+        
+        // 备用：不指定目录查找
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
+            print("✅ 成功加载多语言分类文件: \(localizedFileName).json (根目录)")
             return knotCategories
         }
         
@@ -221,11 +229,19 @@ class DataManager: ObservableObject {
         let currentLanguage = LanguageManager.shared.currentLanguage
         let localizedFileName = "detailed_knots_data_\(currentLanguage)"
         
-        // 先尝试加载多语言版本的JSON文件
-        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
+        // 先尝试加载多语言版本的JSON文件，查找Resources/detail目录
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/detail") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
             print("✅ 成功加载多语言绳结文件: \(localizedFileName).json")
+            return allKnotsData
+        }
+        
+        // 备用：不指定目录查找
+        if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
+            print("✅ 成功加载多语言绳结文件: \(localizedFileName).json (根目录)")
             return allKnotsData
         }
         

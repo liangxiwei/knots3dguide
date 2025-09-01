@@ -29,6 +29,7 @@ struct iPadMainView: View {
             GlobalSearchView()
         }
         .onAppear {
+            print("🍎 iPad界面出现，准备加载数据...")
             setupInitialData()
         }
     }
@@ -142,12 +143,17 @@ struct iPadMainView: View {
     
     // MARK: - 初始化数据
     private func setupInitialData() {
+        print("📊 检查数据状态 - categories: \(dataManager.categories.count), types: \(dataManager.knotTypes.count), knots: \(dataManager.allKnots.count)")
+        
         if dataManager.categories.isEmpty && dataManager.knotTypes.isEmpty && dataManager.allKnots.isEmpty {
+            print("🔄 数据为空，开始加载...")
             dataManager.loadData()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 dataManager.preloadImagePaths()
             }
+        } else {
+            print("✅ 数据已存在，无需重新加载")
         }
     }
 }

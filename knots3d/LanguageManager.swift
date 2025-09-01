@@ -49,8 +49,109 @@ class LanguageManager: ObservableObject {
     }
     
     func localizedString(for key: String) -> String {
-        return currentBundle?.localizedString(forKey: key, value: nil, table: nil) ?? key
+        // 先尝试从bundle获取本地化字符串
+        if let localizedString = currentBundle?.localizedString(forKey: key, value: nil, table: nil),
+           localizedString != key {
+            return localizedString
+        }
+        
+        // 如果没有找到，使用硬编码的fallback字符串
+        return fallbackLocalizedStrings[key] ?? key
     }
+    
+    // MARK: - Fallback本地化字符串
+    private let fallbackLocalizedStrings: [String: String] = [
+        // App
+        "app_title": "绳结指南",
+        "app_welcome_title": "欢迎使用绳结指南",
+        "app_welcome_subtitle": "学习和掌握各种实用绳结",
+        
+        // Tab Bar
+        "tab_categories": "用途分类",
+        "tab_types": "绳结类型", 
+        "tab_favorites": "收藏",
+        "tab_settings": "设置",
+        
+        // Common
+        "common_personal": "个人",
+        "common_other": "其他",
+        "common_select_item": "选择一个项目",
+        "common_knots": "个绳结",
+        "common_columns": "列",
+        "common_total_knots": "共 %d 个绳结",
+        "common_sort_by": "排序",
+        "common_and_more": "还有 %d 个",
+        
+        // Search
+        "search_all_knots": "搜索所有绳结",
+        "search_knots": "搜索绳结", 
+        "search_favorites": "搜索收藏",
+        "search_results_for_query": "搜索 \"%@\" 的结果",
+        "search_filtered_results": "显示 %d 个，共 %d 个结果",
+        "search_no_results": "未找到结果",
+        "search_discover_knots": "发现绳结",
+        "search_found_knots": "找到绳结",
+        "search_stats_knots": "个绳结",
+        
+        // Category
+        "category_search_categories": "搜索分类",
+        "category_search_types": "搜索类型",
+        "category_no_data": "暂无数据",
+        
+        // Knot Detail
+        "knot_detail_animation": "演示动画",
+        "knot_detail_animation_type": "动画类型",
+        "knot_detail_drawing_animation": "绘制演示",
+        "knot_detail_rotation_360": "360°旋转",
+        "knot_detail_details": "详细信息",
+        "knot_detail_usage": "用途",
+        "knot_detail_history": "历史",
+        "knot_detail_structure": "结构",
+        "knot_detail_strength_reliability": "强度与可靠性",
+        "knot_detail_abok": "ABOK编号",
+        "knot_detail_note": "注意事项",
+        "knot_detail_also_known_as": "别名",
+        "knot_detail_related_knots": "相关绳结",
+        "knot_detail_no_related_knots": "暂无相关绳结",
+        "knot_detail_classification": "分类信息",
+        "knot_detail_types": "类型",
+        "knot_detail_found_in": "应用场景",
+        
+        // Knot List
+        "knot_list_no_knots": "暂无绳结",
+        "knot_list_no_knots_in_category": "该分类下暂无绳结",
+        
+        // Favorites
+        "favorites_remove": "取消收藏",
+        "favorites_no_favorites": "暂无收藏",
+        "favorites_add_favorites_hint": "在绳结详情页点击心形图标添加收藏",
+        "favorites_total_favorites": "共 %d 个收藏",
+        "favorites_remove_confirm_title": "确认取消收藏",
+        "favorites_remove_confirm_message": "确定要取消收藏 \"%@\" 吗？",
+        "favorites_add_some_knots": "添加一些绳结",
+        
+        // Sort
+        "sort_date_added": "添加时间",
+        "sort_name_asc": "名称升序",
+        "sort_name_desc": "名称降序", 
+        "sort_favorites": "收藏优先",
+        
+        // Actions
+        "actions_cancel": "取消",
+        "actions_done": "完成",
+        "actions_clear_search": "清除搜索",
+        
+        // Loading
+        "loading_knots": "加载绳结中...",
+        
+        // Data Errors
+        "data_error_file_not_found": "文件未找到",
+        "data_error_decoding_error": "解码错误",
+        "data_error_network_error": "网络错误",
+        "data_error_categories_load_failed": "分类加载失败",
+        "data_error_knots_load_failed": "绳结数据加载失败",
+        "data_error_data_manager_released": "数据管理器已释放"
+    ]
     
     var availableLanguages: [(code: String, name: String)] {
         return [
