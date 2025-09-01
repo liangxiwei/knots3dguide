@@ -133,7 +133,7 @@ struct SettingsView: View {
 struct PresentationDetentsModifier: ViewModifier {
     func body(content: Content) -> some View {
         if #available(iOS 16.0, *) {
-            content.presentationDetents([.medium])
+            content.presentationDetents([.fraction(0.8)])
         } else {
             content
         }
