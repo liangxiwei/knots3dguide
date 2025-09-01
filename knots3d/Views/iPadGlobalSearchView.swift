@@ -40,6 +40,20 @@ struct iPadGlobalSearchView: View {
         .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack(spacing: 6) {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 17, weight: .medium))
+                        Text(LocalizedStrings.Actions.back.localized)
+                            .font(.system(size: 17))
+                    }
+                    .foregroundColor(.blue)
+                }
+            }
+            
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(LocalizedStrings.Actions.done.localized) {
                     presentationMode.wrappedValue.dismiss()
