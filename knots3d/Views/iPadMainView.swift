@@ -134,11 +134,8 @@ struct iPadMainView: View {
             selectedKnot = nil
             
             // 根据tab类型调整列布局（设置页面不使用分栏布局，所以不需要处理）
-            if newValue == .favorites {
-                // 收藏tab使用detailOnly（隐藏第三列）
-                columnVisibility = .detailOnly
-            } else if newValue != .favorites && newValue != .settings {
-                // 分类和类型tab使用doubleColumn（显示三列）
+            if newValue != .settings {
+                // 分类、类型和收藏tab都使用doubleColumn（显示三列）
                 columnVisibility = .doubleColumn
             }
             print("✅ 已清空选中状态，布局: \(columnVisibility)")
@@ -167,15 +164,9 @@ struct iPadMainView: View {
                 )
                 .id("types")
             case .favorites:
-                // 收藏tab：根据列布局显示不同内容
-                if columnVisibility == .detailOnly {
-                    // 2栏模式：不显示中间列
-                    Color.clear
-                } else {
-                    // 3栏模式：在中间列显示收藏内容
-                    iPadFavoritesView(selectedKnot: $selectedKnot)
-                        .id("favorites")
-                }
+                // 收藏tab：在中间列显示收藏列表
+                iPadFavoritesView(selectedKnot: $selectedKnot)
+                    .id("favorites")
             case .settings:
                 // 设置页面现在使用独立的NavigationStack，不会进入这里
                 Color.clear
@@ -190,17 +181,11 @@ struct iPadMainView: View {
     private var detailView: some View {
         Group {
             if selectedSidebarItem == .favorites {
-                // 收藏tab：根据列布局显示不同内容
-                if columnVisibility == .detailOnly {
-                    // 2栏模式：在详情列显示收藏网格
-                    iPadFavoritesDetailView(selectedKnot: $selectedKnot)
+                // 收藏tab：显示绳结详情或占位视图
+                if let selectedKnot = selectedKnot {
+                    iPadKnotDetailView(knot: selectedKnot)
                 } else {
-                    // 3栏模式：显示占位视图或绳结详情
-                    if let selectedKnot = selectedKnot {
-                        iPadKnotDetailView(knot: selectedKnot)
-                    } else {
-                        iPadPlaceholderView()
-                    }
+                    iPadPlaceholderView()
                 }
             } else if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)
