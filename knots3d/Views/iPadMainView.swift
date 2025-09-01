@@ -26,7 +26,11 @@ struct iPadMainView: View {
         .navigationSplitViewStyle(.balanced)
         .id(languageManager.currentLanguage)
         .fullScreenCover(isPresented: $showGlobalSearch) {
-            GlobalSearchView()
+            if #available(iOS 16.0, *) {
+                iPadGlobalSearchView(selectedKnot: $selectedKnot)
+            } else {
+                GlobalSearchView()
+            }
         }
         .onAppear {
             print("🍎 iPad界面出现，准备加载数据...")
@@ -114,16 +118,27 @@ struct iPadMainView: View {
     // MARK: - 详情视图（右侧列）
     @ViewBuilder
     private var detailView: some View {
-        if let selectedKnot = selectedKnot {
-            iPadKnotDetailView(knot: selectedKnot)
-        } else if let selectedCategory = selectedCategory {
-            iPadKnotGridView(
-                category: selectedCategory,
-                tabType: selectedSidebarItem == .categories ? .categories : .types,
-                selectedKnot: $selectedKnot
-            )
-        } else {
-            iPadPlaceholderView()
+        Group {
+            if let selectedKnot = selectedKnot {
+                iPadKnotDetailView(knot: selectedKnot)
+            } else if let selectedCategory = selectedCategory {
+                iPadKnotGridView(
+                    category: selectedCategory,
+                    tabType: selectedSidebarItem == .categories ? .categories : .types,
+                    selectedKnot: $selectedKnot
+                )
+            } else {
+                iPadPlaceholderView()
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: { showGlobalSearch = true }) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.title2)
+                }
+                .accessibilityLabel(LocalizedStrings.SearchExtended.searchAllKnots.localized)
+            }
         }
     }
     

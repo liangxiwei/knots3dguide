@@ -7,8 +7,6 @@ struct iPadCategoryListView: View {
     @Binding var selectedKnot: KnotDetail?
     
     @StateObject private var dataManager = DataManager.shared
-    @State private var searchText = ""
-    @State private var isSearching = false
     
     private var filteredCategories: [KnotCategory] {
         let categories = tabType == .categories ? dataManager.categories : dataManager.knotTypes
@@ -17,14 +15,7 @@ struct iPadCategoryListView: View {
         print("🔍 iPad分类视图 - tabType: \(tabType), categories数量: \(dataManager.categories.count), types数量: \(dataManager.knotTypes.count)")
         print("📋 当前显示类型的数据数量: \(categories.count)")
         
-        if searchText.isEmpty {
-            return categories
-        } else {
-            return categories.filter { category in
-                category.name.localizedCaseInsensitiveContains(searchText) ||
-                category.desc.localizedCaseInsensitiveContains(searchText)
-            }
-        }
+        return categories
     }
     
     var body: some View {
@@ -44,9 +35,6 @@ struct iPadCategoryListView: View {
     @ViewBuilder
     private var contentView: some View {
         VStack(spacing: 0) {
-            // 搜索栏
-            searchBar
-            
             // 内容区域
             if dataManager.isLoading {
                 LoadingView()
@@ -72,53 +60,6 @@ struct iPadCategoryListView: View {
         }
     }
     
-    // MARK: - 搜索栏
-    @ViewBuilder
-    private var searchBar: some View {
-        HStack {
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .foregroundColor(.gray)
-                
-                TextField(
-                    tabType == .categories ? LocalizedStrings.Category.searchCategories.localized : LocalizedStrings.Category.searchTypes.localized,
-                    text: $searchText
-                )
-                .textFieldStyle(.plain)
-                .autocorrectionDisabled()
-                .modifier(ConditionalTextInputModifier())
-                .onTapGesture {
-                    isSearching = true
-                }
-                
-                if !searchText.isEmpty {
-                    Button(action: {
-                        searchText = ""
-                    }) {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundColor(.gray)
-                    }
-                }
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background(Color(.systemGray6))
-            .cornerRadius(10)
-            
-            if isSearching {
-                Button(LocalizedStrings.Actions.cancel.localized) {
-                    searchText = ""
-                    isSearching = false
-                    hideKeyboard()
-                }
-                .foregroundColor(.blue)
-                .transition(.move(edge: .trailing))
-            }
-        }
-        .padding(.horizontal)
-        .padding(.vertical, 8)
-        .animation(.easeInOut(duration: 0.2), value: isSearching)
-    }
     
     // MARK: - 分类内容
     @ViewBuilder
@@ -126,18 +67,11 @@ struct iPadCategoryListView: View {
         let _ = print("🎯 categoryContent被调用 - filteredCategories.isEmpty: \(filteredCategories.isEmpty)")
         
         if filteredCategories.isEmpty {
-            let _ = print("📱 显示空状态 - searchText: '\(searchText)', tabType: \(tabType)")
-            if searchText.isEmpty {
-                EmptyStateView(
-                    title: LocalizedStrings.Category.noData.localized,
-                    systemImage: tabType == .categories ? "folder" : "tag"
-                )
-            } else {
-                EmptyStateView(
-                    title: LocalizedStrings.Search.noResults.localized,
-                    systemImage: "magnifyingglass"
-                )
-            }
+            let _ = print("📱 显示空状态 - tabType: \(tabType)")
+            EmptyStateView(
+                title: LocalizedStrings.Category.noData.localized,
+                systemImage: tabType == .categories ? "folder" : "tag"
+            )
         } else {
             let _ = print("📋 显示列表 - 数据数量: \(filteredCategories.count)")
             

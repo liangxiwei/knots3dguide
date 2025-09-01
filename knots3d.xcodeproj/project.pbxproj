@@ -705,6 +705,7 @@
 		36A5E65C0FA1046CDCA6673C /* japanesemarkII.json in Resources */ = {isa = PBXBuildFile; fileRef = E1A3871027A1F4E13A9ED8A5 /* japanesemarkII.json */; };
 		36AD27F933EFA5E4626EE95E /* surgeonsknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 661C5B3B8F7C9F150539621E /* surgeonsknot360.json */; };
 		36CBD8152BB7024B1F540E48 /* catspaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 5388B714CA9DEE3FF83E1A1B /* catspaw.png */; };
+		36E75CDBC59C2D05E7275C46 /* iPadGlobalSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D918252B4396CD3741B00 /* iPadGlobalSearchView.swift */; };
 		3701FDE2B4EC545A7D28C379 /* gasket-coil.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2891E2860787DB8E7F09DF6A /* gasket-coil.webp */; };
 		371B477E7F59BED7FA60FEF7 /* snell-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6E3BC4EC1DF727A418724313 /* snell-knot.webp */; };
 		3750FB476BD56B3E001640FB /* underwritersknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F10EF7574D3D362ACE8316D /* underwritersknot.json */; };
@@ -974,6 +975,7 @@
 		4CCDC96E3776751A61CE6021 /* bowline-on-a-bight.webp in Resources */ = {isa = PBXBuildFile; fileRef = 752E1420E9C4001E559AD443 /* bowline-on-a-bight.webp */; };
 		4CDF5D86F8E07DFE91A3DD39 /* directionalfigureeight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D9B029158C60EA8EEA9FC /* directionalfigureeight.png */; };
 		4CEAC39C56EF55C80249C7B1 /* sailorscoil.json in Resources */ = {isa = PBXBuildFile; fileRef = 562810D8CCEFC5F2CF228F89 /* sailorscoil.json */; };
+		4D00D66E5638B220CB52BFB0 /* iPadGlobalSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D918252B4396CD3741B00 /* iPadGlobalSearchView.swift */; };
 		4D0A09346D540ACF25BA86D6 /* orvisknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = D220F74808D1603C2EE6A63D /* orvisknot360.png */; };
 		4D360BF83D417935AA2CA5AE /* turks-head-woggle.webp in Resources */ = {isa = PBXBuildFile; fileRef = CFD215690F7768FF98F90804 /* turks-head-woggle.webp */; };
 		4D5184D2E69880A7B76770E1 /* clovehitch-on-bight360.png in Resources */ = {isa = PBXBuildFile; fileRef = 681D39548E4440A1E798A2FF /* clovehitch-on-bight360.png */; };
@@ -1853,6 +1855,7 @@
 		8EE079F66B00F8D8A6403982 /* ground-line-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = BDC0B864AF9E29F3DCF6F20D /* ground-line-hitch.webp */; };
 		8EF7A6410C10D359FC078DE7 /* westcountrylashing360.json in Resources */ = {isa = PBXBuildFile; fileRef = CA3130E088F1F353A1ED7774 /* westcountrylashing360.json */; };
 		8EFABC663D8352A6C859F265 /* sheetbend.json in Resources */ = {isa = PBXBuildFile; fileRef = D576E180237795BBEED91291 /* sheetbend.json */; };
+		8F01217B6166788F7622EFFF /* iPadGlobalSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D918252B4396CD3741B00 /* iPadGlobalSearchView.swift */; };
 		8F132C516AF18FA2C6175901 /* doublesheetbend.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EC7FA8FC193A1669D13073 /* doublesheetbend.png */; };
 		8F240E76DE9E799DBFBC4407 /* griefknot.png in Resources */ = {isa = PBXBuildFile; fileRef = A514BF84D173DA51E8CFA588 /* griefknot.png */; };
 		8F38E87BBCB78272137C0415 /* thiefknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 31143C3EDA75BF910F1C40FF /* thiefknot.json */; };
@@ -3889,6 +3892,7 @@
 		8288C736EF71EC92E9791C3D /* zeppelinbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zeppelinbend360.png; sourceTree = "<group>"; };
 		833DA6C27A5AA8EB384B010D /* chainsinnet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chainsinnet.json; sourceTree = "<group>"; };
 		841531D7A7933979B33C7A89 /* truelovers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = truelovers.json; sourceTree = "<group>"; };
+		843D918252B4396CD3741B00 /* iPadGlobalSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadGlobalSearchView.swift; sourceTree = "<group>"; };
 		8454E7F4DC521933EECE406A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84A8AC5542869FD63CD8A525 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		84DFF6E864069104E2BD2B9B /* yosemite-bowline.webp */ = {isa = PBXFileReference; path = "yosemite-bowline.webp"; sourceTree = "<group>"; };
@@ -4477,6 +4481,7 @@
 				A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */,
 				B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */,
 				D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */,
+				843D918252B4396CD3741B00 /* iPadGlobalSearchView.swift */,
 				65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */,
 				C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */,
 				28BF0394971BAD21BC53C059 /* iPadMainView.swift */,
@@ -5611,28 +5616,28 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_9F2C66BA-AAB5-42EB-8D1F-AB3440E4F80A" /* Data */ = {
+		"TEMP_9AD0E773-5257-4725-971D-71C98BADEC6F" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_C8EF8633-8506-4003-81D4-38196BAD5EF6" /* Application */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		"TEMP_EE76BFCE-AB6F-4B1D-9F17-20586C2A8DCC" /* Presentation */ = {
+		"TEMP_A38EF1A8-4E7D-40D6-B436-A2F5A48ACF22" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_F01002E9-C61F-475C-B5E5-E5F464FFF988" /* Architecture */ = {
+		"TEMP_C832228F-D019-448A-905E-41B76890AABC" /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_DC8471DD-957C-4D76-9096-AAC059683CA5" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -9014,6 +9019,7 @@
 				6CA4BA755883ACF1506FD75D /* WebViewPage.swift in Sources */,
 				B342D06103BABE16F082B936 /* iPadCategoryListView.swift in Sources */,
 				8113F5EBF134CE6D45BA9703 /* iPadFavoritesView.swift in Sources */,
+				36E75CDBC59C2D05E7275C46 /* iPadGlobalSearchView.swift in Sources */,
 				935E8A54A55988F75A058EC2 /* iPadKnotDetailView.swift in Sources */,
 				119529216E3E229462004DBF /* iPadKnotGridView.swift in Sources */,
 				673640B7AA8A6FCE87EACECF /* iPadMainView.swift in Sources */,
@@ -9044,6 +9050,7 @@
 				ADE2F2D0E423D939BC05C7CD /* WebViewPage.swift in Sources */,
 				8E6CDB11052D738ECA5AE5E0 /* iPadCategoryListView.swift in Sources */,
 				2046987C3EF01D97B25F2303 /* iPadFavoritesView.swift in Sources */,
+				8F01217B6166788F7622EFFF /* iPadGlobalSearchView.swift in Sources */,
 				915940C48521996E7BBC3615 /* iPadKnotDetailView.swift in Sources */,
 				64371E3E8592652D289A907F /* iPadKnotGridView.swift in Sources */,
 				7BCFED43D172A7A25CF34A8D /* iPadMainView.swift in Sources */,
@@ -9074,6 +9081,7 @@
 				2F4D3126DB4454F841404A01 /* WebViewPage.swift in Sources */,
 				7272B507821ADD4292A86154 /* iPadCategoryListView.swift in Sources */,
 				2A8C4600B4003DC36AA9A411 /* iPadFavoritesView.swift in Sources */,
+				4D00D66E5638B220CB52BFB0 /* iPadGlobalSearchView.swift in Sources */,
 				F0CA7AE5A20BB6AE76C9C6C8 /* iPadKnotDetailView.swift in Sources */,
 				E6F31278757571229B9D473A /* iPadKnotGridView.swift in Sources */,
 				5C7146EDFAC519D393DB7108 /* iPadMainView.swift in Sources */,
