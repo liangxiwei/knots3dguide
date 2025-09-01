@@ -162,8 +162,8 @@ struct iPadKnotDetailView: View {
                 detailRow(title: LocalizedStrings.KnotDetailExtended.strengthReliability.localized, 
                          content: knot.details.strengthReliability)
                 
-                detailRow(title: LocalizedStrings.KnotDetailExtended.abok.localized, 
-                         content: knot.details.abok)
+                detailRowWithLeftAlignment(title: LocalizedStrings.KnotDetailExtended.abok.localized, 
+                                          content: knot.details.abok)
                 
                 detailRow(title: LocalizedStrings.KnotDetailExtended.note.localized, 
                          content: knot.details.note)
@@ -276,6 +276,24 @@ struct iPadKnotDetailView: View {
                 Text(content)
                     .font(.body)
                     .foregroundColor(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .padding(.vertical, 8)
+        }
+    }
+    
+    @ViewBuilder
+    private func detailRowWithLeftAlignment(title: String, content: String?) -> some View {
+        if let content = content, !content.isEmpty {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                
+                Text(content)
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(.vertical, 8)
