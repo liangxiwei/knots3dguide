@@ -49,44 +49,24 @@ struct iPadMainView: View {
             
             // 主要分类
             Section(LocalizedStrings.TabBar.categories.localized) {
-                NavigationLink(
-                    destination: EmptyView(),
-                    tag: SidebarItem.categories,
-                    selection: $selectedSidebarItem
-                ) {
-                    Label(LocalizedStrings.TabBar.categories.localized, systemImage: "folder.fill")
-                }
+                Label(LocalizedStrings.TabBar.categories.localized, systemImage: "folder.fill")
+                    .tag(SidebarItem.categories)
                 
-                NavigationLink(
-                    destination: EmptyView(),
-                    tag: SidebarItem.types,
-                    selection: $selectedSidebarItem
-                ) {
-                    Label(LocalizedStrings.TabBar.types.localized, systemImage: "link")
-                }
+                Label(LocalizedStrings.TabBar.types.localized, systemImage: "link")
+                    .tag(SidebarItem.types)
             }
             
             // 个人收藏
             Section(LocalizedStrings.CommonExtended.personal.localized) {
-                NavigationLink(
-                    destination: EmptyView(),
-                    tag: SidebarItem.favorites,
-                    selection: $selectedSidebarItem
-                ) {
-                    Label(LocalizedStrings.TabBar.favorites.localized, systemImage: "heart.fill")
-                        .badge(dataManager.favoriteKnots.count)
-                }
+                Label(LocalizedStrings.TabBar.favorites.localized, systemImage: "heart.fill")
+                    .badge(dataManager.favoriteKnots.count)
+                    .tag(SidebarItem.favorites)
             }
             
             // 设置和其他
             Section(LocalizedStrings.CommonExtended.other.localized) {
-                NavigationLink(
-                    destination: EmptyView(),
-                    tag: SidebarItem.settings,
-                    selection: $selectedSidebarItem
-                ) {
-                    Label(LocalizedStrings.TabBar.settings.localized, systemImage: "gearshape.fill")
-                }
+                Label(LocalizedStrings.TabBar.settings.localized, systemImage: "gearshape.fill")
+                    .tag(SidebarItem.settings)
             }
         }
         .listStyle(.sidebar)
