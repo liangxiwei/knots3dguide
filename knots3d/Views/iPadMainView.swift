@@ -13,17 +13,69 @@ struct iPadMainView: View {
     @State private var columnVisibility = NavigationSplitViewVisibility.doubleColumn
     
     var body: some View {
-        NavigationSplitView(columnVisibility: $columnVisibility) {
-            // 侧边栏
-            sidebarContent
-        } content: {
-            // 内容区域（中间列）
-            contentView
-        } detail: {
-            // 详情区域（右侧列）
-            detailView
+        Group {
+            if selectedSidebarItem == .settings {
+                // 设置页面：使用独立的NavigationStack，全屏显示，不使用分栏布局
+                NavigationStack {
+                    VStack {
+                        // 顶部导航栏，包含返回按钮
+                        HStack {
+                            Button(action: {
+                                selectedSidebarItem = .categories
+                            }) {
+                                HStack {
+                                    Image(systemName: "chevron.left")
+                                    Text(LocalizedStrings.Actions.back.localized)
+                                }
+                                .foregroundColor(.blue)
+                            }
+                            .padding(.leading)
+                            
+                            Spacer()
+                            
+                            Text(LocalizedStrings.TabBar.settings.localized)
+                                .font(.title2)
+                                .fontWeight(.medium)
+                            
+                            Spacer()
+                            
+                            // 右侧占位符，保持标题居中
+                            HStack {
+                                Image(systemName: "chevron.left")
+                                Text(LocalizedStrings.Actions.back.localized)
+                            }
+                            .foregroundColor(.clear)
+                            .padding(.trailing)
+                        }
+                        .padding(.vertical, 12)
+                        .background(Color(.systemGroupedBackground))
+                        .overlay(
+                            Rectangle()
+                                .frame(height: 0.5)
+                                .foregroundColor(Color(.separator)),
+                            alignment: .bottom
+                        )
+                        
+                        // 设置内容
+                        SettingsView()
+                    }
+                    .navigationBarHidden(true)
+                }
+            } else {
+                // 其他页面：使用NavigationSplitView三栏布局
+                NavigationSplitView(columnVisibility: $columnVisibility) {
+                    // 侧边栏
+                    sidebarContent
+                } content: {
+                    // 内容区域（中间列）
+                    contentView
+                } detail: {
+                    // 详情区域（右侧列）
+                    detailView
+                }
+                .navigationSplitViewStyle(.balanced)
+            }
         }
-        .navigationSplitViewStyle(.balanced)
         .id(languageManager.currentLanguage)
         .fullScreenCover(isPresented: $showGlobalSearch) {
             if #available(iOS 16.0, *) {
@@ -81,15 +133,12 @@ struct iPadMainView: View {
             selectedCategory = nil
             selectedKnot = nil
             
-            // 根据tab类型调整列布局
+            // 根据tab类型调整列布局（设置页面不使用分栏布局，所以不需要处理）
             if newValue == .favorites {
                 // 收藏tab使用detailOnly（隐藏第三列）
                 columnVisibility = .detailOnly
-            } else if newValue == .settings {
-                // 设置tab使用detailOnly（隐藏第三列，让设置页面占据剩余宽度）
-                columnVisibility = .detailOnly
-            } else {
-                // 其他tab使用doubleColumn（显示三列）
+            } else if newValue != .favorites && newValue != .settings {
+                // 分类和类型tab使用doubleColumn（显示三列）
                 columnVisibility = .doubleColumn
             }
             print("✅ 已清空选中状态，布局: \(columnVisibility)")
@@ -128,14 +177,8 @@ struct iPadMainView: View {
                         .id("favorites")
                 }
             case .settings:
-                // 设置tab：根据列布局显示不同内容
-                if columnVisibility == .detailOnly {
-                    // 2栏模式：不显示中间列
-                    Color.clear
-                } else {
-                    // 3栏模式：在中间列显示设置内容
-                    SettingsView()
-                }
+                // 设置页面现在使用独立的NavigationStack，不会进入这里
+                Color.clear
             }
         } else {
             iPadWelcomeView()
@@ -158,15 +201,6 @@ struct iPadMainView: View {
                     } else {
                         iPadPlaceholderView()
                     }
-                }
-            } else if selectedSidebarItem == .settings {
-                // 设置tab：根据列布局显示不同内容
-                if columnVisibility == .detailOnly {
-                    // 2栏模式：在详情列显示设置页面，占据剩余宽度
-                    SettingsView()
-                } else {
-                    // 3栏模式：显示占位视图
-                    iPadPlaceholderView()
                 }
             } else if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)

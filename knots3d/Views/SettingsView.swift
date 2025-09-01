@@ -5,8 +5,7 @@ struct SettingsView: View {
     @State private var showLanguagePicker = false
     
     var body: some View {
-        NavigationView {
-            List {
+        List {
                 // 语言设置
                 Section {
                     Button(action: {
@@ -76,9 +75,6 @@ struct SettingsView: View {
                     Text(LocalizedStrings.SettingsExtended.aboutSection.localized)
                 }
                 
-            }
-            .navigationTitle(LocalizedStrings.TabBar.settings.localized)
-            .navigationBarTitleDisplayMode(.large)
         }
         .actionSheet(isPresented: $showLanguagePicker) {
             languageActionSheet
