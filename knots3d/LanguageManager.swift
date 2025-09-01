@@ -304,4 +304,75 @@ struct LocalizedStrings {
         static let knotsFound = "search_stats_knots"
         static let matchType = "search_stats_match_type"
     }
+    
+    // MARK: - iPad专用
+    struct App {
+        static let title = "app_title"
+        static let welcomeTitle = "app_welcome_title"
+        static let welcomeSubtitle = "app_welcome_subtitle"
+    }
+    
+    // MARK: - 通用UI元素（扩展）
+    struct CommonExtended {
+        static let personal = "common_personal"
+        static let other = "common_other"
+        static let selectItem = "common_select_item"
+        static let knots = "common_knots"
+        static let columns = "common_columns"
+        static let totalKnots = "common_total_knots"
+        static let sortBy = "common_sort_by"
+        static let andMore = "common_and_more"
+    }
+    
+    // MARK: - 搜索扩展
+    struct SearchExtended {
+        static let searchAllKnots = "search_all_knots"
+        static let searchKnots = "search_knots"
+        static let searchFavorites = "search_favorites"
+        static let searchResults = "search_results_for_query"
+        static let filteredResults = "search_filtered_results"
+    }
+    
+    // MARK: - 排序选项
+    struct Sort {
+        static let nameAsc = "sort_name_asc"
+        static let nameDesc = "sort_name_desc" 
+        static let favorites = "sort_favorites"
+        static let dateAdded = "sort_date_added"
+    }
+    
+    // MARK: - 绳结详情扩展
+    struct KnotDetailExtended {
+        static let animation = "knot_detail_animation"
+        static let animationType = "knot_detail_animation_type"
+        static let drawingAnimation = "knot_detail_drawing_animation"
+        static let rotation360 = "knot_detail_rotation_360"
+        static let details = "knot_detail_details"
+        static let usage = "knot_detail_usage"
+        static let history = "knot_detail_history"
+        static let alsoKnownAs = "knot_detail_also_known_as"
+        static let structure = "knot_detail_structure"
+        static let strengthReliability = "knot_detail_strength_reliability"
+        static let abok = "knot_detail_abok"
+        static let note = "knot_detail_note"
+        static let relatedKnots = "knot_detail_related_knots"
+        static let noRelatedKnots = "knot_detail_no_related_knots"
+        static let classification = "knot_detail_classification"
+        static let types = "knot_detail_types"
+        static let foundIn = "knot_detail_found_in"
+    }
+    
+    // MARK: - 收藏扩展
+    struct FavoritesMoreExtended {
+        static let noFavorites = "favorites_no_favorites"
+        static let addFavoritesHint = "favorites_add_favorites_hint"
+        static let totalFavorites = "favorites_total_favorites"
+        static let removeConfirmTitle = "favorites_remove_confirm_title"
+        static let removeConfirmMessage = "favorites_remove_confirm_message"
+    }
+    
+    // MARK: - 操作扩展
+    struct ActionsExtended {
+        static let clearSearch = "action_clear_search"
+    }
 }

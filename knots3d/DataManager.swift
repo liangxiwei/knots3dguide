@@ -366,6 +366,15 @@ class DataManager: ObservableObject {
         return allKnots.first { $0.id == id }
     }
     
+    func getKnotsByNames(_ names: [String]) -> [KnotDetail] {
+        return allKnots.filter { knot in
+            names.contains { name in
+                knot.name.localizedCaseInsensitiveContains(name) ||
+                (knot.aliases?.contains(name) == true)
+            }
+        }
+    }
+    
     // MARK: - Image Path Resolution
     
     /// 图片路径缓存

@@ -215,6 +215,7 @@
 		118AF17365DFBF051B3E9917 /* portuguesebowline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B80EBBBD8591CF74C41EDC1 /* portuguesebowline.png */; };
 		118BC8A535371D48B88CB01B /* friendshipknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 889CCBA544BF86B5402C2314 /* friendshipknot360.png */; };
 		118E42A152AE841929BCD3F2 /* surgeonsknot-fishing360.json in Resources */ = {isa = PBXBuildFile; fileRef = E77E7DDE44C0BDE85C8A9D4E /* surgeonsknot-fishing360.json */; };
+		119529216E3E229462004DBF /* iPadKnotGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */; };
 		11A85A6F53C7684C7F94562E /* doubleharnessbend.json in Resources */ = {isa = PBXBuildFile; fileRef = CC48B0B7AB3DF2E3727CAEFA /* doubleharnessbend.json */; };
 		11C86B583C1D5FA1EAB290D1 /* pedigreecowhitch360.png in Resources */ = {isa = PBXBuildFile; fileRef = A622EFF992AC4882AB46CB4F /* pedigreecowhitch360.png */; };
 		11D910E3BC75CA1B5298D8E4 /* reeverknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F26EEAC9CDFBE9DF9495AE7 /* reeverknot360.json */; };
@@ -411,6 +412,7 @@
 		2010F1E45BF107F6B92ADE2B /* doubleconstrictor360.json in Resources */ = {isa = PBXBuildFile; fileRef = F4A64118F92B2A79572614F7 /* doubleconstrictor360.json */; };
 		202A6E571046BDC912D7DF38 /* sailorscoil360.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB7FE56746A2FCFA7871895 /* sailorscoil360.png */; };
 		203FE827123C0EF7059D812E /* doublefishermans.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E40F2DD240081F3390124F /* doublefishermans.png */; };
+		2046987C3EF01D97B25F2303 /* iPadFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */; };
 		2064624141A255EA7309DFF8 /* sheepshank360.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A35D8B82CBC16016FD13530 /* sheepshank360.png */; };
 		20675A2A2E0E3818C5F837E8 /* handcuffknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 05A3CDFABC45E9F04ACB9E70 /* handcuffknot.json */; };
 		207F0DAAA58A744DE172FDA0 /* rapala-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = F605D2F8F286DD05F814AE89 /* rapala-knot.webp */; };
@@ -545,6 +547,7 @@
 		2A16A7E721238230339B8F68 /* slip-figure-eight.webp in Resources */ = {isa = PBXBuildFile; fileRef = 28B379E58EB544751C7238B5 /* slip-figure-eight.webp */; };
 		2A23D9A3F4C8A774C0A408A0 /* rackingbend360.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A21297D00963F5AF170D63 /* rackingbend360.png */; };
 		2A37230FF539A03C36367ACD /* alpinebutterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 93E0C23DEC5A093FF89F6CC6 /* alpinebutterfly.png */; };
+		2A8C4600B4003DC36AA9A411 /* iPadFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */; };
 		2A8E1D55F6A62E81B4821EDD /* figure8followthru.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD016EDF3A1C741CBBDEEB /* figure8followthru.json */; };
 		2A91C65A6D7DC9286E5EAD66 /* sandiegojam.json in Resources */ = {isa = PBXBuildFile; fileRef = 04D31DB7E62B2855681FB83B /* sandiegojam.json */; };
 		2AB4321F7DBF9DD5A646B4B3 /* doubleoverhand360.json in Resources */ = {isa = PBXBuildFile; fileRef = 5386B8F9D72F2FF78059CA5F /* doubleoverhand360.json */; };
@@ -1212,6 +1215,7 @@
 		5C5B4AB7C3AD58055B98E94D /* nail.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A07E2095A974127CF1FFBF /* nail.png */; };
 		5C5FC19F04E60A3B4CAC0103 /* figure-nine-loop.webp in Resources */ = {isa = PBXBuildFile; fileRef = 18FCE9A9F47E58B52D015452 /* figure-nine-loop.webp */; };
 		5C6A7E87C230531E38DB3032 /* granny-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = F59B5DA2CE4BEA4D11C6284B /* granny-knot.webp */; };
+		5C7146EDFAC519D393DB7108 /* iPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF0394971BAD21BC53C059 /* iPadMainView.swift */; };
 		5C7913B8D684B6BABFC97945 /* bullhitchbightmethod360.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9B03C006F0F20F00EC70F /* bullhitchbightmethod360.json */; };
 		5C7E33F0FA41E9C765AFDF85 /* bloodknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A4F574DE24F9FE7BE5B42E /* bloodknot360.png */; };
 		5CC8C64F6753B84DDB1170A3 /* detailed_knots_data_en.json in Resources */ = {isa = PBXBuildFile; fileRef = FA72ADFCFC6C37CA9E121F2A /* detailed_knots_data_en.json */; };
@@ -1296,6 +1300,7 @@
 		63F07E16AC6A8BC1A01485DC /* beckethitchslipped.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB6050B891DD0EF60C9DC63 /* beckethitchslipped.json */; };
 		641014A44A34C8405917AC9A /* detailed_knots_data_ja.json in Resources */ = {isa = PBXBuildFile; fileRef = 26648FA43EC97391ED9EB937 /* detailed_knots_data_ja.json */; };
 		642AC645EFEDFC5BA1615AD4 /* heavinglineknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7FF46FBE507D03F35FC1 /* heavinglineknot360.json */; };
+		64371E3E8592652D289A907F /* iPadKnotGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */; };
 		644893C2BA694751B6682799 /* ashleystopper.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FF22F47EB9CB886AEEA4ADD /* ashleystopper.json */; };
 		6457F832B8DBD51E74F4519A /* prusikendline.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA1720841F134A3D915C06D /* prusikendline.png */; };
 		6486E4401C727FA6DC1545C8 /* detailed_knots_data_zh-TW.json in Resources */ = {isa = PBXBuildFile; fileRef = BBC4DA1C416705006820B641 /* detailed_knots_data_zh-TW.json */; };
@@ -1340,6 +1345,7 @@
 		66F4F1C5021611C1830AF627 /* turkshead3L5B360.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D825E1F9E1636D84D0CA11D /* turkshead3L5B360.json */; };
 		67041BD10B5C70A4E910ACE9 /* figureeight360.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FEC91AB8C1ADA7D99FD699B /* figureeight360.json */; };
 		6709A006FD27E399152482CB /* sheetbend.json in Resources */ = {isa = PBXBuildFile; fileRef = D576E180237795BBEED91291 /* sheetbend.json */; };
+		673640B7AA8A6FCE87EACECF /* iPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF0394971BAD21BC53C059 /* iPadMainView.swift */; };
 		6753BAF1FF6D6FC3211CCBF2 /* carrickbend.json in Resources */ = {isa = PBXBuildFile; fileRef = 307EA5FD523AA1C07397FC67 /* carrickbend.json */; };
 		675A9BE068E528F6AD639779 /* woggle.json in Resources */ = {isa = PBXBuildFile; fileRef = 70DA1A50B0E61A4A05825170 /* woggle.json */; };
 		67607B3EF10B6E6FEF0BDBC2 /* cowboybowline.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CB25BC5124040E1544FEA6 /* cowboybowline.json */; };
@@ -1479,6 +1485,7 @@
 		722672CD2C8896F4BE244D7D /* doubleuniknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = A268E01091E2CCD35F459CAD /* doubleuniknot360.json */; };
 		723F651EF0BEE2FCDA17F3C7 /* timberhitch360.json in Resources */ = {isa = PBXBuildFile; fileRef = 575AEF57BA410F415AAB86B5 /* timberhitch360.json */; };
 		726D9EEB5CF8D70B9134C31A /* monkeysfist.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EC71F3BD3B2238FE30E2DE2 /* monkeysfist.json */; };
+		7272B507821ADD4292A86154 /* iPadCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */; };
 		7277B26E8406B4E26BEC4B3A /* slippedgroundlinehitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DA53D988A810C900EA865FC /* slippedgroundlinehitch.json */; };
 		727895B03F7548E4B77F84C2 /* slippedgroundlinehitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D080099C6C9B720333EB7D /* slippedgroundlinehitch.png */; };
 		729C172C8DEFB8B1E0CA2B68 /* squarelashing.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CF00CB87B3519C8B230C25 /* squarelashing.png */; };
@@ -1596,6 +1603,7 @@
 		7BA575B653522F5CD5BC003F /* klemheist.webp in Resources */ = {isa = PBXBuildFile; fileRef = A8F2928FDAFA16A0548DFF28 /* klemheist.webp */; };
 		7BA8BC926019A7C53D5D5668 /* rapalaknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5826BEEEA4C0800C69676A3C /* rapalaknot360.png */; };
 		7BB8405AF7000CF34632690A /* diamondknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 08531690B00611C67BEFDD2A /* diamondknot360.json */; };
+		7BCFED43D172A7A25CF34A8D /* iPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF0394971BAD21BC53C059 /* iPadMainView.swift */; };
 		7BFD8EE58500D2F7F7ACD735 /* runningbowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 2062A26058E7D2228DCFAD07 /* runningbowline360.json */; };
 		7BFF077687E9502037E8A2D5 /* westcountrylashing.json in Resources */ = {isa = PBXBuildFile; fileRef = 372766F7E04E8ECBB82F9C14 /* westcountrylashing.json */; };
 		7C3DCDFDED486C1FBEE1D8C0 /* bullhitchendmethod.json in Resources */ = {isa = PBXBuildFile; fileRef = 21CCD95DA81C18C99080D7F1 /* bullhitchendmethod.json */; };
@@ -1663,6 +1671,7 @@
 		80C987B82C9423EA43711A14 /* slippedgroundlinehitch360.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA964A0F2C5C755CD22529D /* slippedgroundlinehitch360.png */; };
 		80D95FBC912C56F2B62A48A3 /* truckershitch360.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E89436CC76D62D17CB579 /* truckershitch360.png */; };
 		80DACA7EA8730DAA0C5C9123 /* category_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 93CB9EF531D0991BFAADC06C /* category_en.json */; };
+		8113F5EBF134CE6D45BA9703 /* iPadFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */; };
 		81297DBB99FFAB71BD9E94B5 /* triple-bowline.webp in Resources */ = {isa = PBXBuildFile; fileRef = 1B9F3251BBC1E95D0C9E264A /* triple-bowline.webp */; };
 		812A12C6BC73F6CE608F6BFC /* cowboybowline.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CB25BC5124040E1544FEA6 /* cowboybowline.json */; };
 		812AB9D44FAC7BA35F33CCF9 /* sandiegojam.png in Resources */ = {isa = PBXBuildFile; fileRef = 69384A26EB0777A5D7AD6593 /* sandiegojam.png */; };
@@ -1831,6 +1840,7 @@
 		8E3D6FC7901117FB00AFBF29 /* alpinebutterflyhandmethod.json in Resources */ = {isa = PBXBuildFile; fileRef = D7556A356405D0960D0E45F5 /* alpinebutterflyhandmethod.json */; };
 		8E42EEB19521F551538A5B19 /* albertoknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 43EDCAF6BAA4D23198EB146D /* albertoknot.json */; };
 		8E430CC7D92C144A915E6A7A /* yosemitebowline.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E46FB3715D4F301535372F0 /* yosemitebowline.png */; };
+		8E6CDB11052D738ECA5AE5E0 /* iPadCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */; };
 		8E6F26F1B8BA0DA956B5DAEC /* alpinebutterfly360.png in Resources */ = {isa = PBXBuildFile; fileRef = 371EFAA5E853BA1C5A8547E1 /* alpinebutterfly360.png */; };
 		8E8C8FDBE2E39F39DBB2C81C /* clinch-knot-improved.webp in Resources */ = {isa = PBXBuildFile; fileRef = B2709AC9A94DD42B2D1CDED9 /* clinch-knot-improved.webp */; };
 		8E93BD76217004623B6A896F /* fishermansknot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E1218C0FB71B0C48743A0 /* fishermansknot.png */; };
@@ -1875,6 +1885,7 @@
 		91376309520AB6D5C01887C4 /* carrickbend360.json in Resources */ = {isa = PBXBuildFile; fileRef = EA1C92803ED6ADA2462E3F26 /* carrickbend360.json */; };
 		91449032B95B0A7B121D7797 /* barrelhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 937D1EAC135D5FB28371C0DD /* barrelhitch.json */; };
 		91521CD41857E31EE09AD117 /* commonwhipping360.png in Resources */ = {isa = PBXBuildFile; fileRef = F53928F0EFC789C207F5B1D6 /* commonwhipping360.png */; };
+		915940C48521996E7BBC3615 /* iPadKnotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */; };
 		918153A34A9798CBB13389D0 /* loopknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6B917889B6ED15824F0BF /* loopknot360.png */; };
 		918B3A477B41C96BEE813AA1 /* triple-overhand-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = 73B503DEF712DD8D47F073B8 /* triple-overhand-knot.webp */; };
 		91AFACC3C2FA1D2760FCA342 /* transom360.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D4BEDB0D4252442773AAA4 /* transom360.png */; };
@@ -1894,6 +1905,7 @@
 		9346EDBBC2763EBDEE856972 /* valdotain360.json in Resources */ = {isa = PBXBuildFile; fileRef = B884BE052FC81D1402D93CD8 /* valdotain360.json */; };
 		934E54DCD858660BA5340AFA /* rollinghitch2v360.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBA3E63027A7AE7A6167E6 /* rollinghitch2v360.png */; };
 		935B3AAD33F014B9D36FB1DF /* hansonknot360.json in Resources */ = {isa = PBXBuildFile; fileRef = 197C4A7E34F1F9471D7A03EC /* hansonknot360.json */; };
+		935E8A54A55988F75A058EC2 /* iPadKnotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */; };
 		9363A66B84334D11FD10528C /* bowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 64E511F1FC3BC71559D2171E /* bowline.json */; };
 		936A776CEDCE47BC897F15F3 /* triplebowline360.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C0302EF55DC98AEAD33D3BD /* triplebowline360.json */; };
 		938D05EC91F718F244BBC1F2 /* truelovers.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A2853B8AE7E026E18AE604 /* truelovers.png */; };
@@ -2337,6 +2349,7 @@
 		B3184859FD534AC88178B9CB /* munter.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACD7756C1294793119B5123 /* munter.png */; };
 		B325D664C8ADC2BA1236DCCC /* marlinspikehitch.png in Resources */ = {isa = PBXBuildFile; fileRef = D36AF221B7256083F840D5BB /* marlinspikehitch.png */; };
 		B3274A9B7D55D2EF7033C7D3 /* tripleoverhand.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1DD6C50C83B5782D6828FA /* tripleoverhand.png */; };
+		B342D06103BABE16F082B936 /* iPadCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */; };
 		B354B6F38EF94DDA8F8EB9AC /* cowboybowline.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E71B8175E05F51D24A2742 /* cowboybowline.png */; };
 		B3558B69B2A726910B11AD71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27EA222373518AFACAFE548 /* Assets.xcassets */; };
 		B3609AB52B7D5BBCE8876B41 /* snuggle-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2499383B4D0F5C40A7107957 /* snuggle-hitch.webp */; };
@@ -2985,6 +2998,7 @@
 		E680AC84C5957F4CB871D88A /* rapalaknot.json in Resources */ = {isa = PBXBuildFile; fileRef = 79B8CAD9F891702838AA50CD /* rapalaknot.json */; };
 		E6D140D5EF9125BE3911C887 /* truelovers360.json in Resources */ = {isa = PBXBuildFile; fileRef = ED26D81375634D23F6E6613D /* truelovers360.json */; };
 		E6F2ABB41C2DAC72244AC642 /* half-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6092E10F3F5CD00DE2912AEB /* half-hitch.webp */; };
+		E6F31278757571229B9D473A /* iPadKnotGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */; };
 		E6F9E581518B0C888773237F /* slipped-lapp-knot.webp in Resources */ = {isa = PBXBuildFile; fileRef = E547F7E73AA03F9758B58A44 /* slipped-lapp-knot.webp */; };
 		E70FF43CCC5934DAA7E06D68 /* huntersbend360.json in Resources */ = {isa = PBXBuildFile; fileRef = FBB304EAC472D53D28573C0C /* huntersbend360.json */; };
 		E722EFEF1CB9D6AEA2EE455E /* catspaw360.png in Resources */ = {isa = PBXBuildFile; fileRef = A2BB132AA2597B005BB0ACDD /* catspaw360.png */; };
@@ -3087,6 +3101,7 @@
 		F07F2A1DD5F331C341F45390 /* snapbowline.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D8D521B956CE523BBE18478 /* snapbowline.json */; };
 		F09E8D7395666044940E519F /* double-harness-bend.webp in Resources */ = {isa = PBXBuildFile; fileRef = DECCC9F6DE49526D1D4CEDCA /* double-harness-bend.webp */; };
 		F09FC5363EF50A552E3BCEF0 /* bowknot360.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D5AE0055FD8970D9E54383 /* bowknot360.png */; };
+		F0CA7AE5A20BB6AE76C9C6C8 /* iPadKnotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */; };
 		F0CCF6BDD33FAA5739B225CC /* backhandhitch.json in Resources */ = {isa = PBXBuildFile; fileRef = 198FCFCB89FAA9A75FE625D9 /* backhandhitch.json */; };
 		F0CFD6A4E42110CD026D497B /* backhand-hitch.webp in Resources */ = {isa = PBXBuildFile; fileRef = A74AFC54569F8821BF1BC7CB /* backhand-hitch.webp */; };
 		F0DA50C04C834E7EB99246ED /* highwaymans360.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C6ABC118AC409524EFBBB6 /* highwaymans360.png */; };
@@ -3478,6 +3493,7 @@
 		2891E2860787DB8E7F09DF6A /* gasket-coil.webp */ = {isa = PBXFileReference; path = "gasket-coil.webp"; sourceTree = "<group>"; };
 		28A3E73BB83F747849D3E245 /* backhandhitch360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = backhandhitch360.json; sourceTree = "<group>"; };
 		28B379E58EB544751C7238B5 /* slip-figure-eight.webp */ = {isa = PBXFileReference; path = "slip-figure-eight.webp"; sourceTree = "<group>"; };
+		28BF0394971BAD21BC53C059 /* iPadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadMainView.swift; sourceTree = "<group>"; };
 		29667187170F62ADD4755DBD /* pile-hitch.webp */ = {isa = PBXFileReference; path = "pile-hitch.webp"; sourceTree = "<group>"; };
 		2A2A2974134E72C4527EE904 /* directionalfigureeight360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directionalfigureeight360.png; sourceTree = "<group>"; };
 		2A305CBA4AFBA8E497B587E0 /* davyknot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = davyknot.json; sourceTree = "<group>"; };
@@ -3753,6 +3769,7 @@
 		65BDDDA527BAEA5A70EAC94C /* bullhitchendmethod360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bullhitchendmethod360.json; sourceTree = "<group>"; };
 		65D6BDFCE0264773446CCCAD /* lanyard-hitch.webp */ = {isa = PBXFileReference; path = "lanyard-hitch.webp"; sourceTree = "<group>"; };
 		65DEBCD65EBC003E9A1DA0D6 /* midshipman360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = midshipman360.png; sourceTree = "<group>"; };
+		65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadKnotDetailView.swift; sourceTree = "<group>"; };
 		65F7C0C108734A940024D278 /* ashleys-bend.webp */ = {isa = PBXFileReference; path = "ashleys-bend.webp"; sourceTree = "<group>"; };
 		661C5B3B8F7C9F150539621E /* surgeonsknot360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surgeonsknot360.json; sourceTree = "<group>"; };
 		66219292082239D34D2EF82F /* yucatan360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yucatan360.png; sourceTree = "<group>"; };
@@ -4045,6 +4062,7 @@
 		B16AC221F811186329E13FFC /* triplebowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triplebowline.png; sourceTree = "<group>"; };
 		B16B4985976D023DC6FFE2FA /* ashleysbend360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashleysbend360.png; sourceTree = "<group>"; };
 		B17C857E61EE8BDDCE533C85 /* japanesemarkII360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japanesemarkII360.png; sourceTree = "<group>"; };
+		B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadCategoryListView.swift; sourceTree = "<group>"; };
 		B1E996AAE635A148A58A1BB7 /* figureeightbend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = figureeightbend.png; sourceTree = "<group>"; };
 		B1ED6806C2D09D02C000B7DB /* SpriteKitAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitAnimationView.swift; sourceTree = "<group>"; };
 		B2379908D0632A50878C40B4 /* fullwindsor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fullwindsor.json; sourceTree = "<group>"; };
@@ -4138,6 +4156,7 @@
 		C855F6619794508E06A21013 /* woodlandziptie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = woodlandziptie.json; sourceTree = "<group>"; };
 		C870C5F20CAA3E4C341BC0E1 /* piwich360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = piwich360.json; sourceTree = "<group>"; };
 		C8A2693873B6652E7F28A364 /* bends.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bends.jpg; sourceTree = "<group>"; };
+		C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadKnotGridView.swift; sourceTree = "<group>"; };
 		C8EC06DC095441C5BB22F56D /* diamond-knot.webp */ = {isa = PBXFileReference; path = "diamond-knot.webp"; sourceTree = "<group>"; };
 		C93C383544A69FACDCA740F3 /* doubledragonloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubledragonloop.png; sourceTree = "<group>"; };
 		C95683E986B2A38CFA4B7B7B /* davy-knot.webp */ = {isa = PBXFileReference; path = "davy-knot.webp"; sourceTree = "<group>"; };
@@ -4200,6 +4219,7 @@
 		D7556A356405D0960D0E45F5 /* alpinebutterflyhandmethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alpinebutterflyhandmethod.json; sourceTree = "<group>"; };
 		D7DE8501D803E59DB75F4064 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D7E6F8EE131DE35FF4E2E5F5 /* scottslockedbowline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scottslockedbowline.png; sourceTree = "<group>"; };
+		D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadFavoritesView.swift; sourceTree = "<group>"; };
 		D8B00D65D295E5FE82DBFED7 /* handcuffknot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handcuffknot.png; sourceTree = "<group>"; };
 		D8BB82606C386ED99EE6E371 /* knots3d.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = knots3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FBA456494536BB9612140C /* farrimond360.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = farrimond360.json; sourceTree = "<group>"; };
@@ -4455,6 +4475,11 @@
 				2F7B44DDAC133ABE9EE4BDA4 /* CommonViews.swift */,
 				F694DCD0AA2DD8DB045D4D2E /* FavoritesView.swift */,
 				A2500CC540B099A13A54C1E1 /* GlobalSearchView.swift */,
+				B1AAEF63FDB92019FF404A6F /* iPadCategoryListView.swift */,
+				D8AB0CC858C851F41E24BCC3 /* iPadFavoritesView.swift */,
+				65EB1E7EF489357501F9731A /* iPadKnotDetailView.swift */,
+				C8CCE31E21E9CCC2FE5E40D0 /* iPadKnotGridView.swift */,
+				28BF0394971BAD21BC53C059 /* iPadMainView.swift */,
 				0350E4CF8D1757241ACC7360 /* KnotDetailView.swift */,
 				920749078AF7F9F4FD1FDCBE /* KnotListView.swift */,
 				34374B053C08507FCA07A83E /* PrivacyPolicyView.swift */,
@@ -5586,32 +5611,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_28EA1CA6-91BA-458D-A7E3-3B3E1DB31DE8" /* Architecture */ = {
+		"TEMP_9F2C66BA-AAB5-42EB-8D1F-AB3440E4F80A" /* Data */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Architecture;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		"TEMP_6C273D05-FDBB-4654-9297-E089DDAFD9D7" /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		"TEMP_6C8A2266-72A3-4F4A-B42D-52D187CFA455" /* Application */ = {
+		"TEMP_C8EF8633-8506-4003-81D4-38196BAD5EF6" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_C2AEB14F-CD32-4631-ACE7-3A79DC609623" /* Data */ = {
+		"TEMP_EE76BFCE-AB6F-4B1D-9F17-20586C2A8DCC" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Data;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		"TEMP_F01002E9-C61F-475C-B5E5-E5F464FFF988" /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -8987,6 +9012,11 @@
 				6E3CFAA8A2334744969A160F /* SettingsView.swift in Sources */,
 				5915646CE28D478B480F7B60 /* SpriteKitAnimationView.swift in Sources */,
 				6CA4BA755883ACF1506FD75D /* WebViewPage.swift in Sources */,
+				B342D06103BABE16F082B936 /* iPadCategoryListView.swift in Sources */,
+				8113F5EBF134CE6D45BA9703 /* iPadFavoritesView.swift in Sources */,
+				935E8A54A55988F75A058EC2 /* iPadKnotDetailView.swift in Sources */,
+				119529216E3E229462004DBF /* iPadKnotGridView.swift in Sources */,
+				673640B7AA8A6FCE87EACECF /* iPadMainView.swift in Sources */,
 				F4100E092583BD91DC50E515 /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -9012,6 +9042,11 @@
 				197890E3F1F1BB3CB5FDC67C /* SettingsView.swift in Sources */,
 				EA01B8D1933C79DE358220CD /* SpriteKitAnimationView.swift in Sources */,
 				ADE2F2D0E423D939BC05C7CD /* WebViewPage.swift in Sources */,
+				8E6CDB11052D738ECA5AE5E0 /* iPadCategoryListView.swift in Sources */,
+				2046987C3EF01D97B25F2303 /* iPadFavoritesView.swift in Sources */,
+				915940C48521996E7BBC3615 /* iPadKnotDetailView.swift in Sources */,
+				64371E3E8592652D289A907F /* iPadKnotGridView.swift in Sources */,
+				7BCFED43D172A7A25CF34A8D /* iPadMainView.swift in Sources */,
 				27F6D5E9A49D11E4FDD1C558 /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -9037,6 +9072,11 @@
 				AC12BFE2CA4CC0EBE0296AAA /* SettingsView.swift in Sources */,
 				30CE203981D2F442EC49D72A /* SpriteKitAnimationView.swift in Sources */,
 				2F4D3126DB4454F841404A01 /* WebViewPage.swift in Sources */,
+				7272B507821ADD4292A86154 /* iPadCategoryListView.swift in Sources */,
+				2A8C4600B4003DC36AA9A411 /* iPadFavoritesView.swift in Sources */,
+				F0CA7AE5A20BB6AE76C9C6C8 /* iPadKnotDetailView.swift in Sources */,
+				E6F31278757571229B9D473A /* iPadKnotGridView.swift in Sources */,
+				5C7146EDFAC519D393DB7108 /* iPadMainView.swift in Sources */,
 				63846E749A574F954859DBCE /* knots3dApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -9146,7 +9186,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@executable_path/../Frameworks",
@@ -9176,9 +9216,10 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -9210,9 +9251,10 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -9242,9 +9284,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -9276,9 +9319,10 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -9309,9 +9353,10 @@
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -9390,7 +9435,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@executable_path/../Frameworks",
@@ -9420,9 +9465,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = knots3d/knots3d.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_CFBundleName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_LSHasLocalizedDisplayName = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

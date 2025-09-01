@@ -56,7 +56,7 @@ targets:
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.liangxiwei.knots3dguide
       MARKETING_VERSION: 1.0
-      CURRENT_PROJECT_VERSION: 1
+      CURRENT_PROJECT_VERSION: 2
       CODE_SIGN_STYLE: Automatic
       CODE_SIGN_ENTITLEMENTS: knots3d/knots3d.entitlements
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
