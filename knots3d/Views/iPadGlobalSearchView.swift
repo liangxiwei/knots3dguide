@@ -148,7 +148,7 @@ struct iPadGlobalSearchView: View {
                 .font(.system(size: 48))
                 .foregroundColor(.gray.opacity(0.5))
             
-            Text("选择左侧搜索结果查看详情")
+            Text(LocalizedStrings.CommonExtended.selectItem.localized)
                 .font(.title2)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
