@@ -184,11 +184,13 @@ struct iPadMainView: View {
                 // 收藏tab：显示绳结详情或占位视图
                 if let selectedKnot = selectedKnot {
                     iPadKnotDetailView(knot: selectedKnot)
+                        .id(selectedKnot.id) // 强制在绳结切换时重新创建视图
                 } else {
                     iPadPlaceholderView()
                 }
             } else if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)
+                    .id(selectedKnot.id) // 强制在绳结切换时重新创建视图
             } else if let selectedCategory = selectedCategory {
                 iPadKnotGridView(
                     category: selectedCategory,
