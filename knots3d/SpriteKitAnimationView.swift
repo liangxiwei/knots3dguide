@@ -199,7 +199,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     func loadSpriteAnimation() {
         guard let animationData = animationData,
               let drawingAnimation = animationData.drawingAnimation else {
-            print("动画数据不可用")
             return
         }
         
@@ -209,35 +208,28 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         
         // 加载普通动画资源 - 详细错误检查
         guard let jsonPath = findResourcePath(for: jsonName, extension: "json") else {
-            print("找不到JSON文件: \(jsonName).json")
             return
         }
         
         guard let imagePath = findResourcePath(for: imageName, extension: "png") else {
-            print("找不到图片文件: \(imageName).png")
             return
         }
         
         guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
-            print("无法读取JSON数据: \(jsonPath)")
             return
         }
         
         let spriteData: SpriteAnimationData
         do {
             spriteData = try JSONDecoder().decode(SpriteAnimationData.self, from: jsonData)
-            print("JSON解析成功")
         } catch {
-            print("JSON解析失败: \(error)")
             return
         }
         
         guard let spriteImage = UIImage(contentsOfFile: imagePath) else {
-            print("无法加载图片: \(imagePath)")
             return
         }
         
-        print("所有资源加载成功，开始生成纹理")
 
         // 加载360度动画资源（可选）
         if let rotation360 = animationData.rotation360 {
@@ -262,12 +254,9 @@ class SpriteAnimationScene: SKScene, ObservableObject {
                 let sprite360Image = UIImage(contentsOfFile: image360Path)
             {
                 generate360Textures(from: sprite360Image, with: sprite360Data)
-                print("360度动画资源加载成功")
             } else {
-                print("360度动画资源加载失败: \(rotation360.spriteData), \(rotation360.spriteImage)")
             }
         } else {
-            print("360度动画资源未提供，仅使用普通动画模式")
         }
 
         generateTextures(from: spriteImage, with: spriteData)
@@ -293,7 +282,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         } else if frameCount >= 100 {
             frameRate = 9
         }
-        print("帧数: \(frameCount), 计算出的帧率: \(frameRate)")
         return frameRate
     }
 
@@ -302,7 +290,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
     {
         // 首先在 bundle 根目录查找
         if let path = Bundle.main.path(forResource: name, ofType: ext) {
-            print("找到资源文件: \(path)")
             return path
         }
         // 然后在 Resources/sprite 目录查找
@@ -311,7 +298,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             ofType: ext,
             inDirectory: "Resources/sprite"
         ) {
-            print("在 Resources/sprite 找到资源文件: \(path)")
             return path
         }
         // 最后在 sprite 目录查找
@@ -320,10 +306,8 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             ofType: ext,
             inDirectory: "sprite"
         ) {
-            print("在 sprite 找到资源文件: \(path)")
             return path
         }
-        print("未找到资源文件: \(name).\(ext)")
         return nil
     }
 
@@ -400,9 +384,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             }
         }
 
-        print(
-            "360度动画加载完成，帧数: \(sprite360Textures.count), 固定帧率: \(fixed360FrameRate)"
-        )
     }
 
     /// 状态同步函数，完全还原JS的syncAnimationState逻辑
@@ -431,9 +412,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             newNode.yScale = currentYScale
             newNode.zRotation = currentZRotation
 
-            print(
-                "状态同步完成 - 模式: \(is360Mode ? "360°" : "普通"), 位置: \(currentPosition), 缩放: \(currentXScale), 旋转: \(currentZRotation)"
-            )
         }
     }
 
@@ -472,9 +450,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
                 let scale = min(scaleX, scaleY)  // 选择较小的缩放比例确保完整显示
                 currentScale = scale
                 node.setScale(scale)
-                print(
-                    "模式: \(is360Mode ? "360°" : "普通"), scale: \(scale), anchorPoint: (\(anchorX), \(1.0 - anchorY))"
-                )
             }
 
             // 保持之前的变换状态
@@ -527,7 +502,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         if node.action(forKey: "spriteAnimation") != nil {
             node.isPaused = false
             isPlaying = true
-            print("动画已从暂停处恢复")
         } 
         // 如果不存在，说明是首次播放或停止后播放，需要创建新动画
         else {
@@ -542,9 +516,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             let frameTime = 1.0 / Double(actualFrameRate)
             var actions: [SKAction] = []
 
-            print(
-                "开始创建并播放新动画 - 模式: \(is360Mode ? "360°" : "普通"), 帧率: \(actualFrameRate), 总帧数: \(currentTextures.count)"
-            )
 
             // 为每一帧创建动作，包括纹理和锚点变化
             for i in 0..<currentTextures.count {
@@ -586,7 +557,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         // 不再移除Action，而是将节点暂停
         node.isPaused = true
         isPlaying = false
-        print("动画已暂停")
     }
 
     func stopAnimation() {
@@ -596,7 +566,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         node.isPaused = false
         node.removeAction(forKey: "spriteAnimation")
         setupSpriteNode()
-        print("动画已停止并重置")
     }
 
     // 镜像翻转功能，完全还原JS的handleMirror逻辑
@@ -611,7 +580,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         if node.isPaused {
             node.xScale = targetScaleX
             currentMirrorScale = targetScaleX
-            print("镜像状态: \(isMirrored ? "开启" : "关闭") (静态变换), 目标缩放: \(targetScaleX)")
             return
         }
 
@@ -627,7 +595,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
             self.currentMirrorScale = targetScaleX
         }
 
-        print("镜像状态: \(isMirrored ? "开启" : "关闭") (动画过渡), 目标缩放: \(targetScaleX)")
     }
 
     // 90度逆时针旋转功能
@@ -646,7 +613,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
         // 如果动画处于暂停状态，直接设置变换而不播放动画
         if node.isPaused {
             node.zRotation = currentRotation
-            print("逆时针旋转90度，当前角度: \(degrees)度 (静态变换)，旋转状态: \(isRotated)")
             return
         }
 
@@ -660,13 +626,11 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         node.run(rotateAction)
 
-        print("逆时针旋转90度，当前角度: \(degrees)度 (动画过渡)，旋转状态: \(isRotated)")
     }
 
     // 360度模式切换，完全还原JS的handleModeSwitch逻辑
 //    func toggle360Mode() {
 //        guard !sprite360Textures.isEmpty else {
-//            print("360度动画资源不可用")
 //            return
 //        }
 //
@@ -677,7 +641,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 //
 //        // 切换模式
 //        is360Mode.toggle()
-//        print("切换到\(is360Mode ? "360°" : "绘制")模式")
 //
 //        // 重要：使用状态同步功能保持变换状态一致
 //        syncAnimationState()
@@ -689,7 +652,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 //    }
     func toggle360Mode() {
         guard !sprite360Textures.isEmpty else {
-            print("360度动画资源不可用")
             return
         }
 
@@ -704,7 +666,6 @@ class SpriteAnimationScene: SKScene, ObservableObject {
 
         // 3. 切换模式，并同步状态（这会重建 spriteNode）
         is360Mode.toggle()
-        print("切换到\(is360Mode ? "360°" : "绘制")模式")
         syncAnimationState()
 
         // 4. 如果切换前是在播放，那么现在就播放新的动画

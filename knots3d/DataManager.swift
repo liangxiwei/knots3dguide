@@ -57,8 +57,6 @@ class DataManager: ObservableObject {
     private func reloadDataForLanguageChange() {
         guard !categories.isEmpty || !allKnots.isEmpty else { return } // 只有在已有数据时才重新加载
         
-        print("🌐 语言切换，重新加载所有数据...")
-        
         Task { @MainActor in
             // 并行加载分类和绳结数据
             async let categoriesTask = loadKnotCategoriesAsync()
@@ -71,23 +69,19 @@ class DataManager: ObservableObject {
             case .success(let knotCategories):
                 categories = knotCategories.filter { $0.type == "category" }
                 knotTypes = knotCategories.filter { $0.type == "type" }
-                print("✅ 语言切换后成功重新加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
-                print("❌ 语言切换后分类数据重新加载失败: \(error)")
             }
             
             // 处理绳结数据结果
             switch knotsResult {
             case .success(let knotsData):
                 allKnots = knotsData.knots
-                print("✅ 语言切换后成功重新加载绳结数据: \(allKnots.count) 个绳结")
             case .failure(let error):
                 // 如果分类数据没有错误，则不覆盖错误消息
                 if errorMessage == nil {
                     errorMessage = "\(LocalizedStrings.DataErrors.knotsLoadFailed.localized): \(error.localizedDescription)"
                 }
-                print("❌ 语言切换后绳结数据重新加载失败: \(error)")
             }
         }
     }
@@ -96,14 +90,11 @@ class DataManager: ObservableObject {
     
     func loadData() {
         guard !isLoading else { 
-            print("⚠️ 数据正在加载中，跳过重复加载")
             return 
         }
         
         Task { @MainActor in
             let startTime = CFAbsoluteTimeGetCurrent()
-            print("🚀 DataManager开始加载数据...")
-            print("📂 当前语言: \(LanguageManager.shared.currentLanguage)")
             
             isLoading = true
             errorMessage = nil
@@ -118,28 +109,22 @@ class DataManager: ObservableObject {
             case .success(let knotCategories):
                 categories = knotCategories.filter { $0.type == "category" }
                 knotTypes = knotCategories.filter { $0.type == "type" }
-                print("✅ DataManager成功加载分类数据: \(categories.count) 个分类, \(knotTypes.count) 个类型")
-                print("📋 分类列表: \(categories.map { $0.name }.joined(separator: ", "))")
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.categoriesLoadFailed.localized): \(error.localizedDescription)"
-                print("❌ 分类数据加载失败: \(error)")
             }
             
             // 处理绳结数据结果
             switch knotsResult {
             case .success(let knotsData):
                 allKnots = knotsData.knots
-                print("✅ DataManager成功加载绳结数据: \(allKnots.count) 个绳结")
             case .failure(let error):
                 errorMessage = "\(LocalizedStrings.DataErrors.knotsLoadFailed.localized): \(error.localizedDescription)"
-                print("❌ 绳结数据加载失败: \(error)")
             }
             
             isLoading = false
             
             let endTime = CFAbsoluteTimeGetCurrent()
             let loadTime = endTime - startTime
-            print("⏱️ 数据加载完成，耗时: \(String(format: "%.3f", loadTime)) 秒")
         }
     }
     
@@ -153,7 +138,6 @@ class DataManager: ObservableObject {
             do {
                 let result = try self.syncLoadKnotCategories()
                 let loadTime = CFAbsoluteTimeGetCurrent() - startTime
-                print("📂 分类数据加载耗时: \(String(format: "%.3f", loadTime)) 秒")
                 return .success(result)
             } catch {
                 return .failure(error)
@@ -164,14 +148,11 @@ class DataManager: ObservableObject {
     // 异步加载绳结数据
     private func loadAllKnotsAsync() async -> Result<AllKnotsData, Error> {
         return await Task.detached { [weak self] in
-            let startTime = CFAbsoluteTimeGetCurrent()
             guard let self = self else {
                 return .failure(DataLoadError.networkError(LocalizedStrings.DataErrors.dataManagerReleased.localized))
             }
             do {
                 let result = try self.syncLoadAllKnots()
-                let loadTime = CFAbsoluteTimeGetCurrent() - startTime
-                print("🔗 绳结数据加载耗时: \(String(format: "%.3f", loadTime)) 秒")
                 return .success(result)
             } catch {
                 return .failure(error)
@@ -188,7 +169,6 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
-            print("✅ 成功加载多语言分类文件: \(localizedFileName).json")
             return knotCategories
         }
         
@@ -196,18 +176,15 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
-            print("✅ 成功加载多语言分类文件: \(localizedFileName).json (根目录)")
             return knotCategories
         }
         
         // 如果找不到对应语言的文件，回退到默认的category.json
-        print("⚠️ 未找到语言文件 \(localizedFileName).json，回退到默认文件")
         
         // 先尝试在Resources根目录查找
         if let path = Bundle.main.path(forResource: "category", ofType: "json", inDirectory: "Resources") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
-            print("✅ 成功加载默认分类文件: category.json (Resources目录)")
             return knotCategories
         }
         
@@ -215,7 +192,6 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: "category", ofType: "json", inDirectory: "Resources/category") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
-            print("✅ 成功加载默认分类文件: category.json (Resources/category目录)")
             return knotCategories
         }
         
@@ -223,7 +199,6 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: "category", ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let knotCategories = try JSONDecoder().decode([KnotCategory].self, from: data)
-            print("✅ 成功加载默认分类文件: category.json (根目录)")
             return knotCategories
         }
         
@@ -238,7 +213,6 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json", inDirectory: "Resources/detail") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
-            print("✅ 成功加载多语言绳结文件: \(localizedFileName).json")
             return allKnotsData
         }
         
@@ -246,18 +220,14 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: localizedFileName, ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
-            print("✅ 成功加载多语言绳结文件: \(localizedFileName).json (根目录)")
             return allKnotsData
         }
         
-        // 如果找不到对应语言的文件，回退到默认的detailed_knots_data.json
-        print("⚠️ 未找到绳结语言文件 \(localizedFileName).json，回退到默认文件")
         
         // 先尝试在Resources根目录查找
         if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json", inDirectory: "Resources") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
-            print("✅ 成功加载默认绳结文件: detailed_knots_data.json (Resources目录)")
             return allKnotsData
         }
         
@@ -265,7 +235,6 @@ class DataManager: ObservableObject {
         if let path = Bundle.main.path(forResource: "detailed_knots_data", ofType: "json") {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let allKnotsData = try JSONDecoder().decode(AllKnotsData.self, from: data)
-            print("✅ 成功加载默认绳结文件: detailed_knots_data.json (根目录)")
             return allKnotsData
         }
         
@@ -477,7 +446,6 @@ class DataManager: ObservableObject {
                 }
             }
             
-            print("✅ 预加载完成: \(commonImages.count) 个图片路径")
         }
     }
     

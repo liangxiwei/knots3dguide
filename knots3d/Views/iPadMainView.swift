@@ -85,7 +85,6 @@ struct iPadMainView: View {
             }
         }
         .onAppear {
-            print("🍎 iPad界面出现，准备加载数据...")
             setupInitialData()
         }
     }
@@ -128,7 +127,6 @@ struct iPadMainView: View {
         .listStyle(.sidebar)
         .navigationTitle(LocalizedStrings.App.title.localized)
         .onChange(of: selectedSidebarItem) { newValue in
-            print("🔄 侧边栏切换: \(String(describing: newValue))")
             // 切换侧边栏项目时，清除选中的分类和绳结
             selectedCategory = nil
             selectedKnot = nil
@@ -138,14 +136,12 @@ struct iPadMainView: View {
                 // 分类、类型和收藏tab都使用doubleColumn（显示三列）
                 columnVisibility = .doubleColumn
             }
-            print("✅ 已清空选中状态，布局: \(columnVisibility)")
         }
     }
     
     // MARK: - 内容视图（中间列）
     @ViewBuilder
     private var contentView: some View {
-        let _ = print("🎯 contentView渲染 - selectedSidebarItem: \(String(describing: selectedSidebarItem))")
         
         if let selectedItem = selectedSidebarItem {
             switch selectedItem {
@@ -214,17 +210,14 @@ struct iPadMainView: View {
     
     // MARK: - 初始化数据
     private func setupInitialData() {
-        print("📊 检查数据状态 - categories: \(dataManager.categories.count), types: \(dataManager.knotTypes.count), knots: \(dataManager.allKnots.count)")
         
         if dataManager.categories.isEmpty && dataManager.knotTypes.isEmpty && dataManager.allKnots.isEmpty {
-            print("🔄 数据为空，开始加载...")
             dataManager.loadData()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 dataManager.preloadImagePaths()
             }
         } else {
-            print("✅ 数据已存在，无需重新加载")
         }
     }
 }
