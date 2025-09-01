@@ -51,7 +51,6 @@ struct iPadKnotDetailView: View {
         }
         .navigationTitle(knot.name)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(trailing: favoriteButton)
         .fullScreenCover(isPresented: $showFullScreenAnimation) {
             fullScreenAnimationView
         }
@@ -359,12 +358,6 @@ struct iPadKnotDetailView: View {
         }
     }
     
-    private var favoriteButton: some View {
-        Button(action: toggleFavorite) {
-            Image(systemName: isFavorite ? "heart.fill" : "heart")
-                .foregroundColor(isFavorite ? .red : .gray)
-        }
-    }
     
     // MARK: - 计算属性
     private var currentAnimation: AnimationFiles? {

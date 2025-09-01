@@ -39,6 +39,7 @@ struct iPadGlobalSearchView: View {
         }
         .navigationTitle(LocalizedStrings.Search.globalSearch.localized)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button(action: {
@@ -51,12 +52,6 @@ struct iPadGlobalSearchView: View {
                             .font(.system(size: 17))
                     }
                     .foregroundColor(.blue)
-                }
-            }
-            
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(LocalizedStrings.Actions.done.localized) {
-                    presentationMode.wrappedValue.dismiss()
                 }
             }
         }
