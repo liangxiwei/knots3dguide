@@ -81,12 +81,15 @@ struct iPadMainView: View {
             selectedCategory = nil
             selectedKnot = nil
             
-            // 根据tab类型调整列布局 - 但不强制收藏tab为detailOnly，允许用户手动切换
-            if newValue == .favorites && columnVisibility == .doubleColumn {
-                // 仅在当前为doubleColumn时才切换到detailOnly，其他情况保持用户选择
+            // 根据tab类型调整列布局
+            if newValue == .favorites {
+                // 收藏tab使用detailOnly（隐藏第三列）
                 columnVisibility = .detailOnly
-            } else if newValue != .favorites && columnVisibility == .detailOnly {
-                // 非收藏tab默认使用doubleColumn
+            } else if newValue == .settings {
+                // 设置tab使用detailOnly（隐藏第三列，让设置页面占据剩余宽度）
+                columnVisibility = .detailOnly
+            } else {
+                // 其他tab使用doubleColumn（显示三列）
                 columnVisibility = .doubleColumn
             }
             print("✅ 已清空选中状态，布局: \(columnVisibility)")
@@ -125,7 +128,14 @@ struct iPadMainView: View {
                         .id("favorites")
                 }
             case .settings:
-                SettingsView()
+                // 设置tab：根据列布局显示不同内容
+                if columnVisibility == .detailOnly {
+                    // 2栏模式：不显示中间列
+                    Color.clear
+                } else {
+                    // 3栏模式：在中间列显示设置内容
+                    SettingsView()
+                }
             }
         } else {
             iPadWelcomeView()
@@ -148,6 +158,15 @@ struct iPadMainView: View {
                     } else {
                         iPadPlaceholderView()
                     }
+                }
+            } else if selectedSidebarItem == .settings {
+                // 设置tab：根据列布局显示不同内容
+                if columnVisibility == .detailOnly {
+                    // 2栏模式：在详情列显示设置页面，占据剩余宽度
+                    SettingsView()
+                } else {
+                    // 3栏模式：显示占位视图
+                    iPadPlaceholderView()
                 }
             } else if let selectedKnot = selectedKnot {
                 iPadKnotDetailView(knot: selectedKnot)
