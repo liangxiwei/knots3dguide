@@ -6,7 +6,6 @@ struct iPadKnotDetailView: View {
     
     @StateObject private var dataManager = DataManager.shared
     @State private var selectedAnimationType: AnimationType = .drawing
-    @State private var showFullScreenAnimation = false
     @State private var selectedKnot: KnotDetail
     @State private var shouldScrollToTop = false
     
@@ -71,9 +70,6 @@ struct iPadKnotDetailView: View {
         }
         .navigationTitle(selectedKnot.name)
         .navigationBarTitleDisplayMode(.inline)
-        .fullScreenCover(isPresented: $showFullScreenAnimation) {
-            fullScreenAnimationView
-        }
     }
     
     // MARK: - 头部信息区域
@@ -124,42 +120,21 @@ struct iPadKnotDetailView: View {
     @ViewBuilder
     private var animationSection: some View {
         VStack(spacing: 16) {
-            HStack {
-                Text(LocalizedStrings.KnotDetailExtended.animation.localized)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                
-                Spacer()
-                
-                // 全屏按钮
-                Button(action: { showFullScreenAnimation = true }) {
-                    Image(systemName: "arrow.up.left.and.arrow.down.right")
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                        .padding(8)
-                        .background(Color.blue.opacity(0.1))
-                        .cornerRadius(8)
-                }
-            }
+            Text(LocalizedStrings.KnotDetailExtended.animation.localized)
+                .font(.title2)
+                .fontWeight(.semibold)
 
             // 动画视图
             GeometryReader { animationGeometry in
-                // 关键修复：全屏显示时移除原始动画视图，避免SpriteKit实例冲突
-                if !showFullScreenAnimation {
-                    let spriteHeight = min(animationGeometry.size.width * 1.2, 320)
-                    animationView(width: animationGeometry.size.width, height: spriteHeight)
-                        .background(
-                            RoundedRectangle(cornerRadius: 16)
-                                .fill(Color(.systemBackground))
-                                .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
-                        )
-                } else {
-                    // 全屏显示时显示空占位符，保持布局稳定
-                    Rectangle()
-                        .fill(Color.clear)
-                }
+                let spriteHeight = animationGeometry.size.width
+                animationView(width: animationGeometry.size.width, height: spriteHeight)
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color(.systemBackground))
+                            .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
+                    )
             }
-            .frame(height: 420) // 保持框架高度不变，防止布局跳动
+            .frame(height: 660)
         }
         .padding()
         .background(
@@ -367,67 +342,6 @@ struct iPadKnotDetailView: View {
         .cornerRadius(12)
     }
     
-    private var fullScreenAnimationView: some View {
-        GeometryReader { fullScreenGeometry in
-            ZStack {
-                Color.black.ignoresSafeArea()
-                
-                VStack(spacing: 20) {
-                    HStack {
-                        Spacer()
-                        Button(LocalizedStrings.Actions.done.localized) {
-                            showFullScreenAnimation = false
-                        }
-                        .foregroundColor(.white)
-                        .font(.headline)
-                        .padding()
-                    }
-                    
-                    // 在动画视图上方添加Spacer实现垂直居中
-                    Spacer()
-                    
-                    let screenSize = fullScreenGeometry.size
-                    let animationSize = min(screenSize.width * 0.85, screenSize.height * 0.6)
-                    
-                    // 全屏动画视图
-                    Group {
-                        if let animation = currentAnimation {
-                            SpriteKitAnimationView(
-                                width: animationSize,
-                                height: animationSize,
-                                showControls: true,
-                                animationData: KnotAnimation(
-                                    drawingAnimation: animation,
-                                    rotation360: selectedKnot.animation?.rotation360
-                                )
-                            )
-                            .id("fullscreen-\(selectedKnot.id)") // 确保全屏时重新创建
-                        } else {
-                            // 静态图片占位
-                            CompatibleAsyncImage(url: staticImageURL) { image in
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: animationSize, height: animationSize)
-                            } placeholder: {
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color.gray.opacity(0.3))
-                                    .frame(width: animationSize, height: animationSize)
-                                    .overlay(
-                                        Image(systemName: "link")
-                                            .font(.largeTitle)
-                                            .foregroundColor(.gray)
-                                    )
-                            }
-                        }
-                    }
-                    .cornerRadius(12)
-                    
-                    Spacer()
-                }
-            }
-        }
-    }
     
     
     // MARK: - 计算属性
@@ -486,7 +400,7 @@ struct RelatedKnotCardView: View {
                                 .foregroundColor(.gray)
                         )
                 }
-                .frame(height: 120) // 增加高度从80到120，让图片更完整
+                .frame(width: 140, height: 140) // 设置为正方形
                 .clipped()
                 .cornerRadius(8)
             
