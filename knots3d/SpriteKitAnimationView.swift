@@ -72,7 +72,34 @@ struct SpriteKitAnimationView: View {
     }
 
     private var controlsView: some View {
-        HStack(spacing: 25) {
+        HStack(spacing: 15) {
+            // 镜像反转按钮
+            Button(action: {
+                scene.toggleMirror()
+            }) {
+                Image(systemName: "arrow.left.and.right")
+                    .font(.title2)
+                    .foregroundColor(scene.isMirrored ? .blue : .primary)
+                    .frame(width: 44, height: 44)
+                    .background(Color(UIColor.systemGray4))
+                    .cornerRadius(8)
+            }
+
+            // 90度逆时针旋转按钮
+            Button(action: {
+                scene.rotateSprite()
+            }) {
+                Image("rectangle.landscape.rotate")
+                    .renderingMode(.template)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(scene.isRotated ? .blue : .primary)
+                    .frame(width: 44, height: 44)
+                    .background(Color(UIColor.systemGray4))
+                    .cornerRadius(8)
+            }
+
             // 播放/暂停按钮
             Button(action: {
                 if scene.isPlaying {
