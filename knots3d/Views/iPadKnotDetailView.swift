@@ -196,9 +196,10 @@ struct iPadKnotDetailView: View {
                 } else {
                     LazyVGrid(columns: [
                         GridItem(.flexible()),
+                        GridItem(.flexible()),
                         GridItem(.flexible())
                     ], spacing: 12) {
-                        ForEach(relatedKnots.prefix(4)) { relatedKnot in
+                        ForEach(relatedKnots.prefix(6)) { relatedKnot in
                             RelatedKnotCardView(knot: relatedKnot) {
                                 // 点击相关绳结，切换到对应绳结详情并回到顶部
                                 selectedKnot = relatedKnot
@@ -207,8 +208,8 @@ struct iPadKnotDetailView: View {
                         }
                     }
                     
-                    if relatedKnots.count > 4 {
-                        Text(LocalizedStrings.CommonExtended.andMore.localized(with: relatedKnots.count - 4))
+                    if relatedKnots.count > 6 {
+                        Text(LocalizedStrings.CommonExtended.andMore.localized(with: relatedKnots.count - 6))
                             .font(.caption)
                             .foregroundColor(.secondary)
                             .padding(.top, 8)
@@ -410,7 +411,9 @@ struct RelatedKnotCardView: View {
                     .lineLimit(2)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.primary)
+                    .frame(width: 140) // 固定文本宽度
             }
+            .frame(width: 156) // 固定整体宽度，包含padding
             .padding(8)
             .background(
                 RoundedRectangle(cornerRadius: 12)
