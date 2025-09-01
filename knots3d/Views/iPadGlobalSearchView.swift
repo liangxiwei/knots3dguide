@@ -277,7 +277,7 @@ struct iPadSearchResultRowView: View {
                         .foregroundColor(.primary)
                         .lineLimit(1)
                     
-                    Spacer()
+                    Spacer(minLength: 0)
                     
                     // 收藏状态
                     if dataManager.isFavorite(searchResult.knot.id) {
@@ -300,7 +300,7 @@ struct iPadSearchResultRowView: View {
                             .foregroundColor(.secondary)
                     }
                     
-                    Spacer()
+                    Spacer(minLength: 0)
                     
                     // 相关度分数
                     Text(String(format: "%.0f", searchResult.relevanceScore))
@@ -321,6 +321,7 @@ struct iPadSearchResultRowView: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(isSelected ? Color.blue : Color.clear, lineWidth: 1)
         )
+        .contentShape(Rectangle()) // 确保整个区域都可以点击
     }
     
     private var coverImageURL: URL? {

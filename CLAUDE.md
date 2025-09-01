@@ -14,5 +14,5 @@
 
 - 多语言 key 常量在 LanguageManager.swift
 
-- 每次修改完编译没报错的话就执行 git commit，说明修改了什么
+- 每次修改完编译没报错的话就执行**git add**命令添加自己修改过的文件并 **git commit**，说明修改了什么
 - 使用 NavigationLink 的话，不要加右箭头，NavigationLink 本身就包含了右箭头
