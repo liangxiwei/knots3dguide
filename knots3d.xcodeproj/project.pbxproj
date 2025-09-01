@@ -5616,32 +5616,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_9AD0E773-5257-4725-971D-71C98BADEC6F" /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		"TEMP_A38EF1A8-4E7D-40D6-B436-A2F5A48ACF22" /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		"TEMP_C832228F-D019-448A-905E-41B76890AABC" /* Application */ = {
+		"TEMP_03CFB4E0-E478-4422-8B79-6F2B137AD2BC" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		"TEMP_DC8471DD-957C-4D76-9096-AAC059683CA5" /* Architecture */ = {
+		"TEMP_4954258E-4343-4103-B2F0-FA0A4614FED6" /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		"TEMP_840EB71B-E0EF-4CC1-8384-29274E5EF9D2" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		"TEMP_B75AACDD-4DE5-4EE3-B8CB-24DC62EAA0A7" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

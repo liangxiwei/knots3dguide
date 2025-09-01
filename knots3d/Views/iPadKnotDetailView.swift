@@ -121,23 +121,7 @@ struct iPadKnotDetailView: View {
                         .cornerRadius(8)
                 }
             }
-            
-            // 动画类型选择
-            if hasMultipleAnimations {
-                Picker(LocalizedStrings.KnotDetailExtended.animationType.localized, selection: $selectedAnimationType) {
-                    if knot.animation?.drawingAnimation != nil {
-                        Text(LocalizedStrings.KnotDetailExtended.drawingAnimation.localized)
-                            .tag(AnimationType.drawing)
-                    }
-                    if knot.animation?.rotation360 != nil {
-                        Text(LocalizedStrings.KnotDetailExtended.rotation360.localized)
-                            .tag(AnimationType.rotation)
-                    }
-                }
-                .pickerStyle(.segmented)
-                .padding(.horizontal)
-            }
-            
+
             // 动画视图
             GeometryReader { animationGeometry in
                 let spriteHeight = min(animationGeometry.size.width * 1.2, 320)
