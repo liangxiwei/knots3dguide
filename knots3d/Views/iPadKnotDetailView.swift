@@ -376,6 +376,9 @@ struct iPadKnotDetailView: View {
                         .padding()
                     }
                     
+                    // 在动画视图上方添加Spacer实现垂直居中
+                    Spacer()
+                    
                     let screenSize = fullScreenGeometry.size
                     let animationSize = min(screenSize.width * 0.85, screenSize.height * 0.6)
                     
