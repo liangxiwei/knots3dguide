@@ -140,14 +140,15 @@ struct iPadKnotDetailView: View {
             
             // 动画视图
             GeometryReader { animationGeometry in
-                animationView(width: animationGeometry.size.width, height: min(animationGeometry.size.width * 1.5, 400))
+                let spriteHeight = min(animationGeometry.size.width * 1.2, 320)
+                animationView(width: animationGeometry.size.width, height: spriteHeight)
                     .background(
                         RoundedRectangle(cornerRadius: 16)
                             .fill(Color(.systemBackground))
                             .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
                     )
             }
-            .frame(height: 320) // 设置GeometryReader的高度
+            .frame(height: 420) // 增加高度为控制按钮留出空间
         }
         .padding()
         .background(
