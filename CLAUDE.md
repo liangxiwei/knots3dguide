@@ -10,7 +10,7 @@
 - 代码要整洁，重复的代码需要抽出来
 - 代码可以适当的加一些注释
 
-### 代码里的各种文本需要适配**多语言**,支持 en,zh-Hans,da,de,es,fr,it,ja,ko,nl,no,pl,pt,ru,sv,tr,zh-TW
+### 代码里的各种文本字符串需要适配**多语言**,支持 en,zh-Hans,da,de,es,fr,it,ja,ko,nl,no,pl,pt,ru,sv,tr,zh-TW
 
 - 多语言 key 常量在 LanguageManager.swift
 

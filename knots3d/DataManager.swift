@@ -269,12 +269,19 @@ class DataManager: ObservableObject {
     // MARK: - Favorites Management
     
     func toggleFavorite(_ knotId: String) {
+        let wasNotFavorite = !favoriteKnots.contains(knotId)
+        
         if favoriteKnots.contains(knotId) {
             favoriteKnots.remove(knotId)
         } else {
             favoriteKnots.insert(knotId)
         }
         saveFavorites()
+        
+        // 如果是添加到收藏（而不是取消收藏），则请求评分
+        if wasNotFavorite {
+            ReviewRequestManager.shared.requestReviewIfAppropriate()
+        }
     }
     
     func isFavorite(_ knotId: String) -> Bool {
