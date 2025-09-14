@@ -32,12 +32,15 @@ class DataManager: ObservableObject {
     @Published var favoriteKnots: Set<String> = []
     @Published var isLoading = false
     @Published var errorMessage: String?
+    @Published var isPro: Bool = false
     
     private let favoritesKey = "FavoriteKnots"
+    private let proStatusKey = "IsProVersion"
     private var languageObserver: AnyCancellable?
     
     private init() {
         loadFavorites()
+        loadProStatus()
         setupLanguageObserver()
     }
     
@@ -300,6 +303,26 @@ class DataManager: ObservableObject {
     private func loadFavorites() {
         let favoritesArray = UserDefaults.standard.array(forKey: favoritesKey) as? [String] ?? []
         favoriteKnots = Set(favoritesArray)
+    }
+    
+    // MARK: - Pro Status Management
+    
+    private func loadProStatus() {
+        // 对于2.0版本及之前的版本，默认设置为Pro用户
+        if !UserDefaults.standard.bool(forKey: "HasSetProStatus") {
+            // 第一次启动，设置为Pro版本
+            isPro = true
+            UserDefaults.standard.set(true, forKey: proStatusKey)
+            UserDefaults.standard.set(true, forKey: "HasSetProStatus")
+        } else {
+            // 已经设置过，读取保存的状态
+            isPro = UserDefaults.standard.bool(forKey: proStatusKey)
+        }
+    }
+    
+    func setProStatus(_ status: Bool) {
+        isPro = status
+        UserDefaults.standard.set(status, forKey: proStatusKey)
     }
     
     // MARK: - Search Functions
