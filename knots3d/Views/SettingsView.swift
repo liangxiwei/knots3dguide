@@ -1,4 +1,5 @@
 import SwiftUI
+import StoreKit
 
 struct SettingsView: View {
     @StateObject private var languageManager = LanguageManager.shared
@@ -28,6 +29,22 @@ struct SettingsView: View {
                             Image(systemName: "chevron.right")
                                 .foregroundColor(.gray)
                                 .font(.caption)
+                        }
+                    }
+                    
+                    // 应用评分
+                    Button(action: {
+                        rateApp()
+                    }) {
+                        HStack {
+                            Image(systemName: "star")
+                                .foregroundColor(.blue)
+                                .frame(width: 20)
+                            
+                            Text(LocalizedStrings.Settings.rateApp.localized)
+                                .foregroundColor(.primary)
+                            
+                            Spacer()
                         }
                     }
                 } header: {
@@ -92,6 +109,12 @@ struct SettingsView: View {
     private var appVersion: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0"
         return "\(version)"
+    }
+    
+    private func rateApp() {
+        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
     }
     
     private var languagePickerView: some View {

@@ -153,7 +153,10 @@ class LanguageManager: ObservableObject {
         "data_error_network_error": "网络错误",
         "data_error_categories_load_failed": "分类加载失败",
         "data_error_knots_load_failed": "绳结数据加载失败",
-        "data_error_data_manager_released": "数据管理器已释放"
+        "data_error_data_manager_released": "数据管理器已释放",
+        
+        // App Rating
+        "settings_rate_app": "为应用评分"
     ]
     
     var availableLanguages: [(code: String, name: String)] {
@@ -278,6 +281,7 @@ struct LocalizedStrings {
         static let versionInfo = "settings_version_info"
         static let about = "settings_about"
         static let appVersion = "settings_app_version"
+        static let rateApp = "settings_rate_app"
     }
     
     // MARK: - Alerts
