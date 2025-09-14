@@ -5616,32 +5616,32 @@
 			path = sprite;
 			sourceTree = "<group>";
 		};
-		"TEMP_11294DE8-6202-4586-92D2-6A2652302357" /* Architecture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Architecture;
-			sourceTree = "<group>";
-		};
-		"TEMP_784EF84E-B809-458D-BA01-4B4209C0DBD6" /* Presentation */ = {
+		"TEMP_1AED89D1-78E2-444B-8C47-5A8F9695BD32" /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		"TEMP_CD71E52D-4636-45F4-99EC-CD84308DDC81" /* Data */ = {
+		"TEMP_308DAF2E-B675-4297-9FF2-BB94DF91A721" /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Data;
+			path = Architecture;
 			sourceTree = "<group>";
 		};
-		"TEMP_ED56FCF3-2A41-4C62-BA06-7410921797F3" /* Application */ = {
+		"TEMP_A252554B-7914-45BE-A022-DFF880796793" /* Application */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		"TEMP_D8992C72-8F54-4CA9-8F4B-4843CD5D1FC5" /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -9243,7 +9243,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = iphoneos;
@@ -9278,7 +9278,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = macosx;
@@ -9311,7 +9311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = xros;
@@ -9346,7 +9346,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = macosx;
@@ -9380,7 +9380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = iphoneos;
@@ -9492,7 +9492,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangxiwei.knots3dguide;
 				PRODUCT_NAME = knots3d;
 				SDKROOT = xros;
