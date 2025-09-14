@@ -67,6 +67,7 @@
 "settings_version_info" = "版本信息";
 "settings_about" = "关于我们";
 "settings_app_version" = "应用版本";
+"settings_rate_app" = "为应用评分";
 
 /* Privacy Policy */
 "privacy_title" = "隐私协议";

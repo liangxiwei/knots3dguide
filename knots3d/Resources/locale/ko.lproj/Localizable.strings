@@ -67,6 +67,7 @@
 "settings_version_info" = "버전 정보";
 "settings_about" = "정보";
 "settings_app_version" = "앱 버전";
+"settings_rate_app" = "앱 평가하기";
 
 /* Privacy Policy */
 "privacy_title" = "개인정보 처리방침";

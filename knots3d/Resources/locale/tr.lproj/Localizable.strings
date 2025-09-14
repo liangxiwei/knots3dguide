@@ -67,6 +67,7 @@
 "settings_version_info" = "Sürüm Bilgisi";
 "settings_about" = "Hakkında";
 "settings_app_version" = "Uygulama Sürümü";
+"settings_rate_app" = "Uygulamayı değerlendir";
 
 /* Privacy Policy */
 "privacy_title" = "Gizlilik Politikası";

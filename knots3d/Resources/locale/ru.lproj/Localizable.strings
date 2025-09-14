@@ -67,6 +67,7 @@
 "settings_version_info" = "Информация о версии";
 "settings_about" = "О программе";
 "settings_app_version" = "Версия приложения";
+"settings_rate_app" = "Оценить приложение";
 
 /* Privacy Policy */
 "privacy_title" = "Политика конфиденциальности";

@@ -67,6 +67,7 @@
 "settings_version_info" = "Información de Versión";
 "settings_about" = "Acerca de";
 "settings_app_version" = "Versión de la App";
+"settings_rate_app" = "Calificar aplicación";
 
 /* Privacy Policy */
 "privacy_title" = "Política de Privacidad";

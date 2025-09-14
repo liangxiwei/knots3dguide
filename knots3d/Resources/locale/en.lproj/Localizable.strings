@@ -78,6 +78,7 @@
 "settings_version_info" = "Version Info";
 "settings_about" = "About";
 "settings_app_version" = "App Version";
+"settings_rate_app" = "Rate App";
 
 /* Privacy Policy */
 "privacy_title" = "Privacy Policy";

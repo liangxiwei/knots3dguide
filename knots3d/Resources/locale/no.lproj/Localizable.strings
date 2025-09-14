@@ -67,6 +67,7 @@
 "settings_version_info" = "Versjonsinformasjon";
 "settings_about" = "Om";
 "settings_app_version" = "App-versjon";
+"settings_rate_app" = "Vurder appen";
 
 /* Privacy Policy */
 "privacy_title" = "Personvernregler";

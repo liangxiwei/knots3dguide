@@ -67,6 +67,7 @@
 "settings_version_info" = "バージョン情報";
 "settings_about" = "概要";
 "settings_app_version" = "アプリバージョン";
+"settings_rate_app" = "アプリを評価する";
 
 /* Privacy Policy */
 "privacy_title" = "プライバシーポリシー";

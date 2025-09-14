@@ -67,6 +67,7 @@
 "settings_version_info" = "Versionsinfo";
 "settings_about" = "Om";
 "settings_app_version" = "App-version";
+"settings_rate_app" = "Bedøm appen";
 
 /* Privacy Policy */
 "privacy_title" = "Privatlivspolitik";
